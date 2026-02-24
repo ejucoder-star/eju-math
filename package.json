@@ -5,9 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "node build.js && vite build",
+    "build": "node build.cjs && vite build",
     "preview": "vite preview",
-    "data:build": "node build.js"
+    "data:build": "node build.cjs"
   },
   "dependencies": {
     "react": "^18.2.0",
