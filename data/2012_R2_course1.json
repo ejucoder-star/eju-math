@@ -1,0 +1,212 @@
+{
+  "metadata": {
+    "course": "course1",
+    "year": "2012",
+    "session": "2",
+    "courseNameJa": "数学1",
+    "courseNameEn": "Course 1 (Basic)",
+    "description": "基础课程｜文科方向",
+    "color": "#2563eb",
+    "examTitle": "2012年度（平成24年）第2回",
+    "examDate": "2012年11月"
+  },
+  "questions": [
+    {
+      "id": "c1-I-1",
+      "number": "I-1",
+      "topic": "二次函数与原点对称曲线的交点",
+      "topicTag": "二次函数",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "设 $a \\neq 0$。关于 $x$ 的二次函数\n$$y = ax^2 - 4x - 4a \\quad \\cdots①$$\n的图像与原点 $(0,0)$ 关于原点对称的曲线记为 $G$。\n\n(1) 二次函数①图像的顶点坐标为\n$$\\left(\\dfrac{\\fbox{A}}{a},\\ -\\dfrac{\\fbox{B}}{a} - 4a\\right)$$\n\n(2) 表示 $G$ 的二次函数是以下选项中的 $\\fbox{C}$：\n\n⓪ $y=ax^2+4x+4a$ ① $y=ax^2+4x-4a$ ② $y=ax^2-4x+4a$\n③ $y=-ax^2+4x+4a$ ④ $y=-ax^2-4x+4a$ ⑤ $y=-ax^2-4x-4a$\n\n(3) $G$ 与二次函数①的图像交于两点\n$$\\left(\\fbox{DE},\\ \\fbox{F}\\right), \\quad \\left(\\fbox{G},\\ \\fbox{HI}\\right)$$\n\n(4) 取 $a=2$，在区间 $\\fbox{DE} \\leq x \\leq \\fbox{G}$ 上，$G$ 所表示的二次函数的最大值为 $\\fbox{JK}$，最小值为 $\\fbox{LM}$。",
+      "solution": {
+        "translation": "分析二次函数及其关于原点对称的曲线，求交点并确定值域。",
+        "analysis": "配方求顶点；利用原点对称将 $(x,y)$ 映射为 $(-x,-y)$ 得到 $G$ 的方程；联立两方程求交点；对特定 $a$ 值分析 $G$ 在区间上的极值。",
+        "steps": [
+          {
+            "title": "(1) 对①配方求顶点",
+            "content": "$$y = a\\left(x - \\frac{2}{a}\\right)^2 - \\frac{4}{a} - 4a$$\n顶点为 $\\left(\\dfrac{2}{a},\\ -\\dfrac{4}{a} - 4a\\right)$，故 $\\fbox{A}=2$，$\\fbox{B}=4$。"
+          },
+          {
+            "title": "(2) 求曲线 G 的方程",
+            "content": "若点 $(x,y)$ 在①上，则 $(-x,-y)$ 在 $G$ 上，即\n$$-y = a(-x)^2 - 4(-x) - 4a = ax^2 + 4x - 4a$$\n$$y = -ax^2 - 4x + 4a$$\n对应选项 ④，故 $\\fbox{C}=4$。"
+          },
+          {
+            "title": "(3) 求①与 G 的交点",
+            "content": "联立 $ax^2-4x-4a = -ax^2-4x+4a$：\n$$2ax^2 = 8a \\implies x^2 = 4 \\implies x = \\pm 2$$\n\n$x=2$ 时：$y = a(4)-8-4a = -8$，交点 $(2,-8)$\n$x=-2$ 时：$y = a(4)+8-4a = 8$，交点 $(-2,8)$\n\n故 $(\\fbox{DE}, \\fbox{F}) = (-2, 8)$，$(\\fbox{G}, \\fbox{HI}) = (2, -8)$。"
+          },
+          {
+            "title": "(4) a=2 时在 [-2,2] 上求 G 的值域",
+            "content": "$a=2$ 时，$G$：$y = -2x^2 - 4x + 8$\n\n对称轴：$x = -\\dfrac{-4}{2\\times2} = -1$，在 $[-2,2]$ 内部。\n\n顶点（最大值）：$y = -2(1)+4+8 = 10$，故 $\\fbox{JK}=10$。\n\n端点值：\n$x=-2$：$y=-8+8+8=8$\n$x=2$：$y=-8-8+8=-8$\n\n最小值在 $x=2$ 处：$y=-8$，故 $\\fbox{LM}=-8$。"
+          }
+        ],
+        "finalAnswer": "A=2，B=4；C=4；DE=−2，F=8，G=2，HI=−8；JK=10，LM=−8"
+      }
+    },
+    {
+      "id": "c1-I-2",
+      "number": "I-2",
+      "topic": "含绝对值的方程的解",
+      "topicTag": "方程与不等式",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "设 $a$ 为常数，考虑关于 $x$ 的方程\n$$|ax - 11| = 4x - 10 \\quad \\cdots①$$\n\n(1) 去掉绝对值符号，方程①可表示为：\n\n$ax \\geq 11$ 时，$\\left(a - \\fbox{N}\\right)x = \\fbox{O}$\n\n$ax < 11$ 时，$\\left(a + \\fbox{P}\\right)x = \\fbox{QR}$\n\n(2) $a = \\sqrt{7}$ 时，方程①的解为\n$$x = \\dfrac{\\fbox{S}\\left(\\fbox{T} - \\sqrt{\\fbox{U}}\\right)}{\\fbox{V}}$$\n\n(3) 设 $a$ 为正整数，方程①有正整数解时，$a = \\fbox{W}$，此时正整数解为 $x = \\fbox{X}$。",
+      "solution": {
+        "translation": "通过分类讨论去绝对值，分别求特定参数下的解，以及参数为正整数时方程有正整数解的条件。",
+        "analysis": "根据 $ax$ 与 11 的大小关系分两种情况；代入具体值求解；利用正整数整除关系确定 $a$。",
+        "steps": [
+          {
+            "title": "(1) 去绝对值，分情况讨论",
+            "content": "当 $ax \\geq 11$ 时：$ax-11=4x-10$，整理得 $(a-4)x=1$，故 $\\fbox{N}=4$，$\\fbox{O}=1$。\n\n当 $ax < 11$ 时：$-(ax-11)=4x-10$，即 $11-ax=4x-10$，整理得 $(a+4)x=21$，故 $\\fbox{P}=4$，$\\fbox{QR}=21$。"
+          },
+          {
+            "title": "(2) a=√7 时求解",
+            "content": "情况一：$(\\sqrt{7}-4)x=1$，$x=\\dfrac{1}{\\sqrt{7}-4}=\\dfrac{\\sqrt{7}+4}{7-16}<0$。\n需验证 $ax=\\sqrt{7}\\cdot x < 0 < 11$，条件 $ax\\geq11$ 不满足，此解无效。\n\n情况二：$(\\sqrt{7}+4)x=21$\n$$x = \\frac{21}{\\sqrt{7}+4} = \\frac{21(\\sqrt{7}-4)}{(\\sqrt{7})^2-16} = \\frac{21(\\sqrt{7}-4)}{-9} = \\frac{7(4-\\sqrt{7})}{3}$$\n\n验证：$ax = \\sqrt{7}\\cdot\\dfrac{7(4-\\sqrt{7})}{3} = \\dfrac{7(4\\sqrt{7}-7)}{3} \\approx 8.4 < 11$ ✓\n\n故 $\\fbox{S}=7$，$\\fbox{T}=4$，$\\fbox{U}=7$，$\\fbox{V}=3$。"
+          },
+          {
+            "title": "(3) a 为正整数，方程有正整数解",
+            "content": "情况一：$(a-4)x=1$，正整数解要求 $a-4=1$，即 $a=5$，$x=1$。\n验证：$ax=5\\cdot1=5<11$，不满足 $ax\\geq11$，无效。\n\n情况二：$(a+4)x=21$，$21=3\\times7$，正因子分解：\n$a+4=7 \\Rightarrow a=3$，$x=3$。验证：$ax=9<11$ ✓，$4x-10=2>0$ ✓\n$a+4=21 \\Rightarrow a=17$，$x=1$。验证：$ax=17>11$，不满足 $ax<11$，无效。\n\n故唯一解：$\\fbox{W}=3$，$\\fbox{X}=3$。"
+          }
+        ],
+        "finalAnswer": "N=4，O=1；P=4，QR=21；S=7，T=4，U=7，V=3；W=3，X=3"
+      }
+    },
+    {
+      "id": "c1-II-1",
+      "number": "II-1",
+      "topic": "抽卡乘积的概率",
+      "topicTag": "概率",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "有两个箱子 A 和 B。\n\n箱 A 中有写有数字 0 的卡片 3 张、写有数字 2 的卡片 2 张、写有数字 3 的卡片 1 张。\n\n箱 B 中有写有数字 1 的卡片 2 张、写有数字 2 的卡片 3 张。\n\n从箱 A 同时取出 2 张，从箱 B 取出 1 张，设 3 张卡片上数字之积为 $X$。\n\n$X$ 的可能取值共有 $\\fbox{A}$ 个，$X$ 的最大值为 $\\fbox{BC}$，最小值为 $\\fbox{D}$。\n\n$X = \\fbox{BC}$ 的概率为 $\\dfrac{\\fbox{E}}{\\fbox{FG}}$，$X = \\fbox{D}$ 的概率为 $\\dfrac{\\fbox{H}}{\\fbox{I}}$。",
+      "solution": {
+        "translation": "枚举所有可能的取牌组合，确定乘积的取值范围和各值的概率。",
+        "analysis": "先列出从箱A取2张的所有可能乘积，再与箱B的数字相乘，枚举所有 X 的取值；用古典概率计算各事件概率。",
+        "steps": [
+          {
+            "title": "枚举 X 的所有可能值",
+            "content": "箱A取2张的乘积：\n含至少一张0：乘积=0\n取两张2：乘积=4\n取一张2和一张3：乘积=6\n\n箱B取1张：1 或 2\n\n$X$ 的可能值：$0\\times1=0$，$0\\times2=0$，$4\\times1=4$，$4\\times2=8$，$6\\times1=6$，$6\\times2=12$\n\n不重复的值为 $\\{0,4,6,8,12\\}$，共 $\\fbox{A}=5$ 个。\n最大值 $\\fbox{BC}=12$，最小值 $\\fbox{D}=0$。"
+          },
+          {
+            "title": "计算总取法数",
+            "content": "$$\\text{总数} = C_6^2 \\times 5 = 15 \\times 5 = 75$$"
+          },
+          {
+            "title": "计算 X=12 的概率",
+            "content": "$X=12$ 需要：箱A取 (2,3)，箱B取 2。\n\n箱A取 (2,3) 的方法：$2\\times1=2$ 种（2张"2"中选1，1张"3"中选1）\n箱B取 2：3 种\n\n$$P(X=12) = \\frac{2\\times3}{75} = \\frac{6}{75} = \\frac{2}{25}$$\n\n故 $\\fbox{E}=2$，$\\fbox{FG}=25$。"
+          },
+          {
+            "title": "计算 X=0 的概率",
+            "content": "$X=0$ 需要：箱A取出的2张中至少含一张0。\n\n箱A取含至少一张0的方法：$C_6^2 - C_3^2 = 15-3=12$ 种\n箱B任取：5 种\n\n$$P(X=0) = \\frac{12\\times5}{75} = \\frac{60}{75} = \\frac{4}{5}$$\n\n故 $\\fbox{H}=4$，$\\fbox{I}=5$。"
+          }
+        ],
+        "finalAnswer": "A=5，BC=12，D=0；E=2，FG=25；H=4，I=5"
+      }
+    },
+    {
+      "id": "c1-II-2",
+      "number": "II-2",
+      "topic": "三角形内线段等分面积与最短距离",
+      "topicTag": "三角形与余弦定理",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "questionDiagram": {
+        "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 280 220' width='280' height='220'><style>text{font-family:serif;font-size:13px;}</style><polygon points='40,190 200,190 140,30' fill='#eff6ff' stroke='#2563eb' stroke-width='2'/><line x1='96' y1='110' x2='170' y2='190' stroke='#dc2626' stroke-width='1.8'/><circle cx='96' cy='110' r='3' fill='#dc2626'/><circle cx='170' cy='190' r='3' fill='#dc2626'/><text x='18' y='200' fill='#1e40af'>A</text><text x='204' y='200' fill='#1e40af'>B</text><text x='140' y='22' fill='#1e40af'>C</text><text x='80' y='108' fill='#dc2626'>D</text><text x='170' y='208' fill='#dc2626'>E</text><text x='80' y='155' fill='#374151' font-size='11'>x</text><text x='190' y='155' fill='#374151' font-size='11'>AE=20/x</text><text x='48' y='170' fill='#374151' font-size='11'>60°</text><text x='100' y='195' fill='#dc2626' font-size='11'>DE</text></svg>"
+      },
+      "japanese": "考虑满足 $AB=8$，$AC=5$，$\\angle BAC=60°$ 的三角形 ABC。在边 AB、AC 上分别取点 D、E，使线段 DE 将三角形 ABC 的面积二等分。设 $AD=x$。\n\n(1) 用 $x$ 表示 AE：$AE = \\dfrac{\\fbox{JK}}{x}$。\n\n(2) 当 E 在 AC 上移动时，$x$ 的取值范围为\n$$\\fbox{L} \\leq x \\leq \\fbox{M}$$\n\n(3) 成立 $DE^2 = \\left(x - \\dfrac{\\fbox{NO}}{x}\\right)^2 + \\fbox{PQ}$，故线段 DE 在 $x = \\fbox{R}\\sqrt{\\fbox{S}}$ 时最短，最短值为 $\\fbox{T}\\sqrt{\\fbox{U}}$。",
+      "solution": {
+        "translation": "在三角形中找面积等分线段，建立 DE 长度关于 x 的表达式，求最小值。",
+        "analysis": "面积等分条件给出 AE 与 x 的关系；余弦定理展开 DE²；配方后对 x 求最小值。",
+        "steps": [
+          {
+            "title": "(1) 用面积等分条件求 AE",
+            "content": "$S_{\\triangle ABC} = \\dfrac{1}{2}\\cdot8\\cdot5\\cdot\\sin60° = 10\\sqrt{3}$\n\n$S_{\\triangle ADE} = \\dfrac{1}{2}\\cdot AD\\cdot AE\\cdot\\sin60° = \\dfrac{\\sqrt{3}}{4}\\cdot x\\cdot AE$\n\nDE 等分面积要求 $S_{\\triangle ADE} = \\dfrac{1}{2}S_{\\triangle ABC} = 5\\sqrt{3}$：\n$$\\frac{\\sqrt{3}}{4}\\cdot x\\cdot AE = 5\\sqrt{3} \\implies AE = \\frac{20}{x}$$\n\n故 $\\fbox{JK}=20$。"
+          },
+          {
+            "title": "(2) 确定 x 的范围",
+            "content": "D 在 AB 上：$0 < x \\leq 8$\n\nE 在 AC 上：$0 < AE \\leq 5$，即 $\\dfrac{20}{x} \\leq 5 \\Rightarrow x \\geq 4$\n\n故 $\\fbox{L}=4$，$\\fbox{M}=8$。"
+          },
+          {
+            "title": "(3) 用余弦定理计算 DE²，求最小值",
+            "content": "在△ADE 中，由余弦定理（∠A=60°）：\n$$DE^2 = AD^2 + AE^2 - 2\\cdot AD\\cdot AE\\cdot\\cos60°$$\n$$= x^2 + \\frac{400}{x^2} - 2\\cdot x\\cdot\\frac{20}{x}\\cdot\\frac{1}{2}$$\n$$= x^2 + \\frac{400}{x^2} - 20$$\n\n配方：注意 $\\left(x-\\dfrac{20}{x}\\right)^2 = x^2 - 40 + \\dfrac{400}{x^2}$，故\n$$DE^2 = \\left(x-\\frac{20}{x}\\right)^2 + 20$$\n\n故 $\\fbox{NO}=20$，$\\fbox{PQ}=20$。\n\n当 $x - \\dfrac{20}{x} = 0$，即 $x^2=20$，$x = 2\\sqrt{5}$ 时 $DE^2$ 最小。\n\n验证 $4 \\leq 2\\sqrt{5} \\approx 4.47 \\leq 8$ ✓\n\n$\\fbox{R}=2$，$\\fbox{S}=5$；最小值 $DE = \\sqrt{20} = 2\\sqrt{5}$，$\\fbox{T}=2$，$\\fbox{U}=5$。",
+            "why": "$(x-20/x)^2\\geq0$，等号在 $x=20/x$ 即 $x=\\sqrt{20}=2\\sqrt5$ 时成立。"
+          }
+        ],
+        "finalAnswer": "JK=20；L=4，M=8；NO=20，PQ=20，R=2，S=5，T=2，U=5"
+      }
+    },
+    {
+      "id": "c1-III-1",
+      "number": "III",
+      "topic": "切去两角的六边形面积",
+      "topicTag": "坐标与面积",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "questionDiagram": {
+        "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 200' width='300' height='200'><style>text{font-family:serif;font-size:12px;}</style><polygon points='30,180 270,180 270,100 230,40 90,40 30,100' fill='#eff6ff' stroke='#2563eb' stroke-width='2'/><rect x='30' y='40' width='240' height='140' fill='none' stroke='#94a3b8' stroke-width='1' stroke-dasharray='4,3'/><text x='18' y='188' fill='#1e40af'>A</text><text x='270' y='188' fill='#1e40af'>B</text><text x='272' y='104' fill='#1e40af'>C</text><text x='228' y='34' fill='#1e40af'>D</text><text x='84' y='34' fill='#1e40af'>E</text><text x='16' y='104' fill='#1e40af'>F</text><text x='143' y='195' fill='#374151'>AB=11</text><text x='274' y='145' fill='#374151'>BC=4</text><text x='255' y='72' fill='#374151' font-size='10'>CD=2√13</text><text x='140' y='33' fill='#374151'>DE=5</text><text x='28' y='70' fill='#374151' font-size='10'>EF=2√5</text><text x='6' y='145' fill='#374151'>FA=6</text><text x='32' y='115' fill='#64748b' font-size='10'>y</text><text x='68' y='43' fill='#64748b' font-size='10'>x</text><text x='240' y='43' fill='#64748b' font-size='10'>u</text><text x='272' y='65' fill='#64748b' font-size='10'>v</text></svg>"
+      },
+      "japanese": "如图，考虑从长方形切去两个角所得的六边形。各边长度为\n$$AB=11,\\ BC=4,\\ CD=2\\sqrt{13},\\ DE=5,\\ EF=2\\sqrt{5},\\ FA=6$$\n\n如图将各边延长，设切去的两个直角三角形中直角所夹的两边分别为 $x, y$（左侧）和 $u, v$（右侧）。此时\n$$u = \\fbox{A} - y, \\quad v = x + \\fbox{B}$$\n\n由 $u^2+v^2=\\fbox{CD}$ 与 $x^2+y^2=\\fbox{EF}$，得\n$$x = \\fbox{G}\\,y - \\fbox{H}$$\n\n从而 $\\fbox{I}\\,y^2 - \\fbox{J}\\,y - \\fbox{K} = 0$，解得 $y = \\fbox{L}$。\n\n因此 $x=\\fbox{M}$，$u=\\fbox{N}$，$v=\\fbox{O}$，图形面积为 $\\fbox{PQ}$。",
+      "solution": {
+        "translation": "将六边形面积转化为完整长方形面积减去两个切角三角形的面积。",
+        "analysis": "利用几何关系建立 u,v 与 x,y 的方程组；由两个直角三角形的斜边条件联立求解；最后计算图形面积。",
+        "steps": [
+          {
+            "title": "建立 u, v 与 x, y 的关系",
+            "content": "完整长方形的宽为 AB=11，则顶边满足：$y + DE + u = 11$，即 $y + 5 + u = 11$，故\n$$u = 6 - y \\quad (\\fbox{A}=6)$$\n\n完整长方形的高：左侧高 $= FA + x = 6+x$，右侧高 $= BC + v = 4+v$，二者相等：\n$$v = x + 2 \\quad (\\fbox{B}=2)$$"
+          },
+          {
+            "title": "利用斜边条件建立方程",
+            "content": "$CD = 2\\sqrt{13}$，故 $u^2+v^2=(2\\sqrt{13})^2=52$，$\\fbox{CD}=52$\n\n$EF = 2\\sqrt{5}$，故 $x^2+y^2=(2\\sqrt{5})^2=20$，$\\fbox{EF}=20$\n\n将 $u=6-y$，$v=x+2$ 代入 $u^2+v^2=52$：\n$$(6-y)^2+(x+2)^2=52$$\n$$(x^2+y^2)+4x-12y+40=52$$\n$$20+4x-12y+40=52$$\n$$4x-12y=-8 \\implies x=3y-2$$\n\n故 $\\fbox{G}=3$，$\\fbox{H}=2$。"
+          },
+          {
+            "title": "解方程求 x, y",
+            "content": "将 $x=3y-2$ 代入 $x^2+y^2=20$：\n$$(3y-2)^2+y^2=20$$\n$$10y^2-12y-16=0$$\n$$5y^2-6y-8=0$$\n\n故 $\\fbox{I}=5$，$\\fbox{J}=6$，$\\fbox{K}=8$。\n\n解方程：$y = \\dfrac{6\\pm\\sqrt{36+160}}{10} = \\dfrac{6\\pm14}{10}$\n\n取正值：$y=2$，$\\fbox{L}=2$；$x=3(2)-2=4$，$\\fbox{M}=4$；$u=6-2=4$，$\\fbox{N}=4$；$v=4+2=6$，$\\fbox{O}=6$。"
+          },
+          {
+            "title": "计算图形面积",
+            "content": "完整长方形：宽 $=11$，高 $=4+6=10$\n\n两个切角三角形面积：\n左切角：$\\dfrac{1}{2}\\cdot x\\cdot y = \\dfrac{1}{2}\\cdot4\\cdot2=4$\n右切角：$\\dfrac{1}{2}\\cdot u\\cdot v = \\dfrac{1}{2}\\cdot4\\cdot6=12$\n\n图形面积 $= 11\\times10 - 4 - 12 = 110-16 = 94$，故 $\\fbox{PQ}=94$。"
+          }
+        ],
+        "finalAnswer": "A=6，B=2；CD=52，EF=20；G=3，H=2；I=5，J=6，K=8；L=2，M=4，N=4，O=6；PQ=94"
+      }
+    },
+    {
+      "id": "c1-IV-1",
+      "number": "IV",
+      "topic": "二元二次方程组的和与积的范围",
+      "topicTag": "方程组与不等式",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "两个实数 $x, y$ 满足方程\n$$3x^2 + 2xy + 3y^2 = 32 \\quad \\cdots①$$\n\n设 $x+y=a$，由①消去 $y$ 得关于 $x$ 的二次方程\n$$\\fbox{A}\\,x^2 - \\fbox{B}\\,ax + \\fbox{C}\\,a^2 - 32 = 0$$\n\n因 $x$ 为实数，故\n$$\\fbox{DE} \\leq a \\leq \\fbox{F} \\quad \\cdots③$$\n\n再设 $xy = b$，由①②④得\n$$b = \\dfrac{\\fbox{G}}{\\fbox{H}}\\,a^2 - \\fbox{I} \\quad \\cdots⑤$$\n\n由③⑤得\n$$\\fbox{JK} \\leq b \\leq \\fbox{L}$$",
+      "solution": {
+        "translation": "通过换元将二元约束转化为一元二次方程，利用判别式确定和的范围，再推导积的范围。",
+        "analysis": "令 x+y=a，代入消去 y，得关于 x 的方程，判别式≥0 给出 a 的范围；再令 xy=b，利用韦达定理建立 b 与 a 的关系，结合 a 的范围确定 b 的范围。",
+        "steps": [
+          {
+            "title": "代入 y=a-x，整理二次方程",
+            "content": "将 $y=a-x$ 代入①：\n$$3x^2+2x(a-x)+3(a-x)^2=32$$\n$$3x^2+2ax-2x^2+3a^2-6ax+3x^2=32$$\n$$4x^2-4ax+3a^2-32=0$$\n\n故 $\\fbox{A}=4$，$\\fbox{B}=4$，$\\fbox{C}=3$。"
+          },
+          {
+            "title": "由判别式≥0 确定 a 的范围",
+            "content": "$x$ 为实数要求判别式 $\\Delta \\geq 0$：\n$$(4a)^2 - 4\\cdot4\\cdot(3a^2-32) \\geq 0$$\n$$16a^2-48a^2+512 \\geq 0$$\n$$-32a^2+512 \\geq 0 \\implies a^2 \\leq 16$$\n$$-4 \\leq a \\leq 4$$\n\n故 $\\fbox{DE}=-4$，$\\fbox{F}=4$。"
+          },
+          {
+            "title": "建立 b 与 a 的关系",
+            "content": "由 $x+y=a$ 和 $xy=b$，得 $x^2+y^2=a^2-2b$。\n\n代入①：\n$$3(x^2+y^2)+2xy=32$$\n$$3(a^2-2b)+2b=32$$\n$$3a^2-4b=32$$\n$$b=\\frac{3}{4}a^2-8$$\n\n故 $\\fbox{G}=3$，$\\fbox{H}=4$，$\\fbox{I}=8$。"
+          },
+          {
+            "title": "确定 b 的范围",
+            "content": "$b(a)=\\dfrac{3}{4}a^2-8$ 在 $-4\\leq a\\leq4$ 上为关于 $a^2$ 的增函数：\n\n$a=0$ 时：$b=-8$（最小值），$\\fbox{JK}=-8$\n$a=\\pm4$ 时：$b=\\dfrac{3}{4}\\times16-8=4$（最大值），$\\fbox{L}=4$\n\n故 $-8 \\leq b \\leq 4$。"
+          }
+        ],
+        "finalAnswer": "A=4，B=4，C=3；DE=−4，F=4；G=3，H=4，I=8；JK=−8，L=4"
+      }
+    }
+  ]
+}
