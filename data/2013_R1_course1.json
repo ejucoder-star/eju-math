@@ -1,0 +1,210 @@
+{
+  "metadata": {
+    "course": "course1",
+    "year": "2013",
+    "session": "1",
+    "courseNameJa": "数学1",
+    "courseNameEn": "Course 1 (Basic)",
+    "description": "基础课程｜文科方向",
+    "color": "#2563eb",
+    "examTitle": "2013年度（平成25年）第1回",
+    "examDate": "2013年6月"
+  },
+  "questions": [
+    {
+      "id": "c1-I-1",
+      "number": "I-1",
+      "topic": "二次函数参数与单调性",
+      "topicTag": "二次函数",
+      "humanVerified": false,
+      "japanese": "设二次函数 $y=ax^2+bx+c$ 满足下列条件【*】：\n\n【*】在 $x=-1$ 时，$y=-8$；在 $x=3$ 时，$y=16$。\n并且在区间 $-1\\leqq x\\leqq 3$ 上，$x$ 增大时 $y$ 也增大。\n\n求 $a,b,c$ 满足的条件。\n\n由条件【*】可将 $b,c$ 用 $a$ 表示为\n$$b=\\fbox{AB}a+\\fbox{C}\\qquad\\cdots\\cdots\\cdots\\ ①$$\n$$c=\\fbox{DE}a-\\fbox{F}\\qquad\\cdots\\cdots\\cdots\\ ②$$\n\n因此，该二次函数图像的对称轴方程为\n$$x=\\fbox{G}-\\dfrac{\\fbox{H}}{a}$$\n\n所以，所求条件是：$a,b,c$ 满足关系式 ①、②，且 $a$ 满足\n$$0<a\\leqq \\dfrac{\\fbox{I}}{\\fbox{J}}\\quad\\text{或}\\quad \\dfrac{\\fbox{KL}}{\\fbox{M}}\\leqq a<0$$",
+      "solution": {
+        "translation": "已知二次函数在 $x=-1,3$ 处函数值分别为 $-8,16$，且在区间 $[-1,3]$ 上单调递增。先由两点条件把 $b,c$ 表成 $a$，再用导数（或增减性）确定 $a$ 的范围。",
+        "analysis": "由函数值条件列方程，解得 $b,c$ 与 $a$ 的线性关系；再由 $y'=2ax+b$ 在区间 $[-1,3]$ 的最小值不小于 0（且 $a\\neq0$）得到 $a$ 的取值范围。",
+        "steps": [
+          {
+            "title": "由两点条件求 $b$",
+            "content": "由 $y=ax^2+bx+c$，代入\n$x=-1,\\ y=-8$：\n$$a-b+c=-8$$\n$x=3,\\ y=16$：\n$$9a+3b+c=16$$\n两式相减：\n$$8a+4b=24\\Rightarrow 2a+b=6\\Rightarrow b=6-2a$$\n故\n$$\\fbox{AB}=-2,\\ \\fbox{C}=6.$$",
+            "why": "先消去 $c$，可最快得到 $b$ 与 $a$ 的关系。"
+          },
+          {
+            "title": "求 $c$ 与对称轴",
+            "content": "将 $b=6-2a$ 代回 $a-b+c=-8$：\n$$a-(6-2a)+c=-8\\Rightarrow c=-3a-2$$\n即\n$$c=\\fbox{DE}a-\\fbox{F},\\quad \\fbox{DE}=-3,\\ \\fbox{F}=2.$$\n\n对称轴：\n$$x=-\\frac{b}{2a}=-\\frac{6-2a}{2a}=1-\\frac{3}{a}$$\n故\n$$\\fbox{G}=1,\\ \\fbox{H}=3.$$",
+            "why": "二次函数 $ax^2+bx+c$ 的对称轴恒为 $x=-\\frac b{2a}$。"
+          },
+          {
+            "title": "由区间递增求 $a$ 的范围",
+            "content": "导数\n$$y'=2ax+b=2ax+6-2a=2a(x-1)+6.$$\n要在 $[-1,3]$ 上递增，需该区间内最小导数 $\\geqq0$。\n\n- 当 $a>0$ 时，$y'$ 随 $x$ 增大而增大，最小值在 $x=-1$：\n$$y'(-1)=6-4a\\geqq0\\Rightarrow a\\leqq\\frac32.$$ \n结合 $a>0$：\n$$0<a\\leqq\\frac32.$$\n\n- 当 $a<0$ 时，$y'$ 随 $x$ 增大而减小，最小值在 $x=3$：\n$$y'(3)=6+4a\\geqq0\\Rightarrow a\\geqq-\\frac32.$$ \n结合 $a<0$：\n$$-\\frac32\\leqq a<0.$$\n\n综上：\n$$0<a\\leqq\\frac32\\quad\\text{或}\\quad -\\frac32\\leqq a<0.$$ \n故\n$$\\fbox{I}=3,\\ \\fbox{J}=2,\\ \\fbox{KL}=-3,\\ \\fbox{M}=2.$$",
+            "why": "线性导数在闭区间上的最小值一定出现在端点。"
+          }
+        ],
+        "finalAnswer": "填空结果：\n$AB=-2,\\ C=6,\\ DE=-3,\\ F=2,\\ G=1,\\ H=3,\\ I=3,\\ J=2,\\ KL=-3,\\ M=2$。\n\n参数条件：\n$$b=6-2a,\\quad c=-3a-2,$$\n且\n$$0<a\\leqq\\frac32\\ \\text{或}\\ -\\frac32\\leqq a<0.$$"
+      },
+      "answer_match": true,
+      "needs_review": true
+    },
+    {
+      "id": "c1-I-2",
+      "number": "I-2",
+      "topic": "区间与集合运算",
+      "topicTag": "集合与二次不等式",
+      "humanVerified": false,
+      "japanese": "设实数 $a,b,c,d$ 满足 $a<b<c<d$，并定义\n$$A=\\{x\\mid a\\leqq x\\leqq c\\},\\quad B=\\{x\\mid b\\leqq x\\leqq d\\}$$\n且\n$$A\\cap B=\\{x\\mid x^2-4x+3\\leqq0\\}$$\n\n回答下列问题。\n\n(1) 设\n$$A\\cup B=\\{x\\mid x^2-5x-24\\leqq0\\}$$\n求 $a,b,c,d$。\n\n即\n$$a=\\fbox{NO},\\quad b=\\fbox{P},\\quad c=\\fbox{Q},\\quad d=\\fbox{R}$$\n\n(2) 设\n$$A\\cap \\overline{B}=\\{x\\mid x^2+5x-6\\leqq0\\ \\text{且}\\ x\\neq1\\}$$\n且\n$$\\overline{A}\\cap B=\\{x\\mid x^2-9x+18\\leqq0\\ \\text{且}\\ x\\neq3\\}$$\n求 $a,b,c,d$。\n\n即\n$$a=\\fbox{ST},\\quad b=\\fbox{U},\\quad c=\\fbox{V},\\quad d=\\fbox{W}$$",
+      "solution": {
+        "translation": "已知 $A=[a,c],\\ B=[b,d],\\ a<b<c<d$，并通过二次不等式给出交集、并集及与补集的交。先把不等式对应的区间求出，再和区间运算结果对比即可。",
+        "analysis": "由 $a<b<c<d$ 可知：$A\\cap B=[b,c]$，$A\\cup B=[a,d]$，$A\\cap\\overline B=[a,b)$，$\\overline A\\cap B=(c,d]$。将这些与题目给定区间逐一对应求参数。",
+        "steps": [
+          {
+            "title": "先由 $A\\cap B$ 确定 $b,c$",
+            "content": "$$x^2-4x+3=(x-1)(x-3)\\leqq0\\Rightarrow 1\\leqq x\\leqq3$$\n故\n$$A\\cap B=[1,3]$$\n又因 $a<b<c<d$ 时 $A\\cap B=[b,c]$，所以\n$$b=1,\\ c=3.$$",
+            "why": "两个闭区间 $[a,c]$ 与 $[b,d]$（且 $a<b<c<d$）的重叠部分正是 $[b,c]$。"
+          },
+          {
+            "title": "解(1)：由并集确定 $a,d$",
+            "content": "$$x^2-5x-24=(x-8)(x+3)\\leqq0\\Rightarrow -3\\leqq x\\leqq8$$\n所以\n$$A\\cup B=[-3,8].$$\n而 $a<b<c<d$ 时 $A\\cup B=[a,d]$，故\n$$a=-3,\\ d=8.$$ \n综上 (1)：\n$$a=-3,\\ b=1,\\ c=3,\\ d=8.$$ \n即\n$$\\fbox{NO}=-3,\\ \\fbox{P}=1,\\ \\fbox{Q}=3,\\ \\fbox{R}=8.$$",
+            "why": null
+          },
+          {
+            "title": "解(2)：由与补集的交确定四个参数",
+            "content": "先看\n$$x^2+5x-6=(x+6)(x-1)\\leqq0\\Rightarrow -6\\leqq x\\leqq1,$$\n再结合 $x\\ne1$，得\n$$A\\cap\\overline B=[-6,1).$$\n而在 $a<b<c<d$ 下，$A\\cap\\overline B=[a,b)$，故\n$$a=-6,\\ b=1.$$ \n\n再看\n$$x^2-9x+18=(x-3)(x-6)\\leqq0\\Rightarrow 3\\leqq x\\leqq6,$$\n结合 $x\\ne3$，得\n$$\\overline A\\cap B=(3,6].$$\n而 $\\overline A\\cap B=(c,d]$，故\n$$c=3,\\ d=6.$$ \n\n综上 (2)：\n$$a=-6,\\ b=1,\\ c=3,\\ d=6.$$ \n即\n$$\\fbox{ST}=-6,\\ \\fbox{U}=1,\\ \\fbox{V}=3,\\ \\fbox{W}=6.$$",
+            "why": "端点是否取到由闭区间/开区间决定：$A\\cap\\overline B$ 在 $b$ 处开，$\\overline A\\cap B$ 在 $c$ 处开。"
+          }
+        ],
+        "finalAnswer": "(1) $a=-3,\\ b=1,\\ c=3,\\ d=8$。\n\n(2) $a=-6,\\ b=1,\\ c=3,\\ d=6$。\n\n填空：\n$NO=-3,\\ P=1,\\ Q=3,\\ R=8,\\ ST=-6,\\ U=1,\\ V=3,\\ W=6$。"
+      },
+      "answer_match": true,
+      "needs_review": true
+    },
+    {
+      "id": "c1-II-1",
+      "number": "II-1",
+      "topic": "二项展开与系数最大值",
+      "topicTag": "二项式定理",
+      "humanVerified": false,
+      "japanese": "考虑关于 $x,y$ 的多项式\n$$P=(3x+4y+1)^5$$\n设 $P$ 的展开式中 $x^n y$ 的系数为 $a_n$（$n$ 为整数）。并约定 $x^0=y^0=1$。\n\n(1) 求 $a_1$。注意\n$$P=\\{(3x+1)+4y\\}^5$$\n此时，$xy$ 项出现在\n$$\\fbox{AB}(3x+1)^{\\fbox{C}}y$$\n中。又 $(3x+1)^{\\fbox{C}}$ 的展开式中 $x$ 的系数为 $\\fbox{DE}$。\n因此\n$$a_1=\\fbox{FGH}$$\n\n(2) $n$ 的可能取值共有 $\\fbox{I}$ 个；并且 $a_n$ 在 $n=\\fbox{J}$ 时取最大值。",
+      "solution": {
+        "translation": "把 $P$ 视为 $((3x+1)+4y)^5$，先提取一次 $y$ 的项，再从其余部分读取 $x^n$ 系数。",
+        "analysis": "因为只要 $x^n y$（$y$ 的次数为 1），所以在二项展开中只能取 $(4y)^1$。于是系数问题化为 $(3x+1)^4$ 的各项系数问题。",
+        "steps": [
+          {
+            "title": "提取 $y$ 的一次项",
+            "content": "$$P=((3x+1)+4y)^5=\\sum_{k=0}^5 \\binom{5}{k}(3x+1)^{5-k}(4y)^k.$$ \n要得到 $x^n y$，必须 $k=1$，故对应部分为\n$$\\binom51(3x+1)^4(4y)=20(3x+1)^4y.$$ \n因此\n$$\\fbox{AB}=20,\\quad \\fbox{C}=4.$$",
+            "why": "若 $k\\neq1$，$y$ 的次数就不是 1。"
+          },
+          {
+            "title": "求 $a_1$",
+            "content": "$(3x+1)^4$ 中 $x$ 的系数为\n$$\\binom41\\cdot3=12,$$\n所以\n$$a_1=20\\times12=240.$$ \n即\n$$\\fbox{DE}=12,\\quad \\fbox{FGH}=240.$$",
+            "why": null
+          },
+          {
+            "title": "求 $n$ 的范围与最大系数位置",
+            "content": "由\n$$x^n y\\text{ 的系数 }a_n=20\\cdot\\binom4n\\cdot3^n,\\quad n=0,1,2,3,4,$$\n可知 $n$ 一共有 5 个取值。\n逐个比较：\n$$a_0=20,\\ a_1=240,\\ a_2=1080,\\ a_3=2160,\\ a_4=1620,$$\n最大为 $a_3$。\n故\n$$\\fbox{I}=5,\\quad \\fbox{J}=3.$$",
+            "why": "本质是比较 $\\binom4n3^n$ 在 $n=0\\sim4$ 的大小。"
+          }
+        ],
+        "finalAnswer": "填空结果：\n$AB=20,\\ C=4,\\ DE=12,\\ FGH=240,\\ I=5,\\ J=3$。\n\n结论：$a_1=240$，且 $a_n$ 在 $n=3$ 时最大。"
+      },
+      "answer_match": true,
+      "needs_review": true
+    },
+    {
+      "id": "c1-II-2",
+      "number": "II-2",
+      "topic": "整式变形与整数解",
+      "topicTag": "因式分解与整数条件",
+      "humanVerified": false,
+      "japanese": "考虑整式\n$$P=(x-1)^2(y+5)+(2x-3)(y+4)-(x-1)^2$$\n\n(1) 变形 $P$，可得\n$$P=(x^2-\\fbox{K})(y+\\fbox{L})$$\n\n(2) 使 $P=7$ 的整数对 $(x,y)$ 为\n$$(\\pm\\fbox{M},\\ \\fbox{NOP}),\\ (\\pm\\fbox{Q},\\ \\fbox{RS})$$\n\n(3) 设 $a$ 为有理数。若\n$$x=\\sqrt2+2\\sqrt3,\\quad y=a+\\sqrt6$$\n求使 $P$ 为有理数的 $a$，即 $\\fbox{TU}$。",
+      "solution": {
+        "translation": "先将原式按 $(y+4)$ 因式提取，再利用 $P=7$ 的因数分解求整数解。最后把给定根式代入，令无理部分系数为 0。",
+        "analysis": "本题核心是先化简为 $P=(x^2-2)(y+4)$。第(2)问转化为两个整数乘积等于 7；第(3)问转化为含 $\\sqrt6$ 的线性表达式，其系数为 0 时结果有理。",
+        "steps": [
+          {
+            "title": "化简 $P$",
+            "content": "原式\n$$P=(x-1)^2(y+5)+(2x-3)(y+4)-(x-1)^2$$\n前后两项合并：\n$$(x-1)^2(y+5)-(x-1)^2=(x-1)^2(y+4).$$\n所以\n$$P=[(x-1)^2+(2x-3)](y+4).$$\n而\n$$(x-1)^2+2x-3=x^2-2x+1+2x-3=x^2-2,$$\n故\n$$P=(x^2-2)(y+4).$$\n即\n$$\\fbox{K}=2,\\quad \\fbox{L}=4.$$",
+            "why": "先把同因子 $(x-1)^2$ 合并，可以快速看到公共因子 $(y+4)$。"
+          },
+          {
+            "title": "求 $P=7$ 的整数解",
+            "content": "由化简式：\n$$(x^2-2)(y+4)=7.$$ \n令\n$$d=x^2-2,\\ e=y+4,\\ de=7.$$ \n因为 7 的整数因子只有 $\\pm1,\\pm7$，故 $d\\in\\{1,7,-1,-7\\}$。\n\n分别检查 $x^2=d+2$：\n- $d=7\\Rightarrow x^2=9\\Rightarrow x=\\pm3$，此时 $e=1\\Rightarrow y=-3$；\n- $d=-1\\Rightarrow x^2=1\\Rightarrow x=\\pm1$，此时 $e=-7\\Rightarrow y=-11$；\n- $d=1\\Rightarrow x^2=3$（不行）；\n- $d=-7\\Rightarrow x^2=-5$（不行）。\n\n故整数解为\n$$(x,y)=(\\pm1,-11),\\ (\\pm3,-3).$$\n即\n$$\\fbox{M}=1,\\ \\fbox{NOP}=-11,\\ \\fbox{Q}=3,\\ \\fbox{RS}=-3.$$",
+            "why": "把等式变为“两个整数乘积=7”后，只需有限枚举因子。"
+          },
+          {
+            "title": "代入根式并求有理条件",
+            "content": "给定\n$$x=\\sqrt2+2\\sqrt3\\Rightarrow x^2=2+12+4\\sqrt6=14+4\\sqrt6,$$\n故\n$$x^2-2=12+4\\sqrt6=4(3+\\sqrt6).$$\n又\n$$y=a+\\sqrt6\\Rightarrow y+4=a+4+\\sqrt6.$$ \n于是\n$$P=(x^2-2)(y+4)=4(3+\\sqrt6)(a+4+\\sqrt6).$$\n展开：\n$$(3+\\sqrt6)(a+4+\\sqrt6)=(3a+18)+(a+7)\\sqrt6,$$\n所以\n$$P=4(3a+18)+4(a+7)\\sqrt6.$$ \n要使 $P$ 为有理数，需 $\\sqrt6$ 项系数为 0：\n$$a+7=0\\Rightarrow a=-7.$$ \n即\n$$\\fbox{TU}=-7.$$",
+            "why": "含单一无理基 $\\sqrt6$ 的表达式有理，当且仅当其系数为 0。"
+          }
+        ],
+        "finalAnswer": "填空结果：\n$K=2,\\ L=4,\\ M=1,\\ NOP=-11,\\ Q=3,\\ RS=-3,\\ TU=-7$。\n\n并且\n$$P=(x^2-2)(y+4),$$\n$$P=7\\text{ 的整数解 }(x,y)=(\\pm1,-11),(\\pm3,-3),$$\n使 $P$ 为有理数时 $a=-7$。"
+      },
+      "answer_match": true,
+      "needs_review": true
+    },
+    {
+      "id": "c1-III-1",
+      "number": "III-1",
+      "topic": "二次函数零点范围与参数关系",
+      "topicTag": "二次函数与韦达定理",
+      "humanVerified": false,
+      "japanese": "设 $a,b,c$ 为整数，且 $a>0$。二次函数\n$$y=ax^2-2bx+c$$\n与 $x$ 轴有交点，并且所有交点都在区间 $0<x<1$ 内。\n\n设问 (1)～(4) 中，从 ⓪～③ 选择正确选项；设问 (5) 填入具体数值。\n\n(1) 关于 $a$ 与 $b$ 的大小：$\\fbox{A}$。\n\n⓪ $a>b$　① $a<b$　② $a=b$　③ 无法判断\n\n(2) 关于 $b,c$ 的符号条件：$\\fbox{B}$。\n\n⓪ $b<0,\\ c<0$　① $b<0,\\ c>0$　② $b>0,\\ c<0$　③ $b>0,\\ c>0$\n\n(3) 关于 $2b$ 与 $a+c$ 的大小：$\\fbox{C}$。\n\n⓪ $2b>a+c$　① $2b<a+c$　② $2b=a+c$　③ 无法判断\n\n(4) 关于 $b$ 与 $c$ 的大小：$\\fbox{D}$。\n\n⓪ $b>c$　① $b<c$　② $b=c$　③ 无法判断\n\n(5) $a$ 的最小整数值为 $\\fbox{E}$。此时 $b=\\fbox{F},\\ c=\\fbox{G}$。",
+      "solution": {
+        "translation": "设两个实根为 $r_1,r_2$，由题意有 $0<r_1,r_2<1$。利用韦达定理把 $b,c$ 与根联系起来，再比较大小并求最小整数参数。",
+        "analysis": "由 $ax^2-2bx+c=a(x-r_1)(x-r_2)$ 得 $r_1+r_2=\\frac{2b}{a}$，$r_1r_2=\\frac ca$。根都在 $(0,1)$，故和与积分别落在 $(0,2)$、$(0,1)$，据此可判定(1)(2)(3)(4)。第(5)问在整数约束下逐一检验最小 $a$。",
+        "steps": [
+          {
+            "title": "由根的范围得到基本关系",
+            "content": "设根为 $r_1,r_2\\in(0,1)$，则\n$$ax^2-2bx+c=a(x-r_1)(x-r_2).$$\n比较系数：\n$$r_1+r_2=\\frac{2b}{a},\\quad r_1r_2=\\frac{c}{a}.$$\n由于 $0<r_1,r_2<1$，有\n$$0<r_1+r_2<2,\\quad 0<r_1r_2<1,$$\n即\n$$0<\\frac{2b}{a}<2\\Rightarrow 0<b<a,$$\n$$0<\\frac{c}{a}<1\\Rightarrow 0<c<a.$$",
+            "why": "和与积的范围直接由 $r_1,r_2\\in(0,1)$ 推出。"
+          },
+          {
+            "title": "判定 (1)(2)(3)(4)",
+            "content": "(1) 由 $0<b<a$ 得 $a>b$，故 $\\fbox{A}=0$。\n\n(2) 由 $b>0,c>0$，故 $\\fbox{B}=3$。\n\n(3) 比较 $2b$ 与 $a+c$：\n$$2b=a(r_1+r_2),\\quad a+c=a(1+r_1r_2).$$\n而\n$$1+r_1r_2-(r_1+r_2)=(1-r_1)(1-r_2)>0,$$\n故\n$$r_1+r_2<1+r_1r_2\\Rightarrow 2b<a+c,$$\n所以 $\\fbox{C}=1$。\n\n(4) 比较 $b$ 与 $c$：\n$$b-c=\\frac a2\\bigl[(r_1+r_2)-2r_1r_2\\bigr]\n=\\frac a2\\bigl[r_1(1-r_2)+r_2(1-r_1)\\bigr]>0,$$\n故 $b>c$，所以 $\\fbox{D}=0$。",
+            "why": null
+          },
+          {
+            "title": "求最小整数 $a$",
+            "content": "由 $0<b<a$、$0<c<a$ 且 $a,b,c\\in\\mathbb Z$，尝试最小 $a$：\n\n- $a=1$：不存在正整数 $b,c<a$。\n- $a=2$：只能 $b=c=1$，此时\n$$2x^2-2x+1$$\n判别式 $\\Delta=4-8<0$，无实根。\n- $a=3$：可行候选里仅 $(b,c)=(2,1)$ 满足 $\\Delta\\ge0$，但方程\n$$3x^2-4x+1=0$$\n根为 $1,\\frac13$，含端点 $1$，不满足 $0<x<1$。\n- $a=4$：取 $(b,c)=(2,1)$，得\n$$4x^2-4x+1=(2x-1)^2,$$\n根 $x=\\frac12\\in(0,1)$（重根），满足题意。\n\n故最小值为\n$$a=4,\\ b=2,\\ c=1,$$\n即 $\\fbox{E}=4,\\ \\fbox{F}=2,\\ \\fbox{G}=1$。",
+            "why": "按整数约束从小到大枚举 $a$ 最直接且严谨。"
+          }
+        ],
+        "finalAnswer": "选项与填空：\n$$A=0,\\ B=3,\\ C=1,\\ D=0,\\ E=4,\\ F=2,\\ G=1.$$"
+      },
+      "answer_match": true,
+      "needs_review": true
+    },
+    {
+      "id": "c1-IV-1",
+      "number": "IV-1",
+      "topic": "圆锥展开图与最短路径",
+      "topicTag": "立体几何与展开图",
+      "humanVerified": false,
+      "japanese": "设直圆锥的底面半径为 $1$，母线长为 $3$，顶点为 $O$。\n\n(1) 该圆锥侧面的展开图是一个扇形。该扇形的圆心角为 $\\fbox{ABC}^\\circ$，面积为 $\\fbox{D}\\pi$。\n\n(2) 在底面圆周上取两点 $A,B$，使线段 $AB$ 为直径。在线段 $OB$ 上取点 $P$。\n从点 $A$ 出发经过点 $P$ 再回到点 $A$，考虑这样的路径，记其长度为 $\\ell$。\n\n(i) 当 $OP=2$ 时，$\\ell$ 的最小值为 $\\fbox{E}\\sqrt{\\fbox{F}}$。\n\n(ii) 令点 $P$ 在线段 $OB$ 上变动。当 $\\ell$ 最小时，\n$$OP=\\dfrac{\\fbox{G}}{\\fbox{H}},\\qquad \\ell=\\fbox{I}\\sqrt{\\fbox{J}}.$$",
+      "questionDiagram": {
+        "svg": "<svg viewBox=\"0 0 560 260\" style=\"width:100%;max-width:520px;display:block;margin:10px auto\"><rect x=\"0\" y=\"0\" width=\"560\" height=\"260\" fill=\"#fff\"/><text x=\"16\" y=\"24\" font-size=\"14\" fill=\"#1f2937\" font-weight=\"700\">展开图示意（扇形）</text><circle cx=\"150\" cy=\"190\" r=\"3\" fill=\"#111827\"/><text x=\"136\" y=\"210\" font-size=\"12\" fill=\"#111827\">O</text><path d=\"M150 190 L300 190\" stroke=\"#2563eb\" stroke-width=\"2\"/><path d=\"M150 190 L75 60\" stroke=\"#2563eb\" stroke-width=\"2\"/><path d=\"M150 190 A150 150 0 0 1 300 190\" fill=\"none\" stroke=\"#9ca3af\" stroke-width=\"2\"/><text x=\"222\" y=\"152\" font-size=\"12\" fill=\"#6b7280\">120°</text><circle cx=\"300\" cy=\"190\" r=\"3\" fill=\"#111827\"/><text x=\"304\" y=\"194\" font-size=\"12\" fill=\"#111827\">A₁</text><circle cx=\"75\" cy=\"60\" r=\"3\" fill=\"#111827\"/><text x=\"52\" y=\"58\" font-size=\"12\" fill=\"#111827\">A₂</text><circle cx=\"225\" cy=\"60\" r=\"3\" fill=\"#dc2626\"/><text x=\"230\" y=\"56\" font-size=\"12\" fill=\"#dc2626\">B</text><line x1=\"150\" y1=\"190\" x2=\"225\" y2=\"60\" stroke=\"#dc2626\" stroke-width=\"2\"/><circle cx=\"187\" cy=\"125\" r=\"3\" fill=\"#16a34a\"/><text x=\"192\" y=\"122\" font-size=\"12\" fill=\"#16a34a\">P</text><line x1=\"187\" y1=\"125\" x2=\"300\" y2=\"190\" stroke=\"#7c3aed\" stroke-width=\"2\" stroke-dasharray=\"4,3\"/><line x1=\"187\" y1=\"125\" x2=\"75\" y2=\"60\" stroke=\"#7c3aed\" stroke-width=\"2\" stroke-dasharray=\"4,3\"/><text x=\"335\" y=\"24\" font-size=\"14\" fill=\"#1f2937\" font-weight=\"700\">对应：圆锥侧面最短路</text><ellipse cx=\"430\" cy=\"190\" rx=\"90\" ry=\"28\" fill=\"none\" stroke=\"#9ca3af\" stroke-width=\"2\"/><line x1=\"430\" y1=\"40\" x2=\"340\" y2=\"190\" stroke=\"#6b7280\" stroke-width=\"2\"/><line x1=\"430\" y1=\"40\" x2=\"520\" y2=\"190\" stroke=\"#6b7280\" stroke-width=\"2\"/><circle cx=\"430\" cy=\"40\" r=\"3\" fill=\"#111827\"/><text x=\"436\" y=\"44\" font-size=\"12\" fill=\"#111827\">O</text><circle cx=\"340\" cy=\"190\" r=\"3\" fill=\"#111827\"/><text x=\"328\" y=\"206\" font-size=\"12\" fill=\"#111827\">A</text><circle cx=\"520\" cy=\"190\" r=\"3\" fill=\"#111827\"/><text x=\"525\" y=\"206\" font-size=\"12\" fill=\"#111827\">B</text><circle cx=\"475\" cy=\"115\" r=\"3\" fill=\"#16a34a\"/><text x=\"481\" y=\"112\" font-size=\"12\" fill=\"#16a34a\">P</text><line x1=\"340\" y1=\"190\" x2=\"475\" y2=\"115\" stroke=\"#7c3aed\" stroke-width=\"2\"/><line x1=\"475\" y1=\"115\" x2=\"340\" y2=\"190\" stroke=\"#7c3aed\" stroke-width=\"2\" stroke-dasharray=\"4,3\"/></svg>"
+      },
+      "solution": {
+        "translation": "先用“弧长不变”求扇形圆心角与面积；再将圆锥侧面展开，用两份点 $A$（记为 $A_1,A_2$）把“经 $P$ 回到 $A$”转化为平面上 $PA_1+PA_2$ 的最短值问题。",
+        "analysis": "展开后扇形半径为 3，弧长等于底面周长 $2\\pi$，故圆心角 $=\\frac{2\\pi}{3}=120^\\circ$。又因 $AB$ 为底面直径，对应弧长为半周长 $\\pi$，在展开图中 $\\angle A_1OB=\\angle BOA_2=60^\\circ$，因此若 $OP=t$，则 $PA_1=PA_2=\\sqrt{t^2-3t+9}$，从而 $\\ell_{\\min}=2\\sqrt{t^2-3t+9}$。",
+        "steps": [
+          {
+            "title": "求扇形圆心角与面积",
+            "content": "侧面展开图是半径 $3$ 的扇形。其弧长等于底面圆周长：\n$$L=2\\pi\\cdot1=2\\pi.$$ \n扇形弧长公式 $L=r\\theta$ 给出\n$$\\theta=\\frac{L}{r}=\\frac{2\\pi}{3}=120^\\circ.$$ \n面积\n$$S=\\frac12 r^2\\theta=\\frac12\\cdot9\\cdot\\frac{2\\pi}{3}=3\\pi.$$ \n所以\n$$\\fbox{ABC}=120,\\quad \\fbox{D}=3.$$",
+            "why": "展开图保持母线长度（半径）与底面周长（扇形弧长）不变。"
+          },
+          {
+            "title": "建立展开图中的长度表达式",
+            "content": "把侧面沿母线 $OA$ 剪开并展开，物理同一点 $A$ 变成两点 $A_1,A_2$。因为 $AB$ 是底面直径，对应底面半周长 $\\pi$，在展开图里对应圆心角\n$$\\frac{\\pi}{3}=60^\\circ,$$\n故 $\\angle A_1OB=\\angle BOA_2=60^\\circ$。\n\n设 $OP=t$（$0\\le t\\le3$），点 $P$ 在射线 $OB$ 上。由余弦定理：\n$$PA_1^2=3^2+t^2-2\\cdot3\\cdot t\\cos60^\\circ=t^2-3t+9,$$\n同理 $PA_2^2=t^2-3t+9$。\n\n经 $P$ 从 $A$ 回到 $A$ 的最短路对应\n$$\\ell=PA_1+PA_2=2\\sqrt{t^2-3t+9}.$$",
+            "why": "展开后曲面测地线变为平面直线段，且“回到同一点 A”要用两份拷贝 $A_1,A_2$ 表示。"
+          },
+          {
+            "title": "代入 (i) 与求 (ii) 最小值",
+            "content": "(i) 当 $OP=t=2$：\n$$\\ell=2\\sqrt{2^2-3\\cdot2+9}=2\\sqrt7.$$ \n故\n$$\\fbox{E}=2,\\ \\fbox{F}=7.$$ \n\n(ii) 令\n$$f(t)=t^2-3t+9=\\left(t-\\frac32\\right)^2+\\frac{27}{4},$$\n最小值在 $t=\\frac32$ 处取得。\n因此\n$$OP=\\frac32,\\quad \\ell_{\\min}=2\\sqrt{\\frac{27}{4}}=\\sqrt{27}=3\\sqrt3.$$ \n故\n$$\\fbox{G}=3,\\ \\fbox{H}=2,\\ \\fbox{I}=3,\\ \\fbox{J}=3.$$",
+            "why": "二次函数配方后可直接读出最小值点。"
+          }
+        ],
+        "finalAnswer": "填空结果：\n$$ABC=120,\\ D=3,\\ E=2,\\ F=7,\\ G=3,\\ H=2,\\ I=3,\\ J=3.$$ \n\n即：\n- 扇形圆心角 $120^\\circ$，面积 $3\\pi$；\n- 当 $OP=2$ 时，$\\ell_{\\min}=2\\sqrt7$；\n- 点 $P$ 可动时，最小时 $OP=\\frac32$，且 $\\ell=3\\sqrt3$。"
+      },
+      "answer_match": true,
+      "needs_review": true
+    }
+  ]
+}
