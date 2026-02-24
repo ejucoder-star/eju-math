@@ -1,0 +1,213 @@
+{
+  "metadata": {
+    "course": "course1",
+    "year": "2012",
+    "session": "1",
+    "courseNameJa": "数学1",
+    "courseNameEn": "Course 1 (Basic)",
+    "description": "基础课程｜文科方向",
+    "color": "#2563eb",
+    "examTitle": "2012年度（平成24年）第1回",
+    "examDate": "2012年6月"
+  },
+  "questions": [
+    {
+      "id": "c1-I-1",
+      "number": "I-1",
+      "topic": "二次函数的平移与切线",
+      "topicTag": "二次函数",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "设 $a, b$ 为常数，$a > 0$。将二次函数 $y = 4x^2 + 2ax + b$ 的图像沿 $x$ 轴方向平移 $a$，沿 $y$ 轴方向平移 $1-7a$。平移后的图像过点 $(0, 4)$，此时\n$$b = \\fbox{AB}\\,a^2 + \\fbox{C}\\,a + \\fbox{D}$$\n表示平移后图像的二次函数为\n$$y = \\fbox{E}\\,x^2 - \\fbox{F}\\,ax + \\fbox{G} \\quad \\cdots①$$\n\n当二次函数①的图像与 $x$ 轴相切时，$a = \\dfrac{\\fbox{H}}{\\fbox{I}}$，此时切点的 $x$ 坐标为 $x = \\fbox{J}$。",
+      "solution": {
+        "translation": "对二次函数进行平移，利用过定点条件确定参数，再用切线条件求 a 的值。",
+        "analysis": "平移后代入点 $(0,4)$ 求 $b$ 与 $a$ 的关系；化简得到新函数；令判别式为零求 $a$。",
+        "steps": [
+          {
+            "title": "写出平移后的函数表达式",
+            "content": "将图像向 $x$ 轴方向平移 $a$、$y$ 轴方向平移 $1-7a$，得\n$$y = 4(x-a)^2 + 2a(x-a) + b + (1-7a)$$\n展开：\n$$y = 4x^2 - 8ax + 4a^2 + 2ax - 2a^2 + b + 1 - 7a$$\n$$= 4x^2 - 6ax + 2a^2 + b + 1 - 7a$$"
+          },
+          {
+            "title": "代入点 (0, 4) 求 b",
+            "content": "令 $x=0$，$y=4$：\n$$4 = 2a^2 + b + 1 - 7a$$\n$$b = -2a^2 + 7a + 3$$\n故 $\\fbox{AB}=-2$，$\\fbox{C}=7$，$\\fbox{D}=3$。"
+          },
+          {
+            "title": "代入 b，化简平移后的函数",
+            "content": "将 $b = -2a^2+7a+3$ 代入展开式：\n$$y = 4x^2 - 6ax + 2a^2 + (-2a^2+7a+3) + 1 - 7a$$\n$$= 4x^2 - 6ax + 4$$\n故 $\\fbox{E}=4$，$\\fbox{F}=6$，$\\fbox{G}=4$。"
+          },
+          {
+            "title": "令判别式为零，求 a",
+            "content": "函数① $y=4x^2-6ax+4$ 与 $x$ 轴相切，即判别式 $\\Delta = 0$：\n$$(6a)^2 - 4\\cdot4\\cdot4 = 0$$\n$$36a^2 = 64 \\implies a^2 = \\frac{16}{9}$$\n因 $a>0$，故 $a = \\dfrac{4}{3}$，即 $\\fbox{H}=4$，$\\fbox{I}=3$。"
+          },
+          {
+            "title": "求切点的 x 坐标",
+            "content": "切点即顶点，$x$ 坐标为\n$$x = \\frac{6a}{2\\times4} = \\frac{3a}{4} = \\frac{3\\times\\frac{4}{3}}{4} = 1$$\n故 $\\fbox{J}=1$。"
+          }
+        ],
+        "finalAnswer": "AB=−2，C=7，D=3；E=4，F=6，G=4；H=4，I=3；J=1"
+      }
+    },
+    {
+      "id": "c1-I-2",
+      "number": "I-2",
+      "topic": "多项式的有理数值与素数值",
+      "topicTag": "代数运算",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "考虑多项式 $P = x^2 + 2(a-1)x - 8a - 8$。\n\n(1) 设 $a$ 为有理数，当 $x = 1-\\sqrt{2}$ 时 $P$ 的值为有理数，此时 $a = \\fbox{K}$，对应的 $P$ 值为 $P = \\fbox{LM}$。\n\n(2) 设 $x, a$ 为正整数，对 $P$ 进行因式分解得\n$$P = (x - \\fbox{N})(x + \\fbox{O}\\,a + \\fbox{P})$$\n故 $x = \\fbox{Q}$。使 $P$ 为素数的正整数 $a$ 中最小的是 $a = \\fbox{R}$，此时 $P = \\fbox{ST}$。",
+      "solution": {
+        "translation": "分析多项式在无理数处取有理值的条件，以及在正整数处取素数值的条件。",
+        "analysis": "(1) 代入无理数，令无理部分系数为零；(2) 因式分解后，利用素数只有两个因数为1和本身的性质。",
+        "steps": [
+          {
+            "title": "(1) 代入 x = 1−√2，分离有理与无理部分",
+            "content": "$(1-\\sqrt{2})^2 = 3-2\\sqrt{2}$\n\n$$P = (3-2\\sqrt{2}) + 2(a-1)(1-\\sqrt{2}) - 8a - 8$$\n$$= 3-2\\sqrt{2} + 2(a-1) - 2(a-1)\\sqrt{2} - 8a - 8$$\n$$= \\bigl(3+2a-2-8a-8\\bigr) + \\bigl(-2-2(a-1)\\bigr)\\sqrt{2}$$\n$$= (-6a-7) + (-2a)\\sqrt{2}$$"
+          },
+          {
+            "title": "(1) 令无理部分为零",
+            "content": "$P$ 为有理数要求 $\\sqrt{2}$ 的系数为零：\n$$-2a = 0 \\implies a = 0$$\n故 $\\fbox{K}=0$，此时 $P = -6(0)-7 = -7$，故 $\\fbox{LM}=-7$。"
+          },
+          {
+            "title": "(2) 对 P 进行因式分解",
+            "content": "$$P = x^2 + 2(a-1)x - 8(a+1)$$\n\n注意到：\n$$P = (x-4)(x+2) + 2a(x-4) = (x-4)(x+2a+2)$$\n\n验证：$(x-4)(x+2a+2) = x^2+(2a-2)x-8a-8 = x^2+2(a-1)x-8(a+1)$ ✓\n\n故 $\\fbox{N}=4$，$\\fbox{O}=2$，$\\fbox{P}=2$。"
+          },
+          {
+            "title": "(2) 确定 x 的值与最小素数 a",
+            "content": "$P = (x-4)(x+2a+2)$ 为正素数，须一个因子为 $1$、另一个为素数。\n\n因 $x, a$ 为正整数，$x+2a+2 \\geq 5 > 1$，故只能 $x-4=1$，即 $x=5$，$\\fbox{Q}=5$。\n\n此时 $P = 5+2a+2 = 2a+7$，需 $2a+7$ 为素数。\n\n$a=1$：$2(1)+7=9=3\\times3$，非素数。\n$a=2$：$2(2)+7=11$，素数。\n\n故 $\\fbox{R}=2$，$\\fbox{ST}=11$。"
+          }
+        ],
+        "finalAnswer": "K=0，LM=−7；N=4，O=2，P=2；Q=5；R=2，ST=11"
+      }
+    },
+    {
+      "id": "c1-II-1",
+      "number": "II-1",
+      "topic": "骰子随机游走的概率",
+      "topicTag": "概率",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "坐标平面上的点 P 初始在原点 $(0,0)$，按以下规则移动：\n\n投一颗骰子，若出现 3 的倍数（即 3 或 6），点 P 向 $x$ 轴正方向移动 1；否则向 $y$ 轴正方向移动 1。\n\n共投骰子 4 次。\n\n(1) P 到达点 $(3,1)$ 的概率为 $\\dfrac{\\fbox{A}}{\\fbox{BC}}$。\n\n(2) P 能到达的点共有 $\\fbox{D}$ 个，这些点的坐标用整数 $k$ 表示为 $(k,\\, \\fbox{E}-k)$（$\\fbox{F} \\leq k \\leq \\fbox{G}$）。\n\nP 到达点 $(k, \\fbox{E}-k)$ 的概率记为 $p_k$，则 $p_k$ 的最大值为 $\\dfrac{\\fbox{HI}}{\\fbox{BC}}$，最小值为 $\\dfrac{\\fbox{J}}{\\fbox{BC}}$。\n\n(3) P 经过点 $(1,1)$ 后到达点 $(2,2)$ 的概率为 $\\dfrac{\\fbox{KL}}{\\fbox{BC}}$。",
+      "solution": {
+        "translation": "分析骰子随机游走中到达各点的概率，以及条件路径的概率。",
+        "analysis": "出现3的倍数的概率为1/3，不出现为2/3；到达(k,4-k)需要恰好 k 次出现3的倍数；利用二项分布公式计算各概率。",
+        "steps": [
+          {
+            "title": "基本概率",
+            "content": "6面骰子中，3的倍数为3和6，共2个。\n出现3的倍数的概率：$p = \\dfrac{2}{6} = \\dfrac{1}{3}$，否则概率：$q = \\dfrac{2}{3}$。"
+          },
+          {
+            "title": "(1) 到达 (3,1) 的概率",
+            "content": "到达 $(3,1)$ 需 4 次中恰好 3 次出现3的倍数：\n$$P = \\binom{4}{3}\\left(\\frac{1}{3}\\right)^3\\left(\\frac{2}{3}\\right)^1 = 4\\cdot\\frac{1}{27}\\cdot\\frac{2}{3} = \\frac{8}{81}$$\n故 $\\fbox{A}=8$，$\\fbox{BC}=81$。"
+          },
+          {
+            "title": "(2) 可到达的点与概率极值",
+            "content": "4次投掷后，设出现3的倍数 $k$ 次，则到达 $(k, 4-k)$，$k = 0,1,2,3,4$，共 $\\fbox{D}=5$ 个点。$\\fbox{E}=4$，$\\fbox{F}=0$，$\\fbox{G}=4$。\n\n到达 $(k,4-k)$ 的概率：\n$$p_k = \\binom{4}{k}\\left(\\frac{1}{3}\\right)^k\\left(\\frac{2}{3}\\right)^{4-k}$$\n\n各值计算：\n$p_0 = \\dfrac{16}{81}$，$p_1 = \\dfrac{32}{81}$，$p_2 = \\dfrac{24}{81}$，$p_3 = \\dfrac{8}{81}$，$p_4 = \\dfrac{1}{81}$\n\n最大值 $p_1 = \\dfrac{32}{81}$，故 $\\fbox{HI}=32$。\n最小值 $p_4 = \\dfrac{1}{81}$，故 $\\fbox{J}=1$。",
+            "why": "二项分布在 $p<1/2$ 时，概率随 $k$ 增大而先增后减，$k=1$ 处取最大值。"
+          },
+          {
+            "title": "(3) 经过 (1,1) 到达 (2,2) 的概率",
+            "content": "经过 $(1,1)$：前 2 次中恰好 1 次出现3的倍数，概率\n$$P_1 = \\binom{2}{1}\\cdot\\frac{1}{3}\\cdot\\frac{2}{3} = \\frac{4}{9}$$\n\n再从 $(1,1)$ 到 $(2,2)$：后 2 次中恰好 1 次出现3的倍数，概率\n$$P_2 = \\binom{2}{1}\\cdot\\frac{1}{3}\\cdot\\frac{2}{3} = \\frac{4}{9}$$\n\n总概率：\n$$P = P_1 \\times P_2 = \\frac{4}{9}\\times\\frac{4}{9} = \\frac{16}{81}$$\n\n故 $\\fbox{KL}=16$。"
+          }
+        ],
+        "finalAnswer": "A=8，BC=81；D=5，E=4，F=0，G=4；HI=32，J=1；KL=16"
+      }
+    },
+    {
+      "id": "c1-II-2",
+      "number": "II-2",
+      "topic": "三角形内分点构成的小三角形面积",
+      "topicTag": "三角形面积",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "三角形 ABC 的三条边 AB、BC、CA 分别被点 D、E、F 以 $k:(1-k)$ 的比例内分，其中 $0 < k \\leq \\dfrac{1}{2}$。\n\n(1) $k = \\dfrac{1}{3}$ 时，考虑△ABC 的面积是△DEF 面积的几倍。\n\n$$\\triangle ADF = \\triangle BED = \\triangle CFE = \\dfrac{\\fbox{M}}{\\fbox{N}}\\,\\triangle ABC$$\n\n从而 $\\triangle ABC = \\fbox{O}\\,\\triangle DEF$。\n\n(2) △DEF 的面积为△ABC 面积的一半时，\n$$k(1-k) = \\dfrac{\\fbox{P}}{\\fbox{Q}}$$\n即 $k = \\dfrac{\\fbox{R} - \\sqrt{\\fbox{S}}}{\\fbox{T}}$。",
+      "solution": {
+        "translation": "利用内分点将三角形分成若干小三角形，建立面积关系。",
+        "analysis": "以顶点 A 为例，△ADF 与△ABC 共享顶角 A，面积比等于两邻边之比的乘积；三个角上的小三角形面积之和与△DEF 面积之和等于△ABC 面积。",
+        "steps": [
+          {
+            "title": "(1) 计算角上小三角形的面积比",
+            "content": "D 在 AB 上，AD = k·AB；F 在 CA 上，AF = (1-k)·CA。\n\n△ADF 与△ABC 共顶角 A，故\n$$\\frac{S_{\\triangle ADF}}{S_{\\triangle ABC}} = \\frac{AD}{AB}\\cdot\\frac{AF}{AC} = k(1-k)$$\n\n当 $k=\\dfrac{1}{3}$ 时：$k(1-k) = \\dfrac{1}{3}\\cdot\\dfrac{2}{3} = \\dfrac{2}{9}$\n\n故 $\\fbox{M}=2$，$\\fbox{N}=9$。\n\n同理 $S_{\\triangle BED} = S_{\\triangle CFE} = \\dfrac{2}{9}S_{\\triangle ABC}$。",
+            "why": "两三角形共顶角时，面积比 = 两夹边之比的乘积，即 $\\frac{S_{ADF}}{S_{ABC}} = \\frac{AD \\cdot AF}{AB \\cdot AC}$。"
+          },
+          {
+            "title": "(1) 求 △ABC 是 △DEF 的几倍",
+            "content": "$$S_{\\triangle ABC} = S_{\\triangle DEF} + 3\\times\\frac{2}{9}S_{\\triangle ABC}$$\n$$S_{\\triangle ABC} = S_{\\triangle DEF} + \\frac{2}{3}S_{\\triangle ABC}$$\n$$\\frac{1}{3}S_{\\triangle ABC} = S_{\\triangle DEF}$$\n$$S_{\\triangle ABC} = 3\\,S_{\\triangle DEF}$$\n\n故 $\\fbox{O}=3$。"
+          },
+          {
+            "title": "(2) 建立方程，求 k",
+            "content": "$S_{\\triangle DEF} = \\dfrac{1}{2}S_{\\triangle ABC}$ 时：\n$$S_{\\triangle ABC} - 3k(1-k)S_{\\triangle ABC} = \\frac{1}{2}S_{\\triangle ABC}$$\n$$1 - 3k(1-k) = \\frac{1}{2}$$\n$$3k(1-k) = \\frac{1}{2} \\implies k(1-k) = \\frac{1}{6}$$\n\n故 $\\fbox{P}=1$，$\\fbox{Q}=6$。\n\n整理为二次方程：\n$$6k^2 - 6k + 1 = 0$$\n$$k = \\frac{6 \\pm \\sqrt{36-24}}{12} = \\frac{6 \\pm 2\\sqrt{3}}{12} = \\frac{3 \\pm \\sqrt{3}}{6}$$\n\n因 $0 < k \\leq \\dfrac{1}{2}$，取较小根：\n$$k = \\frac{3-\\sqrt{3}}{6}$$\n\n故 $\\fbox{R}=3$，$\\fbox{S}=3$，$\\fbox{T}=6$。"
+          }
+        ],
+        "finalAnswer": "M=2，N=9；O=3；P=1，Q=6；R=3，S=3，T=6"
+      }
+    },
+    {
+      "id": "c1-III-1",
+      "number": "III",
+      "topic": "抛物线上两点与三角形面积",
+      "topicTag": "二次函数与坐标几何",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "设 $m$ 为实数，在以原点 O 为原点的坐标平面上，抛物线 $y=x^2$ 上有两点\n$$A(a,\\, ma+1),\\quad B(b,\\, mb+1) \\quad (a<0<b)$$\n\n(1) 两点 A, B 的 $x$ 坐标 $a, b$ 用 $m$ 表示为\n$$a = \\dfrac{m-\\sqrt{D}}{\\fbox{A}},\\quad b = \\dfrac{m+\\sqrt{D}}{\\fbox{B}}$$\n其中 $D = m^2 + \\fbox{C}$。\n\n(2) 线段 AB 与 $y$ 轴的交点坐标为 $(0, c)$，则 $c = \\fbox{D}$。\n\n(3) 以 O, A, B 为顶点的三角形 OAB 的面积 $S$ 用 $a, b$ 表示为\n$$S = \\dfrac{1}{2}\\,\\fbox{E}$$\n（$\\fbox{E}$ 从选项 ⓪～⑤ 中选择：⓪ $a+b$，① $a-b$，② $b-a$，③ $a^2+b^2$，④ $a^2-b^2$，⑤ $b^2-a^2$）\n\n再用 $m$ 表示：\n$$S = \\dfrac{\\fbox{F}}{\\fbox{G}}\\sqrt{m^2+\\fbox{H}}$$\n\n$S$ 最小时 $m = \\fbox{I}$，最小值为 $S = \\fbox{J}$。",
+      "solution": {
+        "translation": "抛物线上两点决定一条直线，求直线与 y 轴交点及三角形面积的最小值。",
+        "analysis": "A, B 在 y=x² 上且 y 坐标形如 mx+1，联立后发现 a, b 是同一二次方程的两根；AB 的直线方程直接得 y 轴截距；面积用向量叉积公式或底×高计算。",
+        "steps": [
+          {
+            "title": "(1) 求 a, b 的表达式",
+            "content": "A 在 $y=x^2$ 上：$ma+1 = a^2$，即 $a^2 - ma - 1 = 0$。\n\n同理 $b^2 - mb - 1 = 0$，故 $a, b$ 是方程\n$$x^2 - mx - 1 = 0$$\n的两根。\n\n用求根公式：\n$$a = \\frac{m-\\sqrt{m^2+4}}{2},\\quad b = \\frac{m+\\sqrt{m^2+4}}{2}$$\n\n故 $\\fbox{A}=2$，$\\fbox{B}=2$，$\\fbox{C}=4$，$D = m^2+4$。",
+            "why": "由韦达定理：$a+b=m$，$ab=-1$，可以验证 $b-a = \\sqrt{(a+b)^2-4ab}=\\sqrt{m^2+4}$。"
+          },
+          {
+            "title": "(2) 求直线 AB 与 y 轴的交点",
+            "content": "直线 AB 的斜率：\n$$\\frac{(mb+1)-(ma+1)}{b-a} = \\frac{m(b-a)}{b-a} = m$$\n\n直线方程（过点 A）：\n$$y - (ma+1) = m(x-a) \\implies y = mx + 1$$\n\n令 $x=0$：$y=1$，故 $c = 1$，$\\fbox{D}=1$。"
+          },
+          {
+            "title": "(3) 计算三角形 OAB 的面积",
+            "content": "O = $(0,0)$，A = $(a, a^2)$，B = $(b, b^2)$。\n\n面积公式：\n$$S = \\frac{1}{2}|\\overrightarrow{OA}\\times\\overrightarrow{OB}| = \\frac{1}{2}|ab^2 - ba^2| = \\frac{1}{2}|ab||b-a|$$\n\n由 $ab=-1$，$|ab|=1$，$b>a$ 故 $b-a>0$：\n$$S = \\frac{1}{2}(b-a)$$\n\n故 $\\fbox{E}=②$（即 $b-a$）。\n\n代入 $b-a=\\sqrt{m^2+4}$：\n$$S = \\frac{1}{2}\\sqrt{m^2+4}$$\n\n故 $\\fbox{F}=1$，$\\fbox{G}=2$，$\\fbox{H}=4$。"
+          },
+          {
+            "title": "求 S 的最小值",
+            "content": "$S = \\dfrac{1}{2}\\sqrt{m^2+4}$ 在 $m=0$ 时最小：\n$$S_{\\min} = \\frac{1}{2}\\sqrt{4} = 1$$\n\n故 $\\fbox{I}=0$，$\\fbox{J}=1$。"
+          }
+        ],
+        "finalAnswer": "A=2，B=2，C=4；D（截距）=1；E=②（b−a）；F=1，G=2，H=4；I=0，J=1"
+      }
+    },
+    {
+      "id": "c1-IV-1",
+      "number": "IV",
+      "topic": "两个二次式之和、积与平方和的实数根条件",
+      "topicTag": "二次方程与不等式",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "设 $a$ 为实数，关于 $x$ 的二次式\n$$A = x^2 + ax + 1, \\qquad B = x^2 + (a+3)x + 4$$\n\n(1) 使 $A+B=0$ 有实数解 $x$ 的 $a$ 的取值范围为\n$$a \\leq -\\sqrt{\\fbox{AB}} - \\dfrac{\\fbox{C}}{\\fbox{D}}, \\qquad \\sqrt{\\fbox{AB}} - \\dfrac{\\fbox{C}}{\\fbox{D}} \\leq a$$\n\n(2) 使 $AB=0$ 有实数解 $x$ 的 $a$ 的取值范围为\n$$a \\leq \\fbox{EF}, \\qquad \\fbox{G} \\leq a$$\n\n(3) 使 $A^2+B^2=0$ 有实数解 $x$ 的情况，仅当 $a = \\fbox{H}$ 时，此时 $x = \\fbox{IJ}$。",
+      "solution": {
+        "translation": "分别分析 A+B=0、AB=0、A²+B²=0 有实数解的参数条件。",
+        "analysis": "(1) A+B 是关于 x 的二次方程，令判别式 ≥ 0；(2) AB=0 等价于 A=0 或 B=0 至少一个有实数根；(3) A²+B²=0 要求 A=B=0 同时成立。",
+        "steps": [
+          {
+            "title": "(1) 分析 A+B=0",
+            "content": "$$A+B = 2x^2 + (2a+3)x + 5 = 0$$\n\n有实数解的条件：判别式 $\\Delta \\geq 0$：\n$$(2a+3)^2 - 4\\cdot2\\cdot5 \\geq 0$$\n$$(2a+3)^2 \\geq 40$$\n$$|2a+3| \\geq 2\\sqrt{10}$$\n\n即 $2a+3 \\leq -2\\sqrt{10}$ 或 $2a+3 \\geq 2\\sqrt{10}$，化简：\n$$a \\leq -\\sqrt{10}-\\frac{3}{2} \\quad \\text{或} \\quad a \\geq \\sqrt{10}-\\frac{3}{2}$$\n\n故 $\\fbox{AB}=10$，$\\fbox{C}=3$，$\\fbox{D}=2$。"
+          },
+          {
+            "title": "(2) 分析 AB=0",
+            "content": "$AB=0$ 等价于 $A=0$ 或 $B=0$ 有实数根。\n\nA=0 有实数根：$\\Delta_A = a^2-4 \\geq 0 \\implies a\\leq-2$ 或 $a\\geq2$。\n\nB=0 有实数根：$\\Delta_B = (a+3)^2-16 \\geq 0 \\implies |a+3|\\geq4 \\implies a\\leq-7$ 或 $a\\geq1$。\n\n取并集：$a\\leq-2$ 或 $a\\geq1$。\n\n故 $\\fbox{EF}=-2$，$\\fbox{G}=1$。"
+          },
+          {
+            "title": "(3) 分析 A²+B²=0",
+            "content": "$A^2+B^2=0$ 要求 $A=0$ 且 $B=0$ 同时成立（实数的平方和为零，每项必须为零）。\n\n若 $x$ 同时满足 $A=0$ 和 $B=0$，则 $B-A=0$：\n$$B-A = 3x+3 = 0 \\implies x=-1$$\n\n将 $x=-1$ 代入 $A=0$：\n$$1-a+1=0 \\implies a=2$$\n\n验证 $B$ 在 $x=-1$，$a=2$ 时：$B=1+(5)(-1)+4=0$ ✓\n\n故 $\\fbox{H}=2$，$\\fbox{IJ}=-1$。",
+            "why": "实数中 $A^2+B^2=0$ 当且仅当 $A=0$ 且 $B=0$，因为每个平方项非负。"
+          }
+        ],
+        "finalAnswer": "AB=10，C=3，D=2；EF=−2，G=1；H=2，IJ=−1"
+      }
+    }
+  ]
+}
