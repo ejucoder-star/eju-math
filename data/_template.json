@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "course": "course1",
+    "year": "20XX",
+    "session": "1",
+    "courseNameJa": "数学1",
+    "courseNameEn": "Course 1 (Basic)",
+    "description": "基础课程｜文科方向",
+    "color": "#2563eb",
+    "examTitle": "20XX年度（平成XX年）第1回",
+    "examDate": "20XX年6月"
+  },
+  "questions": [
+    {
+      "id": "c1-I-1",
+      "number": "I-1",
+      "topic": "题目主题（中文）",
+      "topicTag": "分类标签（中文）",
+      "humanVerified": false,
+      "japanese": "中文题干。支持 $行内公式$ 和 $$独立公式$$\n\n用 \\fbox{A} 表示填空。",
+      "answer_match": true,
+      "needs_review": true,
+      "solution": {
+        "translation": "题意简述",
+        "analysis": "解题思路（一句话）",
+        "steps": [
+          {
+            "title": "步骤1标题",
+            "content": "步骤内容",
+            "why": null
+          }
+        ],
+        "finalAnswer": "最终答案"
+      }
+    }
+  ]
+}
