@@ -1,0 +1,271 @@
+{
+  "metadata": {
+    "course": "course1",
+    "year": "2014",
+    "session": "2",
+    "courseNameJa": "数学1",
+    "courseNameEn": "Course 1 (Basic)",
+    "description": "基础课程｜文科方向",
+    "color": "#2563eb",
+    "examTitle": "2014年度（平成26年度）第2回",
+    "examDate": "2014年11月"
+  },
+  "questions": [
+    {
+      "id": "c1-I-1",
+      "number": "I-1",
+      "topic": "二次函数的最小值与判别式",
+      "topicTag": "二次函数",
+      "humanVerified": false,
+      "japanese": "设 $a, b$ 为实数，$a > 0$。考虑两个二次函数 $f(x) = 2x^2 - 4x + 5$，$g(x) = x^2 + ax + b$。当函数 $g(x)$ 满足以下两个条件时，求 $a, b$ 的值。\n\n条件 (i)：$g(x)$ 的最小值比 $f(x)$ 的最小值小 8\n条件 (ii)：满足 $f(x) = g(x)$ 的 $x$ 恰好只有 1 个\n\n$f(x)$ 的最小值为 $\\fbox{A}$，由条件 (i) 得等式 $b = \\dfrac{a^2}{\\fbox{B}} - \\fbox{C}$。\n\n从而，满足 $f(x) = g(x)$ 的方程为 $x^2 - (a + \\fbox{D})x - \\dfrac{a^2}{\\fbox{E}} + \\fbox{FG} = 0$。\n\n由条件 (ii) 和 $a > 0$ 得 $a = \\fbox{H}$，$b = \\fbox{IJ}$，此时满足 $f(x) = g(x)$ 的 $x$ 为 $\\fbox{K}$。",
+      "answer_match": true,
+      "needs_review": false,
+      "solution": {
+        "translation": "已知两个二次函数，在满足最小值差为8、方程恰有唯一解的条件下求参数 a、b。",
+        "analysis": "先用配方求各函数最小值，再联立两个条件：由条件(i)得 b 与 a 的关系式，由条件(ii)令判别式为零求 a 的值。",
+        "steps": [
+          {
+            "title": "求 f(x) 的最小值",
+            "content": "对 $f(x)$ 配方：\n$$f(x) = 2(x^2 - 2x) + 5 = 2(x-1)^2 + 3$$\n$f(x)$ 的最小值为 $\\mathbf{3}$，在 $x = 1$ 时取到。"
+          },
+          {
+            "title": "由条件 (i) 建立 b 与 a 的关系",
+            "content": "对 $g(x)$ 配方：\n$$g(x) = \\left(x + \\frac{a}{2}\\right)^2 + b - \\frac{a^2}{4}$$\n$g(x)$ 的最小值为 $b - \\dfrac{a^2}{4}$。\n\n条件 (i) 要求 $g(x)$ 的最小值 $=$ $f(x)$ 的最小值 $- 8$：\n$$b - \\frac{a^2}{4} = 3 - 8 = -5$$\n$$\\therefore\\quad b = \\frac{a^2}{4} - 5$$",
+            "why": "「比……小8」即 g(x) 的最小值 = f(x) 的最小值 − 8 = 3 − 8 = −5。"
+          },
+          {
+            "title": "整理 f(x) = g(x) 的方程",
+            "content": "令 $f(x) = g(x)$：\n$$2x^2 - 4x + 5 = x^2 + ax + b$$\n$$x^2 - (a+4)x + (5-b) = 0$$\n\n将 $b = \\dfrac{a^2}{4} - 5$ 代入，得 $5 - b = 10 - \\dfrac{a^2}{4}$：\n$$x^2 - (a+4)x - \\frac{a^2}{4} + 10 = 0$$"
+          },
+          {
+            "title": "由条件 (ii) 令判别式为零求 a",
+            "content": "方程恰好有唯一解，即判别式 $\\Delta = 0$：\n$$\\Delta = (a+4)^2 - 4\\left(10 - \\frac{a^2}{4}\\right) = 0$$\n$$a^2 + 8a + 16 - 40 + a^2 = 0$$\n$$2a^2 + 8a - 24 = 0 \\implies a^2 + 4a - 12 = 0$$\n$$(a+6)(a-2) = 0 \\implies a = 2 \\text{ 或 } a = -6$$\n\n由 $a > 0$，故 $a = 2$。",
+            "why": "二次方程恰好有唯一实数解的充要条件是判别式等于零。"
+          },
+          {
+            "title": "求 b 及唯一解 x",
+            "content": "将 $a = 2$ 代入 $b = \\dfrac{a^2}{4} - 5$：\n$$b = \\frac{4}{4} - 5 = 1 - 5 = -4$$\n\n此时方程为 $x^2 - 6x + 9 = 0$，即 $(x-3)^2 = 0$，唯一解为 $x = 3$。"
+          }
+        ],
+        "finalAnswer": "$a = 2$，$b = -4$，满足 $f(x) = g(x)$ 的唯一解为 $x = 3$"
+      }
+    },
+    {
+      "id": "c1-I-2",
+      "number": "I-2",
+      "topic": "集合的充要条件与元素计数",
+      "topicTag": "集合与逻辑",
+      "humanVerified": false,
+      "japanese": "考虑集合 $A = \\{4m \\mid m \\text{ 是自然数}\\}$，$B = \\{6m \\mid m \\text{ 是自然数}\\}$。\n\n(1) 以下各问中，$n$ 为自然数，从选项 ⓪ ～ ③ 中选择合适的答案：\n\n(i) $n \\in A$ 是「$n$ 能被 2 整除」的 $\\fbox{L}$\n(ii) $n \\in B$ 是「$n$ 能被 24 整除」的 $\\fbox{M}$\n(iii) $n \\in A \\cup B$ 是「$n$ 能被 3 整除」的 $\\fbox{N}$\n(iv) $n \\in A \\cap B$ 是「$n$ 能被 12 整除」的 $\\fbox{O}$\n\n⓪ 充要条件　① 必要不充分条件　② 充分不必要条件　③ 既非充分也非必要条件\n\n(2) 设 $C = \\{m \\mid 1 \\leq m \\leq 100 \\text{ 的自然数}\\}$。$(\\bar{A} \\cup \\bar{B}) \\cap C$ 的元素个数为 $\\fbox{PQ}$，$\\bar{A} \\cap \\bar{B} \\cap C$ 的元素个数为 $\\fbox{RS}$。（$\\bar{A}$、$\\bar{B}$ 分别为以全体自然数为全集时 $A$、$B$ 的补集）",
+      "answer_match": true,
+      "needs_review": false,
+      "solution": {
+        "translation": "分析集合A（4的倍数）和B（6的倍数）的元素与特定整除性的充要条件关系，并用容斥原理计算1到100中满足条件的元素个数。",
+        "analysis": "A是4的倍数集，B是6的倍数集，A∩B是lcm(4,6)=12的倍数集；用容斥原理计数。",
+        "steps": [
+          {
+            "title": "明确各集合的含义",
+            "content": "$A$ = 4的倍数：$\\{4, 8, 12, 16, \\ldots\\}$\n\n$B$ = 6的倍数：$\\{6, 12, 18, 24, \\ldots\\}$\n\n$A \\cap B$ = 4和6的公倍数 = **12的倍数**：$\\{12, 24, 36, \\ldots\\}$\n\n$A \\cup B$ = 4的倍数或6的倍数（至少满足一个）"
+          },
+          {
+            "title": "(i) n∈A 与「n 能被 2 整除」的关系",
+            "content": "- $n \\in A \\Rightarrow n$ 是4的倍数 $\\Rightarrow n$ 是2的倍数 ✓（充分性成立）\n- $n$ 是2的倍数 $\\not\\Rightarrow n \\in A$（反例：$n=2$，$2 \\notin A$）（必要性不成立）\n\n故 $n \\in A$ 是「$n$ 能被2整除」的**充分不必要条件**，$\\fbox{L} = ②$。"
+          },
+          {
+            "title": "(ii) n∈B 与「n 能被 24 整除」的关系",
+            "content": "- $n$ 能被24整除 $\\Rightarrow n$ 是6的倍数 $\\Rightarrow n \\in B$ ✓（必要性成立）\n- $n \\in B \\not\\Rightarrow n$ 能被24整除（反例：$n=6$）（充分性不成立）\n\n故 $n \\in B$ 是「$n$ 能被24整除」的**必要不充分条件**，$\\fbox{M} = ①$。"
+          },
+          {
+            "title": "(iii) n∈A∪B 与「n 能被 3 整除」的关系",
+            "content": "- $n \\in A \\cup B \\not\\Rightarrow n$ 能被3整除（反例：$n=4 \\in A$，但 $4$ 不被 $3$ 整除）\n- $n$ 能被3整除 $\\not\\Rightarrow n \\in A \\cup B$（反例：$n=3$，$3 \\notin A$ 且 $3 \\notin B$）\n\n故为**既非充分也非必要条件**，$\\fbox{N} = ③$。"
+          },
+          {
+            "title": "(iv) n∈A∩B 与「n 能被 12 整除」的关系",
+            "content": "$A \\cap B$ 恰好是 $\\text{lcm}(4,6) = 12$ 的倍数集合，故 $n \\in A \\cap B$ 与 $n$ 能被 $12$ 整除完全等价，为**充要条件**，$\\fbox{O} = ⓪$。"
+          },
+          {
+            "title": "计算 (Ā∪B̄)∩C 的元素个数",
+            "content": "由德摩根定律：$\\bar{A} \\cup \\bar{B} = \\overline{A \\cap B}$，即「不是12的倍数」的自然数集合。\n\n$1 \\sim 100$ 中12的倍数：$12, 24, 36, \\ldots, 96$，共 $\\lfloor 100 / 12 \\rfloor = 8$ 个。\n\n$$(\\bar{A} \\cup \\bar{B}) \\cap C \\text{ 的元素个数} = 100 - 8 = \\mathbf{92}$$",
+            "why": "德摩根定律：$\\overline{A \\cap B} = \\bar{A} \\cup \\bar{B}$，即两集合交集的补等于各自补集的并。"
+          },
+          {
+            "title": "计算 Ā∩B̄∩C 的元素个数",
+            "content": "由德摩根定律：$\\bar{A} \\cap \\bar{B} = \\overline{A \\cup B}$，即「既不是4的倍数也不是6的倍数」。\n\n用容斥原理计算 $1 \\sim 100$ 中 $A \\cup B$ 的元素数：\n$$|A \\cap C| = \\left\\lfloor\\frac{100}{4}\\right\\rfloor = 25, \\quad |B \\cap C| = \\left\\lfloor\\frac{100}{6}\\right\\rfloor = 16, \\quad |A \\cap B \\cap C| = \\left\\lfloor\\frac{100}{12}\\right\\rfloor = 8$$\n$$|(A \\cup B) \\cap C| = 25 + 16 - 8 = 33$$\n\n$$\\bar{A} \\cap \\bar{B} \\cap C \\text{ 的元素个数} = 100 - 33 = \\mathbf{67}$$"
+          }
+        ],
+        "finalAnswer": "L=②，M=①，N=③，O=⓪；$(\\bar{A}\\cup\\bar{B})\\cap C$ 有 92 个元素，$\\bar{A}\\cap\\bar{B}\\cap C$ 有 67 个元素"
+      }
+    },
+    {
+      "id": "c1-II-1",
+      "number": "II-1",
+      "topic": "含重复字母的排列计数",
+      "topicTag": "排列组合",
+      "humanVerified": false,
+      "japanese": "考虑将单词 POSITION 的 8 个字母（P, O, S, I, T, I, O, N，其中 I 有 2 个，O 有 2 个）横向排成一列的所有排列方式。\n\n(1) 2 个 I 相邻且 2 个 O 也相邻的排列共有 $\\fbox{ABC}$ 种。\n\n(2) 2 个 I 分别位于最左端和最右端，且 2 个 O 相邻的排列共有 $\\fbox{DEF}$ 种。\n\n(3) 2 个 I 分别位于最左端和最右端的排列共有 $\\fbox{GHI}$ 种。\n\n(4) 仅将 I、I、O、O 这 4 个字母横向排列，共有 $\\fbox{J}$ 种；仅将 N、P、S、T 这 4 个字母横向排列，共有 $\\fbox{KL}$ 种。\n\n因此，在 8 个字母的所有排列中，两端之一为 I 或 O，且 N、P、S、T 中任意两个字母都不相邻的排列共有 $\\fbox{MNO}$ 种。",
+      "answer_match": true,
+      "needs_review": false,
+      "solution": {
+        "translation": "对含重复字母的8字母单词POSITION，在各种约束条件下计算排列数。",
+        "analysis": "分别用捆绑法（相邻条件）、固定端点法（I在两端）和插空法（互不相邻条件）处理各小题。",
+        "steps": [
+          {
+            "title": "(1) 2个I相邻且2个O相邻",
+            "content": "将 II 捆绑为一个整体，OO 捆绑为一个整体，共 6 个元素（\\[II\\]、\\[OO\\]、P、S、T、N）全排列：\n$$6! = 720 \\text{ 种}$$"
+          },
+          {
+            "title": "(2) I 固定在两端，O相邻",
+            "content": "将一个 I 固定在最左端，另一个 I 固定在最右端，中间 6 个位置需排 P、O、O、S、T、N。\n\n将 OO 捆绑为一个整体，中间共 5 个元素全排列：\n$$5! = 120 \\text{ 种}$$"
+          },
+          {
+            "title": "(3) I 固定在两端",
+            "content": "将两个 I 固定在最左和最右两端，中间 6 个位置排 P、O、O、S、T、N（O 重复2次）：\n$$\\frac{6!}{2!} = \\frac{720}{2} = 360 \\text{ 种}$$"
+          },
+          {
+            "title": "(4a) 仅排 I、I、O、O",
+            "content": "4 个字母中 I 重复2次、O 重复2次：\n$$\\frac{4!}{2! \\times 2!} = \\frac{24}{4} = 6 \\text{ 种}$$"
+          },
+          {
+            "title": "(4b) 仅排 N、P、S、T",
+            "content": "4 个字母各不相同，全排列：\n$$4! = 24 \\text{ 种}$$"
+          },
+          {
+            "title": "(4c) 两端含I或O，且N/P/S/T互不相邻",
+            "content": "**用插空法**：先排 I、I、O、O 这 4 个字母，共 $\\dfrac{4!}{2!2!} = 6$ 种，在 8 个位置中产生如下 5 个空隙：\n$$\\underline{\\quad}\\,[\\text{I/O}]\\,\\underline{\\quad}\\,[\\text{I/O}]\\,\\underline{\\quad}\\,[\\text{I/O}]\\,\\underline{\\quad}\\,[\\text{I/O}]\\,\\underline{\\quad}$$\n\n从 5 个空隙中选 4 个，各放一个 N/P/S/T（这 4 个字母各不相同）：\n$$C_5^4 \\times 4! = 5 \\times 24 = 120 \\text{ 种}$$\n\n**减去两端均为 N/P/S/T 的情况**（两端均无 I 或 O）：\n最左和最右两个空隙都放了 N/P/S/T，剩余 2 个字母从中间 3 个空隙选 2 个放入：\n$$6 \\times C_3^2 \\times 4! = 6 \\times 3 \\times 24 = 432 \\text{ 种}$$\n\n满足条件的排列数：\n$$6 \\times 120 - 432 = 720 - 432 = \\mathbf{288} \\text{ 种}$$",
+            "why": "插空法将N/P/S/T插入I/O之间的空隙，天然保证它们互不相邻（每两个之间至少有一个I或O）。两端条件用总数减去「两端均为NPST」的方案数得到。"
+          }
+        ],
+        "finalAnswer": "(1) 720种；(2) 120种；(3) 360种；(4a) 6种；(4b) 24种；两端含I或O且NPST互不相邻共 288种"
+      }
+    },
+    {
+      "id": "c1-II-2",
+      "number": "II-2",
+      "topic": "整数约束下的二次函数最值",
+      "topicTag": "二次函数·最值",
+      "humanVerified": false,
+      "japanese": "整数 $x$ 和实数 $y$ 同时满足等式\n$$2(y+1) = x(8-x) \\quad \\cdots①$$\n和不等式\n$$5x - 4y + 1 \\leq 0 \\quad \\cdots②$$\n求 $y$ 的最大值 $M$ 和最小值 $m$。\n\n首先，将等式①变形得\n$$y = -\\frac{1}{\\fbox{P}}\\left(x - \\fbox{Q}\\right)^2 + \\fbox{R}$$\n\n由①②联立得关于 $x$ 的不等式\n$$2x^2 - \\fbox{ST}x + \\fbox{U} \\leq 0 \\quad \\cdots③$$\n\n当整数 $x$ 满足③时，$y$ 在 $x = \\fbox{V}$ 时取最大值，$x = \\fbox{W}$ 时取最小值，\n$$M = \\fbox{X},\\quad m = \\frac{\\fbox{Y}}{\\fbox{Z}}$$",
+      "answer_match": true,
+      "needs_review": false,
+      "solution": {
+        "translation": "整数x和实数y满足一个等式和一个不等式，求y的最大值和最小值。",
+        "analysis": "由等式将y用x表示并配方，代入不等式得x的约束范围，再逐点计算整数x对应的y值找最值。",
+        "steps": [
+          {
+            "title": "由等式①将 y 用 x 表示并配方",
+            "content": "$$2(y+1) = 8x - x^2 \\implies 2y = -x^2 + 8x - 2$$\n$$y = -\\frac{1}{2}x^2 + 4x - 1$$\n\n配方：\n$$y = -\\frac{1}{2}(x^2 - 8x) - 1 = -\\frac{1}{2}(x-4)^2 + 8 - 1 = -\\frac{1}{2}(x-4)^2 + 7$$"
+          },
+          {
+            "title": "由①②联立，得关于 x 的不等式",
+            "content": "将 $y = -\\dfrac{1}{2}x^2 + 4x - 1$ 代入不等式 $5x - 4y + 1 \\leq 0$：\n$$5x - 4\\left(-\\frac{1}{2}x^2 + 4x - 1\\right) + 1 \\leq 0$$\n$$5x + 2x^2 - 16x + 4 + 1 \\leq 0$$\n$$2x^2 - 11x + 5 \\leq 0 \\quad \\cdots③$$"
+          },
+          {
+            "title": "解不等式③，确定整数 x 的取值范围",
+            "content": "$$2x^2 - 11x + 5 = (2x-1)(x-5) \\leq 0$$\n$$\\frac{1}{2} \\leq x \\leq 5$$\n\n由于 $x$ 是整数，故 $x \\in \\{1,\\ 2,\\ 3,\\ 4,\\ 5\\}$。"
+          },
+          {
+            "title": "逐点计算 y，确定最大值和最小值",
+            "content": "利用 $y = -\\dfrac{1}{2}(x-4)^2 + 7$：\n\n$$x=1:\\quad y = -\\tfrac{1}{2}(-3)^2+7 = -\\tfrac{9}{2}+7 = \\tfrac{5}{2}$$\n$$x=2:\\quad y = -\\tfrac{1}{2}(-2)^2+7 = -2+7 = 5$$\n$$x=3:\\quad y = -\\tfrac{1}{2}(-1)^2+7 = -\\tfrac{1}{2}+7 = \\tfrac{13}{2}$$\n$$x=4:\\quad y = -\\tfrac{1}{2}(0)^2+7 = 7$$\n$$x=5:\\quad y = -\\tfrac{1}{2}(1)^2+7 = \\tfrac{13}{2}$$\n\n最大值在 $x=4$ 时，$M = 7$；最小值在 $x=1$ 时，$m = \\dfrac{5}{2}$。"
+          }
+        ],
+        "finalAnswer": "$M = 7$（$x=4$ 时取到），$m = \\dfrac{5}{2}$（$x=1$ 时取到）"
+      }
+    },
+    {
+      "id": "c1-III",
+      "number": "III",
+      "topic": "三个二次不等式的解集关系与参数确定",
+      "topicTag": "二次不等式",
+      "humanVerified": false,
+      "japanese": "考虑三个二次不等式：\n$$x^2 + 3x - 18 < 0 \\quad \\cdots①$$\n$$x^2 - 2x - 8 > 0 \\quad \\cdots②$$\n$$x^2 + ax + b < 0 \\quad \\cdots③$$\n\n以下 $\\fbox{A}$ ～ $\\fbox{D}$ 从各问的选项 ⓪ ～ ⑤ 中选择合适的答案。\n\n(1) 同时满足不等式①和②的 $x$ 的范围是 $\\fbox{A}$；①②都不满足的 $x$ 的范围是 $\\fbox{B}$。\n\n⓪ $3 \\leq x \\leq 4$　① $-6 \\leq x \\leq -2$　② $3 < x < 4$\n③ $2 < x < 6$　④ $-6 < x < -2$　⑤ $-4 \\leq x \\leq -3$\n\n(2) 满足①或③（至少一个）的 $x$ 的范围为 $-6 < x < 7$ 的条件是：$a, b$ 满足等式 $\\fbox{C}$，且 $a$ 满足不等式 $\\fbox{D}$。\n\n⓪ $b=6a-36$　① $b=7a-49$　② $b=-7a-49$\n③ $-10 < a \\leq -3$　④ $-10 < a \\leq -1$　⑤ $-1 \\leq a < 3$",
+      "answer_match": true,
+      "needs_review": false,
+      "solution": {
+        "translation": "分析三个二次不等式解集的交、并关系，并确定使第三个不等式满足特定并集条件的参数范围。",
+        "analysis": "先解出①②的解集，用集合运算求交集和「都不满足」范围；再利用①∪③=(-6,7)倒推③的根，建立a、b的关系。",
+        "steps": [
+          {
+            "title": "解不等式①",
+            "content": "$$x^2 + 3x - 18 = (x+6)(x-3) < 0$$\n$$\\text{解集①：}\\quad -6 < x < 3$$"
+          },
+          {
+            "title": "解不等式②",
+            "content": "$$x^2 - 2x - 8 = (x-4)(x+2) > 0$$\n$$\\text{解集②：}\\quad x < -2 \\text{ 或 } x > 4$$"
+          },
+          {
+            "title": "(1) 求①且②（交集）",
+            "content": "$$(-6,\\ 3) \\cap \\{x < -2 \\text{ 或 } x > 4\\} = (-6,\\ -2)$$\n\n即 $-6 < x < -2$，对应选项 **④**，$\\fbox{A} = 4$。"
+          },
+          {
+            "title": "(1) 求①②都不满足的范围",
+            "content": "「非①」的集合：$x \\leq -6$ 或 $x \\geq 3$\n\n「非②」的集合：$-2 \\leq x \\leq 4$\n\n两者取交集：\n$$(x \\leq -6 \\text{ 或 } x \\geq 3) \\cap (-2 \\leq x \\leq 4) = 3 \\leq x \\leq 4$$\n\n对应选项 **⓪**，$\\fbox{B} = 0$。"
+          },
+          {
+            "title": "(2) 由①∪③ = (-6, 7) 确定③的根",
+            "content": "解集①为 $(-6, 3)$，设③的解集为 $(r_1, r_2)$（$r_1 < r_2$）。\n\n要使 $(-6,3) \\cup (r_1, r_2) = (-6, 7)$，需满足：\n- $r_2 = 7$（右边界恰为7）\n- $-6 \\leq r_1 < 3$（左界不超过①的右界3，否则 $x=3$ 处出现缺口；且不超过−6，否则并集会向左扩张）\n\n由韦达定理（③的二次项系数为1）：\n$$r_1 + 7 = -a \\implies r_1 = -a - 7$$\n$$r_1 \\cdot 7 = b \\implies b = 7r_1 = 7(-a-7) = -7a - 49$$\n\n故 $b = -7a - 49$，对应选项 **②**，$\\fbox{C} = 2$。",
+            "why": "若 r₁ = 3（严格），③的解集为 (3,7)，与①合并后 x=3 处有空缺，并集≠(-6,7)，故 r₁ 必须严格小于 3。若 r₁ < -6，则并集向左超出 -6，也不满足条件。"
+          },
+          {
+            "title": "(2) 确定 a 的范围",
+            "content": "由 $-6 \\leq r_1 < 3$ 且 $r_1 = -a - 7$：\n\n$$-6 \\leq -a - 7 < 3$$\n\n左侧：$-a - 7 \\geq -6 \\implies -a \\geq 1 \\implies a \\leq -1$\n\n右侧：$-a - 7 < 3 \\implies -a < 10 \\implies a > -10$\n\n故 $-10 < a \\leq -1$，对应选项 **④**，$\\fbox{D} = 4$。"
+          }
+        ],
+        "finalAnswer": "A=④（$-6<x<-2$），B=⓪（$3\\leq x\\leq 4$），C=②（$b=-7a-49$），D=④（$-10<a\\leq-1$）"
+      }
+    },
+    {
+      "id": "c1-IV",
+      "number": "IV",
+      "topic": "圆内接四边形的角度、对角线与交点距离",
+      "topicTag": "圆与余弦定理",
+      "humanVerified": false,
+      "japanese": "圆内接四边形 ABCD 中，$AB = \\sqrt{2}$，$BC = CD = 2$，$DA = \\sqrt{6}$。\n\n(1) 设 $\\angle BAD = \\theta$，由余弦定理得关于 BD 的两个等式：\n$$BD^2 = \\fbox{A} - \\fbox{B}\\sqrt{\\fbox{C}}\\cos\\theta$$\n$$BD^2 = \\fbox{D} + \\fbox{E}\\cos\\theta$$\n\n由此得 $\\theta = \\fbox{FG}°$，$BD = \\fbox{H}\\sqrt{\\fbox{I}}$。\n\n(2) $\\angle BAC = \\fbox{JK}°$，$\\angle BCA = \\fbox{LM}°$，$AC = \\fbox{N} + \\sqrt{\\fbox{O}}$。\n\n此外，$\\sin\\angle ADC = \\dfrac{\\sqrt{\\fbox{P}}\\left(\\sqrt{\\fbox{Q}} + \\fbox{R}\\right)}{\\fbox{S}}$。\n\n(3) 设直线 AD 与直线 BC 的交点为 E，则 $EB = \\fbox{T} + \\fbox{U}\\sqrt{\\fbox{V}}$。",
+      "answer_match": true,
+      "needs_review": false,
+      "questionDiagram": {
+        "svg": "<svg xmlns='http://www.w3.org/2000/svg' width='340' height='300' viewBox='0 0 340 300'><circle cx='185' cy='158' r='118' fill='none' stroke='#c0c0c0' stroke-width='1.5' stroke-dasharray='5,4'/><polygon points='80,230 80,107 247,75 247,230' fill='#eff6ff' stroke='none'/><line x1='80' y1='230' x2='80' y2='107' stroke='#2563eb' stroke-width='2'/><line x1='80' y1='107' x2='247' y2='75' stroke='#2563eb' stroke-width='2'/><line x1='247' y1='75' x2='247' y2='230' stroke='#2563eb' stroke-width='2'/><line x1='247' y1='230' x2='80' y2='230' stroke='#2563eb' stroke-width='2'/><line x1='80' y1='230' x2='247' y2='75' stroke='#93c5fd' stroke-width='1.2' stroke-dasharray='4,3'/><line x1='80' y1='107' x2='247' y2='230' stroke='#93c5fd' stroke-width='1.2' stroke-dasharray='4,3'/><circle cx='80' cy='230' r='4' fill='#1d4ed8'/><circle cx='80' cy='107' r='4' fill='#1d4ed8'/><circle cx='247' cy='75' r='4' fill='#1d4ed8'/><circle cx='247' cy='230' r='4' fill='#1d4ed8'/><text x='58' y='250' font-size='16' font-family='serif' font-style='italic' fill='#1e3a8a'>A</text><text x='58' y='105' font-size='16' font-family='serif' font-style='italic' fill='#1e3a8a'>B</text><text x='253' y='72' font-size='16' font-family='serif' font-style='italic' fill='#1e3a8a'>C</text><text x='253' y='250' font-size='16' font-family='serif' font-style='italic' fill='#1e3a8a'>D</text><text x='52' y='173' font-size='13' fill='#374151'>√2</text><text x='153' y='82' font-size='13' fill='#374151'>2</text><text x='254' y='158' font-size='13' fill='#374151'>2</text><text x='150' y='252' font-size='13' fill='#374151'>√6</text><rect x='74' y='218' width='12' height='12' fill='none' stroke='#6b7280' stroke-width='1.2'/></svg>"
+      },
+      "solution": {
+        "translation": "圆内接四边形ABCD，已知各边长，求对角线BD、各角度、AC及两直线交点的距离EB。",
+        "analysis": "在△ABD和△BCD中分别用余弦定理表示BD²，利用对角补角条件联立；再用圆周角定理、正弦定理和坐标法逐步求解。",
+        "steps": [
+          {
+            "title": "(1) 在△ABD中用余弦定理表示 BD²",
+            "content": "$\\angle BAD = \\theta$，$AB = \\sqrt{2}$，$DA = \\sqrt{6}$：\n$$BD^2 = AB^2 + DA^2 - 2 \\cdot AB \\cdot DA \\cdot \\cos\\theta = 2 + 6 - 2\\sqrt{2}\\cdot\\sqrt{6}\\cos\\theta$$\n$$= 8 - 4\\sqrt{3}\\cos\\theta$$"
+          },
+          {
+            "title": "(1) 在△BCD中用余弦定理表示 BD²",
+            "content": "圆内接四边形对角之和为 $180°$，故 $\\angle BCD = 180° - \\theta$，$\\cos(180°-\\theta) = -\\cos\\theta$。\n\n$BC = CD = 2$：\n$$BD^2 = BC^2 + CD^2 - 2\\cdot BC\\cdot CD\\cdot\\cos(180°-\\theta) = 4 + 4 + 8\\cos\\theta = 8 + 8\\cos\\theta$$"
+          },
+          {
+            "title": "(1) 联立两式求 θ 和 BD",
+            "content": "令两个 $BD^2$ 相等：\n$$8 - 4\\sqrt{3}\\cos\\theta = 8 + 8\\cos\\theta$$\n$$-4\\sqrt{3}\\cos\\theta - 8\\cos\\theta = 0 \\implies \\cos\\theta(-4\\sqrt{3}-8) = 0$$\n\n因 $-4\\sqrt{3}-8 \\neq 0$，故 $\\cos\\theta = 0$，即 $\\theta = 90°$。\n\n$$BD^2 = 8 + 8\\cos 90° = 8 \\implies BD = 2\\sqrt{2}$$"
+          },
+          {
+            "title": "(2) 求 ∠BAC 和 ∠BCA",
+            "content": "由 $\\angle BCD = 90°$，$BC = CD = 2$，$BD = 2\\sqrt{2}$（$BC^2+CD^2=8=BD^2$，验证正确），故 $\\triangle BCD$ 是等腰直角三角形：\n$$\\angle BDC = 45°$$\n\n**圆周角定理**：同弧 BC 所对的圆周角相等，故：\n$$\\angle BAC = \\angle BDC = 45°$$\n\n在 $\\triangle ABD$ 中（$\\angle BAD = 90°$，$AB=\\sqrt{2}$，$DA=\\sqrt{6}$）：\n$$\\tan(\\angle ADB) = \\frac{AB}{DA} = \\frac{\\sqrt{2}}{\\sqrt{6}} = \\frac{1}{\\sqrt{3}} \\implies \\angle ADB = 30°$$\n\n**圆周角定理**：同弧 AB 所对的圆周角相等，故：\n$$\\angle BCA = \\angle BDA = 30°$$",
+            "why": "圆内接多边形中，同一弧所对的所有圆周角相等。"
+          },
+          {
+            "title": "(2) 求 AC",
+            "content": "在 $\\triangle ABC$ 中：$\\angle BAC = 45°$，$\\angle BCA = 30°$，故 $\\angle ABC = 180°-45°-30° = 105°$。\n\n由正弦定理（$AB = \\sqrt{2}$）：\n$$\\frac{AC}{\\sin\\angle ABC} = \\frac{AB}{\\sin\\angle BCA} \\implies \\frac{AC}{\\sin 105°} = \\frac{\\sqrt{2}}{\\sin 30°} = 2\\sqrt{2}$$\n\n$$\\sin 105° = \\sin(60°+45°) = \\frac{\\sqrt{6}+\\sqrt{2}}{4}$$\n\n$$AC = 2\\sqrt{2} \\cdot \\frac{\\sqrt{6}+\\sqrt{2}}{4} = \\frac{\\sqrt{12}+2}{2} = \\frac{2\\sqrt{3}+2}{2} = 1+\\sqrt{3}$$"
+          },
+          {
+            "title": "(2) 求 sin∠ADC",
+            "content": "$$\\angle ADC = \\angle ADB + \\angle BDC = 30° + 45° = 75°$$\n\n$$\\sin 75° = \\sin(45°+30°) = \\frac{\\sqrt{2}}{2}\\cdot\\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{2}}{2}\\cdot\\frac{1}{2} = \\frac{\\sqrt{6}+\\sqrt{2}}{4} = \\frac{\\sqrt{2}(\\sqrt{3}+1)}{4}$$"
+          },
+          {
+            "title": "(3) 建立坐标系，求交点 E",
+            "content": "以 $A$ 为原点，$\\angle BAD = 90°$，令 $AD$ 沿 $x$ 轴，$AB$ 沿 $y$ 轴：\n$$A=(0,0),\\quad B=(0,\\sqrt{2}),\\quad D=(\\sqrt{6},0)$$\n\n由 $BC=CD=2$，$\\angle BCD=90°$ 联立解方程，取使四边形凸的解：\n$$C = \\left(\\frac{\\sqrt{6}+\\sqrt{2}}{2},\\ \\frac{\\sqrt{6}+\\sqrt{2}}{2}\\right)$$\n\n**直线 BC** 的参数方程（参数 $t$）：\n$$x = t\\cdot\\frac{\\sqrt{6}+\\sqrt{2}}{2},\\quad y = \\sqrt{2} + t\\cdot\\frac{\\sqrt{6}-\\sqrt{2}}{2}$$\n\n令 $y=0$（即直线 $AD$，$x$ 轴）：\n$$t = \\frac{-\\sqrt{2}}{(\\sqrt{6}-\\sqrt{2})/2} = \\frac{-2\\sqrt{2}}{\\sqrt{6}-\\sqrt{2}} = -(\\sqrt{3}+1)$$\n\n$$E_x = -(\\sqrt{3}+1)\\cdot\\frac{\\sqrt{6}+\\sqrt{2}}{2} = -\\frac{4\\sqrt{2}+2\\sqrt{6}}{2} = -(2\\sqrt{2}+\\sqrt{6})$$\n\n故 $E = (-(2\\sqrt{2}+\\sqrt{6}),\\ 0)$，$B=(0,\\sqrt{2})$。",
+            "why": "C 的坐标通过联立 BC=2、CD=2、∠BCD=90° 三个方程求得，解有两组，取第一象限内使四边形为凸形的结果。"
+          },
+          {
+            "title": "(3) 计算 EB",
+            "content": "$$EB^2 = (0-E_x)^2 + (\\sqrt{2}-0)^2 = (2\\sqrt{2}+\\sqrt{6})^2 + 2$$\n$$= 8 + 4\\sqrt{12} + 6 + 2 = 16 + 8\\sqrt{3}$$\n\n设 $EB = a + b\\sqrt{3}$，展开：$(a+b\\sqrt{3})^2 = a^2+3b^2+2ab\\sqrt{3} = 16+8\\sqrt{3}$\n\n$$2ab = 8 \\implies ab = 4, \\quad a^2+3b^2=16$$\n\n解得 $a=2,\\ b=2$，验证：$(2+2\\sqrt{3})^2 = 4+8\\sqrt{3}+12 = 16+8\\sqrt{3}$ ✓\n\n$$EB = 2 + 2\\sqrt{3}$$"
+          }
+        ],
+        "finalAnswer": "(1) $\\theta=90°$，$BD=2\\sqrt{2}$；(2) $\\angle BAC=45°$，$\\angle BCA=30°$，$AC=1+\\sqrt{3}$，$\\sin\\angle ADC=\\dfrac{\\sqrt{2}(\\sqrt{3}+1)}{4}$；(3) $EB=2+2\\sqrt{3}$"
+      }
+    }
+  ]
+}
