@@ -31,21 +31,21 @@
           },
           {
             "title": "求 $(ab)^3$，进而得到 $ab$",
-            "content": "$$(ab)^3 = a^3 \\cdot b^3 = (\\sqrt{5}+2)(2-\\sqrt{5})$$\n$$= 2\\sqrt{5} - 5 + 4 - 2\\sqrt{5} = -1$$\n所以 $ab = -1$，即 $\\fbox{BC} = -1$。",
-            "why": "$(ab)^3 = a^3 b^3$，算出乘积后开立方根，因为 $(-1)^3=-1$，所以 $ab=-1$。"
+            "content": "$$(ab)^3 = a^3 \\cdot b^3 = (\\sqrt{5}+2)(2-\\sqrt{5}) = 2\\sqrt{5} - 5 + 4 - 2\\sqrt{5} = -1$$\n所以 $ab = -1$，即 $\\fbox{BC} = -1$。",
+            "why": "$(ab)^3 = a^3 b^3$，因为 $(-1)^3=-1$，所以 $ab=-1$。"
           },
           {
             "title": "利用立方展开式建立方程",
-            "content": "立方展开公式：$(a+b)^3 = a^3 + b^3 + 3ab(a+b)$，故 $\\fbox{A}=3$。\n\n$a^3 + b^3 = (\\sqrt{5}+2)+(2-\\sqrt{5}) = 4$\n\n设 $x = a+b$，则\n$$x^3 = 4 + 3(-1)x = 4 - 3x$$\n$$x^3 + 3x - 4 = 0$$\n故 $\\fbox{D}=3$，$\\fbox{E}=4$。"
+            "content": "$(a+b)^3 = a^3 + b^3 + 3ab(a+b)$，故 $\\fbox{A}=3$。\n\n$a^3 + b^3 = (\\sqrt{5}+2)+(2-\\sqrt{5}) = 4$，代入得\n$$x^3 = 4 + 3(-1)x \\implies x^3 + 3x - 4 = 0$$\n故 $\\fbox{D}=3$，$\\fbox{E}=4$。"
           },
           {
             "title": "因式分解方程",
-            "content": "$$x^3 + 3x - 4 = (x^3 - 1) + 3(x-1) = (x-1)(x^2+x+1) + 3(x-1)$$\n$$= (x-1)(x^2+x+1+3) = (x-1)(x^2+x+4)$$\n故 $\\fbox{F}=1$，$\\fbox{G}=4$。",
-            "why": "$x^3-1$ 用立方差公式分解：$x^3-1=(x-1)(x^2+x+1)$。"
+            "content": "$$x^3 + 3x - 4 = (x^3 - 1) + 3(x-1) = (x-1)(x^2+x+1) + 3(x-1) = (x-1)(x^2+x+4)$$\n故 $\\fbox{F}=1$，$\\fbox{G}=4$。",
+            "why": "$x^3-1=(x-1)(x^2+x+1)$ 是立方差公式。"
           },
           {
             "title": "证明二次因子恒正，得出唯一解",
-            "content": "对二次因子配方：\n$$x^2+x+4 = \\left(x+\\frac{1}{2}\\right)^2 + \\frac{15}{4} > 0$$\n故 $\\fbox{H}=1$，$\\fbox{I}=2$，$\\fbox{JK}=15$，$\\fbox{L}=4$。\n\n二次因子恒大于零，所以方程唯一实数根为 $x=1$，即 $a+b = \\fbox{M} = 1$。"
+            "content": "$$x^2+x+4 = \\left(x+\\frac{1}{2}\\right)^2 + \\frac{15}{4} > 0$$\n故 $\\fbox{H}=1$，$\\fbox{I}=2$，$\\fbox{JK}=15$，$\\fbox{L}=4$。\n\n二次因子恒大于零，方程唯一实数根为 $x=1$，即 $a+b = \\fbox{M} = 1$。"
           }
         ],
         "finalAnswer": "$a+b = 1$（各空：A=3，BC=−1，D=3，E=4，F=1，G=4，H=1，I=2，JK=15，L=4，M=1）"
@@ -59,10 +59,10 @@
       "humanVerified": true,
       "answer_match": true,
       "needs_review": false,
-      "japanese": "考虑两个函数 $y = x^2 + ax + a$ 与 $y = x+1$。\n\n**(1)** 两函数图像交点个数由 $a$ 与数 $\\fbox{Q}$、$\\fbox{R}$ 的关系决定。从下列选项 ⓪～② 中选填：\n\n(i) 两图像有两个不同交点的条件是 $\\fbox{N}$。\n\n(ii) 两图像只有一个公切点的条件是 $\\fbox{O}$。\n\n(iii) $y=x^2+ax+a$ 的图像始终位于 $y=x+1$ 上方的条件是 $\\fbox{P}$。\n\n$$\\text{⓪}\\quad \\fbox{Q} < a < \\fbox{R}\\qquad \\text{①}\\quad a=\\fbox{Q}\\ \\text{或}\\ a=\\fbox{R}\\qquad \\text{②}\\quad a<\\fbox{Q}\\ \\text{或}\\ \\fbox{R}<a$$\n\n**(2)** 当 $a$ 满足条件 $\\fbox{P}$ 时，考虑两函数差 $g(x)=x^2+ax+a-(x+1)$ 的最小值 $m$。此时\n\n$$m = -\\dfrac{\\fbox{S}}{\\fbox{T}}\\left(a^2 - \\fbox{U}\\,a + \\fbox{V}\\right)$$\n\n$m$ 取最大值时 $a=\\fbox{W}$，最大值为 $m=\\fbox{X}$。",
+      "japanese": "考虑两个函数 $y = x^2 + ax + a$ 与 $y = x+1$。\n\n(1) 两函数图像交点个数由 $a$ 与数 $\\fbox{Q}$、$\\fbox{R}$ 的关系决定。从下列选项 ⓪～② 中选填：\n\n(i) 两图像有两个不同交点的条件是 $\\fbox{N}$。\n(ii) 两图像只有一个公切点的条件是 $\\fbox{O}$。\n(iii) $y=x^2+ax+a$ 的图像始终位于 $y=x+1$ 上方的条件是 $\\fbox{P}$。\n\n$$\\text{⓪}\\quad \\fbox{Q} < a < \\fbox{R}\\qquad \\text{①}\\quad a=\\fbox{Q}\\ \\text{或}\\ a=\\fbox{R}\\qquad \\text{②}\\quad a<\\fbox{Q}\\ \\text{或}\\ \\fbox{R}<a$$\n\n(2) 当 $a$ 满足条件 $\\fbox{P}$ 时，考虑两函数差 $g(x)=x^2+ax+a-(x+1)$ 的最小值 $m$。此时\n$$m = -\\dfrac{\\fbox{S}}{\\fbox{T}}\\left(a^2 - \\fbox{U}\\,a + \\fbox{V}\\right)$$\n$m$ 取最大值时 $a=\\fbox{W}$，最大值为 $m=\\fbox{X}$。",
       "solution": {
-        "translation": "分析两二次函数图像的交点数量条件，并在特定范围内求差函数最小值的最大值。",
-        "analysis": "联立两函数求判别式，判别式 $\\Delta$ 的正负决定交点个数；(2)对 $g(x)$ 配方求最小值，再对参数 $a$ 求极值。",
+        "translation": "分析两函数图像的交点数量条件，并在特定范围内求差函数最小值的最大值。",
+        "analysis": "联立两函数求判别式，判别式 $\\Delta$ 的正负决定交点个数；对 $g(x)$ 配方求最小值，再对参数 $a$ 求极值。",
         "steps": [
           {
             "title": "联立两函数，建立判别式",
@@ -70,16 +70,16 @@
           },
           {
             "title": "根据判别式符号确定各条件（Q=1，R=5）",
-            "content": "- $\\Delta > 0$（两交点）：$(a-1)(a-5)>0$，即 $a<1$ 或 $a>5$ → 选项 **②**，$\\fbox{N}=2$\n- $\\Delta = 0$（一个切点）：$(a-1)(a-5)=0$，即 $a=1$ 或 $a=5$ → 选项 **①**，$\\fbox{O}=1$\n- $\\Delta < 0$（始终在上方）：$(a-1)(a-5)<0$，即 $1<a<5$ → 选项 **⓪**，$\\fbox{P}=0$\n\n故 $\\fbox{Q}=1$，$\\fbox{R}=5$。",
-            "why": "二次函数始终在直线上方等价于联立后的二次方程无实数根，即 $\\Delta<0$。"
+            "content": "- $\\Delta > 0$（两交点）：$a<1$ 或 $a>5$，对应选项 ②，故 $\\fbox{N}=2$\n- $\\Delta = 0$（一个切点）：$a=1$ 或 $a=5$，对应选项 ①，故 $\\fbox{O}=1$\n- $\\Delta < 0$（始终在上方）：$1<a<5$，对应选项 ⓪，故 $\\fbox{P}=0$\n\n故 $\\fbox{Q}=1$，$\\fbox{R}=5$。",
+            "why": "二次函数始终在直线上方，等价于联立后的方程无实数根，即 $\\Delta<0$。"
           },
           {
             "title": "在条件 P（即 1<a<5）下，对 g(x) 配方求最小值",
-            "content": "$$g(x) = x^2+(a-1)x+(a-1)$$\n顶点在 $x = -\\dfrac{a-1}{2}$ 处，最小值为\n$$m = (a-1) - \\frac{(a-1)^2}{4} = -\\frac{1}{4}(a-1)^2 + (a-1)$$\n展开整理：\n$$m = -\\frac{1}{4}(a^2 - 2a+1 - 4a+4) = -\\frac{1}{4}(a^2-6a+5)$$\n故 $\\fbox{S}=1$，$\\fbox{T}=4$，$\\fbox{U}=6$，$\\fbox{V}=5$。"
+            "content": "$$g(x) = x^2+(a-1)x+(a-1)$$\n顶点处最小值：\n$$m = (a-1) - \\frac{(a-1)^2}{4} = -\\frac{1}{4}(a^2-6a+5)$$\n故 $\\fbox{S}=1$，$\\fbox{T}=4$，$\\fbox{U}=6$，$\\fbox{V}=5$。"
           },
           {
             "title": "对 a 求 m 的最大值",
-            "content": "将 $m(a)=-\\dfrac{1}{4}(a^2-6a+5)$ 配方：\n$$m = -\\frac{1}{4}(a-3)^2 + 1$$\n在 $1<a<5$ 内，$a=3$ 时 $m$ 最大，$\\fbox{W}=3$。\n最大值 $m = 1$，$\\fbox{X}=1$。"
+            "content": "$$m = -\\frac{1}{4}(a-3)^2 + 1$$\n在 $1<a<5$ 内，$a=3$ 时 $m$ 最大，$\\fbox{W}=3$，最大值 $m=1$，$\\fbox{X}=1$。"
           }
         ],
         "finalAnswer": "N=②，O=①，P=⓪；Q=1，R=5；S=1，T=4，U=6，V=5；W=3，X=1"
@@ -100,21 +100,21 @@
         "steps": [
           {
             "title": "(1) 无限制时的总方案数",
-            "content": "每个球有 6 个盒子可选，4 个球相互独立，故总方案数为\n$$6^4 = 1296$$\n$\\fbox{A}=6$，$\\fbox{B}=4$。"
+            "content": "每个球有 6 个盒子可选，4 个球相互独立，故\n$$6^4 = 1296 \\text{ 种}$$\n$\\fbox{A}=6$，$\\fbox{B}=4$。"
           },
           {
             "title": "(2) 4 球放入 4 个不同盒子",
-            "content": "从 6 个盒子中选 4 个并分配给 4 个球（球不同，顺序有意义），这是排列数\n$$P(6,4) = 6 \\times 5 \\times 4 \\times 3 = 360$$\n$\\fbox{CDE}=360$。",
-            "why": "第一个球可选6个盒，第二个球选剩余5个，以此类推，共 $6\\times5\\times4\\times3$ 种。"
+            "content": "从 6 个盒子中按顺序分配给 4 个不同的球，即排列数\n$$P(6,4) = 6 \\times 5 \\times 4 \\times 3 = 360$$\n$\\fbox{CDE}=360$。",
+            "why": "第一个球可选6个盒，第二个球选剩余5个，以此类推。"
           },
           {
             "title": "(3) 3 球同盒，另 1 球单独放",
-            "content": "分三步：\n① 选哪个盒子放 3 球：6 种\n② 从 4 球中选哪 3 个放入该盒：$C(4,3)=4$ 种\n③ 剩余 1 球放入其他某个盒子：5 种\n\n总方案数：$6 \\times 4 \\times 5 = 120$，$\\fbox{FGH}=120$。"
+            "content": "① 选放 3 球的盒子：6 种\n② 从 4 球中选 3 个放入该盒：$C(4,3)=4$ 种\n③ 剩余 1 球放其余某个盒子：5 种\n\n总方案：$6 \\times 4 \\times 5 = 120$，$\\fbox{FGH}=120$。"
           },
           {
             "title": "(4) 1 号盒至少有 1 球（补集法）",
-            "content": "全部方案数减去 1 号盒为空的方案数：\n$$6^4 - 5^4 = 1296 - 625 = 671$$\n$\\fbox{IJK}=671$。",
-            "why": "1号盒为空时，每个球只能选剩余5个盒，方案数为 $5^4=625$。"
+            "content": "$$6^4 - 5^4 = 1296 - 625 = 671$$\n$\\fbox{IJK}=671$。",
+            "why": "1号盒为空时，4个球只能选剩余5个盒，共 $5^4=625$ 种。"
           }
         ],
         "finalAnswer": "A=6，B=4；CDE=360；FGH=120；IJK=671"
@@ -128,27 +128,26 @@
       "humanVerified": true,
       "answer_match": true,
       "needs_review": false,
-      "japanese": "关于 $x$ 的二次方程\n$$x^2 + (4a-6)x + 2a+b+5 = 0 \\quad \\cdots①$$\n以 $-1$ 为一根，且另一根满足不等式\n$$|x+2a| < a+1 \\quad \\cdots②$$\n求满足上述条件的条件。\n\n**(1)** 方程①以 $-1$ 为根的条件为\n$$b = \\fbox{L}\\,a - \\fbox{MN} \\quad \\cdots③$$\n另一根 $\\alpha$ 用 $a$ 表示为 $\\alpha = \\fbox{OP}\\,a + \\fbox{Q}$。\n\n**(2)** $a > \\fbox{RS}$ 时不等式②有解，其解为\n$$\\fbox{TU}\\,a - \\fbox{V} < x < -a + \\fbox{W}$$\n因此，所求条件为 $a,b$ 满足③，且\n$$\\fbox{X} < a < \\fbox{Y}$$",
+      "japanese": "关于 $x$ 的二次方程\n$$x^2 + (4a-6)x + 2a+b+5 = 0 \\quad \\cdots①$$\n以 $-1$ 为一根，且另一根满足不等式\n$$|x+2a| < a+1 \\quad \\cdots②$$\n求满足上述条件的条件。\n\n(1) 方程①以 $-1$ 为根的条件为\n$$b = \\fbox{L}\\,a - \\fbox{MN} \\quad \\cdots③$$\n另一根 $\\alpha$ 用 $a$ 表示为 $\\alpha = \\fbox{OP}\\,a + \\fbox{Q}$。\n\n(2) $a > \\fbox{RS}$ 时不等式②有解，其解为\n$$\\fbox{TU}\\,a - \\fbox{V} < x < -a + \\fbox{W}$$\n因此，所求条件为 $a,b$ 满足③，且\n$$\\fbox{X} < a < \\fbox{Y}$$",
       "solution": {
         "translation": "二次方程以−1为根，另一根满足绝对值不等式，求参数 a, b 的条件。",
         "analysis": "将 x=−1 代入方程求 b 与 a 的关系，用韦达定理求另一根，再解绝对值不等式并要求另一根落在解集中。",
         "steps": [
           {
             "title": "(1) 代入 x=−1 求条件③",
-            "content": "将 $x=-1$ 代入①：\n$$1 + (4a-6)(-1) + 2a+b+5 = 0$$\n$$1 - 4a + 6 + 2a + b + 5 = 0$$\n$$12 - 2a + b = 0$$\n$$b = 2a - 12$$\n故 $\\fbox{L}=2$，$\\fbox{MN}=12$。"
+            "content": "将 $x=-1$ 代入①：\n$$1-(4a-6)+2a+b+5=0 \\implies 12-2a+b=0 \\implies b=2a-12$$\n故 $\\fbox{L}=2$，$\\fbox{MN}=12$。"
           },
           {
             "title": "(1) 用韦达定理求另一根 α",
-            "content": "两根之积：$(-1)\\cdot\\alpha = 2a+b+5$\n\n将 $b=2a-12$ 代入：$(-1)\\cdot\\alpha = 2a+(2a-12)+5 = 4a-7$\n\n故 $\\alpha = 7-4a = -4a+7$，即 $\\fbox{OP}=-4$，$\\fbox{Q}=7$。",
-            "why": "也可用两根之和：$(-1)+\\alpha = -(4a-6) = 6-4a$，解得 $\\alpha = 7-4a$，结果一致。"
+            "content": "两根之积：$(-1)\\cdot\\alpha = 2a+b+5 = 2a+(2a-12)+5 = 4a-7$\n\n故 $\\alpha = 7-4a$，即 $\\fbox{OP}=-4$，$\\fbox{Q}=7$。"
           },
           {
             "title": "(2) 解绝对值不等式②",
-            "content": "$|x+2a|<a+1$ 有解的条件：右边 $a+1>0$，即 $a>-1$，故 $\\fbox{RS}=-1$。\n\n不等式解为 $-(a+1)<x+2a<a+1$，即\n$$-3a-1 < x < -a+1$$\n故 $\\fbox{TU}=-3$，$\\fbox{V}=1$，$\\fbox{W}=1$。"
+            "content": "$|x+2a|<a+1$ 有解需 $a+1>0$，即 $a>-1$，故 $\\fbox{RS}=-1$。\n\n不等式解为：\n$$-3a-1 < x < -a+1$$\n故 $\\fbox{TU}=-3$，$\\fbox{V}=1$，$\\fbox{W}=1$。"
           },
           {
             "title": "(2) 要求 α 落在不等式的解集中",
-            "content": "需 $-3a-1 < -4a+7 < -a+1$。\n\n**左侧不等式：** $-3a-1 < -4a+7 \\Rightarrow a < 8$\n\n**右侧不等式：** $-4a+7 < -a+1 \\Rightarrow 6 < 3a \\Rightarrow a > 2$\n\n结合 $a>-1$，最终条件为 $2<a<8$，即 $\\fbox{X}=2$，$\\fbox{Y}=8$。"
+            "content": "需 $-3a-1 < 7-4a < -a+1$：\n\n- 左侧：$-3a-1<7-4a \\Rightarrow a<8$\n- 右侧：$7-4a<-a+1 \\Rightarrow a>2$\n\n最终条件：$\\fbox{X}=2 < a < \\fbox{Y}=8$。"
           }
         ],
         "finalAnswer": "L=2，MN=12；OP=−4，Q=7；RS=−1；TU=−3，V=1，W=1；X=2，Y=8"
@@ -162,22 +161,22 @@
       "humanVerified": true,
       "answer_match": true,
       "needs_review": false,
-      "japanese": "考虑两个二次函数\n$$y = 2x^2 + 3ax + 4b \\quad \\cdots①$$\n$$y = bx^2 + cx + d \\quad \\cdots②$$\n两者图像关于原点互相对称。\n\n**(1)** 由原点对称性，$b = \\fbox{AB}$，$c = \\fbox{C}\\,a$，$d = \\fbox{D}$。\n于是②化为\n$$y = \\fbox{AB}\\,x^2 + \\fbox{C}\\,ax + \\fbox{D} \\quad \\cdots③$$\n\n**(2)** 设 $0<a<1$，当 $0 \\leq x \\leq \\dfrac{3}{2}$ 时，③的 $y$ 值范围为\n$$\\dfrac{\\fbox{E}}{\\fbox{F}}\\,a + \\dfrac{\\fbox{G}}{\\fbox{H}} \\leq y \\leq \\dfrac{\\fbox{I}}{\\fbox{J}}\\,a^2 + \\fbox{K}$$\n\n**(3)** 无论 $a$ 取何值，③的顶点始终在二次函数 $y = \\fbox{L}\\,x^2 + \\fbox{M}$ 的图像上。",
+      "japanese": "考虑两个二次函数\n$$y = 2x^2 + 3ax + 4b \\quad \\cdots①$$\n$$y = bx^2 + cx + d \\quad \\cdots②$$\n两者图像关于原点互相对称。\n\n(1) 由原点对称性，$b = \\fbox{AB}$，$c = \\fbox{C}\\,a$，$d = \\fbox{D}$。于是②化为\n$$y = \\fbox{AB}\\,x^2 + \\fbox{C}\\,ax + \\fbox{D} \\quad \\cdots③$$\n\n(2) 设 $0<a<1$，当 $0 \\leq x \\leq \\dfrac{3}{2}$ 时，③的 $y$ 值范围为\n$$\\dfrac{\\fbox{E}}{\\fbox{F}}\\,a + \\dfrac{\\fbox{G}}{\\fbox{H}} \\leq y \\leq \\dfrac{\\fbox{I}}{\\fbox{J}}\\,a^2 + \\fbox{K}$$\n\n(3) 无论 $a$ 取何值，③的顶点始终在二次函数 $y = \\fbox{L}\\,x^2 + \\fbox{M}$ 的图像上。",
       "solution": {
         "translation": "两图像关于原点对称，求系数关系及指定区间的值域，并求顶点的运动轨迹。",
-        "analysis": "利用原点对称的性质建立系数关系；对③配方分析值域；消去参数 a 求顶点轨迹方程。",
+        "analysis": "利用原点对称性建立系数关系；配方分析值域；消去参数 a 求顶点轨迹。",
         "steps": [
           {
             "title": "(1) 由原点对称性求各系数",
-            "content": "若点 $(x,y)$ 在①上，则 $(-x,-y)$ 在②上，即\n$$-y = b(-x)^2 + c(-x) + d = bx^2 - cx + d$$\n$$y = -bx^2 + cx - d$$\n\n与①对比系数：\n- $x^2$ 项：$-b = 2 \\Rightarrow b = -2$，故 $\\fbox{AB}=-2$\n- $x$ 项：$c = 3a$，故 $\\fbox{C}=3$\n- 常数项：$-d = 4b = 4(-2) = -8 \\Rightarrow d = 8$，故 $\\fbox{D}=8$\n\n③为 $y = -2x^2 + 3ax + 8$"
+            "content": "若 $(x,y)$ 在①上，则 $(-x,-y)$ 在②上：\n$$-y = bx^2 - cx + d \\implies y = -bx^2 + cx - d$$\n\n与①对比：$-b=2 \\Rightarrow b=-2$；$c=3a$；$-d=4b=-8 \\Rightarrow d=8$。\n\n故 $\\fbox{AB}=-2$，$\\fbox{C}=3$，$\\fbox{D}=8$，③ 为 $y=-2x^2+3ax+8$。"
           },
           {
             "title": "(2) 求 0 ≤ x ≤ 3/2 时③的值域",
-            "content": "③的对称轴：$x = \\dfrac{3a}{4}$\n\n由于 $0<a<1$，对称轴 $x_0 = \\dfrac{3a}{4} \\in \\left(0,\\dfrac{3}{4}\\right) \\subset \\left[0,\\dfrac{3}{2}\\right]$\n\n**最大值**在顶点处：\n$$y_{\\max} = 8 + \\frac{(3a)^2}{4\\times2} = 8 + \\frac{9a^2}{8}$$\n\n**端点值**：\n- $x=0$：$y=8$\n- $x=\\dfrac{3}{2}$：$y = -2\\cdot\\dfrac{9}{4} + 3a\\cdot\\dfrac{3}{2} + 8 = \\dfrac{7}{2} + \\dfrac{9}{2}a$\n\n比较：$y(0)-y\\!\\left(\\dfrac{3}{2}\\right) = 8-\\dfrac{7}{2}-\\dfrac{9a}{2} = \\dfrac{9(1-a)}{2} > 0$，故最小值在 $x=\\dfrac{3}{2}$。\n\n$$\\frac{9}{2}a + \\frac{7}{2} \\leq y \\leq \\frac{9}{8}a^2 + 8$$\n\n故 $\\fbox{E}=9$，$\\fbox{F}=2$，$\\fbox{G}=7$，$\\fbox{H}=2$，$\\fbox{I}=9$，$\\fbox{J}=8$，$\\fbox{K}=8$。"
+            "content": "对称轴 $x_0 = \\dfrac{3a}{4}$，由 $0<a<1$ 知 $x_0 \\in \\left(0,\\tfrac{3}{4}\\right)$，在区间内。\n\n顶点（最大值）：$y_{\\max} = 8 + \\dfrac{9a^2}{8}$\n\n端点 $x=\\dfrac{3}{2}$（最小值）：$y_{\\min} = \\dfrac{9}{2}a + \\dfrac{7}{2}$\n\n故 $\\dfrac{9}{2}a + \\dfrac{7}{2} \\leq y \\leq \\dfrac{9}{8}a^2 + 8$，\n$\\fbox{E}=9$，$\\fbox{F}=2$，$\\fbox{G}=7$，$\\fbox{H}=2$，$\\fbox{I}=9$，$\\fbox{J}=8$，$\\fbox{K}=8$。"
           },
           {
             "title": "(3) 求顶点的轨迹方程",
-            "content": "顶点坐标：\n$$x_0 = \\frac{3a}{4}, \\quad y_0 = 8 + \\frac{9a^2}{8}$$\n\n由第一式得 $a = \\dfrac{4x_0}{3}$，代入第二式：\n$$y_0 = 8 + \\frac{9}{8}\\cdot\\frac{16x_0^2}{9} = 8 + 2x_0^2$$\n\n故顶点轨迹为 $y = 2x^2 + 8$，$\\fbox{L}=2$，$\\fbox{M}=8$。"
+            "content": "顶点 $\\left(\\dfrac{3a}{4},\\, \\dfrac{9a^2}{8}+8\\right)$，设 $x_0=\\dfrac{3a}{4}$，则 $a=\\dfrac{4x_0}{3}$，代入：\n$$y_0 = \\frac{9}{8}\\cdot\\frac{16x_0^2}{9}+8 = 2x_0^2+8$$\n故 $\\fbox{L}=2$，$\\fbox{M}=8$。"
           }
         ],
         "finalAnswer": "AB=−2，C=3，D=8；E=9，F=2，G=7，H=2，I=9，J=8，K=8；L=2，M=8"
@@ -192,38 +191,43 @@
       "answer_match": true,
       "needs_review": false,
       "questionDiagram": {
-        "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 220' width='320' height='220'><style>text{font-family:serif;font-size:14px}</style><!-- Triangle: B=(40,190), C=(165,190), A=(240,40) --><polygon points='40,190 165,190 240,40' fill='#eff6ff' stroke='#2563eb' stroke-width='2'/><circle cx='115' cy='157' r='23' fill='#dbeafe' stroke='#2563eb' stroke-width='1.5'/><text x='10' y='196' fill='#1e40af'>B</text><text x='163' y='208' fill='#1e40af'>C</text><text x='244' y='36' fill='#1e40af'>A</text><text x='110' y='154' fill='#1e40af' font-size='12'>O</text><text x='90' y='210' fill='#374151' font-size='12'>a</text><text x='200' y='128' fill='#374151' font-size='12'>b</text><text x='115' y='108' fill='#374151' font-size='12'>10</text><text x='55' y='176' fill='#374151' font-size='11'>30°</text></svg>"
+        "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 260 225' width='260' height='225'><style>text{font-family:serif;font-size:13px;}</style><polygon points='15,205 107,205 206,95' fill='#eff6ff' stroke='#2563eb' stroke-width='2.2'/><circle cx='97' cy='183' r='22' fill='#dbeafe' stroke='#1d4ed8' stroke-width='1.8'/><circle cx='97' cy='183' r='3' fill='#1d4ed8'/><line x1='97' y1='183' x2='97' y2='205' stroke='#dc2626' stroke-width='1.3' stroke-dasharray='3,2'/><text x='100' y='199' fill='#dc2626' font-size='11'>r=1</text><text x='3' y='220' fill='#1e40af' font-weight='bold'>B</text><text x='110' y='220' fill='#1e40af' font-weight='bold'>C</text><text x='209' y='93' fill='#1e40af' font-weight='bold'>A</text><text x='82' y='180' fill='#1e40af'>O</text><text x='53' y='220' fill='#374151' font-size='12'>a</text><text x='167' y='158' fill='#374151' font-size='12'>b</text><text x='96' y='136' fill='#374151' font-size='12'>10</text><path d='M 37,205 A 22,22 0 0,1 34,184' fill='none' stroke='#374151' stroke-width='1.2'/><text x='38' y='198' fill='#374151' font-size='11'>30°</text></svg>"
       },
-      "japanese": "三角形 ABC 满足 $AB=10$，$\\angle B=30°$，其内切圆 O 的半径为 1。\n\n**(1)** 设 $BC=a$，$CA=b$。三角形 ABC 的面积 $S$ 可用两种方式表示：\n\n$$S = \\dfrac{\\fbox{A}}{\\fbox{B}}\\,a \\qquad S = \\dfrac{\\fbox{C}}{\\fbox{D}}\\bigl(a+b+\\fbox{EF}\\bigr)$$\n\n从而 $b = \\fbox{G}\\,a - \\fbox{HI}$。\n\n又 $a$ 与 $b$ 之间满足关系式\n$$b^2 = a^2 - \\fbox{JK}\\sqrt{\\fbox{L}}\\,a + \\fbox{MNO}$$\n\n解得\n$$a = \\dfrac{\\fbox{PQ} - \\fbox{R}\\sqrt{\\fbox{S}}}{3}, \\qquad b = \\dfrac{\\fbox{TU} - \\fbox{V}\\sqrt{\\fbox{W}}}{3}$$\n\n**(2)** 直线 $AO$ 与线段 $BC$ 的交点为 $D$，△OBC 的面积为 $S'$。则\n$$S:S' = \\fbox{X}:1, \\qquad AO:OD = \\fbox{Y}:1$$",
+      "japanese": "三角形 ABC 满足 $AB=10$，$\\angle B=30°$，其内切圆 O 的半径为 1。\n\n(1) 设 $BC=a$，$CA=b$。三角形 ABC 的面积 $S$ 可用两种方式表示：\n$$S = \\dfrac{\\fbox{A}}{\\fbox{B}}\\,a \\qquad S = \\dfrac{\\fbox{C}}{\\fbox{D}}\\bigl(a+b+\\fbox{EF}\\bigr)$$\n从而 $b = \\fbox{G}\\,a - \\fbox{HI}$。\n\n又 $a$ 与 $b$ 之间满足关系式\n$$b^2 = a^2 - \\fbox{JK}\\sqrt{\\fbox{L}}\\,a + \\fbox{MNO}$$\n\n解得\n$$a = \\dfrac{\\fbox{PQ} - \\fbox{R}\\sqrt{\\fbox{S}}}{3}, \\qquad b = \\dfrac{\\fbox{TU} - \\fbox{V}\\sqrt{\\fbox{W}}}{3}$$\n\n(2) 直线 $AO$ 与线段 $BC$ 的交点为 $D$，△OBC 的面积为 $S'$。则\n$$S:S' = \\fbox{X}:1, \\qquad AO:OD = \\fbox{Y}:1$$",
       "solution": {
         "translation": "已知三角形两边及内切圆半径，求各边长、面积比和线段比。",
-        "analysis": "用两种方法表达面积（三角形公式与内切圆公式）建立方程组，再用余弦定理建立第二个方程求解；利用面积之比求线段比。",
+        "analysis": "用两种方法表达面积建立方程组，再用余弦定理求解边长；利用面积之比求线段比。",
         "steps": [
           {
             "title": "(1) 用两种方式表示面积",
-            "content": "**方法一**（用已知边 AB 和 BC）：\n$$S = \\frac{1}{2}\\cdot AB\\cdot BC\\cdot\\sin B = \\frac{1}{2}\\cdot10\\cdot a\\cdot\\sin30° = \\frac{1}{2}\\cdot10\\cdot a\\cdot\\frac{1}{2} = \\frac{5}{2}a$$\n故 $\\fbox{A}=5$，$\\fbox{B}=2$。\n\n**方法二**（内切圆公式，半径 $r=1$）：\n$$S = r\\cdot\\frac{a+b+c}{2} = 1\\cdot\\frac{a+b+10}{2} = \\frac{1}{2}(a+b+10)$$\n故 $\\fbox{C}=1$，$\\fbox{D}=2$，$\\fbox{EF}=10$。",
-            "why": "内切圆面积公式：$S = r \\cdot s$，其中 $s$ 为半周长 $s=(a+b+c)/2$，$r$ 为内切圆半径。"
+            "content": "方法一（用夹角 $\\angle B=30°$）：\n$$S = \\tfrac{1}{2}\\cdot AB\\cdot BC\\cdot\\sin 30° = \\tfrac{1}{2}\\cdot10\\cdot a\\cdot\\tfrac{1}{2} = \\tfrac{5}{2}a$$\n\n方法二（内切圆公式，$r=1$）：\n$$S = r\\cdot\\tfrac{a+b+10}{2} = \\tfrac{1}{2}(a+b+10)$$\n\n故 $\\fbox{A}=5$，$\\fbox{B}=2$，$\\fbox{C}=1$，$\\fbox{D}=2$，$\\fbox{EF}=10$。",
+            "why": "内切圆将三角形分为三个小三角形：△OBC、△OCA、△OAB，各以一边为底，$r$ 为高，面积之和 = $\\tfrac{1}{2}r(a+b+c)$。",
+            "diagram": {
+              "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 260 235' width='260' height='235'><style>text{font-family:serif;font-size:12px;}</style><polygon points='15,205 107,205 206,95' fill='#eff6ff' stroke='#2563eb' stroke-width='2'/><circle cx='97' cy='183' r='22' fill='#dbeafe' stroke='#1d4ed8' stroke-width='1.5'/><circle cx='97' cy='183' r='3' fill='#1d4ed8'/><line x1='97' y1='183' x2='15' y2='205' stroke='#dc2626' stroke-width='1.3' stroke-dasharray='5,3'/><line x1='97' y1='183' x2='107' y2='205' stroke='#dc2626' stroke-width='1.3' stroke-dasharray='5,3'/><line x1='97' y1='183' x2='206' y2='95' stroke='#dc2626' stroke-width='1.3' stroke-dasharray='5,3'/><line x1='97' y1='183' x2='97' y2='205' stroke='#16a34a' stroke-width='2'/><text x='100' y='198' fill='#16a34a' font-size='11'>r=1</text><text x='42' y='203' fill='#dc2626' font-size='11'>½ar</text><text x='138' y='176' fill='#dc2626' font-size='11'>½br</text><text x='68' y='153' fill='#dc2626' font-size='11'>½·10r</text><text x='3' y='218' fill='#1e40af'>B</text><text x='110' y='218' fill='#1e40af'>C</text><text x='209' y='93' fill='#1e40af'>A</text><text x='82' y='180' fill='#1e40af'>O</text><text x='5' y='228' fill='#374151' font-size='11'>S = ½r(a+b+10)，r=1，S = ½(a+b+10)</text></svg>"
+            }
           },
           {
             "title": "(1) 由面积相等求 b 关于 a 的表达式",
-            "content": "令两式相等：\n$$\\frac{5}{2}a = \\frac{1}{2}(a+b+10)$$\n$$5a = a+b+10$$\n$$b = 4a-10$$\n故 $\\fbox{G}=4$，$\\fbox{HI}=10$。"
+            "content": "令 $\\dfrac{5}{2}a = \\dfrac{1}{2}(a+b+10)$，整理得\n$$5a = a+b+10 \\implies b = 4a-10$$\n故 $\\fbox{G}=4$，$\\fbox{HI}=10$。"
           },
           {
             "title": "(1) 由余弦定理建立 a, b 关系",
-            "content": "在△ABC 中，由余弦定理（对角 B）：\n$$b^2 = a^2 + AB^2 - 2\\cdot a\\cdot AB\\cdot\\cos B$$\n$$b^2 = a^2 + 100 - 2\\cdot a\\cdot10\\cdot\\cos30°$$\n$$b^2 = a^2 - 10\\sqrt{3}\\,a + 100$$\n故 $\\fbox{JK}=10$，$\\fbox{L}=3$，$\\fbox{MNO}=100$。"
+            "content": "对 $\\angle B=30°$ 用余弦定理：\n$$b^2 = a^2 + 10^2 - 2\\cdot a\\cdot10\\cdot\\cos30° = a^2 - 10\\sqrt{3}\\,a + 100$$\n故 $\\fbox{JK}=10$，$\\fbox{L}=3$，$\\fbox{MNO}=100$。",
+            "diagram": {
+              "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 260 215' width='260' height='215'><style>text{font-family:serif;font-size:12px;}</style><polygon points='15,205 107,205 206,95' fill='#eff6ff' stroke='#2563eb' stroke-width='2'/><text x='53' y='218' fill='#374151'>a</text><text x='161' y='158' fill='#374151'>b</text><text x='92' y='136' fill='#374151'>10</text><path d='M 37,205 A 22,22 0 0,1 34,184' fill='none' stroke='#374151' stroke-width='1.2'/><text x='37' y='198' fill='#374151'>30°</text><text x='3' y='218' fill='#1e40af'>B</text><text x='110' y='218' fill='#1e40af'>C</text><text x='209' y='93' fill='#1e40af'>A</text><text x='5' y='28' fill='#dc2626' font-size='11'>余弦定理（对角B）：</text><text x='5' y='46' fill='#dc2626' font-size='11'>b² = a²+100-2·a·10·cos30°</text><text x='5' y='62' fill='#dc2626' font-size='11'>　= a²+100-10√3·a</text></svg>"
+            }
           },
           {
-            "title": "(1) 联立求 a, b",
-            "content": "将 $b=4a-10$ 代入 $b^2 = a^2-10\\sqrt{3}\\,a+100$：\n$$(4a-10)^2 = a^2-10\\sqrt{3}\\,a+100$$\n$$16a^2-80a+100 = a^2-10\\sqrt{3}\\,a+100$$\n$$15a^2-(80-10\\sqrt{3})a = 0$$\n$$a\\bigl[15a-(80-10\\sqrt{3})\\bigr]=0$$\n\n因 $a>0$，故 $a = \\dfrac{80-10\\sqrt{3}}{15} = \\dfrac{16-2\\sqrt{3}}{3}$\n\n$\\fbox{PQ}=16$，$\\fbox{R}=2$，$\\fbox{S}=3$。\n\n$$b = 4a-10 = \\frac{4(16-2\\sqrt{3})}{3}-10 = \\frac{64-8\\sqrt{3}-30}{3} = \\frac{34-8\\sqrt{3}}{3}$$\n\n$\\fbox{TU}=34$，$\\fbox{V}=8$，$\\fbox{W}=3$。"
+            "title": "(1) 联立两式求 a, b",
+            "content": "将 $b=4a-10$ 代入余弦定理式：\n$$(4a-10)^2 = a^2-10\\sqrt{3}\\,a+100$$\n$$16a^2-80a+100 = a^2-10\\sqrt{3}\\,a+100$$\n$$15a^2-(80-10\\sqrt{3})a = 0$$\n\n因 $a>0$，故 $a = \\dfrac{80-10\\sqrt{3}}{15} = \\dfrac{16-2\\sqrt{3}}{3}$，\n$\\fbox{PQ}=16$，$\\fbox{R}=2$，$\\fbox{S}=3$。\n\n$b = 4a-10 = \\dfrac{34-8\\sqrt{3}}{3}$，\n$\\fbox{TU}=34$，$\\fbox{V}=8$，$\\fbox{W}=3$。"
           },
           {
-            "title": "(2) 求面积比 S : S'",
-            "content": "△OBC 的面积 $S'$（以 BC 为底，内切圆半径 $r=1$ 为高）：\n$$S' = \\frac{1}{2}\\cdot a\\cdot r = \\frac{a}{2}$$\n\n$$S:S' = \\frac{5a}{2}:\\frac{a}{2} = 5:1$$\n\n故 $\\fbox{X}=5$。"
-          },
-          {
-            "title": "(2) 求线段比 AO : OD",
-            "content": "D 为角平分线 AD（即 AO 延长线）与 BC 的交点。\n\n利用角平分线性质（内心在各角平分线交点）：\n\n$$\\frac{AO}{OD} = \\frac{S_{\\triangle AOB}+S_{\\triangle AOC}}{S_{\\triangle OBC}} = \\frac{S-S'}{S'}$$\n\n$$= \\frac{5}{1} - 1 = 4$$\n\n故 $AO:OD = 4:1$，$\\fbox{Y}=4$。",
-            "why": "内心 O 将角平分线 AD 分成 AO:OD = (△AOB面积+△AOC面积) : △BOC面积 = (S-S') : S'。"
+            "title": "(2) 求 S : S' 和 AO : OD",
+            "content": "△OBC 面积（底 $a$，高 $r=1$）：$S' = \\dfrac{a}{2}$\n\n$$S:S' = \\frac{5a/2}{a/2} = 5:1 \\implies \\fbox{X}=5$$\n\nD 为 AO 延长后与 BC 的交点。由面积之比：\n$$\\frac{AO}{OD} = \\frac{S_{\\triangle AOB}+S_{\\triangle AOC}}{S_{\\triangle OBC}} = \\frac{S-S'}{S'} = \\frac{4}{1} = 4$$\n\n故 $AO:OD = 4:1$，$\\fbox{Y}=4$。",
+            "why": "内心 O 将角平分线分成两段，其比等于两侧面积之比：AO侧面积为 $S-S'$，OD侧面积为 $S'$。",
+            "diagram": {
+              "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 265 230' width='265' height='230'><style>text{font-family:serif;font-size:12px;}</style><polygon points='15,205 107,205 206,95' fill='#eff6ff' stroke='#2563eb' stroke-width='2'/><circle cx='97' cy='183' r='22' fill='#dbeafe' stroke='#1d4ed8' stroke-width='1.5' stroke-dasharray='4,2'/><circle cx='97' cy='183' r='3' fill='#1d4ed8'/><polygon points='15,205 107,205 97,183' fill='#fef3c7' stroke='#d97706' stroke-width='1.3'/><line x1='206' y1='95' x2='70' y2='205' stroke='#dc2626' stroke-width='1.8' stroke-dasharray='6,3'/><circle cx='70' cy='205' r='4' fill='#dc2626'/><text x='3' y='219' fill='#1e40af'>B</text><text x='110' y='219' fill='#1e40af'>C</text><text x='209' y='93' fill='#1e40af'>A</text><text x='82' y='180' fill='#1e40af'>O</text><text x='56' y='219' fill='#dc2626' font-weight='bold'>D</text><text x='153' y='126' fill='#dc2626' font-size='11'>AO</text><text x='77' y='200' fill='#dc2626' font-size='11'>OD</text><text x='38' y='203' fill='#d97706' font-size='12'>S'</text><text x='5' y='228' fill='#374151' font-size='11'>AO:OD = (S-S'):S' = 4:1</text></svg>"
+            }
           }
         ],
         "finalAnswer": "A=5，B=2，C=1，D=2，EF=10，G=4，HI=10，JK=10，L=3，MNO=100，PQ=16，R=2，S=3，TU=34，V=8，W=3；X=5，Y=4"
