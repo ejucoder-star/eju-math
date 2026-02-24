@@ -1,0 +1,184 @@
+{
+  "metadata": {
+    "course": "course1",
+    "year": "2013",
+    "session": "2",
+    "courseNameJa": "数学1",
+    "courseNameEn": "Course 1 (Basic)",
+    "description": "基础课程｜文科方向",
+    "color": "#2563eb",
+    "examTitle": "2013年度（平成25年）第2回",
+    "examDate": "2013年11月"
+  },
+  "questions": [
+    {
+      "id": "c1-I-1",
+      "number": "I-1",
+      "topic": "二次函数的最大值与平移",
+      "topicTag": "二次函数",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "考虑关于 $x$ 的二次函数\n$$y = -x^2 - ax + 3 \\quad \\cdots①$$\n\n(1) 设 $a > 0$，若函数①的最大值为 7，则 $a = \\fbox{A}$。此时该函数图像的轴方程为 $x = \\fbox{BC}$，且该图像与 $x$ 轴的交点 $x$ 坐标为 $\\fbox{DE} \\pm \\sqrt{\\fbox{F}}$。\n\n(2) 将函数①的图像沿 $x$ 轴方向平移 2，沿 $y$ 轴方向平移 $-3$ 所得曲线经过点 $(-3, -5)$，则 $a = \\fbox{G}$。",
+      "solution": {
+        "translation": "分析向下开口抛物线的顶点与最大值，以及图像平移后过给定点的条件。",
+        "analysis": "配方求顶点和最大值；由最大值=7解出 a；再用平移变换代入验证。",
+        "steps": [
+          {
+            "title": "(1) 配方求顶点，由最大值确定 a",
+            "content": "$$y = -\\left(x + \\frac{a}{2}\\right)^2 + \\frac{a^2}{4} + 3$$\n\n顶点为 $\\left(-\\dfrac{a}{2},\\ \\dfrac{a^2}{4}+3\\right)$，最大值 $= \\dfrac{a^2}{4}+3 = 7$：\n$$a^2 = 16 \\implies a = 4 \\quad (a>0), \\quad \\fbox{A}=4$$\n\n轴方程 $x = -\\dfrac{4}{2} = -2$，$\\fbox{BC}=-2$。\n\n令 $y=0$：$x^2+4x-3=0$，$x = -2 \\pm \\sqrt{7}$，故 $\\fbox{DE}=-2$，$\\fbox{F}=7$。"
+          },
+          {
+            "title": "(2) 利用平移变换求 a",
+            "content": "将①沿 $x$ 轴方向平移 2、$y$ 轴方向平移 $-3$，得：\n$$y = -(x-2)^2 - a(x-2) + 3 - 3$$\n\n代入 $(-3, -5)$：\n$$-(-5)^2 - a(-5) = -5 \\implies -25+5a=-5 \\implies a=4$$\n\n故 $\\fbox{G}=4$。"
+          }
+        ],
+        "finalAnswer": "A=4；BC=−2；DE=−2，F=7；G=4"
+      }
+    },
+    {
+      "id": "c1-I-2",
+      "number": "I-2",
+      "topic": "条件 p、q、r 之间的充分必要关系",
+      "topicTag": "逻辑与充要条件",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "对于实数 $x, y$，考虑以下三个条件：\n\n$p$：$x, y$ 满足 $(x+y)^2 = a(x^2+y^2)+bxy$（$a,b$ 为实数常数）\n$q$：$x=0$ 且 $y=0$\n$r$：$x=0$ 或 $y=0$\n\n$H$，$I$，$J$，$K$ 从 ⓪～③ 中选择，$L$～$R$ 填入适当的数。\n\n(1) $a=b=1$ 时，$p$ 是 $q$ 的 $\\fbox{H}$，$p$ 是 $r$ 的 $\\fbox{I}$。\n\n(2) $a=b=2$ 时，$p$ 是 $q$ 的 $\\fbox{J}$，$p$ 是 $r$ 的 $\\fbox{K}$。\n\n(3) $a=2$ 时，$p$ 可变形为\n$$\\left(x + \\dfrac{b-\\fbox{L}}{\\fbox{M}}y\\right)^2 + \\left(\\fbox{N} - \\dfrac{(b-\\fbox{O})^2}{\\fbox{P}}\\right)y^2 = 0$$\n$p$ 是 $q$ 的充要条件当且仅当 $b$ 满足 $\\fbox{Q} < b < \\fbox{R}$。\n\n⓪必要且充分 ①必要不充分 ②充分不必要 ③既非必要也非充分",
+      "solution": {
+        "translation": "展开等式 p，化简后分析其解集与 q（两者均为零）、r（至少一个为零）的蕴含关系。",
+        "analysis": "逐一代入 a、b 的值展开化简，判断 p 的解集；a=2 时配方分析 b 的范围。",
+        "steps": [
+          {
+            "title": "(1) a=b=1",
+            "content": "展开：$x^2+2xy+y^2 = x^2+y^2+xy \\implies xy=0$\n\n故 $p \\Leftrightarrow r$。而 $q\\Rightarrow p$（若 $x=y=0$ 则 $xy=0$），但 $p\\nRightarrow q$（如 $x=1,y=0$）。\n\n$p$ 是 $q$ 的必要不充分条件，$\\fbox{H}=①$；$p\\Leftrightarrow r$，$\\fbox{I}=⓪$。"
+          },
+          {
+            "title": "(2) a=b=2",
+            "content": "展开：$x^2+2xy+y^2 = 2x^2+2y^2+2xy \\implies x^2+y^2=0$\n\n故 $p \\Leftrightarrow q$，$\\fbox{J}=⓪$。\n\n$p\\Rightarrow r$（$x=y=0$ 则 $x=0$），但 $r\\nRightarrow p$（$x=1,y=0$ 时 $1\\neq0$），故 $p$ 是 $r$ 的充分不必要条件，$\\fbox{K}=②$。"
+          },
+          {
+            "title": "(3) a=2，配方并确定 b 的范围",
+            "content": "展开：$x^2+2xy+y^2 = 2(x^2+y^2)+bxy$\n$$\\implies x^2+(b-2)xy+y^2=0$$\n\n配方：\n$$\\left(x+\\frac{b-2}{2}y\\right)^2 + \\left(1-\\frac{(b-2)^2}{4}\\right)y^2=0$$\n\n故 $\\fbox{L}=2,\\ \\fbox{M}=2,\\ \\fbox{N}=1,\\ \\fbox{O}=2,\\ \\fbox{P}=4$（LMNOP=22124）。\n\n$p\\Leftrightarrow q$ 要求第二项系数 $> 0$（否则有非零解）：\n$$1-\\frac{(b-2)^2}{4}>0 \\implies 0<b<4$$\n\n故 $\\fbox{Q}=0,\\ \\fbox{R}=4$（QR=04）。"
+          }
+        ],
+        "finalAnswer": "H=①，I=⓪；J=⓪，K=②；LMNOP=22124，QR=04"
+      }
+    },
+    {
+      "id": "c1-II-1",
+      "number": "II-1",
+      "topic": "取球得分的期望值与概率",
+      "topicTag": "概率与期望",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "袋中有白球 1 个（5分）、红球 3 个（3分）、黑球 5 个（1分），共 9 个球。同时取出 2 个球，考虑 2 球得分之和。\n\n(1) 最高得点为 $\\fbox{A}$，其发生概率为 $\\dfrac{\\fbox{B}}{\\fbox{CD}}$。\n\n(2) 得点为 6 的概率为 $\\dfrac{\\fbox{E}}{\\fbox{F}}$。\n\n(3) 得点的期望值为 $\\dfrac{\\fbox{GH}}{\\fbox{I}}$。",
+      "solution": {
+        "translation": "枚举所有取球组合，计算各种得分出现的概率，再用定义求期望值。",
+        "analysis": "总取法 C(9,2)=36；最高分=白+红=8分；6分有两种情形；期望=各得分乘概率之和。",
+        "steps": [
+          {
+            "title": "(1) 最高得点及其概率",
+            "content": "最高得点 $= 5+3 = 8$，$\\fbox{A}=8$。\n\n$$P(8) = \\frac{1\\times3}{C_9^2} = \\frac{3}{36} = \\frac{1}{12}$$\n\n故 $\\fbox{B}=1$，$\\fbox{CD}=12$。"
+          },
+          {
+            "title": "(2) 得点为 6 的概率",
+            "content": "两种情形：白(5)+黑(1)：$1\\times5=5$ 种；红(3)+红(3)：$C_3^2=3$ 种。\n\n$$P(6) = \\frac{5+3}{36} = \\frac{8}{36} = \\frac{2}{9}$$\n\n故 $\\fbox{E}=2$，$\\fbox{F}=9$。"
+          },
+          {
+            "title": "(3) 期望值",
+            "content": "得分分布（总36种）：\n8分（白+红）：3种；6分：8种；4分（红+黑）：15种；2分（黑+黑）：10种。\n\n$$E = \\frac{8\\times3+6\\times8+4\\times15+2\\times10}{36} = \\frac{152}{36} = \\frac{38}{9}$$\n\n故 $\\fbox{GH}=38$，$\\fbox{I}=9$。"
+          }
+        ],
+        "finalAnswer": "A=8；B=1，CD=12；E=2，F=9；GH=38，I=9"
+      }
+    },
+    {
+      "id": "c1-II-2",
+      "number": "II-2",
+      "topic": "完全平方数与完全立方数",
+      "topicTag": "整数与数论",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "自然数 $n$ 是完全平方数是指存在自然数 $x$ 使 $n=x^2$；是完全立方数是指存在自然数 $x$ 使 $n=x^3$。\n\n(i) $n$ 是完全平方数，且 $n+13$ 也是完全平方数。\n\n(ii) $n$ 是完全立方数，且 $n+61$ 也是完全立方数。\n\n对 (i)：由 $y-x=\\fbox{J}$ 且 $y+x=\\fbox{KL}$，得 $x=\\fbox{M}$，$y=\\fbox{N}$，$n=\\fbox{OP}$。\n\n对 (ii)：$x=\\fbox{Q}$，$y=\\fbox{R}$，$n=\\fbox{ST}$。",
+      "solution": {
+        "translation": "利用差的因式分解，将相差为定数的完全幂次问题转化为整数方程求解。",
+        "analysis": "(i) 平方差分解，利用13是质数；(ii) 立方差分解，利用61是质数。",
+        "steps": [
+          {
+            "title": "(i) 完全平方数相差 13",
+            "content": "设 $n=x^2$，$n+13=y^2$（$y>x$）：\n$$(y-x)(y+x)=13=1\\times13$$\n\n$$y-x=1,\\quad y+x=13 \\implies x=6,\\ y=7,\\ n=36$$\n\n故 $\\fbox{J}=1$，$\\fbox{KL}=13$，$\\fbox{M}=6$，$\\fbox{N}=7$，$\\fbox{OP}=36$。"
+          },
+          {
+            "title": "(ii) 完全立方数相差 61",
+            "content": "设 $n=x^3$，$n+61=y^3$（$y>x$）：\n$$(y-x)(y^2+xy+x^2)=61=1\\times61$$\n\n$y-x=1$，代入 $y=x+1$：$3x^2+3x+1=61 \\implies x^2+x-20=0 \\implies (x-4)(x+5)=0$\n\n取正整数解 $x=4$，$y=5$，$n=64$。\n\n故 $\\fbox{Q}=4$，$\\fbox{R}=5$，$\\fbox{ST}=64$。"
+          }
+        ],
+        "finalAnswer": "J=1，KL=13，M=6，N=7，OP=36；Q=4，R=5，ST=64"
+      }
+    },
+    {
+      "id": "c1-III-1",
+      "number": "III",
+      "topic": "二次不等式恒成立的参数范围",
+      "topicTag": "二次不等式",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "设 $a$ 为常数，考虑二次不等式\n$$x^2 - 2(a+2)x + 25 > 0 \\quad \\cdots①$$\n\n左边可变形为 $\\left(x-a-\\fbox{A}\\right)^2 - a^2 - \\fbox{B}\\,a + \\fbox{CD}$。\n\n(1) 不等式①对所有实数 $x$ 成立的条件为 $\\fbox{EF} < a < \\fbox{G}$。\n\n(2) 不等式①对所有满足 $x \\geq -1$ 的实数 $x$ 成立的条件为 $\\fbox{HIJ} < a < \\fbox{K}$。",
+      "solution": {
+        "translation": "配方后分析最小值条件，对全域和半无界区间分别讨论。",
+        "analysis": "配方得最小值；(1) 全域成立要求判别式<0；(2) 分顶点在区间内外两种情况讨论。",
+        "steps": [
+          {
+            "title": "配方",
+            "content": "$$x^2-2(a+2)x+25 = (x-a-2)^2-(a+2)^2+25 = (x-a-2)^2-a^2-4a+21$$\n\n$\\fbox{A}=2$，$\\fbox{B}=4$，$\\fbox{CD}=21$（ABCD=2421）。"
+          },
+          {
+            "title": "(1) 对所有实数 x 成立",
+            "content": "最小值 $-a^2-4a+21>0$：\n$$a^2+4a-21<0 \\implies (a+7)(a-3)<0 \\implies -7<a<3$$\n\n$\\fbox{EF}=-7$，$\\fbox{G}=3$。"
+          },
+          {
+            "title": "(2) 对所有 x ≥ -1 成立",
+            "content": "顶点 $x=a+2$。\n\n**情形一**（$a<-3$，顶点在 $x=-1$ 左侧）：$f$ 在 $[-1,+\\infty)$ 上递增，最小值在 $x=-1$：\n$$f(-1)=(a+3)^2-a^2-4a+21=2a+30>0 \\implies a>-15$$\n结合 $a<-3$：$-15<a<-3$。\n\n**情形二**（$a\\geq-3$，顶点在 $[-1,+\\infty)$ 内）：最小值 $=-a^2-4a+21>0$，即 $-7<a<3$，结合 $a\\geq-3$：$-3\\leq a<3$。\n\n**合并**：$-15<a<3$，$\\fbox{HIJ}=-15$，$\\fbox{K}=3$。"
+          }
+        ],
+        "finalAnswer": "ABCD=2421；EF=−7，G=3；HIJ=−15，K=3"
+      }
+    },
+    {
+      "id": "c1-IV-1",
+      "number": "IV",
+      "topic": "等角条件下三角形面积与线段比",
+      "topicTag": "三角形与余弦定理",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "questionDiagram": {
+        "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 220' width='300' height='220'><style>text{font-family:serif;font-size:13px;}</style><polygon points='150,20 30,200 270,200' fill='#eff6ff' stroke='#2563eb' stroke-width='2'/><line x1='150' y1='20' x2='105' y2='200' stroke='#dc2626' stroke-width='1.5'/><line x1='150' y1='20' x2='162' y2='200' stroke='#dc2626' stroke-width='1.5'/><circle cx='105' cy='200' r='3' fill='#dc2626'/><circle cx='162' cy='200' r='3' fill='#dc2626'/><text x='146' y='14' fill='#1e40af'>A</text><text x='14' y='212' fill='#1e40af'>B</text><text x='98' y='215' fill='#dc2626'>E</text><text x='158' y='215' fill='#dc2626'>D</text><text x='268' y='212' fill='#1e40af'>C</text></svg>"
+      },
+      "japanese": "如图，$AB=4$，$AC=5$，$\\cos\\angle BAC=\\dfrac{1}{8}$，且 $\\angle BAD=\\angle ACB$，$\\angle CAE=\\angle ABC$（$E$、$D$ 在 $BC$ 上，顺序为 B、E、D、C）。\n\n(1) $\\triangle ABC$ 面积 $S = \\dfrac{\\fbox{AB}\\sqrt{\\fbox{C}}}{\\fbox{D}}$，$BC=\\fbox{E}$。\n\n(2) $\\triangle ABD$，$\\triangle ACE$ 的面积分别为 $S_1$，$S_2$，\n$$S:S_1:S_2 = 1:\\dfrac{\\fbox{F}}{\\fbox{G}}:\\dfrac{\\fbox{HI}}{\\fbox{JK}}$$\n\n(3) $\\triangle ADE$ 的面积 $T = \\dfrac{\\fbox{LM}\\sqrt{\\fbox{N}}}{\\fbox{OP}}$，$DE=\\dfrac{\\fbox{Q}}{\\fbox{R}}$。",
+      "solution": {
+        "translation": "利用等角相似三角形的性质求辅助线段，进而计算各三角形面积和线段长度。",
+        "analysis": "先由余弦定理求BC和面积S；等角条件确定相似关系求BD、CE；最后求△ADE面积用余弦定理求DE。",
+        "steps": [
+          {
+            "title": "(1) 面积 S 和 BC",
+            "content": "$$\\sin\\angle A = \\sqrt{1-\\frac{1}{64}} = \\frac{3\\sqrt{7}}{8}$$\n\n$$S = \\frac{1}{2}\\cdot4\\cdot5\\cdot\\frac{3\\sqrt{7}}{8} = \\frac{15\\sqrt{7}}{4}$$\n\n$\\fbox{AB}=15$，$\\fbox{C}=7$，$\\fbox{D}=4$（ABCD=1574）。\n\n余弦定理：$BC^2=16+25-2\\cdot4\\cdot5\\cdot\\dfrac{1}{8}=36$，$BC=6$，$\\fbox{E}=6$。"
+          },
+          {
+            "title": "(2) 面积比",
+            "content": "∠BAD=∠C，∠ABD=∠B（公共），故 △ABD ~ △BCA：\n$$BD = \\frac{AB^2}{BC} = \\frac{16}{6} = \\frac{8}{3}, \\quad \\frac{S_1}{S} = \\frac{BD}{BC} = \\frac{4}{9}$$\n\n∠CAE=∠B，∠ACE=∠C（公共），故 △ACE ~ △BAC：\n$$CE = \\frac{AC^2}{BC} = \\frac{25}{6}, \\quad \\frac{S_2}{S} = \\frac{CE}{BC} = \\frac{25}{36}$$\n\n$S:S_1:S_2 = 36:16:25$，$\\fbox{F}=4$，$\\fbox{G}=9$，$\\fbox{HI}=25$，$\\fbox{JK}=36$（FG=49，HIJK=2536）。"
+          },
+          {
+            "title": "(3) △ADE 面积 T 和 DE",
+            "content": "由正弦定理：$AD = AE = \\dfrac{AB\\cdot AC}{BC} = \\dfrac{10}{3}$\n\n$\\angle DAE = \\angle B+\\angle C-\\angle A = (\\pi-\\angle A)-\\angle A = \\pi-2\\angle A$\n\n$$\\sin\\angle DAE = \\sin2\\angle A = 2\\cdot\\frac{3\\sqrt{7}}{8}\\cdot\\frac{1}{8} = \\frac{3\\sqrt{7}}{32}$$\n\n$$T = \\frac{1}{2}\\cdot\\frac{10}{3}\\cdot\\frac{10}{3}\\cdot\\frac{3\\sqrt{7}}{32} = \\frac{25\\sqrt{7}}{48}$$\n\n$\\fbox{LM}=25$，$\\fbox{N}=7$，$\\fbox{OP}=48$（LMNOP=25748）。\n\n$\\cos\\angle DAE = -\\cos2\\angle A = -(2\\cdot\\dfrac{1}{64}-1) = \\dfrac{31}{32}$\n\n$$DE^2 = 2\\cdot\\frac{100}{9}\\cdot\\left(1-\\frac{31}{32}\\right) = \\frac{25}{36}, \\quad DE = \\frac{5}{6}$$\n\n$\\fbox{Q}=5$，$\\fbox{R}=6$（QR=56）。"
+          }
+        ],
+        "finalAnswer": "ABCD=1574，E=6；FG=49，HIJK=2536；LMNOP=25748，QR=56"
+      }
+    }
+  ]
+}
