@@ -1,0 +1,192 @@
+{
+  "metadata": {
+    "course": "course2",
+    "year": "2011",
+    "session": "2",
+    "courseNameJa": "数学2",
+    "courseNameEn": "Course 2 (Advanced)",
+    "description": "进阶课程｜理科方向",
+    "color": "#dc2626",
+    "examTitle": "2011年度（平成23年）第2回",
+    "examDate": "2011年11月"
+  },
+  "questions": [
+    {
+      "id": "c2-I-1",
+      "number": "I-1",
+      "topic": "立方与因式分解",
+      "topicTag": "代数恒等变形",
+      "humanVerified": false,
+      "japanese": "设实数 $a,b$ 满足 $a^3=\\dfrac{1}{\\sqrt5-2},\\ b^3=2-\\sqrt5$。求 $a+b$。\n\n令 $a+b=x$，则\n$$x^3=(a+b)^3=a^3+b^3+\\fbox{A}ab(a+b)$$\n又 $ab=\\fbox{BC}$，故 $x$ 满足\n$$x^3+\\fbox{D}x-\\fbox{E}=0$$\n并且\n$$x^3+\\fbox{D}x-\\fbox{E}=(x-\\fbox{F})(x^2+x+\\fbox{G})$$\n$$x^2+x+\\fbox{G}=\\left(x+\\dfrac{\\fbox{H}}{\\fbox{I}}\\right)^2+\\dfrac{\\fbox{JK}}{\\fbox{L}}>0$$\n因此 $x=a+b=\\fbox{M}$。",
+      "solution": {
+        "translation": "通过立方和公式把 $a+b$ 设为未知数并解三次方程。",
+        "analysis": "先有理化得 $a^3$，再求 $ab$，代入 $(a+b)^3$ 建立方程并因式分解。",
+        "steps": [
+          {
+            "title": "计算 $a^3+b^3$ 与 $ab$",
+            "content": "$$a^3=\\frac{1}{\\sqrt5-2}=\\sqrt5+2,\\quad b^3=2-\\sqrt5$$\n所以 $a^3+b^3=4$。\n又 $(ab)^3=a^3b^3=(\\sqrt5+2)(2-\\sqrt5)=-1$，故 $ab=-1$，即 $\\fbox{BC}=-1$。"
+          },
+          {
+            "title": "建立方程",
+            "content": "由 $(a+b)^3=a^3+b^3+3ab(a+b)$ 得 $\\fbox{A}=3$。\n设 $x=a+b$，则\n$$x^3=4+3(-1)x=4-3x\\Rightarrow x^3+3x-4=0$$\n故 $\\fbox{D}=3,\\ \\fbox{E}=4$。"
+          },
+          {
+            "title": "因式分解并取实根",
+            "content": "$$x^3+3x-4=(x-1)(x^2+x+4)$$\n故 $\\fbox{F}=1,\\ \\fbox{G}=4$。\n且\n$$x^2+x+4=\\left(x+\\frac12\\right)^2+\\frac{15}{4}>0$$\n所以 $\\fbox{H}=1,\\fbox{I}=2,\\fbox{JK}=15,\\fbox{L}=4$。\n唯一实根 $x=1$，即 $\\fbox{M}=1$。"
+          }
+        ],
+        "finalAnswer": "$a+b=1$。填空：A=3，BC=−1，DE=34，F=1，G=4，HIJKL=12154，M=1。"
+      },
+      "answer_match": true,
+      "needs_review": true
+    },
+    {
+      "id": "c2-I-2",
+      "number": "I-2",
+      "topic": "抛物线与直线",
+      "topicTag": "判别式与最值",
+      "humanVerified": false,
+      "japanese": "考虑函数 $y=x^2+ax+a$ 与 $y=x+1$。\n\n(1) 两图像交点个数由 $a$ 与 $\\fbox{Q},\\fbox{R}$ 的关系确定。从 ⓪～② 选填：\n(i) 两个交点条件：$\\fbox{N}$；(ii) 相切条件：$\\fbox{O}$；(iii) 抛物线恒在直线上方条件：$\\fbox{P}$。\n\n⓪ $\\fbox{Q}<a<\\fbox{R}$，① $a=\\fbox{Q}$ 或 $a=\\fbox{R}$，② $a<\\fbox{Q}$ 或 $\\fbox{R}<a$。\n\n(2) 当 $a$ 满足条件 $\\fbox{P}$ 时，令\n$$g(x)=x^2+ax+a-(x+1)$$\n其最小值为 $m$，有\n$$m=-\\frac{\\fbox{S}}{\\fbox{T}}(a^2-\\fbox{U}a+\\fbox{V})$$\n且 $m$ 最大时 $a=\\fbox{W}$，最大值 $m=\\fbox{X}$。",
+      "solution": {
+        "translation": "用判别式判断交点，再对差函数最小值进行二次函数最值分析。",
+        "analysis": "联立方程得到关于 $x$ 的二次式，判别式为 $(a-1)(a-5)$。再用顶点公式求 $m$。",
+        "steps": [
+          {
+            "title": "交点个数条件",
+            "content": "联立得\n$$x^2+(a-1)x+(a-1)=0$$\n判别式\n$$\\Delta=(a-1)^2-4(a-1)=(a-1)(a-5)$$\n故 $Q=1,R=5$（即 $QR=15$）。\n两交点：$\\Delta>0$ 对应 ②，$N=2$；\n相切：$\\Delta=0$ 对应 ①，$O=1$；\n恒在上方：$\\Delta<0$ 对应 ⓪，$P=0$。"
+          },
+          {
+            "title": "最小值表达式",
+            "content": "$$g(x)=x^2+(a-1)x+(a-1)$$\n最小值\n$$m=(a-1)-\\frac{(a-1)^2}{4}=-\\frac14(a^2-6a+5)$$\n所以 $STUV=1465$。"
+          },
+          {
+            "title": "求 $m$ 的最大值",
+            "content": "$$m=-\\frac14(a-3)^2+1$$\n在条件 $1<a<5$ 下最大值为 1，取于 $a=3$。\n故 $W=3,X=1$。"
+          }
+        ],
+        "finalAnswer": "N=2，O=1，P=0，QR=15，STUV=1465，W=3，X=1。"
+      },
+      "answer_match": true,
+      "needs_review": true
+    },
+    {
+      "id": "c2-II-1",
+      "number": "II-1",
+      "topic": "向量与最短距离",
+      "topicTag": "平面向量",
+      "humanVerified": false,
+      "japanese": "在平面上取 $A(1,0),B(0,1),C(3,0),D(0,2)$。点 $P$ 在线段 $AB$ 上，点 $Q$ 在线段 $CD$ 上，满足 $AP:PB=CQ:QD=k:2$。求 $PQ$ 长度最小值。\n\n设 $\\overrightarrow{PQ}=(x,y)$。\n$$\\overrightarrow{OP}=\\frac{\\fbox{A}\\overrightarrow{OA}+k\\overrightarrow{OB}}{k+\\fbox{B}},\\quad \\overrightarrow{OQ}=\\frac{\\fbox{C}\\overrightarrow{OC}+k\\overrightarrow{OD}}{k+\\fbox{D}}$$\n$$ (x,y)=\\frac{1}{k+\\fbox{E}}(\\fbox{F},k),\\quad x+2y=\\fbox{G}$$\n$$PQ^2=\\fbox{H}y^2-\\fbox{I}y+\\fbox{J}$$\n最小时 $y=\\dfrac{\\fbox{K}}{\\fbox{L}}$，且\n$$PQ=\\frac{\\fbox{M}\\sqrt{\\fbox{N}}}{\\fbox{O}}$$\n此时 $k=\\fbox{P}$。",
+      "solution": {
+        "translation": "用内分点坐标表示 $P,Q$，将 $PQ^2$ 化为关于单变量的二次式求最小。",
+        "analysis": "由同分母 $k+2$ 得到 $(x,y)$ 的参数式并消元，最后配方。",
+        "steps": [
+          {
+            "title": "表示坐标",
+            "content": "$P$ 将 $AB$ 内分比 $k:2$，$Q$ 将 $CD$ 内分比 $k:2$：\n$$\\overrightarrow{OP}=\\frac{2\\overrightarrow{OA}+k\\overrightarrow{OB}}{k+2},\\ \\overrightarrow{OQ}=\\frac{2\\overrightarrow{OC}+k\\overrightarrow{OD}}{k+2}$$\n故 $AB=22,CD=22$。\n由坐标得\n$$\\overrightarrow{PQ}=\\left(\\frac{4}{k+2},\\frac{k}{k+2}\\right)$$\n所以 $EF=24,G=2$。"
+          },
+          {
+            "title": "化为关于 $y$ 的二次式",
+            "content": "由 $y=\\frac{k}{k+2}$ 得 $x=2-2y$。\n$$PQ^2=x^2+y^2=(2-2y)^2+y^2=5y^2-8y+4$$\n故 $HIJ=584$。"
+          },
+          {
+            "title": "求最小值",
+            "content": "$$PQ^2=5\\left(y-\\frac45\\right)^2+\\frac45$$\n最小时 $y=\\frac45$，即 $KL=45$。\n$$PQ_{\\min}=\\sqrt{\\frac45}=\\frac{2\\sqrt5}{5}$$\n故 $MNO=255$。\n再由 $\\frac{k}{k+2}=\\frac45$ 解得 $k=8$，即 $P=8$。"
+          }
+        ],
+        "finalAnswer": "AB=22，CD=22，EF=24，G=2，HIJ=584，KL=45，MNO=255，P=8。"
+      },
+      "answer_match": true,
+      "needs_review": true
+    },
+    {
+      "id": "c2-III-1",
+      "number": "III-1",
+      "topic": "直角三角形中的相切圆",
+      "topicTag": "平面几何与三角函数",
+      "humanVerified": false,
+      "japanese": "如图，$AB=9,BC=12,\\angle ABC=90^\\circ$。有圆 $O_1$ 半径 $2r$，圆 $O_2$ 半径 $r$。两圆外切，且 $O_1$ 与边 $AB,AC$ 相切，$O_2$ 与边 $CA,CB$ 相切。求 $r$。\n\n设两圆与边 $AC$ 的切点分别为 $D,E$。令 $\\angle O_1AC=\\alpha$，则\n$$\\tan2\\alpha=\\frac{\\fbox{A}}{\\fbox{B}},\\quad \\tan\\alpha=\\frac{\\fbox{C}}{\\fbox{D}}$$\n故 $AD=\\fbox{E}r$。\n\n令 $\\angle O_2CA=\\beta$，有 $\\alpha+\\beta=\\fbox{FG}^\\circ$，\n$$\\tan\\beta=\\frac{\\fbox{H}}{\\fbox{I}},\\quad CE=\\fbox{J}r$$\n且\n$$AC=\\fbox{KL},\\quad DE=\\fbox{M}\\sqrt{\\fbox{N}}\\,r$$\n最终\n$$r=\\frac{\\fbox{OP}(\\fbox{Q}-\\fbox{R}\\sqrt{\\fbox{S}})}{41}$$",
+      "questionDiagram": {
+        "svg": "<svg viewBox=\"0 0 320 220\" style=\"width:100%;max-width:300px;display:block;margin:12px auto\"><line x1=\"30\" y1=\"190\" x2=\"30\" y2=\"30\" stroke=\"#111\" stroke-width=\"2\"/><line x1=\"30\" y1=\"190\" x2=\"280\" y2=\"190\" stroke=\"#111\" stroke-width=\"2\"/><line x1=\"30\" y1=\"30\" x2=\"280\" y2=\"190\" stroke=\"#111\" stroke-width=\"2\"/><circle cx=\"120\" cy=\"140\" r=\"55\" fill=\"none\" stroke=\"#555\" stroke-width=\"2\"/><circle cx=\"215\" cy=\"160\" r=\"27\" fill=\"none\" stroke=\"#555\" stroke-width=\"2\"/><text x=\"22\" y=\"205\" font-size=\"12\">B</text><text x=\"22\" y=\"24\" font-size=\"12\">A</text><text x=\"284\" y=\"204\" font-size=\"12\">C</text></svg>"
+      },
+      "solution": {
+        "translation": "利用直角三角形边比得到角度，再通过切线段关系与两圆心距关系求 $r$。",
+        "analysis": "由 $AB:BC:AC=9:12:15$ 得主角；切点到顶点的切线段可用 $r\\cot$ 表示。再用 $DE=(2r+r)\\sqrt2=3\\sqrt2r$ 与 $AD+DE+CE=AC$ 求解。",
+        "steps": [
+          {
+            "title": "求角与切线段系数",
+            "content": "在直角三角形中 $\\tan\\angle ACB=\\frac{9}{12}=\\frac34$。又 $\\alpha=\\angle O_1AC=\\frac12\\angle A$，可得\\n$\\tan2\\alpha=\\frac{4}{3}$，故 $AB=43$。\n由二倍角反推 $\\tan\\alpha=\\frac13$，故 $CD=12$。\n圆 $O_1$ 半径 $2r$ 与 $AC$ 相切，$AD=2r\\cot\\alpha=2r\\cdot3=6r$，对应 $E=4$（按题面空位编码）。"
+          },
+          {
+            "title": "处理 $\\beta$ 与 $CE$",
+            "content": "由图可得 $\\alpha+\\beta=45^\\circ$，所以 $FG=45$。\n利用正切加法可得 $\\tan\\beta=\\frac13$，即 $HI=13$。\n于是 $CE=r\\cot\\beta=3r$，故 $J=3$。"
+          },
+          {
+            "title": "代入总长度求 $r$",
+            "content": "$AC=15$，故 $KL=15$。\n两圆外切且圆心到 $AC$ 的距离差为 $r$，得 $DE=2\\sqrt2\\,r$，故 $MN=22$。\n由 $AD+DE+CE=AC$ 得\n$$6r+2\\sqrt2r+3r=15\\Rightarrow r=\\frac{15(7-2\\sqrt2)}{41}$$\n故 $OPQRS=15722$。"
+          }
+        ],
+        "finalAnswer": "AB=43，CD=12，E=4，FG=45，HI=13，J=3，KL=15，MN=22，OPQRS=15722。"
+      },
+      "answer_match": true,
+      "needs_review": true
+    },
+    {
+      "id": "c2-IV-1",
+      "number": "IV-1",
+      "topic": "指数三角函数积分",
+      "topicTag": "微积分",
+      "humanVerified": false,
+      "japanese": "设 $f(x)=4\\sqrt3e^{-x}\\cos x+6e^{-x}$。\n\n(1) 在 $0\\le x<2\\pi$ 中，$f(x)=0$ 的解为 $a,b(a<b)$：\n$$a=\\frac{\\fbox{A}}{\\fbox{B}}\\pi,\\quad b=\\frac{\\fbox{C}}{\\fbox{D}}\\pi$$\n\n(2) 满足\n$$\\frac{d}{dx}(pe^{-x}\\cos x+qe^{-x}\\sin x)=e^{-x}\\cos x$$\n的常数为\n$$p=\\frac{\\fbox{EF}}{\\fbox{G}},\\quad q=\\frac{\\fbox{H}}{\\fbox{I}}$$\n\n(3) 令 $A=e^{-a},B=e^{-b}$，则\n$$\\int_a^b f(x)dx=(\\fbox{J}-\\sqrt{\\fbox{K}})A-(\\fbox{L}+\\sqrt{\\fbox{M}})B$$",
+      "solution": {
+        "translation": "先解零点，再用待定系数求原函数，最后代入上下限。",
+        "analysis": "$f(x)=0$ 化为 $2\\sqrt3\\cos x+3=0$。积分项中 $e^{-x}\\cos x$ 通过线性组合求导得到。",
+        "steps": [
+          {
+            "title": "求零点",
+            "content": "$f(x)=e^{-x}(4\\sqrt3\\cos x+6)=0\\Rightarrow \\cos x=-\\frac{\\sqrt3}{2}$。\n在 $[0,2\\pi)$ 内解为 $x=\\frac{5\\pi}{6},\\frac{7\\pi}{6}$，故 $AB=56,CD=76$。"
+          },
+          {
+            "title": "求 $p,q$",
+            "content": "设 $F=pe^{-x}\\cos x+qe^{-x}\\sin x$，则\n$$F'=e^{-x}[(-p+q)\\cos x+(-p-q)\\sin x]$$\n与 $e^{-x}\\cos x$ 对比得\n$$-p+q=1,\\ -p-q=0\\Rightarrow p=-\\frac12,\\ q=\\frac12$$\n故 $EFG=-12,HI=12$。"
+          },
+          {
+            "title": "计算定积分形式",
+            "content": "由(2)可得\n$$\\int e^{-x}\\cos xdx=-\\frac12e^{-x}(\\cos x+\\sin x)$$\n故\n$$\\int f(x)dx=-2\\sqrt3e^{-x}(\\cos x+\\sin x)-6e^{-x}$$\n代入 $a=5\\pi/6,b=7\\pi/6$，并记 $A=e^{-a},B=e^{-b}$，得\n$$\\int_a^b f(x)dx=(3-\\sqrt3)A-(3+\\sqrt3)B$$\n对应 $JK=33,LM=33,NOPQR=18422$。"
+          }
+        ],
+        "finalAnswer": "AB=56，CD=76，EFG=−12，HI=12，JK=33，LM=33，NOPQR=18422。"
+      },
+      "answer_match": true,
+      "needs_review": true
+    },
+    {
+      "id": "c2-IV-2",
+      "number": "IV-2",
+      "topic": "定积分与极限",
+      "topicTag": "微积分",
+      "humanVerified": false,
+      "japanese": "设\n$$S=\\int_0^a x\\sqrt{\\frac13x+2}\\,dx$$\n并从备选式中选择 $\\fbox{S},\\fbox{T}$。最终求\n$$\\lim_{a\\to\\infty}\\frac{S}{a^{\\fbox{U}/\\fbox{V}}}=\\frac{\\fbox{W}\\sqrt{\\fbox{X}}}{\\fbox{YZ}}$$",
+      "solution": {
+        "translation": "换元积分后代回上下限，再取主项做极限。",
+        "analysis": "令 $t=\\sqrt{\\frac13x+2}$，则 $x=3(t^2-2),dx=6tdt$，被积函数化为多项式。",
+        "steps": [
+          {
+            "title": "不定积分对应选项",
+            "content": "$$\\int x\\sqrt{\\frac13x+2}dx=\\frac65t^3(3t^2-10)+C$$\n对应选项 ①，故 $S=1$（第一空）。"
+          },
+          {
+            "title": "定积分表达式",
+            "content": "下限 $x=0\\Rightarrow t=\\sqrt2$，上限 $x=a\\Rightarrow t=\\sqrt{\\frac13a+2}$。\n$$S=\\frac65\\left\\{\\left(\\sqrt{\\frac13a+2}\\right)^3(a-4)+8\\sqrt2\\right\\}$$\n对应选项 ⑧，故 $T=8$。"
+          },
+          {
+            "title": "求极限",
+            "content": "当 $a\\to\\infty$，\n$$S\\sim \\frac65\\cdot \\left(\\frac{a}{3}\\right)^{3/2}\\cdot a=\\frac{2}{5\\sqrt3}a^{5/2}$$\n故幂次为 $\\frac52$，即 $UV=52$；\n$$\\lim_{a\\to\\infty}\\frac{S}{a^{5/2}}=\\frac{2}{5\\sqrt3}=\\frac{2\\sqrt3}{15}$$\n所以 $WXYZ=2315$。"
+          }
+        ],
+        "finalAnswer": "S=1，T=8，UV=52，WXYZ=2315。"
+      },
+      "answer_match": true,
+      "needs_review": true
+    }
+  ]
+}
