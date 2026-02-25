@@ -89,6 +89,10 @@
       "humanVerified": true,
       "answer_match": true,
       "needs_review": false,
+      "image": {
+        "pageRef": "数学-6",
+        "description": "坐标平面图。x轴和y轴相交于原点O。x轴负半轴上从左到右依次标有点A、C，x轴正半轴上标有点D，第三象限（x<0，y<0）内标有点B。图示位置关系为：x轴方向 A < C < O < D，B在C的左下方（第三象限内）。两条抛物线（开口向上）分别过A、B、C三点和B、C、D三点。"
+      },
       "japanese": "考虑两条抛物线\n$$\\ell:\\; y = ax^2 + 2bx + c$$\n$$m:\\; y = (a+1)x^2 + 2(b+2)x + c + 3$$\n\n设点A、B、C、D的位置关系如图所示（A、C在x轴负半轴，B在第三象限，D在x轴正半轴）。其中一条抛物线过A、B、C三点，另一条过B、C、D三点。\n\n(1) 过A、B、C三点的抛物线是 $\\fbox{A}$（选⓪放物线$\\ell$，或①放物线$m$）。\n\n(2) 两条抛物线都过B、C两点，故B、C的$x$坐标是二次方程\n$$x^2 + \\fbox{B}\\,x + \\fbox{C} = 0$$\n的解。因此B的$x$坐标为 $\\fbox{DE}$，C的$x$坐标为 $\\fbox{FG}$。\n\n(3) 在AB=BC、CO=OD的条件下，求$a,b,c$的值。\n\n由于C和D关于$y$轴对称，$b = \\fbox{H}$。由AB=BC，直线$x=\\fbox{IJ}$是放物线$\\fbox{A}$的轴，故 $a = -\\dfrac{\\fbox{K}}{\\fbox{L}}$，因此 $c = \\dfrac{\\fbox{M}}{\\fbox{N}}$。",
       "solution": {
         "translation": "利用两抛物线差消去公共点，确定公共点横坐标满足的方程；再通过对称条件和轴的位置确定参数值。",
@@ -188,6 +192,10 @@
       "humanVerified": true,
       "answer_match": true,
       "needs_review": false,
+      "image": {
+        "pageRef": "数学-12",
+        "description": "几何图形。O在原点，A在O右侧x轴正方向（OA=6），B在O左上方（OB=3，∠AOB=120°）。射线OX沿x轴正方向延伸，射线BY沿B的左上方延伸。Q在图的右上方，为∠XAB的外角平分线（从A出发）与∠ABY的外角平分线（从B出发）的交点。线段OQ与线段AB的交点为P（P在B和A之间，靠近B侧）。图中可见三角形OAB，以及从A、B分别出发延伸至Q的两条角平分线，还有线段OP延长至Q。"
+      },
       "japanese": "如图，$OA=6$，$OB=3$，$\\angle AOB=120°$。点Q是∠XAB的外角平分线与∠ABY的外角平分线的交点，线段AB与OQ的交点为P。求线段PQ的长。\n\n(1) $AB = \\fbox{A}\\sqrt{\\fbox{B}}$，三角形OAB的面积为 $\\dfrac{\\fbox{C}\\sqrt{\\fbox{D}}}{\\fbox{E}}$。\n\n(2) 以下 $\\fbox{F}$、$\\fbox{G}$ 从选项 ⓪AB ①AP ②AQ ③BP ④BQ 中选择：\n\nAQ是△OAP中∠A的外角平分线，BQ是△OBP中∠B的外角平分线，因此\n$$OQ:PQ = OA:\\fbox{F}$$\n$$\\quad\\quad\\quad\\;\\;= OB:\\fbox{G}$$\n\n从而 $OA:OB = \\fbox{F}:\\fbox{G}$。\n\n(3) 因此 $AP = \\fbox{H}\\sqrt{\\fbox{I}}$，$\\angle AOP = \\fbox{JK}°$，$OP = \\fbox{L}$，故\n$$PQ = \\fbox{M} + \\fbox{N}\\sqrt{\\fbox{O}}$$",
       "solution": {
         "translation": "利用外角平分线定理（外分比例）确定P分AB的比，再用三角形正弦定理和余弦定理求各线段长，最后利用外分点的比例关系求PQ。",
