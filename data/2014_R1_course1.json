@@ -1,0 +1,213 @@
+{
+  "metadata": {
+    "course": "course1",
+    "year": "2014",
+    "session": "1",
+    "courseNameJa": "数学1",
+    "courseNameEn": "Course 1 (Basic)",
+    "description": "基础课程｜文科方向",
+    "color": "#2563eb",
+    "examTitle": "2014年度（平成26年）第1回",
+    "examDate": "2014年6月"
+  },
+  "questions": [
+    {
+      "id": "c1-I-1",
+      "number": "I-1",
+      "topic": "二次函数参数的确定与最大值",
+      "topicTag": "二次函数",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "二次函数 $y = ax^2 + bx + \\dfrac{3}{a}$ 满足下列两个条件：\n\n(i) $x=3$ 时，$y$ 取得最大值；\n(ii) $x=1$ 时，$y$ 的值为 $2$。\n\n利用条件 (i)(ii) 建立 $a, b$ 的关系式：\n$$\\begin{cases} b = \\fbox{AB}\\,a \\\\ \\fbox{C} = a + b + \\dfrac{\\fbox{D}}{a} \\end{cases}$$\n\n由以上两式，得到关于 $a$ 的方程\n$$\\fbox{E}\\,a^2 + \\fbox{F}\\,a - \\fbox{G} = 0$$\n\n从而 $a = \\fbox{HI}$，$b = \\fbox{J}$，此时函数的最大值为 $\\fbox{K}$。",
+      "solution": {
+        "translation": "已知二次函数满足最大值在 x=3 处取得以及过点 (1,2)，求参数 a, b 及函数最大值。",
+        "analysis": "由最大值条件可知抛物线开口向下且对称轴为 x=3，由此建立 b 与 a 的线性关系；再代入 x=1 的条件联立求解 a 的值。",
+        "steps": [
+          {
+            "title": "由条件(i)确定对称轴，建立 b 与 a 的关系",
+            "content": "函数在 $x=3$ 处取最大值，说明抛物线开口向下（$a<0$），且对称轴为\n$$x = -\\frac{b}{2a} = 3 \\implies b = -6a$$\n故 $\\fbox{AB} = -6$。",
+            "why": "抛物线开口向下才能有最大值；对称轴公式 $x=-\\frac{b}{2a}=3$ 整理得 $b=-6a$。"
+          },
+          {
+            "title": "由条件(ii)建立第二个方程",
+            "content": "将 $x=1$，$y=2$ 代入函数：\n$$a(1)^2 + b(1) + \\frac{3}{a} = 2 \\implies a + b + \\frac{3}{a} = 2$$\n故 $\\fbox{C}=2$，$\\fbox{D}=3$。"
+          },
+          {
+            "title": "联立两式，化为关于 a 的一元方程",
+            "content": "将 $b=-6a$ 代入 $a+b+\\dfrac{3}{a}=2$：\n$$a + (-6a) + \\frac{3}{a} = 2 \\implies -5a + \\frac{3}{a} = 2$$\n两边乘以 $a$：\n$$-5a^2 + 3 = 2a \\implies 5a^2 + 2a - 3 = 0$$\n故 $\\fbox{E}=5$，$\\fbox{F}=2$，$\\fbox{G}=3$。"
+          },
+          {
+            "title": "解方程，求 a、b 及函数最大值",
+            "content": "$(5a-3)(a+1)=0$，解得 $a=\\dfrac{3}{5}$ 或 $a=-1$。\n\n由 $a<0$，取 $a=-1$，故 $\\fbox{HI}=-1$。\n\n$b=-6\\times(-1)=6$，故 $\\fbox{J}=6$。\n\n函数化为 $y=-(x-3)^2+6$，最大值 $\\fbox{K}=6$（在 $x=3$ 处取得）。"
+          }
+        ],
+        "finalAnswer": "AB=−6，C=2，D=3，E=5，F=2，G=3，HI=−1，J=6，K=6"
+      }
+    },
+    {
+      "id": "c1-I-2",
+      "number": "I-2",
+      "topic": "整式的因式分解与特殊值代入",
+      "topicTag": "整式运算",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "两个整式 $P = 2x^2 - x + 2$，$Q = x^2 - 2x + 1$，设 $E = P^2 - 4Q^2 - 3P + 6Q$。\n\n(1) 对 $E$ 进行因式分解，得\n$$E = (P - \\fbox{L}\\,Q)(P + \\fbox{M}\\,Q - \\fbox{N})$$\n\n(2) 将 $E$ 用 $x$ 的式子表示：\n$$E = \\fbox{O}\\,x\\,(x - \\fbox{P})(\\fbox{Q}\\,x - \\fbox{R})$$\n\n(3) 当 $x = -\\dfrac{1-\\sqrt{5}}{3-\\sqrt{5}}$ 时，$E$ 的值为 $\\fbox{S} + \\fbox{T}\\sqrt{\\fbox{U}}$。",
+      "solution": {
+        "translation": "先将含 P, Q 的表达式因式分解，再代入 x 得具体多项式，最后有理化 x 值后计算 E 的值。",
+        "analysis": "将 E 视为关于 P 的二次式，利用平方差公式提取公因式；代入 P, Q 的表达式化为 x 的多项式；对特殊 x 值先有理化再代入。",
+        "steps": [
+          {
+            "title": "(1) 将 E 关于 P, Q 因式分解",
+            "content": "$$E = P^2 - 4Q^2 - 3P + 6Q = (P^2-4Q^2) - 3(P-2Q)$$\n$$= (P-2Q)(P+2Q) - 3(P-2Q) = (P-2Q)(P+2Q-3)$$\n故 $\\fbox{L}=2$，$\\fbox{M}=2$，$\\fbox{N}=3$。"
+          },
+          {
+            "title": "(2) 代入 P, Q 的表达式，化为 x 的多项式",
+            "content": "$P-2Q = (2x^2-x+2)-2(x^2-2x+1) = 3x$\n\n$P+2Q-3 = (2x^2-x+2)+2(x^2-2x+1)-3 = 4x^2-5x+1 = (x-1)(4x-1)$\n\n故\n$$E = 3x\\cdot(x-1)(4x-1)$$\n即 $\\fbox{O}=3$，$\\fbox{P}=1$，$\\fbox{Q}=4$，$\\fbox{R}=1$。"
+          },
+          {
+            "title": "(3) 有理化 x，代入计算 E",
+            "content": "$$x = -\\frac{1-\\sqrt{5}}{3-\\sqrt{5}} = -\\frac{(1-\\sqrt{5})(3+\\sqrt{5})}{(3-\\sqrt{5})(3+\\sqrt{5})} = -\\frac{3+\\sqrt{5}-3\\sqrt{5}-5}{9-5} = -\\frac{-2-2\\sqrt{5}}{4} = \\frac{1+\\sqrt{5}}{2}$$\n\n各因子值：\n$$x-1=\\frac{\\sqrt{5}-1}{2},\\qquad 4x-1=2(1+\\sqrt{5})-1=1+2\\sqrt{5}$$\n\n代入 $E=3x(x-1)(4x-1)$：\n$$E = 3\\cdot\\frac{1+\\sqrt{5}}{2}\\cdot\\frac{\\sqrt{5}-1}{2}\\cdot(1+2\\sqrt{5}) = 3\\cdot\\frac{(\\sqrt{5})^2-1^2}{4}\\cdot(1+2\\sqrt{5}) = 3\\cdot1\\cdot(1+2\\sqrt{5})= 3+6\\sqrt{5}$$\n\n故 $\\fbox{S}=3$，$\\fbox{T}=6$，$\\fbox{U}=5$。",
+            "why": "$(1+\\sqrt{5})(\\sqrt{5}-1)=(\\sqrt{5})^2-1^2=4$，利用平方差化简乘积。"
+          }
+        ],
+        "finalAnswer": "L=2，M=2，N=3；O=3，P=1，Q=4，R=1；S=3，T=6，U=5"
+      }
+    },
+    {
+      "id": "c1-II-1",
+      "number": "II-1",
+      "topic": "有放回抽球的概率与不等式",
+      "topicTag": "概率",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "一个箱子中有 $n$ 个红球和 $(20-n)$ 个白球（$0<n<20$）。每次取出 1 球记录颜色后放回，反复进行。\n\n(1) 一次取球中取出红球的概率设为 $x$，则 $x = \\dfrac{n}{\\fbox{AB}}$。\n\n(2) 将此试验重复 2 次，至少 1 次取出白球的概率 $p$ 用 $x$ 表示为\n$$p = \\fbox{C} - x^{\\fbox{D}}$$\n\n(3) 将此试验重复 4 次，至少 2 次取出白球的概率 $q$ 用 $x$ 表示为\n$$q = \\fbox{E} - \\fbox{F}\\,x^{\\fbox{G}} + \\fbox{H}\\,x^{\\fbox{I}}$$\n\n(4) 对 (2)(3) 中的 $p, q$，求满足 $p < q$ 的 $n$ 的最大值。\n\n由 $p<q$，得不等式\n$$\\fbox{J}\\,x^2 - \\fbox{K}\\,x + 1 > 0$$\n解得 $x < \\dfrac{1}{\\fbox{L}}$，从而 $n$ 的最大值为 $\\fbox{M}$。",
+      "solution": {
+        "translation": "分析有放回抽球实验中各种概率的表达式，利用补集法建立不等式，求满足条件的 n 的最大值。",
+        "analysis": "用补集法处理「至少」型概率；用二项分布计算各项；最后对二次不等式求解后转化为 n 的范围。",
+        "steps": [
+          {
+            "title": "(1) 每次取出红球的概率",
+            "content": "箱中共 $20$ 个球，红球 $n$ 个，故\n$$x = \\frac{n}{20},\\quad \\fbox{AB}=20$$"
+          },
+          {
+            "title": "(2) 重复 2 次，至少 1 次白球的概率",
+            "content": "用补集：两次全取红球的概率为 $x^2$，故\n$$p = 1 - x^2$$\n$\\fbox{C}=1$，$\\fbox{D}=2$。"
+          },
+          {
+            "title": "(3) 重复 4 次，至少 2 次白球的概率",
+            "content": "用补集，从「4次全红」和「恰好1次白球」中减去：\n$$P(\\text{4次全红}) = x^4$$\n$$P(\\text{恰好1次白球}) = \\binom{4}{1}(1-x)\\cdot x^3 = 4x^3-4x^4$$\n$$q = 1 - x^4 - (4x^3-4x^4) = 1 - 4x^3 + 3x^4$$\n故 $\\fbox{E}=1$，$\\fbox{F}=4$，$\\fbox{G}=3$，$\\fbox{H}=3$，$\\fbox{I}=4$。",
+            "why": "「至少2次白球」= 全集 − 「0次白球」− 「恰好1次白球」。恰好1次白球：在4次中指定某次为白球（概率 $1-x$），其余3次均为红球（概率 $x^3$），共 $\\binom{4}{1}$ 种选法。"
+          },
+          {
+            "title": "(4) 由 p < q 建立不等式，求 n 的最大值",
+            "content": "$1-x^2 < 1-4x^3+3x^4$\n$$\\Rightarrow\\quad 4x^3-3x^4-x^2 < 0 \\quad \\Rightarrow \\quad x^2(4x-3x^2-1)<0$$\n\n因 $0<x<1$，故 $x^2>0$，需 $4x-3x^2-1<0$，即\n$$3x^2-4x+1>0 \\quad \\Rightarrow \\quad (3x-1)(x-1)>0$$\n故 $\\fbox{J}=3$，$\\fbox{K}=4$。\n\n由 $0<x<1$，解得 $x<\\dfrac{1}{3}$，$\\fbox{L}=3$。\n\n由 $x=\\dfrac{n}{20}<\\dfrac{1}{3}$，得 $n<\\dfrac{20}{3}\\approx6.67$，故 $n$ 的最大值 $\\fbox{M}=6$。"
+          }
+        ],
+        "finalAnswer": "AB=20；C=1，D=2；E=1，F=4，G=3，H=3，I=4；J=3，K=4，L=3，M=6"
+      }
+    },
+    {
+      "id": "c1-II-2",
+      "number": "II-2",
+      "topic": "含素数的方程的正整数解",
+      "topicTag": "整数与素数",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "设 $p$ 为素数，$x, y$ 为正整数，求满足\n$$\\dfrac{p}{x} + \\dfrac{7}{y} = p$$\n的 $p, x, y$ 的所有组合。\n\n对原式变形，得\n$$(x - \\fbox{N})(py - \\fbox{O}) = \\fbox{P}$$\n\n由此，\n$$x - \\fbox{N} = \\fbox{Q}\\quad\\text{或}\\quad\\fbox{R}\\qquad(\\fbox{Q}<\\fbox{R})$$\n从而\n$$x = \\fbox{S}\\quad\\text{或}\\quad\\fbox{T}\\qquad(\\fbox{S}<\\fbox{T})$$\n\n当 $x = \\fbox{S}$ 时，$p = \\fbox{U}$，$y = \\fbox{V}$，或 $p = \\fbox{W}$，$y = \\fbox{X}$（其中 $\\fbox{U}<\\fbox{W}$）；\n\n当 $x = \\fbox{T}$ 时，$p = \\fbox{Y}$，$y = \\fbox{Z}$。",
+      "solution": {
+        "translation": "将方程变形为乘积形式，利用整数因子对枚举所有满足素数条件的解。",
+        "analysis": "通分后提取因式，得到两正整数之积等于7（7是质数，因子对有限），再逐一验证素数条件。",
+        "steps": [
+          {
+            "title": "变形原方程为乘积形式",
+            "content": "两边乘以 $xy$：$py + 7x = pxy$，整理：\n$$pxy - py - 7x + 7 = 7 \\implies py(x-1) - 7(x-1) = 7$$\n$$(x-1)(py-7) = 7$$\n故 $\\fbox{N}=1$，$\\fbox{O}=7$，$\\fbox{P}=7$。"
+          },
+          {
+            "title": "分析正整数因子对",
+            "content": "由于 $x \\geq 1$ 且 $x=1$ 时左边为 0（矛盾），故 $x-1 \\geq 1$；同理需 $py-7>0$。\n\n7 是质数，正因子对只有 $1\\times7$，故：\n$$x-1=1\\quad\\text{或}\\quad x-1=7$$\n即 $\\fbox{Q}=1$，$\\fbox{R}=7$；$\\fbox{S}=2$，$\\fbox{T}=8$。",
+            "why": "$(x-1)(py-7)=7$，两个正因子的积等于7，只有 $1\\times7$ 一种分解方式。"
+          },
+          {
+            "title": "当 x=2 时，求满足条件的 p, y",
+            "content": "$x=2$：$py=14$，$p$ 须是 14 的素因子。\n\n$14=2\\times7$，素因子为 $p=2$（此时 $y=7$）或 $p=7$（此时 $y=2$）。\n\n故 $\\fbox{U}=2$，$\\fbox{V}=7$；$\\fbox{W}=7$，$\\fbox{X}=2$。\n\n验证：$(p,x,y)=(2,2,7)$：$\\tfrac{2}{2}+\\tfrac{7}{7}=1+1=2$ ✓；$(7,2,2)$：$\\tfrac{7}{2}+\\tfrac{7}{2}=7$ ✓"
+          },
+          {
+            "title": "当 x=8 时，求满足条件的 p, y",
+            "content": "$x=8$：$py=8$，$p$ 须是 8 的素因子，且 $p\\leq8$。\n\n$8=2^3$，素因子只有 $p=2$（此时 $y=4$）；$p=4$ 和 $p=8$ 非素数。\n\n故 $\\fbox{Y}=2$，$\\fbox{Z}=4$。\n\n验证：$(p,x,y)=(2,8,4)$：$\\tfrac{2}{8}+\\tfrac{7}{4}=\\tfrac{1}{4}+\\tfrac{7}{4}=2$ ✓"
+          }
+        ],
+        "finalAnswer": "N=1，O=7，P=7；Q=1，R=7；S=2，T=8；U=2，V=7，W=7，X=2；Y=2，Z=4"
+      }
+    },
+    {
+      "id": "c1-III-1",
+      "number": "III",
+      "topic": "二次函数过两点的参数范围与值域",
+      "topicTag": "二次函数",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "考虑 $x$ 的二次函数\n$$y = ax^2 + bx + c \\quad\\cdots①$$\n其图像过两点 $(-1,\\ -1)$ 和 $(2,\\ 2)$。\n\n(1) 用 $a$ 表示 $b$ 和 $c$：\n$$b = \\fbox{A} - a,\\quad c = \\fbox{BC}\\,a$$\n\n(2) 函数①的图像与 $x$ 轴的交点中，有一个在 $0 < x \\leq 1$ 的范围内，此时 $a$ 的范围为\n$$\\fbox{D} < a \\leq \\dfrac{\\fbox{E}}{\\fbox{F}} \\quad\\cdots②$$\n\n(3) 当 $a$ 在②的范围内变化时，$a+bc$ 的值域为\n$$\\dfrac{\\fbox{GH}}{\\fbox{I}} \\leq a+bc \\leq \\fbox{J}$$",
+      "solution": {
+        "translation": "由两点条件确定 b, c 关于 a 的表达式，分析零点位置约束 a 的范围，最后求复合表达式的值域。",
+        "analysis": "代入两点建立方程组求 b, c；分析函数值在端点处符号来判断根的位置；将 a+bc 化为 a 的二次函数后求值域。",
+        "steps": [
+          {
+            "title": "(1) 代入两点，用 a 表示 b 和 c",
+            "content": "代入 $(-1,-1)$：$a-b+c=-1$ ……③\n代入 $(2,2)$：$4a+2b+c=2$ ……④\n\n④−③：$3a+3b=3\\Rightarrow b=1-a$，故 $\\fbox{A}=1$。\n\n代入③：$a-(1-a)+c=-1\\Rightarrow c=-2a$，故 $\\fbox{BC}=-2$。"
+          },
+          {
+            "title": "(2) 分析 (0,1] 内有零点的条件",
+            "content": "函数为 $y=ax^2+(1-a)x-2a$，计算两个端点处的值：\n$$y(0)=-2a,\\qquad y(1)=a+(1-a)-2a=1-2a$$\n\n当 $a>0$ 时，$y(0)=-2a<0$：\n- $0<a<\\tfrac{1}{2}$：$y(1)=1-2a>0$，由介值定理，$(0,1)$ 内有零点 ✓\n- $a=\\tfrac{1}{2}$：$y(1)=0$，$x=1$ 是零点 ✓\n- $a>\\tfrac{1}{2}$：$y(1)<0$，$(0,1]$ 两端同号，零点在区间外 ✗\n\n当 $a\\leq0$ 时，$y(0)\\geq0$，$y(1)\\geq1>0$，两端均非负，开口向下时区间内无零点 ✗\n\n故 $a$ 的范围为 $\\fbox{D}=0$，$\\fbox{E}=1$，$\\fbox{F}=2$。"
+          },
+          {
+            "title": "(3) 求 a+bc 的值域",
+            "content": "将 $b=1-a$，$c=-2a$ 代入：\n$$a+bc = a+(1-a)(-2a) = a-2a+2a^2 = 2a^2-a$$\n\n对 $f(a)=2a^2-a=2\\left(a-\\dfrac{1}{4}\\right)^2-\\dfrac{1}{8}$ 在 $a\\in\\left(0,\\dfrac{1}{2}\\right]$ 上分析：\n\n- 顶点 $a=\\dfrac{1}{4}\\in\\left(0,\\dfrac{1}{2}\\right]$，最小值 $f\\!\\left(\\dfrac{1}{4}\\right)=-\\dfrac{1}{8}$\n- $a=\\dfrac{1}{2}$ 时，最大值 $f\\!\\left(\\dfrac{1}{2}\\right)=\\dfrac{1}{2}-\\dfrac{1}{2}=0$\n\n故 $-\\dfrac{1}{8}\\leq a+bc\\leq0$，即 $\\fbox{GH}=-1$，$\\fbox{I}=8$，$\\fbox{J}=0$。"
+          }
+        ],
+        "finalAnswer": "A=1，BC=−2；D=0，EF=12（即 1/2）；GHI=−18（即 −1/8），J=0"
+      }
+    },
+    {
+      "id": "c1-IV-1",
+      "number": "IV",
+      "topic": "三角形的外接圆与切线交点",
+      "topicTag": "三角形与外接圆",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": false,
+      "questionDiagram": {
+        "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 265 200' width='265' height='200'><style>text{font-family:serif;font-size:13px;}</style><line x1='13' y1='118' x2='221' y2='156' stroke='#374151' stroke-width='1.8'/><line x1='106' y1='59' x2='221' y2='156' stroke='#374151' stroke-width='1.8'/><circle cx='80' cy='90' r='40' fill='#eff6ff' stroke='#2563eb' stroke-width='2.2'/><polygon points='41,80 73,129 106,59' fill='none' stroke='#1d4ed8' stroke-width='2'/><circle cx='80' cy='90' r='3' fill='#1d4ed8'/><circle cx='41' cy='80' r='3' fill='#1d4ed8'/><circle cx='73' cy='129' r='3' fill='#1d4ed8'/><circle cx='106' cy='59' r='3' fill='#1d4ed8'/><circle cx='221' cy='156' r='3' fill='#374151'/><text x='26' y='78' fill='#1e40af' font-weight='bold'>A</text><text x='57' y='146' fill='#1e40af' font-weight='bold'>B</text><text x='111' y='57' fill='#1e40af' font-weight='bold'>C</text><text x='84' y='97' fill='#1e40af'>O</text><text x='227' y='165' fill='#374151' font-weight='bold'>D</text></svg>"
+      },
+      "japanese": "三角形 ABC 满足 $AB=7$，$BC=8$，$CA=6$。设三角形 ABC 的外接圆圆心为 O，半径为 $r$。另外，分别过 B、C 两点作该外接圆的切线，两切线的交点设为 D。\n\n此时\n$$\\cos\\angle BAC = \\dfrac{\\fbox{A}}{\\fbox{B}},\\qquad \\sin\\angle BAC = \\dfrac{\\sqrt{\\fbox{CD}}}{\\fbox{E}},$$\n$$r = \\dfrac{\\fbox{FG}\\sqrt{\\fbox{HI}}}{\\fbox{JK}},\\qquad BD = \\fbox{LM}$$\n\n进一步，在外接圆圆周上取点 P，线段 DP 的最短长度为 $\\dfrac{\\fbox{NO}\\sqrt{\\fbox{PQ}}}{\\fbox{R}}$。",
+      "solution": {
+        "translation": "利用余弦定理求角，正弦定理求外接圆半径，再通过极点-极线关系求 BD 及 DP 的最短长度。",
+        "analysis": "余弦定理求 cos∠BAC，正弦定理求 r；切线 DB⊥OB，故 BD²=OD²−r²；D 是直线 BC 关于外接圆的极点，利用 OD·d=r²（d 为圆心到 BC 的距离）求 OD；DP 最短时 P 在线段 OD 与圆的交点处。",
+        "steps": [
+          {
+            "title": "用余弦定理求 cos∠BAC",
+            "content": "以 BC=8 为对边，对 ∠BAC 用余弦定理：\n$$BC^2 = AB^2 + CA^2 - 2\\cdot AB\\cdot CA\\cdot\\cos\\angle BAC$$\n$$64 = 49+36-2\\cdot7\\cdot6\\cdot\\cos\\angle BAC = 85-84\\cos\\angle BAC$$\n$$\\cos\\angle BAC = \\frac{85-64}{84} = \\frac{21}{84} = \\frac{1}{4}$$\n故 $\\fbox{A}=1$，$\\fbox{B}=4$。"
+          },
+          {
+            "title": "求 sin∠BAC 及外接圆半径 r",
+            "content": "$$\\sin\\angle BAC = \\sqrt{1-\\frac{1}{16}} = \\frac{\\sqrt{15}}{4}$$\n故 $\\fbox{CD}=15$，$\\fbox{E}=4$。\n\n由正弦定理 $2r=\\dfrac{BC}{\\sin\\angle BAC}$：\n$$r = \\frac{8}{2\\cdot\\frac{\\sqrt{15}}{4}} = \\frac{8\\cdot4}{2\\sqrt{15}} = \\frac{16}{\\sqrt{15}} = \\frac{16\\sqrt{15}}{15}$$\n故 $\\fbox{FG}=16$，$\\fbox{HI}=15$，$\\fbox{JK}=15$。"
+          },
+          {
+            "title": "求切线长 BD",
+            "content": "切线 DB 切圆于 B，故 $OB\\perp DB$，即\n$$BD^2 = OD^2 - r^2$$\n\n圆心 O 到弦 BC 的距离 $d$（由勾股定理）：\n$$d = \\sqrt{r^2-\\left(\\frac{BC}{2}\\right)^2} = \\sqrt{\\frac{256\\cdot15}{225}-16} = \\sqrt{\\frac{3840-3600}{225}} = \\frac{4}{\\sqrt{15}}$$\n\nD 是直线 BC 关于外接圆的极点，由极点-极线关系 $OD\\cdot d = r^2$：\n$$OD = \\frac{r^2}{d} = \\frac{256/15}{4/\\sqrt{15}} = \\frac{256}{15}\\cdot\\frac{\\sqrt{15}}{4} = \\frac{64\\sqrt{15}}{15}$$\n\n$$BD^2 = OD^2-r^2 = \\left(\\frac{64\\sqrt{15}}{15}\\right)^2 - \\left(\\frac{16\\sqrt{15}}{15}\\right)^2 = \\frac{15}{225}(4096-256) = \\frac{15\\times3840}{225} = 256$$\n$$BD=16,\\quad\\fbox{LM}=16$$",
+            "why": "D 是过 B、C 两切线的交点，等价于 D 是直线 BC（极线）关于圆的极点。极点到圆心的距离与极线到圆心的距离满足 $OD\\cdot d=r^2$。"
+          },
+          {
+            "title": "求圆上点 P 使 DP 最短",
+            "content": "D 在圆外，P 在圆上，当 P 在线段 OD 与圆的交点（靠近 D 一侧）处时，DP 最小：\n$$DP_{\\min} = OD - r = \\frac{64\\sqrt{15}}{15} - \\frac{16\\sqrt{15}}{15} = \\frac{48\\sqrt{15}}{15} = \\frac{16\\sqrt{15}}{5}$$\n故 $\\fbox{NO}=16$，$\\fbox{PQ}=15$，$\\fbox{R}=5$。"
+          }
+        ],
+        "finalAnswer": "A=1，B=4；CD=15，E=4；FG=16，HI=15，JK=15；LM=16；NO=16，PQ=15，R=5"
+      }
+    }
+  ]
+}
