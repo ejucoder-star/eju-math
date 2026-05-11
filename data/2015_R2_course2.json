@@ -1,0 +1,207 @@
+$ cat /home/user/eju-math/data/2015_R2_course1.json
+
+{
+  "metadata": {
+    "course": "course1",
+    "year": "2015",
+    "session": "2",
+    "courseNameJa": "数学1",
+    "courseNameEn": "Course 1 (Basic)",
+    "description": "基础课程｜文科方向",
+    "color": "#2563eb",
+    "examTitle": "2015年度（平成27年）第2回",
+    "examDate": "2015年11月"
+  },
+  "questions": [
+    {
+      "id": "c1-I-1",
+      "number": "I-1",
+      "topic": "二次函数在区间上的最值",
+      "topicTag": "二次函数",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "设 $a, b$ 为实数，且 $0 < b < 7$。考虑二次函数\n$$f(x) = x^2 - 6x + a$$\n在 $b \\leq x \\leq 7$ 上的最大值 $M$ 与最小值 $m$。\n\n$f(x)$ 可表示为\n$$f(x) = \\left(x - \\fbox{A}\\right)^2 + a - \\fbox{B}$$\n\n(1) 下文 $\\fbox{C}\\sim\\fbox{G}$ 从下列 ⓪～⑨ 中选择适当的选项：\n\n分以下两种情形求 $M, m$：\n\n(i) 当 $0 < b \\leq \\fbox{C}$ 时\n$$M = \\fbox{D},\\quad m = \\fbox{E}$$\n\n(ii) 当 $\\fbox{C} < b < 7$ 时\n$$M = \\fbox{F},\\quad m = \\fbox{G}$$\n\n选项：⓪ $0$ ① $1$ ② $2$ ③ $3$ ④ $a-6$ ⑤ $a+7$ ⑥ $a+8$ ⑦ $a-9$ ⑧ $b^2-6b+a$ ⑨ $b^2+6b+a$\n\n(2) 当 $M=13$，$m=1$ 时，求 $a, b$：\n$$a = \\fbox{H},\\quad b = \\fbox{I}$$",
+      "solution": {
+        "translation": "把f(x)配方后分析顶点x=3是否在区间[b,7]内，分两种情况讨论极值的位置，再由M=13、m=1反推a,b。",
+        "analysis": "配方得f(x)=(x-3)²+a-9，顶点在x=3。当0<b≤3时顶点在区间内（最小值在顶点处）；当3<b<7时函数在[b,7]单调递增（最小值在x=b处）。最大值因为7离顶点更远，恒在x=7处取得。",
+        "steps": [
+          {
+            "title": "配方",
+            "content": "$$f(x) = x^2 - 6x + a = (x-3)^2 + a - 9$$\n\n故 $\\fbox{A}=3$，$\\fbox{B}=9$。顶点在 $x=3$，开口向上。"
+          },
+          {
+            "title": "(1) 情形 (i)：0 < b ≤ 3",
+            "content": "此时顶点 $x=3$ 在 $[b,7]$ 内，最小值在顶点取得：\n$$m = f(3) = a - 9 \\quad \\Rightarrow \\fbox{E} = ⑦$$\n\n最大值在距顶点较远的端点取得。$b$ 到顶点距离 $3-b \\leq 3$，$7$ 到顶点距离 $4$，故最大值在 $x=7$：\n$$M = f(7) = 49 - 42 + a = a + 7 \\quad \\Rightarrow \\fbox{D} = ⑤$$\n\n临界值 $\\fbox{C}=3$（选项③）。"
+          },
+          {
+            "title": "(1) 情形 (ii)：3 < b < 7",
+            "content": "此时顶点 $x=3$ 在区间 $[b,7]$ 左侧，$f(x)$ 在 $[b,7]$ 上单调递增：\n\n最小值在 $x=b$：\n$$m = f(b) = b^2 - 6b + a \\quad \\Rightarrow \\fbox{G} = ⑧$$\n\n最大值在 $x=7$：\n$$M = f(7) = a + 7 \\quad \\Rightarrow \\fbox{F} = ⑤$$"
+          },
+          {
+            "title": "(2) 由 M=13, m=1 求 a, b",
+            "content": "在两种情形下 $M = a+7 = 13$，故 $a = 6$。\n\n试情形 (i)：$m = a - 9 = -3 \\neq 1$，不符。\n\n用情形 (ii)：$m = b^2 - 6b + a = 1$，即 $b^2 - 6b + 6 = 1$：\n$$b^2 - 6b + 5 = 0 \\implies (b-1)(b-5) = 0 \\implies b=1 \\text{ 或 } b=5$$\n\n由情形 (ii) 要求 $3 < b < 7$，故 $b = 5$。\n\n$\\fbox{H} = 6$，$\\fbox{I} = 5$。"
+          }
+        ],
+        "finalAnswer": "A=3，B=9；C=3，D=⑤(a+7)，E=⑦(a-9)，F=⑤(a+7)，G=⑧(b²-6b+a)；H=6，I=5"
+      }
+    },
+    {
+      "id": "c1-I-2",
+      "number": "I-2",
+      "topic": "三枚骰子事件的计数与并事件概率",
+      "topicTag": "概率",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "同时投掷大、中、小三枚骰子，所得点数分别记为 $x, y, z$。设事件\n$$A: x = y = z,\\quad B: x+y+z = 6,\\quad C: x+y = z$$\n\n(1) 事件 $A, B, C$ 发生的情况数分别为：\n$$A: \\fbox{J},\\quad B: \\fbox{KL},\\quad C: \\fbox{MN}$$\n\n(2) 事件 $A\\cap B$、$B\\cap C$、$C\\cap A$ 的情况数分别为：\n$$A\\cap B: \\fbox{O},\\quad B\\cap C: \\fbox{P},\\quad C\\cap A: \\fbox{Q}$$\n\n(3) 事件 $B\\cup C$ 的概率为\n$$P(B\\cup C) = \\dfrac{\\fbox{RS}}{\\fbox{TUV}}$$",
+      "solution": {
+        "translation": "枚举三枚骰子在各事件下的所有有序组合数；利用并集容斥公式求并事件概率。",
+        "analysis": "事件A有6种(同点)；事件B由正整数解x+y+z=6求得（且≤6自动满足）；事件C由z=x+y分类（z=2到6）；并事件用|B|+|C|−|B∩C|。",
+        "steps": [
+          {
+            "title": "(1) 求 |A|, |B|, |C|",
+            "content": "**A**：$x=y=z$，共 $1, 2, \\dots, 6$ 共 **6** 种。$\\fbox{J}=6$。\n\n**B**：$x+y+z=6$，$x,y,z\\geq 1$。设 $x'=x-1$ 等，则 $x'+y'+z'=3$ 的非负整数解数为 $\\binom{3+2}{2}=10$。且因每个 $\\leq 4 \\leq 6$，约束自动满足。$\\fbox{KL}=10$。\n\n**C**：$x+y=z$，$z\\leq 6$，$x,y\\geq 1$：\n- $z=2$：$(1,1)$，1 种\n- $z=3$：$(1,2),(2,1)$，2 种\n- $z=4$：3 种；$z=5$：4 种；$z=6$：5 种\n\n合计 $1+2+3+4+5=15$。$\\fbox{MN}=15$。"
+          },
+          {
+            "title": "(2) 求交集事件数",
+            "content": "**A∩B**：$x=y=z$ 且 $3x=6$ → $x=2$，即 $(2,2,2)$，**1** 种。$\\fbox{O}=1$。\n\n**B∩C**：$x+y+z=6$ 且 $x+y=z$ → $2z=6$，$z=3$；$x+y=3$，$x,y\\geq 1$：$(1,2),(2,1)$，**2** 种。$\\fbox{P}=2$。\n\n**C∩A**：$x+y=z$ 且 $x=y=z$ → $2x=x$ → $x=0$，与 $x\\geq 1$ 矛盾，**0** 种。$\\fbox{Q}=0$。"
+          },
+          {
+            "title": "(3) 求 P(B∪C)",
+            "content": "总样本空间 $6^3=216$。\n\n$$|B \\cup C| = |B| + |C| - |B \\cap C| = 10 + 15 - 2 = 23$$\n\n$$P(B \\cup C) = \\frac{23}{216}$$\n\n故 $\\fbox{RS}=23$，$\\fbox{TUV}=216$。"
+          }
+        ],
+        "finalAnswer": "J=6，KL=10，MN=15；O=1，P=2，Q=0；RS=23，TUV=216"
+      }
+    },
+    {
+      "id": "c1-II-1",
+      "number": "II-1",
+      "topic": "含绝对值函数的最小值与参数范围",
+      "topicTag": "绝对值不等式",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "考虑 $x$ 的表达式\n$$P = |x-1| + |x-2| + |x-a|$$\n\n求使 $P$ 在 $x=a$ 处取得最小值的实数 $a$ 的范围。\n\n首先，对任意实数有不等式\n$$|x-1| + |x-2| + |x-a| \\geq |x-1| + |x-2|$$\n\n且等号成立当且仅当 $x = a$。\n\n此时令 $y = |x-1| + |x-2|$。则有\n$$y = \\begin{cases} -\\fbox{A}\\,x + \\fbox{B} & (x < \\fbox{C}) \\\\ \\fbox{D} & (\\fbox{C} \\leq x \\leq \\fbox{E}) \\\\ \\fbox{F}\\,x - \\fbox{G} & (\\fbox{E} < x) \\end{cases}$$\n\n考虑 ① 的图象，$y$ 的最小值为 $\\fbox{H}$，且使该不等式成立的所有 $x$ 满足 $\\fbox{I} \\leq x \\leq \\fbox{J}$ 时 $y$ 取此最小值 $\\fbox{H}$。\n\n因此，对所有满足 $\\fbox{K} \\leq a \\leq \\fbox{L}$ 的 $a$，$P$ 在 $x=a$ 处取得最小值，此时 $P$ 的最小值为 $\\fbox{M}$。",
+      "solution": {
+        "translation": "用绝对值不等式将P下界化为y=|x-1|+|x-2|，再分析y的分段表达式确定最小值1对应的区间[1,2]，从而a∈[1,2]时P在x=a处取最小值1。",
+        "analysis": "y=|x-1|+|x-2|在x<1时为-2x+3，在1≤x≤2时恒为1，在x>2时为2x-3，最小值1在[1,2]上取得。要使P的最小值在x=a取得（且|x-a|=0），需a∈[1,2]。",
+        "steps": [
+          {
+            "title": "分段写出 y = |x-1| + |x-2|",
+            "content": "- 当 $x < 1$：$y = -(x-1) - (x-2) = -2x + 3$\n- 当 $1 \\leq x \\leq 2$：$y = (x-1) - (x-2) = 1$\n- 当 $x > 2$：$y = (x-1) + (x-2) = 2x - 3$\n\n故 $\\fbox{A}=2$，$\\fbox{B}=3$，$\\fbox{C}=1$，$\\fbox{D}=1$，$\\fbox{E}=2$，$\\fbox{F}=2$，$\\fbox{G}=3$。"
+          },
+          {
+            "title": "求 y 的最小值及对应 x 范围",
+            "content": "由分段函数：\n- $x<1$ 时 $y=-2x+3>1$\n- $1\\leq x\\leq 2$ 时 $y=1$\n- $x>2$ 时 $y=2x-3>1$\n\n故 $y$ 的最小值为 $\\fbox{H}=1$，在 $\\fbox{I}=1 \\leq x \\leq \\fbox{J}=2$ 时达到。"
+          },
+          {
+            "title": "确定使 P 在 x=a 取最小的 a 范围",
+            "content": "由不等式 $P \\geq y$（等号 $\\iff x=a$），$P$ 的最小值 $\\geq$ $y$ 的最小值 $=1$。\n\n$P(a) = |a-1|+|a-2|+0 = y(a)$。\n\n要使 $P$ 在 $x=a$ 处取最小，必须 $P(a)$ 是 $P$ 的全局最小，即 $P(a) = 1$，等价于 $y(a) = 1$，即 $1 \\leq a \\leq 2$。\n\n验证：若 $1 \\leq a \\leq 2$，则对任意 $x$ 有 $P(x) \\geq y(x) \\geq 1 = P(a)$，故 $P$ 在 $x=a$ 取最小值 $1$。\n\n若 $a<1$ 或 $a>2$，取 $x \\in [1,2]$ 时 $y(x)=1 < y(a)$，又 $|x-a|$ 可能比 $|a-1|+|a-2|-1$ 小，可证 $P$ 的最小不在 $x=a$ 处。\n\n$\\fbox{K}=1$，$\\fbox{L}=2$，$\\fbox{M}=1$。"
+          }
+        ],
+        "finalAnswer": "A=2，B=3，C=1，D=1，E=2，F=2，G=3；H=1，I=1，J=2；K=1，L=2，M=1"
+      }
+    },
+    {
+      "id": "c1-II-2",
+      "number": "II-2",
+      "topic": "最大公约数与最小公倍数条件下的整数方程",
+      "topicTag": "整数",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "设自然数 $a, b$ 的最大公约数为 $3$，最小公倍数为 $\\ell$。考虑满足\n$$3a - 2b = \\ell + 3 \\quad \\cdots ①$$\n\n的自然数 $a, b$。\n\n令 $a = 3p$，$b = 3q$，则 $p, q$ 互素，故 $\\ell = \\fbox{N}\\,pq$。代入 ①，用 $p, q$ 表示得\n$$pq - \\fbox{O}\\,p + \\fbox{P}\\,q + \\fbox{Q} = 0$$\n\n变形为\n$$\\left(p + \\fbox{R}\\right)\\left(q - \\fbox{S}\\right) = -\\fbox{T}$$\n\n在满足该等式的整数 $p, q$ 中，使 $a, b$ 都为自然数的是\n$$p = \\fbox{U},\\quad q = \\fbox{V}$$\n\n此时 $a = \\fbox{WX}$，$b = \\fbox{Y}$。",
+      "solution": {
+        "translation": "用gcd分解把a,b写成3p,3q并用p,q互素得lcm=3pq；代入方程并因式分解为(p+2)(q-3)=-7，再讨论各因子组合得唯一自然数解。",
+        "analysis": "互素的p,q使lcm(3p,3q)=3pq；化简后求双线性方程的整数解，要求p,q∈N⁺ 且互素。-7=7·(-1)是唯一可行因式组合。",
+        "steps": [
+          {
+            "title": "用 p, q 改写 ℓ",
+            "content": "$a=3p$，$b=3q$，$\\gcd(p,q)=1$。则\n$$\\ell = \\operatorname{lcm}(a,b) = 3pq$$\n\n故 $\\fbox{N}=3$。"
+          },
+          {
+            "title": "代入①化为 p, q 的方程",
+            "content": "由 ①：$3(3p) - 2(3q) = 3pq + 3$，即\n$$9p - 6q = 3pq + 3$$\n\n两边除以 $3$：$3p - 2q = pq + 1$，移项得\n$$pq - 3p + 2q + 1 = 0$$\n\n故 $\\fbox{O}=3$，$\\fbox{P}=2$，$\\fbox{Q}=1$。"
+          },
+          {
+            "title": "因式分解",
+            "content": "$$pq - 3p + 2q + 1 = pq - 3p + 2q - 6 + 7 = p(q-3) + 2(q-3) + 7 = 0$$\n\n即 $(p+2)(q-3) = -7$。\n\n故 $\\fbox{R}=2$，$\\fbox{S}=3$，$\\fbox{T}=7$。"
+          },
+          {
+            "title": "求自然数解",
+            "content": "$p, q \\in \\mathbb{N}^+$，故 $p+2 \\geq 3$，$q-3 \\geq -2$。\n\n$-7$ 的整数因式组合 $(p+2)(q-3)$ 中满足 $p+2\\geq 3$ 的只有：\n$$p+2 = 7,\\quad q-3 = -1$$\n\n即 $p=5$，$q=2$。$\\gcd(5,2)=1$ ✓。\n\n故 $\\fbox{U}=5$，$\\fbox{V}=2$。\n\n$a = 3p = 15$，$b = 3q = 6$。$\\fbox{WX}=15$，$\\fbox{Y}=6$。\n\n**验证**：$\\gcd(15,6)=3$ ✓，$\\ell=\\operatorname{lcm}(15,6)=30$；$3\\cdot15-2\\cdot6=45-12=33$，$\\ell+3=33$ ✓。"
+          }
+        ],
+        "finalAnswer": "N=3；O=3，P=2，Q=1；R=2，S=3，T=7；U=5，V=2；WX=15，Y=6"
+      }
+    },
+    {
+      "id": "c1-III-1",
+      "number": "III",
+      "topic": "含参数的联立不等式",
+      "topicTag": "二次不等式",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "下文 $\\fbox{A}\\sim\\fbox{M}$ 从下列 ⓪～⑨ 中选择适当的选项。\n\n解联立不等式（其中 $0 < a < 1$）：\n$$\\begin{cases} x^2 - 2x < 3 & \\cdots ① \\\\ ax^2 - ax - x + 1 > 0 & \\cdots ② \\end{cases}$$\n\n解不等式 ① 得\n$$\\fbox{A} < x < \\fbox{B}$$\n\n接着将不等式 ② 变形为\n$$\\left(ax - \\fbox{C}\\right)\\left(x - \\fbox{D}\\right) > 0$$\n\n由 $0 < a < 1$，② 的解为\n$$x < \\fbox{E} \\text{ 或 } \\fbox{F} < x$$\n\n因此，原联立不等式的解为：\n- 当 $0 < a \\leq \\fbox{G}$ 时，$\\fbox{H} < x < \\fbox{I}$\n- 当 $\\fbox{G} < a < 1$ 时，$\\fbox{J} < x < \\fbox{K}$ 或 $\\fbox{L} < x < \\fbox{M}$\n\n其中 $\\fbox{K} < \\fbox{M}$。\n\n选项：⓪ $0$ ① $1$ ② $2$ ③ $3$ ④ $-1$ ⑤ $\\frac{1}{2}$ ⑥ $\\frac{1}{3}$ ⑦ $\\frac{1}{a}$ ⑧ $\\frac{2}{a}$ ⑨ $\\frac{3}{a}$",
+      "solution": {
+        "translation": "分别解两个不等式，再根据1/a与3的大小关系（即a与1/3的大小）分情形取交集。",
+        "analysis": "①的解-1<x<3；②分解为(ax-1)(x-1)>0，因0<a<1得x<1或x>1/a。1/a与3的大小决定相交时是否产生两段。",
+        "steps": [
+          {
+            "title": "解不等式 ①",
+            "content": "$x^2 - 2x - 3 < 0 \\implies (x-3)(x+1) < 0 \\implies -1 < x < 3$。\n\n故 $\\fbox{A}=④(-1)$，$\\fbox{B}=③(3)$。"
+          },
+          {
+            "title": "变形不等式 ②",
+            "content": "$ax^2 - ax - x + 1 = ax(x-1) - (x-1) = (x-1)(ax-1)$。\n\n即 $(ax - 1)(x - 1) > 0$。$\\fbox{C}=①(1)$，$\\fbox{D}=①(1)$。\n\n两根为 $x = 1$ 和 $x = \\dfrac{1}{a}$。因 $0 < a < 1$，故 $\\dfrac{1}{a} > 1$。\n\n② 的解为 $x < 1$ 或 $x > \\dfrac{1}{a}$。$\\fbox{E}=①(1)$，$\\fbox{F}=⑦(1/a)$。"
+          },
+          {
+            "title": "分情形取交集",
+            "content": "① 的解：$-1 < x < 3$。② 的解：$x < 1$ 或 $x > \\dfrac{1}{a}$。\n\n比较 $\\dfrac{1}{a}$ 与 $3$：$\\dfrac{1}{a} \\geq 3 \\iff a \\leq \\dfrac{1}{3}$。\n\n**情形 1：$0 < a \\leq \\dfrac{1}{3}$**，此时 $\\dfrac{1}{a} \\geq 3$，故 $x>\\dfrac{1}{a}$ 与 $x<3$ 无交集，联立解为\n$$-1 < x < 1$$\n\n$\\fbox{G}=⑥(1/3)$，$\\fbox{H}=④(-1)$，$\\fbox{I}=①(1)$。\n\n**情形 2：$\\dfrac{1}{3} < a < 1$**，此时 $1 < \\dfrac{1}{a} < 3$，联立解为\n$$-1 < x < 1 \\quad \\text{或} \\quad \\frac{1}{a} < x < 3$$\n\n$\\fbox{J}=④(-1)$，$\\fbox{K}=①(1)$，$\\fbox{L}=⑦(1/a)$，$\\fbox{M}=③(3)$（满足 $1 < 3$）。"
+          }
+        ],
+        "finalAnswer": "A=④(-1)，B=③(3)；C=①(1)，D=①(1)；E=①(1)，F=⑦(1/a)；G=⑥(1/3)，H=④(-1)，I=①(1)；J=④(-1)，K=①(1)，L=⑦(1/a)，M=③(3)"
+      }
+    },
+    {
+      "id": "c1-IV-1",
+      "number": "IV",
+      "topic": "动点形成三角形面积与共线时刻",
+      "topicTag": "三角形与几何",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "image": {
+        "pageRef": "数学-12",
+        "description": "几何图。O为原点。从O出发三条射线：OX沿x轴正方向；OY在OX上方，∠XOY=60°；OZ是∠XOY的平分线（在OX、OY之间，∠XOZ=∠ZOY=30°）。A在OX上（OA=1），B在OY上（OB=1）。P在OX上从A出发以速度1向外移动，Q在OZ上从O出发以速度√3向外移动，R在OY上从B出发以速度2向外移动。"
+      },
+      "japanese": "如右图，$\\angle XOY = 60°$，$OZ$ 是 $\\angle XOY$ 的平分线。射线 $OX, OY$ 上的点 $A, B$ 满足 $OA = OB = 1$。点 $P, Q, R$ 分别在 $OX, OZ, OY$ 上同时出发，分别从 $A, O, B$ 起以每秒 $1, \\sqrt{3}, 2$ 的速度远离 $O$ 移动。\n\n通过考察三角形 $PQR$ 的面积，求 3 点 $P, Q, R$ 排列在一条直线上的时刻。\n\n首先，出发后 $t$ 秒时 $OP, OQ, OR$ 的长度分别为\n$$OP = t + \\fbox{A},\\quad OQ = \\sqrt{\\fbox{B}}\\,t,\\quad OR = \\fbox{C}\\,t + \\fbox{D}$$\n\n此时各三角形的面积分别为\n$$\\triangle OPQ = \\dfrac{\\sqrt{\\fbox{E}}\\,t\\left(t + \\fbox{F}\\right)}{4}$$\n$$\\triangle ORQ = \\dfrac{\\sqrt{\\fbox{G}}\\,t\\left(\\fbox{H}\\,t + \\fbox{I}\\right)}{4}$$\n$$\\triangle OPR = \\dfrac{\\sqrt{\\fbox{J}}\\,\\left(t + \\fbox{K}\\right)\\left(\\fbox{L}\\,t + \\fbox{M}\\right)}{4}$$\n\n因此\n$$\\triangle PQR = \\dfrac{\\sqrt{\\fbox{N}}}{4}\\,\\left|-t^2 + t + \\fbox{O}\\right|$$\n\n故 3 点 $P, Q, R$ 排列在一条直线上的条件可视为\n$$t^2 - t - \\fbox{O} = \\fbox{P}$$\n\n成立。因此，所求时间为\n$$t = \\dfrac{\\fbox{Q} + \\sqrt{\\fbox{R}}}{\\fbox{S}} \\quad (\\text{秒})$$",
+      "solution": {
+        "translation": "用速度时间得各动点到O的距离，由两边夹角公式（30°或60°）算出三个子三角形面积；△PQR=△OPR-△OPQ-△ORQ（Q在△OPR的同侧）。最后解二次方程得共线时刻。",
+        "analysis": "∠POQ=∠QOR=30°，∠POR=60°。面积用½·边·边·sin（夹角）。△PQR可由三个三角形面积差给出（带绝对值）；共线即△PQR=0，得t²-t-1=0。",
+        "steps": [
+          {
+            "title": "求 OP, OQ, OR",
+            "content": "经过 $t$ 秒：\n- $OP = OA + 1 \\cdot t = t + 1$\n- $OQ = 0 + \\sqrt{3}\\,t = \\sqrt{3}\\,t$\n- $OR = OB + 2t = 2t + 1$\n\n故 $\\fbox{A}=1$，$\\fbox{B}=3$，$\\fbox{C}=2$，$\\fbox{D}=1$。"
+          },
+          {
+            "title": "△OPQ、△ORQ、△OPR 的面积",
+            "content": "$\\angle POQ = \\angle QOR = 30°$，$\\angle POR = 60°$。$\\sin30°=\\frac{1}{2}$，$\\sin60°=\\frac{\\sqrt{3}}{2}$。\n\n$$\\triangle OPQ = \\frac{1}{2}\\,OP\\cdot OQ\\,\\sin30° = \\frac{1}{2}(t+1)(\\sqrt{3}\\,t)\\cdot\\frac{1}{2} = \\frac{\\sqrt{3}\\,t(t+1)}{4}$$\n\n故 $\\fbox{E}=3$，$\\fbox{F}=1$。\n\n$$\\triangle ORQ = \\frac{1}{2}(2t+1)(\\sqrt{3}\\,t)\\cdot\\frac{1}{2} = \\frac{\\sqrt{3}\\,t(2t+1)}{4}$$\n\n故 $\\fbox{G}=3$，$\\fbox{H}=2$，$\\fbox{I}=1$。\n\n$$\\triangle OPR = \\frac{1}{2}(t+1)(2t+1)\\cdot\\frac{\\sqrt{3}}{2} = \\frac{\\sqrt{3}\\,(t+1)(2t+1)}{4}$$\n\n故 $\\fbox{J}=3$，$\\fbox{K}=1$，$\\fbox{L}=2$，$\\fbox{M}=1$。"
+          },
+          {
+            "title": "△PQR 的面积",
+            "content": "由于 Q 在 OZ 上（角的内部），有\n$$\\triangle PQR = \\left|\\triangle OPR - \\triangle OPQ - \\triangle ORQ\\right|$$\n\n$$= \\frac{\\sqrt{3}}{4}\\left|(t+1)(2t+1) - t(t+1) - t(2t+1)\\right|$$\n\n展开：\n$(t+1)(2t+1) = 2t^2+3t+1$\n$t(t+1) = t^2 + t$\n$t(2t+1) = 2t^2 + t$\n\n$$(2t^2+3t+1) - (t^2+t) - (2t^2+t) = -t^2 + t + 1$$\n\n故 $\\triangle PQR = \\dfrac{\\sqrt{3}}{4}\\left|-t^2 + t + 1\\right|$。$\\fbox{N}=3$，$\\fbox{O}=1$。"
+          },
+          {
+            "title": "共线时刻",
+            "content": "3 点共线 $\\iff \\triangle PQR = 0 \\iff -t^2 + t + 1 = 0 \\iff t^2 - t - 1 = 0$。\n\n即 $t^2 - t - \\fbox{O} = \\fbox{P}$，其中 $\\fbox{P}=0$。\n\n解 $t^2 - t - 1 = 0$，取正根：\n$$t = \\frac{1 + \\sqrt{5}}{2}$$\n\n故 $\\fbox{Q}=1$，$\\fbox{R}=5$，$\\fbox{S}=2$。"
+          }
+        ],
+        "finalAnswer": "A=1，B=3，C=2，D=1；E=3，F=1；G=3，H=2，I=1；J=3，K=1，L=2，M=1；N=3，O=1，P=0；Q=1，R=5，S=2"
+      }
+    }
+  ]
+}
