@@ -1,0 +1,228 @@
+{
+  "metadata": {
+    "course": "course1",
+    "year": "2016",
+    "session": "1",
+    "courseNameJa": "数学1",
+    "courseNameEn": "Course 1 (Basic)",
+    "description": "基础课程｜文科方向",
+    "color": "#2563eb",
+    "examTitle": "2016年度（平成28年）第1回",
+    "examDate": "2016年6月"
+  },
+  "questions": [
+    {
+      "id": "c1-I-1",
+      "number": "I-1",
+      "topic": "二次函数顶点轨迹与最值",
+      "topicTag": "二次函数",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "考虑 $x$ 的二次函数\n$$y = -\\dfrac{1}{8}x^2 + ax + b \\quad \\cdots ①$$\n\n设 ① 的图象的顶点坐标为 $(p, q)$，则\n$$p = \\fbox{A}\\,a,\\quad q = \\fbox{B}\\,a^2 + b$$\n\n(1) 当点 $(p, q)$ 在直线 $x + y = 1$ 上移动时，$a, b$ 满足\n$$b = \\fbox{CD}\\,a^2 - \\fbox{E}\\,a + \\fbox{F}$$\n\n此时，$8a + b$ 在 $a = \\fbox{G}$ 处取得最大值 $\\fbox{H}$。\n\n(2) 当 ① 的图象与 $x$ 轴相切时，$a + b$ 的取值范围为\n$$a + b \\leq \\dfrac{\\fbox{I}}{\\fbox{J}}$$",
+      "solution": {
+        "translation": "把二次函数配方求顶点(p,q)，再代入约束条件（顶点在直线上 / 与x轴相切），把 b 用 a 表示，最后求一元函数最值。",
+        "analysis": "配方得顶点(4a, 2a²+b)。(1) 顶点在 x+y=1 上 → b 的表达式为 a 的二次式，再求 8a+b 关于 a 的最值（开口向下取顶点）。(2) 与 x 轴相切 ⇔ 判别式=0 ⇔ b = -2a²，再求 a+b = a-2a² 的最大值。",
+        "steps": [
+          {
+            "title": "配方求顶点 (p, q)",
+            "content": "$$y = -\\frac{1}{8}x^2 + ax + b = -\\frac{1}{8}(x^2 - 8ax) + b = -\\frac{1}{8}(x - 4a)^2 + 2a^2 + b$$\n\n故顶点 $(p, q) = (4a,\\ 2a^2 + b)$。$\\fbox{A}=4$，$\\fbox{B}=2$。"
+          },
+          {
+            "title": "(1) 顶点在直线 x+y=1 上",
+            "content": "代入 $p + q = 1$:\n$$4a + 2a^2 + b = 1 \\implies b = -2a^2 - 4a + 1$$\n\n故 $\\fbox{CD}=-2$，$\\fbox{E}=4$，$\\fbox{F}=1$。\n\n求 $8a + b$ 的最大值：\n$$8a + b = 8a + (-2a^2 - 4a + 1) = -2a^2 + 4a + 1 = -2(a - 1)^2 + 3$$\n\n开口向下，在 $a = 1$ 取最大值 $3$。$\\fbox{G}=1$，$\\fbox{H}=3$。"
+          },
+          {
+            "title": "(2) 图象与 x 轴相切",
+            "content": "$y = 0$ 即 $-\\frac{1}{8}x^2 + ax + b = 0$，乘以 $-8$:\n$$x^2 - 8ax - 8b = 0$$\n\n相切 $\\iff$ 判别式 $= 0$:\n$$(8a)^2 + 4 \\cdot 8b = 0 \\implies 64a^2 + 32b = 0 \\implies b = -2a^2$$\n\n（也可用顶点 $q = 2a^2 + b = 0$ 直接得 $b = -2a^2$。）\n\n于是\n$$a + b = a - 2a^2 = -2\\!\\left(a - \\frac{1}{4}\\right)^2 + \\frac{1}{8}$$\n\n开口向下,最大值 $\\dfrac{1}{8}$（在 $a = \\dfrac{1}{4}$ 取得），故 $a + b \\leq \\dfrac{1}{8}$。\n\n$\\fbox{I}=1$，$\\fbox{J}=8$。"
+          }
+        ],
+        "finalAnswer": "A=4，B=2；CD=-2，E=4，F=1；G=1，H=3；I=1，J=8"
+      }
+    },
+    {
+      "id": "c1-I-2",
+      "number": "I-2",
+      "topic": "格点上构成三角形的个数",
+      "topicTag": "组合计数",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "questionDiagram": {
+        "svg": "<svg viewBox=\"0 0 260 200\" style=\"width:100%;max-width:280px;display:block;margin:12px auto\"><line x1=\"30\" y1=\"170\" x2=\"240\" y2=\"170\" stroke=\"#1c1917\" stroke-width=\"1.3\"/><line x1=\"30\" y1=\"170\" x2=\"30\" y2=\"20\" stroke=\"#1c1917\" stroke-width=\"1.3\"/><text x=\"244\" y=\"175\" font-size=\"12\">x</text><text x=\"22\" y=\"18\" font-size=\"12\">y</text><text x=\"18\" y=\"183\" font-size=\"11\">O</text><g font-size=\"11\" fill=\"#57534e\"><text x=\"58\" y=\"185\">1</text><text x=\"98\" y=\"185\">2</text><text x=\"138\" y=\"185\">3</text><text x=\"178\" y=\"185\">4</text><text x=\"18\" y=\"135\">1</text><text x=\"18\" y=\"95\">2</text><text x=\"18\" y=\"55\">3</text></g><g stroke=\"#a8a29e\" stroke-width=\"0.8\" stroke-dasharray=\"3,2\"><line x1=\"60\" y1=\"170\" x2=\"60\" y2=\"50\"/><line x1=\"100\" y1=\"170\" x2=\"100\" y2=\"50\"/><line x1=\"140\" y1=\"170\" x2=\"140\" y2=\"50\"/><line x1=\"180\" y1=\"170\" x2=\"180\" y2=\"50\"/><line x1=\"60\" y1=\"130\" x2=\"180\" y2=\"130\"/><line x1=\"60\" y1=\"90\" x2=\"180\" y2=\"90\"/><line x1=\"60\" y1=\"50\" x2=\"180\" y2=\"50\"/></g><g fill=\"#1c1917\"><circle cx=\"60\" cy=\"130\" r=\"3\"/><circle cx=\"100\" cy=\"130\" r=\"3\"/><circle cx=\"140\" cy=\"130\" r=\"3\"/><circle cx=\"180\" cy=\"130\" r=\"3\"/><circle cx=\"60\" cy=\"90\" r=\"3\"/><circle cx=\"100\" cy=\"90\" r=\"3\"/><circle cx=\"140\" cy=\"90\" r=\"3\"/><circle cx=\"180\" cy=\"90\" r=\"3\"/><circle cx=\"60\" cy=\"50\" r=\"3\"/><circle cx=\"100\" cy=\"50\" r=\"3\"/><circle cx=\"140\" cy=\"50\" r=\"3\"/><circle cx=\"180\" cy=\"50\" r=\"3\"/></g></svg>"
+      },
+      "japanese": "如右图，坐标平面上有 12 个点（$x \\in \\{1,2,3,4\\}$，$y \\in \\{1,2,3\\}$）。从中选 3 个点为顶点构成三角形，求三角形的总数。\n\n首先，从 12 个点中选 3 个的组合数为 $\\fbox{KLM}$ 通。\n\n再数「3 个或更多点共线」的直线条数：\n- (i) 通过 4 个点的直线有 $\\fbox{N}$ 条。\n- (ii) 通过 3 个点的直线有 $\\fbox{O}$ 条。\n\n因此，共线（不能构成三角形）的 3 点组合中：(i) 的情形为 $\\fbox{PQ}$ 通，(ii) 的情形为 $\\fbox{R}$ 通。\n\n所以，可构成的三角形共 $\\fbox{STU}$ 个。\n\n特别地，设 $A=(1,1)$，$B=(4,1)$，则在线段 $AB$ 上有两个顶点的三角形共 $\\fbox{VW}$ 个。",
+      "solution": {
+        "translation": "总组合数 C(12,3) 减去共线三点的组合数即三角形数。共线情形分两类：4点共线（每条贡献 C(4,3)=4 个）和 3点共线（每条贡献 1 个）。",
+        "analysis": "12 个点 = C(12,3)=220 种取法。共线直线分两组数：4点的水平 3 条 → 12 个三元组；3点的（4 条竖线 + 4 条对角线）8 条 → 8 个三元组。三角形 = 220−12−8=200。最后一问从线段 AB（含 4 点）取 2 顶点 × 8 个非 AB 上的点。",
+        "steps": [
+          {
+            "title": "总取法",
+            "content": "$$\\binom{12}{3} = \\frac{12 \\cdot 11 \\cdot 10}{6} = 220$$\n\n故 $\\fbox{KLM}=220$。"
+          },
+          {
+            "title": "(i) 通过 4 个点的直线",
+            "content": "$y$ 取定一个值($1, 2,$ 或 $3$),则 $x \\in \\{1,2,3,4\\}$ 共 4 个点共线。\n\n这样的水平直线有 $3$ 条:$y=1$、$y=2$、$y=3$。\n\n$\\fbox{N}=3$。\n\n这 3 条直线上各有 $\\binom{4}{3}=4$ 个共线三元组,共 $3 \\times 4 = 12$ 个。\n\n$\\fbox{PQ}=12$。"
+          },
+          {
+            "title": "(ii) 恰通过 3 个点的直线",
+            "content": "**竖直方向**:$x$ 取定值时 $y \\in \\{1,2,3\\}$ 共 3 个点。$x=1,2,3,4$ 各一条,共 **4 条**。\n\n**斜率 1 的对角线**:在格点中有 3 个点共线的:$(1,1)\\!-\\!(2,2)\\!-\\!(3,3)$ 与 $(2,1)\\!-\\!(3,2)\\!-\\!(4,3)$，共 **2 条**。\n\n**斜率 −1 的对角线**:$(1,3)\\!-\\!(2,2)\\!-\\!(3,1)$ 与 $(2,3)\\!-\\!(3,2)\\!-\\!(4,1)$，共 **2 条**。\n\n其它斜率（$\\pm\\frac{1}{2}, \\pm 2, \\pm \\frac{1}{3}, \\pm\\frac{2}{3}$ 等）在 $4\\times 3$ 范围内最多 2 个格点,无 3 个共线的。\n\n合计 $4 + 2 + 2 = 8$ 条。$\\fbox{O}=8$。\n\n每条贡献 $\\binom{3}{3}=1$ 个共线三元组，共 $8$ 个。$\\fbox{R}=8$。",
+            "diagram": {
+              "svg": "<svg viewBox=\"0 0 260 200\" style=\"width:100%;max-width:280px;display:block;margin:10px auto\"><g fill=\"#1c1917\"><circle cx=\"60\" cy=\"130\" r=\"3\"/><circle cx=\"100\" cy=\"130\" r=\"3\"/><circle cx=\"140\" cy=\"130\" r=\"3\"/><circle cx=\"180\" cy=\"130\" r=\"3\"/><circle cx=\"60\" cy=\"90\" r=\"3\"/><circle cx=\"100\" cy=\"90\" r=\"3\"/><circle cx=\"140\" cy=\"90\" r=\"3\"/><circle cx=\"180\" cy=\"90\" r=\"3\"/><circle cx=\"60\" cy=\"50\" r=\"3\"/><circle cx=\"100\" cy=\"50\" r=\"3\"/><circle cx=\"140\" cy=\"50\" r=\"3\"/><circle cx=\"180\" cy=\"50\" r=\"3\"/></g><g stroke=\"#dc2626\" stroke-width=\"1.5\" opacity=\"0.6\"><line x1=\"50\" y1=\"130\" x2=\"190\" y2=\"130\"/><line x1=\"50\" y1=\"90\" x2=\"190\" y2=\"90\"/><line x1=\"50\" y1=\"50\" x2=\"190\" y2=\"50\"/></g><g stroke=\"#2563eb\" stroke-width=\"1.2\" opacity=\"0.55\"><line x1=\"60\" y1=\"140\" x2=\"60\" y2=\"40\"/><line x1=\"100\" y1=\"140\" x2=\"100\" y2=\"40\"/><line x1=\"140\" y1=\"140\" x2=\"140\" y2=\"40\"/><line x1=\"180\" y1=\"140\" x2=\"180\" y2=\"40\"/></g><g stroke=\"#16a34a\" stroke-width=\"1.2\" opacity=\"0.7\"><line x1=\"50\" y1=\"140\" x2=\"150\" y2=\"40\"/><line x1=\"90\" y1=\"140\" x2=\"190\" y2=\"40\"/><line x1=\"50\" y1=\"40\" x2=\"150\" y2=\"140\"/><line x1=\"90\" y1=\"40\" x2=\"190\" y2=\"140\"/></g><g font-size=\"10\"><text x=\"195\" y=\"134\" fill=\"#dc2626\">4 点直线 ×3</text><text x=\"195\" y=\"94\" fill=\"#2563eb\">3 点直线（竖）×4</text><text x=\"195\" y=\"54\" fill=\"#16a34a\">3 点直线（斜）×4</text></g></svg>"
+            }
+          },
+          {
+            "title": "求三角形数",
+            "content": "$$\\text{三角形数} = \\binom{12}{3} - \\text{(i)} - \\text{(ii)} = 220 - 12 - 8 = 200$$\n\n$\\fbox{STU}=200$。"
+          },
+          {
+            "title": "线段 AB 上有 2 顶点的三角形",
+            "content": "$A=(1,1)$，$B=(4,1)$。线段 $AB$ 上的格点：$(1,1),(2,1),(3,1),(4,1)$，共 **4 个**。\n\n从这 4 个点中选 2 个作为顶点：$\\binom{4}{2}=6$ 种。\n\n第三个顶点必须不在 $AB$ 上（否则三点共线）。剩余 $12 - 4 = 8$ 个点都不在 $y=1$ 上，故第三个顶点有 $8$ 种选择。\n\n两点共线于 $AB$，第三点在 $AB$ 外，三点必不共线，全部构成三角形。\n\n$$6 \\times 8 = 48$$\n\n$\\fbox{VW}=48$。"
+          }
+        ],
+        "finalAnswer": "KLM=220，N=3，O=8，PQ=12，R=8，STU=200，VW=48"
+      }
+    },
+    {
+      "id": "c1-II-1",
+      "number": "II-1",
+      "topic": "二元二次多项式分解为两个一次因式之积",
+      "topicTag": "因式分解",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "求使\n$$15x^2 - 2xy - 8y^2 - 11x + 22y + a$$\n能分解为关于 $x, y$ 的两个一次因式之积的实数 $a$。\n\n首先，关于 $x, y$ 的二次部分可分解为\n$$15x^2 - 2xy - 8y^2 = (\\fbox{A}\\,x - \\fbox{B}\\,y)(\\fbox{C}\\,x + \\fbox{D}\\,y)$$\n\n因此设\n$$15x^2 - 2xy - 8y^2 - 11x + 22y + a = (\\fbox{A}\\,x - \\fbox{B}\\,y + b)(\\fbox{C}\\,x + \\fbox{D}\\,y + c) \\quad \\cdots ①$$\n\n展开 ① 的右边得\n$$15x^2 - 2xy - 8y^2 + (\\fbox{E}\\,b + \\fbox{F}\\,c)x + (\\fbox{G}\\,b - \\fbox{H}\\,c)y + bc$$\n\n比较系数：\n$$b = \\fbox{I},\\quad c = -\\fbox{J}$$\n\n因此 $a = -\\fbox{KL}$。",
+      "solution": {
+        "translation": "先把二次部分用十字相乘分解为(5x-4y)(3x+2y)；再带常数项设双线性形式，展开后用一次项系数比较解出 b,c，最后 a=bc。",
+        "analysis": "AC=15, BD=8, AD-BC=-2 → 试 (5x-4y)(3x+2y)。设 (5x-4y+b)(3x+2y+c) 展开后比较 x 系数 (3b+5c=-11) 和 y 系数 (2b-4c=22)，解二元一次方程得 b=3, c=-4。a=bc=-12。",
+        "steps": [
+          {
+            "title": "分解二次齐次部分",
+            "content": "用十字相乘：找 $(Ax - By)(Cx + Dy)$ 满足 $AC=15$, $BD=8$, $AD - BC = -2$。\n\n试 $A=5, C=3, B=4, D=2$：$AC=15$ ✓，$BD=8$ ✓，$AD-BC = 10 - 12 = -2$ ✓。\n\n$$15x^2 - 2xy - 8y^2 = (5x - 4y)(3x + 2y)$$\n\n$\\fbox{A}=5$，$\\fbox{B}=4$，$\\fbox{C}=3$，$\\fbox{D}=2$。"
+          },
+          {
+            "title": "展开 (5x − 4y + b)(3x + 2y + c)",
+            "content": "$(5x - 4y)(3x + 2y) + (5x - 4y)c + b(3x + 2y) + bc$\n\n$= (15x^2 - 2xy - 8y^2) + 5cx - 4cy + 3bx + 2by + bc$\n\n$= 15x^2 - 2xy - 8y^2 + (3b + 5c)x + (2b - 4c)y + bc$\n\n比照「$(\\fbox{E}\\,b + \\fbox{F}\\,c)x + (\\fbox{G}\\,b - \\fbox{H}\\,c)y + bc$」：\n\n$\\fbox{E}=3$，$\\fbox{F}=5$，$\\fbox{G}=2$，$\\fbox{H}=4$。"
+          },
+          {
+            "title": "比较系数解 b, c, a",
+            "content": "对照原式 $-11x + 22y + a$:\n$$\\begin{cases} 3b + 5c = -11 \\\\ 2b - 4c = 22 \\end{cases}$$\n\n第二式除 $2$:$b - 2c = 11 \\Rightarrow b = 11 + 2c$。代入第一式:\n$$3(11 + 2c) + 5c = -11 \\implies 33 + 11c = -11 \\implies c = -4$$\n\n$b = 11 + 2(-4) = 3$。\n\n故 $\\fbox{I}=3$，$\\fbox{J}=4$（即 $c = -4$）。\n\n$a = bc = 3 \\times (-4) = -12$。$\\fbox{KL}=12$（即 $a = -12$）。"
+          }
+        ],
+        "finalAnswer": "A=5，B=4，C=3，D=2；E=3，F=5，G=2，H=4；I=3，J=4；KL=12（即 a=-12）"
+      }
+    },
+    {
+      "id": "c1-II-2",
+      "number": "II-2",
+      "topic": "联立同余方程求两位数",
+      "topicTag": "整数",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "求使 $a + 9$ 是 $7$ 的倍数、$a + 8$ 是 $13$ 的倍数的两位自然数 $a$。\n\n用自然数 $m, n$ 表示\n$$a + 9 = \\fbox{M}\\,m,\\quad a + 8 = \\fbox{NO}\\,n$$\n\n两式相减得\n$$\\fbox{M}\\,m - \\fbox{NO}\\,n = \\fbox{P} \\quad \\cdots ①$$\n\n$m = \\fbox{Q}$，$n = \\fbox{R}$ 是 ① 的一组整数解，故\n$$\\fbox{M}\\,(m - \\fbox{Q}) = \\fbox{NO}\\,(n - \\fbox{R}) \\quad \\cdots ②$$\n\n由 ② 与 ①，满足条件的自然数 $n$ 表示为\n$$n = \\fbox{S}\\,k + \\fbox{T} \\quad (k\\text{ 为整数})$$\n\n因此\n$$a = \\fbox{UV}\\,k + \\fbox{W}$$\n\n所求两位自然数 $a$ 为 $\\fbox{XY}$。",
+      "solution": {
+        "translation": "把两个倍数关系作差消去a，得 7m-13n=1；找特解 (2,1) 后用 gcd(7,13)=1 写出通解 n=7k+1，再换回 a 的表达式，限制 10≤a≤99 求出 a=96。",
+        "analysis": "7m-13n=1 是线性丢番图方程。一组解 m=2, n=1（验证 14-13=1）。通解：n=7k+1, m=13k+2。a=13n-8=91k+5。两位数限制下 k=1 唯一解。",
+        "steps": [
+          {
+            "title": "建立同余方程",
+            "content": "$a+9 = 7m$，$a+8 = 13n$（$m, n$ 为自然数）。\n\n$\\fbox{M}=7$，$\\fbox{NO}=13$。\n\n两式相减消去 $a$:\n$$(a+9) - (a+8) = 7m - 13n \\implies 7m - 13n = 1$$\n\n$\\fbox{P}=1$。"
+          },
+          {
+            "title": "找特解",
+            "content": "试小数：$m=2$，$n=1$ → $7\\cdot 2 - 13\\cdot 1 = 14 - 13 = 1$ ✓。\n\n故 $\\fbox{Q}=2$，$\\fbox{R}=1$。\n\n用通解写法：将 $7m - 13n = 1$ 与 $7\\cdot 2 - 13\\cdot 1 = 1$ 相减：\n$$7(m - 2) = 13(n - 1) \\quad \\cdots ②$$"
+          },
+          {
+            "title": "求通解",
+            "content": "由 ②，$13 \\mid 7(m-2)$。又 $\\gcd(7,13)=1$，故 $13 \\mid (m-2)$，即 $m - 2 = 13k$（$k$ 为整数）。代回 ②：$n - 1 = 7k$。\n\n所以 $n = 7k + 1$。$\\fbox{S}=7$，$\\fbox{T}=1$。\n\n再代回 $a = 13n - 8 = 13(7k+1) - 8 = 91k + 5$。\n\n$\\fbox{UV}=91$，$\\fbox{W}=5$。"
+          },
+          {
+            "title": "在两位数范围内取 a",
+            "content": "$10 \\leq a = 91k + 5 \\leq 99$:\n- $k=0$:$a=5$（一位数,舍）\n- $k=1$:$a=96$（两位数 ✓）\n- $k=2$:$a=187$（三位数,舍）\n\n故 $a = 96$。$\\fbox{XY}=96$。\n\n**验证**:$96+9=105=7\\cdot 15$ ✓,$96+8=104=13\\cdot 8$ ✓。"
+          }
+        ],
+        "finalAnswer": "M=7，NO=13，P=1；Q=2，R=1；S=7，T=1；UV=91，W=5；XY=96"
+      }
+    },
+    {
+      "id": "c1-III-1",
+      "number": "III",
+      "topic": "二次函数与一次函数的恒大于关系",
+      "topicTag": "二次不等式",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "考虑两个函数\n$$f(x) = x^2 + 2ax + 4a - 3,\\quad g(x) = 2x + 1$$\n\n求使「对所有 $x$ 都有 $f(x) \\geq g(x)$」成立的 $a$ 的条件。又在该条件下，求 $f(x)$ 的最小值的取值范围。\n\n对所有 $x$ 而言\n$$x^2 + \\fbox{A}\\,(a - \\fbox{B})\\,x + \\fbox{C}\\,a - \\fbox{D} \\geq 0$$\n\n下文 $\\fbox{E} \\sim \\fbox{H}$ 各从下面 ⓪～⑦ 中选择。\n\n(1) 该条件即「$a$ 满足二次不等式 $\\fbox{E}$」。因此 $a$ 在范围 $\\fbox{F}$ 中。\n\n(2) 设 $f(x)$ 的最小值为 $m$。则 $m = \\fbox{G}$。在 (1) 求得的条件下，$m$ 的取值范围为 $\\fbox{H}$。\n\n选项：\n\n⓪ $a^2 - 5a + 4 \\geq 0$ ① $a^2 - 6a + 5 \\geq 0$ ② $a^2 - 5a + 4 \\leq 0$ ③ $a^2 - 6a + 5 \\leq 0$ ④ $a \\leq 1$ 或 $5 \\leq a$ ⑤ $1 \\leq a \\leq 5$ ⑥ $1 \\leq a \\leq 4$ ⑦ $a \\leq 1$ 或 $4 \\leq a$\n\n以及对 $G, H$:\n\n⓪ $a^2 + 4a - 3$ ① $4a^2 + 4a - 3$ ② $-a^2 + 4a - 3$ ③ $2a^2 - 4a + 3$ ④ $-5 \\leq m \\leq 1$ ⑤ $-8 \\leq m \\leq 1$ ⑥ $-8 \\leq m \\leq -1$ ⑦ $-5 \\leq m \\leq -1$",
+      "solution": {
+        "translation": "把 f(x)≥g(x) 化为「平方≥0 恒成立」，即新二次式判别式 ≤0，得 a∈[1,5]。再配方 f(x) 求最小值 m=-a²+4a-3，最后在 a∈[1,5] 上求 m 的范围。",
+        "analysis": "f-g = x² + 2(a-1)x + 4(a-1)。对所有 x≥0 ⇔ 判别式 ≤0 ⇔ 4(a-1)²-16(a-1)≤0 ⇔ (a-1)(a-5)≤0 ⇔ 1≤a≤5。f(x) min = 4a-3-a² = -a²+4a-3 = -(a-2)²+1，在 a∈[1,5] 上 m∈[-8,1]。",
+        "steps": [
+          {
+            "title": "把不等式整理",
+            "content": "$f(x) - g(x) = x^2 + 2ax + 4a - 3 - 2x - 1 = x^2 + (2a - 2)x + (4a - 4) = x^2 + 2(a-1)x + 4(a-1)$\n\n对照 $x^2 + \\fbox{A}(a - \\fbox{B})x + \\fbox{C}a - \\fbox{D}$:$\\fbox{A}=2$，$\\fbox{B}=1$，$\\fbox{C}=4$，$\\fbox{D}=4$。"
+          },
+          {
+            "title": "(1) 「对所有 x ≥0」的条件",
+            "content": "$x^2 + 2(a-1)x + 4(a-1) \\geq 0$ 对所有 $x$ 成立 $\\iff$ 判别式 $\\leq 0$:\n\n$$D = [2(a-1)]^2 - 4 \\cdot 4(a-1) = 4(a-1)^2 - 16(a-1) = 4(a-1)\\bigl[(a-1) - 4\\bigr] = 4(a-1)(a-5)$$\n\n$$D \\leq 0 \\iff (a-1)(a-5) \\leq 0 \\iff a^2 - 6a + 5 \\leq 0$$\n\n即选项 ③，故 $\\fbox{E} = ③$。\n\n解此不等式得 $1 \\leq a \\leq 5$，即选项 ⑤，故 $\\fbox{F} = ⑤$。"
+          },
+          {
+            "title": "(2) f 的最小值 m",
+            "content": "$f(x) = x^2 + 2ax + 4a - 3 = (x + a)^2 - a^2 + 4a - 3$\n\n开口向上，最小值在 $x = -a$ 处取得：\n$$m = -a^2 + 4a - 3$$\n\n即选项 ②，故 $\\fbox{G} = ②$。"
+          },
+          {
+            "title": "(2) 在 a ∈ [1,5] 上求 m 的范围",
+            "content": "$m(a) = -a^2 + 4a - 3 = -(a-2)^2 + 1$\n\n顶点在 $a = 2$，最大值 $m = 1$。\n\n端点值:$m(1) = -1+4-3 = 0$；$m(5) = -25+20-3 = -8$。\n\n在 $[1, 5]$ 上，$a=2$ 处 $m=1$（最大）；$a=5$ 处 $m=-8$（最小）。\n\n故 $-8 \\leq m \\leq 1$，即选项 ⑤，故 $\\fbox{H} = ⑤$。",
+            "diagram": {
+              "svg": "<svg viewBox=\"0 0 320 200\" style=\"width:100%;max-width:340px;display:block;margin:10px auto\"><line x1=\"30\" y1=\"170\" x2=\"300\" y2=\"170\" stroke=\"#1c1917\" stroke-width=\"1\"/><line x1=\"30\" y1=\"170\" x2=\"30\" y2=\"15\" stroke=\"#1c1917\" stroke-width=\"1\"/><text x=\"305\" y=\"175\" font-size=\"11\">a</text><text x=\"22\" y=\"15\" font-size=\"11\">m</text><line x1=\"30\" y1=\"40\" x2=\"300\" y2=\"40\" stroke=\"#a8a29e\" stroke-width=\"0.7\" stroke-dasharray=\"3,2\"/><text x=\"10\" y=\"43\" font-size=\"10\" fill=\"#57534e\">1</text><line x1=\"30\" y1=\"50\" x2=\"300\" y2=\"50\" stroke=\"#a8a29e\" stroke-width=\"0.7\" stroke-dasharray=\"3,2\"/><text x=\"10\" y=\"53\" font-size=\"10\" fill=\"#57534e\">0</text><line x1=\"30\" y1=\"160\" x2=\"300\" y2=\"160\" stroke=\"#a8a29e\" stroke-width=\"0.7\" stroke-dasharray=\"3,2\"/><text x=\"5\" y=\"163\" font-size=\"10\" fill=\"#57534e\">−8</text><path d=\"M 70 50 Q 130 -10 190 40 T 270 160\" fill=\"none\" stroke=\"#a8a29e\" stroke-width=\"1\" stroke-dasharray=\"4,3\"/><path d=\"M 70 50 Q 130 -10 190 40 T 270 160\" fill=\"none\" stroke=\"none\" id=\"curve\"/><path d=\"M 70 50 C 100 0 130 0 130 0 C 160 0 190 50 190 50 C 220 110 250 160 270 160\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2\"/><circle cx=\"70\" cy=\"50\" r=\"3.5\" fill=\"#dc2626\"/><text x=\"55\" y=\"45\" font-size=\"11\" fill=\"#dc2626\">a=1</text><text x=\"50\" y=\"68\" font-size=\"10\" fill=\"#dc2626\">m=0</text><circle cx=\"130\" cy=\"40\" r=\"4\" fill=\"#dc2626\"/><text x=\"125\" y=\"32\" font-size=\"11\" fill=\"#dc2626\">a=2</text><text x=\"118\" y=\"22\" font-size=\"10\" fill=\"#dc2626\">m=1</text><circle cx=\"270\" cy=\"160\" r=\"4\" fill=\"#dc2626\"/><text x=\"258\" y=\"178\" font-size=\"11\" fill=\"#dc2626\">a=5</text><text x=\"250\" y=\"190\" font-size=\"10\" fill=\"#dc2626\">m=−8</text><text x=\"180\" y=\"105\" font-size=\"11\" fill=\"#7c3aed\">m = −(a−2)² + 1</text></svg>"
+            }
+          }
+        ],
+        "finalAnswer": "A=2，B=1，C=4，D=4；E=③，F=⑤；G=②，H=⑤"
+      }
+    },
+    {
+      "id": "c1-IV-1",
+      "number": "IV",
+      "topic": "四面体 OABC 的面积、距离、二面角与体积",
+      "topicTag": "立体几何",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "questionDiagram": {
+        "svg": "<svg viewBox=\"0 0 320 240\" style=\"width:100%;max-width:340px;display:block;margin:12px auto\"><polygon points=\"60,170 230,180 200,80\" fill=\"none\" stroke=\"#1c1917\" stroke-width=\"1.5\"/><line x1=\"60\" y1=\"170\" x2=\"140\" y2=\"40\" stroke=\"#1c1917\" stroke-width=\"1.5\"/><line x1=\"230\" y1=\"180\" x2=\"140\" y2=\"40\" stroke=\"#1c1917\" stroke-width=\"1.5\"/><line x1=\"200\" y1=\"80\" x2=\"140\" y2=\"40\" stroke=\"#78716c\" stroke-width=\"1.2\" stroke-dasharray=\"4,3\"/><circle cx=\"140\" cy=\"40\" r=\"3\" fill=\"#1c1917\"/><text x=\"134\" y=\"32\" font-size=\"13\" font-weight=\"700\">O</text><circle cx=\"60\" cy=\"170\" r=\"3\" fill=\"#1c1917\"/><text x=\"45\" y=\"175\" font-size=\"13\" font-weight=\"700\">A</text><circle cx=\"230\" cy=\"180\" r=\"3\" fill=\"#1c1917\"/><text x=\"235\" y=\"187\" font-size=\"13\" font-weight=\"700\">B</text><circle cx=\"200\" cy=\"80\" r=\"3\" fill=\"#1c1917\"/><text x=\"206\" y=\"77\" font-size=\"13\" font-weight=\"700\">C</text><text x=\"30\" y=\"222\" font-size=\"11\" fill=\"#57534e\">条件：BC=10, AC=8, sin∠ACB=3/4</text><text x=\"30\" y=\"234\" font-size=\"11\" fill=\"#57534e\">OA=4, △ABC ≡ △OBC</text></svg>"
+      },
+      "japanese": "如右图为四面体 $OABC$ 的展开图。在四面体 $OABC$ 中\n$$BC = 10,\\ AC = 8,\\ \\sin\\angle ACB = \\dfrac{3}{4}$$\n$$OA = 4,\\ \\triangle ABC \\equiv \\triangle OBC$$\n\n成立。\n\n(1) 三角形 $ABC$ 的面积为 $\\fbox{AB}$。\n\n(2) 设从点 $A$ 向边 $BC$ 作的垂线为 $AH$,则 $AH$ 的长为 $\\fbox{C}$。\n\n(3) 设平面 $ABC$ 与平面 $OBC$ 所成角为 $\\theta$，则\n$$\\cos\\theta = \\dfrac{\\fbox{D}}{\\fbox{E}},\\quad \\sin\\theta = \\dfrac{\\fbox{F}\\sqrt{\\fbox{G}}}{\\fbox{H}}$$\n\n(4) 四面体 $OABC$ 的体积为 $\\dfrac{\\fbox{IJ}\\sqrt{\\fbox{K}}}{\\fbox{L}}$。",
+      "solution": {
+        "translation": "(1)用两边夹角公式算 △ABC 面积。(2)由面积反推垂线高 AH。(3)由 △ABC≡△OBC 知 OH=AH=6，二面角 θ=∠AHO（AH⊥BC, OH⊥BC）；用余弦定理在 △AHO 求 cosθ。(4)体积=⅓·底面积·高，高=A到平面OBC的距离=AH·sinθ。",
+        "analysis": "关键结构：BC 公共边；A、O 到 BC 的垂足均为 H（因为 △ABC≡△OBC，对应高线落点重合），AH=OH=6，OA=4。沿 BC 折叠后，二面角 θ=∠AHO，由 △AHO 三边算得 cosθ=7/9。体积取 △ABC 为底（面积 30），高=O 到平面 ABC 的距离=OH·sinθ=6·(4√2/9)=8√2/3，V=⅓·30·8√2/3=80√2/3。",
+        "steps": [
+          {
+            "title": "(1) 求 △ABC 的面积",
+            "content": "用两边夹角公式：\n$$S_{\\triangle ABC} = \\frac{1}{2}\\cdot AC \\cdot BC \\cdot \\sin\\angle ACB = \\frac{1}{2}\\cdot 8 \\cdot 10 \\cdot \\frac{3}{4} = 30$$\n\n$\\fbox{AB} = 30$。"
+          },
+          {
+            "title": "(2) 求 AH",
+            "content": "$AH$ 是从 $A$ 到 $BC$ 的高。由面积公式:\n$$S_{\\triangle ABC} = \\frac{1}{2}\\cdot BC \\cdot AH \\implies 30 = \\frac{1}{2}\\cdot 10\\cdot AH \\implies AH = 6$$\n\n$\\fbox{C} = 6$。"
+          },
+          {
+            "title": "(3) 二面角 θ：先论证 A、O 同投影至 H",
+            "content": "因 $\\triangle ABC \\equiv \\triangle OBC$（公共边 $BC$），对应顶点 $A \\leftrightarrow O$，对应高:从 $O$ 到 $BC$ 的垂线长 $OH' = AH = 6$，且垂足位置 $CH' = CH$。故 **从 $O$ 到 $BC$ 的垂足也是 $H$**:\n$$AH \\perp BC,\\quad OH \\perp BC,\\quad AH = OH = 6$$\n\n这意味着平面 $ABC$ 与平面 $OBC$ 沿 $BC$ 的二面角恰为 $\\angle AHO$,即 $\\theta = \\angle AHO$。",
+            "diagram": {
+              "svg": "<svg viewBox=\"0 0 320 220\" style=\"width:100%;max-width:340px;display:block;margin:10px auto\"><line x1=\"30\" y1=\"170\" x2=\"290\" y2=\"170\" stroke=\"#1c1917\" stroke-width=\"1.5\"/><circle cx=\"40\" cy=\"170\" r=\"3\" fill=\"#1c1917\"/><text x=\"30\" y=\"185\" font-size=\"13\" font-weight=\"700\">B</text><circle cx=\"280\" cy=\"170\" r=\"3\" fill=\"#1c1917\"/><text x=\"285\" y=\"185\" font-size=\"13\" font-weight=\"700\">C</text><circle cx=\"165\" cy=\"170\" r=\"3.5\" fill=\"#dc2626\"/><text x=\"160\" y=\"187\" font-size=\"13\" font-weight=\"700\" fill=\"#dc2626\">H</text><line x1=\"165\" y1=\"170\" x2=\"165\" y2=\"50\" stroke=\"#2563eb\" stroke-width=\"1.5\"/><circle cx=\"165\" cy=\"50\" r=\"3.5\" fill=\"#2563eb\"/><text x=\"170\" y=\"50\" font-size=\"13\" font-weight=\"700\" fill=\"#2563eb\">A</text><text x=\"170\" y=\"110\" font-size=\"11\" fill=\"#2563eb\">AH=6</text><line x1=\"165\" y1=\"170\" x2=\"235\" y2=\"75\" stroke=\"#16a34a\" stroke-width=\"1.5\"/><circle cx=\"235\" cy=\"75\" r=\"3.5\" fill=\"#16a34a\"/><text x=\"240\" y=\"75\" font-size=\"13\" font-weight=\"700\" fill=\"#16a34a\">O</text><text x=\"205\" y=\"105\" font-size=\"11\" fill=\"#16a34a\">OH=6</text><line x1=\"165\" y1=\"50\" x2=\"235\" y2=\"75\" stroke=\"#7c3aed\" stroke-width=\"1.3\" stroke-dasharray=\"5,3\"/><text x=\"180\" y=\"45\" font-size=\"11\" fill=\"#7c3aed\">OA=4</text><path d=\"M 185 170 A 20 20 0 0 0 180 155\" fill=\"none\" stroke=\"#a8a29e\" stroke-width=\"1\"/><text x=\"190\" y=\"160\" font-size=\"11\" fill=\"#57534e\">θ</text><rect x=\"160\" y=\"165\" width=\"6\" height=\"5\" fill=\"none\" stroke=\"#1c1917\" stroke-width=\"0.8\"/><text x=\"35\" y=\"205\" font-size=\"11\" fill=\"#57534e\">沿 BC 折叠后,A、O 到 BC 的垂足都是 H</text></svg>"
+            }
+          },
+          {
+            "title": "(3) 由 △AHO 求 cosθ, sinθ",
+            "content": "$\\triangle AHO$ 中：$AH = OH = 6$，$AO = 4$。由余弦定理：\n$$\\cos\\theta = \\frac{AH^2 + OH^2 - AO^2}{2\\cdot AH\\cdot OH} = \\frac{36 + 36 - 16}{2\\cdot 36} = \\frac{56}{72} = \\frac{7}{9}$$\n\n$\\fbox{D}=7$，$\\fbox{E}=9$。\n\n$$\\sin\\theta = \\sqrt{1 - \\left(\\frac{7}{9}\\right)^2} = \\sqrt{\\frac{81 - 49}{81}} = \\sqrt{\\frac{32}{81}} = \\frac{4\\sqrt 2}{9}$$\n\n$\\fbox{F}=4$，$\\fbox{G}=2$，$\\fbox{H}=9$。"
+          },
+          {
+            "title": "(4) 体积",
+            "content": "取 $\\triangle ABC$ 为底面，面积 $S=30$。\n\n$O$ 到平面 $ABC$ 的距离 $h$：将 $OH$ 分解，垂直于平面 $ABC$ 的分量为 $OH\\sin\\theta$:\n$$h = OH\\cdot \\sin\\theta = 6\\cdot \\frac{4\\sqrt 2}{9} = \\frac{8\\sqrt 2}{3}$$\n\n体积:\n$$V = \\frac{1}{3}\\cdot S\\cdot h = \\frac{1}{3}\\cdot 30\\cdot \\frac{8\\sqrt 2}{3} = \\frac{240\\sqrt 2}{9} = \\frac{80\\sqrt 2}{3}$$\n\n$\\fbox{IJ}=80$，$\\fbox{K}=2$，$\\fbox{L}=3$。"
+          }
+        ],
+        "finalAnswer": "AB=30；C=6；D=7，E=9，F=4，G=2，H=9；IJ=80，K=2，L=3"
+      }
+    }
+  ]
+}
