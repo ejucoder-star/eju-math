@@ -165,41 +165,50 @@
       }
     },
     {
-      "id": "c1-IV-1",
-      "number": "IV",
-      "topic": "动点形成三角形面积与共线时刻",
-      "topicTag": "三角形与几何",
-      "humanVerified": false,
-      "answer_match": true,
-      "needs_review": true,
-      "image": {
-        "pageRef": "数学-12",
-        "description": "几何图。O为原点。从O出发三条射线：OX沿x轴正方向；OY在OX上方，∠XOY=60°；OZ是∠XOY的平分线（在OX、OY之间，∠XOZ=∠ZOY=30°）。A在OX上（OA=1），B在OY上（OB=1）。P在OX上从A出发以速度1向外移动，Q在OZ上从O出发以速度√3向外移动，R在OY上从B出发以速度2向外移动。"
+  "id": "c1-IV-1",
+  "number": "IV",
+  "topic": "动点形成三角形面积与共线时刻",
+  "topicTag": "三角形与几何",
+  "humanVerified": false,
+  "answer_match": true,
+  "needs_review": true,
+  "questionDiagram": {
+    "svg": "<svg viewBox=\"0 0 320 280\" style=\"width:100%;max-width:340px;display:block;margin:12px auto\"><line x1=\"50\" y1=\"235\" x2=\"295\" y2=\"235\" stroke=\"#1c1917\" stroke-width=\"1.5\"/><line x1=\"50\" y1=\"235\" x2=\"262\" y2=\"113\" stroke=\"#78716c\" stroke-width=\"1.2\" stroke-dasharray=\"5,3\"/><line x1=\"50\" y1=\"235\" x2=\"173\" y2=\"22\" stroke=\"#1c1917\" stroke-width=\"1.5\"/><text x=\"300\" y=\"239\" font-size=\"13\" font-weight=\"700\">X</text><text x=\"266\" y=\"110\" font-size=\"12\" fill=\"#57534e\">Z</text><text x=\"167\" y=\"18\" font-size=\"13\" font-weight=\"700\">Y</text><text x=\"34\" y=\"248\" font-size=\"14\" font-weight=\"700\">O</text><path d=\"M 90 235 A 40 40 0 0 0 84.6 215\" fill=\"none\" stroke=\"#a8a29e\" stroke-width=\"1\"/><text x=\"94\" y=\"224\" font-size=\"10\" fill=\"#57534e\">30°</text><path d=\"M 84.6 215 A 40 40 0 0 0 70 200.4\" fill=\"none\" stroke=\"#a8a29e\" stroke-width=\"1\"/><text x=\"76\" y=\"212\" font-size=\"10\" fill=\"#57534e\">30°</text><circle cx=\"90\" cy=\"235\" r=\"3\" fill=\"#1c1917\"/><text x=\"86\" y=\"254\" font-size=\"13\" font-weight=\"700\">A</text><line x1=\"68\" y1=\"231\" x2=\"72\" y2=\"239\" stroke=\"#1c1917\" stroke-width=\"1.3\"/><text x=\"63\" y=\"229\" font-size=\"10\">1</text><circle cx=\"70\" cy=\"200.4\" r=\"3\" fill=\"#1c1917\"/><text x=\"50\" y=\"199\" font-size=\"13\" font-weight=\"700\">B</text><line x1=\"54\" y1=\"219\" x2=\"63\" y2=\"224\" stroke=\"#1c1917\" stroke-width=\"1.3\"/><text x=\"40\" y=\"222\" font-size=\"10\">1</text><g><line x1=\"100\" y1=\"222\" x2=\"148\" y2=\"222\" stroke=\"#2563eb\" stroke-width=\"1.5\"/><path d=\"M 144 218 L 152 222 L 144 226 Z\" fill=\"#2563eb\"/><text x=\"104\" y=\"216\" font-size=\"11\" fill=\"#2563eb\">P（速度 1）</text></g><g><line x1=\"60\" y1=\"227\" x2=\"110\" y2=\"199\" stroke=\"#dc2626\" stroke-width=\"1.5\"/><path d=\"M 107 194 L 113 199 L 107 204 Z\" fill=\"#dc2626\"/><text x=\"116\" y=\"196\" font-size=\"11\" fill=\"#dc2626\">Q（速度 √3）</text></g><g><line x1=\"82\" y1=\"190\" x2=\"118\" y2=\"125\" stroke=\"#16a34a\" stroke-width=\"1.5\"/><path d=\"M 113 124 L 120 122 L 119 130 Z\" fill=\"#16a34a\"/><text x=\"123\" y=\"122\" font-size=\"11\" fill=\"#16a34a\">R（速度 2）</text></g></svg>"
+  },
+  "japanese": "如右图，$\\angle XOY = 60°$，$OZ$ 是 $\\angle XOY$ 的平分线。射线 $OX, OY$ 上的点 $A, B$ 满足 $OA = OB = 1$。点 $P, Q, R$ 分别在 $OX, OZ, OY$ 上同时出发，分别从 $A, O, B$ 起以每秒 $1, \\sqrt{3}, 2$ 的速度远离 $O$ 移动。\n\n通过考察三角形 $PQR$ 的面积，求 3 点 $P, Q, R$ 排列在一条直线上的时刻。\n\n首先，出发后 $t$ 秒时 $OP, OQ, OR$ 的长度分别为\n$$OP = t + \\fbox{A},\\quad OQ = \\sqrt{\\fbox{B}}\\,t,\\quad OR = \\fbox{C}\\,t + \\fbox{D}$$\n\n此时各三角形的面积分别为\n$$\\triangle OPQ = \\dfrac{\\sqrt{\\fbox{E}}\\,t\\left(t + \\fbox{F}\\right)}{4}$$\n$$\\triangle ORQ = \\dfrac{\\sqrt{\\fbox{G}}\\,t\\left(\\fbox{H}\\,t + \\fbox{I}\\right)}{4}$$\n$$\\triangle OPR = \\dfrac{\\sqrt{\\fbox{J}}\\,\\left(t + \\fbox{K}\\right)\\left(\\fbox{L}\\,t + \\fbox{M}\\right)}{4}$$\n\n因此\n$$\\triangle PQR = \\dfrac{\\sqrt{\\fbox{N}}}{4}\\,\\left|-t^2 + t + \\fbox{O}\\right|$$\n\n故 3 点 $P, Q, R$ 排列在一条直线上的条件可视为\n$$t^2 - t - \\fbox{O} = \\fbox{P}$$\n\n成立。因此，所求时间为\n$$t = \\dfrac{\\fbox{Q} + \\sqrt{\\fbox{R}}}{\\fbox{S}} \\quad (\\text{秒})$$",
+  "solution": {
+    "translation": "三个动点沿三条射线远离O：P沿OX、Q沿OZ（角平分线）、R沿OY。把∠XOY=60°拆成两个30°，用两边夹角公式分别算出 △OPQ、△OQR、△OPR 的面积。由于Q在△OPR内部（OZ在∠POR角内），△OPR = △OPQ + △OQR + △PQR，于是 △PQR 由减法得出。共线意味着 △PQR=0，化简得 t²−t−1=0。",
+    "analysis": "关键角度：∠POQ = ∠QOR = 30°（OZ平分60°角），∠POR = 60°。面积用 S = ½·边·边·sin夹角。Q 在 ∠POR 角内 → △OPR 被 OQ 分成两个小三角形，再加上 △PQR 就等于 △OPR；所以 △PQR = △OPR − △OPQ − △OQR。共线 ⇔ △PQR=0 ⇔ 一个二次方程。",
+    "steps": [
+      {
+        "title": "第 1 步：写出 t 秒后 OP, OQ, OR",
+        "content": "出发时 $A$ 离 $O$ 距离 $1$，$P$ 从 $A$ 出发以速度 $1$ 远离 $O$；$Q$ 从 $O$ 出发以速度 $\\sqrt3$；$R$ 从 $B$（离 $O$ 距离 $1$）出发以速度 $2$。\n\n经过 $t$ 秒：\n- $OP = 1 + 1\\cdot t = t + 1$\n- $OQ = 0 + \\sqrt{3}\\,t = \\sqrt{3}\\,t$\n- $OR = 1 + 2t = 2t + 1$\n\n故 $\\fbox{A}=1$，$\\fbox{B}=3$，$\\fbox{C}=2$，$\\fbox{D}=1$。",
+        "diagram": {
+          "svg": "<svg viewBox=\"0 0 320 280\" style=\"width:100%;max-width:340px;display:block;margin:10px auto\"><line x1=\"50\" y1=\"235\" x2=\"295\" y2=\"235\" stroke=\"#a8a29e\" stroke-width=\"1\"/><line x1=\"50\" y1=\"235\" x2=\"262\" y2=\"113\" stroke=\"#a8a29e\" stroke-width=\"1\" stroke-dasharray=\"4,3\"/><line x1=\"50\" y1=\"235\" x2=\"173\" y2=\"22\" stroke=\"#a8a29e\" stroke-width=\"1\"/><text x=\"300\" y=\"239\" font-size=\"12\" fill=\"#57534e\">X</text><text x=\"266\" y=\"110\" font-size=\"12\" fill=\"#57534e\">Z</text><text x=\"167\" y=\"18\" font-size=\"12\" fill=\"#57534e\">Y</text><text x=\"34\" y=\"248\" font-size=\"14\" font-weight=\"700\">O</text><line x1=\"50\" y1=\"235\" x2=\"130\" y2=\"235\" stroke=\"#2563eb\" stroke-width=\"2.5\"/><circle cx=\"130\" cy=\"235\" r=\"4\" fill=\"#2563eb\"/><text x=\"132\" y=\"252\" font-size=\"13\" font-weight=\"700\" fill=\"#2563eb\">P</text><text x=\"72\" y=\"228\" font-size=\"11\" fill=\"#2563eb\">OP = t+1</text><line x1=\"50\" y1=\"235\" x2=\"110\" y2=\"200\" stroke=\"#dc2626\" stroke-width=\"2.5\"/><circle cx=\"110\" cy=\"200\" r=\"4\" fill=\"#dc2626\"/><text x=\"115\" y=\"197\" font-size=\"13\" font-weight=\"700\" fill=\"#dc2626\">Q</text><text x=\"45\" y=\"189\" font-size=\"11\" fill=\"#dc2626\">OQ = √3·t</text><line x1=\"50\" y1=\"235\" x2=\"110\" y2=\"131\" stroke=\"#16a34a\" stroke-width=\"2.5\"/><circle cx=\"110\" cy=\"131\" r=\"4\" fill=\"#16a34a\"/><text x=\"116\" y=\"129\" font-size=\"13\" font-weight=\"700\" fill=\"#16a34a\">R</text><text x=\"40\" y=\"165\" font-size=\"11\" fill=\"#16a34a\">OR = 2t+1</text></svg>"
+        }
       },
-      "japanese": "如右图，$\\angle XOY = 60°$，$OZ$ 是 $\\angle XOY$ 的平分线。射线 $OX, OY$ 上的点 $A, B$ 满足 $OA = OB = 1$。点 $P, Q, R$ 分别在 $OX, OZ, OY$ 上同时出发，分别从 $A, O, B$ 起以每秒 $1, \\sqrt{3}, 2$ 的速度远离 $O$ 移动。\n\n通过考察三角形 $PQR$ 的面积，求 3 点 $P, Q, R$ 排列在一条直线上的时刻。\n\n首先，出发后 $t$ 秒时 $OP, OQ, OR$ 的长度分别为\n$$OP = t + \\fbox{A},\\quad OQ = \\sqrt{\\fbox{B}}\\,t,\\quad OR = \\fbox{C}\\,t + \\fbox{D}$$\n\n此时各三角形的面积分别为\n$$\\triangle OPQ = \\dfrac{\\sqrt{\\fbox{E}}\\,t\\left(t + \\fbox{F}\\right)}{4}$$\n$$\\triangle ORQ = \\dfrac{\\sqrt{\\fbox{G}}\\,t\\left(\\fbox{H}\\,t + \\fbox{I}\\right)}{4}$$\n$$\\triangle OPR = \\dfrac{\\sqrt{\\fbox{J}}\\,\\left(t + \\fbox{K}\\right)\\left(\\fbox{L}\\,t + \\fbox{M}\\right)}{4}$$\n\n因此\n$$\\triangle PQR = \\dfrac{\\sqrt{\\fbox{N}}}{4}\\,\\left|-t^2 + t + \\fbox{O}\\right|$$\n\n故 3 点 $P, Q, R$ 排列在一条直线上的条件可视为\n$$t^2 - t - \\fbox{O} = \\fbox{P}$$\n\n成立。因此，所求时间为\n$$t = \\dfrac{\\fbox{Q} + \\sqrt{\\fbox{R}}}{\\fbox{S}} \\quad (\\text{秒})$$",
-      "solution": {
-        "translation": "用速度时间得各动点到O的距离，由两边夹角公式（30°或60°）算出三个子三角形面积；△PQR=△OPR-△OPQ-△ORQ（Q在△OPR的同侧）。最后解二次方程得共线时刻。",
-        "analysis": "∠POQ=∠QOR=30°，∠POR=60°。面积用½·边·边·sin（夹角）。△PQR可由三个三角形面积差给出（带绝对值）；共线即△PQR=0，得t²-t-1=0。",
-        "steps": [
-          {
-            "title": "求 OP, OQ, OR",
-            "content": "经过 $t$ 秒：\n- $OP = OA + 1 \\cdot t = t + 1$\n- $OQ = 0 + \\sqrt{3}\\,t = \\sqrt{3}\\,t$\n- $OR = OB + 2t = 2t + 1$\n\n故 $\\fbox{A}=1$，$\\fbox{B}=3$，$\\fbox{C}=2$，$\\fbox{D}=1$。"
-          },
-          {
-            "title": "△OPQ、△ORQ、△OPR 的面积",
-            "content": "$\\angle POQ = \\angle QOR = 30°$，$\\angle POR = 60°$。$\\sin30°=\\frac{1}{2}$，$\\sin60°=\\frac{\\sqrt{3}}{2}$。\n\n$$\\triangle OPQ = \\frac{1}{2}\\,OP\\cdot OQ\\,\\sin30° = \\frac{1}{2}(t+1)(\\sqrt{3}\\,t)\\cdot\\frac{1}{2} = \\frac{\\sqrt{3}\\,t(t+1)}{4}$$\n\n故 $\\fbox{E}=3$，$\\fbox{F}=1$。\n\n$$\\triangle ORQ = \\frac{1}{2}(2t+1)(\\sqrt{3}\\,t)\\cdot\\frac{1}{2} = \\frac{\\sqrt{3}\\,t(2t+1)}{4}$$\n\n故 $\\fbox{G}=3$，$\\fbox{H}=2$，$\\fbox{I}=1$。\n\n$$\\triangle OPR = \\frac{1}{2}(t+1)(2t+1)\\cdot\\frac{\\sqrt{3}}{2} = \\frac{\\sqrt{3}\\,(t+1)(2t+1)}{4}$$\n\n故 $\\fbox{J}=3$，$\\fbox{K}=1$，$\\fbox{L}=2$，$\\fbox{M}=1$。"
-          },
-          {
-            "title": "△PQR 的面积",
-            "content": "由于 Q 在 OZ 上（角的内部），有\n$$\\triangle PQR = \\left|\\triangle OPR - \\triangle OPQ - \\triangle ORQ\\right|$$\n\n$$= \\frac{\\sqrt{3}}{4}\\left|(t+1)(2t+1) - t(t+1) - t(2t+1)\\right|$$\n\n展开：\n$(t+1)(2t+1) = 2t^2+3t+1$\n$t(t+1) = t^2 + t$\n$t(2t+1) = 2t^2 + t$\n\n$$(2t^2+3t+1) - (t^2+t) - (2t^2+t) = -t^2 + t + 1$$\n\n故 $\\triangle PQR = \\dfrac{\\sqrt{3}}{4}\\left|-t^2 + t + 1\\right|$。$\\fbox{N}=3$，$\\fbox{O}=1$。"
-          },
-          {
-            "title": "共线时刻",
-            "content": "3 点共线 $\\iff \\triangle PQR = 0 \\iff -t^2 + t + 1 = 0 \\iff t^2 - t - 1 = 0$。\n\n即 $t^2 - t - \\fbox{O} = \\fbox{P}$，其中 $\\fbox{P}=0$。\n\n解 $t^2 - t - 1 = 0$，取正根：\n$$t = \\frac{1 + \\sqrt{5}}{2}$$\n\n故 $\\fbox{Q}=1$，$\\fbox{R}=5$，$\\fbox{S}=2$。"
-          }
-        ],
-        "finalAnswer": "A=1，B=3，C=2，D=1；E=3，F=1；G=3，H=2，I=1；J=3，K=1，L=2，M=1；N=3，O=1，P=0；Q=1，R=5，S=2"
+      {
+        "title": "第 2 步：算 △OPQ、△OQR、△OPR 的面积",
+        "content": "关键角度：OZ 平分 $\\angle XOY=60°$，所以\n$$\\angle POQ = \\angle QOR = 30°,\\quad \\angle POR = 60°.$$\n\n用「两边夹角」公式 $S = \\dfrac{1}{2}ab\\sin C$：\n\n$$\\triangle OPQ = \\frac{1}{2}\\,OP\\cdot OQ\\,\\sin 30° = \\frac{1}{2}(t+1)(\\sqrt 3\\,t)\\cdot\\frac{1}{2} = \\frac{\\sqrt{3}\\,t(t+1)}{4}$$\n\n故 $\\fbox{E}=3$，$\\fbox{F}=1$。\n\n$$\\triangle OQR = \\frac{1}{2}\\,OQ\\cdot OR\\,\\sin 30° = \\frac{1}{2}(\\sqrt 3\\,t)(2t+1)\\cdot\\frac{1}{2} = \\frac{\\sqrt{3}\\,t(2t+1)}{4}$$\n\n故 $\\fbox{G}=3$，$\\fbox{H}=2$，$\\fbox{I}=1$。\n\n$$\\triangle OPR = \\frac{1}{2}\\,OP\\cdot OR\\,\\sin 60° = \\frac{1}{2}(t+1)(2t+1)\\cdot\\frac{\\sqrt 3}{2} = \\frac{\\sqrt{3}\\,(t+1)(2t+1)}{4}$$\n\n故 $\\fbox{J}=3$，$\\fbox{K}=1$，$\\fbox{L}=2$，$\\fbox{M}=1$。"
+      },
+      {
+        "title": "第 3 步：用面积差求 △PQR",
+        "content": "**关键观察**：$Q$ 在角平分线 $OZ$ 上,所以 $OQ$ 把 $\\angle POR$ 切成两半。从图上看,$Q$ 落在 $\\triangle OPR$ 内部（或恰在 $PR$ 上时三点共线）。\n\n因此，连接 $OQ$ 把 $\\triangle OPR$ 拆成两块 $\\triangle OPQ + \\triangle OQR$，而 $\\triangle PQR$ 是「剩下」的那部分:\n\n$$\\triangle OPR = \\triangle OPQ + \\triangle OQR + \\triangle PQR$$\n\n移项：\n$$\\triangle PQR = \\triangle OPR - \\triangle OPQ - \\triangle OQR$$\n\n$$= \\frac{\\sqrt{3}}{4}\\Big[(t+1)(2t+1) - t(t+1) - t(2t+1)\\Big]$$\n\n逐项展开：\n- $(t+1)(2t+1) = 2t^2+3t+1$\n- $t(t+1) = t^2+t$\n- $t(2t+1) = 2t^2+t$\n\n相减：\n$$(2t^2+3t+1)-(t^2+t)-(2t^2+t) = -t^2+t+1$$\n\n若 $-t^2+t+1\\geq 0$ 这就是 $\\triangle PQR$ 的面积；若小于 $0$ 说明 $Q$ 已越过线 $PR$,此时取绝对值即可:\n\n$$\\triangle PQR = \\frac{\\sqrt{3}}{4}\\bigl|-t^2+t+1\\bigr|$$\n\n故 $\\fbox{N}=3$，$\\fbox{O}=1$。",
+        "why": "为什么是 △OPR = △OPQ + △OQR + △PQR ？因为 Q 在 ∠POR 内部（OZ 是这个角的平分线），从 Q 看 OP、OR、PR 三条边各对应一个小三角形。三个小三角形拼起来正好是大三角形 OPR。当且仅当 Q 落在 PR 这条边上时，△PQR 退化为 0。",
+        "diagram": {
+          "svg": "<svg viewBox=\"0 0 320 280\" style=\"width:100%;max-width:340px;display:block;margin:10px auto\"><line x1=\"50\" y1=\"235\" x2=\"295\" y2=\"235\" stroke=\"#d6d3d1\" stroke-width=\"1\"/><line x1=\"50\" y1=\"235\" x2=\"262\" y2=\"113\" stroke=\"#d6d3d1\" stroke-width=\"1\" stroke-dasharray=\"4,3\"/><line x1=\"50\" y1=\"235\" x2=\"173\" y2=\"22\" stroke=\"#d6d3d1\" stroke-width=\"1\"/><polygon points=\"50,235 130,235 110,200\" fill=\"#dbeafe\" stroke=\"#1d4ed8\" stroke-width=\"1.3\"/><polygon points=\"50,235 110,200 110,131\" fill=\"#fee2e2\" stroke=\"#dc2626\" stroke-width=\"1.3\"/><polygon points=\"130,235 110,200 110,131\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"300\" y=\"239\" font-size=\"12\" fill=\"#78716c\">X</text><text x=\"266\" y=\"110\" font-size=\"12\" fill=\"#78716c\">Z</text><text x=\"167\" y=\"18\" font-size=\"12\" fill=\"#78716c\">Y</text><text x=\"34\" y=\"248\" font-size=\"14\" font-weight=\"700\">O</text><circle cx=\"130\" cy=\"235\" r=\"3.5\" fill=\"#1c1917\"/><text x=\"132\" y=\"252\" font-size=\"13\" font-weight=\"700\">P</text><circle cx=\"110\" cy=\"200\" r=\"3.5\" fill=\"#1c1917\"/><text x=\"116\" y=\"197\" font-size=\"13\" font-weight=\"700\">Q</text><circle cx=\"110\" cy=\"131\" r=\"3.5\" fill=\"#1c1917\"/><text x=\"117\" y=\"129\" font-size=\"13\" font-weight=\"700\">R</text><g font-size=\"11\"><rect x=\"205\" y=\"170\" width=\"14\" height=\"10\" fill=\"#dbeafe\" stroke=\"#1d4ed8\"/><text x=\"225\" y=\"179\">△OPQ</text><rect x=\"205\" y=\"188\" width=\"14\" height=\"10\" fill=\"#fee2e2\" stroke=\"#dc2626\"/><text x=\"225\" y=\"197\">△OQR</text><rect x=\"205\" y=\"206\" width=\"14\" height=\"10\" fill=\"#fef3c7\" stroke=\"#d97706\"/><text x=\"225\" y=\"215\">△PQR</text></g><text x=\"200\" y=\"159\" font-size=\"11\" fill=\"#57534e\">三者之和 = △OPR</text></svg>"
+        }
+      },
+      {
+        "title": "第 4 步：解共线方程",
+        "content": "三点 $P, Q, R$ 共线 $\\iff \\triangle PQR = 0 \\iff -t^2+t+1 = 0$。\n\n两边取相反数：$t^2 - t - 1 = 0$。\n\n对照题中形式 $t^2 - t - \\fbox{O} = \\fbox{P}$,有 $\\fbox{O}=1$（与前面一致）,$\\fbox{P}=0$。\n\n用求根公式解 $t^2 - t - 1 = 0$:\n$$t = \\frac{1 \\pm \\sqrt{1+4}}{2} = \\frac{1\\pm\\sqrt 5}{2}$$\n\n因 $t > 0$（时间为正）,取正根:\n$$t = \\frac{1+\\sqrt 5}{2}\\ (\\text{秒}) \\approx 1.618$$\n\n故 $\\fbox{Q}=1$，$\\fbox{R}=5$，$\\fbox{S}=2$。\n\n（顺带一提，这正是黄金分割比 $\\varphi$。）",
+        "diagram": {
+          "svg": "<svg viewBox=\"0 0 320 280\" style=\"width:100%;max-width:340px;display:block;margin:10px auto\"><line x1=\"50\" y1=\"235\" x2=\"295\" y2=\"235\" stroke=\"#d6d3d1\" stroke-width=\"1\"/><line x1=\"50\" y1=\"235\" x2=\"262\" y2=\"113\" stroke=\"#d6d3d1\" stroke-width=\"1\" stroke-dasharray=\"4,3\"/><line x1=\"50\" y1=\"235\" x2=\"173\" y2=\"22\" stroke=\"#d6d3d1\" stroke-width=\"1\"/><text x=\"300\" y=\"239\" font-size=\"12\" fill=\"#78716c\">X</text><text x=\"266\" y=\"110\" font-size=\"12\" fill=\"#78716c\">Z</text><text x=\"167\" y=\"18\" font-size=\"12\" fill=\"#78716c\">Y</text><text x=\"34\" y=\"248\" font-size=\"14\" font-weight=\"700\">O</text><line x1=\"161\" y1=\"260\" x2=\"131\" y2=\"40\" stroke=\"#7c3aed\" stroke-width=\"2\"/><circle cx=\"155\" cy=\"235\" r=\"4.5\" fill=\"#7c3aed\"/><text x=\"160\" y=\"252\" font-size=\"13\" font-weight=\"700\" fill=\"#7c3aed\">P</text><circle cx=\"147\" cy=\"179\" r=\"4.5\" fill=\"#7c3aed\"/><text x=\"152\" y=\"177\" font-size=\"13\" font-weight=\"700\" fill=\"#7c3aed\">Q</text><circle cx=\"135\" cy=\"88\" r=\"4.5\" fill=\"#7c3aed\"/><text x=\"142\" y=\"86\" font-size=\"13\" font-weight=\"700\" fill=\"#7c3aed\">R</text><text x=\"175\" y=\"110\" font-size=\"12\" fill=\"#7c3aed\">t = (1+√5)/2</text><text x=\"175\" y=\"125\" font-size=\"11\" fill=\"#7c3aed\">≈ 1.618 秒</text></svg>"
+        }
       }
-    }
+    ],
+    "finalAnswer": "A=1，B=3，C=2，D=1；E=3，F=1；G=3，H=2，I=1；J=3，K=1，L=2，M=1；N=3，O=1，P=0；Q=1，R=5，S=2"
+  }
+}
   ]
 }
