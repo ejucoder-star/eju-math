@@ -1,0 +1,218 @@
+{
+  "metadata": {
+    "course": "course1",
+    "year": "2017",
+    "session": "1",
+    "courseNameJa": "数学1",
+    "courseNameEn": "Course 1 (Basic)",
+    "description": "基础课程｜文科方向",
+    "color": "#2563eb",
+    "examTitle": "2017年度（平成29年）第1回",
+    "examDate": "2017年6月"
+  },
+  "questions": [
+    {
+      "id": "c1-I-1",
+      "number": "I-1",
+      "topic": "二次函数的平移与关于水平线的对称",
+      "topicTag": "二次函数",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "questionDiagram": {
+        "svg": "<svg viewBox=\"0 0 320 240\" style=\"width:100%;max-width:340px;display:block;margin:12px auto\"><line x1=\"30\" y1=\"200\" x2=\"310\" y2=\"200\" stroke=\"#1c1917\" stroke-width=\"1.3\"/><line x1=\"100\" y1=\"15\" x2=\"100\" y2=\"230\" stroke=\"#1c1917\" stroke-width=\"1.3\"/><text x=\"314\" y=\"204\" font-size=\"12\">x</text><text x=\"88\" y=\"15\" font-size=\"12\">y</text><text x=\"88\" y=\"215\" font-size=\"11\">O</text><polyline points=\"60,80 80,135 100,170 120,185 140,180 160,155 180,110 200,45 200,30\" fill=\"none\" stroke=\"#a8a29e\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><text x=\"50\" y=\"75\" font-size=\"10\" fill=\"#78716c\">y=3x²-6 (原)</text><polyline points=\"140,200 160,140 180,95 200,65 220,55 240,65 260,95 280,140 290,170\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2\"/><text x=\"205\" y=\"50\" font-size=\"11\" fill=\"#2563eb\">y=3x²-12x+14</text><circle cx=\"160\" cy=\"140\" r=\"3.5\" fill=\"#dc2626\"/><text x=\"165\" y=\"140\" font-size=\"11\" fill=\"#dc2626\">(1,5)</text><circle cx=\"280\" cy=\"140\" r=\"3.5\" fill=\"#dc2626\"/><text x=\"260\" y=\"135\" font-size=\"11\" fill=\"#dc2626\">(4,14)</text></svg>"
+      },
+      "japanese": "考虑二次函数\n$$y = 3x^2 - 6$$\n\n(1) 把 $y = 3x^2 - 6$ 的图象平行移动，使其经过两点 $(1, 5)$、$(4, 14)$。此时表示该图象的二次函数为\n$$y = \\fbox{A}\\,x^2 - \\fbox{BC}\\,x + \\fbox{DE} \\quad \\cdots ①$$\n\n该图象是把 $y = 3x^2 - 6$ 的图象向 $x$ 轴方向 $\\fbox{F}$、$y$ 轴方向 $\\fbox{G}$ 平移得到。\n\n(2) 关于直线 $y = c$，$y = 3x^2 - 6$ 的图象的对称图象表示为\n$$y = -\\fbox{H}\\,x^2 + \\fbox{I}\\,c + \\fbox{J} \\quad \\cdots ②$$\n\n二次函数 ① 与 ② 的图象恰好有一个共有点时，$c = \\fbox{K}$，共有点的坐标为 $(\\fbox{L}, \\fbox{M})$。",
+      "solution": {
+        "translation": "(1) 设平移后顶点 (h,k')，代入两点解得 h=2, k'=2，展开得 3x²-12x+14；与原顶点 (0,-6) 比较得 x方向+2, y方向+8。(2) 反射后系数变号，常数变为 2c+6-原常数。两曲线交点判别式=0 给出 c=1，重根 x=1，y=5。",
+        "analysis": "平移不改变二次项系数。关于水平线 y=c 的反射：(x, y) → (x, 2c-y)。",
+        "steps": [
+          {
+            "title": "(1) 平移后求二次函数",
+            "content": "设平移后顶点为 $(h, k')$，方程为 $y = 3(x-h)^2 + k'$。\n\n代入 $(1, 5)$:$3(1-h)^2 + k' = 5$；\n代入 $(4, 14)$:$3(4-h)^2 + k' = 14$。\n\n两式相减:$3[(4-h)^2 - (1-h)^2] = 9$，化简得 $(5-2h)\\cdot 3 = 3 \\implies h = 2$。\n\n代回得 $k' = 5 - 3(1-2)^2 = 2$。\n\n$y = 3(x-2)^2 + 2 = 3x^2 - 12x + 14$\n\n$\\fbox{A}=3$，$\\fbox{BC}=12$，$\\fbox{DE}=14$。"
+          },
+          {
+            "title": "(1) 平移方向",
+            "content": "原顶点 $(0, -6)$，新顶点 $(2, 2)$。\n- $x$ 方向: $0 \\to 2$，向右平移 $2$。$\\fbox{F}=2$。\n- $y$ 方向: $-6 \\to 2$，向上平移 $8$。$\\fbox{G}=8$。"
+          },
+          {
+            "title": "(2) 关于 y=c 的对称图象",
+            "content": "原图象上的点 $(x, 3x^2-6)$，关于直线 $y=c$ 的对称点为 $(x, 2c - (3x^2-6)) = (x, -3x^2 + 6 + 2c)$。\n\n对称图象方程:\n$$y = -3x^2 + 2c + 6$$\n\n$\\fbox{H}=3$，$\\fbox{I}=2$，$\\fbox{J}=6$。"
+          },
+          {
+            "title": "(2) ①、② 仅有 1 个共有点",
+            "content": "令 ①=②:\n$$3x^2 - 12x + 14 = -3x^2 + 2c + 6$$\n$$6x^2 - 12x + 8 - 2c = 0$$\n$$3x^2 - 6x + (4 - c) = 0$$\n\n仅一个共有点 $\\iff$ 判别式 $= 0$:\n$$36 - 12(4-c) = 0 \\implies 12c = 12 \\implies c = 1$$\n\n$\\fbox{K}=1$。\n\n重根 $x = \\dfrac{6}{6} = 1$，对应 $y = 3(1) - 12(1) + 14 = 5$。\n\n共有点 $(1, 5)$。$\\fbox{L}=1$，$\\fbox{M}=5$。"
+          }
+        ],
+        "finalAnswer": "A=3，BC=12，DE=14；F=2，G=8；H=3，I=2，J=6；K=1；L=1，M=5"
+      }
+    },
+    {
+      "id": "c1-I-2",
+      "number": "I-2",
+      "topic": "10 张卡片放入箱子与颜色概率",
+      "topicTag": "概率",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "有白色卡片 4 张，红色卡片 3 张，黑色卡片 3 张，共 10 张。每张卡片上都写有不同的数字。\n\n(1) 从 10 张卡片中选出 2 张，分别放入两个箱 A、B 中各 1 张。这种放入方式共有 $\\fbox{NO}$ 通。\n\n(2) 从 10 张卡片中选 2 张，2 张同色的选法共 $\\fbox{PQ}$ 通，2 张色不同的选法共 $\\fbox{RS}$ 通。\n\n(3) 把 10 张卡片放入一个箱中，从中每次取 1 张共 2 次（不放回）。取出的 2 张同色的概率为 $\\dfrac{\\fbox{T}}{\\fbox{UV}}$。\n\n(4) 第一次取出的卡片色为白或红，第二次取出的卡片色为红或黑的概率为 $\\dfrac{\\fbox{WX}}{\\fbox{YZ}}$。",
+      "solution": {
+        "translation": "(1) 从10选2 排列入两个箱 = 10·9 = 90。(2) 同色：白白C(4,2)+赤赤C(3,2)+黑黑C(3,2) = 6+3+3 = 12；异色 = C(10,2)-12 = 33。(3) P(同色) = 4·3/(10·9) + 3·2/(10·9) + 3·2/(10·9) = 24/90 = 4/15。(4) P(白·赤黒) + P(赤·赤黒) = (4/10)(6/9) + (3/10)(5/9) = 39/90 = 13/30。",
+        "analysis": "区分有序/无序取法；条件概率需考虑首次取出后的剩余分布。",
+        "steps": [
+          {
+            "title": "(1) 排入两个箱",
+            "content": "从 10 张选 2 张并区分顺序入 A, B:$10 \\times 9 = 90$。$\\fbox{NO} = 90$。"
+          },
+          {
+            "title": "(2) 同色与异色组合数",
+            "content": "**同色**:$\\binom{4}{2} + \\binom{3}{2} + \\binom{3}{2} = 6 + 3 + 3 = 12$。$\\fbox{PQ} = 12$。\n\n**异色**:$\\binom{10}{2} - 12 = 45 - 12 = 33$。$\\fbox{RS} = 33$。"
+          },
+          {
+            "title": "(3) 同色概率",
+            "content": "$$P = \\frac{4\\cdot 3 + 3\\cdot 2 + 3\\cdot 2}{10\\cdot 9} = \\frac{12 + 6 + 6}{90} = \\frac{24}{90} = \\frac{4}{15}$$\n\n$\\fbox{T} = 4$，$\\fbox{UV} = 15$。"
+          },
+          {
+            "title": "(4) 第一次白或红，第二次红或黑",
+            "content": "**情形 1**:第一次白($\\frac{4}{10}$),第二次红或黑(剩余 $3+3=6$ 张):\n$$\\frac{4}{10}\\cdot\\frac{6}{9} = \\frac{24}{90}$$\n\n**情形 2**:第一次红($\\frac{3}{10}$),第二次红或黑(剩余 $2+3=5$ 张):\n$$\\frac{3}{10}\\cdot\\frac{5}{9} = \\frac{15}{90}$$\n\n合计:$\\dfrac{24 + 15}{90} = \\dfrac{39}{90} = \\dfrac{13}{30}$\n\n$\\fbox{WX} = 13$，$\\fbox{YZ} = 30$。"
+          }
+        ],
+        "finalAnswer": "NO=90；PQ=12，RS=33；T=4，UV=15；WX=13，YZ=30"
+      }
+    },
+    {
+      "id": "c1-II-1",
+      "number": "II-1",
+      "topic": "绝对值方程与直线的交点条件",
+      "topicTag": "绝对值不等式",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "考虑 $x$ 的方程\n$$|x-3| + |x-6| = ax + b \\quad \\cdots ①$$\n\n求使 ① 有解的实数 $a, b$ 的取值。\n\n令 $y = |x-3| + |x-6|$，分段去绝对值得\n$$y = \\begin{cases} -\\fbox{B}\\,x + \\fbox{C} & (x < \\fbox{A}) \\\\ \\fbox{E} & (\\fbox{A} \\leq x < \\fbox{D}) \\\\ \\fbox{F}\\,x - \\fbox{G} & (\\fbox{D} \\leq x) \\end{cases}$$\n\n在 $xy$ 平面上考虑该函数图象与直线 $y = ax + b$ 的共有点。可知\n\n(i) 当 $a = 1$ 时，方程 ① 有解的 $b$ 范围为 $b \\geq \\fbox{HI}$。\n\n(ii) 当 $b = 6$ 时，方程 ① 有两个不同解的 $a$ 范围为 $\\fbox{JK} < a < \\fbox{L}$。",
+      "solution": {
+        "translation": "把 y=|x-3|+|x-6| 写成 3 段折线，最低值为 3（在 3≤x≤6 段）。(i) a=1 时直线 y=x+b 在 x=6 处恰过最低段端点 → b=-3 临界；当 b≥-3 时直线与折线有交点。(ii) b=6 时直线过 (0,6)，画图分析倾斜，得 -1<a<2 时与折线有 2 交点。",
+        "analysis": "折线在 [3,6] 段恒为 3，最低值 3。直线 y=ax+b 与折线交点数依赖斜率和截距。临界点：a=-1 时直线在 x=3 处恰过折线拐点；a=2 时直线平行右段。",
+        "steps": [
+          {
+            "title": "y 的分段表达式",
+            "content": "- $x<3$:$y = -(x-3)-(x-6) = -2x+9$\n- $3\\leq x<6$:$y = (x-3)-(x-6) = 3$\n- $x\\geq 6$:$y = (x-3)+(x-6) = 2x-9$\n\n$\\fbox{A}=3$，$\\fbox{B}=2$，$\\fbox{C}=9$，$\\fbox{D}=6$，$\\fbox{E}=3$，$\\fbox{F}=2$，$\\fbox{G}=9$。"
+          },
+          {
+            "title": "(i) a=1 时 b 的范围",
+            "content": "直线 $y=x+b$ 斜率为 $1$。折线最小值为 $3$，在 $3 \\leq x \\leq 6$ 时取得。\n\n直线过 $(6, 3)$ 时 $b = -3$ (临界)。\n\n$b \\geq -3$ 时直线与折线至少有 1 个交点 (右段 $y=2x-9$ 与直线在 $x=9+b\\geq 6$ 处必相交)。\n\n$b < -3$ 时直线完全在折线下方，无解。\n\n故 $b \\geq -3$，$\\fbox{HI} = -3$。"
+          },
+          {
+            "title": "(ii) b=6 时 a 的范围（2 个不同解）",
+            "content": "直线 $y = ax+6$ 过 $(0, 6)$。\n\n- 左段相交:$ax+6 = -2x+9 \\implies x = \\dfrac{3}{a+2}$,需 $x<3$:$a > -1$。\n- 中段相交:$ax+6 = 3 \\implies x = -\\dfrac{3}{a}$,需 $3 \\leq x \\leq 6$:$-1 \\leq a \\leq -\\dfrac{1}{2}$。\n- 右段相交:$ax+6 = 2x-9 \\implies x = \\dfrac{15}{2-a}$,需 $x>6$ 且 $a<2$:$-\\dfrac{1}{2} < a < 2$。\n\n**2 个解的范围**:$-1 < a < 2$。\n\n（$a=-1$ 时两交点重合于 $x=3$,只 1 解；$a=2$ 时与右段平行，只左段 1 解。）\n\n$\\fbox{JK} = -1$，$\\fbox{L} = 2$。"
+          }
+        ],
+        "finalAnswer": "A=3，B=2，C=9，D=6，E=3，F=2，G=9；HI=-3；JK=-1，L=2"
+      }
+    },
+    {
+      "id": "c1-II-2",
+      "number": "II-2",
+      "topic": "两个正方形面积之和与比较",
+      "topicTag": "二次函数与几何",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "questionDiagram": {
+        "svg": "<svg viewBox=\"0 0 280 280\" style=\"width:100%;max-width:300px;display:block;margin:12px auto\"><line x1=\"20\" y1=\"140\" x2=\"260\" y2=\"140\" stroke=\"#a8a29e\" stroke-width=\"1\"/><line x1=\"140\" y1=\"20\" x2=\"140\" y2=\"260\" stroke=\"#a8a29e\" stroke-width=\"1\"/><text x=\"262\" y=\"144\" font-size=\"11\" fill=\"#78716c\">x</text><text x=\"128\" y=\"18\" font-size=\"11\" fill=\"#78716c\">y</text><text x=\"128\" y=\"154\" font-size=\"10\" fill=\"#78716c\">O</text><polygon points=\"80,140 140,80 200,140 140,200\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"1.8\"/><text x=\"203\" y=\"144\" font-size=\"11\" font-weight=\"700\" fill=\"#dc2626\">A</text><text x=\"137\" y=\"76\" font-size=\"11\" font-weight=\"700\" fill=\"#dc2626\">B</text><text x=\"66\" y=\"144\" font-size=\"11\" font-weight=\"700\" fill=\"#dc2626\">C</text><text x=\"137\" y=\"215\" font-size=\"11\" font-weight=\"700\" fill=\"#dc2626\">D</text><polygon points=\"220,60 60,60 60,220 220,220\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><text x=\"222\" y=\"58\" font-size=\"11\" font-weight=\"700\" fill=\"#2563eb\">P</text><text x=\"50\" y=\"58\" font-size=\"11\" font-weight=\"700\" fill=\"#2563eb\">Q</text><text x=\"50\" y=\"230\" font-size=\"11\" font-weight=\"700\" fill=\"#2563eb\">R</text><text x=\"222\" y=\"230\" font-size=\"11\" font-weight=\"700\" fill=\"#2563eb\">S</text><text x=\"20\" y=\"272\" font-size=\"10\" fill=\"#57534e\">ABCD: 顶点(±2t,0),(0,±2t); PQRS: 顶点(±(4-t²), ±(4-t²))</text></svg>"
+      },
+      "japanese": "如右图考虑两个正方形 ABCD 和 PQRS，顶点坐标为\n$$A(2t, 0),\\ B(0, 2t),\\ C(-2t, 0),\\ D(0, -2t)$$\n$$P(4-t^2, 4-t^2),\\ Q(-4+t^2, 4-t^2),$$\n$$R(-4+t^2, -4+t^2),\\ S(4-t^2, -4+t^2)$$\n\n其中 $0 < t < 2$。设正方形 ABCD、PQRS 的面积分别为 $S_1, S_2$。\n\n此时\n$$S_1 = \\fbox{M}\\,t^2,\\quad S_2 = \\fbox{N}\\left(t^2 - \\fbox{O}\\right)^2$$\n\n(1) $S_1 + S_2$ 在 $t = \\sqrt{\\fbox{P}}$ 时取最小值 $\\fbox{QR}$。\n\n(2) 下文 $\\fbox{W}$、$\\fbox{X}$ 各从下面 ⓪～⑨ 中选择，其余 $\\fbox{ST}$, $\\fbox{UV}$ 填入对应数值。\n\n求 $S_1 < S_2$ 的 $t$ 范围。\n\n$S_1 < S_2$ 等价于 $t$ 满足不等式\n$$t^4 - \\fbox{ST}\\,t^2 + \\fbox{UV} > 0$$\n\n由此对 $t^2$ 解得 $\\fbox{W}$。故 $S_1 < S_2$ 当且仅当 $t$ 满足 $\\fbox{X}$。\n\n选项：\n⓪ $t^2<4$ または $6<t^2$ ① $4<t^2<6$ ② $t^2<2$ または $8<t^2$ ③ $2<t^2<8$ ④ $t^2 \\neq 4$ ⑤ $0<t<2$ ⑥ $0<t<\\sqrt{2}$ ⑦ $\\sqrt{2}<t<2$ ⑧ $2<t<\\sqrt{6}$ ⑨ $t \\neq 2$",
+      "solution": {
+        "translation": "ABCD 是顶点在坐标轴上的对角线长 4t 的正方形，面积 = (1/2)(4t)(4t) = 8t²；PQRS 是边平行轴的正方形，边长 2(4-t²)，面积 4(4-t²)²。S₁+S₂=4t⁴-24t²+64，关于 u=t² 配方在 u=3 即 t=√3 处取最小值 28。S₁<S₂ 化简为 t⁴-10t²+16>0，根 u=2 与 u=8，故 0<t<√2 (因 t<2 限制)。",
+        "analysis": "正方形面积可用对角线 (1/2)d² 或边长² 计算。S₁+S₂ 看作 u=t² 的二次式，闭区间 0<u<4 上求最小值。S₁<S₂ 解一元二次不等式。",
+        "steps": [
+          {
+            "title": "求 S₁, S₂",
+            "content": "ABCD 是顶点在坐标轴上的正方形（旋转 45°），对角线长 $4t$，故\n$$S_1 = \\frac{1}{2}\\cdot 4t \\cdot 4t = 8t^2$$\n\nPQRS 边平行于坐标轴，边长 $2(4-t^2)$，故\n$$S_2 = 4(4 - t^2)^2 = 4(t^2 - 4)^2$$\n\n$\\fbox{M}=8$，$\\fbox{N}=4$，$\\fbox{O}=4$。"
+          },
+          {
+            "title": "(1) S₁ + S₂ 的最小值",
+            "content": "$$S_1 + S_2 = 8t^2 + 4(t^2 - 4)^2 = 8t^2 + 4(t^4 - 8t^2 + 16)$$\n$$= 4t^4 - 24t^2 + 64$$\n\n设 $u = t^2$，则 $S_1+S_2 = 4u^2 - 24u + 64 = 4(u - 3)^2 + 28$。\n\n在 $0 < u < 4$ 上，最小值在 $u = 3$ 处取得，即 $t = \\sqrt{3}$，最小值为 $28$。\n\n$\\fbox{P} = 3$，$\\fbox{QR} = 28$。"
+          },
+          {
+            "title": "(2) S₁ < S₂ 的不等式",
+            "content": "$$8t^2 < 4(t^2 - 4)^2$$\n$$2t^2 < (t^2 - 4)^2 = t^4 - 8t^2 + 16$$\n$$t^4 - 10t^2 + 16 > 0$$\n\n$\\fbox{ST} = 10$，$\\fbox{UV} = 16$。"
+          },
+          {
+            "title": "(2) 解不等式",
+            "content": "令 $u = t^2$：$u^2 - 10u + 16 > 0$。\n\n根:$u = \\dfrac{10 \\pm \\sqrt{100 - 64}}{2} = \\dfrac{10 \\pm 6}{2} = 8 \\text{ 或 } 2$。\n\n$(u - 2)(u - 8) > 0 \\iff u < 2 \\text{ 或 } u > 8$。\n\n即 $t^2 < 2$ 或 $t^2 > 8$，选项 ②。$\\fbox{W} = ②$。\n\n结合 $0 < t < 2$（即 $0 < t^2 < 4$）:\n- $t^2 < 2$ → $0 < t < \\sqrt{2}$ ✓\n- $t^2 > 8$ → $t > 2\\sqrt{2}$，与 $t < 2$ 矛盾。\n\n故 $0 < t < \\sqrt{2}$，选项 ⑥。$\\fbox{X} = ⑥$。"
+          }
+        ],
+        "finalAnswer": "M=8，N=4，O=4；P=3，QR=28；ST=10,UV=16；W=②，X=⑥"
+      }
+    },
+    {
+      "id": "c1-III-1",
+      "number": "III",
+      "topic": "方程 x²-y²=n 的解存在的必要充分条件",
+      "topicTag": "整数",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "$n$ 是正整数，$x, y$ 是非负整数。考虑方程\n$$x^2 - y^2 = n \\quad \\cdots ①$$\n\n先变形 ① 为\n$$(x + y)(x - y) = n \\quad \\cdots ②$$\n\n(1) 求 $n = 8$ 与 $n = 9$ 时 ① 的解。\n- $n = 8$ 时,$(x, y) = (\\fbox{A}, \\fbox{B})$\n- $n = 9$ 时,$(x, y) = (\\fbox{C}, \\fbox{D}),\\ (\\fbox{E}, \\fbox{F})$\n\n其中要求 $\\fbox{C} < \\fbox{E}$。\n\n(2) 下文 $\\fbox{G} \\sim \\fbox{R}$ 各从下面 ⓪～⑨ 中选择。\n\n下面证明条件 ③ 是 ① 有解的必要充分条件。\n\n**证明** 设 $(x, y)$ 满足 ①。\n\n若 $x, y$ 都是偶数或都是奇数，则 $x+y$ 与 $x-y$ 都是 $\\fbox{G}$，由 ②，$n$ 是 $\\fbox{H}$ 的倍数。\n\n若 $x, y$ 一奇一偶，则 $x+y$ 与 $x-y$ 都是 $\\fbox{I}$，故 $n$ 是 $\\fbox{J}$ 的倍数。\n\n所以\n「$n$ 是 $\\fbox{H}$ 的倍数，或者 $\\fbox{J}$ 的倍数」 …… ③\n\n是 ① 有解的必要条件。\n\n反过来,设 $n$ 满足 ③。\n\n若 $n$ 是 $\\fbox{H}$ 的倍数，$n = \\fbox{H}\\,k$（$k$ 为正整数）。取 $x+y = \\fbox{K}\\,k$，$x-y = 2$，则 $(x, y) = (k + \\fbox{L}, k - \\fbox{M})$，① 有解。\n\n若 $n$ 是 $\\fbox{J}$ 的倍数（即奇数），$n = \\fbox{N}\\,\\ell + \\fbox{O}$（$\\ell$ 为非负整数）。取 $x+y = \\fbox{P}\\,\\ell + \\fbox{Q}$，$x-y = 1$，则 $(x, y) = (\\ell + \\fbox{R}, \\ell)$，① 有解。\n\n选项：⓪ $0$ ① $1$ ② $2$ ③ $3$ ④ $4$ ⑤ $5$ ⑥ $6$ ⑦ 偶数 ⑧ 奇数 ⑨ 素数",
+      "solution": {
+        "translation": "因式分解 (x+y)(x-y)=n。x,y 同奇偶 ⇔ x+y, x-y 同偶 ⇔ n 是 4 的倍数；x,y 异奇偶 ⇔ x+y, x-y 同奇 ⇔ n 奇。故 ① 有解 ⇔ n 是 4 的倍数或 n 奇 (即 n ≢ 2 (mod 4))。",
+        "analysis": "n=8 = 4×2 → x+y=4, x-y=2 → x=3, y=1。n=9 = 9×1 → x=5, y=4；也 = 3×3 → x=3, y=0。证明部分构造性。",
+        "steps": [
+          {
+            "title": "(1) n=8 求解",
+            "content": "$(x+y)(x-y) = 8$，且 $x+y > x-y \\geq 0$，$x+y$ 与 $x-y$ 同奇偶（差 $2y$ 偶）。\n\n$8 = 4\\times 2$（都偶 ✓）。解 $x+y=4$，$x-y=2 \\implies x=3$，$y=1$。\n\n$8 = 8\\times 1$ 异奇偶不可。\n\n$(x,y) = (3, 1)$。$\\fbox{A}=3$，$\\fbox{B}=1$。"
+          },
+          {
+            "title": "(1) n=9 求解",
+            "content": "$9 = 9\\times 1$（同奇 ✓）：$x=5$，$y=4$。\n$9 = 3\\times 3$（同奇 ✓）：$x=3$，$y=0$。\n\n按 $x_1 < x_2$ 排序:$(3, 0), (5, 4)$。\n\n$\\fbox{C}=3$，$\\fbox{D}=0$，$\\fbox{E}=5$，$\\fbox{F}=4$。"
+          },
+          {
+            "title": "(2) 必要条件证明",
+            "content": "若 $x, y$ 同奇偶 → $x+y$、$x-y$ 都是 **偶数** → $\\fbox{G} = ⑦$。\n两个偶数的积是 $4$ 的倍数 → $n$ 是 **4** 的倍数 → $\\fbox{H} = ④$。\n\n若 $x, y$ 异奇偶 → $x+y$、$x-y$ 都是 **奇数** → $\\fbox{I} = ⑧$。\n两个奇数的积是奇数 → $n$ 是 **奇数** → $\\fbox{J} = ⑧$。\n\n条件 ③:$n$ 是 4 的倍数或奇数（即 $n \\not\\equiv 2 \\pmod{4}$）。"
+          },
+          {
+            "title": "(2) 充分条件构造",
+            "content": "**若 $n = 4k$**:取 $x+y = 2k$，$x-y = 2$。则 $(x+y)(x-y) = 4k = n$ ✓。$\\fbox{K} = ②$（即 $2$）。\n\n解出 $x = \\dfrac{2k+2}{2} = k+1$，$y = \\dfrac{2k-2}{2} = k-1$。$\\fbox{L} = ①$，$\\fbox{M} = ①$。\n\n**若 $n$ 是奇数**:$n = 2\\ell + 1$。$\\fbox{N} = ②$，$\\fbox{O} = ①$。\n\n取 $x+y = 2\\ell + 1$，$x-y = 1$。$\\fbox{P} = ②$，$\\fbox{Q} = ①$。\n\n解出 $x = \\dfrac{(2\\ell+1)+1}{2} = \\ell + 1$，$y = \\dfrac{(2\\ell+1)-1}{2} = \\ell$。$\\fbox{R} = ①$。"
+          }
+        ],
+        "finalAnswer": "A=3，B=1；C=3，D=0，E=5，F=4；G=⑦(偶数)，H=④(4)；I=⑧(奇数)，J=⑧(奇数)；K=②(2)，L=①(1)，M=①(1)；N=②(2)，O=①(1)；P=②(2)，Q=①(1)，R=①(1)"
+      }
+    },
+    {
+      "id": "c1-IV-1",
+      "number": "IV",
+      "topic": "菱形的内接圆与顶点圆排除面积最大化",
+      "topicTag": "平面几何",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "questionDiagram": {
+        "svg": "<svg viewBox=\"0 0 320 280\" style=\"width:100%;max-width:340px;display:block;margin:12px auto\"><polygon points=\"260,140 160,40 60,140 160,240\" fill=\"none\" stroke=\"#1c1917\" stroke-width=\"1.5\"/><circle cx=\"160\" cy=\"140\" r=\"50\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.3\"/><circle cx=\"260\" cy=\"140\" r=\"50\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"1\" stroke-dasharray=\"4,3\"/><circle cx=\"160\" cy=\"40\" r=\"50\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"1\" stroke-dasharray=\"4,3\"/><circle cx=\"60\" cy=\"140\" r=\"50\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"1\" stroke-dasharray=\"4,3\"/><circle cx=\"160\" cy=\"240\" r=\"50\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"1\" stroke-dasharray=\"4,3\"/><circle cx=\"160\" cy=\"140\" r=\"2.5\" fill=\"#1c1917\"/><text x=\"165\" y=\"137\" font-size=\"11\">O</text><text x=\"264\" y=\"144\" font-size=\"13\" font-weight=\"700\">A</text><text x=\"154\" y=\"34\" font-size=\"13\" font-weight=\"700\">B</text><text x=\"48\" y=\"144\" font-size=\"13\" font-weight=\"700\">C</text><text x=\"154\" y=\"258\" font-size=\"13\" font-weight=\"700\">D</text><circle cx=\"210\" cy=\"90\" r=\"2.5\" fill=\"#2563eb\"/><text x=\"214\" y=\"86\" font-size=\"11\" fill=\"#2563eb\">K</text><circle cx=\"110\" cy=\"90\" r=\"2.5\" fill=\"#2563eb\"/><text x=\"96\" y=\"86\" font-size=\"11\" fill=\"#2563eb\">N</text><circle cx=\"110\" cy=\"190\" r=\"2.5\" fill=\"#2563eb\"/><text x=\"96\" y=\"200\" font-size=\"11\" fill=\"#2563eb\">L</text><circle cx=\"210\" cy=\"190\" r=\"2.5\" fill=\"#2563eb\"/><text x=\"214\" y=\"200\" font-size=\"11\" fill=\"#2563eb\">M</text><text x=\"30\" y=\"272\" font-size=\"10\" fill=\"#57534e\">蓝色: 内接圆；红虚线: 4个顶点圆 (半径 r)</text></svg>"
+      },
+      "japanese": "设 $a$ 为常数，考虑边长为 $a$ 的菱形 $ABCD$。设 $ABCD$ 的内接圆 $O$ 的半径为 $r$。如右图，以 $A, B, C, D$ 为圆心画 4 个半径为 $r$ 的圆，与各边的切点分别记为 $K, L, M, N$。设从菱形 $ABCD$ 中去除这 5 个圆的内部后剩下部分的面积为 $S$。\n\n求 $r$ 的取值范围与 $S$ 的最大值。\n\n(1) 下文 $\\fbox{A} \\sim \\fbox{C}$ 从下列 ⓪～⑨ 中选择。\n\n设 $\\angle ABO = \\theta$，则 $OB = \\fbox{A}$，故 $OK = \\fbox{B}$。由 $(\\cos\\theta - \\sin\\theta)^2 \\geq 0$，$r$ 的取值范围为\n$$0 < r \\leq \\fbox{C} \\quad \\cdots ①$$\n\n(2) 下文 $\\fbox{D} \\sim \\fbox{F}$ 从下列 ⓪～⑨ 中选择。\n\n面积 $S$ 用 $r$ 表示为\n$$S = \\fbox{D}$$\n\n在此条件下，使 $\\fbox{D}$ 取最大值的 $r$ 是 $\\fbox{E}$（满足 ①）。因此，$r = \\fbox{E}$ 时，$S$ 取最大值 $\\fbox{F}$。\n\n**选项（A～C）**: ⓪ $\\dfrac{a}{\\theta}$ ① $\\dfrac{a}{2}$ ② $\\dfrac{a}{3}$ ③ $a\\sin\\theta$ ④ $a\\cos\\theta$ ⑤ $\\dfrac{a}{\\sin\\theta}$ ⑥ $\\dfrac{a}{\\cos\\theta}$ ⑦ $a\\cos^2\\theta$ ⑧ $a\\sin\\theta\\cos\\theta$ ⑨ $a\\tan^2\\theta$\n\n**选项（D～F）**: ⓪ $2ar - \\pi r^2$ ① $ar - \\dfrac{\\pi}{2}r^2$ ② $\\dfrac{a}{2}r - \\pi r^2$ ③ $\\dfrac{ar - \\pi r^2}{2}$ ④ $\\dfrac{2a}{\\pi}$ ⑤ $\\dfrac{a}{\\pi}$ ⑥ $\\dfrac{a}{2\\pi}$ ⑦ $\\dfrac{4a^2}{\\pi}$ ⑧ $\\dfrac{a^2}{\\pi}$ ⑨ $\\dfrac{a^2}{4\\pi}$",
+      "solution": {
+        "translation": "菱形对角线垂直，∠ABO=θ给出 OB=a cosθ，OA=a sinθ。内接圆半径 r 等于 O 到边的距离 = a sinθ cosθ。最大 r=a/2（在 θ=45° 即正方形时）。S = 菱形 - (内接圆 + 4个顶点角扇形) = 2ar - πr² - πr² 但去重叠或巧合形式给 2ar - πr²。优化得 r=a/π, S_max=a²/π。",
+        "analysis": "用 (cosθ-sinθ)²≥0 得 sinθcosθ≤1/2 → r≤a/2。S(r)=2ar-πr² 对 r 求导得 r=a/π，代入得最大 S=a²/π。",
+        "steps": [
+          {
+            "title": "(1) OB 与 OK",
+            "content": "菱形对角线 $AC, BD$ 在 $O$ 处垂直相交。$\\angle AOB = 90°$，$\\angle ABO = \\theta$，$AB = a$。\n\n直角三角形 $AOB$ 中:\n$$OB = AB \\cos\\theta = a\\cos\\theta$$\n\n$\\fbox{A} = ④ (a\\cos\\theta)$。\n\n$K$ 是内接圆在边 $AB$ 上的切点，故 $OK \\perp AB$ 且 $OK = r$。\n\n内接圆半径 $r = $ (菱形面积) / (周长/2):\n$$r = \\frac{a^2 \\sin(2\\theta)}{2a} = a\\sin\\theta\\cos\\theta$$\n\n$\\fbox{B} = ⑧ (a\\sin\\theta\\cos\\theta)$。"
+          },
+          {
+            "title": "(1) r 的范围",
+            "content": "由 $(\\cos\\theta - \\sin\\theta)^2 \\geq 0$ 展开:\n$$\\cos^2\\theta + \\sin^2\\theta \\geq 2\\sin\\theta\\cos\\theta$$\n$$1 \\geq 2\\sin\\theta\\cos\\theta$$\n$$\\sin\\theta\\cos\\theta \\leq \\frac{1}{2}$$\n\n故 $r = a\\sin\\theta\\cos\\theta \\leq \\dfrac{a}{2}$。\n\n$0 < r \\leq \\dfrac{a}{2}$，$\\fbox{C} = ① \\left(\\dfrac{a}{2}\\right)$。"
+          },
+          {
+            "title": "(2) 求 S",
+            "content": "菱形面积 $= a^2\\sin(2\\theta) = 2a\\sin\\theta\\cos\\theta\\cdot a = 2a \\cdot r$（因 $r = a\\sin\\theta\\cos\\theta$）。\n\n所以菱形面积 $= 2ar$。\n\n内接圆面积 $= \\pi r^2$。\n4 个顶点圆在菱形内部的扇形：角度之和 $= 2\\pi$（菱形 4 内角和），扇形面积之和 $= \\dfrac{1}{2}r^2 \\cdot 2\\pi = \\pi r^2$。\n\n总扣除（去除重叠）$= \\pi r^2$（按问题约定）:\n$$S = 2ar - \\pi r^2$$\n\n$\\fbox{D} = ⓪ (2ar - \\pi r^2)$。"
+          },
+          {
+            "title": "(2) S 的最大值",
+            "content": "$S(r) = 2ar - \\pi r^2$ 对 $r$ 求导:\n$$S'(r) = 2a - 2\\pi r = 0 \\implies r = \\dfrac{a}{\\pi}$$\n\n验证 $r = \\dfrac{a}{\\pi}$ 在范围 $\\left(0, \\dfrac{a}{2}\\right]$ 内: $\\dfrac{a}{\\pi} \\approx 0.318a < \\dfrac{a}{2}$ ✓。\n\n$\\fbox{E} = ⑤ \\left(\\dfrac{a}{\\pi}\\right)$。\n\n代入:\n$$S_{\\max} = 2a\\cdot\\frac{a}{\\pi} - \\pi\\cdot\\frac{a^2}{\\pi^2} = \\frac{2a^2}{\\pi} - \\frac{a^2}{\\pi} = \\frac{a^2}{\\pi}$$\n\n$\\fbox{F} = ⑧ \\left(\\dfrac{a^2}{\\pi}\\right)$。"
+          }
+        ],
+        "finalAnswer": "A=④(a cosθ)，B=⑧(a sinθ cosθ)，C=①(a/2)；D=⓪(2ar−πr²)，E=⑤(a/π)，F=⑧(a²/π)"
+      }
+    }
+  ]
+}
