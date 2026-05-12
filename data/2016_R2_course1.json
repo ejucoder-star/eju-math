@@ -1,0 +1,226 @@
+{
+  "metadata": {
+    "course": "course1",
+    "year": "2016",
+    "session": "2",
+    "courseNameJa": "数学1",
+    "courseNameEn": "Course 1 (Basic)",
+    "description": "基础课程｜文科方向",
+    "color": "#2563eb",
+    "examTitle": "2016年度（平成28年）第2回",
+    "examDate": "2016年11月"
+  },
+  "questions": [
+    {
+      "id": "c1-I-1",
+      "number": "I-1",
+      "topic": "二次函数的最大值与 x 轴弦长",
+      "topicTag": "二次函数",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "questionDiagram": {
+        "svg": "<svg viewBox=\"0 0 320 220\" style=\"width:100%;max-width:340px;display:block;margin:12px auto\"><line x1=\"30\" y1=\"180\" x2=\"305\" y2=\"180\" stroke=\"#1c1917\" stroke-width=\"1.3\"/><line x1=\"160\" y1=\"20\" x2=\"160\" y2=\"200\" stroke=\"#1c1917\" stroke-width=\"1.3\"/><text x=\"309\" y=\"184\" font-size=\"12\">x</text><text x=\"148\" y=\"18\" font-size=\"12\">y</text><text x=\"148\" y=\"195\" font-size=\"11\">O</text><polyline points=\"118,180 132,124 146,84 160,60 174,52 188,60 202,84 216,124 230,180\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2\"/><line x1=\"118\" y1=\"180\" x2=\"230\" y2=\"180\" stroke=\"#dc2626\" stroke-width=\"2\"/><circle cx=\"118\" cy=\"180\" r=\"3.5\" fill=\"#16a34a\"/><text x=\"96\" y=\"196\" font-size=\"11\" fill=\"#16a34a\">(−3, 0)</text><circle cx=\"230\" cy=\"180\" r=\"3.5\" fill=\"#16a34a\"/><text x=\"222\" y=\"196\" font-size=\"11\" fill=\"#16a34a\">(5, 0)</text><circle cx=\"174\" cy=\"52\" r=\"3.5\" fill=\"#dc2626\"/><text x=\"180\" y=\"50\" font-size=\"11\" fill=\"#dc2626\">顶点 (1, 16)</text><text x=\"165\" y=\"174\" font-size=\"11\" fill=\"#dc2626\">长度 8</text></svg>"
+      },
+      "japanese": "考虑 $x$ 的二次函数\n$$y = ax^2 + bx + c \\quad \\cdots ①$$\n\n函数 ① 在 $x = 1$ 时取最大值 $16$，其图象与 $x$ 轴交于两点，且这两点之间的距离为 $8$。求 $a, b, c$ 的值。\n\n由条件，① 可写成\n$$y = a(x - \\fbox{A})^2 + \\fbox{BC}$$\n\n① 与 $x$ 轴的两交点的坐标为\n$$\\left(-\\fbox{D},\\ 0\\right),\\quad \\left(\\fbox{E},\\ 0\\right)$$\n\n因此 $a = \\fbox{FG}$，由此\n$$b = \\fbox{H},\\quad c = \\fbox{IJ}$$",
+      "solution": {
+        "translation": "由最大值条件确定顶点(1,16)和开口方向(向下)，写成配方形式 y=a(x-1)²+16；用两根距离=8 求 a，最后展开还原 b、c。",
+        "analysis": "顶点 (1,16) → y=a(x-1)²+16，a<0。设两根距 1 为 ±d，则 d=4，两根为 -3 与 5；由 a(x-1)²+16=0 在 x=5 处得 16a+16=0 → a=-1。展开 y=-(x-1)²+16 = -x²+2x+15 得 b=2, c=15。",
+        "steps": [
+          {
+            "title": "由最大值条件确定顶点",
+            "content": "$y$ 在 $x = 1$ 取得最大值 $16$,故图象开口向下($a < 0$),顶点为 $(1, 16)$:\n$$y = a(x - 1)^2 + 16$$\n\n$\\fbox{A} = 1$，$\\fbox{BC} = 16$。"
+          },
+          {
+            "title": "由弦长求两根",
+            "content": "图象关于 $x = 1$ 对称。两根关于 $x=1$ 对称，距离为 $8$，故各距 $1$ 的距离为 $4$，两根为\n$$x = 1 - 4 = -3,\\quad x = 1 + 4 = 5$$\n\n故两交点为 $(-3, 0)$ 与 $(5, 0)$。$\\fbox{D} = 3$，$\\fbox{E} = 5$。"
+          },
+          {
+            "title": "求 a",
+            "content": "把 $(5, 0)$ 代入 $y = a(x-1)^2 + 16$:\n$$0 = a(5-1)^2 + 16 = 16a + 16 \\implies a = -1$$\n\n$\\fbox{FG} = -1$。"
+          },
+          {
+            "title": "展开求 b, c",
+            "content": "$$y = -(x-1)^2 + 16 = -(x^2 - 2x + 1) + 16 = -x^2 + 2x + 15$$\n\n与 $y = ax^2 + bx + c$ 比较:$a = -1$，$b = 2$，$c = 15$。\n\n$\\fbox{H} = 2$，$\\fbox{IJ} = 15$。"
+          }
+        ],
+        "finalAnswer": "A=1，BC=16；D=3，E=5；FG=-1；H=2，IJ=15"
+      }
+    },
+    {
+      "id": "c1-I-2",
+      "number": "I-2",
+      "topic": "10 张卡片的两类取法概率",
+      "topicTag": "概率",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "盒中有写着 $0$ 到 $9$ 数字的卡片各 $1$ 张，共 $10$ 张。从盒中按以下两种方法各取 $3$ 张卡片，求相关概率。\n\n(1) **同时取 3 张** 时:\n\n(i) 3 张卡片上的数字都满足「$2$ 以上 $6$ 以下」的概率为 $\\dfrac{\\fbox{K}}{\\fbox{LM}}$。\n\n(ii) 最小数 $\\leq 2$ 且最大数 $\\geq 8$ 的概率为 $\\dfrac{\\fbox{NO}}{\\fbox{PQ}}$。\n\n(2) **取 1 张看数字后放回，重复 3 次** 时：最小数 $\\geq 2$ 且最大数 $\\leq 6$ 的概率为 $\\dfrac{\\fbox{R}}{\\fbox{S}}$。",
+      "solution": {
+        "translation": "(1) 无放回取 3 张总数 C(10,3)=120。(i) 在 5 张(2-6)中取 3 张 → C(5,3)=10。(ii) 用容斥：P(min≤2 ∧ max≥8) = P(min≤2) + P(max≥8) − P(min≤2 ∨ max≥8) = (1−35/120) + (1−56/120) − (1−10/120) = 39/120 = 13/40。(2) 有放回每次独立 → (5/10)³ = 1/8。",
+        "analysis": "数字 0-9 分三组：小 {0,1,2}、中 {3,4,5,6,7}、大 {8,9}。同时取的概率枚举或用补集。有放回时每次独立成事件概率相乘。",
+        "steps": [
+          {
+            "title": "总取法",
+            "content": "从 10 张中同时取 3 张:$\\binom{10}{3} = \\dfrac{10 \\cdot 9 \\cdot 8}{6} = 120$ 种。"
+          },
+          {
+            "title": "(1)(i) 全部在 {2,3,4,5,6}",
+            "content": "5 张中取 3 张:$\\binom{5}{3} = 10$。\n\n$$P = \\frac{10}{120} = \\frac{1}{12}$$\n\n$\\fbox{K} = 1$，$\\fbox{LM} = 12$。"
+          },
+          {
+            "title": "(1)(ii) min ≤ 2 且 max ≥ 8",
+            "content": "记 $A = \\{\\min \\leq 2\\}$，$B = \\{\\max \\geq 8\\}$。\n\n用补集:\n- $P(\\min > 2) = \\dfrac{\\binom{7}{3}}{120} = \\dfrac{35}{120}$\n- $P(\\max < 8) = \\dfrac{\\binom{8}{3}}{120} = \\dfrac{56}{120}$\n- $P(\\min > 2 \\text{ 且 } \\max < 8) = \\dfrac{\\binom{5}{3}}{120} = \\dfrac{10}{120}$\n\n由容斥:\n$$P(A \\cap B) = P(A) + P(B) - P(A \\cup B)$$\n$$= \\frac{85}{120} + \\frac{64}{120} - \\frac{110}{120} = \\frac{39}{120} = \\frac{13}{40}$$\n\n**直接枚举验证**:小 $\\{0,1,2\\}$ 3 张,大 $\\{8,9\\}$ 2 张,中 $\\{3,4,5,6,7\\}$ 5 张。「至少 1 张小,至少 1 张大」的组合:\n- $1$ 小 $+1$ 大 $+1$ 中:$3 \\times 2 \\times 5 = 30$\n- $2$ 小 $+1$ 大:$\\binom{3}{2}\\binom{2}{1} = 6$\n- $1$ 小 $+2$ 大:$\\binom{3}{1}\\binom{2}{2} = 3$\n\n合计 $30+6+3 = 39$,$P = \\dfrac{39}{120} = \\dfrac{13}{40}$ ✓\n\n$\\fbox{NO} = 13$，$\\fbox{PQ} = 40$。"
+          },
+          {
+            "title": "(2) 有放回 3 次：所有数字都在 {2,3,4,5,6}",
+            "content": "「最小 $\\geq 2$ 且最大 $\\leq 6$」即每次抽到的数都在 $\\{2,3,4,5,6\\}$。\n\n每次独立，单次抽到该集合中数的概率为 $\\dfrac{5}{10} = \\dfrac{1}{2}$。\n\n$$P = \\left(\\frac{1}{2}\\right)^3 = \\frac{1}{8}$$\n\n$\\fbox{R} = 1$，$\\fbox{S} = 8$。"
+          }
+        ],
+        "finalAnswer": "K=1，LM=12；NO=13，PQ=40；R=1，S=8"
+      }
+    },
+    {
+      "id": "c1-II-1",
+      "number": "II-1",
+      "topic": "多项式被 x+y+z 整除的 n 与 a",
+      "topicTag": "整式",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "设 $n$ 为自然数，$a$ 是 $a \\neq 0$ 的实数。整式\n$$x^n + y^n + z^n + a(xy + yz + zx)$$\n可写成 $x+y+z$ 与某 $x, y, z$ 的整式 $P$ 之积，即\n$$x^n + y^n + z^n + a(xy + yz + zx) = (x+y+z)P \\quad \\cdots ①$$\n\n求 $n, a$ 的值。\n\n① 对所有 $x, y, z$ 成立。代入满足 $x+y+z=0$ 的特殊值:\n\n**取 1**:$x = y = 1$，$z = -\\fbox{A}$；\n\n**取 2**:$x = y = -\\dfrac{\\fbox{B}}{\\fbox{C}}$，$z = 1$。\n\n分别代入 ① 得:\n$$\\left(-\\fbox{A}\\right)^n = \\fbox{D}\\,a - \\fbox{E} \\quad \\cdots ②$$\n$$\\left(-\\dfrac{\\fbox{B}}{\\fbox{C}}\\right)^n = \\dfrac{\\fbox{F}}{\\fbox{G}}\\,a - \\dfrac{\\fbox{H}}{\\fbox{I}} \\quad \\cdots ③$$\n\n由 ② 与 ③:\n$$\\left(\\fbox{D}\\,a - \\fbox{E}\\right)\\left(\\dfrac{\\fbox{F}}{\\fbox{G}}\\,a - \\dfrac{\\fbox{H}}{\\fbox{I}}\\right) = \\fbox{J}$$\n\n解得 $a = \\fbox{K}$，再由 ② 得 $n = \\fbox{L}$。",
+      "solution": {
+        "translation": "若 (x+y+z) 整除某多项式，则该多项式在 x+y+z=0 的任何 (x,y,z) 上取 0；取两组特解后联立解出 n、a。",
+        "analysis": "取 x=y=1, z=-2 (即 A=2) 代入得 (-2)^n = 3a-2；取 x=y=-1/2, z=1 (B=1, C=2) 代入得 (-1/2)^n = (3/8)a − 1/2。两式相乘左边为 (-2·(-1/2))^n = 1^n = 1，得到 a 的二次方程 9a²-18a=0，a=2；回代得 (-2)^n = 4，故 n=2。验证 x²+y²+z²+2(xy+yz+zx) = (x+y+z)² ✓。",
+        "steps": [
+          {
+            "title": "代入 x=y=1, z=−A 得 ②",
+            "content": "$x+y+z = 0 \\implies 1 + 1 + z = 0 \\implies z = -2$。故 $\\fbox{A} = 2$。\n\n代入原式:\n$$1^n + 1^n + (-2)^n + a\\bigl[1\\cdot 1 + 1\\cdot(-2) + (-2)\\cdot 1\\bigr] = 0$$\n$$2 + (-2)^n + a(1 - 2 - 2) = 0$$\n$$(-2)^n = -2 + 3a = 3a - 2$$\n\n$\\fbox{D} = 3$，$\\fbox{E} = 2$。"
+          },
+          {
+            "title": "代入 x=y=−1/2, z=1 得 ③",
+            "content": "$x+y+z = 0 \\implies -\\frac{1}{2} - \\frac{1}{2} + 1 = 0$ ✓。故 $\\fbox{B}=1$，$\\fbox{C}=2$。\n\n代入原式:\n$$2\\!\\left(-\\frac{1}{2}\\right)^n + 1 + a\\!\\left[\\frac{1}{4} - \\frac{1}{2} - \\frac{1}{2}\\right] = 0$$\n$$2\\!\\left(-\\frac{1}{2}\\right)^n + 1 - \\frac{3}{4}a = 0$$\n$$\\left(-\\frac{1}{2}\\right)^n = \\frac{3}{8}a - \\frac{1}{2}$$\n\n$\\fbox{F} = 3$，$\\fbox{G} = 8$，$\\fbox{H} = 1$，$\\fbox{I} = 2$。"
+          },
+          {
+            "title": "② × ③：关键化简",
+            "content": "$(-2) \\cdot \\left(-\\dfrac{1}{2}\\right) = 1$，故\n$$(-2)^n \\cdot \\left(-\\frac{1}{2}\\right)^n = 1^n = 1$$\n\n因此\n$$(3a - 2)\\left(\\frac{3}{8}a - \\frac{1}{2}\\right) = 1$$\n\n$\\fbox{J} = 1$。"
+          },
+          {
+            "title": "解 a, n",
+            "content": "两边乘 $8$:\n$$(3a - 2)(3a - 4) = 8$$\n$$9a^2 - 18a + 8 = 8 \\implies 9a(a - 2) = 0 \\implies a = 0 \\text{ 或 } 2$$\n\n由 $a \\neq 0$ 得 $a = 2$。$\\fbox{K} = 2$。\n\n代入 ②:$(-2)^n = 3\\cdot 2 - 2 = 4$。\n\n$(-2)^2 = 4$，故 $n = 2$。$\\fbox{L} = 2$。\n\n**验证**:$x^2+y^2+z^2+2(xy+yz+zx) = (x+y+z)^2$ ✓。"
+          }
+        ],
+        "finalAnswer": "A=2，B=1，C=2；D=3，E=2；F=3，G=8，H=1，I=2；J=1；K=2，L=2"
+      }
+    },
+    {
+      "id": "c1-II-2",
+      "number": "II-2",
+      "topic": "抛物线上长 2 的弦的中点最低位置",
+      "topicTag": "二次函数与几何",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "questionDiagram": {
+        "svg": "<svg viewBox=\"0 0 320 240\" style=\"width:100%;max-width:340px;display:block;margin:12px auto\"><line x1=\"20\" y1=\"200\" x2=\"305\" y2=\"200\" stroke=\"#1c1917\" stroke-width=\"1.3\"/><line x1=\"160\" y1=\"15\" x2=\"160\" y2=\"220\" stroke=\"#1c1917\" stroke-width=\"1.3\"/><text x=\"309\" y=\"204\" font-size=\"12\">x</text><text x=\"148\" y=\"13\" font-size=\"12\">y</text><text x=\"148\" y=\"215\" font-size=\"11\">O</text><path d=\"M 80 87 Q 160 230 240 87\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2\"/><line x1=\"189\" y1=\"117\" x2=\"131\" y2=\"199\" stroke=\"#dc2626\" stroke-width=\"2\"/><circle cx=\"189\" cy=\"117\" r=\"3.5\" fill=\"#dc2626\"/><text x=\"194\" y=\"114\" font-size=\"12\" font-weight=\"700\" fill=\"#dc2626\">P</text><circle cx=\"131\" cy=\"199\" r=\"3.5\" fill=\"#dc2626\"/><text x=\"114\" y=\"196\" font-size=\"12\" font-weight=\"700\" fill=\"#dc2626\">Q</text><circle cx=\"160\" cy=\"158\" r=\"3.5\" fill=\"#16a34a\"/><text x=\"165\" y=\"156\" font-size=\"12\" font-weight=\"700\" fill=\"#16a34a\">M</text><text x=\"165\" y=\"170\" font-size=\"10\" fill=\"#16a34a\">(±1/2, 3/4)</text><text x=\"60\" y=\"30\" font-size=\"11\" fill=\"#2563eb\">y = x²</text><text x=\"140\" y=\"130\" font-size=\"10\" fill=\"#dc2626\">PQ=2</text></svg>"
+      },
+      "japanese": "考虑抛物线 $y = x^2$ 上两端点连成长度为 $2$ 的线段 $PQ$。求其中点 $M$ 离 $x$ 轴最近时的坐标。\n\n设 $P = (p, p^2)$，$Q = (q, q^2)$。则中点 $M$ 的 $y$ 坐标 $m$ 表示为\n$$m = \\dfrac{p^2 + q^2}{\\fbox{M}} \\quad \\cdots ①$$\n\n由条件 $PQ = 2$，利用勾股定理\n$$(p - q)^2 + (p^2 - q^2)^2 = \\fbox{N} \\quad \\cdots ②$$\n\n令 $pq = t$，由 ① 与 ②，关于 $m$ 的二次方程为\n$$\\fbox{O}\\,m^2 + m - \\fbox{P}\\,t^2 - t - \\fbox{Q} = 0$$\n\n解此方程（注意 $m > 0$）:\n$$m = -\\dfrac{1}{\\fbox{R}} + \\sqrt{\\left(t + \\dfrac{1}{\\fbox{S}}\\right)^2 + \\fbox{T}}$$\n\n这意味着当 $t = -\\dfrac{1}{\\fbox{S}}$ 时，$m$ 取得最小值。此时\n$$pq = -\\dfrac{1}{\\fbox{S}},\\quad p^2 + q^2 = \\dfrac{\\fbox{U}}{\\fbox{V}},$$\n\n故 $p + q = \\pm \\fbox{W}$。\n\n因此，离 $x$ 轴最近的 $M$ 的坐标为\n$$\\left(\\pm\\dfrac{1}{\\fbox{X}},\\ \\dfrac{\\fbox{Y}}{\\fbox{Z}}\\right)$$",
+      "solution": {
+        "translation": "设 P=(p,p²)、Q=(q,q²)，把中点 y 与 PQ²=4 用对称多项式 s=p²+q² 和 t=pq 表示；得到 m 关于 t 的二次方程，配方后看 m 在 t=-1/4 取最小 3/4，再回推 p+q=±1。",
+        "analysis": "把 PQ²=4 展开：(p−q)² + (p²−q²)² = 4 → (s−2t) + s² − 4t² = 4，s=2m 代入得 2m²+m−2t²−t−2=0。配方后 m = −1/4 + √((t+1/4)²+1)，t=−1/4 时 m=3/4。",
+        "steps": [
+          {
+            "title": "中点 y 坐标与弦长方程",
+            "content": "$P=(p, p^2)$，$Q=(q, q^2)$。\n\n中点 $M$ 的 $y$ 坐标:\n$$m = \\frac{p^2 + q^2}{2} \\implies \\fbox{M} = 2$$\n\n弦长 $PQ = 2$:\n$$(p-q)^2 + (p^2-q^2)^2 = 4 \\implies \\fbox{N} = 4$$"
+          },
+          {
+            "title": "用 m, t 改写方程",
+            "content": "令 $s = p^2 + q^2 = 2m$，$t = pq$。\n\n注意 $(p-q)^2 = s - 2t$，$(p^2-q^2)^2 = (p+q)^2(p-q)^2 = (s+2t)(s-2t) = s^2 - 4t^2$。\n\n代入 ②:\n$$(s - 2t) + (s^2 - 4t^2) = 4$$\n\n代 $s = 2m$:\n$$4m^2 + 2m - 4t^2 - 2t - 4 = 0$$\n\n两边除 $2$:\n$$2m^2 + m - 2t^2 - t - 2 = 0$$\n\n$\\fbox{O} = 2$，$\\fbox{P} = 2$，$\\fbox{Q} = 2$。"
+          },
+          {
+            "title": "解 m，配方化简",
+            "content": "$2m^2 + m = 2t^2 + t + 2$。\n\n由求根公式:\n$$m = \\frac{-1 \\pm \\sqrt{1 + 8(2t^2 + t + 2)}}{4} = \\frac{-1 \\pm \\sqrt{16t^2 + 8t + 17}}{4}$$\n\n根号下配方：$16t^2 + 8t + 17 = 16\\!\\left(t + \\dfrac{1}{4}\\right)^2 - 1 + 17 = 16\\!\\left[\\left(t + \\dfrac{1}{4}\\right)^2 + 1\\right]$\n\n故\n$$\\sqrt{16t^2 + 8t + 17} = 4\\sqrt{\\left(t + \\dfrac{1}{4}\\right)^2 + 1}$$\n\n因 $m > 0$ 取正根:\n$$m = -\\dfrac{1}{4} + \\sqrt{\\left(t + \\dfrac{1}{4}\\right)^2 + 1}$$\n\n$\\fbox{R} = 4$，$\\fbox{S} = 4$，$\\fbox{T} = 1$。"
+          },
+          {
+            "title": "最小值与 p, q",
+            "content": "$m$ 最小时 $(t + 1/4)^2 = 0$，即 $t = -1/4$。此时\n$$m_{\\min} = -\\frac{1}{4} + \\sqrt{1} = \\frac{3}{4}$$\n\n$pq = -\\frac{1}{4}$，$p^2 + q^2 = 2m = \\dfrac{3}{2}$。$\\fbox{U}=3$，$\\fbox{V}=2$。\n\n$(p+q)^2 = (p^2+q^2) + 2pq = \\frac{3}{2} - \\frac{1}{2} = 1$，故 $p + q = \\pm 1$。$\\fbox{W} = 1$。\n\n$M = \\left(\\dfrac{p+q}{2},\\ m\\right) = \\left(\\pm\\dfrac{1}{2},\\ \\dfrac{3}{4}\\right)$。\n\n$\\fbox{X}=2$，$\\fbox{Y}=3$，$\\fbox{Z}=4$。"
+          }
+        ],
+        "finalAnswer": "M=2，N=4；O=2，P=2，Q=2；R=4，S=4，T=1；U=3，V=2；W=1；X=2，Y=3，Z=4"
+      }
+    },
+    {
+      "id": "c1-III-1",
+      "number": "III",
+      "topic": "余数、进制表示与必要充分条件",
+      "topicTag": "整数",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "(1) 回答下列问题：\n\n(i) 设 $a$ 为整数，$a$ 除以 $5$ 余 $4$。此时 $a$ 可表示为\n$$a = \\fbox{A}\\,k + \\fbox{B} \\quad (k\\text{ 为整数})$$\n\n因此 $a^2$ 除以 $5$ 的余数为 $\\fbox{C}$。\n\n(ii) 用三进制表示的数 $120_{(3)}$ 化为十进制是 $\\fbox{DE}$。又，三进制下的三位数中，最大自然数化为十进制为 $\\fbox{FG}$，最小自然数化为十进制为 $\\fbox{H}$。\n\n(2) 文中 $\\fbox{I}$，$\\fbox{J}$ 各从下列 ⓪～③ 中选择。下设 $a$ 为整数，$b$ 为自然数。\n\n(i) 「$a$ 除以 $5$ 余 $4$」是「$a^2$ 除以 $5$ 余 $\\fbox{C}$」的 $\\fbox{I}$。\n\n(ii) 「$b$ 满足 $6 \\leq b \\leq 30$」是「$b$ 用三进制表示为三位数」的 $\\fbox{J}$。\n\n选项：\n⓪ 必要条件，但不是充分条件 ① 充分条件，但不是必要条件 ② 必要充分条件 ③ 既不是必要条件也不是充分条件",
+      "solution": {
+        "translation": "(1) 余 4 即 a=5k+4，平方后展开看常数项 16 除以 5 余 1。三进制 120 = 9+6+0 = 15；三位数 100₃ 到 222₃ 即 9-26。(2) 检查充分/必要双向蕴含。",
+        "analysis": "a²≡16≡1 (mod 5)。a²≡1 (mod 5) 等价于 a≡±1 (mod 5)，即 a 除以 5 余 1 或 4。故「余 4」只是其中一种 → 充分非必要。三进制三位 ⇔ 9≤b≤26；而 6≤b≤30 比这更宽 → 必要非充分。",
+        "steps": [
+          {
+            "title": "(1)(i) a²÷5 的余数",
+            "content": "$a = 5k + 4$，故\n$$a^2 = 25k^2 + 40k + 16 = 5(5k^2 + 8k + 3) + 1$$\n\n余数为 $1$。$\\fbox{A} = 5$，$\\fbox{B} = 4$，$\\fbox{C} = 1$。"
+          },
+          {
+            "title": "(1)(ii) 三进制转十进制",
+            "content": "$$120_{(3)} = 1\\cdot 9 + 2\\cdot 3 + 0 = 15 \\implies \\fbox{DE} = 15$$\n\n三进制三位数范围:$100_{(3)}$ 到 $222_{(3)}$，即\n- 最大:$222_{(3)} = 2\\cdot 9 + 2\\cdot 3 + 2 = 26$，$\\fbox{FG} = 26$\n- 最小:$100_{(3)} = 1\\cdot 9 + 0 + 0 = 9$，$\\fbox{H} = 9$"
+          },
+          {
+            "title": "(2)(i) 「余 4」与「a² 余 1」的关系",
+            "content": "$a^2 \\bmod 5$ 由 $a \\bmod 5$ 决定:\n- $a \\equiv 0$: $a^2 \\equiv 0$\n- $a \\equiv 1$: $a^2 \\equiv 1$ ✓\n- $a \\equiv 2$: $a^2 \\equiv 4$\n- $a \\equiv 3$: $a^2 \\equiv 4$\n- $a \\equiv 4$: $a^2 \\equiv 1$ ✓\n\n所以「$a^2 \\equiv 1$」等价于「$a \\equiv 1$ 或 $4$」。\n\n「$a$ 除以 $5$ 余 $4$」 $\\Rightarrow$ 「$a^2 \\bmod 5 = 1$」 ✓\n反向不一定成立（$a$ 可能余 $1$）。\n\n故是 **充分非必要** $\\Rightarrow \\fbox{I} = ①$。"
+          },
+          {
+            "title": "(2)(ii) 「6≤b≤30」与「3 位三进数」的关系",
+            "content": "「$b$ 是三进制三位数」 $\\iff 9 \\leq b \\leq 26$。\n\n- 「$9 \\leq b \\leq 26$」 $\\Rightarrow$ 「$6 \\leq b \\leq 30$」 ✓\n- 反向:$b = 7$ 满足 $6 \\leq b \\leq 30$ 但不是三位三进数。\n\n故「$6 \\leq b \\leq 30$」是「三位三进数」的 **必要非充分** 条件 $\\Rightarrow \\fbox{J} = ⓪$。"
+          }
+        ],
+        "finalAnswer": "A=5，B=4，C=1；DE=15，FG=26，H=9；I=①，J=⓪"
+      }
+    },
+    {
+      "id": "c1-IV-1",
+      "number": "IV",
+      "topic": "角平分线与垂足三角形的面积比",
+      "topicTag": "平面几何",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "questionDiagram": {
+        "svg": "<svg viewBox=\"0 0 320 240\" style=\"width:100%;max-width:340px;display:block;margin:12px auto\"><polygon points=\"170,30 60,205 280,205\" fill=\"none\" stroke=\"#1c1917\" stroke-width=\"1.5\"/><line x1=\"170\" y1=\"30\" x2=\"218\" y2=\"205\" stroke=\"#7c3aed\" stroke-width=\"1.3\" stroke-dasharray=\"4,3\"/><line x1=\"218\" y1=\"205\" x2=\"126\" y2=\"126\" stroke=\"#2563eb\" stroke-width=\"1.3\"/><line x1=\"218\" y1=\"205\" x2=\"243\" y2=\"137\" stroke=\"#dc2626\" stroke-width=\"1.3\"/><circle cx=\"170\" cy=\"30\" r=\"3.5\" fill=\"#1c1917\"/><text x=\"163\" y=\"22\" font-size=\"13\" font-weight=\"700\">A</text><circle cx=\"60\" cy=\"205\" r=\"3.5\" fill=\"#1c1917\"/><text x=\"46\" y=\"219\" font-size=\"13\" font-weight=\"700\">B</text><circle cx=\"280\" cy=\"205\" r=\"3.5\" fill=\"#1c1917\"/><text x=\"286\" y=\"219\" font-size=\"13\" font-weight=\"700\">C</text><circle cx=\"218\" cy=\"205\" r=\"3.5\" fill=\"#7c3aed\"/><text x=\"212\" y=\"222\" font-size=\"13\" font-weight=\"700\" fill=\"#7c3aed\">D</text><circle cx=\"126\" cy=\"126\" r=\"3\" fill=\"#2563eb\"/><text x=\"108\" y=\"122\" font-size=\"13\" font-weight=\"700\" fill=\"#2563eb\">E</text><circle cx=\"243\" cy=\"137\" r=\"3\" fill=\"#dc2626\"/><text x=\"249\" y=\"137\" font-size=\"13\" font-weight=\"700\" fill=\"#dc2626\">F</text><path d=\"M 160 50 A 25 25 0 0 0 180 50\" fill=\"none\" stroke=\"#a8a29e\" stroke-width=\"1\"/><text x=\"163\" y=\"60\" font-size=\"11\" fill=\"#57534e\">60°</text><text x=\"30\" y=\"235\" font-size=\"10\" fill=\"#57534e\">AD 为 ∠BAC 角平分线，DE⊥AB，DF⊥AC</text></svg>"
+      },
+      "japanese": "考虑 $\\angle BAC = 60°$ 的三角形 $ABC$。设 $\\angle BAC$ 的角平分线与边 $BC$ 的交点为 $D$，从 $D$ 向边 $AB, AC$ 作的垂线的垂足分别记为 $E, F$。又设\n$$x = \\dfrac{AB}{AC},\\quad k = \\dfrac{\\triangle DEF}{\\triangle ABC}$$\n\n其中 $\\triangle ABC$ 表示三角形 $ABC$ 的面积，其他三角形类似。\n\n(1) 把 $k$ 用 $x$ 表示。设 $AB = b$，$AC = c$，$AD = d$。\n\n由 $\\triangle ABD + \\triangle ACD = \\triangle ABC$ 得\n$$d = \\dfrac{\\sqrt{\\fbox{A}}\\,bc}{b + c} \\quad \\cdots ①$$\n\n其次，$DE = DF = \\dfrac{\\fbox{B}}{\\fbox{C}}\\,d$，故\n$$\\triangle DEF = \\dfrac{\\sqrt{\\fbox{D}}}{\\fbox{EF}}\\,d^2 \\quad \\cdots ②$$\n\n由 ①、②:\n$$k = \\dfrac{d^2}{\\fbox{G}\\,bc} = \\dfrac{\\fbox{H}\\,bc}{\\fbox{I}\\,(b+c)^2}$$\n\n在此处令 $x = \\dfrac{b}{c}$，故\n$$k = \\dfrac{\\fbox{J}\\,x}{\\fbox{K}\\,(x + \\fbox{L})^2}$$\n\n(2) 当 $BD = 8$，$BC = 10$ 时，$x = \\fbox{M}$，$k = \\dfrac{\\fbox{N}}{\\fbox{OP}}$。",
+      "solution": {
+        "translation": "AD 用面积法（△ABD+△ACD=△ABC）得到 d=√3·bc/(b+c)。DE=DF=d·sin30°=d/2（因角平分线两侧的垂距相等）。△DEF 中 ∠EDF=120°（四边形 AEDF 内角和），面积公式给 △DEF=√3·d²/16。最后用 △ABC=√3·bc/4，得 k=d²/(4bc)；用 x=b/c 化简。BD/CD=AB/AC=x，所以 x=8/2=4。",
+        "analysis": "几个关键事实：① 角平分线长度公式或面积法；② D 到 AB 与 AC 的距离相等（角平分线性质）；③ 四边形 AEDF 内角 90°+90°+60°=240°，余 120°=∠EDF；④ 角平分线定理 BD/CD=AB/AC。",
+        "steps": [
+          {
+            "title": "(1) 求 AD 的长 d",
+            "content": "由 $\\triangle ABD + \\triangle ACD = \\triangle ABC$，两侧用「两边夹角」公式（$\\angle BAD = \\angle CAD = 30°$）:\n\n$\\dfrac{1}{2}\\cdot AB\\cdot AD\\,\\sin 30° + \\dfrac{1}{2}\\cdot AC\\cdot AD\\,\\sin 30° = \\dfrac{1}{2}\\cdot AB\\cdot AC\\,\\sin 60°$\n\n$\\dfrac{1}{2}\\cdot d\\cdot\\dfrac{1}{2}(b + c) = \\dfrac{1}{2}\\cdot bc\\cdot\\dfrac{\\sqrt 3}{2}$\n\n$\\dfrac{d(b+c)}{4} = \\dfrac{\\sqrt 3\\,bc}{4} \\implies d = \\dfrac{\\sqrt 3\\,bc}{b+c}$\n\n$\\fbox{A} = 3$。"
+          },
+          {
+            "title": "DE = DF",
+            "content": "$D$ 在角平分线 $AD$ 上，由角平分线性质，$D$ 到 $AB$ 与 $AC$ 的距离相等。\n\n在 $\\triangle ADE$ 中：$\\angle DAE = 30°$，$\\angle AED = 90°$，故\n$$DE = AD\\sin 30° = \\dfrac{d}{2}$$\n\n同理 $DF = \\dfrac{d}{2}$。$\\fbox{B} = 1$，$\\fbox{C} = 2$。"
+          },
+          {
+            "title": "(1) 求 △DEF 的面积",
+            "content": "在四边形 $AEDF$ 中，$\\angle AED = \\angle AFD = 90°$，$\\angle EAF = 60°$。\n\n内角和 $360°$:$\\angle EDF = 360° - 90° - 90° - 60° = 120°$。\n\n$$\\triangle DEF = \\frac{1}{2}\\cdot DE\\cdot DF\\,\\sin 120° = \\frac{1}{2}\\cdot\\frac{d}{2}\\cdot\\frac{d}{2}\\cdot\\frac{\\sqrt 3}{2} = \\frac{\\sqrt 3\\,d^2}{16}$$\n\n$\\fbox{D} = 3$，$\\fbox{EF} = 16$（即 $E=1$，$F=6$）。"
+          },
+          {
+            "title": "(1) 求 k 关于 x 的表达式",
+            "content": "$\\triangle ABC = \\dfrac{1}{2}\\,bc\\,\\sin 60° = \\dfrac{\\sqrt 3\\,bc}{4}$\n\n$$k = \\frac{\\triangle DEF}{\\triangle ABC} = \\frac{\\sqrt 3\\,d^2/16}{\\sqrt 3\\,bc/4} = \\frac{d^2}{4bc}$$\n\n$\\fbox{G} = 4$。\n\n代入 ①:$d^2 = \\dfrac{3b^2c^2}{(b+c)^2}$，故\n$$k = \\frac{3b^2c^2}{4bc(b+c)^2} = \\frac{3bc}{4(b+c)^2}$$\n\n$\\fbox{H} = 3$，$\\fbox{I} = 4$。\n\n令 $x = \\dfrac{b}{c}$，分子分母同除 $c^2$:\n$$k = \\frac{3(b/c)}{4((b/c) + 1)^2} = \\frac{3x}{4(x+1)^2}$$\n\n$\\fbox{J} = 3$，$\\fbox{K} = 4$，$\\fbox{L} = 1$。"
+          },
+          {
+            "title": "(2) BD=8, BC=10 时求 x, k",
+            "content": "由角平分线定理:$\\dfrac{BD}{CD} = \\dfrac{AB}{AC} = x$。\n\n$CD = BC - BD = 10 - 8 = 2$，故\n$$x = \\dfrac{8}{2} = 4 \\implies \\fbox{M} = 4$$\n\n$$k = \\frac{3\\cdot 4}{4(4+1)^2} = \\frac{12}{100} = \\frac{3}{25}$$\n\n$\\fbox{N} = 3$，$\\fbox{OP} = 25$。"
+          }
+        ],
+        "finalAnswer": "A=3；B=1，C=2；D=3，EF=16；G=4；H=3，I=4；J=3，K=4，L=1；M=4；N=3，OP=25"
+      }
+    }
+  ]
+}
