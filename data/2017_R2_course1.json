@@ -1,0 +1,219 @@
+{
+  "metadata": {
+    "course": "course1",
+    "year": "2017",
+    "session": "2",
+    "courseNameJa": "数学1",
+    "courseNameEn": "Course 1 (Basic)",
+    "description": "基础课程｜文科方向",
+    "color": "#2563eb",
+    "examTitle": "2017年度（平成29年）第2回",
+    "examDate": "2017年11月"
+  },
+  "questions": [
+    {
+      "id": "c1-I-1",
+      "number": "I-1",
+      "topic": "约束下二次函数最小值的最大/最小",
+      "topicTag": "二次函数",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "考虑 $x$ 的二次函数 $f(x) = 2x^2 + ax - 1$，满足\n$$f(-1) \\geq -3,\\quad f(2) \\geq 3 \\quad \\cdots ①$$\n\n令 $m$ 为 $f(x)$ 的最小值。\n\n(1) $m$ 用 $a$ 表示为\n$$m = -\\dfrac{\\fbox{A}}{\\fbox{B}}\\,a^2 - \\fbox{C}$$\n\n(2) $f(x)$ 满足条件 ① 的 $a$ 的范围为\n$$\\fbox{DE} \\leq a \\leq \\fbox{F}$$\n\n(3) $m$ 取最大值时,$y = f(x)$ 的图象的轴为直线 $x = \\fbox{G}$，此时 $m = \\fbox{HI}$。\n\n(4) $m$ 取最小值时,$y = f(x)$ 的图象的轴为直线 $x = \\fbox{JK}$，此时 $m = \\fbox{LM}$。",
+      "solution": {
+        "translation": "配方求 m=-a²/8-1。由两个不等式解得 -2≤a≤4。m 在 a=0 时最大 (-1)；m 在 a²/8 最大时最小，即 a=4，得 m=-3。",
+        "analysis": "二次函数配方：f(x)=2(x+a/4)²-a²/8-1。约束给 a 的范围。m=-a²/8-1 在 a²=0 时最大、a²=16 时最小。",
+        "steps": [
+          {
+            "title": "(1) 配方求 m",
+            "content": "$$f(x) = 2x^2 + ax - 1 = 2\\left(x + \\frac{a}{4}\\right)^2 - \\frac{a^2}{8} - 1$$\n\n最小值\n$$m = -\\frac{a^2}{8} - 1$$\n\n$\\fbox{A}=1$，$\\fbox{B}=8$，$\\fbox{C}=1$。"
+          },
+          {
+            "title": "(2) 求 a 的范围",
+            "content": "$f(-1) = 2 - a - 1 = 1 - a \\geq -3 \\implies a \\leq 4$。\n\n$f(2) = 8 + 2a - 1 = 7 + 2a \\geq 3 \\implies a \\geq -2$。\n\n故 $-2 \\leq a \\leq 4$。$\\fbox{DE}=-2$，$\\fbox{F}=4$。"
+          },
+          {
+            "title": "(3) m 取最大值",
+            "content": "$m(a) = -\\dfrac{a^2}{8} - 1$ 在 $a^2$ 最小（$a=0$）时取最大。\n\n$a=0$ 时 $m = -1$。轴 $x = -\\dfrac{a}{4} = 0$。\n\n$\\fbox{G}=0$，$\\fbox{HI}=-1$。"
+          },
+          {
+            "title": "(4) m 取最小值",
+            "content": "在 $-2 \\leq a \\leq 4$ 内,$a^2$ 最大值在 $a = 4$ 处（$a^2 = 16 > 4 = (-2)^2$）。\n\n$a=4$ 时 $m = -\\dfrac{16}{8} - 1 = -3$。轴 $x = -\\dfrac{4}{4} = -1$。\n\n$\\fbox{JK}=-1$，$\\fbox{LM}=-3$。"
+          }
+        ],
+        "finalAnswer": "A=1，B=8，C=1；DE=-2，F=4；G=0，HI=-1；JK=-1，LM=-3"
+      }
+    },
+    {
+      "id": "c1-I-2",
+      "number": "I-2",
+      "topic": "三角形上球的移动概率（4 回以内到达 C）",
+      "topicTag": "概率",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "questionDiagram": {
+        "svg": "<svg viewBox=\"0 0 300 220\" style=\"width:100%;max-width:320px;display:block;margin:12px auto\"><polygon points=\"50,170 250,170 150,30\" fill=\"none\" stroke=\"#1c1917\" stroke-width=\"1.5\"/><circle cx=\"150\" cy=\"30\" r=\"4\" fill=\"#2563eb\"/><text x=\"148\" y=\"22\" font-size=\"14\" font-weight=\"700\">A</text><text x=\"160\" y=\"32\" font-size=\"10\" fill=\"#2563eb\">球</text><circle cx=\"50\" cy=\"170\" r=\"3.5\" fill=\"#1c1917\"/><text x=\"36\" y=\"185\" font-size=\"14\" font-weight=\"700\">B</text><circle cx=\"250\" cy=\"170\" r=\"3.5\" fill=\"#1c1917\"/><text x=\"256\" y=\"185\" font-size=\"14\" font-weight=\"700\">C</text><path d=\"M 145 35 Q 90 90 60 165\" fill=\"none\" stroke=\"#16a34a\" stroke-width=\"1.3\" stroke-dasharray=\"4,3\" marker-end=\"url(#ar)\"/><text x=\"75\" y=\"110\" font-size=\"10\" fill=\"#16a34a\">出1: A→B</text><path d=\"M 55 168 Q 150 195 245 168\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"1.3\" stroke-dasharray=\"4,3\" marker-end=\"url(#ar)\"/><text x=\"130\" y=\"210\" font-size=\"10\" fill=\"#dc2626\">出≤4: B→C</text><defs><marker id=\"ar\" markerWidth=\"8\" markerHeight=\"8\" refX=\"7\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L8,3 L0,6 Z\" fill=\"currentColor\"/></marker></defs></svg>"
+      },
+      "japanese": "平面上有三角形 $ABC$，1 个球放在顶点 $A$。每次投 1 颗骰子，按以下规则移动球：\n\n(i) 球在 $A$ 时：出目为 $1$ 则移到 $B$，其他情况不动。\n\n(ii) 球在 $B$ 时：出目 $\\leq 4$ 则移到 $C$，其他情况不动。\n\n球到达 $C$ 后停止试行。求 4 回以内球到达 $C$ 的概率。\n\n(1) 投 2 回时球到达 $C$ 的概率为 $\\dfrac{1}{\\fbox{N}}$。\n\n(2) 投 3 回时球到达 $C$ 的概率为 $\\dfrac{\\fbox{O}}{\\fbox{PQ}}$。\n\n(3) 投 4 回时球到达 $C$ 的概率为 $\\dfrac{\\fbox{RS}}{\\fbox{TUV}}$。\n\n以上，4 回以内球到达 $C$ 的概率为 $\\dfrac{\\fbox{WX}}{\\fbox{YZ}}$。",
+      "solution": {
+        "translation": "P(A→B)=1/6，P(停A)=5/6；P(B→C)=4/6=2/3，P(停B)=1/3。第 k 次到达 C 需在前 k-1 次中按某顺序经过 A→B 与 B→C，且第 k 次完成 B→C。",
+        "analysis": "枚举各次到达 C 的路径，每条路径对应固定步数概率乘积。最后求和或用容斥/累加。",
+        "steps": [
+          {
+            "title": "(1) 2 回到达 C",
+            "content": "第 1 回 A→B（$\\frac{1}{6}$），第 2 回 B→C（$\\frac{4}{6} = \\frac{2}{3}$）。\n\n$$P_2 = \\frac{1}{6} \\cdot \\frac{4}{6} = \\frac{4}{36} = \\frac{1}{9}$$\n\n$\\fbox{N} = 9$。"
+          },
+          {
+            "title": "(2) 3 回到达 C",
+            "content": "两种模式（最后一步必为 B→C）:\n- 停 A → A→B → B→C: $\\frac{5}{6}\\cdot\\frac{1}{6}\\cdot\\frac{4}{6} = \\frac{20}{216}$\n- A→B → 停 B → B→C: $\\frac{1}{6}\\cdot\\frac{2}{6}\\cdot\\frac{4}{6} = \\frac{8}{216}$\n\n合计 $\\dfrac{28}{216} = \\dfrac{7}{54}$。\n\n$\\fbox{O} = 7$，$\\fbox{PQ} = 54$。"
+          },
+          {
+            "title": "(3) 4 回到达 C",
+            "content": "三种模式:\n- 停 A 2 次 → A→B → B→C: $\\frac{25}{36}\\cdot\\frac{1}{6}\\cdot\\frac{4}{6} = \\frac{100}{1296}$\n- 停 A → A→B → 停 B → B→C: $\\frac{5}{6}\\cdot\\frac{1}{6}\\cdot\\frac{2}{6}\\cdot\\frac{4}{6} = \\frac{40}{1296}$\n- A→B → 停 B 2 次 → B→C: $\\frac{1}{6}\\cdot\\frac{4}{36}\\cdot\\frac{4}{6} = \\frac{16}{1296}$\n\n合计 $\\dfrac{156}{1296} = \\dfrac{13}{108}$。\n\n$\\fbox{RS} = 13$，$\\fbox{TUV} = 108$。"
+          },
+          {
+            "title": "(4) 4 回以内到达 C 的概率",
+            "content": "$$P = P_2 + P_3 + P_4 = \\frac{1}{9} + \\frac{7}{54} + \\frac{13}{108}$$\n\n通分 $108$:$\\dfrac{12}{108} + \\dfrac{14}{108} + \\dfrac{13}{108} = \\dfrac{39}{108} = \\dfrac{13}{36}$。\n\n$\\fbox{WX} = 13$，$\\fbox{YZ} = 36$。"
+          }
+        ],
+        "finalAnswer": "N=9；O=7，PQ=54；RS=13，TUV=108；WX=13，YZ=36"
+      }
+    },
+    {
+      "id": "c1-II-1",
+      "number": "II-1",
+      "topic": "无理数根的二次方程与不等式",
+      "topicTag": "无理数与方程",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "$a, b$ 是有理数，$p$ 是实数。$x = \\dfrac{\\sqrt 5 + 3}{\\sqrt 5 + 2}$ 是二次方程\n$$x^2 + ax + b = 0 \\quad \\cdots ①$$\n\n的解，并考虑不等式\n$$x + 1 < 2x + p + 3 \\quad \\cdots ②$$\n\n(1) 求 $a, b$。先把分母有理化:\n$$x = \\sqrt{\\fbox{A}} - \\fbox{B}$$\n\n代入 ①:\n$$-a + b + \\fbox{C} + (a - \\fbox{D})\\sqrt{\\fbox{E}} = 0$$\n\n因此\n$$a = \\fbox{F},\\quad b = \\fbox{GH}$$\n\n(2) 求使 ① 的两根都满足 ② 的最小整数 $p$。\n\n解 ②：$x > -p - \\fbox{I}$。\n\n方程 ① 两根都满足 ② 当且仅当\n$$p > \\sqrt{\\fbox{J}} - \\fbox{K}$$\n\n故最小整数 $p = \\fbox{L}$。",
+      "solution": {
+        "translation": "分母有理化：(√5+3)(√5-2)/((√5+2)(√5-2)) = (5-2√5+3√5-6)/1 = √5-1。代入x²+ax+b=0用有理/无理部分=0联立得 a=2, b=-4。解 ② 得 x > -p-2。两根 -1±√5 都满足 ⇔ 较小根 -1-√5 > -p-2 ⇔ p > √5-1 ≈ 1.236，最小整数 p=2。",
+        "analysis": "有理数系数方程的无理数根：根的有理/无理部分需分别为 0。两根都满足某不等式等价于较小根满足。",
+        "steps": [
+          {
+            "title": "(1) 有理化 x",
+            "content": "$$x = \\frac{\\sqrt 5 + 3}{\\sqrt 5 + 2}\\cdot\\frac{\\sqrt 5 - 2}{\\sqrt 5 - 2} = \\frac{5 - 2\\sqrt 5 + 3\\sqrt 5 - 6}{5 - 4} = \\sqrt 5 - 1$$\n\n$\\fbox{A} = 5$，$\\fbox{B} = 1$。"
+          },
+          {
+            "title": "(1) 代入 ① 比较有理/无理部分",
+            "content": "$x = \\sqrt 5 - 1$ 代入 $x^2 + ax + b = 0$:\n\n$x^2 = 6 - 2\\sqrt 5$\n$ax = a\\sqrt 5 - a$\n\n$x^2 + ax + b = (6 - a + b) + (a - 2)\\sqrt 5 = 0$\n\n对照 $-a + b + \\fbox{C} + (a - \\fbox{D})\\sqrt{\\fbox{E}} = 0$:\n$\\fbox{C} = 6$，$\\fbox{D} = 2$，$\\fbox{E} = 5$。\n\n$a, b$ 有理 $\\implies$ 无理部分 $= 0$:$a - 2 = 0 \\implies a = 2$。\n有理部分 $= 0$:$-2 + b + 6 = 0 \\implies b = -4$。\n\n$\\fbox{F} = 2$，$\\fbox{GH} = -4$。"
+          },
+          {
+            "title": "(2) 解 ② 与最小整数 p",
+            "content": "② $x + 1 < 2x + p + 3 \\implies -x < p + 2 \\implies x > -p - 2$。$\\fbox{I} = 2$。\n\n方程 ① 是 $x^2 + 2x - 4 = 0$，根 $x = -1 \\pm \\sqrt 5$。\n\n较小根 $-1 - \\sqrt 5$ 满足 ② $\\iff -1 - \\sqrt 5 > -p - 2 \\iff p > \\sqrt 5 - 1$。\n\n$\\fbox{J} = 5$，$\\fbox{K} = 1$。\n\n$\\sqrt 5 - 1 \\approx 1.236$，最小整数 $p \\geq 2$。\n\n$\\fbox{L} = 2$。"
+          }
+        ],
+        "finalAnswer": "A=5，B=1；C=6，D=2，E=5；F=2，GH=-4；I=2；J=5，K=1；L=2"
+      }
+    },
+    {
+      "id": "c1-II-2",
+      "number": "II-2",
+      "topic": "二次函数值域等于自变量区间",
+      "topicTag": "二次函数",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "考虑二次函数\n$$f(x) = \\frac{3}{4}x^2 - 3x + 4$$\n\n设 $a, b$ 为满足 $0 < a < b$ 且 $2 < b$ 的实数。求函数 $y = f(x)$ 在 $a \\leq x \\leq b$ 上的值域为 $a \\leq y \\leq b$ 时的 $a, b$。\n\n$y = f(x)$ 的图象的轴的方程式为 $x = \\fbox{M}$，按如下分情形:\n\n(i) $\\fbox{M} \\leq a$\n\n(ii) $0 < a < \\fbox{M}$\n\n**情形 (i)**:$f$ 在 $a \\leq x \\leq b$ 上随 $x$ 单调增加，故 $f(a) = a$，$f(b) = b$ 即可。解得 $a = \\dfrac{\\fbox{N}}{\\fbox{O}}$，$b = \\fbox{P}$，但此 $a$ 不满足 (i)。\n\n**情形 (ii)**:$f$ 在 $a \\leq x \\leq b$ 上的最小值为 $\\fbox{Q}$，故\n$$a = \\fbox{R}$$\n\n这满足 (ii)。此时 $f(a) = \\dfrac{\\fbox{S}}{\\fbox{T}} < b$，由此 $f(b) = b$，故\n$$b = \\fbox{U}$$",
+      "solution": {
+        "translation": "f(x)=(3/4)(x-2)²+1, 轴 x=2, 顶点 (2,1)。case (i) 区间在轴右侧，递增，端点对应；case (ii) 区间跨过顶点，min=1=a，由 f(b)=b 得 b=4。",
+        "analysis": "f(x)=x 的解：(3/4)x²-3x+4=x → 3x²-16x+16=0 → x=4 或 4/3。在 case (i) 范围 a≥2 不含 4/3，无效。在 case (ii)，0<a<2 包含 a=1（即 min 1），b=4。",
+        "steps": [
+          {
+            "title": "f 的轴",
+            "content": "$f(x) = \\dfrac{3}{4}(x - 2)^2 + 1$，轴 $x = 2$，顶点 $(2, 1)$。$\\fbox{M} = 2$。"
+          },
+          {
+            "title": "(i) 情形 2 ≤ a",
+            "content": "$f$ 在 $[a, b]$ 单增,故 $f(a) = a$，$f(b) = b$。\n\n$f(x) = x \\implies \\dfrac{3}{4}x^2 - 4x + 4 = 0 \\implies 3x^2 - 16x + 16 = 0$\n\n$x = \\dfrac{16 \\pm \\sqrt{256 - 192}}{6} = \\dfrac{16 \\pm 8}{6} = 4 \\text{ 或 } \\dfrac{4}{3}$\n\n$a < b$ 给出 $a = \\dfrac{4}{3}$，$b = 4$。但 $a = \\dfrac{4}{3} < 2$，不满足 (i)。\n\n$\\fbox{N} = 4$，$\\fbox{O} = 3$，$\\fbox{P} = 4$。"
+          },
+          {
+            "title": "(ii) 情形 0 < a < 2",
+            "content": "区间 $[a, b]$ 跨过顶点 $x = 2$，故最小值在顶点处取得:\n\n$\\min = f(2) = 1$。$\\fbox{Q} = 1$。\n\n值域 $[a, b]$ 的最小为 $a$，故 $a = 1$。$\\fbox{R} = 1$，满足 $0 < 1 < 2$ ✓。"
+          },
+          {
+            "title": "(ii) 求 b",
+            "content": "$f(a) = f(1) = \\dfrac{3}{4} - 3 + 4 = \\dfrac{7}{4}$。$\\fbox{S} = 7$，$\\fbox{T} = 4$。\n\n$\\dfrac{7}{4} < b$（要求 $b > 2 > 7/4$）✓，故最大值在 $x = b$ 取得:$f(b) = b$。\n\n由前式 $b = 4$（取较大根）。$\\fbox{U} = 4$。"
+          }
+        ],
+        "finalAnswer": "M=2；N=4，O=3，P=4；Q=1；R=1；S=7，T=4；U=4"
+      }
+    },
+    {
+      "id": "c1-III-1",
+      "number": "III",
+      "topic": "4 个自然数及其平方所成集合的交并条件",
+      "topicTag": "集合与整数",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "考虑满足 $1 < a < b < c < d$ 的 4 个自然数 $a, b, c, d$。两集合 $A = \\{a, b, c, d\\}$ 与 $B = \\{a^2, b^2, c^2, d^2\\}$ 满足以下条件：\n\n(i) $A \\cap B$ 恰有 2 个元素，且这两个元素之和在 $15$ 以上 $25$ 以下。\n\n(ii) $A \\cup B$ 的所有元素之和不超过 $300$。\n\n求 $a, b, c, d$。\n\n设 $A \\cap B = \\{x, y\\}$，$x < y$。由 $x, y \\in B$，根据 (i) 知 $y = \\fbox{AB}$，$x$ 是 $\\fbox{C}$、$\\fbox{D}$ 中的一个（要求 $C < D$）。再考虑 (ii)，得 $x = \\fbox{E}$。因此 $A$ 包含 $\\fbox{F}$, $\\fbox{F}^2$, $\\fbox{F}^4$。\n\n设 $A$ 的余下元素为 $z$，由 (ii) 有\n$$z^2 + z \\leq \\fbox{GH}$$\n\n故 $z = \\fbox{I}$。综上\n$$a = \\fbox{J},\\ b = \\fbox{K},\\ c = \\fbox{L},\\ d = \\fbox{MN}$$",
+      "solution": {
+        "translation": "A∩B 两个元素都是完美平方且和∈[15,25]，可能 (4,16) 或 (9,16) → y=16。x=9 时 A={3,4,9,16}, A∪B 和 = 369 超 300，不满足；x=4 时 a=2 → A 包含 2,4,16，余 z 满足 z²+z≤22 → z=3，得 (2,3,4,16)。",
+        "analysis": "完美平方数对求和在 [15,25]：只有 (4,16) 与 (9,16)，y=16=4²。x=4=2²→2∈A；x=9=3²→3∈A。后用 A∪B 总和约束筛选。",
+        "steps": [
+          {
+            "title": "(i) 确定 A∩B 的两元素",
+            "content": "$A \\cap B$ 的元素必为完美平方（来自 $B$）。两个完美平方和在 $[15, 25]$:\n- $4 + 16 = 20$ ✓\n- $9 + 16 = 25$ ✓\n- 其他对都超出。\n\n故 $y = 16$，$x \\in \\{4, 9\\}$。$\\fbox{AB} = 16$，$\\fbox{C} = 4$，$\\fbox{D} = 9$（$C < D$）。"
+          },
+          {
+            "title": "(ii) 用 A∪B 总和确定 x",
+            "content": "**若 $x = 9$**:$9 = 3^2$, $16 = 4^2$，故 $3, 4, 9, 16 \\in A$。\n\n$A = \\{3, 4, 9, 16\\}$，$B = \\{9, 16, 81, 256\\}$。\n\n$A \\cup B = \\{3, 4, 9, 16, 81, 256\\}$, 和 $= 369 > 300$ ✗。\n\n**若 $x = 4$**:$4 = 2^2, 16 = 4^2$，故 $2, 4, 16 \\in A$。\n\n$A$ 包含 $2, 4, 16$，符合 $A \\supseteq \\{F, F^2, F^4\\}$ 形式，$F = 2$。\n\n$\\fbox{E} = 4$，$\\fbox{F} = 2$。"
+          },
+          {
+            "title": "求第 4 个元素 z",
+            "content": "$A = \\{2, 4, 16, z\\}$（$z$ 为余下元素）。\n\n$B = \\{2^2, 4^2, z^2, 16^2\\} = \\{4, 16, z^2, 256\\}$。\n\n$A \\cup B = \\{2, 4, 16, z, z^2, 256\\}$（要求 $z \\ne 4, 16, 256$ 且 $z^2 \\ne 2, 4, 16, z$）。\n\n总和 $\\leq 300$:\n$$2 + 4 + 16 + z + z^2 + 256 \\leq 300 \\implies z^2 + z \\leq 22$$\n\n$\\fbox{GH} = 22$。\n\n求自然数 $z$:$z = 3$ 时 $9 + 3 = 12 \\leq 22$ ✓；$z = 4$ 时 $20 \\leq 22$ 但 $z$ 已为 $4$，重复；$z = 5$ 时 $30 > 22$ ✗。\n\n故 $z = 3$。$\\fbox{I} = 3$。"
+          },
+          {
+            "title": "排序得 a, b, c, d",
+            "content": "$A = \\{2, 3, 4, 16\\}$，按升序:\n$a = 2$，$b = 3$，$c = 4$，$d = 16$。\n\n$\\fbox{J} = 2$，$\\fbox{K} = 3$，$\\fbox{L} = 4$，$\\fbox{MN} = 16$。\n\n**验证**:$A \\cap B = \\{4, 16\\}$（和 $= 20$）✓；$A \\cup B = \\{2, 3, 4, 9, 16, 256\\}$，和 $= 290 \\leq 300$ ✓。"
+          }
+        ],
+        "finalAnswer": "AB=16，C=4，D=9；E=4；F=2；GH=22；I=3；J=2，K=3，L=4，MN=16"
+      }
+    },
+    {
+      "id": "c1-IV-1",
+      "number": "IV",
+      "topic": "外接圆中心与过两点切线圆中心的距离",
+      "topicTag": "平面几何",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "questionDiagram": {
+        "svg": "<svg viewBox=\"0 0 320 280\" style=\"width:100%;max-width:340px;display:block;margin:12px auto\"><polygon points=\"40,130 270,130 240,40\" fill=\"none\" stroke=\"#1c1917\" stroke-width=\"1.5\"/><circle cx=\"160\" cy=\"150\" r=\"75\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.3\"/><circle cx=\"160\" cy=\"150\" r=\"2.5\" fill=\"#2563eb\"/><text x=\"165\" y=\"148\" font-size=\"11\" fill=\"#2563eb\">O</text><circle cx=\"40\" cy=\"235\" r=\"110\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"1.3\"/><circle cx=\"40\" cy=\"235\" r=\"2.5\" fill=\"#dc2626\"/><text x=\"45\" y=\"242\" font-size=\"11\" fill=\"#dc2626\">O'</text><circle cx=\"240\" cy=\"40\" r=\"4\" fill=\"#1c1917\"/><text x=\"245\" y=\"36\" font-size=\"13\" font-weight=\"700\">A</text><circle cx=\"40\" cy=\"130\" r=\"4\" fill=\"#1c1917\"/><text x=\"24\" y=\"128\" font-size=\"13\" font-weight=\"700\">B</text><circle cx=\"270\" cy=\"130\" r=\"4\" fill=\"#1c1917\"/><text x=\"275\" y=\"128\" font-size=\"13\" font-weight=\"700\">C</text><text x=\"20\" y=\"272\" font-size=\"10\" fill=\"#57534e\">蓝圆: △ABC 外接圆 (中心 O); 红圆: 过 B,C 切 AB 的圆 (中心 O')</text></svg>"
+      },
+      "japanese": "三角形 $ABC$ 的三边长为 $AB=6$，$BC=8$，$CA=4$。设过两点 $B, C$ 且与直线 $AB$ 相切的圆的中心为 $O'$，三角形 $ABC$ 的外接圆中心为 $O$。求线段 $OO'$ 的长度。\n\n(1) $\\cos\\angle ABC = \\dfrac{\\fbox{A}}{\\fbox{B}}$，$\\sin\\angle ABC = \\dfrac{\\sqrt{\\fbox{CD}}}{\\fbox{E}}$。\n\n(2) 三角形 $ABC$ 的外接圆半径为 $\\dfrac{\\fbox{FG}\\sqrt{\\fbox{HI}}}{\\fbox{JK}}$。\n\n(3) 设直线 $OO'$ 与边 $BC$ 的交点为 $D$，则\n$$OD = \\dfrac{\\fbox{L}\\sqrt{\\fbox{MN}}}{\\fbox{OP}},\\quad O'D = \\dfrac{\\fbox{QR}\\sqrt{\\fbox{ST}}}{\\fbox{UV}}$$\n\n因此\n$$OO' = \\dfrac{\\fbox{W}\\sqrt{\\fbox{XY}}}{\\fbox{Z}}$$",
+      "solution": {
+        "translation": "余弦定理求 cos∠ABC=7/8、sin=√15/8。外接圆 2R=CA/sin∠ABC → R=16√15/15。设坐标 B(0,0)、A(6,0)、C(7,√15)。O 在 AB 中垂线 x=3，由 OB=OC 求出 O=(3, 11√15/15)。O' 在 AB 在 B 处垂线即 y 轴，由 O'B=O'C 求 O'=(0, 32√15/15)。直线 OO' 与 BC 的交点 D=(3.5, √15/2) 为 BC 中点。计算各距离得 OD=4√15/15, O'D=28√15/15, OO'=8√15/5。",
+        "analysis": "切线性质：直线 AB 切圆 O' 于 B（因 B 在圆上），故 O'B⊥AB。同时 O' 在 BC 中垂线上。外接圆中心 O 在 AB、BC 中垂线交点。",
+        "steps": [
+          {
+            "title": "(1) cos∠ABC 与 sin∠ABC",
+            "content": "由余弦定理:\n$$\\cos\\angle ABC = \\frac{AB^2 + BC^2 - CA^2}{2\\cdot AB\\cdot BC} = \\frac{36 + 64 - 16}{2\\cdot 6\\cdot 8} = \\frac{84}{96} = \\frac{7}{8}$$\n\n$\\fbox{A} = 7$，$\\fbox{B} = 8$。\n\n$$\\sin\\angle ABC = \\sqrt{1 - \\frac{49}{64}} = \\frac{\\sqrt{15}}{8}$$\n\n$\\fbox{CD} = 15$，$\\fbox{E} = 8$。"
+          },
+          {
+            "title": "(2) 外接圆半径",
+            "content": "由正弦定理:$2R = \\dfrac{CA}{\\sin\\angle ABC}$:\n$$R = \\frac{4}{2\\cdot \\sqrt{15}/8} = \\frac{16}{\\sqrt{15}} = \\frac{16\\sqrt{15}}{15}$$\n\n$\\fbox{FG} = 16$，$\\fbox{HI} = 15$，$\\fbox{JK} = 15$。"
+          },
+          {
+            "title": "(3) 建立坐标系",
+            "content": "设 $B = (0, 0)$，$A = (6, 0)$。$\\angle ABC$ 在 $B$ 处，故\n$$C = 8(\\cos\\angle ABC, \\sin\\angle ABC) = \\left(7, \\sqrt{15}\\right)$$\n\n验证 $CA$:$\\sqrt{(7-6)^2 + 15} = \\sqrt{16} = 4$ ✓。\n\n**$O$（外接圆心）**:在 $AB$ 中垂线 $x = 3$ 上，设 $O = (3, h)$。\n\n$OB = OC \\Rightarrow 9 + h^2 = 16 + (h - \\sqrt{15})^2 = 16 + h^2 - 2h\\sqrt{15} + 15$\n$2h\\sqrt{15} = 22 \\Rightarrow h = \\dfrac{11}{\\sqrt{15}} = \\dfrac{11\\sqrt{15}}{15}$\n\n$O = \\left(3, \\dfrac{11\\sqrt{15}}{15}\\right)$。\n\n**$O'$**:直线 $AB$ 切圆于 $B \\Rightarrow O'B \\perp AB \\Rightarrow O'$ 在 $y$ 轴上，设 $O' = (0, k)$。\n\n$O'B = O'C \\Rightarrow k^2 = 49 + (k - \\sqrt{15})^2 = 64 + k^2 - 2k\\sqrt{15}$\n$2k\\sqrt{15} = 64 \\Rightarrow k = \\dfrac{32}{\\sqrt{15}} = \\dfrac{32\\sqrt{15}}{15}$\n\n$O' = \\left(0, \\dfrac{32\\sqrt{15}}{15}\\right)$。"
+          },
+          {
+            "title": "(3) 求 D, OD, O'D",
+            "content": "直线 $OO'$ 方程:$7x + \\sqrt{15}\\,y = 32$。\n\n与 $BC$（参数 $(7t, \\sqrt{15}\\,t)$）相交:$49t + 15t = 32 \\Rightarrow t = \\dfrac{1}{2}$。\n\n$D = \\left(\\dfrac{7}{2}, \\dfrac{\\sqrt{15}}{2}\\right)$（恰为 $BC$ 中点）。\n\n$$OD^2 = \\left(3 - \\frac{7}{2}\\right)^2 + \\left(\\frac{11\\sqrt{15}}{15} - \\frac{\\sqrt{15}}{2}\\right)^2 = \\frac{1}{4} + 15\\cdot\\left(\\frac{7}{30}\\right)^2 = \\frac{1}{4} + \\frac{49}{60} = \\frac{64}{60} = \\frac{16}{15}$$\n\n$$OD = \\frac{4}{\\sqrt{15}} = \\frac{4\\sqrt{15}}{15}$$\n\n$\\fbox{L} = 4$，$\\fbox{MN} = 15$，$\\fbox{OP} = 15$。\n\n$$O'D^2 = \\left(\\frac{7}{2}\\right)^2 + \\left(\\frac{32\\sqrt{15}}{15} - \\frac{\\sqrt{15}}{2}\\right)^2 = \\frac{49}{4} + 15\\cdot\\left(\\frac{49}{30}\\right)^2 = \\frac{49}{4} + \\frac{2401}{60} = \\frac{784}{15}$$\n\n$$O'D = \\frac{28}{\\sqrt{15}} = \\frac{28\\sqrt{15}}{15}$$\n\n$\\fbox{QR} = 28$，$\\fbox{ST} = 15$，$\\fbox{UV} = 15$。"
+          },
+          {
+            "title": "(3) 求 OO'",
+            "content": "$O$、$O'$、$D$ 共线，且 $O$ 在 $O'$ 与 $D$ 之间。故\n$$OO' = O'D - OD = \\frac{28\\sqrt{15}}{15} - \\frac{4\\sqrt{15}}{15} = \\frac{24\\sqrt{15}}{15} = \\frac{8\\sqrt{15}}{5}$$\n\n$\\fbox{W} = 8$，$\\fbox{XY} = 15$，$\\fbox{Z} = 5$。"
+          }
+        ],
+        "finalAnswer": "A=7，B=8；CD=15，E=8；FG=16，HI=15，JK=15；L=4，MN=15，OP=15；QR=28，ST=15，UV=15；W=8，XY=15，Z=5"
+      }
+    }
+  ]
+}
