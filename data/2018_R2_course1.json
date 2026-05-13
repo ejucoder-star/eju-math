@@ -1,0 +1,212 @@
+{
+  "metadata": {
+    "course": "course1",
+    "year": "2018",
+    "session": "1",
+    "courseNameJa": "数学1",
+    "courseNameEn": "Course 1 (Basic)",
+    "description": "基础课程｜文科方向",
+    "color": "#2563eb",
+    "examTitle": "2018年度（平成30年）第1回",
+    "examDate": "2018年6月"
+  },
+  "questions": [
+    {
+      "id": "c1-I-1",
+      "number": "I-1",
+      "topic": "含参数二次函数顶点、与 x 轴交点条件",
+      "topicTag": "二次函数",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "设 $a$ 为实数，考虑二次函数\n$$f(x) = \\frac{1}{4}x^2 - (2a-1)x + a$$\n\n(1) $y = f(x)$ 的图象的顶点坐标为\n$$\\left(\\fbox{A}\\,a - \\fbox{B},\\ -\\fbox{C}\\,a^2 + \\fbox{D}\\,a - \\fbox{E}\\right)$$\n\n(2) $y = f(x)$ 与 $x$ 轴在不同的两点 $A, B$ 处相交的 $a$ 范围为\n$$a < \\dfrac{\\fbox{F}}{\\fbox{G}}\\ \\text{或}\\ \\fbox{H} < a$$\n\n(3) 在 (2) 的两点 $A, B$ 中，它们的 $x$ 坐标都在 $0$ 以上 $6$ 以下时，$a$ 的范围为\n$$\\fbox{I} < a \\leq \\dfrac{\\fbox{JK}}{\\fbox{LM}}$$",
+      "solution": {
+        "translation": "配方求顶点 (4a-2, -4a²+5a-1)。判别式>0 给出 a<1/4 或 a>1。两根∈[0,6] 要求 f(0)≥0, f(6)≥0, 顶点 x∈[0,6], 判别式>0；交集得 1<a≤15/11。",
+        "analysis": "二次系数 1/4，配方：f(x)=(1/4)(x-(4a-2))² + (-4a²+5a-1)。f(0)=a≥0, f(6)=15-11a≥0 → a≤15/11。",
+        "steps": [
+          {
+            "title": "(1) 顶点坐标",
+            "content": "$f(x) = \\dfrac{1}{4}x^2 - (2a-1)x + a$\n\n顶点 $x$ 坐标:$-\\dfrac{-(2a-1)}{2\\cdot 1/4} = 2(2a-1) = 4a - 2$。$\\fbox{A}=4$，$\\fbox{B}=2$。\n\n顶点 $y$ 坐标:$f(4a-2) = \\dfrac{1}{4}(4a-2)^2 - (2a-1)(4a-2) + a$\n\n$= 4a^2 - 4a + 1 - (8a^2 - 8a + 2) + a = -4a^2 + 5a - 1$\n\n$\\fbox{C}=4$，$\\fbox{D}=5$，$\\fbox{E}=1$。"
+          },
+          {
+            "title": "(2) 两个不同实根",
+            "content": "判别式 $> 0$:\n$$(2a-1)^2 - 4\\cdot\\frac{1}{4}\\cdot a = 4a^2 - 4a + 1 - a = 4a^2 - 5a + 1 > 0$$\n\n$(4a-1)(a-1) > 0 \\implies a < \\dfrac{1}{4}$ 或 $a > 1$。\n\n$\\fbox{F}=1$，$\\fbox{G}=4$，$\\fbox{H}=1$。"
+          },
+          {
+            "title": "(3) 根都在 [0, 6] 内",
+            "content": "条件：\n- $f(0) \\geq 0$:$a \\geq 0$\n- $f(6) \\geq 0$:$\\dfrac{36}{4} - 6(2a-1) + a = 9 - 12a + 6 + a = 15 - 11a \\geq 0 \\implies a \\leq \\dfrac{15}{11}$\n- 顶点 $x = 4a - 2 \\in [0, 6]$:$\\dfrac{1}{2} \\leq a \\leq 2$\n- 判别式 $> 0$:$a < \\dfrac{1}{4}$ 或 $a > 1$\n\n取交集:$1 < a \\leq \\dfrac{15}{11}$。\n\n$\\fbox{I} = 1$，$\\fbox{JK} = 15$，$\\fbox{LM} = 11$。"
+          }
+        ],
+        "finalAnswer": "A=4，B=2，C=4，D=5，E=1；F=1，G=4，H=1；I=1，JK=15，LM=11"
+      }
+    },
+    {
+      "id": "c1-I-2",
+      "number": "I-2",
+      "topic": "4 张卡片用 4 色染色（每色至多 2 张）",
+      "topicTag": "组合计数",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "有 4 张大小不同的卡片。将它们用红、黑、蓝、黄四种颜色染色。每张卡片只用 1 种颜色，且同色卡片不超过 2 张。\n\n(1) 全部的染色方式共有 $\\fbox{NOP}$ 通。\n\n(2) 使用全部 4 色的染色方式有 $\\fbox{QR}$ 通。\n\n(3) 2 枚红色、1 枚蓝色的染色方式有 $\\fbox{ST}$ 通。\n\n(4) 使用 3 种颜色的染色方式有 $\\fbox{UVW}$ 通。\n\n(5) 使用 2 种颜色的染色方式有 $\\fbox{XY}$ 通。",
+      "solution": {
+        "translation": "用色分布: 4色用4张→4!=24; 3色 (2+1+1)→4·3·6·2=144; 2色 (2+2)→C(4,2)·C(4,2)=36; 总和=204。(3): C(4,2) 选红 × 2 (蓝位置) × 2 (黒/黄) = 24。",
+        "analysis": "约束「同色 ≤ 2」排除「3+1, 4+0」型。剩余分布: 2+2, 2+1+1, 1+1+1+1。各情形分别计算。",
+        "steps": [
+          {
+            "title": "(2) 4 色全部使用",
+            "content": "每张不同色:$4! = 24$。$\\fbox{QR} = 24$。"
+          },
+          {
+            "title": "(5) 使用 2 色（2+2 分布）",
+            "content": "选 2 色:$\\binom{4}{2} = 6$。分 4 张到两色各 2 张:$\\binom{4}{2} = 6$。\n\n合计:$6 \\times 6 = 36$。$\\fbox{XY} = 36$。"
+          },
+          {
+            "title": "(4) 使用 3 色（2+1+1 分布）",
+            "content": "选 3 色:$\\binom{4}{3} = 4$。选哪个色用 2 次:$3$。\n4 张中选 2 张涂双色:$\\binom{4}{2} = 6$。剩 2 张涂剩下 2 色:$2!= 2$。\n\n合计:$4 \\times 3 \\times 6 \\times 2 = 144$。$\\fbox{UVW} = 144$。"
+          },
+          {
+            "title": "(1) 总染色数",
+            "content": "$\\text{总数} = (2+2) + (2+1+1) + (1+1+1+1) = 36 + 144 + 24 = 204$\n\n$\\fbox{NOP} = 204$。"
+          },
+          {
+            "title": "(3) 2 张红, 1 张蓝",
+            "content": "选 2 张涂红:$\\binom{4}{2} = 6$。从余 2 张中选 1 张涂蓝:$2$。剩 1 张涂 {黒, 黄} 中一色:$2$。\n\n合计:$6 \\times 2 \\times 2 = 24$。$\\fbox{ST} = 24$。"
+          }
+        ],
+        "finalAnswer": "NOP=204；QR=24；ST=24；UVW=144；XY=36"
+      }
+    },
+    {
+      "id": "c1-II-1",
+      "number": "II-1",
+      "topic": "立方根表达式与三次方程",
+      "topicTag": "无理数",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "求满足 $a^3 = 9 + \\sqrt{80}$ 的正数 $a$。\n\n考虑加入满足 $b^3 = 9 - \\sqrt{80}$ 的正数 $b$。则\n$$\\begin{cases} a^3 + b^3 = \\fbox{AB} & \\cdots ① \\\\ ab = \\fbox{C} & \\cdots ② \\end{cases}$$\n\n用 ② 改写 ①:\n$$(a+b)^3 - \\fbox{D}\\,(a+b) = \\fbox{AB}$$\n\n设 $x = a+b$，得\n$$x^3 - \\fbox{D}\\,x = \\fbox{AB}$$\n\n变形\n$$x^3 - 27 = \\fbox{D}\\,(x - \\fbox{E})$$\n\n因此\n$$(x - \\fbox{F})(x^2 + \\fbox{G}\\,x + \\fbox{H}) = 0$$\n\n所以 $x = \\fbox{I}$，故\n$$a + b = \\fbox{I} \\quad \\cdots ③$$\n\n由 ②、③ 与 $a > b$,\n$$a = \\dfrac{\\fbox{J} + \\sqrt{\\fbox{K}}}{\\fbox{L}}$$",
+      "solution": {
+        "translation": "a³+b³=18 (两共轭和)，ab=1 (积)。设 x=a+b，恒等式 (a+b)³=a³+b³+3ab(a+b) 给 x³=18+3x，即 x³-3x=18，即 x³-27=3(x-3)，因式分解 (x-3)(x²+3x+6)=0。由 x²+3x+6 无实根，x=3。a,b 是 t²-3t+1=0 的根，a=(3+√5)/2。",
+        "analysis": "对称多项式技巧：a³+b³ 与 ab 易计算，由 (a+b)³ 恒等式可化为 a+b 的方程。",
+        "steps": [
+          {
+            "title": "求 a³+b³ 与 ab",
+            "content": "$a^3 + b^3 = (9+\\sqrt{80}) + (9-\\sqrt{80}) = 18$。$\\fbox{AB} = 18$。\n\n$(ab)^3 = a^3 b^3 = (9+\\sqrt{80})(9-\\sqrt{80}) = 81 - 80 = 1$。$ab > 0$ 故 $ab = 1$。$\\fbox{C} = 1$。"
+          },
+          {
+            "title": "化为 x = a+b 的方程",
+            "content": "$(a+b)^3 = a^3 + b^3 + 3ab(a+b) = 18 + 3\\cdot 1\\cdot (a+b)$\n\n令 $x = a+b$，得 $x^3 = 18 + 3x$，即\n$$x^3 - 3x = 18 \\implies x^3 - 27 = 3x - 9 = 3(x - 3)$$\n\n$\\fbox{D} = 3$，$\\fbox{E} = 3$。"
+          },
+          {
+            "title": "因式分解",
+            "content": "$x^3 - 27 - 3(x - 3) = (x-3)(x^2 + 3x + 9) - 3(x-3) = (x-3)(x^2 + 3x + 6)$\n\n令为 $0$:$(x - 3)(x^2 + 3x + 6) = 0$。$\\fbox{F} = 3$，$\\fbox{G} = 3$，$\\fbox{H} = 6$。\n\n$x^2 + 3x + 6$ 判别式 $= 9 - 24 < 0$，无实根。\n\n故 $x = 3$。$\\fbox{I} = 3$。"
+          },
+          {
+            "title": "求 a",
+            "content": "$a + b = 3$，$ab = 1$。$a, b$ 是 $t^2 - 3t + 1 = 0$ 的两根:\n$$t = \\frac{3 \\pm \\sqrt{9 - 4}}{2} = \\frac{3 \\pm \\sqrt 5}{2}$$\n\n$a > b$ 故 $a = \\dfrac{3 + \\sqrt 5}{2}$。$\\fbox{J} = 3$，$\\fbox{K} = 5$，$\\fbox{L} = 2$。"
+          }
+        ],
+        "finalAnswer": "AB=18，C=1；D=3；E=3；F=3，G=3，H=6；I=3；J=3，K=5，L=2"
+      }
+    },
+    {
+      "id": "c1-II-2",
+      "number": "II-2",
+      "topic": "两个二次方程解集一致与恒成立不等式",
+      "topicTag": "二次函数",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "设 $a$ 为非 0 常数，\n$$f(x) = x^2 + 2ax - 4a - 12$$\n$$g(x) = ax^2 + 2x - 4a + 4$$\n\n(1) $f(x) = 0$ 的解与 $g(x) = 0$ 的解一致时，$a = \\fbox{MN}$，此时解为 $x = \\fbox{OP}$ 与 $x = \\fbox{Q}$。\n\n(2) $g(x) = 0$ 有重根的条件为 $a = \\dfrac{\\fbox{R}}{\\fbox{S}}$，此时解为 $x = \\fbox{TU}$。\n\n(3) 对所有 $x$ 都有 $f(x) < g(x)$ 成立的 $a$ 的范围为\n$$\\fbox{V} \\leq a < \\fbox{WX}$$",
+      "solution": {
+        "translation": "(1) 解集一致 ⇔ g = k·f；比较得 a=k=-1，求得 f(x)=x²-2x-8=(x-4)(x+2)=0，x=-2, 4。(2) g 重根 ⇔ 判别式=0 → 4-4a(-4a+4)=4(2a-1)²=0 → a=1/2，解 x=-1/a=-2。(3) (1-a)x²+2(a-1)x-16<0 恒成立。a=1 退化为 -16<0 真；a>1 时抛物线开口向下，要求顶点值 <0，即 a-17<0；a<1 不成立。综合 1≤a<17。",
+        "analysis": "f-g = (1-a)x² + 2(a-1)x - 16。开口、顶点决定恒成立条件。",
+        "steps": [
+          {
+            "title": "(1) 解集一致",
+            "content": "若 $f, g$ 同根集，则 $g = k\\cdot f$。比较 $x^2$ 系数:$a = k$。\n比较 $x$ 系数:$2 = 2ak = 2k^2 \\implies k^2 = 1 \\implies k = \\pm 1$。\n\n$k = 1$:常数项 $-4a+4 = -4a-12$，矛盾。\n$k = -1$（即 $a = -1$）:常数项 $-4(-1)+4 = 8$，$-1\\cdot(-4(-1)-12) = 8$ ✓。\n\n$\\fbox{MN} = -1$。\n\n$f(x) = x^2 - 2x - 8 = (x-4)(x+2) = 0 \\implies x = 4 \\text{ 或 } -2$。\n\n$\\fbox{OP} = -2$，$\\fbox{Q} = 4$。"
+          },
+          {
+            "title": "(2) g(x)=0 有重根",
+            "content": "判别式 $D = 4 - 4a(-4a + 4) = 4 - 16a + 16a^2 = 4(2a-1)^2$。\n\n$D = 0 \\iff a = \\dfrac{1}{2}$。$\\fbox{R} = 1$，$\\fbox{S} = 2$。\n\n重根:$x = -\\dfrac{2}{2a} = -\\dfrac{1}{a} = -2$。$\\fbox{TU} = -2$。"
+          },
+          {
+            "title": "(3) 对所有 x 都有 f<g",
+            "content": "$f - g = (1-a)x^2 + 2(a-1)x - 16$\n\n要 $< 0$ 对所有 $x$:\n\n**情形 a=1**:$f - g = -16 < 0$ ✓。\n\n**情形 a > 1**:$(1-a) < 0$，开口向下，最大值在顶点 $x = 1$:\n$$P(1) = (1-a) + 2(a-1) - 16 = a - 17$$\n\n要 $a - 17 < 0 \\implies a < 17$。\n\n**情形 a < 1**:$(1-a) > 0$，开口向上，$P \\to +\\infty$，不成立。\n\n合并:$1 \\leq a < 17$。$\\fbox{V} = 1$，$\\fbox{WX} = 17$。"
+          }
+        ],
+        "finalAnswer": "MN=-1；OP=-2，Q=4；R=1，S=2，TU=-2；V=1，WX=17"
+      }
+    },
+    {
+      "id": "c1-III-1",
+      "number": "III",
+      "topic": "n³ 除以 66 余数为 n 的两位自然数",
+      "topicTag": "整数",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "$n$ 是 2 位自然数，$n^3$ 除以 $66$ 的余数为 $n$。求这样的 $n$ 的个数与其中是素数的 $n$。\n\n条件给:$n^3$ 除以 66 的商为 $p$，则\n$$n^3 = \\fbox{AB}\\,p + n \\quad (0 < n \\leq \\fbox{CD})$$\n\n变形得\n$$n(n-1)(n+1) = \\fbox{AB}\\,p$$\n\n这里,$n-1, n$ 中一方是 $\\fbox{E}$ 的倍数,$n-1, n, n+1$ 中一个是 $\\fbox{F}$ 的倍数。又 $\\fbox{E}$ 与 $\\fbox{F}$ 互素，所以 $n(n-1)(n+1)$ 是 $\\fbox{G}$ 的倍数。其中 $1 < \\fbox{E} < \\fbox{F} < \\fbox{G}$。因此 $n-1, n, n+1$ 中一个是 $\\fbox{HI}$ 的倍数即可。\n\n由 $n \\leq \\fbox{CD}$，$n-1$ 是 $\\fbox{HI}$ 的倍数的 $n$ 个数为 $\\fbox{J}$，$n$ 是 $\\fbox{HI}$ 的倍数的 $n$ 个数为 $\\fbox{K}$，$n+1$ 是 $\\fbox{HI}$ 的倍数的 $n$ 个数为 $\\fbox{L}$。\n\n求得的 $n$ 个数为 $\\fbox{MN}$。其中是素数的 $n$ 从小到大依次为 $\\fbox{OP}, \\fbox{QR}, \\fbox{ST}$。",
+      "solution": {
+        "translation": "n³≡n (mod 66) ⇔ 66 | n(n-1)(n+1) = 三连续整数积。三连续积总被 6=2·3 整除，故只需 11 | n(n-1)(n+1)，即 n≡0,1,-1 (mod 11)。余数=n 要求 n≤65。在 [10,65] 中数得 5+5+6=16 个，素数为 11, 23, 43。",
+        "analysis": "三连续整数积总被 6 整除，所以 66 整除的关键条件是 11 整除。又 n=n³ mod 66 要求 n ≤ 65。",
+        "steps": [
+          {
+            "title": "建立方程",
+            "content": "$n^3 = 66p + n$（$p$ 为商）。$\\fbox{AB} = 66$。\n\n余数 $n$ 需满足 $0 < n < 66$，结合 $n$ 是 2 位数:$10 \\leq n \\leq 65$。$\\fbox{CD} = 65$。\n\n变形:$n^3 - n = n(n-1)(n+1) = 66p$。"
+          },
+          {
+            "title": "分析整除性",
+            "content": "$n-1, n$ 中一方是 $2$ 的倍数（连续两整数之一为偶）→ $\\fbox{E} = 2$。\n\n$n-1, n, n+1$ 中一个是 $3$ 的倍数 → $\\fbox{F} = 3$。\n\n$2$ 与 $3$ 互素，故 $n(n-1)(n+1)$ 总被 $2\\cdot 3 = 6$ 整除 → $\\fbox{G} = 6$。\n\n$1 < 2 < 3 < 6$ ✓。\n\n$66 = 6\\cdot 11$，要 $66 \\mid n(n-1)(n+1)$ 仍需 $11$ 整除。故 $n-1, n, n+1$ 中一个是 $11$ 的倍数 → $\\fbox{HI} = 11$。"
+          },
+          {
+            "title": "在 [10, 65] 中计数",
+            "content": "**$n-1$ 是 11 的倍数**:$n = 12, 23, 34, 45, 56$（$n=67$ > 65 舍）→ **5 个**。$\\fbox{J} = 5$。\n\n**$n$ 是 11 的倍数**:$n = 11, 22, 33, 44, 55$（$n=66$ > 65 舍）→ **5 个**。$\\fbox{K} = 5$。\n\n**$n+1$ 是 11 的倍数**:$n = 10, 21, 32, 43, 54, 65$ → **6 个**。$\\fbox{L} = 6$。\n\n各情形不重叠（11 的倍数间隔 $\\geq 11 > 2$）:\n$$\\text{总数} = 5 + 5 + 6 = 16$$\n\n$\\fbox{MN} = 16$。"
+          },
+          {
+            "title": "找素数",
+            "content": "$\\{10, 11, 12, 21, 22, 23, 32, 33, 34, 43, 44, 45, 54, 55, 56, 65\\}$ 中:\n\n- $11$:素数 ✓\n- $23$:素数 ✓\n- $43$:素数 ✓\n- 其余皆为合数。\n\n3 个素数:$11, 23, 43$。\n\n$\\fbox{OP} = 11$，$\\fbox{QR} = 23$，$\\fbox{ST} = 43$。"
+          }
+        ],
+        "finalAnswer": "AB=66，CD=65；E=2，F=3，G=6；HI=11；J=5，K=5，L=6；MN=16；OP=11，QR=23，ST=43"
+      }
+    },
+    {
+      "id": "c1-IV-1",
+      "number": "IV",
+      "topic": "等腰三角形外接圆与切线面积比",
+      "topicTag": "平面几何",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "questionDiagram": {
+        "svg": "<svg viewBox=\"0 0 320 280\" style=\"width:100%;max-width:340px;display:block;margin:12px auto\"><polygon points=\"60,210 270,210 200,40\" fill=\"none\" stroke=\"#1c1917\" stroke-width=\"1.5\"/><circle cx=\"190\" cy=\"140\" r=\"75\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.3\"/><circle cx=\"200\" cy=\"40\" r=\"3.5\" fill=\"#1c1917\"/><text x=\"206\" y=\"36\" font-size=\"13\" font-weight=\"700\">A</text><circle cx=\"60\" cy=\"210\" r=\"3.5\" fill=\"#1c1917\"/><text x=\"42\" y=\"222\" font-size=\"13\" font-weight=\"700\">B</text><circle cx=\"270\" cy=\"210\" r=\"3.5\" fill=\"#1c1917\"/><text x=\"276\" y=\"220\" font-size=\"13\" font-weight=\"700\">C</text><circle cx=\"175\" cy=\"210\" r=\"3.5\" fill=\"#dc2626\"/><text x=\"170\" y=\"226\" font-size=\"13\" font-weight=\"700\" fill=\"#dc2626\">D</text><circle cx=\"135\" cy=\"115\" r=\"3.5\" fill=\"#7c3aed\"/><text x=\"122\" y=\"112\" font-size=\"13\" font-weight=\"700\" fill=\"#7c3aed\">E</text><circle cx=\"190\" cy=\"140\" r=\"2\" fill=\"#2563eb\"/><text x=\"195\" y=\"137\" font-size=\"10\" fill=\"#2563eb\">O</text><text x=\"30\" y=\"262\" font-size=\"10\" fill=\"#57534e\">条件: AB=4, AC=3, ∠B=30°, D 在 BC 上 AD=AC, 圆 O 是 △ACD 的外接圆</text></svg>"
+      },
+      "japanese": "右图三角形 $ABC$ 满足\n$$AB = 4,\\quad AC = 3,\\quad \\angle B = 30°$$\n\n边 $BC$ 上取点 $D$ 使 $AC = AD$，设 $\\triangle ACD$ 的外接圆为 $O$。\n\n(1) $\\sin B = \\dfrac{\\fbox{A}}{\\fbox{B}}$，故 $\\sin C = \\dfrac{\\fbox{C}}{\\fbox{D}}$。因此圆 $O$ 的半径为 $\\dfrac{\\fbox{E}}{\\fbox{F}}$。\n\n(2) $BC = \\fbox{G}\\sqrt{\\fbox{H}} + \\sqrt{\\fbox{I}}$，$BD = \\fbox{J}\\sqrt{\\fbox{K}} - \\sqrt{\\fbox{L}}$。\n\n又，边 $AB$ 与圆 $O$ 的交点设为 $E$，则\n$$BE = \\dfrac{\\fbox{M}}{\\fbox{N}}$$\n\n因此，关于 $\\triangle BDE$、$\\triangle ADE$、$\\triangle ACD$ 的面积，有\n$$\\triangle BDE : \\triangle ADE = \\fbox{O} : \\fbox{P}$$\n$$\\triangle BDE : \\triangle ACD = \\fbox{Q}\\left(\\fbox{J}\\sqrt{\\fbox{K}} - \\sqrt{\\fbox{L}}\\right) : \\fbox{RS}\\sqrt{\\fbox{T}}$$",
+      "solution": {
+        "translation": "(1) 用 sin30°=1/2 及正弦定理求 sinC=2/3，△ACD 外接圆半径=AD/(2sin∠ACD)=9/4。(2) 用 cos30°、sinC 求 BC=2√3+√5；D 在 BC 上 AD=AC=3，△ACD 等腰，A 到 BC 的高的脚分 CD 中点，得 CD=2√5, BD=2√3-√5。圆 O 与 AB 第二交点 E，幂定理 BE·BA=BD·BC=7 → BE=7/4。面积比 △BDE:△ADE=BE:EA=7:9；△BDE = (1/2)BE·BD·sin30°, △ACD=2√5；化简得 7(2√3-√5):32√5。",
+        "analysis": "等腰 △ACD 的对称性给出 CD=2·AC·cos C。圆 O 通过 A、C、D 三点；AB 与圆 O 的第二交点 E 用幂定理求得 BE。",
+        "steps": [
+          {
+            "title": "(1) sin B, sin C, 外接圆半径",
+            "content": "$\\sin B = \\sin 30° = \\dfrac{1}{2}$。$\\fbox{A} = 1$，$\\fbox{B} = 2$。\n\n正弦定理 $\\dfrac{AB}{\\sin C} = \\dfrac{AC}{\\sin B}$:\n$$\\sin C = \\dfrac{AB \\sin B}{AC} = \\dfrac{4\\cdot 1/2}{3} = \\dfrac{2}{3}$$\n\n$\\fbox{C} = 2$，$\\fbox{D} = 3$。\n\n$\\triangle ACD$ 外接圆:由正弦定理 $\\dfrac{AD}{\\sin\\angle ACD} = 2R$，$\\angle ACD = \\angle C$:\n$$R = \\dfrac{AD}{2\\sin C} = \\dfrac{3}{2\\cdot 2/3} = \\dfrac{9}{4}$$\n\n$\\fbox{E} = 9$，$\\fbox{F} = 4$。"
+          },
+          {
+            "title": "(2) BC 与 BD",
+            "content": "$\\cos C = \\sqrt{1 - 4/9} = \\dfrac{\\sqrt 5}{3}$。\n\n从 $A$ 作 $BC$ 的垂线，垂足 $M$:\n- $BM = AB\\cos B = 4\\cdot \\dfrac{\\sqrt 3}{2} = 2\\sqrt 3$\n- $AM = AB\\sin B = 4\\cdot \\dfrac{1}{2} = 2$\n- $CM = \\sqrt{AC^2 - AM^2} = \\sqrt{9 - 4} = \\sqrt 5$\n\n$$BC = BM + MC = 2\\sqrt 3 + \\sqrt 5$$\n\n$\\fbox{G} = 2$，$\\fbox{H} = 3$，$\\fbox{I} = 5$。\n\n$D$ 在 $BC$ 上 $AD = AC = 3$，$\\triangle ACD$ 等腰，故 $M$ 为 $CD$ 的中点:\n$$CD = 2CM = 2\\sqrt 5$$\n$$BD = BC - CD = 2\\sqrt 3 - \\sqrt 5$$\n\n$\\fbox{J} = 2$，$\\fbox{K} = 3$，$\\fbox{L} = 5$。"
+          },
+          {
+            "title": "(2) BE 的长",
+            "content": "$E$ 是边 $AB$ 与圆 $O$ 的交点。由点 $B$ 的幂:\n$$BE\\cdot BA = BD\\cdot BC$$\n$$BE\\cdot 4 = (2\\sqrt 3 - \\sqrt 5)(2\\sqrt 3 + \\sqrt 5) = 12 - 5 = 7$$\n$$BE = \\dfrac{7}{4}$$\n\n$\\fbox{M} = 7$，$\\fbox{N} = 4$。"
+          },
+          {
+            "title": "(2) 面积比",
+            "content": "**$\\triangle BDE : \\triangle ADE$**:两三角形共 $DE$ 边，$E$ 在 $AB$ 上将 $\\triangle ABD$ 分成两部分:\n$$\\dfrac{\\triangle BDE}{\\triangle ADE} = \\dfrac{BE}{EA} = \\dfrac{7/4}{4 - 7/4} = \\dfrac{7/4}{9/4} = \\dfrac{7}{9}$$\n\n$\\fbox{O} = 7$，$\\fbox{P} = 9$。\n\n**$\\triangle BDE : \\triangle ACD$**:\n$$\\triangle BDE = \\dfrac{1}{2}\\cdot BE\\cdot BD\\cdot \\sin B = \\dfrac{1}{2}\\cdot \\dfrac{7}{4}\\cdot (2\\sqrt 3 - \\sqrt 5)\\cdot \\dfrac{1}{2} = \\dfrac{7(2\\sqrt 3 - \\sqrt 5)}{16}$$\n\n$\\triangle ACD$ 等腰，高 $AM = 2$，底 $CD = 2\\sqrt 5$:\n$$\\triangle ACD = \\dfrac{1}{2}\\cdot 2\\sqrt 5\\cdot 2 = 2\\sqrt 5$$\n\n$$\\triangle BDE : \\triangle ACD = \\dfrac{7(2\\sqrt 3 - \\sqrt 5)}{16} : 2\\sqrt 5 = 7(2\\sqrt 3 - \\sqrt 5) : 32\\sqrt 5$$\n\n$\\fbox{Q} = 7$，$\\fbox{RS} = 32$，$\\fbox{T} = 5$。"
+          }
+        ],
+        "finalAnswer": "A=1，B=2，C=2，D=3，E=9，F=4；G=2，H=3，I=5；J=2，K=3，L=5；M=7，N=4；O=7，P=9；Q=7，RS=32，T=5"
+      }
+    }
+  ]
+}
