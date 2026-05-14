@@ -1,0 +1,207 @@
+{
+  "metadata": {
+    "course": "course1",
+    "year": "2019",
+    "session": "1",
+    "courseNameJa": "数学1",
+    "courseNameEn": "Course 1 (Basic)",
+    "description": "基础课程｜文科方向",
+    "color": "#2563eb",
+    "examTitle": "2019年度（平成31年）第1回",
+    "examDate": "2019年6月"
+  },
+  "questions": [
+    {
+      "id": "c1-I-1",
+      "number": "I-1",
+      "topic": "二次函数图象与系数符号关系",
+      "topicTag": "二次函数",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "questionDiagram": {
+        "svg": "<svg viewBox=\"0 0 280 240\" style=\"width:100%;max-width:300px;display:block;margin:12px auto\"><line x1=\"30\" y1=\"160\" x2=\"260\" y2=\"160\" stroke=\"#1c1917\" stroke-width=\"1.3\"/><line x1=\"110\" y1=\"20\" x2=\"110\" y2=\"230\" stroke=\"#1c1917\" stroke-width=\"1.3\"/><text x=\"264\" y=\"164\" font-size=\"12\">x</text><text x=\"98\" y=\"18\" font-size=\"12\">y</text><text x=\"98\" y=\"175\" font-size=\"11\">O</text><line x1=\"60\" y1=\"157\" x2=\"60\" y2=\"163\" stroke=\"#1c1917\"/><text x=\"50\" y=\"178\" font-size=\"11\">−1</text><line x1=\"170\" y1=\"157\" x2=\"170\" y2=\"163\" stroke=\"#1c1917\"/><text x=\"166\" y=\"178\" font-size=\"11\">1</text><path d=\"M 50 230 Q 130 -80 200 230\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2\"/></svg>"
+      },
+      "japanese": "下文 $\\fbox{A} \\sim \\fbox{K}$ 从下面选项 ⓪～⑨ 中选择。\n\n(1) 图象如右图所示的二次函数\n$$y = ax^2 + bx + c$$\n\n此时,$a, b, c$ 满足下列关系：\n\n(i) $a\\ \\fbox{A}\\ 0$, $b\\ \\fbox{B}\\ 0$, $c\\ \\fbox{C}\\ 0$\n\n(ii) $a + b + c\\ \\fbox{D}\\ 0$\n\n(iii) $a - b + c\\ \\fbox{E}\\ 0$\n\n(iv) $4a + 2b + c\\ \\fbox{F}\\ 0$\n\n(v) $b^2 - 4ac\\ \\fbox{G}\\ 0$\n\n(2) $a, b, c$ 满足 (1) 的 (i), (ii) 时，求 $a^2 - 8b - 8c$ 取最小值的情形。\n\n此时 $a = \\fbox{H}$，用 $b$ 表示 $y = ax^2 + bx + c$：\n$$y = \\fbox{H}\\,x^2 + bx - b + \\fbox{I}$$\n\n$b$ 的范围为 $\\fbox{J} < b < \\fbox{K}$。\n\n选项：⓪ $0$ ① $1$ ② $2$ ③ $3$ ④ $4$ ⑤ $-2$ ⑥ $-4$ ⑦ $>$ ⑧ $=$ ⑨ $<$",
+      "solution": {
+        "translation": "(1) 图象开口向下 → a<0; 由图象通过 (1,0) → a+b+c=0; 由 c=f(0)>0; 由顶点在右半 → b>0; (-1,0) 不在曲线上 → f(-1)<0; 2 在外 → f(2)<0; 两实根 → 判别式>0。(2) 在 (i)(ii) 下令 c=-a-b, 代入 a²-8b-8c=a²+8a，配方在 a=-4 时取最小 -16。代回 c=4-b, 全式 y=-4x²+bx-b+4。b 范围由 c>0 (b<4) 及 b>0 (从 (i)) 得 0<b<4。",
+        "analysis": "图象给出系数符号；条件 (ii) f(1)=0 提供 c=-a-b 替换关键。最优化 a²-8b-8c 在 c=-a-b 下变为 a²+8a，独立于 b。",
+        "steps": [
+          {
+            "title": "(1) 从图象判断符号",
+            "content": "**(i)** 图象开口向下 → $a < 0 \\Rightarrow \\fbox{A} = ⑨$。\n图象 $c = f(0) > 0 \\Rightarrow \\fbox{C} = ⑦$。\n图象有两个不同实根, 顶点在 $x > 0$ 附近,$b > 0 \\Rightarrow \\fbox{B} = ⑦$。\n\n**(ii)** 图象通过 $(1, 0)$, $f(1) = a+b+c = 0 \\Rightarrow \\fbox{D} = ⑧$。\n\n**(iii)** 另一根 $r \\in (-1, 0)$, $x=-1$ 在根外, $f(-1) = a-b+c < 0 \\Rightarrow \\fbox{E} = ⑨$。\n\n**(iv)** $x = 2$ 远离根, $f(2) = 4a+2b+c < 0 \\Rightarrow \\fbox{F} = ⑨$。\n\n**(v)** 两个不同实根 → 判别式 $> 0 \\Rightarrow \\fbox{G} = ⑦$。"
+          },
+          {
+            "title": "(2) 最小化 a²-8b-8c",
+            "content": "由 (1)(ii): $a+b+c = 0 \\Rightarrow c = -a - b$。\n\n代入:\n$$a^2 - 8b - 8c = a^2 - 8b - 8(-a-b) = a^2 - 8b + 8a + 8b = a^2 + 8a$$\n\n$= (a+4)^2 - 16$。\n\n最小在 $a = -4$（满足 $a < 0$ ✓），最小值 $-16$。$\\fbox{H} = ⑥ (-4)$。"
+          },
+          {
+            "title": "(2) y 表达式与 b 范围",
+            "content": "$a = -4$，$c = -a - b = 4 - b$。\n\n$$y = -4x^2 + bx + (4 - b) = -4x^2 + bx - b + 4$$\n\n$\\fbox{I} = ④ (= 4)$。\n\n**b 的范围**（由 (1)(i) 决定）:\n- $b > 0$（由 $\\fbox{B} = ⑦$）\n- $c = 4 - b > 0$（由 $\\fbox{C} = ⑦$）→ $b < 4$\n\n故 $0 < b < 4$。$\\fbox{J} = ⓪$，$\\fbox{K} = ④$。"
+          }
+        ],
+        "finalAnswer": "A=⑨(<)，B=⑦(>)，C=⑦(>)，D=⑧(=)，E=⑨(<)，F=⑨(<)，G=⑦(>)；H=⑥(-4)，I=④(4)；J=⓪(0)，K=④(4)"
+      }
+    },
+    {
+      "id": "c1-I-2",
+      "number": "I-2",
+      "topic": "不均匀骰子的事件比较",
+      "topicTag": "概率",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "考虑投骰子 $X$ 的试行。骰子 $X$ 上 1 到 5 出目概率均等，6 出目概率是其它的 2 倍。\n\n(1) 投 $X$ 时，1 到 5 的每个目出现的概率为 $p$，则 6 的目概率为 $\\fbox{L}\\,p$。全事象概率为 $\\fbox{M}$，因此\n$$p = \\dfrac{\\fbox{N}}{\\fbox{O}}$$\n\n(2) 连续投 $X$ 2 次。设事件 $A$ = 「两次都是 1～5 之一」，事件 $B$ = 「至少一次是 6」。则\n$$P(A) = \\dfrac{\\fbox{PQ}}{\\fbox{RS}},\\quad P(B) = \\dfrac{\\fbox{TU}}{\\fbox{VW}}$$\n\n因此 $\\fbox{X}$，其中 $\\fbox{X}$ 从下面 ⓪～④ 中选择。\n\n⓪ $P(A)$ 比 $P(B)$ 低，差 $\\geq \\dfrac{1}{36}$\n\n① $P(A)$ 比 $P(B)$ 低，差 $< \\dfrac{1}{36}$\n\n② $P(A)$ 与 $P(B)$ 相同\n\n③ $P(A)$ 比 $P(B)$ 高，差 $\\geq \\dfrac{1}{36}$\n\n④ $P(A)$ 比 $P(B)$ 高，差 $< \\dfrac{1}{36}$\n\n(3) 连续投 $X$ 3 次。设事件 $C$ = 「三次都是 1～5 之一」，$D$ = 「至少一次是 6」。比较 $P(C)$ 与 $P(D)$ 得 $\\fbox{Y}$。\n\n⓪ $P(C) < P(D)$, $P(D) \\geq 2P(C)$\n\n① $P(C) < P(D)$, $P(D) < 2P(C)$\n\n② $P(C) = P(D)$\n\n③ $P(C) > P(D)$, $P(C) \\geq 2P(D)$\n\n④ $P(C) > P(D)$, $P(C) < 2P(D)$",
+      "solution": {
+        "translation": "5p+2p=7p=1, p=1/7。P(A)=(5p)²=25/49, P(B)=1-25/49=24/49。25/49 > 24/49, 差=1/49<1/36, 故选 ④。P(C)=(5/7)³=125/343, P(D)=218/343<2·125/343=250/343, 故选 ①。",
+        "analysis": "1-5 各概率 p, 6 概率 2p，总和 7p=1。事件 A、C 是「全部在 1-5」（独立事件之积）；B、D 是其反面（至少一次 6）。",
+        "steps": [
+          {
+            "title": "(1) 求 p",
+            "content": "$\\fbox{L} = 2$（6 概率为 $2p$）。\n\n总概率 $5p + 2p = 7p = 1$，$\\fbox{M} = 1$。\n\n$p = \\dfrac{1}{7}$，$\\fbox{N} = 1$，$\\fbox{O} = 7$。"
+          },
+          {
+            "title": "(2) P(A), P(B), 比较",
+            "content": "$P(\\text{1次都在 1-5}) = 5p = \\dfrac{5}{7}$。\n\n$P(A) = \\left(\\dfrac{5}{7}\\right)^2 = \\dfrac{25}{49}$。$\\fbox{PQ} = 25$，$\\fbox{RS} = 49$。\n\n$P(B) = 1 - P(A) = 1 - \\dfrac{25}{49} = \\dfrac{24}{49}$。$\\fbox{TU} = 24$，$\\fbox{VW} = 49$。\n\n比较:$P(A) - P(B) = \\dfrac{1}{49}$。$P(A) > P(B)$，差 $= \\dfrac{1}{49} < \\dfrac{1}{36}$。\n\n$\\fbox{X} = ④$。"
+          },
+          {
+            "title": "(3) P(C), P(D), 比较",
+            "content": "$P(C) = \\left(\\dfrac{5}{7}\\right)^3 = \\dfrac{125}{343}$。\n\n$P(D) = 1 - P(C) = \\dfrac{218}{343}$。\n\n$P(C) < P(D)$（$125 < 218$ ✓）。\n\n$2P(C) = \\dfrac{250}{343} > P(D) = \\dfrac{218}{343}$，故 $P(D) < 2P(C)$。\n\n$\\fbox{Y} = ①$。"
+          }
+        ],
+        "finalAnswer": "L=2，M=1，N=1，O=7；PQ=25，RS=49，TU=24，VW=49；X=④；Y=①"
+      }
+    },
+    {
+      "id": "c1-II-1",
+      "number": "II-1",
+      "topic": "无理数对的绝对值不等式整数解",
+      "topicTag": "无理数与不等式",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "设 $a = \\sqrt 5 + \\sqrt 3$，$b = \\sqrt 5 - \\sqrt 3$。求满足不等式\n$$2\\left|x - \\dfrac{a}{b}\\right| + x < 10$$\n\n的整数 $x$。\n\n(1) $\\dfrac{a}{b} = \\fbox{A} + \\sqrt{\\fbox{BC}}$。因此, 小于 $\\dfrac{a}{b}$ 的整数中最大的是 $\\fbox{D}$。\n\n(2) 下文 $\\fbox{F}, \\fbox{H}$ 从下面 ⓪～⑦ 中选择,$\\fbox{E}, \\fbox{G}$ 填入对应数值。\n\n$x$ 为整数时,不等式左边可不用绝对值表示如下:\n$$\\begin{cases} x \\leq \\fbox{E} \\text{ 则 } 2\\left|x - \\dfrac{a}{b}\\right| + x = \\fbox{F} \\\\ x \\geq \\fbox{G} \\text{ 则 } 2\\left|x - \\dfrac{a}{b}\\right| + x = \\fbox{H} \\end{cases}$$\n\n选项：⓪ $x - 6 - 2\\sqrt{10}$ ① $x + 8 + 2\\sqrt{15}$ ② $-x + 8 + 2\\sqrt{15}$ ③ $-x + 6 + 2\\sqrt{10}$ ④ $3x - 6 - 2\\sqrt{10}$ ⑤ $3x - 8 - 2\\sqrt{15}$ ⑥ $-3x + 8 + 2\\sqrt{15}$ ⑦ $-3x + 6 + 2\\sqrt{10}$\n\n(3) 满足不等式的整数 $x$ 是 $\\fbox{I}$ 以上 $\\fbox{J}$ 以下的整数。",
+      "solution": {
+        "translation": "a/b 有理化得 4+√15≈7.873。整数 x ≤ 7 时 x<a/b，绝对值=a/b-x，左边=-x+8+2√15。x≥8 时左边=3x-8-2√15。解 <10 各得 x>2√15-2≈5.75 与 x<6+2√15/3≈8.58。结合区间得整数 x∈{6,7,8}。",
+        "analysis": "用分段处理绝对值；a/b≈7.87 故分界点在整数 7 与 8 之间。",
+        "steps": [
+          {
+            "title": "(1) 有理化",
+            "content": "$\\dfrac{a}{b} = \\dfrac{(\\sqrt 5 + \\sqrt 3)^2}{(\\sqrt 5 - \\sqrt 3)(\\sqrt 5 + \\sqrt 3)} = \\dfrac{5 + 2\\sqrt{15} + 3}{2} = \\dfrac{8 + 2\\sqrt{15}}{2} = 4 + \\sqrt{15}$\n\n$\\fbox{A} = 4$，$\\fbox{BC} = 15$。\n\n$\\sqrt{15} \\approx 3.87$，故 $\\dfrac{a}{b} \\approx 7.87$。小于此的最大整数为 $7$。$\\fbox{D} = 7$。"
+          },
+          {
+            "title": "(2) 分段表达",
+            "content": "**$x \\leq 7$**:$x < \\dfrac{a}{b}$，$\\left|x - \\dfrac{a}{b}\\right| = \\dfrac{a}{b} - x = 4 + \\sqrt{15} - x$\n\n$2\\left|x - \\dfrac{a}{b}\\right| + x = 2(4 + \\sqrt{15} - x) + x = 8 + 2\\sqrt{15} - x = -x + 8 + 2\\sqrt{15}$\n\n→ 选项 ②。$\\fbox{E} = 7$，$\\fbox{F} = ②$。\n\n**$x \\geq 8$**:$x > \\dfrac{a}{b}$，$\\left|x - \\dfrac{a}{b}\\right| = x - 4 - \\sqrt{15}$\n\n$2\\left|x - \\dfrac{a}{b}\\right| + x = 2(x - 4 - \\sqrt{15}) + x = 3x - 8 - 2\\sqrt{15}$\n\n→ 选项 ⑤。$\\fbox{G} = 8$，$\\fbox{H} = ⑤$。"
+          },
+          {
+            "title": "(3) 求整数解",
+            "content": "**$x \\leq 7$**:$-x + 8 + 2\\sqrt{15} < 10 \\implies x > 2\\sqrt{15} - 2 \\approx 5.75$。\n\n整数 $x \\in \\{6, 7\\}$。\n\n**$x \\geq 8$**:$3x - 8 - 2\\sqrt{15} < 10 \\implies 3x < 18 + 2\\sqrt{15} \\implies x < 6 + \\dfrac{2\\sqrt{15}}{3} \\approx 8.58$。\n\n整数 $x = 8$。\n\n合计:$x \\in \\{6, 7, 8\\}$。$\\fbox{I} = 6$，$\\fbox{J} = 8$。"
+          }
+        ],
+        "finalAnswer": "A=4，BC=15，D=7；E=7，F=②，G=8,H=⑤；I=6，J=8"
+      }
+    },
+    {
+      "id": "c1-II-2",
+      "number": "II-2",
+      "topic": "两抛物线交点 y 坐标皆正的条件",
+      "topicTag": "二次函数",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "设 $a$ 为实数，考虑\n$$f(x) = x^2 + 2ax + a^2 - a,\\quad g(x) = 4 - x^2$$\n\n(1) 方程 $f(x) = g(x)$ 有两个不同解的 $a$ 范围:\n$$-\\fbox{K} < a < \\fbox{L} \\quad \\cdots ①$$\n\n(2) (1) 时,抛物线 $y = f(x)$ 与 $y = g(x)$ 交于 2 点。求这两交点 $y$ 坐标都为正的 $a$ 范围。\n\n设 $h(x) = f(x) - g(x)$。方程 $f(x) = g(x)$ 的解就是 $h(x) = 0$ 的解。要交点 $y$ 坐标为正（即 $g(x) > 0$），$x$ 在 $(-2, 2)$ 内。\n\n故 $h(x) = 0$ 的两解在 $-\\fbox{M}$ 与 $\\fbox{N}$ 之间。于是\n$$h(-\\fbox{M}) = a^2 - \\fbox{O}\\,a + \\fbox{P} > 0 \\quad \\cdots ②$$\n$$h(\\fbox{N}) = a^2 + \\fbox{Q}\\,a + \\fbox{R} > 0 \\quad \\cdots ③$$\n\n又由抛物线 $y = h(x)$ 的轴的位置\n$$-\\fbox{S} < a < \\fbox{T} \\quad \\cdots ④$$\n\n因此, 由 ①, ②, ③, ④:\n$$-\\fbox{U} < a < \\fbox{V}$$",
+      "solution": {
+        "translation": "h(x)=2x²+2ax+a²-a-4。两个不同解 ⇔ D=-4a²+8a+32>0 ⇔ -2<a<4。两交点 y>0 即 g(x)>0 ⇔ x∈(-2,2)，需 h(±2)>0 且顶点 -a/2 ∈ (-2,2)。h(-2)=a²-5a+4>0; h(2)=a²+3a+4>0 (恒成立); -4<a<4。结合 ①: -2<a<4, 且 a²-5a+4>0 即 a<1 或 a>4。交集 -2<a<1。",
+        "analysis": "两根都在区间 (α, β) 内的条件：(1) f(α)、f(β) 同号正 (开口向上时); (2) 顶点 x 坐标在区间内; (3) 判别式 ≥ 0。",
+        "steps": [
+          {
+            "title": "(1) 两不同解条件",
+            "content": "$f(x) = g(x) \\implies 2x^2 + 2ax + (a^2 - a - 4) = 0$\n\n判别式:$D = 4a^2 - 8(a^2 - a - 4) = -4a^2 + 8a + 32 > 0$\n\n$\\implies a^2 - 2a - 8 < 0 \\implies (a+2)(a-4) < 0 \\implies -2 < a < 4$\n\n$\\fbox{K} = 2$，$\\fbox{L} = 4$。"
+          },
+          {
+            "title": "(2) 两交点 y > 0 条件",
+            "content": "$g(x) > 0 \\iff 4 - x^2 > 0 \\iff -2 < x < 2$。\n\n$h(x) = 2x^2 + 2ax + (a^2 - a - 4)$。需两根都在 $(-2, 2)$。\n\n**条件 1**: $h(-2) > 0$:\n$h(-2) = 8 - 4a + a^2 - a - 4 = a^2 - 5a + 4 > 0$\n\n$\\fbox{M} = 2$，$\\fbox{O} = 5$，$\\fbox{P} = 4$。\n\n**条件 2**: $h(2) > 0$:\n$h(2) = 8 + 4a + a^2 - a - 4 = a^2 + 3a + 4 > 0$\n\n$\\fbox{N} = 2$，$\\fbox{Q} = 3$，$\\fbox{R} = 4$。"
+          },
+          {
+            "title": "(2) 顶点位置",
+            "content": "$h(x)$ 的轴 $x = -\\dfrac{a}{2}$。要 $-2 < -\\dfrac{a}{2} < 2 \\iff -4 < a < 4$。\n\n$\\fbox{S} = 4$，$\\fbox{T} = 4$。"
+          },
+          {
+            "title": "(2) 综合",
+            "content": "条件 ②: $a^2 - 5a + 4 > 0 \\iff (a-1)(a-4) > 0 \\iff a < 1 \\text{ 或 } a > 4$。\n\n条件 ③: $a^2 + 3a + 4 > 0$, 判别式 $= 9 - 16 < 0$, 恒成立。\n\n条件 ④: $-4 < a < 4$。\n\n条件 ①: $-2 < a < 4$。\n\n取交集:\n$$-2 < a < 4 \\text{ 且 } (a < 1 \\text{ 或 } a > 4) \\text{ 且 } -4 < a < 4$$\n\n$\\implies -2 < a < 1$。\n\n$\\fbox{U} = 2$，$\\fbox{V} = 1$。"
+          }
+        ],
+        "finalAnswer": "K=2，L=4；M=2，N=2，O=5，P=4，Q=3，R=4；S=4，T=4；U=2，V=1"
+      }
+    },
+    {
+      "id": "c1-III-1",
+      "number": "III",
+      "topic": "整数解线性丢番图与平方数",
+      "topicTag": "整数",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "设 $m, n$ 为正整数，考虑有理数\n$$r = \\dfrac{m}{3} + \\dfrac{n}{7}$$\n\n求 $r < \\sqrt 2$ 中, $r$ 最接近 $\\sqrt 2$ 的 $m, n$。\n\n不等式\n$$\\fbox{A}\\,m + \\fbox{B}\\,n < \\fbox{CD}\\sqrt 2 \\quad \\cdots ①$$\n\n中, 满足的 $m, n$ 中找使 $\\fbox{A}\\,m + \\fbox{B}\\,n$ 最接近 $\\fbox{CD}\\sqrt 2$ 的。\n\n① 两边平方:\n$$(\\fbox{A}\\,m + \\fbox{B}\\,n)^2 < \\fbox{EFG}$$\n\n小于 $\\fbox{EFG}$ 的最大平方数为 $\\fbox{HIJ} = \\fbox{KL}^2$。考虑方程\n$$\\fbox{A}\\,m + \\fbox{B}\\,n = \\fbox{KL}$$\n\n变形得\n$$n = \\dfrac{\\fbox{MN} - \\fbox{O}\\,m}{\\fbox{P}}$$\n\n$n$ 为整数, 故 $\\fbox{MN} - \\fbox{O}\\,m$ 是 $\\fbox{Q}$ 的倍数。因此\n$$m = \\fbox{R},\\quad n = \\fbox{S}$$",
+      "solution": {
+        "translation": "r=(7m+3n)/21<√2 → 7m+3n<21√2; 平方 (7m+3n)²<882; 小于 882 的最大平方数为 841=29²; 求 7m+3n=29 正整数解: n=(29-7m)/3, 需 3|29-7m i.e. m≡2 mod 3, 故 m=2, n=5。",
+        "analysis": "把 r<√2 化为整数 7m+3n<21√2，平方得整数不等式 (7m+3n)²<882。要 7m+3n 最大且为正整数，故等于 √882 之下最大平方根 29。线性丢番图方程仅 (m,n)=(2,5) 正解。",
+        "steps": [
+          {
+            "title": "化为整数不等式",
+            "content": "$r = \\dfrac{m}{3} + \\dfrac{n}{7} = \\dfrac{7m + 3n}{21}$\n\n$r < \\sqrt 2 \\iff 7m + 3n < 21\\sqrt 2$\n\n$\\fbox{A} = 7$，$\\fbox{B} = 3$，$\\fbox{CD} = 21$。\n\n平方:$(7m + 3n)^2 < 441 \\cdot 2 = 882$。$\\fbox{EFG} = 882$。"
+          },
+          {
+            "title": "找最大平方数",
+            "content": "$\\sqrt{882} \\approx 29.7$，故小于 $882$ 的最大完全平方数为 $29^2 = 841$。\n\n$\\fbox{HIJ} = 841$，$\\fbox{KL} = 29$。"
+          },
+          {
+            "title": "解 7m + 3n = 29",
+            "content": "$3n = 29 - 7m$，所以\n$$n = \\dfrac{29 - 7m}{3}$$\n\n$\\fbox{MN} = 29$，$\\fbox{O} = 7$，$\\fbox{P} = 3$。\n\n$n$ 为整数 $\\iff 3 \\mid 29 - 7m \\iff 7m \\equiv 29 \\equiv 2 \\pmod 3 \\iff m \\equiv 2 \\pmod 3$。\n\n$\\fbox{Q} = 3$。\n\n正整数 $m$:$m \\in \\{2, 5, 8, \\ldots\\}$。\n- $m=2$:$n = (29-14)/3 = 5$ ✓\n- $m=5$:$n = (29-35)/3 < 0$ ✗\n\n故 $m = 2$，$n = 5$。$\\fbox{R} = 2$，$\\fbox{S} = 5$。"
+          }
+        ],
+        "finalAnswer": "A=7，B=3，CD=21；EFG=882；HIJ=841，KL=29；MN=29，O=7，P=3，Q=3；R=2，S=5"
+      }
+    },
+    {
+      "id": "c1-IV-1",
+      "number": "IV",
+      "topic": "单位圆内接四边形的面积",
+      "topicTag": "平面几何",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "questionDiagram": {
+        "svg": "<svg viewBox=\"0 0 280 240\" style=\"width:100%;max-width:300px;display:block;margin:12px auto\"><circle cx=\"140\" cy=\"120\" r=\"100\" fill=\"none\" stroke=\"#1c1917\" stroke-width=\"1.3\"/><polygon points=\"160,25 50,90 215,180 230,150\" fill=\"none\" stroke=\"#1c1917\" stroke-width=\"1.5\" stroke-dasharray=\"0\"/><line x1=\"160\" y1=\"25\" x2=\"215\" y2=\"180\" stroke=\"#1c1917\" stroke-width=\"1.3\"/><line x1=\"50\" y1=\"90\" x2=\"230\" y2=\"150\" stroke=\"#1c1917\" stroke-width=\"1.3\"/><circle cx=\"160\" cy=\"25\" r=\"3\" fill=\"#1c1917\"/><text x=\"158\" y=\"18\" font-size=\"13\" font-weight=\"700\">A</text><circle cx=\"50\" cy=\"90\" r=\"3\" fill=\"#1c1917\"/><text x=\"36\" y=\"94\" font-size=\"13\" font-weight=\"700\">B</text><circle cx=\"230\" cy=\"150\" r=\"3\" fill=\"#1c1917\"/><text x=\"236\" y=\"150\" font-size=\"13\" font-weight=\"700\">D</text><circle cx=\"215\" cy=\"180\" r=\"3\" fill=\"#1c1917\"/><text x=\"222\" y=\"195\" font-size=\"13\" font-weight=\"700\">C</text><circle cx=\"125\" cy=\"112\" r=\"3\" fill=\"#dc2626\"/><text x=\"112\" y=\"110\" font-size=\"12\" font-weight=\"700\" fill=\"#dc2626\">E</text><text x=\"20\" y=\"232\" font-size=\"10\" fill=\"#57534e\">单位圆内接 ABCD: AB:AD=1:2, ∠BAD=120°, BE:ED=3:4</text></svg>"
+      },
+      "japanese": "半径 1 的圆内接四边形 $ABCD$ 满足 $AB : AD = 1 : 2$，$\\angle BAD = 120°$。对角线 $BD$ 与 $AC$ 的交点为 $E$，$BE : ED = 3 : 4$。求四边形 $ABCD$ 的面积。\n\n求 $\\triangle ABD$ 与 $\\triangle BCD$ 的面积。\n\n先求 $\\triangle ABD$:\n$$BD = \\sqrt{\\fbox{A}},\\quad AB = \\dfrac{\\sqrt{\\fbox{BC}}}{\\fbox{D}}$$\n\n因此\n$$\\triangle ABD = \\dfrac{\\fbox{E}\\sqrt{\\fbox{F}}}{\\fbox{GH}} \\quad \\cdots ①$$\n\n求 $\\triangle BCD$:\n$$\\triangle ABC : \\triangle ACD = \\fbox{I} : \\fbox{J}$$\n\n因此 $BC : CD = \\fbox{K} : \\fbox{L}$（最简整数比）。所以\n$$BC = \\dfrac{\\fbox{M}\\sqrt{\\fbox{NO}}}{\\fbox{P}}$$\n\n$$\\triangle BCD = \\dfrac{\\fbox{Q}\\sqrt{\\fbox{R}}}{\\fbox{ST}} \\quad \\cdots ②$$\n\n由 ① 与 ②, 四边形 $ABCD$ 的面积为 $\\dfrac{\\fbox{U}\\sqrt{\\fbox{V}}}{\\fbox{W}}$。",
+      "solution": {
+        "translation": "由内接圆条件 BD=2sin∠BAD·R=2sin120°=√3。AB:AD=1:2 设 AB=k, AD=2k，余弦定理 BD²=7k²=3 得 k=√21/7。△ABD=(1/2)k·2k·sin120°=k²√3/2=3√3/14。△ABC:△ACD=BE:ED=3:4 (共底 AC)，结合内接四边形面积公式得 BC:CD=3:2。△BCD 中 ∠BCD=60°，BC²+CD²-BC·CD=BD²=3，BC=3s, CD=2s 给 7s²=3, s=√21/7, BC=3√21/7。△BCD=(1/2)·3s·2s·sin60°=9√3/14。总和 12√3/14=6√3/7。",
+        "analysis": "圆内接四边形对角和互补；正弦定理给弦长公式 BD=2R·sin∠BAD；面积比 △ABC:△ACD = BE:ED (共边 AC)。",
+        "steps": [
+          {
+            "title": "求 BD",
+            "content": "$BD$ 是圆的弦，与圆心角 $\\angle BAD$ 的关系：\n$$BD = 2R\\sin\\angle BAD = 2 \\cdot 1 \\cdot \\sin 120° = \\sqrt 3$$\n\n$BD^2 = 3$，$\\fbox{A} = 3$。"
+          },
+          {
+            "title": "求 AB 与 △ABD",
+            "content": "设 $AB = k$，$AD = 2k$。余弦定理:\n$$BD^2 = k^2 + 4k^2 - 2 \\cdot k \\cdot 2k \\cdot \\cos 120° = 5k^2 + 2k^2 = 7k^2 = 3$$\n\n$k^2 = \\dfrac{3}{7}$，$k = \\dfrac{\\sqrt{21}}{7}$。$\\fbox{BC} = 21$，$\\fbox{D} = 7$。\n\n$$\\triangle ABD = \\dfrac{1}{2}\\cdot k\\cdot 2k\\cdot \\sin 120° = k^2\\cdot \\dfrac{\\sqrt 3}{2} = \\dfrac{3}{7}\\cdot \\dfrac{\\sqrt 3}{2} = \\dfrac{3\\sqrt 3}{14}$$\n\n$\\fbox{E} = 3$，$\\fbox{F} = 3$，$\\fbox{GH} = 14$。"
+          },
+          {
+            "title": "△ABC : △ACD 与 BC : CD",
+            "content": "$\\triangle ABC$ 与 $\\triangle ACD$ 共底 $AC$，$B$、$D$ 在 $AC$ 两侧，高之比 = $BE : ED = 3 : 4$。\n\n$\\fbox{I} = 3$，$\\fbox{J} = 4$。\n\n用面积公式（$\\sin\\angle ABC = \\sin\\angle ADC$, 对角和互补）:\n$$\\dfrac{\\triangle ABC}{\\triangle ACD} = \\dfrac{AB \\cdot BC}{AD \\cdot CD} = \\dfrac{1}{2}\\cdot\\dfrac{BC}{CD} = \\dfrac{3}{4}$$\n\n$\\implies \\dfrac{BC}{CD} = \\dfrac{3}{2}$。$\\fbox{K} = 3$，$\\fbox{L} = 2$。"
+          },
+          {
+            "title": "求 BC 与 △BCD",
+            "content": "设 $BC = 3s$，$CD = 2s$。$\\angle BCD = 180° - \\angle BAD = 60°$。\n\n余弦定理:\n$$BD^2 = BC^2 + CD^2 - 2BC\\cdot CD\\cos 60° = 9s^2 + 4s^2 - 6s^2 = 7s^2 = 3$$\n\n$s = \\dfrac{\\sqrt{21}}{7}$。$BC = 3s = \\dfrac{3\\sqrt{21}}{7}$。$\\fbox{M} = 3$，$\\fbox{NO} = 21$，$\\fbox{P} = 7$。\n\n$$\\triangle BCD = \\dfrac{1}{2}\\cdot 3s\\cdot 2s\\cdot \\sin 60° = 3s^2\\cdot \\dfrac{\\sqrt 3}{2} = \\dfrac{3\\cdot 3}{7}\\cdot \\dfrac{\\sqrt 3}{2} = \\dfrac{9\\sqrt 3}{14}$$\n\n$\\fbox{Q} = 9$，$\\fbox{R} = 3$，$\\fbox{ST} = 14$。"
+          },
+          {
+            "title": "四边形 ABCD 的面积",
+            "content": "$$ABCD = \\triangle ABD + \\triangle BCD = \\dfrac{3\\sqrt 3}{14} + \\dfrac{9\\sqrt 3}{14} = \\dfrac{12\\sqrt 3}{14} = \\dfrac{6\\sqrt 3}{7}$$\n\n$\\fbox{U} = 6$，$\\fbox{V} = 3$，$\\fbox{W} = 7$。"
+          }
+        ],
+        "finalAnswer": "A=3，BC=21，D=7；E=3，F=3，GH=14；I=3，J=4；K=3，L=2；M=3，NO=21，P=7；Q=9，R=3，ST=14；U=6，V=3，W=7"
+      }
+    }
+  ]
+}
