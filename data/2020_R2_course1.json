@@ -1,0 +1,208 @@
+{
+  "metadata": {
+    "course": "course1",
+    "year": "2020",
+    "session": "2",
+    "courseNameJa": "数学1",
+    "courseNameEn": "Course 1 (Basic)",
+    "description": "基础课程｜文科方向",
+    "color": "#2563eb",
+    "examTitle": "2020年度（令和2年）第2回",
+    "examDate": "2020年11月"
+  },
+  "questions": [
+    {
+      "id": "c1-I-1",
+      "number": "I-1",
+      "topic": "二次函数平移与水平直线截线段",
+      "topicTag": "二次函数",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "$a$ 为正常数。把二次函数 $y = \\dfrac{1}{4}x^2$ 的图象平行移动，使其与 $x$ 轴的交点为 $(-2a, 0)$ 和 $(4a, 0)$。考虑此抛物线 $y = f(x)$。\n\n(1) $f(x)$ 可表示为\n$$f(x) = \\dfrac{\\fbox{A}}{\\fbox{B}}\\left(x - \\fbox{C}\\,a\\right)\\left(x + \\fbox{D}\\,a\\right)$$\n\n(2) 在 $y = f(x)$ 中, $y$ 值 $\\leq 10a^2$ 的 $x$ 范围由不等式\n$$x^2 - \\fbox{E}\\,ax - \\fbox{FG}\\,a^2 \\leq 0$$\n\n解得 $-\\fbox{H}\\,a \\leq x \\leq \\fbox{I}\\,a$。\n\n(3) 直线 $y = 10a$ 与 $y = f(x)$ 图象截取的线段长为 $10$，则\n$$\\fbox{J}\\sqrt{\\fbox{K}\\,a^2 + \\fbox{LM}\\,a} = 10$$\n\n因此 $a = \\dfrac{\\fbox{N}}{\\fbox{O}}$。",
+      "solution": {
+        "translation": "平移后 f(x)=(1/4)(x-4a)(x+2a)。y≤10a² 化简为 (x-8a)(x+6a)≤0，即 -6a≤x≤8a。水平线 y=10a 与抛物线交点的 x 距离为 2√(9a²+40a)=10，解得 a=5/9。",
+        "analysis": "平移不改变二次项系数。两根 -2a, 4a 给出标准形式。",
+        "steps": [
+          {
+            "title": "(1) f(x) 表达式",
+            "content": "平移不改变二次项系数 $\\dfrac{1}{4}$。两根为 $-2a, 4a$:\n$$f(x) = \\dfrac{1}{4}(x - 4a)(x + 2a)$$\n\n$\\fbox{A}=1$，$\\fbox{B}=4$，$\\fbox{C}=4$，$\\fbox{D}=2$。"
+          },
+          {
+            "title": "(2) f(x) ≤ 10a²",
+            "content": "$(1/4)(x-4a)(x+2a) \\leq 10a^2$\n$\\implies (x-4a)(x+2a) \\leq 40a^2$\n$\\implies x^2 - 2ax - 8a^2 \\leq 40a^2$\n$\\implies x^2 - 2ax - 48a^2 \\leq 0$\n$\\implies (x - 8a)(x + 6a) \\leq 0$\n\n$-6a \\leq x \\leq 8a$。$\\fbox{E}=2$，$\\fbox{FG}=48$，$\\fbox{H}=6$，$\\fbox{I}=8$。"
+          },
+          {
+            "title": "(3) 直线 y=10a 截取线段长度",
+            "content": "$(1/4)(x-4a)(x+2a) = 10a \\implies x^2 - 2ax - 8a^2 - 40a = 0$\n\n两根之差 = $\\sqrt{(2a)^2 + 4(8a^2 + 40a)} = \\sqrt{36a^2 + 160a} = 2\\sqrt{9a^2 + 40a}$\n\n$2\\sqrt{9a^2 + 40a} = 10 \\implies 9a^2 + 40a = 25 \\implies 9a^2 + 40a - 25 = 0$\n\n$\\fbox{J}=2$，$\\fbox{K}=9$，$\\fbox{LM}=40$。\n\n$a = \\dfrac{-40 \\pm 50}{18}$，取正:$a = \\dfrac{10}{18} = \\dfrac{5}{9}$。\n\n$\\fbox{N}=5$，$\\fbox{O}=9$。"
+          }
+        ],
+        "finalAnswer": "A=1，B=4，C=4，D=2；E=2，FG=48；H=6，I=8；J=2，K=9，LM=40；N=5，O=9"
+      }
+    },
+    {
+      "id": "c1-I-2",
+      "number": "I-2",
+      "topic": "10 阶台阶的上法（1 步或 2 步）",
+      "topicTag": "组合计数",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "有 10 级台阶。每步上 1 级（1 段上）或 2 级（2 段上），且必须至少有 1 次 2 段上。\n\n(1) **2 段上可连续**:\n\n(i) 例如 2 段上 3 次时, 1 段上 $\\fbox{P}$ 次, 上法共 $\\fbox{QR}$ 通。\n\n(ii) 2 段上可连续时, 上法共 $\\fbox{ST}$ 通。\n\n(2) **2 段上不连续**:\n\n(i) 例如 2 段上 2 次时, 1 段上 $\\fbox{U}$ 次, 上法共 $\\fbox{VW}$ 通。\n\n(ii) 2 段上不连续时, 上法共 $\\fbox{XY}$ 通。",
+      "solution": {
+        "translation": "k 次 2-段上、(10-2k) 次 1-段上。可连续：排列数 C(10-k, k)。不连续：用插空法 C(11-2k, k)。",
+        "analysis": "可连续：从 (10-k) 个总步中选 k 个为 2-段上 → C(10-k, k)。不连续：先排 (10-2k) 个 1-段上，在 (11-2k) 个间隔中选 k 个插入 2-段上 → C(11-2k, k)。",
+        "steps": [
+          {
+            "title": "(1)(i) 2-段 3 次",
+            "content": "$2 \\cdot 3 + 1 \\cdot k = 10 \\implies k = 4$。$\\fbox{P} = 4$。\n\n3 个 2-段 + 4 个 1-段 = 7 个步，排列数 $\\binom{7}{3} = 35$。$\\fbox{QR} = 35$。"
+          },
+          {
+            "title": "(1)(ii) 可连续：所有 k 的总和",
+            "content": "k = 2-段次数，$1 \\leq k \\leq 5$（且 $10 - 2k \\geq 0$）。\n\n排列数 = $\\binom{10-k}{k}$:\n- k=1: $\\binom{9}{1}=9$\n- k=2: $\\binom{8}{2}=28$\n- k=3: $\\binom{7}{3}=35$\n- k=4: $\\binom{6}{4}=15$\n- k=5: $\\binom{5}{5}=1$\n\n合计 $9+28+35+15+1 = 88$。$\\fbox{ST} = 88$。"
+          },
+          {
+            "title": "(2)(i) 不连续，2-段 2 次",
+            "content": "$2 \\cdot 2 + k = 10 \\implies k = 6$。$\\fbox{U} = 6$。\n\n6 个 1-段先排，留 7 个间隔（含两端），选 2 个放 2-段:\n$$\\binom{7}{2} = 21$$\n\n$\\fbox{VW} = 21$。"
+          },
+          {
+            "title": "(2)(ii) 不连续：所有 k 的总和",
+            "content": "用插空法,$\\binom{11-2k}{k}$:\n- k=1: $\\binom{9}{1}=9$\n- k=2: $\\binom{7}{2}=21$\n- k=3: $\\binom{5}{3}=10$\n- k=4: $\\binom{3}{4}=0$\n- k=5: $\\binom{1}{5}=0$\n\n合计 $9+21+10 = 40$。$\\fbox{XY} = 40$。"
+          }
+        ],
+        "finalAnswer": "P=4，QR=35；ST=88；U=6，VW=21；XY=40"
+      }
+    },
+    {
+      "id": "c1-II-1",
+      "number": "II-1",
+      "topic": "(m+n√2)³ 的整数与小数部分",
+      "topicTag": "无理数",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "$m, n$ 满足 $0 < m - n\\sqrt 2 < 1$ 的正整数。$(m + n\\sqrt 2)^3$ 的整数部分为 $a$，小数部分为 $b$。\n\n(1) 证明 $a$ 是奇数，且 $(m - n\\sqrt 2)^3 = 1 - b$。\n\n设 $p, q$ 为整数，$(m + n\\sqrt 2)^3 = p + q\\sqrt 2$ 时:\n$$p = m^3 + \\fbox{A}\\,mn^2,\\quad q = \\fbox{B}\\,m^2n + \\fbox{C}\\,n^3$$\n\n而 $(m - n\\sqrt 2)^3 = p - q\\sqrt 2$。$(m - n\\sqrt 2)^3$ 的整数部分为 $\\fbox{D}$。设小数部分为 $c$。则两式\n$$\\begin{cases} p + q\\sqrt 2 = a + b \\\\ p - q\\sqrt 2 = c \\end{cases}$$\n\n成立。由此\n$$\\fbox{E}\\,p - a = b + c$$\n\n左边是整数，右边 $\\fbox{F} < b + c < \\fbox{G}$。所以 $b + c = \\fbox{H}$。\n\n因此 $a = \\fbox{E}\\,p - \\fbox{H}$，$a$ 为奇数，且 $(m - n\\sqrt 2)^3 = 1 - b$ 成立。\n\n(2) $a = 197$ 时，求 $m, n$。\n\n$a = 197$ 时 $p = \\fbox{IJ}$，即 $m^3 + \\fbox{A}\\,mn^2 = \\fbox{IJ}$。满足的正整数 $m, n$ 为\n$$m = \\fbox{K},\\quad n = \\fbox{L}$$",
+      "solution": {
+        "translation": "(m±n√2)³ 通过二项式展开。p+q√2 + p-q√2 = 2p = (a+b)+c，故 b+c = 2p-a 整数。b,c 都在 (0,1)，b+c 在 (0,2)，故 b+c=1。a=2p-1 奇数。p=99, m(m²+6n²)=99 → m=3, n=2。",
+        "analysis": "共轭对 (m+n√2)³ 与 (m-n√2)³ 相加消去 √2，得整数关系；范围限制确定 b+c=1。",
+        "steps": [
+          {
+            "title": "(1) 展开 (m+n√2)³",
+            "content": "$(m+n\\sqrt 2)^3 = m^3 + 3m^2(n\\sqrt 2) + 3m(n\\sqrt 2)^2 + (n\\sqrt 2)^3$\n\n$= m^3 + 3m^2 n\\sqrt 2 + 6mn^2 + 2n^3 \\sqrt 2$\n\n$= (m^3 + 6mn^2) + (3m^2 n + 2n^3)\\sqrt 2$\n\n$\\fbox{A}=6$，$\\fbox{B}=3$，$\\fbox{C}=2$。\n\n$(m - n\\sqrt 2)^3 = p - q\\sqrt 2$（共轭）。"
+          },
+          {
+            "title": "(1) (m-n√2)³ 的整数部分",
+            "content": "$0 < m - n\\sqrt 2 < 1 \\implies 0 < (m-n\\sqrt 2)^3 < 1$\n\n整数部分为 $0$。$\\fbox{D} = 0$。"
+          },
+          {
+            "title": "(1) 推出 b + c = 1",
+            "content": "$p + q\\sqrt 2 = a + b$，$p - q\\sqrt 2 = c$。相加:\n$$2p = a + b + c \\implies 2p - a = b + c$$\n\n$\\fbox{E} = 2$。\n\n$b \\in [0, 1)$，$c \\in (0, 1)$，故 $b + c \\in (0, 2)$。$\\fbox{F}=0$，$\\fbox{G}=2$。\n\n左边 $2p - a$ 是整数，右边在 $(0, 2)$ 内的唯一整数是 $1$。\n\n$b + c = 1$，$\\fbox{H} = 1$。\n\n$a = 2p - 1$（奇数 ✓），$c = 1 - b$，即 $(m-n\\sqrt 2)^3 = 1 - b$ ✓。"
+          },
+          {
+            "title": "(2) 求 m, n",
+            "content": "$a = 197 \\implies 2p - 1 = 197 \\implies p = 99$。$\\fbox{IJ} = 99$。\n\n$m^3 + 6mn^2 = m(m^2 + 6n^2) = 99 = 3 \\times 3 \\times 11$\n\n$m \\mid 99$ 且 $m^2 \\leq 99$，故 $m \\in \\{1, 3, 9\\}$:\n- $m=1$: $1 + 6n^2 = 99 \\implies n^2 = \\frac{98}{6}$, 非整数 ✗\n- $m=3$: $9 + 6n^2 = 33 \\implies n^2 = 4 \\implies n = 2$ ✓\n- $m=9$: $81 + 6n^2 = 11$, 矛盾 ✗\n\n验证 $0 < 3 - 2\\sqrt 2 \\approx 0.17 < 1$ ✓。\n\n$\\fbox{K} = 3$，$\\fbox{L} = 2$。"
+          }
+        ],
+        "finalAnswer": "A=6，B=3，C=2；D=0；E=2，F=0，G=2，H=1；IJ=99；K=3，L=2"
+      }
+    },
+    {
+      "id": "c1-II-2",
+      "number": "II-2",
+      "topic": "|x²-2x| 在 [a, a+1] 上最大值",
+      "topicTag": "绝对值与最值",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "设 $a \\geq 0$。考虑函数 $f(x) = |x^2 - 2x|$ 在 $a \\leq x \\leq a+1$ 上的最大值 $M$，用 $a$ 表示。又求 $a \\geq 0$ 时 $M$ 的最小值。\n\n(1) 去绝对值表示 $f(x)$:\n$$\\begin{cases} x \\leq \\fbox{M} \\text{ 或 } x \\geq \\fbox{N}: f(x) = x^2 - 2x \\\\ \\fbox{M} < x < \\fbox{N}: f(x) = -x^2 + 2x \\end{cases}$$\n\n因此, $f(x)$ 在 $a \\leq x \\leq a+1$ 上的最大值:\n\n$0 \\leq a \\leq \\fbox{O}$: $M = \\fbox{P}$\n\n$\\fbox{O} < a \\leq \\dfrac{\\fbox{Q} + \\sqrt{\\fbox{R}}}{\\fbox{S}}$: $M = -a^2 + \\fbox{T}\\,a$\n\n$a > \\dfrac{\\fbox{Q} + \\sqrt{\\fbox{R}}}{\\fbox{S}}$: $M = a^2 - \\fbox{U}$\n\n(2) $a \\geq 0$ 时, $M$ 的最小值 $= \\dfrac{\\sqrt{\\fbox{V}}}{\\fbox{W}}$。",
+      "solution": {
+        "translation": "f(x)=|x(x-2)|, 分段在 0 和 2。区间 [a, a+1] 长 1。0≤a≤1 时顶点 x=1 在区间内, max=f(1)=1。1<a 时分两情况比较 f(a)=-a²+2a 与 f(a+1)=a²-1, 分界点 2a²-2a-1=0 即 a=(1+√3)/2。min M 在分界点 = √3/2。",
+        "analysis": "|x²-2x| 是「W 形」函数：在 [0,2] 上是上抛物线 max=1, 外侧是上抛物线递增。",
+        "steps": [
+          {
+            "title": "(1) f 的分段",
+            "content": "$f(x) = |x(x-2)| = \\begin{cases} x^2 - 2x & x \\leq 0 \\text{ 或 } x \\geq 2 \\\\ -x^2 + 2x & 0 < x < 2 \\end{cases}$\n\n$\\fbox{M} = 0$，$\\fbox{N} = 2$。"
+          },
+          {
+            "title": "(1) 区间 [a, a+1] 上的最大值",
+            "content": "**$0 \\leq a \\leq 1$**: 区间在 $[0, 2]$ 内，顶点 $x = 1$ 在区间内，最大 $f(1) = 1$。$\\fbox{O} = 1$，$\\fbox{P} = 1$。\n\n**$1 < a \\leq \\dfrac{1+\\sqrt 3}{2}$**: 区间 $[a, 2] \\cup [2, a+1]$。比较\n$f(a) = -a^2 + 2a$ 与 $f(a+1) = (a+1)^2 - 2(a+1) = a^2 - 1$。\n\n$f(a+1) - f(a) = 2a^2 - 2a - 1$, $= 0$ 时 $a = \\dfrac{1+\\sqrt 3}{2}$。\n\n此区间 $f(a) > f(a+1)$，最大 $= -a^2 + 2a$。$\\fbox{Q}=1$，$\\fbox{R}=3$，$\\fbox{S}=2$，$\\fbox{T}=2$。\n\n**$a > \\dfrac{1+\\sqrt 3}{2}$**: $f(a+1) > f(a)$，最大 $= f(a+1) = a^2 - 1$。$\\fbox{U} = 1$。"
+          },
+          {
+            "title": "(2) M 的最小值",
+            "content": "- 在 $[0, 1]$ 上 $M = 1$ 恒定。\n- 在 $(1, (1+\\sqrt 3)/2]$ 上 $M = -a^2 + 2a$ 递减。\n- 在 $a > (1+\\sqrt 3)/2$ 上 $M = a^2 - 1$ 递增。\n\n最小值在分界点 $a = \\dfrac{1+\\sqrt 3}{2}$ 取得:\n$$M = -\\left(\\dfrac{1+\\sqrt 3}{2}\\right)^2 + 2 \\cdot \\dfrac{1+\\sqrt 3}{2} = -\\dfrac{4+2\\sqrt 3}{4} + 1+\\sqrt 3 = -1 - \\dfrac{\\sqrt 3}{2} + 1 + \\sqrt 3 = \\dfrac{\\sqrt 3}{2}$$\n\n$\\fbox{V} = 3$，$\\fbox{W} = 2$。"
+          }
+        ],
+        "finalAnswer": "M=0，N=2；O=1，P=1，Q=1，R=3，S=2,T=2,U=1；V=3，W=2"
+      }
+    },
+    {
+      "id": "c1-III-1",
+      "number": "III",
+      "topic": "线性丢番图方程 14a+9b=147",
+      "topicTag": "整数",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "考虑等式\n$$14a + 9b = 147 \\quad \\cdots ①$$\n\n的整数 $a, b$。\n\n(1) 求满足 ① 的正整数 $a, b$。\n\n$14a = \\fbox{A}(\\fbox{BC} - \\fbox{D}\\,b)$，$9b = \\fbox{E}(\\fbox{FG} - \\fbox{H}\\,a)$\n\n所以 $a$ 是 $\\fbox{A}$ 的倍数，$b$ 是 $\\fbox{E}$ 的倍数。设 $a = \\fbox{A}\\,m$, $b = \\fbox{E}\\,n$，由 ① 得\n$$\\fbox{I}\\,m + \\fbox{J}\\,n = \\fbox{K}$$\n\n满足此式的正整数 $m, n$ 为\n$$m = \\fbox{L},\\quad n = \\fbox{M}$$\n\n因此\n$$a = \\fbox{N},\\quad b = \\fbox{O}$$\n\n(2) 求满足 $0 < a + b < 5$ 的解。\n\n$14 \\times \\fbox{N} + 9 \\times \\fbox{O} = 147$，由此式与 ①\n$$14(a - \\fbox{N}) = 9(\\fbox{O} - b)$$\n\n而 $14$ 与 $9$ 互素，故用整数 $k$ 表示\n$$a = \\fbox{P}\\,k + \\fbox{Q},\\quad b = -\\fbox{RS}\\,k + \\fbox{T}$$\n\n$0 < a + b < 5$ 满足时 $k = \\fbox{U}$，即\n$$a = \\fbox{VW},\\quad b = \\fbox{XY}$$",
+      "solution": {
+        "translation": "14a=3(49-3b), 9b=7(21-2a)。a 是 3 的倍数, b 是 7 的倍数。代入 a=3m, b=7n 得 2m+3n=7。正整数解 (m,n)=(2,1)，所以 (a,b)=(6,7)。一般解 a=9k+6, b=-14k+7。0<a+b=-5k+13<5 → 1.6<k<2.6 → k=2 → (a,b)=(24,-21)。",
+        "analysis": "因为 gcd(14,9)=1，方程总有整数解。先找一个正整数特解，再得通解。",
+        "steps": [
+          {
+            "title": "(1) 整除条件",
+            "content": "$14a = 147 - 9b = 3(49 - 3b)$。$\\fbox{A}=3$，$\\fbox{BC}=49$，$\\fbox{D}=3$。\n\n$\\gcd(14, 3) = 1 \\implies 3 \\mid a$。\n\n$9b = 147 - 14a = 7(21 - 2a)$。$\\fbox{E}=7$，$\\fbox{FG}=21$，$\\fbox{H}=2$。\n\n$\\gcd(9, 7) = 1 \\implies 7 \\mid b$。"
+          },
+          {
+            "title": "(1) 求正整数解",
+            "content": "设 $a = 3m$，$b = 7n$。代入 ①:\n$$14 \\cdot 3m + 9 \\cdot 7n = 147 \\implies 42m + 63n = 147$$\n\n除以 $21$:$2m + 3n = 7$。$\\fbox{I}=2$，$\\fbox{J}=3$，$\\fbox{K}=7$。\n\n正整数解:\n- $n=1$:$2m = 4 \\implies m = 2$ ✓\n- $n=2$:$2m = 1$, 非整数 ✗\n\n$m = 2$，$n = 1$。$\\fbox{L}=2$，$\\fbox{M}=1$。\n\n$a = 6$，$b = 7$。$\\fbox{N}=6$，$\\fbox{O}=7$。"
+          },
+          {
+            "title": "(2) 通解",
+            "content": "由 $14(a - 6) = 9(7 - b)$ 与 $\\gcd(14, 9) = 1$:\n$$9 \\mid (a - 6) \\implies a - 6 = 9k \\implies a = 9k + 6$$\n\n代回得 $14 \\cdot 9k = 9(7 - b) \\implies b = 7 - 14k$。\n\n$\\fbox{P}=9$，$\\fbox{Q}=6$，$\\fbox{RS}=14$，$\\fbox{T}=7$。"
+          },
+          {
+            "title": "(2) 找 0 < a+b < 5 的解",
+            "content": "$a + b = (9k+6) + (-14k+7) = -5k + 13$。\n\n$0 < -5k + 13 < 5 \\implies \\dfrac{8}{5} < k < \\dfrac{13}{5} \\implies k = 2$。\n\n$\\fbox{U} = 2$。\n\n$a = 9 \\cdot 2 + 6 = 24$。$\\fbox{VW} = 24$。\n\n$b = -14 \\cdot 2 + 7 = -21$。$\\fbox{XY} = -21$。\n\n验证:$14 \\cdot 24 + 9 \\cdot (-21) = 336 - 189 = 147$ ✓，$a+b = 3 \\in (0, 5)$ ✓。"
+          }
+        ],
+        "finalAnswer": "A=3，BC=49，D=3；E=7，FG=21，H=2；I=2，J=3，K=7；L=2，M=1；N=6，O=7；P=9，Q=6，RS=14，T=7；U=2；VW=24，XY=-21"
+      }
+    },
+    {
+      "id": "c1-IV-1",
+      "number": "IV",
+      "topic": "三角形外接圆与对面点的距离",
+      "topicTag": "平面几何",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "questionDiagram": {
+        "svg": "<svg viewBox=\"0 0 300 280\" style=\"width:100%;max-width:320px;display:block;margin:12px auto\"><circle cx=\"150\" cy=\"130\" r=\"100\" fill=\"none\" stroke=\"#1c1917\" stroke-width=\"1.3\"/><polygon points=\"190,40 70,130 230,170\" fill=\"none\" stroke=\"#1c1917\" stroke-width=\"1.5\"/><circle cx=\"190\" cy=\"40\" r=\"3.5\" fill=\"#1c1917\"/><text x=\"185\" y=\"30\" font-size=\"13\" font-weight=\"700\">A</text><circle cx=\"70\" cy=\"130\" r=\"3.5\" fill=\"#1c1917\"/><text x=\"54\" y=\"134\" font-size=\"13\" font-weight=\"700\">B</text><circle cx=\"230\" cy=\"170\" r=\"3.5\" fill=\"#1c1917\"/><text x=\"236\" y=\"172\" font-size=\"13\" font-weight=\"700\">C</text><circle cx=\"105\" cy=\"225\" r=\"3.5\" fill=\"#dc2626\"/><text x=\"96\" y=\"244\" font-size=\"13\" font-weight=\"700\" fill=\"#dc2626\">D</text><line x1=\"190\" y1=\"40\" x2=\"105\" y2=\"225\" stroke=\"#1c1917\" stroke-width=\"1\"/><line x1=\"230\" y1=\"170\" x2=\"105\" y2=\"225\" stroke=\"#1c1917\" stroke-width=\"1\"/><text x=\"22\" y=\"268\" font-size=\"10\" fill=\"#57534e\">AB=2, BC=3, CA=4; D 在 AC 关于 B 的对侧</text></svg>"
+      },
+      "japanese": "三角形 $ABC$ 的三边长 $AB = 2$，$BC = 3$，$CA = 4$。考虑其外接圆。\n\n(1) $\\cos\\angle ABC = \\dfrac{\\fbox{AB}}{\\fbox{C}}$（注: AB 在此为单个 2 位答案框）。\n\n(2) 设点 $D$ 在外接圆上, 在线段 $AC$ 关于 $B$ 的对侧, 满足\n$$\\dfrac{\\triangle ABD}{\\triangle BCD} = \\dfrac{8}{15} \\quad \\cdots ①$$\n\n求 $AD, CD$。\n\n$\\angle BAD = \\fbox{DEF}° - \\angle BCD$，故 $\\sin\\angle BAD = \\sin\\angle BCD$。由 ①\n$$\\dfrac{AD}{CD} = \\dfrac{\\fbox{G}}{\\fbox{H}}$$\n\n用正数 $k$ 设 $AD = \\fbox{G}\\,k$，$CD = \\fbox{H}\\,k$。\n\n又 $\\angle ADC = \\fbox{IJK}° - \\angle ABC$，故 $\\cos\\angle ADC = \\dfrac{\\fbox{L}}{\\fbox{M}}$。由此 $k^2 = \\dfrac{\\fbox{N}}{\\fbox{OP}}$。\n\n因此\n$$AD = \\dfrac{\\fbox{QR}\\sqrt{\\fbox{OP}}}{\\fbox{OP}},\\quad CD = \\dfrac{\\fbox{ST}\\sqrt{\\fbox{OP}}}{\\fbox{OP}}$$\n\n(3) 直线 $DA$ 与直线 $CB$ 的交点为 $E$，则\n$$\\dfrac{\\triangle ABE}{\\triangle CDE} = \\dfrac{\\fbox{UV}}{\\fbox{WXY}}$$",
+      "solution": {
+        "translation": "余弦定理 cos∠ABC=-1/4。内接四边形对角互补: ∠BAD+∠BCD=180°, 故 sin相等。面积比 AD·AB:CD·BC=8:15 给 AD:CD=4:5。设 AD=4k, CD=5k。在 △ACD 中 cos∠ADC=-cos∠ABC=1/4, 余弦定理: 16=41k²-10k²=31k², k²=16/31。AD=16√31/31, CD=20√31/31。E 为 DA、CB 交点，△ABE~△DCE，比 AB:DC=2:(20/√31)=√31/10，面积比 31/100。",
+        "analysis": "圆内接四边形 ABCD（按顺序）对角互补；面积比 = 边比的乘积（含 sin）。E 是对边延长交点，相似三角形 EAB~EDC。",
+        "steps": [
+          {
+            "title": "(1) cos∠ABC",
+            "content": "余弦定理:\n$$\\cos\\angle ABC = \\dfrac{AB^2 + BC^2 - CA^2}{2 \\cdot AB \\cdot BC} = \\dfrac{4 + 9 - 16}{12} = -\\dfrac{1}{4}$$\n\n$\\fbox{AB} = -1$，$\\fbox{C} = 4$。"
+          },
+          {
+            "title": "(2) AD:CD 的比",
+            "content": "$D$ 在外接圆且与 $B$ 在 $AC$ 异侧，故 $ABDC$ 是圆内接四边形（按顺序 $A, B, C, D$）。对角互补:\n\n$\\angle BAD + \\angle BCD = 180°$，故 $\\angle BAD = 180° - \\angle BCD$。$\\fbox{DEF} = 180$。\n\n$\\sin\\angle BAD = \\sin\\angle BCD$。\n\n面积比:\n$$\\dfrac{\\triangle ABD}{\\triangle BCD} = \\dfrac{(1/2)\\cdot AB\\cdot AD\\cdot \\sin\\angle BAD}{(1/2)\\cdot BC\\cdot CD\\cdot \\sin\\angle BCD} = \\dfrac{AB\\cdot AD}{BC\\cdot CD} = \\dfrac{2AD}{3CD} = \\dfrac{8}{15}$$\n\n$\\implies \\dfrac{AD}{CD} = \\dfrac{4}{5}$。$\\fbox{G}=4$，$\\fbox{H}=5$。\n\n设 $AD = 4k$，$CD = 5k$。"
+          },
+          {
+            "title": "(2) 求 k²",
+            "content": "$\\angle ADC = 180° - \\angle ABC$。$\\fbox{IJK} = 180$。\n\n$\\cos\\angle ADC = -\\cos\\angle ABC = \\dfrac{1}{4}$。$\\fbox{L} = 1$，$\\fbox{M} = 4$。\n\n△ACD 中余弦定理:\n$$AC^2 = AD^2 + CD^2 - 2 AD\\cdot CD\\cdot \\cos\\angle ADC$$\n$$16 = 16k^2 + 25k^2 - 2\\cdot 4k\\cdot 5k\\cdot \\dfrac{1}{4} = 41k^2 - 10k^2 = 31k^2$$\n\n$k^2 = \\dfrac{16}{31}$。$\\fbox{N} = 16$，$\\fbox{OP} = 31$。\n\n$k = \\dfrac{4}{\\sqrt{31}} = \\dfrac{4\\sqrt{31}}{31}$。\n\n$AD = 4k = \\dfrac{16\\sqrt{31}}{31}$，$CD = 5k = \\dfrac{20\\sqrt{31}}{31}$。\n\n$\\fbox{QR} = 16$，$\\fbox{ST} = 20$。"
+          },
+          {
+            "title": "(3) △ABE / △CDE",
+            "content": "$E$ = 直线 $DA \\cap$ 直线 $CB$（外角的交点）。在圆内接四边形中,$\\triangle EAB \\sim \\triangle EDC$（用外角等于对内角的性质）。\n\n相似比 = $\\dfrac{AB}{DC} = \\dfrac{2}{20\\sqrt{31}/31} = \\dfrac{62}{20\\sqrt{31}} = \\dfrac{\\sqrt{31}}{10}$。\n\n面积比 = (相似比)² $= \\dfrac{31}{100}$。\n\n$\\fbox{UV} = 31$，$\\fbox{WXY} = 100$。"
+          }
+        ],
+        "finalAnswer": "AB=-1，C=4；DEF=180；G=4，H=5；IJK=180，L=1，M=4；N=16，OP=31；QR=16，ST=20；UV=31，WXY=100"
+      }
+    }
+  ]
+}
