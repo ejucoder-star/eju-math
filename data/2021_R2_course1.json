@@ -1,0 +1,200 @@
+{
+  "metadata": {
+    "course": "course1",
+    "year": "2021",
+    "session": "2",
+    "courseNameJa": "数学1",
+    "courseNameEn": "Course 1 (Basic)",
+    "description": "基础课程｜文科方向",
+    "color": "#2563eb",
+    "examTitle": "2021年度（令和3年）第2回",
+    "examDate": "2021年11月"
+  },
+  "questions": [
+    {
+      "id": "c1-I-1",
+      "number": "I-1",
+      "topic": "区间上含参二次函数最大值为 2",
+      "topicTag": "二次函数",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "$a$ 为实数，考虑二次函数\n$$f(x) = -2x^2 + 4(a+1)x - a^2 - 5a$$\n\n求在 $1 \\leq x \\leq 4$ 上最大值等于 $2$ 的 $f$。\n\n$y = f(x)$ 的图象的顶点坐标为\n$$\\left(a + \\fbox{A},\\ a^2 - a + \\fbox{B}\\right)$$\n\n按 $y = f(x)$ 的图象的轴位置分情形:\n\n(i) $a \\leq \\fbox{C}$ 时，所求函数为\n$$f(x) = -2x^2 + \\fbox{D}\\,x,\\quad f(x) = -2x^2 + \\fbox{E}$$\n\n(ii) $\\fbox{C} < a \\leq \\fbox{F}$ 时，所求函数为\n$$f(x) = -2x^2 + \\fbox{G}\\,x - \\fbox{H}$$\n\n(iii) $a > \\fbox{F}$ 时，所求函数为\n$$f(x) = -2x^2 + \\fbox{IJ}\\,x - \\fbox{KLM}$$",
+      "solution": {
+        "translation": "配方 f(x)=-2(x-(a+1))²+a²-a+2，顶点 (a+1, a²-a+2)。三种情况：(i)顶点≤1 (a≤0)，最大在 x=1：-a²-a+2=2 → a=0 或 -1。(ii)顶点∈[1,4] (0<a≤3)，最大=顶点 y=a²-a+2=2 → a=1。(iii)顶点>4 (a>3)，最大在 x=4：-a²+11a-16=2 → a=9。",
+        "analysis": "二次函数最大值位置取决于顶点是否在闭区间内：顶点在区间内则最大在顶点；否则最大在端点。",
+        "steps": [
+          {
+            "title": "配方求顶点",
+            "content": "$f(x) = -2[(x-(a+1))^2 - (a+1)^2] - a^2 - 5a$\n\n$= -2(x-(a+1))^2 + 2(a+1)^2 - a^2 - 5a$\n\n$= -2(x-(a+1))^2 + (a^2 - a + 2)$\n\n顶点 $(a+1, a^2-a+2)$。$\\fbox{A}=1$，$\\fbox{B}=2$。"
+          },
+          {
+            "title": "(i) 轴 ≤ 1, 即 a ≤ 0",
+            "content": "顶点 $x \\leq 1$，最大在 $x=1$:\n$$f(1) = -2 + 4(a+1) - a^2 - 5a = -a^2 - a + 2$$\n\n$= 2 \\implies a^2 + a = 0 \\implies a = 0$ 或 $a = -1$\n\n$\\fbox{C} = 0$。\n\n$a = 0$: $f(x) = -2x^2 + 4x$。$\\fbox{D} = 4$。\n$a = -1$: $f(x) = -2x^2 + 0 + 4 = -2x^2 + 4$。$\\fbox{E} = 4$。"
+          },
+          {
+            "title": "(ii) 轴 ∈ [1, 4], 即 0 < a ≤ 3",
+            "content": "顶点 $x = a+1 \\in (1, 4]$，最大 = 顶点 $y$:\n$$a^2 - a + 2 = 2 \\implies a(a-1) = 0 \\implies a = 1$$\n\n$\\fbox{F} = 3$。\n\n$a = 1$: $f(x) = -2x^2 + 8x - 6$。$\\fbox{G} = 8$，$\\fbox{H} = 6$。"
+          },
+          {
+            "title": "(iii) 轴 > 4, 即 a > 3",
+            "content": "最大在 $x = 4$:\n$$f(4) = -32 + 16(a+1) - a^2 - 5a = -a^2 + 11a - 16$$\n\n$= 2 \\implies a^2 - 11a + 18 = 0 \\implies a = 9$ 或 $2$\n\n$a > 3$ 取 $a = 9$。\n\n$a = 9$: $f(x) = -2x^2 + 40x - 81 - 45 = -2x^2 + 40x - 126$。\n\n$\\fbox{IJ} = 40$，$\\fbox{KLM} = 126$。"
+          }
+        ],
+        "finalAnswer": "A=1，B=2；C=0，D=4，E=4；F=3，G=8，H=6；IJ=40，KLM=126"
+      }
+    },
+    {
+      "id": "c1-I-2",
+      "number": "I-2",
+      "topic": "4 球放 7 箱的方式",
+      "topicTag": "组合计数",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "有红、黄、绿、蓝色 4 个球和编号 1～7 的 7 个箱子。\n\n(1) 把 4 球放入 7 箱中的 4 个箱子各 1 个的放法共 $\\fbox{NOP}$ 通。\n\n(2) 把 4 球中 3 个放入同一个箱子，余下 1 个放入另一个箱子，放法共 $\\fbox{QRS}$ 通。\n\n(3) 红、黄球放入奇数编号箱子，绿、蓝球放入偶数编号箱子。\n\n红、黄球的放法 $\\fbox{TU}$ 通，绿、蓝球的放法 $\\fbox{V}$ 通，故此情形的放法共 $\\fbox{WXY}$ 通。",
+      "solution": {
+        "translation": "(1) P(7,4)=7·6·5·4=840。(2) C(4,3)·7·6=4·42=168。(3) 红黄独立各 4 选 1: 4²=16; 绿蓝独立各 3 选 1: 3²=9; 共 16·9=144。",
+        "analysis": "(1) 球颜色不同（可区分），放入不同箱子是排列 P(7,4)。(2) 选 3 球的组合 × 选大箱子 × 选小箱子。(3) 允许多球同箱，每球独立选箱。",
+        "steps": [
+          {
+            "title": "(1) 4 球放入 4 个不同箱子",
+            "content": "$P(7, 4) = 7 \\times 6 \\times 5 \\times 4 = 840$\n\n$\\fbox{NOP} = 840$。"
+          },
+          {
+            "title": "(2) 3 球同箱, 1 球异箱",
+            "content": "选哪 3 球同箱:$\\binom{4}{3} = 4$。\n选放这 3 球的箱子:$7$。\n选放余下 1 球的箱子:$6$（剩余）。\n\n$4 \\times 7 \\times 6 = 168$。$\\fbox{QRS} = 168$。"
+          },
+          {
+            "title": "(3) 颜色分配箱奇偶",
+            "content": "奇数箱:$\\{1,3,5,7\\}$，4 个。\n偶数箱:$\\{2,4,6\\}$，3 个。\n\n红、黄各放奇数箱，每球独立 4 种选择:$4 \\times 4 = 16$。$\\fbox{TU} = 16$。\n绿、蓝各放偶数箱，每球独立 3 种选择:$3 \\times 3 = 9$。$\\fbox{V} = 9$。\n\n合计:$16 \\times 9 = 144$。$\\fbox{WXY} = 144$。"
+          }
+        ],
+        "finalAnswer": "NOP=840；QRS=168；TU=16，V=9，WXY=144"
+      }
+    },
+    {
+      "id": "c1-II-1",
+      "number": "II-1",
+      "topic": "无理化与代数恒等",
+      "topicTag": "无理数",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "$x = \\dfrac{2}{5 - \\sqrt{21}}$\n\n(1) $x$ 的分母有理化得 $x = \\dfrac{\\fbox{A} + \\sqrt{21}}{\\fbox{B}}$。\n\n(2) $x + \\dfrac{1}{x} = \\fbox{C}$，且\n$$\\dfrac{1 - x + x^2 - x^3 + x^4}{1 + x + x^2 + x^3 + x^4} = \\dfrac{\\fbox{DE}}{\\fbox{FG}}$$\n\n(3) $x^2 - 5x = \\fbox{HI}$，且\n$$(x^2 - 1)(x^2 - 7x + 12)(x^2 - 8x + 12) = -\\fbox{JKL}$$",
+      "solution": {
+        "translation": "(1) 有理化 x=(5+√21)/2。(2) 1/x=(5-√21)/2，x+1/x=5。分子分母同除 x²，用 x²+1/x²=23-2=23: 19/29。(3) x²=5x-1。三因式: 5x-2, -2x+11, -3x+11; 化简积=-105。",
+        "analysis": "用 x + 1/x = 5 简化对称表达式；用 x² = 5x - 1 把高次代换。",
+        "steps": [
+          {
+            "title": "(1) 有理化",
+            "content": "$x = \\dfrac{2(5+\\sqrt{21})}{(5-\\sqrt{21})(5+\\sqrt{21})} = \\dfrac{2(5+\\sqrt{21})}{25 - 21} = \\dfrac{5+\\sqrt{21}}{2}$\n\n$\\fbox{A} = 5$，$\\fbox{B} = 2$。"
+          },
+          {
+            "title": "(2) x + 1/x 与比值",
+            "content": "$\\dfrac{1}{x} = \\dfrac{5 - \\sqrt{21}}{2}$（共轭）\n\n$x + \\dfrac{1}{x} = \\dfrac{(5+\\sqrt{21}) + (5-\\sqrt{21})}{2} = 5$。$\\fbox{C} = 5$。\n\n分子、分母同除 $x^2$:\n\n分子/$x^2$ = $\\dfrac{1}{x^2} - \\dfrac{1}{x} + 1 - x + x^2 = (x^2 + 1/x^2) - (x + 1/x) + 1$\n\n$x^2 + 1/x^2 = (x + 1/x)^2 - 2 = 25 - 2 = 23$。\n\n分子/$x^2$ = $23 - 5 + 1 = 19$。\n分母/$x^2$ = $23 + 5 + 1 = 29$。\n\n$\\dfrac{19}{29}$。$\\fbox{DE} = 19$，$\\fbox{FG} = 29$。"
+          },
+          {
+            "title": "(3) x²−5x 与乘积",
+            "content": "$x^2 = \\left(\\dfrac{5+\\sqrt{21}}{2}\\right)^2 = \\dfrac{25 + 10\\sqrt{21} + 21}{4} = \\dfrac{46 + 10\\sqrt{21}}{4} = \\dfrac{23 + 5\\sqrt{21}}{2}$\n\n$5x = \\dfrac{25 + 5\\sqrt{21}}{2}$\n\n$x^2 - 5x = \\dfrac{(23+5\\sqrt{21}) - (25+5\\sqrt{21})}{2} = \\dfrac{-2}{2} = -1$。$\\fbox{HI} = -1$。\n\n由 $x^2 = 5x - 1$:\n- $x^2 - 1 = 5x - 2$\n- $x^2 - 7x + 12 = 5x - 1 - 7x + 12 = -2x + 11$\n- $x^2 - 8x + 12 = 5x - 1 - 8x + 12 = -3x + 11$\n\n乘积:\n$(5x-2)(-2x+11) = -10x^2 + 59x - 22 = -10(5x-1) + 59x - 22 = 9x - 12 = 3(3x - 4)$\n\n再乘 $(-3x+11)$:$3(3x-4)(-3x+11) = 3[-9x^2 + 45x - 44]$\n\n$= 3[-9(5x-1) + 45x - 44] = 3[-45x + 9 + 45x - 44] = 3(-35) = -105$\n\n$\\fbox{JKL} = 105$。"
+          }
+        ],
+        "finalAnswer": "A=5，B=2；C=5；DE=19，FG=29；HI=-1；JKL=105"
+      }
+    },
+    {
+      "id": "c1-II-2",
+      "number": "II-2",
+      "topic": "联立二次不等式的解存在条件",
+      "topicTag": "二次不等式",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "两个函数\n$$f(x) = 2x^2 + (1 - 2a^2)x - a^2,\\quad g(x) = x^2 + (a+1)x - 2a^2 + 5a - 2$$\n\n考虑连立不等式 $\\begin{cases} f(x) < 0 \\\\ g(x) < 0 \\end{cases}$，求其有解的 $a$ 范围。\n\n(1) $f(x) < 0$ 的解:\n$$\\dfrac{\\fbox{MN}}{\\fbox{O}} < x < a^2$$\n\n(2) $g(x) < 0$ 的解。下文 $\\fbox{Q}, \\fbox{R}, \\fbox{S}$ 从下列 ⓪～⑨ 选择，$\\fbox{P}$ 填数。\n\n选项：⓪ $-2a+1 < x < a-2$ ① $x<-2a+1, a-2<x$ ② $2a-1<x<-a+2$ ③ $x<2a-1, -a+2<x$ ④ $-a+2<x<2a-1$ ⑤ $x<-a+2, 2a-1<x$ ⑥ $a-2<x<-2a+1$ ⑦ $x<a-2, -2a+1<x$ ⑧ $x = -1$ ⑨ 解はない\n\n$$\\begin{cases} a < \\fbox{P} \\text{ のとき } \\fbox{Q} \\\\ a = \\fbox{P} \\text{ のとき } \\fbox{R} \\\\ a > \\fbox{P} \\text{ のとき } \\fbox{S} \\end{cases}$$\n\n(3) 连立不等式有解的 $a$ 范围:\n$$a < \\dfrac{\\fbox{T}}{\\fbox{U}},\\quad \\dfrac{\\fbox{V}}{\\fbox{W}} < a$$",
+      "solution": {
+        "translation": "f=(2x+1)(x-a²) → f<0: -1/2<x<a²。g=(x+2a-1)(x-a+2) → 根 -2a+1 与 a-2，比较得 a<1, a=1, a>1。系统解条件: 区间 (-1/2, a²) 与 g<0 区间相交。a<1 时需 a<3/4; a>1 时需 a>3/2。",
+        "analysis": "因式分解 f, g。比较根的大小分情形。两区间相交条件 max(α,γ) < min(β,δ)。",
+        "steps": [
+          {
+            "title": "(1) f(x) < 0",
+            "content": "$f(x) = 2x^2 + (1-2a^2)x - a^2 = (2x+1)(x - a^2)$\n\n$(2x+1)(x-a^2) < 0$，根 $x = -1/2$ 与 $x = a^2 \\geq 0 > -1/2$:\n\n$-\\dfrac{1}{2} < x < a^2$。$\\fbox{MN} = -1$，$\\fbox{O} = 2$。"
+          },
+          {
+            "title": "(2) g(x) < 0",
+            "content": "$g(x) = (x + 2a-1)(x - a + 2)$\n\n根:$x = -2a+1$ 与 $x = a - 2$。\n\n大小:$(-2a+1) - (a-2) = 3 - 3a$。\n- $a < 1$:$-2a+1 > a-2$，故 $g<0 \\iff a-2 < x < -2a+1$（选项 ⑥）。\n- $a = 1$:$-2a+1 = a-2 = -1$，根重合，$g(x) = (x+1)^2 \\geq 0$，$g<0$ 无解（选项 ⑨）。\n- $a > 1$:$-2a+1 < a-2$，故 $g<0 \\iff -2a+1 < x < a-2$（选项 ⓪）。\n\n$\\fbox{P} = 1$，$\\fbox{Q} = ⑥$，$\\fbox{R} = ⑨$，$\\fbox{S} = ⓪$。"
+          },
+          {
+            "title": "(3) 连立解存在范围",
+            "content": "**$a < 1$**:$(-1/2, a^2)$ 与 $(a-2, -2a+1)$ 相交 $\\iff \\max(-1/2, a-2) < \\min(a^2, -2a+1)$。\n\n$a < 3/2$ 时 $-1/2 > a-2$，所以 max = $-1/2$。\n\n需 $-1/2 < \\min(a^2, -2a+1)$。$-1/2 < a^2$ 总成立，只需 $-1/2 < -2a+1 \\iff a < 3/4$。\n\n故 $a < 1$ 时,连立有解 $\\iff a < 3/4$。\n\n**$a > 1$**:$(-1/2, a^2)$ 与 $(-2a+1, a-2)$ 相交。$-2a+1 < -1 < -1/2$，故下界由 $-1/2$ 控制；上界由 $\\min(a^2, a-2)$。$a > 1$ 时 $a^2 > a > a-2$，故 $\\min = a-2$。\n\n需 $-1/2 < a-2 \\iff a > 3/2$。\n\n故 $a > 1$ 时,连立有解 $\\iff a > 3/2$。\n\n合并:$a < 3/4$ 或 $a > 3/2$。$\\fbox{T}=3$，$\\fbox{U}=4$，$\\fbox{V}=3$，$\\fbox{W}=2$。"
+          }
+        ],
+        "finalAnswer": "MN=-1，O=2；P=1，Q=⑥，R=⑨，S=⓪；T=3，U=4，V=3，W=2"
+      }
+    },
+    {
+      "id": "c1-III-1",
+      "number": "III",
+      "topic": "三数的最小公倍数与最大公约数",
+      "topicTag": "整数",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "三个自然数 $a, b, c$ 的最小公倍数为 $2520$，且\n(i) $\\gcd(a, b) = 18$\n(ii) $\\gcd(b, c) = 30$\n(iii) $\\gcd(c, a) = 24$\n\n求满足这些条件的 $(a, b, c)$。\n\n$2520 = 2^{\\fbox{A}} \\cdot \\fbox{B}^{\\fbox{C}} \\cdot 5 \\cdot \\fbox{D}$\n\n由 (i), (iii)，$a$ 是 $\\fbox{EF}$ 的倍数；由 (i), (ii)，$a$ 与 $\\fbox{G}$ 互素。因此\n$$a = \\fbox{EF} \\cdot m \\quad (m = 1 \\text{ 或 } m = \\fbox{H})$$\n\n由 (i), (ii)，$b$ 是 $\\fbox{IJ}$ 的倍数。结合 (iii)\n$$b = \\fbox{IJ} \\cdot n \\quad (n = 1 \\text{ 或 } n = \\fbox{K})$$\n\n同理 $c$:\n$$c = \\fbox{LMN} \\cdot \\ell \\quad (\\ell = 1 \\text{ 或 } \\ell = \\fbox{O})$$\n\n以上,3 条件都满足的 $(a, b, c)$ 共 $\\fbox{P}$ 组。其中满足 $a < b < c$ 的为\n$$(a, b, c) = (\\fbox{QR}, \\fbox{ST}, \\fbox{UVW})$$",
+      "solution": {
+        "translation": "2520=2³·3²·5·7。从 gcd 条件得 v₂(a)=v₂(c)=3, v₂(b)=1; v₃(a)=v₃(b)=2, v₃(c)=1; v₅(a)=0, v₅(b)=v₅(c)=1; v₇ 三者中恰一个=1。a=2³·3²·7^k=72 或 504; b=2·3²·5·7^k=90 或 630; c=2³·3·5·7^k=120 或 840。共 3 组（每组恰一个有 7）。满足 a<b<c 的: (72, 90, 840)。",
+        "analysis": "用 p-adic 估值分析。LCM 的 max 与 gcd 的 min 给出每个素数的指数约束。",
+        "steps": [
+          {
+            "title": "素因数分解 2520",
+            "content": "$2520 = 8 \\times 315 = 2^3 \\cdot 3^2 \\cdot 5 \\cdot 7$\n\n$\\fbox{A} = 3$，$\\fbox{B} = 3$，$\\fbox{C} = 2$，$\\fbox{D} = 7$。"
+          },
+          {
+            "title": "用素指数分析 a, b, c",
+            "content": "$18 = 2\\cdot 3^2$，$30 = 2\\cdot 3\\cdot 5$，$24 = 2^3\\cdot 3$。\n\n**$v_2$**:$\\min(v_2(a), v_2(b)) = 1$，$\\min(v_2(b), v_2(c)) = 1$，$\\min(v_2(c), v_2(a)) = 3$，$\\max = 3$。\n→ $v_2(a) = v_2(c) = 3$, $v_2(b) = 1$。\n\n**$v_3$**:同理 $v_3(a) = v_3(b) = 2$, $v_3(c) = 1$。\n\n**$v_5$**:$v_5(a) = 0$, $v_5(b) = v_5(c) = 1$。\n\n**$v_7$**:三 $\\min$ 皆 $0$，$\\max = 1$，故 $a, b, c$ 中恰一个 $v_7 = 1$。\n\n故 $a = 2^3\\cdot 3^2 \\cdot 7^{k_a} = 72\\cdot 7^{k_a}$。$\\fbox{EF} = 72$。$a$ 与 $5$ 互素。$\\fbox{G} = 5$，$\\fbox{H} = 7$。\n\n$b = 2\\cdot 3^2\\cdot 5 \\cdot 7^{k_b} = 90\\cdot 7^{k_b}$。$\\fbox{IJ} = 90$，$\\fbox{K} = 7$。\n\n$c = 2^3\\cdot 3\\cdot 5\\cdot 7^{k_c} = 120\\cdot 7^{k_c}$。$\\fbox{LMN} = 120$，$\\fbox{O} = 7$。"
+          },
+          {
+            "title": "确定 (a, b, c) 组数",
+            "content": "$k_a, k_b, k_c \\in \\{0, 1\\}$，且恰一个 $= 1$。共 $3$ 组。$\\fbox{P} = 3$。\n\n- $k_a=1$:$(504, 90, 120)$。不是升序。\n- $k_b=1$:$(72, 630, 120)$。不是升序。\n- $k_c=1$:$(72, 90, 840)$。$a < b < c$ ✓。\n\n$\\fbox{QR} = 72$，$\\fbox{ST} = 90$，$\\fbox{UVW} = 840$。"
+          }
+        ],
+        "finalAnswer": "A=3，B=3，C=2，D=7；EF=72，G=5，H=7；IJ=90，K=7；LMN=120，O=7；P=3；QR=72，ST=90，UVW=840"
+      }
+    },
+    {
+      "id": "c1-IV-1",
+      "number": "IV",
+      "topic": "三角形 (AB=2, AC=√2, ∠A=135°) 的三等分线面积",
+      "topicTag": "平面几何",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "questionDiagram": {
+        "svg": "<svg viewBox=\"0 0 320 220\" style=\"width:100%;max-width:340px;display:block;margin:12px auto\"><polygon points=\"50,170 280,170 220,40\" fill=\"none\" stroke=\"#1c1917\" stroke-width=\"1.5\"/><line x1=\"220\" y1=\"40\" x2=\"160\" y2=\"170\" stroke=\"#7c3aed\" stroke-width=\"1.2\" stroke-dasharray=\"4,3\"/><line x1=\"220\" y1=\"40\" x2=\"200\" y2=\"170\" stroke=\"#7c3aed\" stroke-width=\"1.2\" stroke-dasharray=\"4,3\"/><circle cx=\"220\" cy=\"40\" r=\"3.5\" fill=\"#1c1917\"/><text x=\"226\" y=\"34\" font-size=\"13\" font-weight=\"700\">A</text><circle cx=\"50\" cy=\"170\" r=\"3.5\" fill=\"#1c1917\"/><text x=\"34\" y=\"180\" font-size=\"13\" font-weight=\"700\">B</text><circle cx=\"280\" cy=\"170\" r=\"3.5\" fill=\"#1c1917\"/><text x=\"286\" y=\"180\" font-size=\"13\" font-weight=\"700\">C</text><circle cx=\"160\" cy=\"170\" r=\"3\" fill=\"#dc2626\"/><text x=\"155\" y=\"188\" font-size=\"12\" font-weight=\"700\" fill=\"#dc2626\">D</text><circle cx=\"200\" cy=\"170\" r=\"3\" fill=\"#dc2626\"/><text x=\"196\" y=\"188\" font-size=\"12\" font-weight=\"700\" fill=\"#dc2626\">E</text><text x=\"30\" y=\"208\" font-size=\"10\" fill=\"#57534e\">AB=2, AC=√2, ∠BAC=135°；AD, AE 三等分 ∠BAC</text></svg>"
+      },
+      "japanese": "三角形 $ABC$ 中 $AB = 2$，$AC = \\sqrt 2$，$\\angle BAC = 135°$。\n\n(1) 三角形 $ABC$ 的面积为 $\\fbox{A}$，$BC = \\sqrt{\\fbox{BC}}$，外接圆半径为 $\\sqrt{\\fbox{D}}$。\n\n(2) $\\angle BAC$ 的 3 等分线与边 $BC$ 的交点设为 $D, E$（$D$ 靠 $B$）。求 $\\triangle ABD, \\triangle ADE, \\triangle AEC$ 的面积。\n\n以下用 $\\triangle PQR$ 表示三角形 $PQR$ 的面积。\n\n设 $\\angle ABC = \\theta$。$AE = \\fbox{E}\\tan\\theta$。$\\sin\\theta = \\dfrac{\\sqrt{\\fbox{FG}}}{\\fbox{HI}}$，故 $\\tan\\theta = \\dfrac{\\fbox{J}}{\\fbox{K}}$。所以\n$$AE = \\dfrac{\\fbox{L}}{\\fbox{M}}$$\n\n又\n$$\\dfrac{\\triangle ADE}{\\triangle ABD} = \\dfrac{\\fbox{N}}{\\fbox{O}},\\quad \\triangle ABE = \\dfrac{\\fbox{P}}{\\fbox{Q}}$$\n\n因此\n$$\\triangle ABD = \\dfrac{\\fbox{R}}{\\fbox{S}},\\quad \\triangle ADE = \\dfrac{\\fbox{T}}{\\fbox{U}},\\quad \\triangle AEC = \\dfrac{\\fbox{V}}{\\fbox{W}}$$",
+      "solution": {
+        "translation": "(1) 面积 = (1/2)·2·√2·sin135°=1。BC²=4+2-2·2·√2·cos135°=10。R=BC/(2sin135°)=√5。(2) sinθ=1/√10=√10/10, tanθ=1/3。AE=AB·tanθ=2/3 (因 ∠BAE=90°)。比值 △ADE:△ABD=AE/AB=1/3。△ABE=(1/2)·AB·AE=2/3。△ABD=(3/4)·△ABE=1/2; △ADE=1/6; △AEC=1-2/3=1/3。",
+        "analysis": "三等分角 (45°+45°+45°) 让 ∠BAE=90°使 △ABE 是直角三角形便于计算。",
+        "steps": [
+          {
+            "title": "(1) 面积、BC、外接圆半径",
+            "content": "面积 = $\\dfrac{1}{2}\\cdot AB\\cdot AC\\cdot \\sin 135° = \\dfrac{1}{2}\\cdot 2\\cdot \\sqrt 2\\cdot \\dfrac{\\sqrt 2}{2} = 1$。$\\fbox{A} = 1$。\n\n余弦定理:$BC^2 = 4 + 2 - 2\\cdot 2\\cdot \\sqrt 2\\cdot \\cos 135° = 6 + 4 = 10$。$\\fbox{BC} = 10$。\n\n正弦定理:$2R = \\dfrac{BC}{\\sin\\angle BAC} = \\dfrac{\\sqrt{10}}{\\sqrt 2/2} = \\sqrt{20} = 2\\sqrt 5$。$R = \\sqrt 5$。$\\fbox{D} = 5$。"
+          },
+          {
+            "title": "(2) sinθ, tanθ, AE",
+            "content": "正弦定理 $\\dfrac{AC}{\\sin\\theta} = 2R = 2\\sqrt 5$:\n$$\\sin\\theta = \\dfrac{\\sqrt 2}{2\\sqrt 5} = \\dfrac{1}{\\sqrt{10}} = \\dfrac{\\sqrt{10}}{10}$$\n\n$\\fbox{FG} = 10$，$\\fbox{HI} = 10$。\n\n$\\cos\\theta = \\sqrt{1 - 1/10} = \\dfrac{3}{\\sqrt{10}}$（取正，因 $\\theta$ 锐角）。\n\n$\\tan\\theta = \\dfrac{1/\\sqrt{10}}{3/\\sqrt{10}} = \\dfrac{1}{3}$。$\\fbox{J} = 1$，$\\fbox{K} = 3$。\n\n$\\angle BAE = \\angle BAD + \\angle DAE = 45° + 45° = 90°$，故 $\\triangle ABE$ 在 $A$ 为直角:\n$$AE = AB\\cdot \\tan\\theta = 2\\cdot \\dfrac{1}{3} = \\dfrac{2}{3}$$\n\n$\\fbox{E} = 2$，$\\fbox{L} = 2$，$\\fbox{M} = 3$。"
+          },
+          {
+            "title": "(2) 面积比",
+            "content": "$\\triangle ADE$ 与 $\\triangle ABD$ 共顶 $A$、共边 $AD$，对侧为 $E$、$B$，且 $\\angle DAE = \\angle BAD = 45°$:\n$$\\dfrac{\\triangle ADE}{\\triangle ABD} = \\dfrac{AE}{AB} = \\dfrac{2/3}{2} = \\dfrac{1}{3}$$\n\n$\\fbox{N} = 1$，$\\fbox{O} = 3$。\n\n$\\triangle ABE = \\dfrac{1}{2}\\cdot AB\\cdot AE = \\dfrac{1}{2}\\cdot 2\\cdot \\dfrac{2}{3} = \\dfrac{2}{3}$（直角）。$\\fbox{P} = 2$，$\\fbox{Q} = 3$。"
+          },
+          {
+            "title": "(2) △ABD, △ADE, △AEC",
+            "content": "$\\triangle ABE = \\triangle ABD + \\triangle ADE = \\triangle ABD\\cdot (1 + 1/3) = \\dfrac{4}{3}\\triangle ABD$\n\n$\\triangle ABD = \\dfrac{3}{4}\\triangle ABE = \\dfrac{3}{4}\\cdot \\dfrac{2}{3} = \\dfrac{1}{2}$。$\\fbox{R} = 1$，$\\fbox{S} = 2$。\n\n$\\triangle ADE = \\dfrac{1}{3}\\triangle ABD = \\dfrac{1}{6}$。$\\fbox{T} = 1$，$\\fbox{U} = 6$。\n\n$\\triangle AEC = \\triangle ABC - \\triangle ABE = 1 - \\dfrac{2}{3} = \\dfrac{1}{3}$。$\\fbox{V} = 1$，$\\fbox{W} = 3$。"
+          }
+        ],
+        "finalAnswer": "A=1，BC=10，D=5；E=2，FG=10，HI=10，J=1，K=3，L=2，M=3；N=1，O=3，P=2，Q=3；R=1，S=2，T=1，U=6，V=1，W=3"
+      }
+    }
+  ]
+}
