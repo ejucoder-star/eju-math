@@ -1,0 +1,201 @@
+{
+  "metadata": {
+    "course": "course1",
+    "year": "2022",
+    "session": "1",
+    "courseNameJa": "数学1",
+    "courseNameEn": "Course 1 (Basic)",
+    "description": "基础课程｜文科方向",
+    "color": "#2563eb",
+    "examTitle": "2022年度（令和4年）第1回",
+    "examDate": "2022年6月"
+  },
+  "questions": [
+    {
+      "id": "c1-I-1",
+      "number": "I-1",
+      "topic": "二次函数顶点在线段上的范围",
+      "topicTag": "二次函数",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "$a, b$ 为常数，二次函数 $f(x) = x^2 + ax + b$，一次函数 $h(x) = -2x$。函数 $y = h(x)$ 与直线 $x=3$ 的交点为 A，与直线 $x=-2$ 的交点为 B。$y = f(x)$ 的顶点 $P$ 在线段 $AB$ 上时，求\n$$L = \\{f(3) - h(3)\\} + \\{f(-2) - h(-2)\\}$$\n的取值范围。\n\n点 P 的坐标为 $\\left(-\\dfrac{a}{\\fbox{A}},\\ -\\dfrac{a^2}{\\fbox{B}} + b\\right)$。P 在 AB 上，故 $a$ 范围为 $-\\fbox{C} \\leq a \\leq \\fbox{D}$。又 $a, b$ 满足\n$$b = \\dfrac{a^2}{\\fbox{E}} + a$$\n\n因此 $L$ 用 $a$ 表示为\n$$L = \\dfrac{1}{2}a^2 + \\fbox{F}\\,a + \\fbox{GH}$$\n\n所以 $L$ 范围为\n$$\\dfrac{\\fbox{IJ}}{\\fbox{K}} \\leq L \\leq \\fbox{LM}$$",
+      "solution": {
+        "translation": "顶点 (-a/2, b-a²/4)。A=(3,-6), B=(-2,4) 在直线 y=-2x 上。P 在 AB 上 ⇔ P_x ∈ [-2,3] 即 -6≤a≤4; P_y=-2·P_x=a 给 b-a²/4=a → b=a²/4+a。L = f(3)+f(-2)+h(3)+h(-2)... 化简得 L = a²/2+3a+15 = (1/2)(a+3)²+21/2。a ∈ [-6,4]: min 在 a=-3 时 21/2; max 在 a=4 时 8+12+15=35。",
+        "analysis": "点 P 在线段 AB 上 = P_x 在端点 x 坐标间，且 P_y 满足直线方程。",
+        "steps": [
+          {
+            "title": "顶点与约束",
+            "content": "$f(x) = (x + a/2)^2 + b - a^2/4$，顶点 $P = (-a/2, b - a^2/4)$。$\\fbox{A}=2$，$\\fbox{B}=4$。\n\nA, B 在直线 $h(x) = -2x$ 上,$A = (3, -6)$, $B = (-2, 4)$。\n\nP 在 AB 上：$P_x \\in [-2, 3] \\Rightarrow -2 \\leq -a/2 \\leq 3 \\Rightarrow -6 \\leq a \\leq 4$。$\\fbox{C}=6$，$\\fbox{D}=4$。\n\nP 在直线 $y = -2x$ 上,$P_y = -2 \\cdot P_x = a$。代入 $b - a^2/4 = a \\Rightarrow b = a^2/4 + a$。$\\fbox{E}=4$。"
+          },
+          {
+            "title": "L 用 a 表示",
+            "content": "$L = (f(3) - h(3)) + (f(-2) - h(-2)) = f(3) + f(-2) - h(3) - h(-2)$\n\n$f(3) = 9 + 3a + b$，$f(-2) = 4 - 2a + b$。\n$h(3) = -6$，$h(-2) = 4$。\n\n$L = (9+3a+b) + (4-2a+b) - (-6) - 4 = 15 + a + 2b$\n\n代入 $b = a^2/4 + a$:\n$$L = 15 + a + 2(a^2/4 + a) = a^2/2 + 3a + 15$$\n\n$\\fbox{F}=3$，$\\fbox{GH}=15$。"
+          },
+          {
+            "title": "L 的范围",
+            "content": "$L(a) = (1/2)a^2 + 3a + 15 = (1/2)(a+3)^2 + 21/2$\n\n在 $a \\in [-6, 4]$ 上：\n- 顶点 $a = -3 \\in [-6, 4]$，最小值 $L = 21/2$。\n- 端点:$L(-6) = 18 - 18 + 15 = 15$，$L(4) = 8 + 12 + 15 = 35$。最大值 $L = 35$（在 $a=4$）。\n\n$\\fbox{IJ}=21$，$\\fbox{K}=2$，$\\fbox{LM}=35$。"
+          }
+        ],
+        "finalAnswer": "A=2，B=4；C=6，D=4；E=4；F=3，GH=15；IJ=21，K=2，LM=35"
+      }
+    },
+    {
+      "id": "c1-I-2",
+      "number": "I-2",
+      "topic": "9 张卡片两次交换后形成偶数的概率",
+      "topicTag": "概率",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "1 到 9 各写在 1 张卡片上，从小到大排成 9 张。从中选 2 张交换位置，做 2 回。2 回后的 9 张作为 9 位整数，求该整数为偶数的概率。\n\n(1) 1 回, 2 回都从 9 张卡片中选 2 张交换:\n\n(i) 1 回换非 9 卡时, 2 回操作偶数概率 $\\dfrac{\\fbox{N}}{\\fbox{OP}}$。\n\n(ii) 1 回换 9 卡与他卡时, 概率 $\\dfrac{\\fbox{QR}}{\\fbox{STU}}$。\n\n因此 2 回偶数概率 $\\dfrac{\\fbox{V}}{\\fbox{WX}}$。\n\n(2) 2 回的卡片交换中，从 1 回未交换的剩余 7 张中选 2 张交换，此时 2 回偶数概率 $\\dfrac{\\fbox{Y}}{\\fbox{Z}}$。",
+      "solution": {
+        "translation": "偶数 ⇔ 位置 9 上是偶数卡。(1)(i) 1 回未涉及位置 9 (28种): 位置 9 仍为 9 (奇)，2 回需把偶卡换到位置 9: 4 种 → P = (28/36)·(4/36) = 7/81。(ii) 1 回涉及位置 9 (8种)：将卡 p 移到位置 9。p 偶时 2 回有 31/36 留下偶，p 奇时 2 回有 4/36 → P = (4·31 + 4·4)/1296 = 140/1296 = 35/324。合计 7/36。(2) 2 回从未交换的 7 张选: 总数 36·21=756。位置 9 的卡固定（要么是 9 要么是 1 回的伙伴 p），2 回不影响。共 168/756=2/9。",
+        "analysis": "两种 2 回方式：从全部 9 张选 (问 (1))，或从未交换的 7 张选 (问 (2))。后者下位置 9 上的卡片在 2 回时不被涉及。",
+        "steps": [
+          {
+            "title": "(1)(i) 1 回未涉及位置 9",
+            "content": "1 回选 2 张非 9 卡:$\\binom{8}{2}/\\binom{9}{2} = 28/36$。\n\n后位置 9 仍是 9 (奇)。2 回为使位置 9 变偶: 把位置 9 与偶卡位置交换。\n\n偶卡有 4 张, 它们在位置 1-8 中, 故 2 回有 4 种好选择: 4/36。\n\n$$P_{(i)} = \\dfrac{28}{36}\\cdot \\dfrac{4}{36} = \\dfrac{7}{81}$$\n\n$\\fbox{N}=7$，$\\fbox{OP}=81$。"
+          },
+          {
+            "title": "(1)(ii) 1 回涉及位置 9",
+            "content": "1 回交换位置 9 与某位置 $p_0$ (卡 p)。8 种。\n\n后位置 9 = p, 位置 $p_0$ = 9。\n\nIf p 偶: 31/36 种 2 回留偶 (28 不涉及 9 + 3 涉及 9 但换偶卡)。4 种 p 偶。\nIf p 奇: 4/36 种 2 回换偶到位置 9。4 种 p 奇。\n\n$$P_{(ii)} = (4/36)\\cdot (31/36) + (4/36)\\cdot (4/36) = 140/1296 = 35/324$$\n\n$\\fbox{QR}=35$，$\\fbox{STU}=324$。"
+          },
+          {
+            "title": "(1) 合并",
+            "content": "$P = 7/81 + 35/324 = 28/324 + 35/324 = 63/324 = 7/36$。\n\n$\\fbox{V}=7$，$\\fbox{WX}=36$。"
+          },
+          {
+            "title": "(2) 2 回从未涉及 7 张中选",
+            "content": "1 回选 (a, b)。2 回从其余 7 张中选 2 张交换。关键: 2 回中不涉及卡 a 和 b。\n\n- 1 回未涉及位置 9 (28 种): 位置 9 = 卡 9 (在剩 7 张中)。2 回换偶到位置 9 ⇔ 2 回涉及卡 9 和某偶卡。逐情形求和: 84 种好对。\n- 1 回涉及位置 9 (8 种, 将 p 换上位置 9): 位置 9 = 卡 p。2 回不影响位置 9 (卡 9, p 不在剩 7 张). 结果偶 ⇔ p 偶. 4·21=84 种好对.\n\n合计好的: 168。总: 756。\n\n$$P = 168/756 = 2/9$$\n\n$\\fbox{Y}=2$，$\\fbox{Z}=9$。"
+          }
+        ],
+        "finalAnswer": "N=7，OP=81；QR=35，STU=324；V=7，WX=36；Y=2，Z=9"
+      }
+    },
+    {
+      "id": "c1-II-1",
+      "number": "II-1",
+      "topic": "正实数对 x²=8+√55, y²=8-√55 的整数小数部分",
+      "topicTag": "无理数",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "$x, y$ 为正实数, 满足 $x^2 = 8 + \\sqrt{55}$, $y^2 = 8 - \\sqrt{55}$。\n\n(1) $\\fbox{A} < \\sqrt{55} < \\fbox{A} + 1$，故 $x$ 的整数部分 $= \\fbox{B}$，$y$ 的整数部分 $= \\fbox{C}$。\n\n(2) $xy = \\fbox{D}$，且\n$$x + y = \\sqrt{x^2 + y^2 + \\fbox{E}\\,xy} = \\sqrt{\\fbox{FG}},\\quad x - y = \\sqrt{x^2 + y^2 - \\fbox{H}\\,xy} = \\sqrt{\\fbox{IJ}}$$\n\n因此 $x = \\dfrac{\\sqrt{\\fbox{FG}} + \\sqrt{\\fbox{IJ}}}{\\fbox{K}}$，$y = \\dfrac{\\sqrt{\\fbox{FG}} - \\sqrt{\\fbox{IJ}}}{\\fbox{K}}$。\n\n(3) $x + y$ 表为小数时, 小数第 1 位的数字为 $\\fbox{L}$。",
+      "solution": {
+        "translation": "√55≈7.42。x²∈(15,16) → x∈(3,4), 整数部 3。y²∈(0,1) → y∈(0,1), 整数部 0。xy=√((8+√55)(8-√55))=√9=3。(x+y)²=x²+y²+2xy=16+6=22; (x-y)²=10。x+y=√22, x-y=√10。x=(√22+√10)/2。√22≈4.6904, 小数第 1 位 = 6。",
+        "analysis": "用 (x+y)²、(x-y)² 与对称多项式，由 x²+y² 与 xy 直接组合。x, y 共轭关系。",
+        "steps": [
+          {
+            "title": "(1) 整数部分",
+            "content": "$7^2 = 49 < 55 < 64 = 8^2$，故 $7 < \\sqrt{55} < 8$。$\\fbox{A} = 7$。\n\n$x^2 = 8 + \\sqrt{55} \\in (15, 16)$，$x \\in (\\sqrt{15}, 4) \\subset (3, 4)$。整数部 $= 3$。$\\fbox{B} = 3$。\n\n$y^2 = 8 - \\sqrt{55} \\in (0, 1)$，$y \\in (0, 1)$。整数部 $= 0$。$\\fbox{C} = 0$。"
+          },
+          {
+            "title": "(2) xy, x+y, x-y",
+            "content": "$(xy)^2 = (8+\\sqrt{55})(8-\\sqrt{55}) = 64-55 = 9 \\Rightarrow xy = 3$。$\\fbox{D} = 3$。\n\n$x^2 + y^2 = 16$。\n\n$(x+y)^2 = x^2 + y^2 + 2xy = 16 + 6 = 22$。$\\fbox{E} = 2$，$\\fbox{FG} = 22$。\n\n$(x-y)^2 = x^2 + y^2 - 2xy = 16 - 6 = 10$。$\\fbox{H} = 2$，$\\fbox{IJ} = 10$。\n\n$x + y = \\sqrt{22}$，$x - y = \\sqrt{10}$。\n\n$x = \\dfrac{\\sqrt{22} + \\sqrt{10}}{2}$。$\\fbox{K} = 2$。"
+          },
+          {
+            "title": "(3) x+y 的小数第 1 位",
+            "content": "$\\sqrt{22} \\approx 4.6904\\ldots$\n\n$4.69^2 = 21.9961$，$4.70^2 = 22.09$，故 $\\sqrt{22} \\in (4.69, 4.70)$。\n\n小数第 1 位 = $6$。$\\fbox{L} = 6$。"
+          }
+        ],
+        "finalAnswer": "A=7，B=3，C=0；D=3；E=2，FG=22；H=2，IJ=10；K=2；L=6"
+      }
+    },
+    {
+      "id": "c1-II-2",
+      "number": "II-2",
+      "topic": "有理函数 (6x+2)/(x²-2x+2) 的值域",
+      "topicTag": "二次函数",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "对实数 $x$，求 $\\dfrac{6x+2}{x^2-2x+2}$ 的值域。\n\n令 $\\dfrac{6x+2}{x^2-2x+2} = k$，化为\n$$kx^2 - \\fbox{M}(k + \\fbox{N})x + \\fbox{O}(k - \\fbox{P}) = 0 \\quad \\cdots ①$$\n\n$k=0$ 时,$x = -\\dfrac{\\fbox{Q}}{\\fbox{R}}$。\n\n$k \\ne 0$ 时, 2 次方程 ① 有实数解需\n$$k^2 - \\fbox{S}\\,k - \\fbox{T} \\leq 0$$\n\n即 $-\\fbox{U} \\leq k < 0$ 或 $0 < k \\leq \\fbox{V}$。故\n$$-\\fbox{U} \\leq \\dfrac{6x+2}{x^2-2x+2} \\leq \\fbox{V}$$\n\n最大值 $\\fbox{V}$ 时 $x = \\dfrac{\\fbox{W}}{\\fbox{X}}$，最小值 $-\\fbox{U}$ 时 $x = -\\fbox{Y}$。",
+      "solution": {
+        "translation": "(6x+2)/(x²-2x+2)=k 化为 kx²-2(k+3)x+2(k-1)=0。k=0: -6x-2=0 → x=-1/3。k≠0 实根 ⇔ D=4(-k²+8k+9)≥0 ⇔ k²-8k-9≤0 ⇔ -1≤k≤9。最大 k=9 在 (3x-4)²=0 即 x=4/3; 最小 k=-1 在 (x+2)²=0 即 x=-2。",
+        "analysis": "把分式方程化为关于 x 的二次方程，判别式 ≥ 0 给 k 范围。",
+        "steps": [
+          {
+            "title": "化为二次方程",
+            "content": "$\\dfrac{6x+2}{x^2-2x+2} = k \\Rightarrow kx^2 - 2(k+3)x + 2(k-1) = 0$\n\n$\\fbox{M}=2$，$\\fbox{N}=3$，$\\fbox{O}=2$，$\\fbox{P}=1$。"
+          },
+          {
+            "title": "k=0 与判别式",
+            "content": "**$k=0$**:$-6x - 2 = 0 \\Rightarrow x = -1/3$。$\\fbox{Q}=1$，$\\fbox{R}=3$。\n\n**$k \\ne 0$**: 判别式 $\\geq 0$:\n$$D = 4(k+3)^2 - 8k(k-1) = 4(-k^2 + 8k + 9) \\geq 0$$\n\n$\\Rightarrow k^2 - 8k - 9 \\leq 0$。$\\fbox{S}=8$，$\\fbox{T}=9$。\n\n$(k-9)(k+1) \\leq 0 \\Rightarrow -1 \\leq k \\leq 9$。$\\fbox{U}=1$，$\\fbox{V}=9$。"
+          },
+          {
+            "title": "极值时的 x",
+            "content": "**$k=9$**:$9x^2 - 24x + 16 = 0 \\Rightarrow (3x-4)^2 = 0 \\Rightarrow x = 4/3$。$\\fbox{W}=4$，$\\fbox{X}=3$。\n\n**$k=-1$**:$-x^2 - 4x - 4 = 0 \\Rightarrow (x+2)^2 = 0 \\Rightarrow x = -2$。$\\fbox{Y}=2$。"
+          }
+        ],
+        "finalAnswer": "M=2，N=3，O=2，P=1；Q=1，R=3；S=8，T=9；U=1，V=9；W=4，X=3；Y=2"
+      }
+    },
+    {
+      "id": "c1-III-1",
+      "number": "III",
+      "topic": "欧拉 phi 函数与 A(p²q)=36",
+      "topicTag": "整数",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "$n \\geq 2$ 整数，$A(n)$ = $n$ 以下正整数中与 $n$ 互素的数的个数。\n\n(1) $A(5) = \\fbox{A}$，$A(6) = \\fbox{B}$，$A(12) = \\fbox{C}$。\n\n(2) $p, q$ 为不同素数。$\\fbox{D} \\sim \\fbox{L}$ 从下列 ⓪～⑨ 中选，$\\fbox{M} \\sim \\fbox{U}$ 填数字。\n\n选项：⓪ $pq$ ① $1$ ② $p$ ③ $q$ ④ $p^2$ ⑤ $p-1$ ⑥ $pq-p-q$ ⑦ $(p-1)(q-1)$ ⑧ $p(pq-p-q)$ ⑨ $p(p-1)(q-1)$\n\n(i) $A(p) = \\fbox{D}$。\n\n(ii) 求 $A(pq), A(p^2q)$。\n\n$1$ 到 $pq$ 中,$p$ 的倍数 $\\fbox{E}$ 个,$q$ 的倍数 $\\fbox{F}$ 个,$pq$ 的倍数 $\\fbox{G}$ 个,故 $A(pq) = \\fbox{H}$。\n\n$1$ 到 $p^2q$ 中,$p$ 的倍数 $\\fbox{I}$ 个,$q$ 的倍数 $\\fbox{J}$ 个,$pq$ 的倍数 $\\fbox{K}$ 个,故 $A(p^2q) = \\fbox{L}$。\n\n(iii) $A(p^2q) = 36$ 的 $p, q$ 组合。$36$ 素因数分解为 $36 = \\fbox{M}^{\\fbox{N}} \\cdot \\fbox{O}^{\\fbox{P}}$（$M < O$）。\n\n故 $(p, q) = (\\fbox{Q}, \\fbox{RS}), (\\fbox{T}, \\fbox{U})$。",
+      "solution": {
+        "translation": "A=φ。A(5)=4, A(6)=2, A(12)=4。一般 A(p)=p-1; A(pq)=(p-1)(q-1); A(p²q)=p(p-1)(q-1)。p(p-1)(q-1)=36 解：p=2 → q=19; p=3 → q=7。",
+        "analysis": "用容斥原理或欧拉积公式。",
+        "steps": [
+          {
+            "title": "(1) 具体计算",
+            "content": "$A(5) = 4$。$\\fbox{A}=4$。$A(6) = 2$（$\\{1, 5\\}$）。$\\fbox{B}=2$。$A(12) = 4$（$\\{1, 5, 7, 11\\}$）。$\\fbox{C}=4$。"
+          },
+          {
+            "title": "(2) (i) A(p)",
+            "content": "$A(p) = p - 1$。$\\fbox{D} = ⑤$。"
+          },
+          {
+            "title": "(2) (ii) A(pq) 与 A(p²q)",
+            "content": "**A(pq)**: $[1, pq]$ 中 $p$ 倍数 $q$ 个 → $\\fbox{E}=③$；$q$ 倍数 $p$ 个 → $\\fbox{F}=②$；$pq$ 倍数 1 个 → $\\fbox{G}=①$。$A(pq) = (p-1)(q-1)$ → $\\fbox{H}=⑦$。\n\n**A(p²q)**: $[1, p^2q]$ 中 $p$ 倍数 $pq$ 个 → $\\fbox{I}=⓪$；$q$ 倍数 $p^2$ 个 → $\\fbox{J}=④$；$pq$ 倍数 $p$ 个 → $\\fbox{K}=②$。$A(p^2q) = p^2q-pq-p^2+p = p(p-1)(q-1)$ → $\\fbox{L}=⑨$。"
+          },
+          {
+            "title": "(iii) A(p²q) = 36",
+            "content": "$36 = 2^2 \\cdot 3^2$。$\\fbox{M}=2$，$\\fbox{N}=2$，$\\fbox{O}=3$，$\\fbox{P}=2$。\n\n$p(p-1)(q-1) = 36$:\n- $p=2$: $q = 19$ ✓\n- $p=3$: $q = 7$ ✓\n- $p \\geq 5$: $p(p-1) \\geq 20 > 36/小因子$, 无解.\n\n$\\fbox{Q}=2$，$\\fbox{RS}=19$，$\\fbox{T}=3$，$\\fbox{U}=7$。"
+          }
+        ],
+        "finalAnswer": "A=4，B=2，C=4；D=⑤，E=③，F=②，G=①，H=⑦；I=⓪，J=④，K=②，L=⑨；M=2，N=2，O=3，P=2；Q=2，RS=19，T=3，U=7"
+      }
+    },
+    {
+      "id": "c1-IV-1",
+      "number": "IV",
+      "topic": "等腰三角形与内接圆 + 弧上的点",
+      "topicTag": "平面几何",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "半径 $2$ 的圆周上取 $AB=AC$, $\\angle BAC = 60°$ 的 3 点 $A, B, C$。圆的两弧中短的为 $L_1$，长的为 $L_2$。\n\n(1) 内接此圆, 切 $AB, AC$ 的圆中心为 $O$, 求 $r$。\n\n$O$ 在 $AB$ 上的切点为 $D$。$\\angle OAD = \\fbox{AB}°$，$AO = \\fbox{C} - r$。所以\n$$r = \\dfrac{\\fbox{D}}{\\fbox{E}}$$\n\n(2) $L_2$ 上取 $BP = 3$ 的点 $P$。求线段 $PB, PC$ 与弧 $L_1$ 围成图形的周长 $\\ell$ 与面积 $S$。\n\n$BC = \\fbox{F}\\sqrt{\\fbox{G}}$，故 $PC = x$ 满足\n$$x^2 - \\fbox{H}\\,x - \\fbox{I} = 0$$\n\n所以 $x = \\dfrac{\\fbox{J} + \\sqrt{\\fbox{KL}}}{\\fbox{M}}$。\n\n因此\n$$\\ell = \\dfrac{\\fbox{N}}{\\fbox{O}}\\pi + \\dfrac{\\fbox{P} + \\sqrt{\\fbox{KL}}}{\\fbox{M}}$$\n\n三角形 $PBC$ 面积 $S'$ 为\n$$S' = \\dfrac{\\fbox{Q}\\left(\\sqrt{\\fbox{R}} + \\sqrt{\\fbox{S}}\\right)}{\\fbox{T}}\\quad(R < S)$$\n\n故\n$$S = \\dfrac{\\fbox{U}}{\\fbox{V}}\\pi + \\dfrac{\\sqrt{\\fbox{W}} + \\fbox{X}\\sqrt{\\fbox{Y}}}{\\fbox{Z}}$$",
+      "solution": {
+        "translation": "(1) 等边三角形 (AB=AC, ∠A=60° → 等边)，O 在角平分线上, ∠OAD=30°。AO=4-r (因小圆与大圆内切, 距离=2-r, 与 A 的距离=2+(2-r)=4-r)。sin30°=r/(4-r) 得 r=4/3。(2) BC=2√3。P 在 L₂ (长弧, 含 A)，∠BPC=60° (subtends 短弧 120°)。BC²=BP²+PC²-BP·PC: 12=9+x²-3x → x²-3x-3=0, x=(3+√21)/2。L₁ 弧长 = 4π/3。ℓ=PB+PC+L₁=3+(3+√21)/2+4π/3=4π/3+(9+√21)/2。△PBC = 9(√3+√7)/8。S = 短弧 segment + △PBC = (4π/3-√3) + 9(√3+√7)/8 = 4π/3 + (√3+9√7)/8。",
+        "analysis": "内接小圆中心在角平分线上, 与大圆内切。P 在长弧 L₂ 上, 由圆周角定理 ∠BPC=60°。",
+        "steps": [
+          {
+            "title": "(1) 求 r",
+            "content": "△ABC 等边 (AB=AC, ∠A=60° → 等边)。小圆心 $O$ 在角平分线 (亦为大圆直径) 上, 在 $A$ 与大圆心 $O_b$ 的对侧 (经过 $O_b$)。\n\n$\\angle OAD = 30°$。$\\fbox{AB} = 30$。\n\n$AO = AO_b + O_bO = 2 + (2-r) = 4 - r$。$\\fbox{C} = 4$。\n\n直角 $\\triangle OAD$: $\\sin 30° = r/AO \\Rightarrow 1/2 = r/(4-r) \\Rightarrow r = 4/3$。\n\n$\\fbox{D} = 4$，$\\fbox{E} = 3$。"
+          },
+          {
+            "title": "(2) BC 与 x",
+            "content": "$BC = 2R\\sin\\angle A = 2 \\cdot 2 \\cdot \\sin 60° = 2\\sqrt 3$。$\\fbox{F} = 2$，$\\fbox{G} = 3$。\n\n$P$ 在 $L_2$ (长弧, 含 A)。$\\angle BPC$ subtends 短弧 $L_1$ (中心角 120°) → 圆周角 60°。\n\n余弦定理:$12 = 9 + x^2 - 3x \\Rightarrow x^2 - 3x - 3 = 0$。$\\fbox{H} = 3$，$\\fbox{I} = 3$。\n\n$x = \\dfrac{3 + \\sqrt{21}}{2}$。$\\fbox{J} = 3$，$\\fbox{KL} = 21$，$\\fbox{M} = 2$。"
+          },
+          {
+            "title": "(2) 周长 ℓ",
+            "content": "$L_1$ 弧长 = $R \\cdot 2\\pi/3 = 4\\pi/3$。\n\n$\\ell = PB + PC + L_1 = 3 + \\dfrac{3+\\sqrt{21}}{2} + \\dfrac{4\\pi}{3} = \\dfrac{4\\pi}{3} + \\dfrac{9 + \\sqrt{21}}{2}$\n\n$\\fbox{N} = 4$，$\\fbox{O} = 3$，$\\fbox{P} = 9$。"
+          },
+          {
+            "title": "(2) 面积 S",
+            "content": "$S' = \\triangle PBC = \\dfrac{1}{2}\\cdot 3 \\cdot \\dfrac{3+\\sqrt{21}}{2} \\cdot \\dfrac{\\sqrt 3}{2} = \\dfrac{9(\\sqrt 3 + \\sqrt 7)}{8}$\n\n（用 $\\sqrt 3 \\cdot \\sqrt{21} = \\sqrt{63} = 3\\sqrt 7$）\n\n$\\fbox{Q} = 9$，$\\fbox{R} = 3$，$\\fbox{S} = 7$，$\\fbox{T} = 8$。\n\n图形 = 短弧 segment ($L_1$ 与 $BC$ 围) + $\\triangle PBC$。\n\n短弧 segment = $\\dfrac{4\\pi}{3} - \\sqrt 3$（sector $-$ △OBC）\n\n$S = \\dfrac{4\\pi}{3} - \\sqrt 3 + \\dfrac{9(\\sqrt 3 + \\sqrt 7)}{8} = \\dfrac{4\\pi}{3} + \\dfrac{\\sqrt 3 + 9\\sqrt 7}{8}$\n\n$\\fbox{U} = 4$，$\\fbox{V} = 3$，$\\fbox{W} = 3$，$\\fbox{X} = 9$，$\\fbox{Y} = 7$，$\\fbox{Z} = 8$。"
+          }
+        ],
+        "finalAnswer": "AB=30，C=4；D=4，E=3；F=2，G=3；H=3，I=3；J=3，KL=21，M=2；N=4，O=3，P=9；Q=9，R=3，S=7，T=8；U=4，V=3，W=3，X=9，Y=7，Z=8"
+      }
+    }
+  ]
+}
