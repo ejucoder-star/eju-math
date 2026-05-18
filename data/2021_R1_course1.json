@@ -1,0 +1,208 @@
+{
+  "metadata": {
+    "course": "course1",
+    "year": "2021",
+    "session": "1",
+    "courseNameJa": "数学1",
+    "courseNameEn": "Course 1 (Basic)",
+    "description": "基础课程｜文科方向",
+    "color": "#2563eb",
+    "examTitle": "2021年度（令和3年）第1回",
+    "examDate": "2021年6月"
+  },
+  "questions": [
+    {
+      "id": "c1-I-1",
+      "number": "I-1",
+      "topic": "两个二次函数的关系与最值",
+      "topicTag": "二次函数",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "考虑两个二次函数\n$$f(x) = -2x^2,\\quad g(x) = x^2 + ax + b$$\n\n$g(x)$ 满足:\n(i) $g(x)$ 在 $x = 3$ 取最小值\n(ii) $g(4) = f(4)$\n\n(1) 由 (i) 得 $a = -\\fbox{A}$。由 (ii) 得 $b = -\\fbox{BC}$。因此 $g(x)$ 的最小值为 $-\\fbox{DE}$。\n\n(2) 求满足 $f(x) = g(x)$ 且与 $4$ 不同的 $x$。$x$ 满足\n$$x^2 - \\fbox{F}\\,x - \\fbox{G} = 0$$\n\n故 $x = -\\fbox{H}$。\n\n(3) 在 $-\\fbox{H} \\leq x \\leq 4$ 中,$f(x) - g(x)$ 在 $x = \\fbox{I}$ 取最大,最大值 $\\fbox{JK}$。",
+      "solution": {
+        "translation": "(i) g 的轴 -a/2=3 → a=-6。(ii) g(4)=f(4)=-32 → 16-24+b=-32 → b=-24。min g=g(3)=-33。f(x)-g(x)=-3(x-1)²+27, max=27 at x=1。",
+        "analysis": "g 是开口向上的抛物线，最小值在顶点。f-g 是开口向下的抛物线，最大值在顶点。",
+        "steps": [
+          {
+            "title": "(1) 求 a, b 与 g 的最小值",
+            "content": "$g$ 的轴 $x = -a/2 = 3 \\implies a = -6$。$\\fbox{A} = 6$。\n\n$g(4) = 16 + 4a + b = 16 - 24 + b = b - 8$\n$f(4) = -32$\n$b - 8 = -32 \\implies b = -24$。$\\fbox{BC} = 24$。\n\n$g(3) = 9 - 18 - 24 = -33$。$\\fbox{DE} = 33$。"
+          },
+          {
+            "title": "(2) f(x) = g(x)",
+            "content": "$-2x^2 = x^2 - 6x - 24 \\implies 3x^2 - 6x - 24 = 0 \\implies x^2 - 2x - 8 = 0$\n\n$\\fbox{F} = 2$，$\\fbox{G} = 8$。\n\n$(x-4)(x+2) = 0 \\implies x = 4 \\text{ 或 } -2$。\n\n与 $4$ 不同的 $x = -2$。$\\fbox{H} = 2$。"
+          },
+          {
+            "title": "(3) f - g 在区间上的最大值",
+            "content": "$f(x) - g(x) = -2x^2 - x^2 + 6x + 24 = -3x^2 + 6x + 24 = -3(x-1)^2 + 27$\n\n最大在 $x = 1 \\in [-2, 4]$，最大值 $27$。\n\n$\\fbox{I} = 1$，$\\fbox{JK} = 27$。"
+          }
+        ],
+        "finalAnswer": "A=6，BC=24，DE=33；F=2，G=8，H=2；I=1，JK=27"
+      }
+    },
+    {
+      "id": "c1-I-2",
+      "number": "I-2",
+      "topic": "两人抽 1/2/3 卡片游戏的概率",
+      "topicTag": "概率",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "A、B 各持装有 1, 2, 3 三张卡片的袋子。两人同时从各自袋子取出 1 张，比较数字大小。相同则平局，不同则数大者赢。\n\n(1) 1 局平局的概率为 $\\dfrac{\\fbox{L}}{\\fbox{M}}$。\n\n(2) 进行 4 局（每次放回）。\n\n(i) A 至少赢 3 局的概率为 $\\dfrac{\\fbox{N}}{\\fbox{O}}$。\n\n(ii) A 赢 1 局、平 2 局的概率为 $\\dfrac{\\fbox{P}}{\\fbox{QR}}$。\n\n(iii) A 赢的局数与 B 赢的局数相同的概率为 $\\dfrac{\\fbox{ST}}{\\fbox{UV}}$。因此 A 赢的局数比 B 多的概率为 $\\dfrac{\\fbox{WX}}{\\fbox{UV}}$。",
+      "solution": {
+        "translation": "每局: P(平)=3/9=1/3, P(A赢)=P(B赢)=3/9=1/3。4 局: A 赢≥3 = C(4,3)(1/3)³(2/3)+C(4,4)(1/3)⁴ = 1/9。A1胜2平1负 = 4!/(1!2!1!)·(1/3)⁴ = 12/81 = 4/27。A赢=B赢: 19/81 (k=0,1,2)。A>B = (1-19/81)/2 = 31/81。",
+        "analysis": "对称性：A 赢和 B 赢概率相等，故 P(A=B) + 2·P(A>B) = 1。",
+        "steps": [
+          {
+            "title": "(1) 平局概率",
+            "content": "P(A=B) = 3/9 = 1/3。$\\fbox{L}=1$，$\\fbox{M}=3$。"
+          },
+          {
+            "title": "(2)(i) A 至少赢 3 局",
+            "content": "P(A 单局赢) = 3/9 = 1/3。P(A 单局不赢) = 2/3。\n\n$P(A \\geq 3) = \\binom{4}{3}(1/3)^3(2/3) + \\binom{4}{4}(1/3)^4 = \\dfrac{8}{81} + \\dfrac{1}{81} = \\dfrac{9}{81} = \\dfrac{1}{9}$\n\n$\\fbox{N} = 1$，$\\fbox{O} = 9$。"
+          },
+          {
+            "title": "(2)(ii) A 赢 1、平 2、B 赢 1",
+            "content": "$P = \\dfrac{4!}{1!\\cdot 2!\\cdot 1!} \\cdot (1/3)^4 = 12/81 = \\dfrac{4}{27}$\n\n$\\fbox{P} = 4$，$\\fbox{QR} = 27$。"
+          },
+          {
+            "title": "(2)(iii) A 赢 = B 赢",
+            "content": "k=A 赢=B 赢, c=平=4-2k。\n- k=0: c=4: $\\binom{4}{4} = 1$\n- k=1: c=2: $\\dfrac{4!}{1!1!2!} = 12$\n- k=2: c=0: $\\dfrac{4!}{2!2!0!} = 6$\n\n合计 $\\dfrac{1+12+6}{81} = \\dfrac{19}{81}$。$\\fbox{ST} = 19$，$\\fbox{UV} = 81$。\n\nP(A > B) = (1 - 19/81)/2 = 62/162 = 31/81。$\\fbox{WX} = 31$。"
+          }
+        ],
+        "finalAnswer": "L=1，M=3；N=1，O=9；P=4，QR=27；ST=19，UV=81，WX=31"
+      }
+    },
+    {
+      "id": "c1-II-1",
+      "number": "II-1",
+      "topic": "无理数不等式与 5 数大小比较",
+      "topicTag": "无理数",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "(1) 同时满足两个不等式\n$$\\dfrac{m}{3} < \\sqrt 3 < \\dfrac{n}{4},\\quad \\dfrac{n}{3} < \\sqrt 6 < \\dfrac{m}{2}$$\n\n的正整数 $m, n$ 为 $m = \\fbox{A}$，$n = \\fbox{B}$。\n\n(2) 利用 (1) 的结果，比较下面 5 个数 ①～⑤ 的大小:\n\n① $\\left(\\sqrt{(-3)(-4)}\\right)^3$ ② $6\\sqrt{(-2)^3\\cdot(-3)}$ ③ $\\sqrt{((-4)\\cdot(-3)^2)^2}$ ④ $(-1)^3\\sqrt{((-2)^6)^2}$ ⑤ $\\left(\\dfrac{5\\sqrt 3}{1-\\sqrt 6}\\right)^2$\n\n⑤ 的分母有理化得\n$$\\left(\\dfrac{5\\sqrt 3}{1-\\sqrt 6}\\right)^2 = \\fbox{CD} + \\fbox{E}\\sqrt{\\fbox{F}}$$\n\n5 个数中,$35$ 以上的数有 $\\fbox{G}$ 个，负数有 $\\fbox{H}$ 个。特别地, 5 个数从小到大排为\n$$\\fbox{I} < \\fbox{J} < \\fbox{K} < \\fbox{L} < \\fbox{M}$$",
+      "solution": {
+        "translation": "(1) m<3√3≈5.20 且 m>2√6≈4.90 → m=5; n>4√3≈6.93 且 n<3√6≈7.35 → n=7。(2) ①=(√12)³=24√3; ②=6√24=12√6; ③=√(36²)=36; ④=-√(64²)=-64; ⑤=75/(7-2√6)=21+6√6。排序: -64<12√6≈29.4<21+6√6≈35.7<36<24√3≈41.6, 即 ④<②<⑤<③<①。",
+        "analysis": "各项需用估值法比较，需利用 √3≈1.73, √6≈2.45 等近似。",
+        "steps": [
+          {
+            "title": "(1) 求 m, n",
+            "content": "$m < 3\\sqrt 3 \\approx 5.20$, $m > 2\\sqrt 6 \\approx 4.90$ → $m = 5$。\n$n > 4\\sqrt 3 \\approx 6.93$, $n < 3\\sqrt 6 \\approx 7.35$ → $n = 7$。\n\n$\\fbox{A} = 5$，$\\fbox{B} = 7$。"
+          },
+          {
+            "title": "(2) 计算 5 个数",
+            "content": "① $(\\sqrt{12})^3 = 12\\sqrt{12} = 24\\sqrt 3 \\approx 41.57$\n② $6\\sqrt{(-8)(-3)} = 6\\sqrt{24} = 12\\sqrt 6 \\approx 29.39$\n③ $\\sqrt{((-4)\\cdot 9)^2} = \\sqrt{1296} = 36$\n④ $(-1)\\sqrt{64^2} = -64$\n⑤ $\\left(\\dfrac{5\\sqrt 3}{1-\\sqrt 6}\\right)^2 = \\dfrac{75}{(1-\\sqrt 6)^2} = \\dfrac{75}{7-2\\sqrt 6} = \\dfrac{75(7+2\\sqrt 6)}{49-24} = 3(7+2\\sqrt 6) = 21 + 6\\sqrt 6 \\approx 35.70$\n\n$\\fbox{CD} = 21$，$\\fbox{E} = 6$，$\\fbox{F} = 6$。"
+          },
+          {
+            "title": "(2) 大小比较",
+            "content": "$35$ 以上:① $\\approx 41.57$，③ $= 36$，⑤ $\\approx 35.70$，共 **3** 个。$\\fbox{G} = 3$。\n\n负数:仅 ④。$\\fbox{H} = 1$。\n\n排序:$-64 < 12\\sqrt 6 < 21+6\\sqrt 6 < 36 < 24\\sqrt 3$\n\n即 ④ < ② < ⑤ < ③ < ①。\n\n$\\fbox{I} = ④$，$\\fbox{J} = ②$，$\\fbox{K} = ⑤$，$\\fbox{L} = ③$，$\\fbox{M} = ①$。"
+          }
+        ],
+        "finalAnswer": "A=5，B=7；CD=21，E=6，F=6；G=3，H=1；I=④，J=②，K=⑤，L=③，M=①"
+      }
+    },
+    {
+      "id": "c1-II-2",
+      "number": "II-2",
+      "topic": "二次函数的最值——最大值与最小值",
+      "topicTag": "二次函数",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "$f(x) = x^2 + ax + b$ 满足:\n(i) $f(3) = 1$\n(ii) $13 \\leq f(-1) \\leq 25$\n\n求 $f$ 的最小值 $m$ 用 $a$ 表示，再求 $m$ 的最大、最小值。\n\n由 (i)，$a, b$ 满足\n$$\\fbox{N}\\,a + b + \\fbox{O} = 0$$\n\n从而\n$$f(x) = x^2 + ax - \\fbox{P}\\,a - \\fbox{Q}$$\n\n由 (ii)，$a$ 满足\n$$-\\fbox{R} \\leq a \\leq -\\fbox{S}$$\n\n另一方面，$m$ 用 $a$ 表示为\n$$m = -\\dfrac{1}{\\fbox{T}}(a + \\fbox{U})^2 + \\fbox{V}$$\n\n因此, $m$ 在 $a = -\\fbox{W}$ 取最大值 $\\fbox{X}$，在 $a = -\\fbox{Y}$ 取最小值 $\\fbox{Z}$。",
+      "solution": {
+        "translation": "f(3)=9+3a+b=1 → 3a+b=-8。f(-1)=-4a-7 ∈ [13,25] → a ∈ [-8,-5]。m=-(1/4)(a+6)²+1。-8≤a≤-5 中, m 最大在 a=-6: m=1; 最小在 a=-8: m=0。",
+        "analysis": "f(3)=1 用 b=-3a-8 替换。f(-1) 化为 -4a-7 给 a 区间。m = b-a²/4 = -a²/4-3a-8 = 配方。",
+        "steps": [
+          {
+            "title": "由 (i) 求 b 与 f(x)",
+            "content": "$f(3) = 9 + 3a + b = 1 \\implies 3a + b + 8 = 0$\n\n$\\fbox{N} = 3$，$\\fbox{O} = 8$。\n\n$b = -3a - 8$，$f(x) = x^2 + ax - 3a - 8$。$\\fbox{P} = 3$，$\\fbox{Q} = 8$。"
+          },
+          {
+            "title": "由 (ii) 求 a 范围",
+            "content": "$f(-1) = 1 - a - 3a - 8 = -4a - 7$\n\n$13 \\leq -4a - 7 \\leq 25 \\implies 20 \\leq -4a \\leq 32 \\implies -8 \\leq a \\leq -5$\n\n$\\fbox{R} = 8$，$\\fbox{S} = 5$。"
+          },
+          {
+            "title": "用 a 表示 m",
+            "content": "$m = b - \\dfrac{a^2}{4} = -3a - 8 - \\dfrac{a^2}{4} = -\\dfrac{1}{4}(a^2 + 12a) - 8 = -\\dfrac{1}{4}(a+6)^2 + 9 - 8 = -\\dfrac{1}{4}(a+6)^2 + 1$\n\n$\\fbox{T} = 4$，$\\fbox{U} = 6$，$\\fbox{V} = 1$。"
+          },
+          {
+            "title": "m 的最值",
+            "content": "$m(a)$ 是开口向下的抛物线，顶点 $a = -6$，最大值 $1$。\n\n$a = -6 \\in [-8, -5]$ ✓，故最大值在 $a = -6$，$m = 1$。\n\n$\\fbox{W} = 6$，$\\fbox{X} = 1$。\n\n端点:$m(-8) = -1 + 1 = 0$，$m(-5) = -1/4 + 1 = 3/4$。最小值在 $a = -8$，$m = 0$。\n\n$\\fbox{Y} = 8$，$\\fbox{Z} = 0$。"
+          }
+        ],
+        "finalAnswer": "N=3，O=8；P=3，Q=8；R=8，S=5；T=4，U=6，V=1；W=6，X=1；Y=8，Z=0"
+      }
+    },
+    {
+      "id": "c1-III-1",
+      "number": "III",
+      "topic": "5 进与 9 进表示数字反转的整数",
+      "topicTag": "整数",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "正整数 $N$ 用 5 进和 9 进表示均为 3 位，且数字顺序相反。\n\n设 5 进表示为 $abc$, 9 进表示为 $cba$。则\n$$\\fbox{A} \\leq a \\leq \\fbox{B},\\quad \\fbox{C} \\leq b \\leq \\fbox{D},\\quad \\fbox{E} \\leq c \\leq \\fbox{F} \\quad \\cdots ①$$\n\n又\n$$N = \\fbox{GH}\\,a + \\fbox{I}\\,b + c = \\fbox{JK}\\,c + \\fbox{L}\\,b + a$$\n\n所以\n$$b = \\fbox{M}\\,a - \\fbox{NO}\\,c \\quad \\cdots ②$$\n\n求 ①、② 满足的 $a, b, c$:\n$$a = \\fbox{P},\\quad b = \\fbox{Q},\\quad c = \\fbox{R}$$\n\n因此 $N$ 用 10 进表示为 $\\fbox{STU}$，4 进表示为 $\\fbox{VWXY}$。",
+      "solution": {
+        "translation": "3位5进数: 1≤a≤4, 0≤b≤4, 1≤c≤4 (c 是 9 进首位故 ≥1)。N=25a+5b+c=81c+9b+a → 24a-4b-80c=0 → b=6a-20c。约束: 1≤a≤4 且 b=6a-20c ∈ [0,4]，得 c=1, a=4, b=4。N=121。",
+        "analysis": "5 进 3 位 ⟹ 25≤N≤124; 9 进 3 位 ⟹ 81≤N≤728。交集 81≤N≤124。",
+        "steps": [
+          {
+            "title": "数字范围",
+            "content": "5 进 3 位:$1 \\leq a \\leq 4$, $0 \\leq b \\leq 4$, $0 \\leq c \\leq 4$。\n9 进表示 $cba$ 是 3 位:$c \\geq 1$。\n\n故 $1 \\leq a \\leq 4$, $0 \\leq b \\leq 4$, $1 \\leq c \\leq 4$。\n\n$\\fbox{A}=1$，$\\fbox{B}=4$，$\\fbox{C}=0$，$\\fbox{D}=4$，$\\fbox{E}=1$，$\\fbox{F}=4$。"
+          },
+          {
+            "title": "N 的两种表示",
+            "content": "$N = 25a + 5b + c$（5 进）= $81c + 9b + a$（9 进）\n\n$\\fbox{GH}=25$，$\\fbox{I}=5$；$\\fbox{JK}=81$，$\\fbox{L}=9$。\n\n相等:$25a + 5b + c = 81c + 9b + a \\implies 24a - 4b - 80c = 0 \\implies 6a - b - 20c = 0$\n\n$b = 6a - 20c$。$\\fbox{M} = 6$，$\\fbox{NO} = 20$。"
+          },
+          {
+            "title": "求 a, b, c",
+            "content": "$b = 6a - 20c \\in [0, 4]$:\n$0 \\leq 6a - 20c \\leq 4 \\implies 10c \\leq 3a \\leq 10c + 2$\n\n- $c=1$:$10 \\leq 3a \\leq 12 \\implies a = 4$ ✓\n  $b = 24 - 20 = 4$ ✓\n- $c \\geq 2$:$3a \\geq 20 \\implies a \\geq 7$, 超 $4$ ✗\n\n$a = 4$，$b = 4$，$c = 1$。$\\fbox{P} = 4$，$\\fbox{Q} = 4$，$\\fbox{R} = 1$。"
+          },
+          {
+            "title": "求 N 的十进制与 4 进表示",
+            "content": "$N = 25\\cdot 4 + 5\\cdot 4 + 1 = 100 + 20 + 1 = 121$。$\\fbox{STU} = 121$。\n\n验证:$N = 81\\cdot 1 + 9\\cdot 4 + 4 = 81 + 36 + 4 = 121$ ✓。\n\n4 进:$121 = 64 + 32 + 16 + 8 + 1 = 1\\cdot 64 + 3\\cdot 16 + 2\\cdot 4 + 1$\n\n验证:$1321_4 = 1\\cdot 64 + 3\\cdot 16 + 2\\cdot 4 + 1 = 64 + 48 + 8 + 1 = 121$ ✓。\n\n$\\fbox{VWXY} = 1321$。"
+          }
+        ],
+        "finalAnswer": "A=1，B=4，C=0，D=4，E=1，F=4；GH=25，I=5；JK=81，L=9；M=6，NO=20；P=4，Q=4，R=1；STU=121；VWXY=1321"
+      }
+    },
+    {
+      "id": "c1-IV-1",
+      "number": "IV",
+      "topic": "60°-45°-75° 三角形的角平分线与外接圆",
+      "topicTag": "平面几何",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "questionDiagram": {
+        "svg": "<svg viewBox=\"0 0 320 280\" style=\"width:100%;max-width:340px;display:block;margin:12px auto\"><polygon points=\"160,40 50,220 280,220\" fill=\"none\" stroke=\"#1c1917\" stroke-width=\"1.5\"/><line x1=\"160\" y1=\"40\" x2=\"185\" y2=\"220\" stroke=\"#7c3aed\" stroke-width=\"1.3\" stroke-dasharray=\"4,3\"/><circle cx=\"160\" cy=\"40\" r=\"3.5\" fill=\"#1c1917\"/><text x=\"155\" y=\"32\" font-size=\"13\" font-weight=\"700\">A</text><circle cx=\"50\" cy=\"220\" r=\"3.5\" fill=\"#1c1917\"/><text x=\"32\" y=\"232\" font-size=\"13\" font-weight=\"700\">B</text><circle cx=\"280\" cy=\"220\" r=\"3.5\" fill=\"#1c1917\"/><text x=\"284\" y=\"230\" font-size=\"13\" font-weight=\"700\">C</text><circle cx=\"185\" cy=\"220\" r=\"3.5\" fill=\"#dc2626\"/><text x=\"180\" y=\"238\" font-size=\"13\" font-weight=\"700\" fill=\"#dc2626\">D</text><text x=\"30\" y=\"268\" font-size=\"10\" fill=\"#57534e\">∠B=45°, ∠C=75°, ∠A=60°; AD 是 ∠A 的平分线交 BC 于 D</text></svg>"
+      },
+      "japanese": "三角形 $ABC$ 中 $\\angle B = 45°$，$\\angle C = 75°$。$\\angle A$ 的平分线与边 $BC$ 的交点设为 $D$。\n\n(1) 由正弦定理\n$$AC = \\dfrac{\\sqrt{\\fbox{A}}}{\\fbox{B}}\\,BC,\\quad AD = \\sqrt{\\fbox{C}}\\,BD$$\n\n特别地，$\\angle ADC = \\fbox{DE}°$，故\n$$BD : BC = \\fbox{F} : \\sqrt{\\fbox{G}}$$\n\n所以\n$$AB : AC = \\fbox{H} : (\\sqrt{\\fbox{I}} - \\fbox{J})$$\n\n(2) 设 $\\triangle ABD$ 的外接圆中心为 $O_1$，$\\triangle ACD$ 的外接圆中心为 $O_2$。求 $\\triangle ABC$ 与 $\\triangle AO_1O_2$ 的面积比 $\\triangle ABC : \\triangle AO_1O_2$。\n\n$\\angle AO_1D = \\fbox{KL}°$，$\\angle AO_2D = \\fbox{MN}°$。由 (1) 的考察\n$$AC = \\sqrt{\\fbox{O}}\\,AO_1,\\quad AO_2 = \\left(\\sqrt{\\fbox{P}} - \\fbox{Q}\\right) AO_1$$\n\n因此\n$$\\triangle ABC : \\triangle AO_1O_2 = \\fbox{R} : \\left(\\fbox{S} - \\sqrt{\\fbox{T}}\\right)$$",
+      "solution": {
+        "translation": "(1) 正弦定理: AC/sin45°=BC/sin60° → AC=BC·√2/√3=BC·√6/3。△ABD 中 ∠BAD=30°,∠ABD=45°,∠ADB=105° → AD/sin45°=BD/sin30° → AD=√2·BD。∠ADC=180°-105°=75°,故 △ACD 等腰 (∠ACD=∠ADC=75°), AC=AD=√2·BD, 而 AC=√6/3·BC=√2·BD → BD=√6/(3√2)·BC=√3/3·BC, 故 BD:BC=1:√3。AB:AC 用正弦定理 AB/sin75°=AC/sin45°, 化简得 AB:AC=(√3+1):2=1:(√3-1)。(2) ∠AO₁D=2·45°=90°, ∠AO₂D=2·75°=150°。△AO₁D 直角等腰, AC=AD=√2·AO₁。△AO₂D 等腰夹角 150°, AD²=2R₂²(1+√3/2)=R₂²(2+√3), AO₂=AD/√(2+√3)=(√3-1)·AO₁。面积比化简为 (3+√3):(3-√3)=1:(2-√3)。",
+        "analysis": "用圆心角=2倍圆周角；△AO₁O₂ 中 AO₁,AO₂ 在 AD 中垂线两侧。",
+        "steps": [
+          {
+            "title": "(1) AC, AD, ∠ADC",
+            "content": "$\\angle A = 60°$（三角和）。正弦定理:\n$$\\dfrac{AC}{\\sin 45°} = \\dfrac{BC}{\\sin 60°} \\implies AC = \\dfrac{\\sqrt 2/2}{\\sqrt 3/2}\\cdot BC = \\dfrac{\\sqrt 6}{3}\\,BC$$\n\n$\\fbox{A} = 6$，$\\fbox{B} = 3$。\n\n△ABD 中 $\\angle BAD = 30°$，$\\angle ABD = 45°$，$\\angle ADB = 105°$。正弦定理:\n$$\\dfrac{AD}{\\sin 45°} = \\dfrac{BD}{\\sin 30°} \\implies AD = \\sqrt 2\\,BD$$\n\n$\\fbox{C} = 2$。\n\n$\\angle ADC = 180° - \\angle ADB = 75°$。$\\fbox{DE} = 75$。"
+          },
+          {
+            "title": "(1) BD:BC 与 AB:AC",
+            "content": "△ACD 中 $\\angle ACD = \\angle ADC = 75°$，故 $AC = AD = \\sqrt 2\\,BD$。\n\n结合 $AC = \\dfrac{\\sqrt 6}{3}BC$:\n$$\\sqrt 2\\,BD = \\dfrac{\\sqrt 6}{3}BC \\implies BD = \\dfrac{\\sqrt 3}{3}BC = \\dfrac{BC}{\\sqrt 3}$$\n\n$BD : BC = 1 : \\sqrt 3$。$\\fbox{F} = 1$，$\\fbox{G} = 3$。\n\n由正弦定理 $\\dfrac{AB}{\\sin C} = \\dfrac{AC}{\\sin B}$:\n$$\\dfrac{AB}{AC} = \\dfrac{\\sin 75°}{\\sin 45°} = \\dfrac{(\\sqrt 6+\\sqrt 2)/4}{\\sqrt 2/2} = \\dfrac{\\sqrt 3+1}{2}$$\n\n即 $AB:AC = (\\sqrt 3+1):2 = 1:(\\sqrt 3-1)$。$\\fbox{H} = 1$，$\\fbox{I} = 3$，$\\fbox{J} = 1$。"
+          },
+          {
+            "title": "(2) ∠AO₁D 与 ∠AO₂D",
+            "content": "圆心角 = 2·圆周角:\n\n$\\angle AO_1D = 2\\angle ABD = 90°$。$\\fbox{KL} = 90$。\n$\\angle AO_2D = 2\\angle ACD = 150°$。$\\fbox{MN} = 150$。\n\n△AO₁D 直角等腰 ($\\angle AO_1D = 90°$，$O_1A = O_1D$)，$AD = \\sqrt 2\\,AO_1$，且 $AC = AD = \\sqrt 2\\,AO_1$。$\\fbox{O} = 2$。\n\n△AO₂D 等腰夹角 150°，$AD^2 = 2AO_2^2(1 - \\cos 150°) = AO_2^2(2 + \\sqrt 3)$。\n$AO_2 = \\dfrac{AD}{\\sqrt{2+\\sqrt 3}}$；又 $\\dfrac{2}{2+\\sqrt 3} = 4 - 2\\sqrt 3 = (\\sqrt 3-1)^2$, 故 $AO_2 = AO_1\\sqrt{4-2\\sqrt 3} = (\\sqrt 3 - 1)AO_1$。\n\n$\\fbox{P} = 3$，$\\fbox{Q} = 1$。"
+          },
+          {
+            "title": "(2) 面积比",
+            "content": "$O_1, O_2$ 都在 $AD$ 中垂线上。设 $AD = d$，$M$ 为 $AD$ 中点。\n\n$O_1M = \\dfrac{d}{2}$（直角等腰 △AO₁D，高=半腰），$O_2M = \\dfrac{d}{2}\\tan 15° = \\dfrac{d}{2}(2-\\sqrt 3)$。\n\n$O_1, O_2$ 在 AD 两侧:$|O_1O_2| = \\dfrac{d}{2} + \\dfrac{d}{2}(2-\\sqrt 3) = \\dfrac{d(3-\\sqrt 3)}{2}$。\n\n$A$ 到 $O_1O_2$ 的距离 = $AM = \\dfrac{d}{2}$。\n\n$\\triangle AO_1O_2 = \\dfrac{1}{2}\\cdot\\dfrac{d(3-\\sqrt 3)}{2}\\cdot\\dfrac{d}{2} = \\dfrac{d^2(3-\\sqrt 3)}{8}$。\n\n设 $BC = 1$，则 $d = AD = \\sqrt 2\\cdot BD = \\dfrac{\\sqrt 6}{3}$，$d^2 = \\dfrac{2}{3}$。\n\n$\\triangle AO_1O_2 = \\dfrac{2/3\\cdot (3-\\sqrt 3)}{8} = \\dfrac{3-\\sqrt 3}{12}$。\n\n$\\triangle ABC = \\dfrac{1}{2}\\cdot BC\\cdot AC\\cdot \\sin C = \\dfrac{1}{2}\\cdot 1\\cdot \\dfrac{\\sqrt 6}{3}\\cdot \\dfrac{\\sqrt 6+\\sqrt 2}{4} = \\dfrac{6+2\\sqrt 3}{24} = \\dfrac{3+\\sqrt 3}{12}$。\n\n$\\triangle ABC : \\triangle AO_1O_2 = (3+\\sqrt 3) : (3-\\sqrt 3) = 1:(2-\\sqrt 3)$\n\n（用乘以 $\\dfrac{1}{3+\\sqrt 3}$）。\n\n$\\fbox{R} = 1$，$\\fbox{S} = 2$，$\\fbox{T} = 3$。"
+          }
+        ],
+        "finalAnswer": "A=6，B=3；C=2；DE=75；F=1，G=3；H=1，I=3，J=1；KL=90，MN=150；O=2，P=3，Q=1；R=1，S=2，T=3"
+      }
+    }
+  ]
+}
