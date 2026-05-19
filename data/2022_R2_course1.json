@@ -1,0 +1,34 @@
+{
+  "metadata": {
+    "course": "course1",
+    "year": "2022",
+    "session": "2",
+    "courseNameJa": "数学1",
+    "courseNameEn": "Course 1 (Basic)",
+    "description": "基础课程｜文科方向",
+    "color": "#2563eb",
+    "examTitle": "2022年度（令和4年）第2回",
+    "examDate": "2022年11月"
+  },
+  "questions": [
+    {
+      "id": "c1-I-1",
+      "number": "I-1",
+      "topic": "由两条平行截线确定二次函数",
+      "topicTag": "二次函数",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "$a \\ne 0$，二次函数 $y = ax^2 + bx + c$ … ①。函数图象记作 $C$，$C$ 与直线 $y = 1$ 相交于 $2$ 点，两点距离为 $4$。$C$ 与直线 $y = 3$ 相交于 $2$ 点，两点距离为 $6$。\n\n(1) 设 $C$ 的顶点坐标为 $(p, q)$。取 $C$ 与 $y = 1$ 的一个交点 $x$ 坐标 $\\alpha$，则\n$$|\\alpha - p| = \\fbox{A}$$\n因此把交点 $(\\alpha, 1)$ 代入①，可得等式\n$$\\fbox{B}\\,a + q = \\fbox{C}$$\n对 $C$ 与 $y = 3$ 的交点同样可得\n$$\\fbox{D}\\,a + q = \\fbox{E}$$\n因此由这两个式子得\n$$a = \\dfrac{\\fbox{F}}{\\fbox{G}}, \\qquad q = -\\dfrac{\\fbox{H}}{\\fbox{I}}$$\n\n(2) 又 $C$ 经过点 $\\left(2, -\\dfrac{1}{5}\\right)$，且顶点的 $x$ 坐标 $p$ 小于 $2$，则\n$$b = -\\dfrac{\\fbox{J}}{\\fbox{K}}, \\qquad c = -\\dfrac{\\fbox{L}}{\\fbox{M}}$$",
+      "solution": {
+        "translation": "顶点 $(p, q)$ 的二次函数与水平线 $y = 1, y = 3$ 截得线段长分别为 $4, 6$；又过点 $(2, -1/5)$ 且 $p < 2$，求各系数。",
+        "analysis": "对 $y = a(x-p)^2 + q$，与 $y = k$ 的两交点距离 $= 2\\sqrt{(k-q)/a}$。",
+        "steps": [
+          {"title": "(1) 由两条截线得 $a, q$", "content": "$|\\alpha - p|$ 是交点到对称轴距离，等于半弦长 $4/2 = 2$。$\\fbox{A} = 2$。\n\n顶点式 $y = a(x-p)^2 + q$，代入 $(\\alpha, 1)$:\n$$1 = a(\\alpha - p)^2 + q = a \\cdot 4 + q \\Rightarrow 4a + q = 1$$\n$\\fbox{B}=4, \\fbox{C}=1$。\n\n对 $y = 3$，$|\\beta - p| = 6/2 = 3$，代入得\n$$3 = a \\cdot 9 + q \\Rightarrow 9a + q = 3$$\n$\\fbox{D}=9, \\fbox{E}=3$。\n\n两式相减：$5a = 2 \\Rightarrow a = \\dfrac{2}{5}$，$\\fbox{F}=2, \\fbox{G}=5$。\n$q = 1 - 4 \\cdot \\dfrac{2}{5} = -\\dfrac{3}{5}$，$\\fbox{H}=3, \\fbox{I}=5$。"},
+          {"title": "(2) 由过点条件求 $b, c$", "content": "$C$ 过 $(2, -\\dfrac{1}{5})$：\n$$\\dfrac{2}{5}(2 - p)^2 - \\dfrac{3}{5} = -\\dfrac{1}{5} \\Rightarrow (2-p)^2 = 1 \\Rightarrow p = 1 \\text{ 或 } 3$$\n由 $p < 2$，$p = 1$。\n\n$b = -2ap = -\\dfrac{4}{5}$，$\\fbox{J}=4, \\fbox{K}=5$。\n$c = ap^2 + q = \\dfrac{2}{5} - \\dfrac{3}{5} = -\\dfrac{1}{5}$，$\\fbox{L}=1, \\fbox{M}=5$。"}
+        ],
+        "finalAnswer": "A=2, B=4, C=1, D=9, E=3, F=2, G=5, H=3, I=5, J=4, K=5, L=1, M=5"
+      }
+    }
+  ]
+}
