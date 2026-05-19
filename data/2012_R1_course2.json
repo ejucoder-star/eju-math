@@ -1,0 +1,196 @@
+{
+  "metadata": {
+    "course": "course2",
+    "year": "2012",
+    "session": "1",
+    "courseNameJa": "数学2",
+    "courseNameEn": "Course 2 (Advanced)",
+    "description": "上级课程｜理科方向",
+    "color": "#9333ea",
+    "examTitle": "2012年度（平成24年）第1回",
+    "examDate": "2012年6月"
+  },
+  "questions": [
+    {
+      "id": "c2-I-1",
+      "number": "I-1",
+      "topic": "二次函数平移与相切条件",
+      "topicTag": "二次函数",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "$a, b$ 为常数，$a > 0$。将 $y = 4x^2 + 2ax + b$ 的图象沿 $x$ 轴方向平移 $a$、沿 $y$ 轴方向平移 $1 - 7a$。平移后的图象过点 $(0, 4)$，则\n$$b = \\fbox{AB}\\,a^2 + \\fbox{C}\\,a + \\fbox{D}$$\n该图象对应的二次函数为\n$$y = \\fbox{E}\\,x^2 - \\fbox{F}\\,a\\,x + \\fbox{G} \\quad \\cdots ①$$\n当 $①$ 的图象与 $x$ 轴相切时，$a = \\dfrac{\\fbox{H}}{\\fbox{I}}$，切点 $x$ 坐标 $x = \\fbox{J}$。",
+      "solution": {
+        "translation": "对二次函数作 $(a, 1-7a)$ 的平移：$y - (1-7a) = 4(x-a)^2 + 2a(x-a) + b$；代入 $(0,4)$ 求 $b$。",
+        "analysis": "平移公式 $y \\to y - q, x \\to x - p$。",
+        "steps": [
+          {
+            "title": "求 $b$",
+            "content": "平移后函数 $y = 4(x-a)^2 + 2a(x-a) + b + 1 - 7a$。\n\n代入 $(0,4)$：$4 = 4a^2 + 2a(-a) + b + 1 - 7a = 2a^2 - 7a + b + 1$。\n\n$b = -2a^2 + 7a + 3$。$\\fbox{AB}=-2, \\fbox{C}=7, \\fbox{D}=3$。"
+          },
+          {
+            "title": "化简平移后函数",
+            "content": "展开 $4(x-a)^2 + 2a(x-a) = 4x^2 - 8ax + 4a^2 + 2ax - 2a^2 = 4x^2 - 6ax + 2a^2$。\n\n加上常数项：$y = 4x^2 - 6ax + 2a^2 + b + 1 - 7a$。\n\n代 $b = -2a^2 + 7a + 3$：常数 $= 2a^2 + (-2a^2 + 7a + 3) + 1 - 7a = 4$。\n\n所以 $y = 4x^2 - 6ax + 4$。$\\fbox{E}=4, \\fbox{F}=6, \\fbox{G}=4$。"
+          },
+          {
+            "title": "相切条件",
+            "content": "判别式 $= 0$：$(6a)^2 - 4 \\cdot 4 \\cdot 4 = 36a^2 - 64 = 0 \\Rightarrow a^2 = \\dfrac{16}{9}$。\n\n$a > 0 \\Rightarrow a = \\dfrac{4}{3}$。$\\fbox{H}=4, \\fbox{I}=3$。\n\n切点 $x = \\dfrac{6a}{2 \\cdot 4} = \\dfrac{3a}{4} = \\dfrac{3 \\cdot 4/3}{4} = 1$。$\\fbox{J}=1$。"
+          }
+        ],
+        "finalAnswer": "AB=-2, C=7, D=3, E=4, F=6, G=4, H=4, I=3, J=1"
+      }
+    },
+    {
+      "id": "c2-I-2",
+      "number": "I-2",
+      "topic": "多项式因式分解与素数",
+      "topicTag": "整数·多项式",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "多项式 $P = x^2 + 2(a-1)x - 8a - 8$。\n\n(1) $a$ 为有理数。$x = 1 - \\sqrt 2$ 时 $P$ 为有理数的条件为 $a = \\fbox{K}$，此时 $P = \\fbox{LM}$。\n\n(2) $x, a$ 为正整数，求使 $P$ 为素数的 $x, a$。\n\n因式分解 $P = (x - \\fbox{N})(x + \\fbox{O}\\,a + \\fbox{P})$。\n\n故 $x = \\fbox{Q}$。$P$ 为素数的最小 $a = \\fbox{R}$，此时 $P = \\fbox{ST}$。",
+      "solution": {
+        "translation": "把 $P$ 按 $\\sqrt 2$ 的有理/无理部分分离；并按 $x$ 与 $a$ 整理实现因式分解。",
+        "analysis": "$x^2 - 2x - 8 = (x-4)(x+2)$；提取 $x-4$。",
+        "steps": [
+          {
+            "title": "(1) 代入 $x = 1 - \\sqrt 2$",
+            "content": "$x^2 = (1-\\sqrt 2)^2 = 3 - 2\\sqrt 2$。\n\n$P = 3 - 2\\sqrt 2 + 2(a-1)(1 - \\sqrt 2) - 8a - 8 = (3 + 2a - 2 - 8a - 8) + (-2 - 2(a-1))\\sqrt 2 = (-6a - 7) - 2a\\sqrt 2$。\n\n$P$ 有理 $\\Leftrightarrow$ $-2a = 0 \\Rightarrow a = 0$。$\\fbox{K} = 0$。\n\n此时 $P = -7$。$\\fbox{LM} = -7$。"
+          },
+          {
+            "title": "(2) 因式分解",
+            "content": "$P = x^2 + 2(a-1)x - 8a - 8 = x^2 - 2x + 2ax - 8a - 8 = (x^2 - 2x - 8) + 2a(x - 4)$\n\n$= (x-4)(x+2) + 2a(x-4) = (x-4)(x + 2a + 2)$。\n\n$\\fbox{N} = 4, \\fbox{O} = 2, \\fbox{P} = 2$。"
+          },
+          {
+            "title": "(2) 素数条件",
+            "content": "$x, a$ 正整数。$x + 2a + 2 \\ge 1 + 2 + 2 = 5 > 1$。\n\n$P$ 为素数需 $|x - 4| = 1$ 且另一因子为正素数。\n\n- $x - 4 = 1$：$x = 5$。$P = 5 + 2a + 2 = 2a + 7$。\n  - $a = 1$：$P = 9 = 3^2$ 非素。\n  - $a = 2$：$P = 11$ 素 ✓。最小 $a$。\n- $x - 4 = -1$：$x = 3$，但此时 $P = -1 \\cdot (\\cdots) < 0$ 非素。\n\n$\\fbox{Q} = 5, \\fbox{R} = 2, \\fbox{ST} = 11$。"
+          }
+        ],
+        "finalAnswer": "K=0, LM=-7, NOP=422, Q=5, R=2, ST=11"
+      }
+    },
+    {
+      "id": "c2-II-1",
+      "number": "II",
+      "topic": "数列前 n 项和与求和",
+      "topicTag": "数列",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "数列 $\\{a_n\\}$（$n = 1, 2, 3, \\ldots$）满足 $\\sum_{k=1}^n a_k = n^2 + 3n$。\n\n(1) $a_n = \\fbox{A}\\,n + \\fbox{B}$。\n\n(2) 数列 $\\{b_n\\}$（$b_n = n^2 - 5n - 6$），使 $b_n < 0$ 的项共有 $\\fbox{C}$ 个，这些项之和 $= -\\fbox{DE}$。\n\n(3) 对 (1)(2) 的 $a_n, b_n$，\n$$\\sum_{k=1}^n \\dfrac{k^2 b_k}{a_k} = \\dfrac{1}{\\fbox{F}} n(n + \\fbox{G})(n^2 - \\fbox{H}\\,n - \\fbox{I})$$",
+      "solution": {
+        "translation": "$a_n = S_n - S_{n-1}$；$b_n = (n-6)(n+1)$ 为负当 $-1 < n < 6$；$k^2 b_k / a_k$ 化简后用 $\\sum k^2, \\sum k^3$ 公式。",
+        "analysis": "前 $n$ 项和给定时，差分得通项；幂和公式：$\\sum k^2 = n(n+1)(2n+1)/6$，$\\sum k^3 = (n(n+1)/2)^2$。",
+        "steps": [
+          {
+            "title": "(1) $a_n$",
+            "content": "$n \\ge 2$：$a_n = S_n - S_{n-1} = (n^2 + 3n) - ((n-1)^2 + 3(n-1)) = n^2 + 3n - n^2 + 2n - 1 - 3n + 3 = 2n + 2$。\n\n$n = 1$：$a_1 = 1 + 3 = 4 = 2 \\cdot 1 + 2$ ✓。\n\n$a_n = 2n + 2$。$\\fbox{A} = 2, \\fbox{B} = 2$。"
+          },
+          {
+            "title": "(2) $b_n < 0$",
+            "content": "$b_n = n^2 - 5n - 6 = (n-6)(n+1) < 0 \\Leftrightarrow -1 < n < 6$，$n$ 正整数：$n \\in \\{1,2,3,4,5\\}$，共 $5$ 个。$\\fbox{C} = 5$。\n\n$\\sum_{n=1}^5 b_n = \\sum n^2 - 5 \\sum n - 30 = \\dfrac{5 \\cdot 6 \\cdot 11}{6} - 5 \\cdot 15 - 30 = 55 - 75 - 30 = -50$。\n\n$\\fbox{DE} = 50$。"
+          },
+          {
+            "title": "(3) 求和化简",
+            "content": "$\\dfrac{k^2 b_k}{a_k} = \\dfrac{k^2 (k-6)(k+1)}{2(k+1)} = \\dfrac{k^2(k-6)}{2}$。\n\n$\\sum_{k=1}^n \\dfrac{k^2(k-6)}{2} = \\dfrac{1}{2}\\left(\\sum k^3 - 6\\sum k^2\\right) = \\dfrac{1}{2}\\left[\\dfrac{n^2(n+1)^2}{4} - n(n+1)(2n+1)\\right]$\n\n$= \\dfrac{n(n+1)}{8}\\left[n(n+1) - 4(2n+1)\\right] = \\dfrac{n(n+1)}{8}(n^2 - 7n - 4)$。\n\n$\\fbox{F} = 8, \\fbox{G} = 1, \\fbox{H} = 7, \\fbox{I} = 4$。"
+          }
+        ],
+        "finalAnswer": "A=2, B=2, C=5, DE=50, FGHI=8174"
+      }
+    },
+    {
+      "id": "c2-III-1",
+      "number": "III",
+      "topic": "三角形外接圆过原点",
+      "topicTag": "平面几何·坐标",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "questionDiagram": {
+        "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 280' font-family='serif' font-size='14'><circle cx='150' cy='110' r='90' fill='none' stroke='#1c1917' stroke-width='1.2'/><line x1='60' y1='200' x2='240' y2='200' stroke='#aaa' stroke-width='1'/><line x1='60' y1='200' x2='60' y2='20' stroke='#aaa' stroke-width='1'/><polygon points='240,200 168,158 60,142' fill='none' stroke='#2563eb' stroke-width='1.5'/><line x1='60' y1='200' x2='168' y2='158' stroke='#dc2626' stroke-width='1.2'/><line x1='60' y1='200' x2='240' y2='200' stroke='#dc2626' stroke-width='1.2'/><line x1='60' y1='200' x2='60' y2='142' stroke='#dc2626' stroke-width='1.2'/><circle cx='60' cy='200' r='3' fill='#1c1917'/><circle cx='240' cy='200' r='3' fill='#1c1917'/><circle cx='168' cy='158' r='3' fill='#1c1917'/><circle cx='60' cy='142' r='3' fill='#1c1917'/><text x='52' y='215' text-anchor='end'>O</text><text x='248' y='215' text-anchor='start'>A</text><text x='178' y='155' text-anchor='start'>B</text><text x='52' y='145' text-anchor='end'>C</text></svg>"
+      },
+      "japanese": "$a, b, c$ 为正实数。坐标平面上 $A(a, 0), B(3, b), C(0, c)$ 为顶点的三角形 $ABC$ 的外接圆过原点 $O(0, 0)$，且 $\\angle BAC = 60°$。\n\n(1) $\\angle AOB = \\fbox{AB}°$，故 $b = \\sqrt{\\fbox{C}}$。\n\n(2) 外接圆方程：\n$$\\left(x - \\dfrac{a}{\\fbox{D}}\\right)^2 + \\left(y - \\dfrac{c}{\\fbox{E}}\\right)^2 = \\dfrac{a^2 + c^2}{\\fbox{F}}$$\n$c$ 用 $a$ 表为 $c = \\sqrt{\\fbox{G}}(\\fbox{H} - a)$。\n\n(3) 设 $D$ 为线段 $OB$ 与线段 $AC$ 的交点，$\\angle OAC = \\alpha$，$\\angle ADB = \\beta$。$a = 2\\sqrt 3$ 时，\n$$\\tan\\alpha = \\fbox{I} - \\sqrt{\\fbox{J}}, \\qquad \\tan\\beta = \\fbox{K}$$",
+      "solution": {
+        "translation": "由 $OA \\perp OC$，$O$ 在外接圆上知 $OABC$ 为圆内接四边形且 $\\angle O = 90°$。",
+        "analysis": "圆内接四边形 $\\angle O + \\angle B = 180°$，于是 $\\angle ABC = 90°$。同弧角相等推 $\\angle AOB = \\angle ACB$。",
+        "steps": [
+          {
+            "title": "(1) $\\angle AOB$ 与 $b$",
+            "content": "$OA$ 在 $x$ 轴正向，$OC$ 在 $y$ 轴正向 ⇒ $\\angle AOC = 90°$。\n\n$OABC$ 圆内接（按 $O, A, B, C$ 顺序）：$\\angle AOC + \\angle ABC = 180° \\Rightarrow \\angle ABC = 90°$。\n\n$\\triangle ABC$ 内角和：$60° + 90° + \\angle ACB = 180° \\Rightarrow \\angle ACB = 30°$。\n\n$O, C$ 在 $AB$ 同侧的同一弧上（圆内接 $OABC$ 中 $A, B$ 之间无 $O, C$），故 $\\angle AOB = \\angle ACB = 30°$。$\\fbox{AB} = 30$。\n\n$\\tan\\angle AOB = b/3 = \\tan 30° = 1/\\sqrt 3 \\Rightarrow b = \\sqrt 3$。$\\fbox{C} = 3$。"
+          },
+          {
+            "title": "(2) 外接圆方程",
+            "content": "圆心 $(p, q)$ 到 $O, A, C$ 等距：\n- 到 $O = A$：$p^2 = (p-a)^2 \\Rightarrow p = a/2$。\n- 到 $O = C$：$q^2 = (q-c)^2 \\Rightarrow q = c/2$。\n\n半径平方 $= p^2 + q^2 = (a^2 + c^2)/4$。$\\fbox{D}=2, \\fbox{E}=2, \\fbox{F}=4$。\n\n圆过 $B = (3, \\sqrt 3)$：$(3 - a/2)^2 + (\\sqrt 3 - c/2)^2 = (a^2 + c^2)/4$\n\n展开：$9 - 3a + 3 - \\sqrt 3 c = 0 \\Rightarrow \\sqrt 3 c = 12 - 3a \\Rightarrow c = \\sqrt 3 (4 - a)$。$\\fbox{G}=3, \\fbox{H}=4$。"
+          },
+          {
+            "title": "(3) $\\tan\\alpha$",
+            "content": "$a = 2\\sqrt 3$：$c = \\sqrt 3(4 - 2\\sqrt 3) = 4\\sqrt 3 - 6$。\n\n$A = (2\\sqrt 3, 0)$，$C = (0, 4\\sqrt 3 - 6)$。$AC$ 斜率 $= \\dfrac{4\\sqrt 3 - 6}{-2\\sqrt 3} = \\sqrt 3 - 2$（化简后）。\n\n$\\angle OAC$：在 $A$ 处，$AO$ 沿负 $x$ 方向。$AC$ 向量 $(-2\\sqrt 3, 4\\sqrt 3 - 6)$ 与负 $x$ 方向的夹角 $= \\arctan\\dfrac{4\\sqrt 3 - 6}{2\\sqrt 3} = \\arctan(2 - \\sqrt 3)$。\n\n注意 $\\tan 15° = 2 - \\sqrt 3$，故 $\\alpha = 15°$。\n\n$\\tan\\alpha = 2 - \\sqrt 3$。$\\fbox{I} = 2, \\fbox{J} = 3$。"
+          },
+          {
+            "title": "(3) $\\tan\\beta$",
+            "content": "$\\angle ADB$ 是 $AC$ 与 $OB$ 在 $D$ 的夹角。\n\n$OB$ 直线 $y = x/\\sqrt 3$。$AC$ 直线 $y = (\\sqrt 3 - 2)(x - 2\\sqrt 3)$。\n\n求交：$\\dfrac{x}{\\sqrt 3} = (\\sqrt 3 - 2)(x - 2\\sqrt 3)$。解得 $x_D = \\dfrac{3(\\sqrt 3 - 1)}{2}$，$y_D = \\dfrac{3 - \\sqrt 3}{2}$。\n\n$\\vec{DA} = \\dfrac{1}{2}(\\sqrt 3 + 3, \\sqrt 3 - 3)$。$|\\vec{DA}| = \\sqrt 6$。\n$\\vec{DB} = \\dfrac{3}{2}(3 - \\sqrt 3, \\sqrt 3 - 1)$。$|\\vec{DB}| = 3(\\sqrt 3 - 1)$。\n\n$\\vec{DA} \\cdot \\vec{DB} = \\dfrac{3}{4}[(\\sqrt 3 + 3)(3 - \\sqrt 3) + (\\sqrt 3 - 3)(\\sqrt 3 - 1)] = \\dfrac{3}{4}[6 + (6 - 4\\sqrt 3)] = 9 - 3\\sqrt 3 = 3\\sqrt 3(\\sqrt 3 - 1) \\cdot \\dfrac{1}{\\sqrt 3} \\cdot \\sqrt 3 = 3(3 - \\sqrt 3)$。\n\n$\\cos\\beta = \\dfrac{3(3-\\sqrt 3)}{\\sqrt 6 \\cdot 3(\\sqrt 3 - 1)} = \\dfrac{\\sqrt 3(\\sqrt 3 - 1)}{\\sqrt 6(\\sqrt 3 - 1)} = \\dfrac{1}{\\sqrt 2} = \\dfrac{\\sqrt 2}{2}$\n\n$\\beta = 45°$，$\\tan\\beta = 1$。$\\fbox{K} = 1$。"
+          }
+        ],
+        "finalAnswer": "AB=30, C=3, DE=22, F=4, GH=34, IJ=23, K=1"
+      }
+    },
+    {
+      "id": "c2-IV-1",
+      "number": "IV-1",
+      "topic": "含对数函数的极值",
+      "topicTag": "微分·极值",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "$a$ 为正实数，函数\n$$f(x) = x^2 - 5 + 4a\\log(2x + a + 8) \\quad \\left(-\\dfrac{a}{2} - 4 < x < -2\\right)$$\n求极值。\n\n(1) 微分得\n$$f'(x) = \\dfrac{\\fbox{A}(\\fbox{B}\\,x + a)(x + \\fbox{C})}{\\fbox{D}\\,x + a + \\fbox{E}}$$\n\n(2) 当 $a > 0$，$f(x)$ 同时有极大值与极小值的 $a$ 范围为 $\\fbox{F} < a < \\fbox{G}$ 或 $\\fbox{G} < a$。此时极大值与极小值之和\n$$\\dfrac{a^2}{\\fbox{H}} + \\fbox{I} + \\fbox{J}\\,a\\log(\\fbox{K}\\,a)$$",
+      "solution": {
+        "translation": "$f(x) = x^2 - 5 + 4a\\log(2x+a+8)$，求 $f'$ 并因式分解；分析临界点是否在定义域内。",
+        "analysis": "$f' = 2x + \\dfrac{8a}{2x+a+8} = \\dfrac{(2x)(2x+a+8) + 8a}{2x+a+8}$。",
+        "steps": [
+          {
+            "title": "(1) 求导",
+            "content": "$f'(x) = 2x + \\dfrac{8a}{2x + a + 8} = \\dfrac{2x(2x + a + 8) + 8a}{2x + a + 8} = \\dfrac{4x^2 + 2(a+8)x + 8a}{2x + a + 8}$。\n\n分子 $= 2(2x^2 + (a+8)x + 4a) = 2(2x + a)(x + 4)$（验证 $(2x+a)(x+4) = 2x^2 + 8x + ax + 4a$ ✓）。\n\n$f'(x) = \\dfrac{2(2x + a)(x + 4)}{2x + a + 8}$。$\\fbox{A}=2, \\fbox{B}=2, \\fbox{C}=4, \\fbox{D}=2, \\fbox{E}=8$。"
+          },
+          {
+            "title": "(2) 临界点位置",
+            "content": "定义域 $(-a/2 - 4, -2)$。$f'$ 分母在域内恒正。\n\n$f' = 0$：$x = -a/2$ 或 $x = -4$。\n\n- $x = -4$：恒在域内（$-a/2 - 4 < -4 < -2$）。\n- $x = -a/2$：需 $-a/2 < -2 \\Leftrightarrow a > 4$；且 $-a/2 > -a/2 - 4$ 恒成立。\n\n两根相异需 $-a/2 \\ne -4 \\Leftrightarrow a \\ne 8$。\n\n所以 $a > 4$ 且 $a \\ne 8$，即 $4 < a < 8$ 或 $8 < a$。$\\fbox{F}=4, \\fbox{G}=8$。"
+          },
+          {
+            "title": "极值之和",
+            "content": "$f(-a/2) = a^2/4 - 5 + 4a\\log(-a + a + 8) = a^2/4 - 5 + 4a\\log 8$。\n$f(-4) = 16 - 5 + 4a\\log(a) = 11 + 4a\\log a$。\n\n和 $= a^2/4 + 6 + 4a(\\log 8 + \\log a) = \\dfrac{a^2}{4} + 6 + 4a\\log(8a)$。\n\n$\\fbox{H}=4, \\fbox{I}=6, \\fbox{J}=4, \\fbox{K}=8$。"
+          }
+        ],
+        "finalAnswer": "A=2, B=2, C=4, D=2, E=8, F=4, G=8, H=4, I=6, J=4, K=8"
+      }
+    },
+    {
+      "id": "c2-IV-2",
+      "number": "IV-2",
+      "topic": "三角积分与级数求和",
+      "topicTag": "定积分·级数",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "$n$ 正整数，$a$ 实数。函数 $f_n(a) = \\int_0^\\pi (\\cos x + a \\sin 2nx)^2 dx$。\n\n(1) 将 $f_n(a)$ 化为\n$$f_n(a) = \\int_0^\\pi \\left\\{\\dfrac{1 + \\cos \\fbox{L}\\,x}{2} + a^2 \\dfrac{1 - \\cos \\fbox{M}\\,nx}{2} + a(\\sin(2n+1)x + \\sin(2n-1)x)\\right\\} dx$$\n计算积分：\n$$f_n(a) = \\dfrac{\\pi}{\\fbox{N}} a^2 + \\dfrac{\\fbox{O}\\,n}{\\fbox{P}\\,n^2 - \\fbox{Q}} a + \\dfrac{\\pi}{\\fbox{R}}$$\n\n(2) 设 $a_n$ 为使 $f_n(a)$ 最小的 $a$，$S_N = \\sum_{n=1}^N \\dfrac{a_n}{n}$。\n$$S_N = -\\dfrac{\\fbox{S}}{\\pi} \\sum_{n=1}^N \\left(\\dfrac{1}{2n - \\fbox{T}} - \\dfrac{1}{2n + \\fbox{U}}\\right) = -\\dfrac{\\fbox{S}}{\\pi} \\left(\\fbox{V} - \\dfrac{1}{\\fbox{W}\\,N + \\fbox{X}}\\right)$$\n故\n$$\\sum_{n=1}^\\infty \\dfrac{a_n}{n} = \\lim_{N \\to \\infty} S_N = -\\dfrac{\\fbox{Y}}{\\pi}$$",
+      "solution": {
+        "translation": "用 $\\cos^2 = (1+\\cos 2x)/2$，$\\sin^2 = (1-\\cos 2X)/2$，积化和差化简；之后逐项积分。",
+        "analysis": "积化和差 $2\\sin\\alpha\\cos\\beta = \\sin(\\alpha+\\beta) + \\sin(\\alpha-\\beta)$。",
+        "steps": [
+          {
+            "title": "化简被积函数",
+            "content": "$(\\cos x + a\\sin 2nx)^2 = \\cos^2 x + 2a\\cos x \\sin 2nx + a^2 \\sin^2 2nx$\n\n$\\cos^2 x = \\dfrac{1 + \\cos 2x}{2}$。$\\fbox{L} = 2$。\n\n$\\sin^2 2nx = \\dfrac{1 - \\cos 4nx}{2}$。$\\fbox{M} = 4$。\n\n$2\\sin 2nx \\cos x = \\sin(2n+1)x + \\sin(2n-1)x$（积化和差）。"
+          },
+          {
+            "title": "逐项积分",
+            "content": "$\\int_0^\\pi \\cos^2 x \\, dx = \\dfrac{\\pi}{2}$。\n\n$\\int_0^\\pi \\sin^2 2nx \\, dx = \\dfrac{\\pi}{2}$（$\\cos 4nx$ 在 $[0,\\pi]$ 上积分为 $0$）。\n\n$\\int_0^\\pi \\sin(2n \\pm 1)x \\, dx = \\left[-\\dfrac{\\cos(2n\\pm 1)x}{2n\\pm 1}\\right]_0^\\pi = \\dfrac{-(-1) + 1}{2n\\pm 1} = \\dfrac{2}{2n\\pm 1}$（$2n\\pm 1$ 为奇）。\n\n$\\int_0^\\pi a[\\sin(2n+1)x + \\sin(2n-1)x] dx = a\\left[\\dfrac{2}{2n+1} + \\dfrac{2}{2n-1}\\right] = \\dfrac{2a \\cdot 4n}{4n^2 - 1} = \\dfrac{8na}{4n^2 - 1}$。\n\n总和：$f_n(a) = \\dfrac{\\pi}{2} + \\dfrac{\\pi}{2} a^2 + \\dfrac{8n}{4n^2 - 1} a = \\dfrac{\\pi}{2} a^2 + \\dfrac{8n}{4n^2-1} a + \\dfrac{\\pi}{2}$。\n\n$\\fbox{N} = 2, \\fbox{O} = 8, \\fbox{P} = 4, \\fbox{Q} = 1, \\fbox{R} = 2$。"
+          },
+          {
+            "title": "(2) $a_n$ 与级数",
+            "content": "$f_n$ 关于 $a$ 的二次式 $\\dfrac{\\pi}{2}a^2 + \\dfrac{8n}{4n^2-1}a + \\dfrac{\\pi}{2}$，最小值在 $a_n = -\\dfrac{8n/(4n^2-1)}{2 \\cdot \\pi/2} = -\\dfrac{8n}{(4n^2-1)\\pi}$。\n\n$\\dfrac{a_n}{n} = -\\dfrac{8}{(4n^2-1)\\pi} = -\\dfrac{8}{(2n-1)(2n+1)\\pi}$。\n\n部分分式：$\\dfrac{1}{(2n-1)(2n+1)} = \\dfrac{1}{2}\\left(\\dfrac{1}{2n-1} - \\dfrac{1}{2n+1}\\right)$。\n\n$S_N = -\\dfrac{4}{\\pi}\\sum_{n=1}^N \\left(\\dfrac{1}{2n-1} - \\dfrac{1}{2n+1}\\right)$。$\\fbox{S} = 4, \\fbox{T} = 1, \\fbox{U} = 1$。\n\n望远求和：$= -\\dfrac{4}{\\pi}\\left(1 - \\dfrac{1}{2N+1}\\right)$。$\\fbox{V} = 1, \\fbox{W} = 2, \\fbox{X} = 1$。\n\n$N \\to \\infty$：$\\lim S_N = -\\dfrac{4}{\\pi}$。$\\fbox{Y} = 4$。"
+          }
+        ],
+        "finalAnswer": "LM=24, NOPQR=28412, STU=411, VWX=121, Y=4"
+      }
+    }
+  ]
+}
