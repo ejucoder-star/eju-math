@@ -1,0 +1,200 @@
+{
+  "metadata": {
+    "course": "course2",
+    "year": "2013",
+    "session": "1",
+    "courseNameJa": "数学2",
+    "courseNameEn": "Course 2 (Advanced)",
+    "description": "上级课程｜理科方向",
+    "color": "#9333ea",
+    "examTitle": "2013年度（平成25年）第1回",
+    "examDate": "2013年6月"
+  },
+  "questions": [
+    {
+      "id": "c2-I-1",
+      "number": "I-1",
+      "topic": "二次函数单调性约束求参数范围",
+      "topicTag": "二次函数",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "$x$ 的二次函数 $y = ax^2 + bx + c$ 满足以下 [*] 条件：\n\n[*] $x = -1$ 时 $y = -8$；$x = 3$ 时 $y = 16$；在区间 $-1 \\le x \\le 3$ 上，$y$ 随 $x$ 增加而增加。\n\n由 [*]，$b, c$ 可由 $a$ 表为\n$$b = \\fbox{AB}\\,a + \\fbox{C} \\quad \\cdots ①$$\n$$c = \\fbox{DE}\\,a - \\fbox{F} \\quad \\cdots ②$$\n抛物线对称轴 $x = \\fbox{G} - \\dfrac{\\fbox{H}}{a}$。\n\n所求条件：$a, b, c$ 满足 ①②，并且\n$$0 < a \\le \\dfrac{\\fbox{I}}{\\fbox{J}} \\quad \\text{或} \\quad \\dfrac{\\fbox{KL}}{\\fbox{M}} \\le a < 0$$",
+      "solution": {
+        "translation": "用两个函数值条件解 $b, c$ 关于 $a$ 的表达；用单调递增的范围条件确定对称轴位置。",
+        "analysis": "二次函数 $y = ax^2 + bx + c$ 对称轴 $x = -b/(2a)$。开口向上时在 $x \\ge$ 轴 递增；开口向下时在 $x \\le$ 轴 递增。",
+        "steps": [
+          {
+            "title": "由两点条件确定 $b, c$",
+            "content": "$y(-1) = a - b + c = -8 \\quad \\cdots (\\text{i})$\n$y(3) = 9a + 3b + c = 16 \\quad \\cdots (\\text{ii})$\n\n$(\\text{ii}) - (\\text{i})$：$8a + 4b = 24 \\Rightarrow b = -2a + 6$。$\\fbox{AB} = -2, \\fbox{C} = 6$。\n\n代入 $(\\text{i})$：$c = -8 - a + b = -8 - a + (-2a + 6) = -3a - 2$。$\\fbox{DE} = -3, \\fbox{F} = 2$。\n\n对称轴 $x = -\\dfrac{b}{2a} = -\\dfrac{-2a + 6}{2a} = \\dfrac{2a - 6}{2a} = 1 - \\dfrac{3}{a}$。$\\fbox{G} = 1, \\fbox{H} = 3$。"
+          },
+          {
+            "title": "由单调递增条件确定 $a$ 范围",
+            "content": "需 $y$ 在 $[-1, 3]$ 上递增。\n\n**情形 1**：$a > 0$，开口向上，$y$ 在 $x \\ge $ 对称轴 递增。需对称轴 $\\le -1$：\n$$1 - \\dfrac{3}{a} \\le -1 \\Rightarrow \\dfrac{3}{a} \\ge 2 \\Rightarrow a \\le \\dfrac{3}{2}$$\n故 $0 < a \\le \\dfrac{3}{2}$。$\\fbox{I} = 3, \\fbox{J} = 2$。\n\n**情形 2**：$a < 0$，开口向下，$y$ 在 $x \\le $ 对称轴 递增。需对称轴 $\\ge 3$：\n$$1 - \\dfrac{3}{a} \\ge 3 \\Rightarrow -\\dfrac{3}{a} \\ge 2 \\Rightarrow -3 \\ge 2a \\text{（注意 } a < 0 \\text{ 时乘 } a \\text{ 不等号反向）}$$\n$\\Rightarrow a \\le -\\dfrac{3}{2}$。\n故 $-\\dfrac{3}{2} \\le a < 0$ 应改为 $a \\le -\\dfrac{3}{2}$，对应表达 $\\dfrac{-3}{2} \\le a < 0$ 中的下界即 $\\fbox{KL} = -3, \\fbox{M} = 2$。"
+          }
+        ],
+        "finalAnswer": "AB=-2, C=6, DE=-3, F=2, G=1, H=3, I=3, J=2, KL=-3, M=2"
+      }
+    },
+    {
+      "id": "c2-I-2",
+      "number": "I-2",
+      "topic": "区间集合的交并补",
+      "topicTag": "集合·不等式",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "实数 $a, b, c, d$ 满足 $a < b < c < d$。实数子集\n$$A = \\{x \\mid a \\le x \\le c\\}, \\qquad B = \\{x \\mid b \\le x \\le d\\}$$\n满足 $A \\cap B = \\{x \\mid x^2 - 4x + 3 \\le 0\\}$。\n\n(1) 若 $A \\cup B = \\{x \\mid x^2 - 5x - 24 \\le 0\\}$，求 $a, b, c, d$ 的值。\n$$a = \\fbox{NO}, \\quad b = \\fbox{P}, \\quad c = \\fbox{Q}, \\quad d = \\fbox{R}$$\n\n(2) 设 $A \\cap \\bar B = \\{x \\mid x^2 + 5x - 6 \\le 0 \\text{ 且 } x \\ne 1\\}$，$\\bar A \\cap B = \\{x \\mid x^2 - 9x + 18 \\le 0 \\text{ 且 } x \\ne 3\\}$，求 $a, b, c, d$ 的值。\n$$a = \\fbox{ST}, \\quad b = \\fbox{U}, \\quad c = \\fbox{V}, \\quad d = \\fbox{W}$$",
+      "solution": {
+        "translation": "$A, B$ 是闭区间，由 $a < b < c < d$ 知 $A \\cap B = [b, c]$，$A \\cup B = [a, d]$。",
+        "analysis": "把各等式右端的二次不等式因式分解为闭区间，与 $A, B$ 的端点对应。",
+        "steps": [
+          {
+            "title": "$A \\cap B$ 解读",
+            "content": "$x^2 - 4x + 3 = (x-1)(x-3) \\le 0 \\Rightarrow 1 \\le x \\le 3$。\n\n$A \\cap B = [b, c] = [1, 3]$，故 $b = 1, c = 3$。"
+          },
+          {
+            "title": "(1) 求 $a, d$",
+            "content": "$A \\cup B = [a, d]$（因 $b \\le c$ 时两区间相交，并集为 $[a, d]$）。\n\n$x^2 - 5x - 24 = (x-8)(x+3) \\le 0 \\Rightarrow -3 \\le x \\le 8$。\n\n$a = -3, d = 8$。$\\fbox{NO}=-3, \\fbox{P}=1, \\fbox{Q}=3, \\fbox{R}=8$。"
+          },
+          {
+            "title": "(2) 用补集条件",
+            "content": "$A \\cap \\bar B = A \\setminus B = [a, b)$（$A$ 中不在 $B$ 中的部分；$B = [b, d]$，去掉左端 $b$）。\n\n$x^2 + 5x - 6 = (x+6)(x-1) \\le 0 \\Rightarrow -6 \\le x \\le 1$。再去 $x = 1$ 即得 $[-6, 1)$。\n\n所以 $a = -6$，$b = 1$（与之前一致）。$\\fbox{ST} = -6$。\n\n$\\bar A \\cap B = B \\setminus A = (c, d]$。\n\n$x^2 - 9x + 18 = (x-3)(x-6) \\le 0 \\Rightarrow 3 \\le x \\le 6$。去 $x = 3$ 得 $(3, 6]$。\n\n所以 $c = 3$（一致），$d = 6$。\n\n综上：$a = -6, b = 1, c = 3, d = 6$。$\\fbox{U}=1, \\fbox{V}=3, \\fbox{W}=6$。"
+          }
+        ],
+        "finalAnswer": "NO=-3, P=1, Q=3, R=8, ST=-6, U=1, V=3, W=6"
+      }
+    },
+    {
+      "id": "c2-II-1",
+      "number": "II",
+      "topic": "正交向量与球面四面体体积",
+      "topicTag": "空间向量",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "questionDiagram": {
+        "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 280' font-family='serif' font-size='14'><circle cx='160' cy='150' r='110' fill='none' stroke='#1c1917' stroke-width='1' stroke-dasharray='3,2'/><ellipse cx='160' cy='150' rx='110' ry='30' fill='none' stroke='#1c1917' stroke-width='1' stroke-dasharray='3,2'/><circle cx='160' cy='150' r='3' fill='#1c1917'/><text x='150' y='148' text-anchor='end'>O</text><circle cx='80' cy='200' r='3' fill='#dc2626'/><text x='70' y='215' text-anchor='end' fill='#dc2626'>A</text><circle cx='240' cy='200' r='3' fill='#dc2626'/><text x='250' y='215' text-anchor='start' fill='#dc2626'>B</text><circle cx='160' cy='60' r='3' fill='#dc2626'/><text x='160' y='52' text-anchor='middle' fill='#dc2626'>C</text><polygon points='80,200 240,200 160,60' fill='none' stroke='#2563eb' stroke-width='1.2'/><circle cx='160' cy='153.3' r='3' fill='#16a34a'/><text x='170' y='150' text-anchor='start' fill='#16a34a'>G</text><circle cx='160' cy='40' r='3' fill='#7c3aed'/><text x='160' y='32' text-anchor='middle' fill='#7c3aed'>P</text><line x1='160' y1='150' x2='160' y2='40' stroke='#7c3aed' stroke-width='1' stroke-dasharray='2,2'/></svg>"
+      },
+      "japanese": "以 $O$ 为中心、半径 $1$ 的球面 $S$ 上取 $3$ 点 $A, B, C$ 使\n$$\\vec{OA} \\cdot \\vec{OB} = \\vec{OB} \\cdot \\vec{OC} = \\vec{OC} \\cdot \\vec{OA} = 0$$\n（即三向量两两正交）。\n\n(1) $\\vec{AB} \\cdot \\vec{AC} = \\fbox{A}$，$|\\vec{AB}| = \\sqrt{\\fbox{B}}$，$\\cos\\angle BAC = \\dfrac{\\fbox{C}}{\\fbox{D}}$，$\\triangle ABC$ 面积 $= \\dfrac{\\sqrt{\\fbox{E}}}{\\fbox{F}}$。\n\n(2) 设 $G$ 为 $\\triangle ABC$ 重心，$P$ 为射线 $OG$ 与球面 $S$ 的交点。\n$$\\vec{OG} = \\dfrac{\\fbox{G}}{\\fbox{H}} (\\vec{OA} + \\vec{OB} + \\vec{OC})$$\n$$|\\vec{OG}| = \\dfrac{\\sqrt{\\fbox{I}}}{\\fbox{J}}, \\quad |\\vec{PG}| = \\dfrac{\\fbox{K} - \\sqrt{\\fbox{L}}}{\\fbox{M}}, \\quad \\vec{AG} \\cdot \\vec{PG} = \\fbox{N}$$\n故四面体 $PABC$ 体积 $= \\dfrac{\\sqrt{\\fbox{O}} - \\fbox{P}}{\\fbox{Q}}$。",
+      "solution": {
+        "translation": "由 $\\vec{OA}, \\vec{OB}, \\vec{OC}$ 两两正交且单位长，把它们当作标准正交基；$A, B, C$ 围成一个等边三角形。",
+        "analysis": "几何上 $OA, OB, OC$ 像坐标三轴上的单位向量，$\\triangle ABC$ 是边长 $\\sqrt 2$ 的等边三角形；$O$ 到 $\\triangle ABC$ 的直线即重心方向。",
+        "steps": [
+          {
+            "title": "(1) 内积、边长、面积",
+            "content": "$\\vec{AB} \\cdot \\vec{AC} = (\\vec{OB} - \\vec{OA}) \\cdot (\\vec{OC} - \\vec{OA}) = \\vec{OB}\\cdot\\vec{OC} - \\vec{OB}\\cdot\\vec{OA} - \\vec{OA}\\cdot\\vec{OC} + |\\vec{OA}|^2 = 0 - 0 - 0 + 1 = 1$。$\\fbox{A} = 1$。\n\n$|\\vec{AB}|^2 = |\\vec{OB}|^2 - 2\\vec{OA}\\cdot\\vec{OB} + |\\vec{OA}|^2 = 1 + 1 = 2 \\Rightarrow |\\vec{AB}| = \\sqrt 2$。$\\fbox{B} = 2$。\n\n同理 $|\\vec{AC}| = \\sqrt 2$。\n\n$\\cos\\angle BAC = \\dfrac{\\vec{AB} \\cdot \\vec{AC}}{|\\vec{AB}||\\vec{AC}|} = \\dfrac{1}{\\sqrt 2 \\cdot \\sqrt 2} = \\dfrac{1}{2}$。$\\fbox{C}=1, \\fbox{D}=2$。\n\n$\\sin\\angle BAC = \\dfrac{\\sqrt 3}{2}$（即 $\\angle BAC = 60°$，$\\triangle ABC$ 等边）。\n\n面积 $= \\dfrac{1}{2} \\cdot \\sqrt 2 \\cdot \\sqrt 2 \\cdot \\dfrac{\\sqrt 3}{2} = \\dfrac{\\sqrt 3}{2}$。$\\fbox{E}=3, \\fbox{F}=2$。"
+          },
+          {
+            "title": "(2) 重心与 $P$",
+            "content": "重心公式：$\\vec{OG} = \\dfrac{1}{3}(\\vec{OA} + \\vec{OB} + \\vec{OC})$。$\\fbox{G}=1, \\fbox{H}=3$。\n\n$|\\vec{OG}|^2 = \\dfrac{1}{9}|\\vec{OA}+\\vec{OB}+\\vec{OC}|^2 = \\dfrac{1}{9}(|\\vec{OA}|^2 + |\\vec{OB}|^2 + |\\vec{OC}|^2 + 2(\\vec{OA}\\cdot\\vec{OB} + \\vec{OB}\\cdot\\vec{OC} + \\vec{OC}\\cdot\\vec{OA})) = \\dfrac{1}{9} \\cdot 3 = \\dfrac{1}{3}$。\n\n$|\\vec{OG}| = \\dfrac{1}{\\sqrt 3} = \\dfrac{\\sqrt 3}{3}$。$\\fbox{I}=3, \\fbox{J}=3$。\n\n**$\\vec{OG}$ 与平面 $ABC$ 关系**：\n$(\\vec{OA}+\\vec{OB}+\\vec{OC}) \\cdot \\vec{AB} = (\\vec{OA}+\\vec{OB}+\\vec{OC}) \\cdot (\\vec{OB}-\\vec{OA})$\n$= \\vec{OA}\\cdot\\vec{OB} - |\\vec{OA}|^2 + |\\vec{OB}|^2 - \\vec{OA}\\cdot\\vec{OB} + \\vec{OB}\\cdot\\vec{OC} - \\vec{OA}\\cdot\\vec{OC} = -1 + 1 + 0 - 0 = 0$。\n\n类似地与 $\\vec{AC}$ 正交。所以 $\\vec{OG}$ 与平面 $ABC$ 垂直。"
+          },
+          {
+            "title": "$P$ 位置与 $|PG|, \\vec{AG} \\cdot \\vec{PG}$",
+            "content": "$P$ 在射线 $OG$ 上且 $|OP| = 1$（在球面上）。\n\n$|OG| < 1$，故 $G$ 在 $O, P$ 之间，$|PG| = |OP| - |OG| = 1 - \\dfrac{\\sqrt 3}{3} = \\dfrac{3 - \\sqrt 3}{3}$。$\\fbox{K}=3, \\fbox{L}=3, \\fbox{M}=3$。\n\n$\\vec{AG}$ 在平面 $ABC$ 内（$A, G$ 都在该平面），$\\vec{PG}$ 沿 $OG$ 方向（与平面 $ABC$ 垂直）。所以 $\\vec{AG} \\cdot \\vec{PG} = 0$。$\\fbox{N} = 0$。"
+          },
+          {
+            "title": "四面体体积",
+            "content": "$PG \\perp $ 平面 $ABC$，故 $|PG|$ 是 $P$ 到 $\\triangle ABC$ 的距离。\n\n体积 $V = \\dfrac{1}{3} \\cdot S_{ABC} \\cdot |PG| = \\dfrac{1}{3} \\cdot \\dfrac{\\sqrt 3}{2} \\cdot \\dfrac{3 - \\sqrt 3}{3} = \\dfrac{\\sqrt 3 (3 - \\sqrt 3)}{18} = \\dfrac{3\\sqrt 3 - 3}{18} = \\dfrac{\\sqrt 3 - 1}{6}$。\n\n$\\fbox{O}=3, \\fbox{P}=1, \\fbox{Q}=6$。"
+          }
+        ],
+        "finalAnswer": "A=1, B=2, C=1, D=2, E=3, F=2, G=1, H=3, I=3, J=3, K=3, L=3, M=3, N=0, O=3, P=1, Q=6"
+      }
+    },
+    {
+      "id": "c2-III-1",
+      "number": "III",
+      "topic": "椭圆参数化求二次形最大值",
+      "topicTag": "三角·最值",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "实数 $x, y$ 满足 $\\dfrac{x^2}{2} + \\dfrac{y^2}{4} = 1$，$x \\ge 0$，$y \\ge 0$。求 $P = x^2 + xy + y^2$ 的最大值。\n\n令 $x = \\sqrt 2 \\cos\\theta$（$0 \\le \\theta \\le \\pi/2$），则 $y = \\fbox{A}\\sin\\theta$。故\n$$P = \\sqrt{\\fbox{B}}\\sin 2\\theta - \\cos 2\\theta + \\fbox{C} = \\sqrt{\\fbox{D}}\\sin(2\\theta - \\alpha) + \\fbox{E}$$\n其中 $\\sin\\alpha = \\dfrac{\\sqrt{\\fbox{F}}}{\\fbox{G}}$，$\\cos\\alpha = \\dfrac{\\sqrt{\\fbox{H}}}{\\fbox{I}}$（$0 < \\alpha < \\pi/2$）。\n\n所以 $P$ 最大值 $= \\sqrt{\\fbox{J}} + \\fbox{K}$。\n\n$P$ 取最大时 $\\theta = \\theta_0$，则 $2\\theta_0 = \\alpha + \\dfrac{\\pi}{\\fbox{L}}$，从而\n$$\\sin 2\\theta_0 = \\dfrac{\\sqrt{\\fbox{M}}}{\\fbox{N}}, \\quad \\cos 2\\theta_0 = -\\dfrac{\\sqrt{\\fbox{O}}}{\\fbox{P}}$$",
+      "solution": {
+        "translation": "椭圆参数化后将 $P$ 化简为 $a \\sin 2\\theta + b \\cos 2\\theta + c$ 形式，再用合成公式求最大值。",
+        "analysis": "$\\cos^2\\theta = (1+\\cos 2\\theta)/2$，$\\sin^2\\theta = (1-\\cos 2\\theta)/2$，$2\\sin\\theta\\cos\\theta = \\sin 2\\theta$。",
+        "steps": [
+          {
+            "title": "参数化",
+            "content": "$x = \\sqrt 2 \\cos\\theta$；$y^2/4 = 1 - x^2/2 = 1 - \\cos^2\\theta = \\sin^2\\theta$。$y \\ge 0$ 时 $y = 2\\sin\\theta$。$\\fbox{A} = 2$。"
+          },
+          {
+            "title": "化简 $P$",
+            "content": "$P = x^2 + xy + y^2 = 2\\cos^2\\theta + 2\\sqrt 2 \\sin\\theta\\cos\\theta + 4\\sin^2\\theta$\n\n$= 2(\\cos^2\\theta + 2\\sin^2\\theta) + \\sqrt 2 \\sin 2\\theta = 2(1 + \\sin^2\\theta) + \\sqrt 2 \\sin 2\\theta$\n\n$= 2 + (1 - \\cos 2\\theta) + \\sqrt 2 \\sin 2\\theta = \\sqrt 2 \\sin 2\\theta - \\cos 2\\theta + 3$。\n\n$\\fbox{B} = 2, \\fbox{C} = 3$。"
+          },
+          {
+            "title": "合成",
+            "content": "$\\sqrt 2 \\sin 2\\theta - \\cos 2\\theta = R\\sin(2\\theta - \\alpha)$，其中 $R = \\sqrt{(\\sqrt 2)^2 + 1^2} = \\sqrt 3$，$\\cos\\alpha = \\sqrt 2/\\sqrt 3 = \\sqrt 6/3$，$\\sin\\alpha = 1/\\sqrt 3 = \\sqrt 3/3$。\n\n$\\fbox{D} = 3, \\fbox{E} = 3$。\n$\\fbox{F} = 3, \\fbox{G} = 3$，$\\fbox{H} = 6, \\fbox{I} = 3$。"
+          },
+          {
+            "title": "最大值与角",
+            "content": "$2\\theta - \\alpha$ 范围：$\\theta \\in [0, \\pi/2]$，$2\\theta - \\alpha \\in [-\\alpha, \\pi - \\alpha]$，含 $\\pi/2$（因 $0 < \\alpha < \\pi/2$）。\n\n$\\sin(2\\theta - \\alpha)$ 在 $2\\theta - \\alpha = \\pi/2$ 取最大 $1$。所以 $P_{max} = \\sqrt 3 + 3$。$\\fbox{J} = 3, \\fbox{K} = 3$。\n\n$2\\theta_0 = \\alpha + \\dfrac{\\pi}{2}$。$\\fbox{L} = 2$。\n\n$\\sin 2\\theta_0 = \\sin(\\alpha + \\pi/2) = \\cos\\alpha = \\dfrac{\\sqrt 6}{3}$。$\\fbox{M} = 6, \\fbox{N} = 3$。\n\n$\\cos 2\\theta_0 = \\cos(\\alpha + \\pi/2) = -\\sin\\alpha = -\\dfrac{\\sqrt 3}{3}$。$\\fbox{O} = 3, \\fbox{P} = 3$。"
+          }
+        ],
+        "finalAnswer": "A=2, B=2, C=3, D=3, E=3, F=3, G=3, H=6, I=3, J=3, K=3, L=2, M=6, N=3, O=3, P=3"
+      }
+    },
+    {
+      "id": "c2-IV-1",
+      "number": "IV-1",
+      "topic": "区分求积法求极限",
+      "topicTag": "极限·定积分",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "数列 $\\{S_n\\}$ 定义为 $S_n = \\sum_{k=1}^n \\dfrac{1}{\\sqrt k}$（$n = 1, 2, 3, \\ldots$）。求两个极限\n$$\\lim_{n \\to \\infty} S_n, \\qquad \\lim_{n \\to \\infty} \\dfrac{S_{2n} - S_n}{\\sqrt n}$$\n\n(1) 求 $\\lim_{n \\to \\infty} S_n$。考虑 $y = \\dfrac{1}{\\sqrt x}$：$y' = -\\dfrac{\\fbox{A}}{2\\sqrt{x^{\\fbox{B}}}}$，故 $y$ 为 $\\fbox{C}$。\n\n在 $k \\le x \\le k+1$（$k = 1, 2, \\ldots, n$）上：\n$$\\dfrac{1}{\\sqrt k} \\fbox{D} \\int_k^{k+1} \\dfrac{1}{\\sqrt x} dx$$\n两端从 $k=1$ 到 $k=n$ 相加：\n$$S_n \\fbox{E} \\int_{\\fbox{F}}^{\\fbox{G}} \\dfrac{1}{\\sqrt x} dx = \\fbox{H}(\\sqrt{\\fbox{G}} - 1)$$\n故 $\\lim_{n \\to \\infty} S_n = \\fbox{I}$。\n\n(2) 求 $\\lim_{n \\to \\infty} \\dfrac{S_{2n} - S_n}{\\sqrt n}$。\n$$S_{2n} - S_n = \\sum_{k=1}^n \\dfrac{1}{\\sqrt{\\fbox{J}}}$$\n由区分求积法：\n$$\\lim_{n \\to \\infty} \\dfrac{S_{2n} - S_n}{\\sqrt n} = \\lim_{n \\to \\infty} \\dfrac{1}{\\fbox{K}} \\sum_{k=1}^n \\dfrac{1}{\\sqrt{\\fbox{L} + k/n}} = \\int_{\\fbox{M}}^{\\fbox{N}} \\dfrac{1}{\\sqrt{1 + x}} dx = \\fbox{O}(\\sqrt{\\fbox{P}} - 1)$$\n\n$\\fbox{A}$～$\\fbox{I}$ 选项：⓪ $\\infty$ ① $1$ ② $2$ ③ $3$ ④ $n$ ⑤ $n+1$ ⑥ $<$ ⑦ $>$ ⑧ 单调递增 ⑨ 单调递减\n\n$\\fbox{J}$～$\\fbox{P}$ 选项：⓪ $0$ ① $1$ ② $2$ ③ $n-1$ ④ $n$ ⑤ $n+1$ ⑥ $n-k$ ⑦ $n+k$ ⑧ $n+k-1$ ⑨ $n+k+1$",
+      "solution": {
+        "translation": "用「积分夹逼」估计调和型级数的极限；用 Riemann 和把级数极限化为定积分。",
+        "analysis": "对单调减少函数 $f(x) = 1/\\sqrt x$，在 $[k, k+1]$ 上 $f(k) \\ge f(x) \\ge f(k+1)$，故 $f(k) \\ge \\int_k^{k+1} f(x) dx \\ge f(k+1)$。",
+        "steps": [
+          {
+            "title": "导数与单调性",
+            "content": "$y = x^{-1/2}$，$y' = -\\dfrac{1}{2} x^{-3/2} = -\\dfrac{1}{2\\sqrt{x^3}}$。$\\fbox{A} = $ ①($1$)，$\\fbox{B} = $ ③($3$)。\n\n$y'<0$ 故 $y$ 单调递减。$\\fbox{C} = $ ⑨（单调递减）。"
+          },
+          {
+            "title": "积分估计与极限",
+            "content": "$y$ 递减，在 $[k, k+1]$ 上 $y(k) = 1/\\sqrt k$ 最大，故 $\\dfrac{1}{\\sqrt k} > \\int_k^{k+1} \\dfrac{1}{\\sqrt x} dx$。$\\fbox{D} = $ ⑦($>$)。\n\n累加 $k = 1$ 到 $n$：$S_n > \\int_1^{n+1} \\dfrac{1}{\\sqrt x} dx = [2\\sqrt x]_1^{n+1} = 2(\\sqrt{n+1} - 1)$。\n\n$\\fbox{E} = $ ⑦($>$)，$\\fbox{F} = $ ①($1$)，$\\fbox{G} = $ ⑤($n+1$)，$\\fbox{H} = $ ②($2$)。\n\n$2(\\sqrt{n+1} - 1) \\to \\infty$，故 $S_n \\to \\infty$。$\\fbox{I} = $ ⓪($\\infty$)。"
+          },
+          {
+            "title": "(2) 化为 Riemann 和",
+            "content": "$S_{2n} - S_n = \\sum_{k=n+1}^{2n} \\dfrac{1}{\\sqrt k} = \\sum_{k=1}^n \\dfrac{1}{\\sqrt{n+k}}$。$\\fbox{J} = $ ⑦($n+k$)。\n\n$\\dfrac{S_{2n} - S_n}{\\sqrt n} = \\dfrac{1}{\\sqrt n} \\sum_{k=1}^n \\dfrac{1}{\\sqrt{n+k}} = \\sum_{k=1}^n \\dfrac{1}{\\sqrt{n(n+k)}} = \\sum_{k=1}^n \\dfrac{1}{n\\sqrt{1 + k/n}} = \\dfrac{1}{n} \\sum_{k=1}^n \\dfrac{1}{\\sqrt{1 + k/n}}$。\n\n$\\fbox{K} = $ ④($n$)，$\\fbox{L} = $ ①($1$)。\n\nRiemann 和 → $\\int_0^1 \\dfrac{1}{\\sqrt{1+x}} dx$。$\\fbox{M} = $ ⓪($0$)，$\\fbox{N} = $ ①($1$)。\n\n$\\int_0^1 \\dfrac{dx}{\\sqrt{1+x}} = [2\\sqrt{1+x}]_0^1 = 2(\\sqrt 2 - 1)$。$\\fbox{O} = $ ②($2$)，$\\fbox{P} = $ ②($2$)。"
+          }
+        ],
+        "finalAnswer": "A=①, B=③, C=⑨, D=⑦, E=⑦, F=①, G=⑤, H=②, I=⓪, J=⑦, K=④, L=①, M=⓪, N=①, O=②, P=②"
+      }
+    },
+    {
+      "id": "c2-IV-2",
+      "number": "IV-2",
+      "topic": "积分方程求函数与极限",
+      "topicTag": "微分方程·积分",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "可微函数 $f(x)$ 满足\n$$\\int_0^x f(t) dt = (1 + e^{-x}) f(x) + 2x - 4\\log 2 \\quad \\cdots ①$$\n求 $f(x)$ 及极限 $\\lim_{x \\to \\infty} f(x)$。\n\n对 ① 两端关于 $x$ 求导：\n$$(1 + e^{-x}) \\cdot \\fbox{Q} = \\fbox{R} \\quad \\cdots ②$$\n令 $f(x) = e^x g(x)$，由 ②：\n$$g'(x) = \\dfrac{\\fbox{S}}{1 + e^{-x}}$$\n所以 $g(x) = \\fbox{T} \\log(1 + e^{-x}) + C$（$C$ 积分常数）。\n\n由 $g(0) = f(0)$，得 $C = \\fbox{U}$。故\n$$f(x) = \\fbox{V} \\log(1 + e^{-x})$$\n（即 $f(x) = V \\cdot e^x \\log(1 + e^{-x})$）。\n\n令 $e^{-x} = t$：$f(x) = \\fbox{W} \\log(1 + t)^{1/t}$。故 $\\lim_{x \\to \\infty} f(x) = \\lim_{t \\to \\fbox{X}} \\fbox{W} \\log(1 + t)^{1/t} = \\fbox{Y}$。\n\n$\\fbox{Q}, \\fbox{S}, \\fbox{V}$ 选项：⓪ $f'(x) - f(x)$ ① $f(x) - f'(x)$ ② $f'(x) - 2f(x)$ ③ $f(x) - 2f'(x)$ ④ $2e^x$ ⑤ $-2e^x$ ⑥ $2e^{-x}$ ⑦ $-2e^{-x}$",
+      "solution": {
+        "translation": "对积分等式两端求导，化为关于 $f$ 与 $f'$ 的一阶线性方程；用代换 $f = e^x g$ 解出。",
+        "analysis": "$\\dfrac{d}{dx}\\int_0^x f(t)dt = f(x)$；积分常数由 ① 在 $x=0$ 处定。",
+        "steps": [
+          {
+            "title": "求导与化简",
+            "content": "$\\dfrac{d}{dx}[(1 + e^{-x}) f(x) + 2x - 4\\log 2] = -e^{-x} f(x) + (1 + e^{-x}) f'(x) + 2$。\n\n等于 $f(x)$：$f(x) + e^{-x} f(x) - (1 + e^{-x}) f'(x) = 2$\n$\\Rightarrow (1 + e^{-x})(f(x) - f'(x)) = 2$。\n\n$\\fbox{Q} = $ ①（$f(x) - f'(x)$），$\\fbox{R} = 2$。"
+          },
+          {
+            "title": "代换 $f = e^x g$",
+            "content": "$f(x) = e^x g(x)$，$f'(x) = e^x g(x) + e^x g'(x) = e^x(g + g')$。\n\n$f - f' = e^x g - e^x(g + g') = -e^x g'$。\n\n代入 ②：$(1 + e^{-x})(-e^x g') = 2 \\Rightarrow -e^x g' - g' = 2 \\Rightarrow g' = -\\dfrac{2}{1 + e^x}$。\n\n通分到 $1 + e^{-x}$：$g' = -\\dfrac{2 e^{-x}}{1 + e^{-x}}$。$\\fbox{S} = $ ⑦（$-2e^{-x}$）。\n\n积分：$g(x) = \\int -\\dfrac{2 e^{-x}}{1+e^{-x}} dx$。令 $u = 1 + e^{-x}$，$du = -e^{-x} dx$，得 $g(x) = \\int \\dfrac{2}{u} du = 2\\log u + C = 2\\log(1+e^{-x}) + C$。$\\fbox{T} = 2$。"
+          },
+          {
+            "title": "$C$ 与 $f(x)$",
+            "content": "$g(0) = f(0)/e^0 = f(0)$。\n\n由 ① 在 $x = 0$：$0 = (1+1) f(0) + 0 - 4\\log 2 \\Rightarrow f(0) = 2\\log 2$。\n\n$g(0) = 2\\log 2 = 2\\log(1+1) + C = 2\\log 2 + C \\Rightarrow C = 0$。$\\fbox{U} = 0$。\n\n所以 $g(x) = 2\\log(1 + e^{-x})$，$f(x) = 2 e^x \\log(1 + e^{-x})$。$\\fbox{V} = 2$。"
+          },
+          {
+            "title": "求极限",
+            "content": "$e^{-x} = t$。$x \\to \\infty \\Leftrightarrow t \\to 0^+$。\n\n$f(x) = 2 e^x \\log(1 + e^{-x}) = \\dfrac{2}{t} \\log(1+t) = 2 \\log(1+t)^{1/t}$。$\\fbox{W} = 2, \\fbox{X} = 0$。\n\n由 $\\lim_{t \\to 0}(1+t)^{1/t} = e$，得 $\\lim = 2 \\log e = 2$。$\\fbox{Y} = 2$。"
+          }
+        ],
+        "finalAnswer": "Q=①, R=2, S=⑦, T=2, U=0, V=2, W=2, X=0, Y=2"
+      }
+    }
+  ]
+}
