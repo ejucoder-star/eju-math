@@ -1,0 +1,184 @@
+{
+  "metadata": {
+    "course": "course1",
+    "year": "2025",
+    "session": "1",
+    "courseNameJa": "数学1",
+    "courseNameEn": "Course 1 (Basic)",
+    "description": "基础课程｜文科方向",
+    "color": "#2563eb",
+    "examTitle": "2025年度（令和7年）第1回",
+    "examDate": "2025年6月"
+  },
+  "questions": [
+    {
+      "id": "c1-I-1",
+      "number": "I-1",
+      "topic": "二次函数与 x 轴交点的参数范围",
+      "topicTag": "二次函数",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "二次函数 $y = 3x^2 + 5x - 2a$ 的图象 $G$。\n\n(1) 求使 $G$ 在 $2 \\le x \\le 5$ 上与 $x$ 轴有公共点的 $a$ 范围。\n\n抛物线 $G$ 的轴为 $x = -\\dfrac{\\fbox{A}}{\\fbox{B}}$。令 $f(x) = 3x^2 + 5x - 2a$，则 $G$ 在 $2 \\le x \\le 5$ 与 $x$ 轴有公共点的条件是\n$$f(\\fbox{C}) \\le 0 \\quad \\text{且} \\quad f(\\fbox{D}) \\ge 0$$\n故所求范围 $\\fbox{EF} \\le a \\le \\fbox{GH}$。\n\n(2) 将 $G$ 沿 $x$ 轴方向平移 $p$ 后的抛物线经过 $(2, 0)$ 与 $(5, 0)$，则\n$$p = \\dfrac{\\fbox{IJ}}{\\fbox{K}}, \\qquad a = \\dfrac{\\fbox{L}}{\\fbox{M}}$$",
+      "solution": {
+        "translation": "$y = 3x^2 + 5x - 2a$，对称轴 $x = -5/6$。",
+        "analysis": "(1) 抛物线开口向上，轴 $< 2$，故 $f$ 在 $[2,5]$ 单调递增。需 $f(2) \\le 0$ 且 $f(5) \\ge 0$。",
+        "steps": [
+          {
+            "title": "(1) 轴与范围",
+            "content": "轴 $x = -\\dfrac{5}{6}$。$\\fbox{A}=5, \\fbox{B}=6$。\n\n轴 $-5/6 < 2$，开口向上：$f$ 在 $[2, 5]$ 递增。要在该区间有零点需 $f(2) \\le 0 \\le f(5)$。$\\fbox{C}=2, \\fbox{D}=5$。\n\n$f(2) = 12 + 10 - 2a = 22 - 2a \\le 0 \\Rightarrow a \\ge 11$。\n$f(5) = 75 + 25 - 2a = 100 - 2a \\ge 0 \\Rightarrow a \\le 50$。\n\n$\\fbox{EF}=11, \\fbox{GH}=50$。"
+          },
+          {
+            "title": "(2) 平移并经过 $(2,0), (5,0)$",
+            "content": "平移后抛物线零点 $2, 5$，对应原抛物线零点 $2 - p, 5 - p$。\n\n根之和 $= -\\dfrac{5}{3}$：$(2-p) + (5-p) = 7 - 2p = -\\dfrac{5}{3} \\Rightarrow p = \\dfrac{13}{3}$。$\\fbox{IJ}=13, \\fbox{K}=3$。\n\n根之积 $= -\\dfrac{2a}{3}$：$(2-p)(5-p) = \\left(-\\dfrac{7}{3}\\right)\\left(\\dfrac{2}{3}\\right) = -\\dfrac{14}{9}$。\n\n$-\\dfrac{2a}{3} = -\\dfrac{14}{9} \\Rightarrow a = \\dfrac{7}{3}$。$\\fbox{L}=7, \\fbox{M}=3$。"
+          }
+        ],
+        "finalAnswer": "A=5, B=6, C=2, D=5, EF=11, GH=50, IJ=13, K=3, L=7, M=3"
+      }
+    },
+    {
+      "id": "c1-I-2",
+      "number": "I-2",
+      "topic": "硬币移交试行概率",
+      "topicTag": "概率",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "$2$ 人中，一人有 $2$ 枚硬币，另一人有 $1$ 枚。两人将自己所有硬币全部抛掷，正面较多者从对方处取走 $1$ 枚；同数则不变（平手）。反复此试行直到某人拿到 $3$ 枚为止。\n\n(1) 单次试行：\n  (i) 有 $2$ 枚者从对方处取走硬币的概率 $\\dfrac{\\fbox{N}}{\\fbox{O}}$。\n  (ii) 有 $1$ 枚者从对方处取走硬币的概率 $\\dfrac{\\fbox{P}}{\\fbox{Q}}$。\n  (iii) 平手的概率 $\\dfrac{\\fbox{R}}{\\fbox{S}}$。\n\n(2) 起初 $A$ 有 $2$ 枚、$B$ 有 $1$ 枚。第 $2$ 次试行时 $A$ 得到第 $3$ 枚的概率 $\\dfrac{\\fbox{T}}{\\fbox{UV}}$；第 $2$ 次试行时 $B$ 得到第 $3$ 枚的概率 $\\dfrac{\\fbox{W}}{\\fbox{XY}}$。",
+      "solution": {
+        "translation": "$2$ 枚者正面数 $X \\in \\{0,1,2\\}$ 概率 $1/4, 1/2, 1/4$；$1$ 枚者正面数 $Y \\in \\{0,1\\}$ 概率 $1/2, 1/2$。",
+        "analysis": "枚举 $X, Y$ 组合：$P(X>Y), P(X<Y), P(X=Y)$。",
+        "steps": [
+          {
+            "title": "(1) 单次概率",
+            "content": "$P(X > Y) = P(1,0) + P(2,0) + P(2,1) = \\dfrac{1}{2}\\cdot\\dfrac{1}{2} + \\dfrac{1}{4}\\cdot\\dfrac{1}{2} + \\dfrac{1}{4}\\cdot\\dfrac{1}{2} = \\dfrac{1}{2}$。$\\fbox{N}=1, \\fbox{O}=2$。\n\n$P(Y > X) = P(0, 1) = \\dfrac{1}{4} \\cdot \\dfrac{1}{2} = \\dfrac{1}{8}$。$\\fbox{P}=1, \\fbox{Q}=8$。\n\n$P(X = Y) = 1 - \\dfrac{1}{2} - \\dfrac{1}{8} = \\dfrac{3}{8}$。$\\fbox{R}=3, \\fbox{S}=8$。"
+          },
+          {
+            "title": "(2) 第 2 次结束",
+            "content": "第 $1$ 次结果：\n- $A$ 取走（$p = 1/2$）：$A=3, B=0$，游戏结束。\n- $B$ 取走（$p = 1/8$）：$A=1, B=2$。\n- 平手（$p = 3/8$）：状态不变 $A=2, B=1$。\n\n$A$ 在第 $2$ 次得 $3$ 枚：须先平手再 $A$ 胜：$\\dfrac{3}{8} \\cdot \\dfrac{1}{2} = \\dfrac{3}{16}$。$\\fbox{T}=3, \\fbox{UV}=16$。\n\n$B$ 在第 $2$ 次得 $3$ 枚：须先 $B$ 胜（$A=1, B=2$）再 $B$ 胜（$B$ 此时有 $2$ 枚，胜率 $1/2$）：$\\dfrac{1}{8} \\cdot \\dfrac{1}{2} = \\dfrac{1}{16}$。$\\fbox{W}=1, \\fbox{XY}=16$。"
+          }
+        ],
+        "finalAnswer": "N=1, O=2, P=1, Q=8, R=3, S=8, T=3, UV=16, W=1, XY=16"
+      }
+    },
+    {
+      "id": "c1-II-1",
+      "number": "II-1",
+      "topic": "多项式因式分解与无理数代入",
+      "topicTag": "代数·因式分解",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "整式 $P = 6x^2 + 5xy - 6y^2 + 8x - y + 2$，求 $x = \\dfrac{\\sqrt 5 - 3}{\\sqrt 5 + 1}, y = \\dfrac{\\sqrt{30} - \\sqrt 6 + 4}{\\sqrt 6 + \\sqrt 5 + 1}$ 时 $P$ 的值。\n\n按 $x$ 降幂整理：\n$$P = 6x^2 + (5y + 8)x - (\\fbox{A}\\,y + \\fbox{B})(\\fbox{C}\\,y - \\fbox{D})$$\n因此因式分解\n$$P = (\\fbox{E}\\,x + \\fbox{A}\\,y + \\fbox{B})(\\fbox{F}\\,x - \\fbox{C}\\,y + \\fbox{D}) \\quad \\cdots ①$$\n\n而\n$$x = \\dfrac{\\sqrt 5 - 3}{\\sqrt 5 + 1} = \\fbox{G} - \\sqrt{\\fbox{H}}$$\n$$y = \\dfrac{\\sqrt{30} - \\sqrt 6 + 4}{\\sqrt 6 + \\sqrt 5 + 1} = \\sqrt{\\fbox{I}} - \\fbox{J}$$\n\n代入①：$P = \\fbox{K} - \\fbox{L}\\sqrt{\\fbox{M}}$。",
+      "solution": {
+        "translation": "$-6y^2 - y + 2 = -(3y+2)(2y-1)$。",
+        "analysis": "把 $P$ 视为 $x$ 的二次式，配凑因式分解。$x, y$ 通过有理化简化。",
+        "steps": [
+          {
+            "title": "因式分解 $P$",
+            "content": "$-6y^2 - y + 2 = -(6y^2 + y - 2) = -(3y + 2)(2y - 1)$。$\\fbox{A}=3, \\fbox{B}=2, \\fbox{C}=2, \\fbox{D}=1$。\n\n令 $P = (Ex + 3y + 2)(Fx - 2y + 1)$，展开匹配：$EF = 6$，$3F - 2E = 5$，$E + 2F = 8$。\n\n由 $E = 8 - 2F$ 代入 $EF = 6$：$F = 3, E = 2$（另解 $F=1$ 不满足 $3F-2E=5$）。$\\fbox{E}=2, \\fbox{F}=3$。\n\n$P = (2x + 3y + 2)(3x - 2y + 1)$。"
+          },
+          {
+            "title": "求 $x, y$",
+            "content": "$x = \\dfrac{\\sqrt 5 - 3}{\\sqrt 5 + 1} = \\dfrac{(\\sqrt 5 - 3)(\\sqrt 5 - 1)}{(\\sqrt 5)^2 - 1} = \\dfrac{5 - \\sqrt 5 - 3\\sqrt 5 + 3}{4} = \\dfrac{8 - 4\\sqrt 5}{4} = 2 - \\sqrt 5$。$\\fbox{G}=2, \\fbox{H}=5$。\n\n$y$ 的分母 $\\sqrt 6 + \\sqrt 5 + 1$，乘 $\\sqrt 6 - (\\sqrt 5 + 1)$：\n分母 $= 6 - (\\sqrt 5 + 1)^2 = 6 - (5 + 2\\sqrt 5 + 1) = -2\\sqrt 5$。\n分子 $= (\\sqrt{30} - \\sqrt 6 + 4)(\\sqrt 6 - \\sqrt 5 - 1) = 2\\sqrt 5 - 10$（展开化简后）。\n$y = \\dfrac{2\\sqrt 5 - 10}{-2\\sqrt 5} = \\dfrac{10 - 2\\sqrt 5}{2\\sqrt 5} = \\sqrt 5 - 1$。$\\fbox{I}=5, \\fbox{J}=1$。"
+          },
+          {
+            "title": "代入求 $P$",
+            "content": "$2x + 3y + 2 = (4 - 2\\sqrt 5) + (3\\sqrt 5 - 3) + 2 = 3 + \\sqrt 5$。\n$3x - 2y + 1 = (6 - 3\\sqrt 5) + (-2\\sqrt 5 + 2) + 1 = 9 - 5\\sqrt 5$。\n\n$P = (3 + \\sqrt 5)(9 - 5\\sqrt 5) = 27 - 15\\sqrt 5 + 9\\sqrt 5 - 25 = 2 - 6\\sqrt 5$。$\\fbox{K}=2, \\fbox{L}=6, \\fbox{M}=5$。"
+          }
+        ],
+        "finalAnswer": "A=3, B=2, C=2, D=1, E=2, F=3, G=2, H=5, I=5, J=1, K=2, L=6, M=5"
+      }
+    },
+    {
+      "id": "c1-II-2",
+      "number": "II-2",
+      "topic": "二次不等式与绝对值不等式交集",
+      "topicTag": "不等式",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "$a$ 为实数。$x$ 的两个不等式\n$$\\begin{cases} x^2 + 2x < 8 & \\cdots ① \\\\ |a - 2 - x| < 3 & \\cdots ② \\end{cases}$$\n求使 ①② 同时有解的 $a$ 范围。\n\n① 即 $(x + \\fbox{N})(x - \\fbox{O}) < 0$，故 $-\\fbox{N} < x < \\fbox{O}$。\n② 解得 $\\fbox{P} < x < \\fbox{Q}$。\n因此：\n  (i) $a \\le -\\fbox{R}$ 时 ①② 无公共解。\n  (ii) $-\\fbox{R} < a \\le \\fbox{S}$ 时公共解为 $-\\fbox{T} < x < \\fbox{Q}$。\n  (iii) $\\fbox{S} < a < \\fbox{U}$ 时公共解为 $\\fbox{P} < x < \\fbox{V}$。\n  (iv) $\\fbox{U} \\le a$ 时 ①② 无公共解。\n\n综上，①② 同时有解的 $a$ 范围 $-\\fbox{W} < a < \\fbox{X}$。\n又，公共解中不含 $x = 0$ 的 $a$ 范围 $-\\fbox{W} < a \\le -\\fbox{Y}$ 或 $\\fbox{Z} \\le a < \\fbox{X}$。\n\n选项：⓪ $5-a$ ① $3-a$ ② $1-a$ ③ $-1-a$ ④ $-3-a$ ⑤ $a-5$ ⑥ $a-3$ ⑦ $a-1$ ⑧ $a+1$ ⑨ $a+3$",
+      "solution": {
+        "translation": "① 解为 $(-4, 2)$；② 解为 $(a-5, a+1)$。",
+        "analysis": "分四种情形比较两区间相对位置。",
+        "steps": [
+          {
+            "title": "解 ①②",
+            "content": "① $(x+4)(x-2) < 0 \\Rightarrow -4 < x < 2$。$\\fbox{N}=4, \\fbox{O}=2$。\n② $|x - (a-2)| < 3 \\Rightarrow a - 5 < x < a + 1$。$\\fbox{P} = $ ⑤，$\\fbox{Q} = $ ⑧。"
+          },
+          {
+            "title": "区间相交分析",
+            "content": "两区间 $(-4, 2)$ 与 $(a-5, a+1)$：\n- 无交：$a + 1 \\le -4$（即 $a \\le -5$）或 $a - 5 \\ge 2$（即 $a \\ge 7$）。$\\fbox{R}=5, \\fbox{U}=7$。\n- $-5 < a \\le 1$（即 $a - 5 \\le -4 < a + 1 < 2$，左端 $-4$ 主导，右端 $a+1$）：解 $(-4, a+1)$。$\\fbox{T}=4, \\fbox{S}=1$。\n- $1 < a < 7$（即 $-4 < a-5 < 2 < a+1$）：解 $(a-5, 2)$。$\\fbox{V} = 2$。"
+          },
+          {
+            "title": "$a$ 范围与去除 $x=0$",
+            "content": "综合：$-5 < a < 7$。$\\fbox{W}=5, \\fbox{X}=7$。\n\n（ii）解 $(-4, a+1)$ 不含 $0$：$a + 1 \\le 0 \\Rightarrow a \\le -1$。结合 $-5 < a \\le 1$：$-5 < a \\le -1$。\n（iii）解 $(a-5, 2)$ 不含 $0$：$a - 5 \\ge 0 \\Rightarrow a \\ge 5$。结合 $1 < a < 7$：$5 \\le a < 7$。\n\n$\\fbox{Y}=1, \\fbox{Z}=5$。"
+          }
+        ],
+        "finalAnswer": "N=4, O=2, P=⑤, Q=⑧, R=5, S=1, T=4, U=7, V=2, W=5, X=7, Y=1, Z=5"
+      }
+    },
+    {
+      "id": "c1-III-1",
+      "number": "III",
+      "topic": "有理分式取整数值的自然数",
+      "topicTag": "整数·分式",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "求使 $P = \\dfrac{n^2 + 188n + 267}{n^2 + 3n + 2}$ 为整数的自然数 $n$ 及相应的 $P$ 值。\n\n$P$ 变形为\n$$P = \\fbox{A} + \\dfrac{\\fbox{BC}}{n+1} + \\dfrac{\\fbox{DEF}}{n+2}$$\n$n+1$ 与 $n+2$ 互素，故 $P$ 为整数当且仅当 $\\dfrac{\\fbox{BC}}{n+1}$ 与 $\\dfrac{\\fbox{DEF}}{n+2}$ 均为整数。\n\n$\\fbox{BC} = \\fbox{G}^{\\fbox{H}} \\cdot \\fbox{I}$，故其正约数 $\\fbox{JK}$ 个。\n$\\fbox{DEF} = \\fbox{L} \\cdot \\fbox{M} \\cdot \\fbox{N}$（$\\fbox{L} < \\fbox{M} < \\fbox{N}$），故其正约数 $\\fbox{O}$ 个。\n\n$n = \\fbox{P}, \\fbox{Q}, \\fbox{RS}$（$\\fbox{P} < \\fbox{Q}$）时，两条件均成立。对应：\n$n = \\fbox{P}$ 时 $P = \\fbox{TU}$；$n = \\fbox{Q}$ 时 $P = \\fbox{VW}$；$n = \\fbox{RS}$ 时 $P = \\fbox{XY}$。",
+      "solution": {
+        "translation": "多项式除法 + 部分分式：$P = 1 + \\dfrac{80}{n+1} + \\dfrac{105}{n+2}$。",
+        "analysis": "$n + 1 \\mid 80$ 与 $n + 2 \\mid 105$ 联立。",
+        "steps": [
+          {
+            "title": "变形",
+            "content": "$n^2 + 188n + 267 = (n^2 + 3n + 2) + (185n + 265)$。\n\n$\\dfrac{185n + 265}{(n+1)(n+2)} = \\dfrac{80}{n+1} + \\dfrac{105}{n+2}$（用 $n=-1$ 给 $A=80$，$n=-2$ 给 $B=105$）。\n\n$P = 1 + \\dfrac{80}{n+1} + \\dfrac{105}{n+2}$。$\\fbox{A}=1, \\fbox{BC}=80, \\fbox{DEF}=105$。"
+          },
+          {
+            "title": "约数分析",
+            "content": "$80 = 2^4 \\cdot 5$。$\\fbox{G}=2, \\fbox{H}=4, \\fbox{I}=5$。正约数 $(4+1)(1+1) = 10$。$\\fbox{JK}=10$。\n\n$105 = 3 \\cdot 5 \\cdot 7$。$\\fbox{L}=3, \\fbox{M}=5, \\fbox{N}=7$。正约数 $2^3 = 8$。$\\fbox{O}=8$。"
+          },
+          {
+            "title": "求 $n$",
+            "content": "$n+1 \\in \\{1,2,4,5,8,10,16,20,40,80\\} \\Rightarrow n \\in \\{0,1,3,4,7,9,15,19,39,79\\}$。\n$n+2 \\in \\{1,3,5,7,15,21,35,105\\} \\Rightarrow n \\in \\{-1,1,3,5,13,19,33,103\\}$。\n\n交集（自然数 $\\ge 1$）：$n \\in \\{1, 3, 19\\}$。$\\fbox{P}=1, \\fbox{Q}=3, \\fbox{RS}=19$。\n\n$n=1$：$P = 1 + 40 + 35 = 76$。$\\fbox{TU}=76$。\n$n=3$：$P = 1 + 20 + 21 = 42$。$\\fbox{VW}=42$。\n$n=19$：$P = 1 + 4 + 5 = 10$。$\\fbox{XY}=10$。"
+          }
+        ],
+        "finalAnswer": "A=1, BC=80, DEF=105, G=2, H=4, I=5, JK=10, L=3, M=5, N=7, O=8, P=1, Q=3, RS=19, TU=76, VW=42, XY=10"
+      }
+    },
+    {
+      "id": "c1-IV-1",
+      "number": "IV",
+      "topic": "圆内接四边形与弧上动点",
+      "topicTag": "平面几何",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "questionDiagram": {
+        "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 360 260' font-family='serif' font-size='14'><circle cx='180' cy='130' r='110' fill='none' stroke='#1c1917' stroke-width='1.5'/><line x1='75' y1='130' x2='285' y2='130' stroke='#1c1917' stroke-width='1.5'/><line x1='75' y1='130' x2='150' y2='40' stroke='#1c1917' stroke-width='1.5'/><line x1='150' y1='40' x2='285' y2='130' stroke='#1c1917' stroke-width='1.5'/><circle cx='75' cy='130' r='2.5' fill='#1c1917'/><circle cx='285' cy='130' r='2.5' fill='#1c1917'/><circle cx='150' cy='40' r='2.5' fill='#1c1917'/><text x='65' y='135' text-anchor='end'>B</text><text x='295' y='135' text-anchor='start'>C</text><text x='150' y='32' text-anchor='middle'>A</text></svg>"
+      },
+      "japanese": "三角形 $ABC$ 中 $AB = 3, BC = 8, CA = 7$。\n\n$\\angle ABC = \\fbox{AB}°$，$\\triangle ABC$ 面积 $= \\fbox{C}\\sqrt{\\fbox{D}}$，外接圆半径 $= \\dfrac{\\fbox{E}\\sqrt{\\fbox{F}}}{\\fbox{G}}$，内切圆半径 $= \\dfrac{\\fbox{H}\\sqrt{\\fbox{I}}}{\\fbox{J}}$。\n\n设 $D$ 为外接圆上不含 $B$ 的弧 $AC$ 上一点，$E$ 为 $AC$ 与 $BD$ 的交点。\n\n(1) 当 $AD \\parallel BC$ 时：$\\angle BCD = \\fbox{KL}°$，$AD = \\fbox{M}$，故 $AE = \\dfrac{\\fbox{NO}}{\\fbox{PQ}}$。\n\n(2) 当四边形 $ABCD$ 面积最大时：$\\angle ADC = 180° - \\fbox{AB}°$，$\\angle DAC = \\fbox{RS}°$，$AD = \\dfrac{\\fbox{T}\\sqrt{\\fbox{U}}}{\\fbox{V}}$，故 $\\angle DBC = \\fbox{RS}°$，$AE = \\dfrac{\\fbox{WX}}{\\fbox{YZ}}$。",
+      "solution": {
+        "translation": "由余弦定理与三角面积公式定基本量；用圆内接四边形对角互补与等弧等角化简。",
+        "analysis": "(1) $AD \\parallel BC$ 时为等腰梯形，$AB = CD$；(2) 面积最大时 $\\triangle ACD$ 取等腰。",
+        "steps": [
+          {
+            "title": "基本量",
+            "content": "$\\cos\\angle ABC = \\dfrac{9 + 64 - 49}{2 \\cdot 3 \\cdot 8} = \\dfrac{24}{48} = \\dfrac{1}{2}$，$\\angle ABC = 60°$。$\\fbox{AB}=60$。\n\n面积 $= \\dfrac{1}{2} \\cdot 3 \\cdot 8 \\cdot \\sin 60° = 6\\sqrt 3$。$\\fbox{C}=6, \\fbox{D}=3$。\n\n外接圆半径 $R = \\dfrac{AC}{2\\sin\\angle ABC} = \\dfrac{7}{\\sqrt 3} = \\dfrac{7\\sqrt 3}{3}$。$\\fbox{E}=7, \\fbox{F}=3, \\fbox{G}=3$。\n\n内切圆 $r = \\dfrac{S}{s} = \\dfrac{6\\sqrt 3}{9} = \\dfrac{2\\sqrt 3}{3}$。$\\fbox{H}=2, \\fbox{I}=3, \\fbox{J}=3$。"
+          },
+          {
+            "title": "(1) $AD \\parallel BC$",
+            "content": "圆内接四边形且 $AD \\parallel BC$ ⇒ 等腰梯形 ⇒ $CD = AB = 3$。\n\n用坐标：$B=(0,0), C=(8,0), A=(3/2, 3\\sqrt 3/2)$。外接圆心 $(4, -\\sqrt 3/3)$，半径 $7\\sqrt 3/3$。\n\n$D$ 在圆上且 $y_D = y_A = 3\\sqrt 3/2$：$(x-4)^2 = 25/4 \\Rightarrow x = 13/2$（$x=3/2$ 是 $A$）。$D = (13/2, 3\\sqrt 3/2)$。\n\n$AD = 13/2 - 3/2 = 5$。$\\fbox{M} = 5$。\n\n$\\cos\\angle BCD = \\dfrac{\\vec{CB} \\cdot \\vec{CD}}{|CB||CD|} = \\dfrac{(-8)(-3/2) + 0}{8 \\cdot 3} = \\dfrac{12}{24} = \\dfrac{1}{2}$，$\\angle BCD = 60°$。$\\fbox{KL}=60$。\n\n$E$：解 $AC \\cap BD$。$AC$ 参数 $t = 5/13$，$E = (4, 12\\sqrt 3/13)$。\n\n$AE = \\sqrt{(5/2)^2 + (15\\sqrt 3/26)^2} = \\sqrt{4900/676} = \\dfrac{35}{13}$。$\\fbox{NO}=35, \\fbox{PQ}=13$。"
+          },
+          {
+            "title": "(2) 四边形面积最大",
+            "content": "$\\angle ADC = 180° - 60° = 120°$（圆内接四边形）。\n\n在 $\\triangle ACD$ 中，$AC^2 = AD^2 + DC^2 + AD \\cdot DC = 49$，$\\triangle ACD$ 面积 $= \\dfrac{\\sqrt 3}{4} AD \\cdot DC$。\n\n由 $p^2 + q^2 \\ge 2pq$，$3pq \\le 49$，等号当 $p = q$。$AD = DC$ 时，$3AD^2 = 49 \\Rightarrow AD = \\dfrac{7\\sqrt 3}{3}$。$\\fbox{T}=7, \\fbox{U}=3, \\fbox{V}=3$。\n\n等腰 $\\triangle ACD$ 有 $\\angle DAC = \\angle DCA = \\dfrac{180° - 120°}{2} = 30°$。$\\fbox{RS} = 30$。\n\n$\\angle DBC$ 与 $\\angle DAC$ 同对弧 $DC$，故 $\\angle DBC = 30°$。\n\n$\\angle ABD = 60° - 30° = 30° = \\angle DBC$，故 $BD$ 平分 $\\angle ABC$，由角平分线定理：\n$$\\dfrac{AE}{EC} = \\dfrac{AB}{BC} = \\dfrac{3}{8} \\Rightarrow AE = \\dfrac{3}{11} \\cdot 7 = \\dfrac{21}{11}$$\n$\\fbox{WX}=21, \\fbox{YZ}=11$。"
+          }
+        ],
+        "finalAnswer": "AB=60, C=6, D=3, E=7, F=3, G=3, H=2, I=3, J=3, KL=60, M=5, NO=35, PQ=13, RS=30, T=7, U=3, V=3, WX=21, YZ=11"
+      }
+    }
+  ]
+}
