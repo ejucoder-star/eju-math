@@ -1,0 +1,193 @@
+{
+  "metadata": {
+    "course": "course2",
+    "year": "2012",
+    "session": "2",
+    "courseNameJa": "数学2",
+    "courseNameEn": "Course 2 (Advanced)",
+    "description": "上级课程｜理科方向",
+    "color": "#9333ea",
+    "examTitle": "2012年度（平成24年）第2回",
+    "examDate": "2012年11月"
+  },
+  "questions": [
+    {
+      "id": "c2-I-1",
+      "number": "I-1",
+      "topic": "抛物线点对称",
+      "topicTag": "二次函数",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "$a \\ne 0$。$x$ 的二次函数 $y = ax^2 - 4x - 4a$（①）的图象关于原点 $(0, 0)$ 的对称曲线记为 $G$。\n\n(1) 二次函数 ① 的图象顶点坐标为 $\\left(\\dfrac{\\fbox{A}}{a}, -\\dfrac{\\fbox{B}}{a} - 4a\\right)$。\n\n(2) $G$ 对应的二次函数是下列选项中的 $\\fbox{C}$。\n  ⓪ $y = ax^2 + 4x + 4a$；① $y = ax^2 + 4x - 4a$；② $y = ax^2 - 4x + 4a$；③ $y = -ax^2 + 4x + 4a$；④ $y = -ax^2 - 4x + 4a$；⑤ $y = -ax^2 - 4x - 4a$。\n\n(3) $G$ 与 ① 在 $(\\fbox{DE}, \\fbox{F}), (\\fbox{G}, \\fbox{HI})$ 处相交。\n\n(4) $a = 2$。则在区间 $\\fbox{DE} \\le x \\le \\fbox{G}$ 上 $G$ 的最大值为 $\\fbox{JK}$，最小值为 $\\fbox{LM}$。",
+      "solution": {
+        "translation": "原 ① 配方得顶点；G 由 $(x, y) \\to (-x, -y)$ 映射得到。",
+        "analysis": "点 $(x,y) \\in G \\Leftrightarrow (-x,-y) \\in ①$。",
+        "steps": [
+          {
+            "title": "(1) 顶点",
+            "content": "$y = ax^2 - 4x - 4a = a\\left(x - \\dfrac{2}{a}\\right)^2 - \\dfrac{4}{a} - 4a$。\n顶点 $\\left(\\dfrac{2}{a}, -\\dfrac{4}{a} - 4a\\right)$。$\\fbox{A}=2, \\fbox{B}=4$。"
+          },
+          {
+            "title": "(2) $G$ 的方程",
+            "content": "$(x,y) \\in G \\Leftrightarrow (-x,-y) \\in ①$：\n$-y = a(-x)^2 - 4(-x) - 4a = ax^2 + 4x - 4a$\n$y = -ax^2 - 4x + 4a$。\n\n对应选项 ④。$\\fbox{C} = 4$。"
+          },
+          {
+            "title": "(3) 交点",
+            "content": "$ax^2 - 4x - 4a = -ax^2 - 4x + 4a \\Rightarrow 2ax^2 = 8a \\Rightarrow x^2 = 4 \\Rightarrow x = \\pm 2$。\n\n$x = -2$：$y = 4a + 8 - 4a = 8$，即 $(-2, 8)$。\n$x = 2$：$y = 4a - 8 - 4a = -8$，即 $(2, -8)$。\n\n$\\fbox{DE}=-2, \\fbox{F}=8, \\fbox{G}=2, \\fbox{HI}=-8$。"
+          },
+          {
+            "title": "(4) $a = 2$ 时最值",
+            "content": "$G$: $y = -2x^2 - 4x + 8$。\n\n对称轴 $x = -1 \\in [-2, 2]$。开口向下。\n\n最大值在顶点：$y(-1) = -2 + 4 + 8 = 10$。$\\fbox{JK} = 10$。\n\n端点：$y(-2) = -8 + 8 + 8 = 8$，$y(2) = -8 - 8 + 8 = -8$。\n\n最小值 $= -8$（在 $x=2$）。$\\fbox{LM} = -8$。"
+          }
+        ],
+        "finalAnswer": "AB=24, C=4, DEF=-28, GHI=2-8, JK=10, LM=-8"
+      }
+    },
+    {
+      "id": "c2-I-2",
+      "number": "I-2",
+      "topic": "含绝对值方程",
+      "topicTag": "代数·绝对值",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "$a$ 为常数，考虑方程 $|ax - 11| = 4x - 10$ ①。\n\n(1) 不用绝对值符号：\n  $ax \\ge 11$ 时：$(a - \\fbox{N})x = \\fbox{O}$。\n  $ax < 11$ 时：$(a + \\fbox{P})x = \\fbox{QR}$。\n\n(2) $a = \\sqrt 7$ 时，① 的解为\n$$x = \\dfrac{\\fbox{S}(\\fbox{T} - \\sqrt{\\fbox{U}})}{\\fbox{V}}$$\n\n(3) $a$ 为正整数。① 有正整数解时，$a = \\fbox{W}$，此时正整数解 $x = \\fbox{X}$。",
+      "solution": {
+        "translation": "$|ax-11|$ 分情况展开，化为线性方程；按 $a$ 选合适分支。",
+        "analysis": "$|ax-11| = ax-11$ 若 $ax \\ge 11$；否则 $|ax-11| = 11-ax$。",
+        "steps": [
+          {
+            "title": "(1) 拆开绝对值",
+            "content": "$ax \\ge 11$：$ax - 11 = 4x - 10 \\Rightarrow (a-4)x = 1$。$\\fbox{N}=4, \\fbox{O}=1$。\n\n$ax < 11$：$11 - ax = 4x - 10 \\Rightarrow (a+4)x = 21$。$\\fbox{P}=4, \\fbox{QR}=21$。"
+          },
+          {
+            "title": "(2) $a = \\sqrt 7$",
+            "content": "右边需要 $4x - 10 \\ge 0$ 即 $x \\ge 5/2$。\n\n**分支 1**：$ax \\ge 11$，$x = \\dfrac{1}{a-4} = \\dfrac{1}{\\sqrt 7 - 4}$。$\\sqrt 7 - 4 < 0$，$x < 0$，与 $x \\ge 5/2$ 矛盾。舍。\n\n**分支 2**：$ax < 11$，$x = \\dfrac{21}{a+4} = \\dfrac{21}{\\sqrt 7 + 4} = \\dfrac{21(\\sqrt 7 - 4)}{7 - 16} = \\dfrac{21(\\sqrt 7 - 4)}{-9} = \\dfrac{7(4 - \\sqrt 7)}{3}$。\n\n检验 $x \\ge 5/2$ 与 $ax < 11$：$ax = \\sqrt 7 \\cdot \\dfrac{7(4-\\sqrt 7)}{3} = \\dfrac{7(4\\sqrt 7 - 7)}{3} = \\dfrac{28\\sqrt 7 - 49}{3} \\approx 8.36 < 11$ ✓。\n\n$x = \\dfrac{7(4 - \\sqrt 7)}{3}$。$\\fbox{S} = 7, \\fbox{T} = 4, \\fbox{U} = 7, \\fbox{V} = 3$。"
+          },
+          {
+            "title": "(3) 正整数解",
+            "content": "$a$ 正整数，正整数解 $x$。\n\n**分支 1**：$(a-4)x = 1$ 且 $ax \\ge 11$。$x$ 正整数需 $a - 4 = 1 \\Rightarrow a = 5, x = 1$。$ax = 5 < 11$，与 $ax \\ge 11$ 矛盾。舍。\n\n**分支 2**：$(a+4)x = 21$ 且 $ax < 11$。$a + 4 \\mid 21$，$a + 4 \\in \\{1, 3, 7, 21\\}$。$a > 0$ 给 $a + 4 \\in \\{7, 21\\}$。\n- $a = 3, x = 3$：$ax = 9 < 11$ ✓，且需 $4x - 10 = 2 \\ge 0$ ✓。\n- $a = 17, x = 1$：$ax = 17 \\ge 11$，与分支 2 矛盾。舍。\n\n$\\fbox{W} = 3, \\fbox{X} = 3$。"
+          }
+        ],
+        "finalAnswer": "NO=41, PQR=421, STUV=7473, W=3, X=3"
+      }
+    },
+    {
+      "id": "c2-II-1",
+      "number": "II",
+      "topic": "向量与圆内接三角形交点",
+      "topicTag": "向量",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "半径 $2$ 的圆 $O$ 内接三角形 $ABC$ 满足 $3\\vec{OA} + 4\\vec{OB} + 2\\vec{OC} = \\vec 0$ ①。$D$ 为直线 $AO$ 与线段 $BC$ 的交点。求 $AD, BD$。\n\n(1) $\\vec{OD} = k\\vec{OA}$（$k$ 实数），则\n$$\\vec{OD} = -\\dfrac{\\fbox{A}}{\\fbox{B}}\\,k\\vec{OB} - \\dfrac{\\fbox{C}}{\\fbox{D}}\\,k\\vec{OC}$$\n由 $B, C, D$ 共线得 $k = \\dfrac{\\fbox{EF}}{\\fbox{G}}$，故 $OD = \\fbox{H}$，$AD = \\fbox{I}$。\n\n(2) 由 (1)，$BD = \\dfrac{\\fbox{J}}{\\fbox{K}} BC$。\n\n$BC^2 = \\fbox{L} - \\fbox{M}\\,\\vec{OB} \\cdot \\vec{OC}$。\n\n由 ①：$|4\\vec{OB} + 2\\vec{OC}|^2 = \\fbox{NO}$，故 $\\vec{OB} \\cdot \\vec{OC} = \\dfrac{\\fbox{PQR}}{\\fbox{S}}$，\n$$BC = \\dfrac{\\fbox{T}\\sqrt{\\fbox{U}}}{\\fbox{V}}, \\qquad BD = \\dfrac{\\sqrt{\\fbox{W}}}{\\fbox{X}}$$",
+      "solution": {
+        "translation": "用向量约束 $3\\vec{OA}+4\\vec{OB}+2\\vec{OC}=\\vec 0$ 把 $\\vec{OA}$ 用 $\\vec{OB}, \\vec{OC}$ 表出；并由共线条件确定 $k$。",
+        "analysis": "$B, C, D$ 共线 ⇔ $\\vec{OD}$ 关于 $\\vec{OB}, \\vec{OC}$ 的系数和为 $1$（仿射组合）。",
+        "steps": [
+          {
+            "title": "(1) $\\vec{OD}$",
+            "content": "由 ①：$\\vec{OA} = -\\dfrac{4}{3}\\vec{OB} - \\dfrac{2}{3}\\vec{OC}$。\n\n$\\vec{OD} = k\\vec{OA} = -\\dfrac{4}{3}k\\vec{OB} - \\dfrac{2}{3}k\\vec{OC}$。$\\fbox{A}=4, \\fbox{B}=3, \\fbox{C}=2, \\fbox{D}=3$。\n\n$B, C, D$ 共线：系数和 $= 1$（即 $\\vec{OD} = (1-t)\\vec{OB} + t\\vec{OC}$）：\n$$-\\dfrac{4}{3}k - \\dfrac{2}{3}k = -2k = 1 \\Rightarrow k = -\\dfrac{1}{2}$$\n$\\fbox{EF} = -1, \\fbox{G} = 2$。\n\n$|\\vec{OD}| = |k| \\cdot |\\vec{OA}| = \\dfrac{1}{2} \\cdot 2 = 1$。$\\fbox{H} = 1$。\n\n$\\vec{AD} = \\vec{OD} - \\vec{OA} = (k-1)\\vec{OA} = -\\dfrac{3}{2}\\vec{OA}$，$|\\vec{AD}| = \\dfrac{3}{2} \\cdot 2 = 3$。$\\fbox{I} = 3$。"
+          },
+          {
+            "title": "(2) $BD/BC$",
+            "content": "由 $\\vec{OD} = \\dfrac{2}{3}\\vec{OB} + \\dfrac{1}{3}\\vec{OC}$（$k = -1/2$ 代入），写成 $(1-t)\\vec{OB} + t\\vec{OC}$ 形式：$1 - t = 2/3 \\Rightarrow t = 1/3$。\n\n$\\vec{BD} = \\vec{OD} - \\vec{OB} = t(\\vec{OC} - \\vec{OB}) = \\dfrac{1}{3}\\vec{BC}$。\n\n$BD = \\dfrac{1}{3} BC$。$\\fbox{J} = 1, \\fbox{K} = 3$。"
+          },
+          {
+            "title": "$BC^2$ 及 $\\vec{OB}\\cdot\\vec{OC}$",
+            "content": "$BC^2 = |\\vec{OC} - \\vec{OB}|^2 = |\\vec{OC}|^2 - 2\\vec{OB}\\cdot\\vec{OC} + |\\vec{OB}|^2 = 4 + 4 - 2\\vec{OB}\\cdot\\vec{OC} = 8 - 2\\vec{OB}\\cdot\\vec{OC}$。\n\n$\\fbox{L} = 8, \\fbox{M} = 2$。\n\n由 ①：$4\\vec{OB} + 2\\vec{OC} = -3\\vec{OA}$，两边平方：\n$|4\\vec{OB} + 2\\vec{OC}|^2 = 9|\\vec{OA}|^2 = 9 \\cdot 4 = 36$。$\\fbox{NO} = 36$。\n\n展开 $|4\\vec{OB} + 2\\vec{OC}|^2 = 16|\\vec{OB}|^2 + 16\\vec{OB}\\cdot\\vec{OC} + 4|\\vec{OC}|^2 = 64 + 16\\vec{OB}\\cdot\\vec{OC} + 16 = 80 + 16\\vec{OB}\\cdot\\vec{OC} = 36$。\n\n$\\vec{OB}\\cdot\\vec{OC} = \\dfrac{-44}{16} = -\\dfrac{11}{4}$。$\\fbox{PQR} = -11, \\fbox{S} = 4$。"
+          },
+          {
+            "title": "$BC, BD$",
+            "content": "$BC^2 = 8 - 2 \\cdot \\left(-\\dfrac{11}{4}\\right) = 8 + \\dfrac{11}{2} = \\dfrac{27}{2}$。\n\n$BC = \\sqrt{\\dfrac{27}{2}} = \\dfrac{3\\sqrt{3}}{\\sqrt 2} = \\dfrac{3\\sqrt 6}{2}$。$\\fbox{T} = 3, \\fbox{U} = 6, \\fbox{V} = 2$。\n\n$BD = \\dfrac{1}{3} \\cdot \\dfrac{3\\sqrt 6}{2} = \\dfrac{\\sqrt 6}{2}$。$\\fbox{W} = 6, \\fbox{X} = 2$。"
+          }
+        ],
+        "finalAnswer": "ABCD=4323, EFG=-12, H=1, I=3, JK=13, LM=82, NO=36, PQRS=-114, TUV=362, WX=62"
+      }
+    },
+    {
+      "id": "c2-III-1",
+      "number": "III",
+      "topic": "对数变量代换与圆与直线相切",
+      "topicTag": "对数·最值",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "正数 $x, y$ 满足\n$$(\\log_2 x)^2 + (\\log_2 y)^2 = \\log_2 \\dfrac{8x^2}{y^2} \\quad \\cdots ①$$\n求 $xy^2$ 的最大值及对应的 $x, y$。\n\n(1) ① 的右端化简：\n$$\\log_2 \\dfrac{8x^2}{y^2} = \\fbox{A}\\log_2 x - \\fbox{B}\\log_2 y + \\fbox{C}$$\n令 $X = \\log_2 x, Y = \\log_2 y$，① 写为\n$$(X - \\fbox{D})^2 + (Y + \\fbox{E})^2 = \\fbox{F} \\quad \\cdots ②$$\n\n(2) $\\log_2 xy^2 = k$。由 (1) 的 $X, Y$ 表示：\n$$X + \\fbox{G}\\,Y - k = 0 \\quad \\cdots ③$$\n② 在 $XY$ 平面是圆、③ 是直线，圆直线相切时 $k$ 最大。此时 $k = \\fbox{H}$，$xy^2$ 最大值 $= \\fbox{IJ}$，对应 $x = \\fbox{K}, y = \\fbox{L}$。",
+      "solution": {
+        "translation": "对数变换把方程化为圆方程，把目标 $\\log_2 xy^2 = X + 2Y$ 化为直线；相切给出最大值。",
+        "analysis": "圆心到直线距离等于半径时相切。",
+        "steps": [
+          {
+            "title": "(1) 化为圆方程",
+            "content": "$\\log_2 \\dfrac{8x^2}{y^2} = \\log_2 8 + 2\\log_2 x - 2\\log_2 y = 3 + 2\\log_2 x - 2\\log_2 y$。\n$\\fbox{A} = 2, \\fbox{B} = 2, \\fbox{C} = 3$。\n\n令 $X = \\log_2 x, Y = \\log_2 y$，①：$X^2 + Y^2 = 2X - 2Y + 3$，即\n$X^2 - 2X + Y^2 + 2Y = 3 \\Rightarrow (X-1)^2 + (Y+1)^2 = 5$。\n$\\fbox{D} = 1, \\fbox{E} = 1, \\fbox{F} = 5$。"
+          },
+          {
+            "title": "(2) 直线与相切",
+            "content": "$\\log_2 xy^2 = X + 2Y = k$，即 $X + 2Y - k = 0$。$\\fbox{G} = 2$。\n\n圆心 $(1, -1)$ 到直线 $X + 2Y - k = 0$ 距离 $= \\dfrac{|1 + 2(-1) - k|}{\\sqrt{1 + 4}} = \\dfrac{|k + 1|}{\\sqrt 5}$。\n\n相切：$\\dfrac{|k+1|}{\\sqrt 5} = \\sqrt 5 \\Rightarrow |k + 1| = 5 \\Rightarrow k = 4$ 或 $k = -6$。\n\n最大 $k = 4$。$\\fbox{H} = 4$。$xy^2 = 2^4 = 16$。$\\fbox{IJ} = 16$。\n\n切点：从圆心沿法向 $(1, 2)/\\sqrt 5$ 移动 $\\sqrt 5$ 到 $(1, -1) + (1, 2) = (2, 1)$。\n\n$X = 2 \\Rightarrow x = 4$；$Y = 1 \\Rightarrow y = 2$。$\\fbox{K} = 4, \\fbox{L} = 2$。"
+          }
+        ],
+        "finalAnswer": "ABC=223, DEF=115, G=2, H=4, IJ=16, K=4, L=2"
+      }
+    },
+    {
+      "id": "c2-IV-1",
+      "number": "IV-1",
+      "topic": "三角函数极值",
+      "topicTag": "微分·三角",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "$a$ 为常数。函数\n$$f(x) = 2\\sin^3 x + a\\sin 2x + \\dfrac{9}{2}\\cos 2x - 9\\cos x - 2ax + 6$$\n在 $x = \\pi/3$ 处取极值。求 $f(x)$ 在 $[0, \\pi/2]$ 上的最大、最小值。\n\n(1) $a = \\dfrac{\\fbox{A}}{\\fbox{B}}$。$f'(x) = \\fbox{C}\\sin x(\\fbox{D}\\cos x - 1)(\\sin x - \\fbox{E})$。\n\n(2) $f$ 在 $[0, \\pi/2]$ 的最大值在 $x = \\fbox{F}$；最小值在 $x = \\fbox{G}$。\n\n$\\fbox{F}, \\fbox{G}$ 从以下选：⓪ $0$ ① $\\pi/6$ ② $\\pi/4$ ③ $\\pi/3$ ④ $\\pi/2$。",
+      "solution": {
+        "translation": "由极值条件 $f'(\\pi/3) = 0$ 解 $a$；再因式分解 $f'$，分析符号。",
+        "analysis": "$\\dfrac{d}{dx}(2\\sin^3 x) = 6\\sin^2 x\\cos x$。$\\cos 2x = 1 - 2\\sin^2 x$，$\\sin 2x = 2\\sin x\\cos x$。",
+        "steps": [
+          {
+            "title": "(1) 求 $a$",
+            "content": "$f'(x) = 6\\sin^2 x\\cos x + 2a\\cos 2x - 9\\sin 2x + 9\\sin x - 2a$。\n\n代 $x = \\pi/3$：$\\sin = \\sqrt 3/2$, $\\cos = 1/2$，$\\sin 2 = \\sqrt 3/2$, $\\cos 2 = -1/2$。\n\n$f'(\\pi/3) = 6 \\cdot \\dfrac{3}{4} \\cdot \\dfrac{1}{2} + 2a\\left(-\\dfrac{1}{2}\\right) - 9 \\cdot \\dfrac{\\sqrt 3}{2} + 9 \\cdot \\dfrac{\\sqrt 3}{2} - 2a = \\dfrac{9}{4} - 3a = 0$。\n\n$a = \\dfrac{3}{4}$。$\\fbox{A} = 3, \\fbox{B} = 4$。"
+          },
+          {
+            "title": "(1) 因式分解 $f'$",
+            "content": "代入 $a = 3/4$：\n$f'(x) = 6\\sin^2 x\\cos x + \\dfrac{3}{2}\\cos 2x - 9\\sin 2x + 9\\sin x - \\dfrac{3}{2}$。\n\n$\\dfrac{3}{2}\\cos 2x - \\dfrac{3}{2} = \\dfrac{3}{2}(1 - 2\\sin^2 x) - \\dfrac{3}{2} = -3\\sin^2 x$。\n\n$-9\\sin 2x = -18\\sin x \\cos x$。\n\n$f'(x) = 6\\sin^2 x\\cos x - 3\\sin^2 x - 18\\sin x\\cos x + 9\\sin x$\n\n$= 3\\sin x[2\\sin x\\cos x - \\sin x - 6\\cos x + 3]$\n\n$= 3\\sin x[\\sin x(2\\cos x - 1) - 3(2\\cos x - 1)]$\n\n$= 3\\sin x(2\\cos x - 1)(\\sin x - 3)$。\n\n$\\fbox{C} = 3, \\fbox{D} = 2, \\fbox{E} = 3$。"
+          },
+          {
+            "title": "(2) 符号与极值位置",
+            "content": "$[0, \\pi/2]$ 上 $\\sin x \\ge 0$，$\\sin x - 3 < 0$ 恒成立。$2\\cos x - 1$ 在 $x = \\pi/3$ 处变号（从正到负）。\n\n- $x \\in (0, \\pi/3)$：$f' = 3(+)(+)(-) < 0$，$f$ 递减。\n- $x \\in (\\pi/3, \\pi/2)$：$f' = 3(+)(-)(-) > 0$，$f$ 递增。\n\n所以最小值在 $x = \\pi/3$。$\\fbox{G} = ③$。\n\n比较两端：\n$f(0) = 0 + 0 + 9/2 - 9 + 0 + 6 = 3/2$。\n$f(\\pi/2) = 2 + 0 + (9/2)(-1) - 0 - 2a \\cdot \\pi/2 + 6 = 7/2 - a\\pi = 7/2 - 3\\pi/4 \\approx 1.14$。\n\n$f(0) = 1.5 > f(\\pi/2)$，最大值在 $x = 0$。$\\fbox{F} = ⓪$。"
+          }
+        ],
+        "finalAnswer": "AB=34, CDE=323, F=⓪, G=③"
+      }
+    },
+    {
+      "id": "c2-IV-2",
+      "number": "IV-2",
+      "topic": "递推积分与级数极限",
+      "topicTag": "积分·递推",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "数列 $\\{a_n\\}$ 定义为 $a_n = \\int_0^{1/4} x^n e^{-x} dx$（$n = 1, 2, 3, \\ldots$）。\n\n$a_1 = -\\dfrac{\\fbox{H}}{\\fbox{I}} e^{\\fbox{JK}/\\fbox{L}} + 1$。\n\n$a_{n+1} = -\\left(\\dfrac{\\fbox{M}}{\\fbox{N}}\\right)^{n+1} e^{\\fbox{JK}/\\fbox{L}} + (n + \\fbox{O}) a_n$。\n\n变形得 $n a_n = a_{n+1} - a_n + (M/N)^{n+1} e^{JK/L}$，故\n$$\\sum_{k=1}^n k a_k = a_{n+1} - a_1 + \\dfrac{\\fbox{P}}{\\fbox{QR}} e^{\\fbox{JK}/\\fbox{L}}\\left\\{1 - \\left(\\dfrac{\\fbox{S}}{\\fbox{T}}\\right)^n\\right\\}$$\n\n再由 $e^{-x} \\le \\fbox{U}$（$0 \\le x \\le 1/4$）：$0 < a_n < \\int_0^{1/4} \\fbox{U}\\,x^n dx = \\dfrac{1}{\\fbox{V}^{n+1}(n+1)}$，故 $\\lim_{n\\to\\infty} a_n = \\fbox{W}$，从而\n$$\\lim_{n\\to\\infty} \\sum_{k=1}^n k a_k = \\dfrac{\\fbox{X}}{\\fbox{Y}} e^{\\fbox{JK}/\\fbox{L}} - 1$$",
+      "solution": {
+        "translation": "分部积分得 $a_{n+1}$ 与 $a_n$ 的递推；变形为可望远求和的形式；用单调与挤压求极限。",
+        "analysis": "$\\int_0^b x^n e^{-x} dx$ 用分部 $u=x^n, dv = e^{-x}dx$。",
+        "steps": [
+          {
+            "title": "求 $a_1$ 与递推",
+            "content": "$a_1 = \\int_0^{1/4} x e^{-x} dx$。分部 $u = x, dv = e^{-x} dx$：\n$a_1 = [-xe^{-x}]_0^{1/4} + \\int_0^{1/4} e^{-x} dx = -\\dfrac{1}{4}e^{-1/4} + (1 - e^{-1/4}) = -\\dfrac{5}{4}e^{-1/4} + 1$。\n\n$\\fbox{H}=5, \\fbox{I}=4, \\fbox{JK}=-1, \\fbox{L}=4$。\n\n一般地：$a_{n+1} = \\int_0^{1/4} x^{n+1} e^{-x} dx = [-x^{n+1} e^{-x}]_0^{1/4} + (n+1)\\int_0^{1/4} x^n e^{-x} dx = -\\left(\\dfrac{1}{4}\\right)^{n+1} e^{-1/4} + (n+1) a_n$。\n\n$\\fbox{M}=1, \\fbox{N}=4, \\fbox{O}=1$。"
+          },
+          {
+            "title": "求和",
+            "content": "由 $(n+1) a_n - a_{n+1} = (1/4)^{n+1} e^{-1/4}$，得 $n a_n = a_{n+1} - a_n + (1/4)^{n+1} e^{-1/4}$。\n\n累加 $k = 1$ 到 $n$：\n$\\sum k a_k = (a_{n+1} - a_1) + e^{-1/4} \\sum_{k=1}^n (1/4)^{k+1}$\n\n几何级数 $\\sum_{k=1}^n (1/4)^{k+1} = \\dfrac{(1/4)^2(1 - (1/4)^n)}{1 - 1/4} = \\dfrac{1}{12}(1 - (1/4)^n)$。\n\n所以 $\\sum k a_k = a_{n+1} - a_1 + \\dfrac{1}{12} e^{-1/4}(1 - (1/4)^n)$。\n\n$\\fbox{P}=1, \\fbox{QR}=12, \\fbox{S}=1, \\fbox{T}=4$。"
+          },
+          {
+            "title": "极限",
+            "content": "$0 \\le x \\le 1/4$：$e^{-x} \\le e^0 = 1$。$\\fbox{U} = 1$。\n\n$0 < a_n < \\int_0^{1/4} 1 \\cdot x^n dx = \\dfrac{(1/4)^{n+1}}{n+1} = \\dfrac{1}{4^{n+1}(n+1)}$。$\\fbox{V} = 4$。\n\n$n \\to \\infty$ 时上界 $\\to 0$，故 $a_n \\to 0$。$\\fbox{W} = 0$。\n\n$\\lim \\sum k a_k = 0 - a_1 + \\dfrac{e^{-1/4}}{12} = \\dfrac{5}{4}e^{-1/4} - 1 + \\dfrac{1}{12}e^{-1/4} = \\left(\\dfrac{15 + 1}{12}\\right)e^{-1/4} - 1 = \\dfrac{4}{3}e^{-1/4} - 1$。\n\n$\\fbox{X} = 4, \\fbox{Y} = 3$。"
+          }
+        ],
+        "finalAnswer": "HIJKL=54-14, MNO=141, PQRST=11214, U=1, V=4, W=0, XY=43"
+      }
+    }
+  ]
+}
