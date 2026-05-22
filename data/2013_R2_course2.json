@@ -1,0 +1,181 @@
+{
+  "metadata": {
+    "course": "course2",
+    "year": "2013",
+    "session": "2",
+    "courseNameJa": "数学2",
+    "courseNameEn": "Course 2 (Advanced)",
+    "description": "上级课程｜理科方向",
+    "color": "#9333ea",
+    "examTitle": "2013年度（平成25年）第2回",
+    "examDate": "2013年11月"
+  },
+  "questions": [
+    {
+      "id": "c2-I-1",
+      "number": "I-1",
+      "topic": "二次函数最大值与平移",
+      "topicTag": "二次函数",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "二次函数 $y = -x^2 - ax + 3$ ①。\n\n(1) $a > 0$，① 的最大值为 $7$，则 $a = \\fbox{A}$。此时图象对称轴 $x = \\fbox{BC}$；图象与 $x$ 轴交点 $x$ 坐标为 $\\fbox{DE} \\pm \\sqrt{\\fbox{F}}$。\n\n(2) 将 ① 沿 $x$ 轴方向平移 $2$、沿 $y$ 轴方向平移 $-3$ 后得到的曲线过 $(-3, -5)$，则 $a = \\fbox{G}$。",
+      "solution": {
+        "translation": "(1) 配方求最大值与零点；(2) 用平移后曲线方程代点。",
+        "analysis": "$y = -x^2 - ax + 3 = -(x + a/2)^2 + a^2/4 + 3$。",
+        "steps": [
+          {
+            "title": "(1) 最大值条件",
+            "content": "$y$ 最大 $= a^2/4 + 3 = 7 \\Rightarrow a^2 = 16$。由 $a > 0$，$a = 4$。$\\fbox{A} = 4$。\n\n对称轴 $x = -a/2 = -2$。$\\fbox{BC} = -2$。\n\n零点：$-x^2 - 4x + 3 = 0 \\Leftrightarrow x^2 + 4x - 3 = 0 \\Rightarrow x = \\dfrac{-4 \\pm \\sqrt{28}}{2} = -2 \\pm \\sqrt 7$。$\\fbox{DE} = -2, \\fbox{F} = 7$。"
+          },
+          {
+            "title": "(2) 平移",
+            "content": "新曲线 $y + 3 = -(x - 2)^2 - a(x - 2) + 3 \\Rightarrow y = -(x-2)^2 - a(x-2)$。\n\n代 $(-3, -5)$：$-5 = -(-5)^2 - a(-5) = -25 + 5a \\Rightarrow 5a = 20 \\Rightarrow a = 4$。$\\fbox{G} = 4$。"
+          }
+        ],
+        "finalAnswer": "A=4, BC=-2, DEF=-27, G=4"
+      }
+    },
+    {
+      "id": "c2-I-2",
+      "number": "I-2",
+      "topic": "条件的必要充分性",
+      "topicTag": "命题·逻辑",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "实数 $x, y$ 的条件：\n$p$：$(x+y)^2 = a(x^2+y^2) + bxy$（$a, b$ 实数常数）。\n$q$：$x = 0$ 且 $y = 0$。\n$r$：$x = 0$ 或 $y = 0$。\n\n(1) $a = b = 1$：$p$ 是 $q$ 的 $\\fbox{H}$；$p$ 是 $r$ 的 $\\fbox{I}$。\n\n(2) $a = b = 2$：$p$ 是 $q$ 的 $\\fbox{J}$；$p$ 是 $r$ 的 $\\fbox{K}$。\n\n(3) $a = 2$，$p$ 的式子可变形为\n$$\\left(x + \\dfrac{b - \\fbox{L}}{\\fbox{M}} y\\right)^2 + \\left(\\fbox{N} - \\dfrac{(b - \\fbox{O})^2}{\\fbox{P}}\\right) y^2 = 0$$\n$p \\Leftrightarrow q$ 的充要条件是 $b$ 满足 $\\fbox{Q} < b < \\fbox{R}$。\n\n选项：⓪ 必要充分条件；① 必要非充分；② 充分非必要；③ 既不必要也不充分。",
+      "solution": {
+        "translation": "$p$ 等式可化为 $x, y$ 的二次型；对不同 $(a, b)$，研究 $p$ 与 $q, r$ 的等价关系。",
+        "analysis": "二次型 $\\alpha x^2 + \\beta xy + \\gamma y^2 = 0$ 仅有零解 $\\Leftrightarrow$ 判别式 $\\beta^2 - 4\\alpha\\gamma < 0$。",
+        "steps": [
+          {
+            "title": "(1) $a = b = 1$",
+            "content": "$(x+y)^2 = x^2 + y^2 + xy \\Rightarrow x^2 + 2xy + y^2 = x^2 + y^2 + xy \\Rightarrow xy = 0$。\n\n所以 $p \\Leftrightarrow xy = 0 \\Leftrightarrow r$。\n\n$p \\Leftrightarrow r$：$p$ 是 $r$ 的必要充分。$\\fbox{I} = $ ⓪。\n\n$p \\Leftrightarrow xy = 0$，$q \\Rightarrow p$ 但 $p \\not\\Rightarrow q$（例如 $x=0, y=1$ 满足 $p$ 但不满足 $q$）。$p$ 是 $q$ 的必要非充分。$\\fbox{H} = $ ①。"
+          },
+          {
+            "title": "(2) $a = b = 2$",
+            "content": "$(x+y)^2 = 2(x^2+y^2) + 2xy \\Rightarrow x^2 + 2xy + y^2 = 2x^2 + 2y^2 + 2xy \\Rightarrow x^2 + y^2 = 0$。\n\n所以 $p \\Leftrightarrow x^2 + y^2 = 0 \\Leftrightarrow q$。\n\n$p \\Leftrightarrow q$：必要充分。$\\fbox{J} = $ ⓪。\n\n$p \\Leftrightarrow q$，$q \\Rightarrow r$ 但 $r \\not\\Rightarrow q$。所以 $p \\Rightarrow r$ 但 $r \\not\\Rightarrow p$。$p$ 是 $r$ 的充分非必要。$\\fbox{K} = $ ②。"
+          },
+          {
+            "title": "(3) $a = 2$ 配方",
+            "content": "$(x+y)^2 = 2(x^2+y^2) + bxy \\Rightarrow x^2 + 2xy + y^2 - 2x^2 - 2y^2 - bxy = 0$\n$\\Rightarrow -x^2 + (2-b)xy - y^2 = 0 \\Rightarrow x^2 + (b-2)xy + y^2 = 0$。\n\n配方：$x^2 + (b-2)xy + y^2 = \\left(x + \\dfrac{b-2}{2}y\\right)^2 - \\dfrac{(b-2)^2}{4}y^2 + y^2 = \\left(x + \\dfrac{b-2}{2}y\\right)^2 + \\left(1 - \\dfrac{(b-2)^2}{4}\\right)y^2$。\n\n$\\fbox{L}=2, \\fbox{M}=2, \\fbox{N}=1, \\fbox{O}=2, \\fbox{P}=4$。"
+          },
+          {
+            "title": "(3) $p \\Leftrightarrow q$ 的 $b$ 范围",
+            "content": "$p \\Leftrightarrow q$（$x = y = 0$）当两个平方项的系数都正且独立。\n\n需 $1 - \\dfrac{(b-2)^2}{4} > 0 \\Leftrightarrow (b-2)^2 < 4 \\Leftrightarrow -2 < b - 2 < 2 \\Leftrightarrow 0 < b < 4$。$\\fbox{Q} = 0, \\fbox{R} = 4$。"
+          }
+        ],
+        "finalAnswer": "H=①, I=⓪, J=⓪, K=②, LMNOP=22124, QR=04"
+      }
+    },
+    {
+      "id": "c2-II-1",
+      "number": "II",
+      "topic": "等差数列与无限等比级数",
+      "topicTag": "数列·级数",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "等差数列 $\\{a_n\\}$（$n=1,2,3,\\ldots$）满足 $a_2 = 2, a_6 = 3 a_3$。考虑级数 $\\displaystyle\\sum_{n=1}^\\infty \\dfrac{3^n}{r^{a_n}}$（$r > 0$）。\n\n(1) 首项 $a = \\fbox{AB}$，公差 $d = \\fbox{C}$。\n\n(2) 该级数为首项 $\\fbox{D}\\,r^{\\fbox{E}}$、公比 $\\dfrac{\\fbox{F}}{r^{\\fbox{G}}}$ 的无限等比级数。该级数收敛当 $r > 3^{\\fbox{H}/\\fbox{I}}$，其和\n$$S = \\dfrac{\\fbox{J}\\,r^{\\fbox{K}}}{r^{\\fbox{L}} - \\fbox{M}}$$\n\n(3) $S$ 最小时 $r = \\fbox{N}^{\\fbox{O}/2}$。",
+      "solution": {
+        "translation": "等差数列条件给出首项与公差；级数项化为 $r^{4n-6}$ 的幂；用 $u = r^2$ 求最小值。",
+        "analysis": "$a_n = a + (n-1)d$。",
+        "steps": [
+          {
+            "title": "(1) 首项与公差",
+            "content": "$a_2 = a + d = 2$。$a_6 = a + 5d = 3a_3 = 3(a + 2d) = 3a + 6d$。\n\n$a + 5d = 3a + 6d \\Rightarrow 2a + d = 0 \\Rightarrow d = -2a$。\n\n代入 $a + d = 2$：$a - 2a = -a = 2 \\Rightarrow a = -2$，$d = 4$。\n\n$\\fbox{AB} = -2, \\fbox{C} = 4$。"
+          },
+          {
+            "title": "(2) 等比级数",
+            "content": "$a_n = -2 + 4(n-1) = 4n - 6$。\n\n第 $n$ 项 $= \\dfrac{3^n}{r^{4n-6}} = 3^n \\cdot r^{6 - 4n} = r^6 \\cdot \\dfrac{3^n}{r^{4n}} = r^6 \\cdot \\left(\\dfrac{3}{r^4}\\right)^n$。\n\n首项（$n=1$）$= \\dfrac{3}{r^{-2}} = 3 r^2$。$\\fbox{D} = 3, \\fbox{E} = 2$。\n\n公比 $= \\dfrac{3}{r^4}$。$\\fbox{F} = 3, \\fbox{G} = 4$。\n\n收敛 $|$公比$| < 1$：$\\dfrac{3}{r^4} < 1 \\Leftrightarrow r^4 > 3 \\Leftrightarrow r > 3^{1/4}$。$\\fbox{H} = 1, \\fbox{I} = 4$。\n\n$S = \\dfrac{3 r^2}{1 - 3/r^4} = \\dfrac{3 r^2 \\cdot r^4}{r^4 - 3} = \\dfrac{3 r^6}{r^4 - 3}$。$\\fbox{J} = 3, \\fbox{K} = 6, \\fbox{L} = 4, \\fbox{M} = 3$。"
+          },
+          {
+            "title": "(3) 最小化 $S$",
+            "content": "令 $u = r^2 > 3^{1/2}$（由 $r > 3^{1/4}$）。$S = \\dfrac{3 u^3}{u^2 - 3}$。\n\n$\\dfrac{dS}{du} = \\dfrac{9 u^2 (u^2 - 3) - 3 u^3 \\cdot 2u}{(u^2 - 3)^2} = \\dfrac{3 u^2 (3 u^2 - 9 - 2u^2)}{(u^2 - 3)^2} = \\dfrac{3 u^2 (u^2 - 9)}{(u^2 - 3)^2}$。\n\n令 $dS/du = 0$：$u^2 = 9 \\Rightarrow u = 3$。$u < 3$ 时 $dS/du < 0$，$u > 3$ 时 $dS/du > 0$，故 $u = 3$ 是最小。\n\n$r^2 = 3 \\Rightarrow r = 3^{1/2}$。$\\fbox{N} = 3, \\fbox{O} = 1$。"
+          }
+        ],
+        "finalAnswer": "AB=-2, C=4, DE=32, FG=34, HI=14, JKLM=3643, NO=31"
+      }
+    },
+    {
+      "id": "c2-III-1",
+      "number": "III",
+      "topic": "三角函数代换与最值",
+      "topicTag": "三角函数",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "区间 $-\\dfrac{\\pi}{3} \\le x \\le \\dfrac{\\pi}{3}$ 上的函数 $f(x) = \\sin 2x - 3(\\sin x + \\cos x)$。\n\n(1) 令 $t = \\sin x + \\cos x$。$t$ 的取值范围\n$$\\dfrac{\\fbox{A} - \\sqrt{\\fbox{B}}}{\\fbox{C}} \\le t \\le \\sqrt{\\fbox{D}}$$\n\n(2) $f(x)$ 的最小值为 $\\fbox{E} - \\fbox{F}\\sqrt{\\fbox{G}}$，在 $x = \\dfrac{\\fbox{H}}{\\fbox{I}}\\pi$ 处取得。",
+      "solution": {
+        "translation": "用 $t = \\sin x + \\cos x = \\sqrt 2 \\sin(x + \\pi/4)$ 把 $\\sin 2x$ 化为 $t^2 - 1$。",
+        "analysis": "$(\\sin x + \\cos x)^2 = 1 + \\sin 2x$，故 $\\sin 2x = t^2 - 1$。",
+        "steps": [
+          {
+            "title": "(1) $t$ 的范围",
+            "content": "$t = \\sqrt 2 \\sin\\left(x + \\dfrac{\\pi}{4}\\right)$。\n\n$x \\in [-\\pi/3, \\pi/3]$ 时 $x + \\pi/4 \\in [-\\pi/12, 7\\pi/12]$。\n\n此区间包含 $\\pi/2$，故 $\\sin$ 最大 $= 1$，$t$ 最大 $= \\sqrt 2$。$\\fbox{D} = 2$。\n\n端点：$\\sin(-\\pi/12) = -\\sin(\\pi/12)$；$\\sin(7\\pi/12) = \\sin(5\\pi/12) = \\cos(\\pi/12) > 0$。\n\n所以最小 $= -\\sin(\\pi/12)$。$\\sin(\\pi/12) = \\sin 15° = \\dfrac{\\sqrt 6 - \\sqrt 2}{4}$。\n\n$t_{\\min} = -\\sqrt 2 \\cdot \\dfrac{\\sqrt 6 - \\sqrt 2}{4} = -\\dfrac{\\sqrt{12} - 2}{4} = -\\dfrac{2\\sqrt 3 - 2}{4} = \\dfrac{1 - \\sqrt 3}{2}$。\n\n$\\fbox{A} = 1, \\fbox{B} = 3, \\fbox{C} = 2$。"
+          },
+          {
+            "title": "(2) $f$ 的最小值",
+            "content": "$f(x) = (t^2 - 1) - 3t = t^2 - 3t - 1 = \\left(t - \\dfrac{3}{2}\\right)^2 - \\dfrac{13}{4}$。\n\n$t$ 范围 $[(1-\\sqrt 3)/2, \\sqrt 2]$，皆 $< 3/2$，故 $f$ 关于 $t$ 在范围内递减。\n\n最小值在 $t = \\sqrt 2$（即范围右端）取得：$f = 2 - 1 - 3\\sqrt 2 = 1 - 3\\sqrt 2$。\n\n$\\fbox{E} = 1, \\fbox{F} = 3, \\fbox{G} = 2$。\n\n$t = \\sqrt 2 \\Leftrightarrow \\sin(x + \\pi/4) = 1 \\Leftrightarrow x + \\pi/4 = \\pi/2 \\Leftrightarrow x = \\pi/4$。\n\n$\\fbox{H} = 1, \\fbox{I} = 4$。"
+          }
+        ],
+        "finalAnswer": "ABC=132, D=2, EFG=132, HI=14"
+      }
+    },
+    {
+      "id": "c2-IV-1",
+      "number": "IV-1",
+      "topic": "$\\log x / x$ 性质与大小比较",
+      "topicTag": "微分·对数",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "$a > 0$。利用函数 $f(x) = \\dfrac{\\log x}{x}$ 的性质，比较 $a^{a+1}$ 与 $(a+1)^a$ 的大小。\n\n(1) $f'(x) = \\dfrac{\\fbox{A} - \\log x}{x^{\\fbox{B}}}$；$f(x)$ 单调递增的范围为 $\\fbox{C} < x \\le \\fbox{D}$，单调递减的范围为 $\\fbox{E} \\le x$。\n\n(2) 设 $p = a^{a+1}, q = (a+1)^a$，则\n$$\\log p - \\log q = (a^{\\fbox{F}} + a)\\{f(a) - f(a + \\fbox{G})\\}$$\n所以\n  $0 < a < \\dfrac{3}{2}$ 时 $p \\fbox{H} q$；\n  $3 < a$ 时 $p \\fbox{I} q$。\n\n选项：⓪ $0$ ① $1$ ② $2$ ③ $3$ ④ $e$ ⑤ $e+1$ ⑥ $1/e$ ⑦ $>$ ⑧ $=$ ⑨ $<$。",
+      "solution": {
+        "translation": "$\\log p - \\log q = (a+1)\\log a - a\\log(a+1)$；化为关于 $f(x) = \\log x/x$ 的差。",
+        "analysis": "$(a+1)\\log a - a\\log(a+1) = a(a+1)\\left[\\dfrac{\\log a}{a} - \\dfrac{\\log(a+1)}{a+1}\\right] = a(a+1)[f(a) - f(a+1)]$。",
+        "steps": [
+          {
+            "title": "(1) $f'$ 与单调性",
+            "content": "$f'(x) = \\dfrac{(1/x)\\cdot x - \\log x \\cdot 1}{x^2} = \\dfrac{1 - \\log x}{x^2}$。$\\fbox{A} = ①(1), \\fbox{B} = ②(2)$。\n\n$f' > 0 \\Leftrightarrow \\log x < 1 \\Leftrightarrow x < e$。$f$ 单调递增于 $(0, e]$。$\\fbox{C} = ⓪(0), \\fbox{D} = ④(e)$。\n\n$f$ 单调递减于 $[e, \\infty)$。$\\fbox{E} = ④(e)$。"
+          },
+          {
+            "title": "(2) 大小比较",
+            "content": "$\\log p - \\log q = (a+1)\\log a - a\\log(a+1) = a(a+1)[f(a) - f(a+1)] = (a^2 + a)[f(a) - f(a+1)]$。\n\n$\\fbox{F} = ②(2), \\fbox{G} = ①(1)$。\n\n**$0 < a < 3/2$**：$a < a + 1 \\le 5/2 < e$。$f$ 在此递增，故 $f(a) < f(a+1)$，从而 $\\log p < \\log q$，$p < q$。$\\fbox{H} = ⑨(<)$。\n\n**$3 < a$**：$a > e, a+1 > e$。$f$ 在此递减，$f(a) > f(a+1)$，$\\log p > \\log q$，$p > q$。$\\fbox{I} = ⑦(>)$。"
+          }
+        ],
+        "finalAnswer": "AB=12, CD=04, E=④, FG=21, H=⑨, I=⑦"
+      }
+    },
+    {
+      "id": "c2-IV-2",
+      "number": "IV-2",
+      "topic": "$xe^{2x}$ 的两个面积之和最小",
+      "topicTag": "积分·极值",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "$0 < a < 1$。设 $S(a)$ 为下列两块面积之和：① 曲线 $y = xe^{2x}$ 与 $x$ 轴、直线 $x = a-1$ 围成；② 同一曲线与 $x$ 轴、直线 $x = a$ 围成。求 $S(a)$ 最小时的 $a$。\n\n$xe^{2x}$ 的不定积分为\n$$\\dfrac{\\fbox{J}}{\\fbox{K}}(\\fbox{L}\\,x - 1)e^{2x} + C$$\n$S(a) = \\dfrac{\\fbox{M}}{\\fbox{N}}\\{\\fbox{O} + (\\fbox{P}\\,a - \\fbox{Q})e^{2(a-1)} + (\\fbox{R}\\,a - 1)e^{2a}\\}$。\n\n$S'(a) = (a - \\fbox{S})e^{2(a-1)} + a\\,e^{2a}$，故 $S(a)$ 最小时 $a = \\dfrac{\\fbox{T}}{e^2 + \\fbox{U}}$。",
+      "solution": {
+        "translation": "分部积分求原函数；$xe^{2x}$ 在 $x \\ge 0$ 非负、$x < 0$ 非正，两区域分别在 $x$ 轴两侧。",
+        "analysis": "$y = xe^{2x}$ 过原点。$x < 0$ 时 $y < 0$（区间 $[a-1, 0]$），$x > 0$ 时 $y > 0$（区间 $[0, a]$）。",
+        "steps": [
+          {
+            "title": "不定积分",
+            "content": "分部 $u = x, dv = e^{2x} dx$：$\\int xe^{2x} dx = \\dfrac{x e^{2x}}{2} - \\int \\dfrac{e^{2x}}{2} dx = \\dfrac{xe^{2x}}{2} - \\dfrac{e^{2x}}{4} + C = \\dfrac{1}{4}(2x - 1)e^{2x} + C$。\n\n$\\fbox{J} = 1, \\fbox{K} = 4, \\fbox{L} = 2$。"
+          },
+          {
+            "title": "求 $S(a)$",
+            "content": "区域 ①（$x \\in [a-1, 0]$，$y \\le 0$）：面积 $= -\\int_{a-1}^0 xe^{2x} dx = -\\left[\\dfrac{1}{4}(2x-1)e^{2x}\\right]_{a-1}^0 = -\\left(-\\dfrac{1}{4} - \\dfrac{1}{4}(2a-3)e^{2(a-1)}\\right) = \\dfrac{1}{4}\\left(1 + (2a-3)e^{2(a-1)}\\right)$。\n\n区域 ②（$x \\in [0, a]$，$y \\ge 0$）：面积 $= \\int_0^a xe^{2x} dx = \\dfrac{1}{4}(2a-1)e^{2a} - \\dfrac{1}{4}(-1) = \\dfrac{1}{4}\\left((2a-1)e^{2a} + 1\\right)$。\n\n相加：$S(a) = \\dfrac{1}{4}\\left\\{2 + (2a-3)e^{2(a-1)} + (2a-1)e^{2a}\\right\\}$。\n\n$\\fbox{M}=1, \\fbox{N}=4, \\fbox{O}=2, \\fbox{P}=2, \\fbox{Q}=3, \\fbox{R}=2$。"
+          },
+          {
+            "title": "$S'$ 与最小",
+            "content": "$\\dfrac{d}{da}[(2a-3)e^{2(a-1)}] = 2e^{2(a-1)} + (2a-3)\\cdot 2e^{2(a-1)} = (4a-4)e^{2(a-1)} = 4(a-1)e^{2(a-1)}$。\n\n$\\dfrac{d}{da}[(2a-1)e^{2a}] = 2e^{2a} + (2a-1)\\cdot 2e^{2a} = 4a\\,e^{2a}$。\n\n$S'(a) = \\dfrac{1}{4}[4(a-1)e^{2(a-1)} + 4a\\,e^{2a}] = (a-1)e^{2(a-1)} + a\\,e^{2a}$。$\\fbox{S} = 1$。\n\n$S'(a) = 0$：$(a-1)e^{2(a-1)} = -a e^{2a} = -a e^2 \\cdot e^{2(a-1)}$\n\n约去 $e^{2(a-1)} > 0$：$a - 1 = -a e^2 \\Rightarrow a(1 + e^2) = 1 \\Rightarrow a = \\dfrac{1}{e^2 + 1}$。\n\n$\\fbox{T} = 1, \\fbox{U} = 1$。$0 < 1/(e^2+1) < 1$ ✓。"
+          }
+        ],
+        "finalAnswer": "JKL=142, MNOPQR=142232, S=1, TU=11"
+      }
+    }
+  ]
+}
