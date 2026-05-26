@@ -1,0 +1,192 @@
+{
+  "metadata": {
+    "course": "course2",
+    "year": "2015",
+    "session": "1",
+    "courseNameJa": "数学2",
+    "courseNameEn": "Course 2 (Advanced)",
+    "description": "上级课程｜理科方向",
+    "color": "#9333ea",
+    "examTitle": "2015年度（平成27年）第1回",
+    "examDate": "2015年6月"
+  },
+  "questions": [
+    {
+      "id": "c2-I-1",
+      "number": "I-1",
+      "topic": "两抛物线公共点与对称条件",
+      "topicTag": "二次函数",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "questionDiagram": {
+        "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 220' font-family='serif' font-size='13'><line x1='20' y1='110' x2='300' y2='110' stroke='#1c1917' stroke-width='1'/><line x1='200' y1='20' x2='200' y2='200' stroke='#1c1917' stroke-width='1'/><circle cx='60' cy='110' r='2.5' fill='#1c1917'/><circle cx='110' cy='110' r='2.5' fill='#1c1917'/><circle cx='110' cy='160' r='2.5' fill='#2563eb'/><circle cx='260' cy='110' r='2.5' fill='#1c1917'/><text x='58' y='102' text-anchor='middle'>A</text><text x='108' y='102' text-anchor='middle'>C</text><text x='120' y='165' text-anchor='start' fill='#2563eb'>B</text><text x='262' y='102' text-anchor='middle'>D</text><text x='208' y='105' text-anchor='start'>O</text><text x='300' y='123' text-anchor='end'>x</text></svg>"
+      },
+      "japanese": "两抛物线 $\\ell: y = ax^2 + 2bx + c$，$m: y = (a+1)x^2 + 2(b+2)x + c + 3$。点 $A, B, C, D$ 位置如图（$A, C, D$ 在 $x$ 轴上，$B$ 在 $x$ 轴下方）。一条抛物线过 $A, B, C$，另一条过 $B, C, D$。\n\n(1) 过 $A, B, C$ 的抛物线是 $\\fbox{A}$（⓪ 抛物线 $\\ell$；① 抛物线 $m$）。\n\n(2) $\\ell, m$ 都过 $B, C$，故 $B, C$ 的 $x$ 坐标是 $x^2 + \\fbox{B}\\,x + \\fbox{C} = 0$ 的解。$B$ 的 $x$ 坐标 $\\fbox{DE}$，$C$ 的 $x$ 坐标 $\\fbox{FG}$。\n\n(3) 特别地 $AB = BC$，$CO = OD$ 时：由 $C, D$ 关于 $y$ 轴对称得 $b = \\fbox{H}$；由 $AB = BC$，直线 $x = \\fbox{IJ}$ 是 $\\fbox{A}$ 的轴，故 $a = -\\dfrac{\\fbox{K}}{\\fbox{L}}$，$c = \\dfrac{\\fbox{M}}{\\fbox{N}}$。",
+      "solution": {
+        "translation": "$\\ell, m$ 之差 $\\ell - m = -(x+1)(x+3)$，公共点 $x = -1, -3$。$C$ 在轴上、$B$ 在轴下。",
+        "analysis": "$A,B,C$ 抛物线开口向上、$B,C,D$ 抛物线开口向下；由 $-1<a<0$ 知前者为 $m$。",
+        "steps": [
+          {
+            "title": "(1)(2) 公共点",
+            "content": "$\\ell - m = ax^2+2bx+c - [(a+1)x^2+2(b+2)x+c+3] = -x^2 - 4x - 3 = -(x+1)(x+3)$。\n\n公共点 $x = -1, -3$，即 $x^2 + 4x + 3 = 0$ 的根。$\\fbox{B}=4, \\fbox{C}=3$。\n\n$C$ 在 $x$ 轴上（接近 $O$），$x_C = -1$；$B$ 在轴下，$x_B = -3$。$\\fbox{DE} = -3, \\fbox{FG} = -1$。\n\n过 $A,B,C$ 者：根 $x_A, -1$，且在 $x=-3$ 处 $y<0$ ⇒ 开口向上 ⇒ 系数 $a+1>0$，即 $m$。$\\fbox{A} = ①$。"
+          },
+          {
+            "title": "(3) 对称与求解",
+            "content": "$CO = OD$：$x_C = -1 \\Rightarrow x_D = 1$。$\\ell$ 过 $C(-1,0), D(1,0)$，关于 $y$ 轴对称 ⇒ $\\ell$ 轴 $x = 0 \\Rightarrow -\\dfrac{2b}{2a} = 0 \\Rightarrow b = 0$。$\\fbox{H} = 0$。\n\n$AB = BC$：$A, C$ 是 $m$ 的零点（对称于 $m$ 的轴），$B$ 到 $A, C$ 等距 ⇒ $B$ 在 $m$ 的轴上，故轴 $x = x_B = -3$。$\\fbox{IJ} = -3$。\n\n$m$（$b=0$）：$y = (a+1)x^2 + 4x + (c+3)$，轴 $x = -\\dfrac{4}{2(a+1)} = -\\dfrac{2}{a+1} = -3 \\Rightarrow a+1 = \\dfrac{2}{3} \\Rightarrow a = -\\dfrac{1}{3}$。$\\fbox{K}=1, \\fbox{L}=3$。\n\n$\\ell: y = -\\dfrac{1}{3}x^2 + c$ 过 $D(1,0)$：$-\\dfrac{1}{3} + c = 0 \\Rightarrow c = \\dfrac{1}{3}$。$\\fbox{M}=1, \\fbox{N}=3$。"
+          }
+        ],
+        "finalAnswer": "A=①, BC=43, DE=-3, FG=-1, H=0, IJ=-3, KL=13, MN=13"
+      }
+    },
+    {
+      "id": "c2-I-2",
+      "number": "I-2",
+      "topic": "两袋取球概率",
+      "topicTag": "概率",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "袋 $A$：白球 $4$、红球 $1$；袋 $B$：白球 $2$、红球 $3$。先从 $A$ 同时取 $2$ 球，再从 $B$ 同时取 $2$ 球。\n\n(1) $A$ 取 $2$ 白、$B$ 取 $1$ 白 $1$ 红的概率 $\\dfrac{\\fbox{O}}{\\fbox{PQ}}$。\n\n(2) $4$ 球中 $3$ 白 $1$ 红的概率 $\\dfrac{\\fbox{R}}{\\fbox{S}}$。\n\n(3) $4$ 球全同色的概率 $\\dfrac{\\fbox{T}}{\\fbox{UV}}$。\n\n(4) $4$ 球中白球 $\\le 2$ 的概率 $\\dfrac{\\fbox{WX}}{\\fbox{YZ}}$。",
+      "solution": {
+        "translation": "$A, B$ 各取 $2$ 球，$\\binom{5}{2} = 10$。",
+        "analysis": "按白球来自 $A$、$B$ 的分配枚举。",
+        "steps": [
+          {
+            "title": "(1)",
+            "content": "$P(A: 2\\text{白}) = \\dfrac{\\binom{4}{2}}{10} = \\dfrac{6}{10} = \\dfrac{3}{5}$。$P(B: 1\\text{白}1\\text{红}) = \\dfrac{\\binom{2}{1}\\binom{3}{1}}{10} = \\dfrac{6}{10} = \\dfrac{3}{5}$。\n\n积 $= \\dfrac{9}{25}$。$\\fbox{O}=9, \\fbox{PQ}=25$。"
+          },
+          {
+            "title": "(2) 3 白 1 红",
+            "content": "$A$ 仅 $1$ 红，故 $A$ 取白数 $w_A \\in \\{1,2\\}$。$w_A + w_B = 3$：\n- $w_A=1, w_B=2$：$\\dfrac{\\binom41\\binom11}{10}\\cdot\\dfrac{\\binom22}{10} = \\dfrac{4}{10}\\cdot\\dfrac{1}{10} = \\dfrac{4}{100}$。\n- $w_A=2, w_B=1$：$\\dfrac{6}{10}\\cdot\\dfrac{6}{10} = \\dfrac{36}{100}$。\n\n合计 $\\dfrac{40}{100} = \\dfrac{2}{5}$。$\\fbox{R}=2, \\fbox{S}=5$。"
+          },
+          {
+            "title": "(3) 全同色",
+            "content": "全白：$A$ 2白、$B$ 2白 $= \\dfrac{6}{10}\\cdot\\dfrac{1}{10} = \\dfrac{6}{100}$。全红：$A$ 取 2 红不可能（仅 1 红）$= 0$。\n\n合计 $\\dfrac{6}{100} = \\dfrac{3}{50}$。$\\fbox{T}=3, \\fbox{UV}=50$。"
+          },
+          {
+            "title": "(4) 白球 $\\le 2$",
+            "content": "用反面：白 $\\ge 3$ = 白 $3$（$\\dfrac{40}{100}$）+ 白 $4$（$A$2白 $B$2白 $= \\dfrac{6}{100}$）$= \\dfrac{46}{100}$。\n\n白 $\\le 2$：$1 - \\dfrac{46}{100} = \\dfrac{54}{100} = \\dfrac{27}{50}$。$\\fbox{WX}=27, \\fbox{YZ}=50$。"
+          }
+        ],
+        "finalAnswer": "OPQ=925, RS=25, TUV=350, WXYZ=2750"
+      }
+    },
+    {
+      "id": "c2-II-1",
+      "number": "II-1",
+      "topic": "向量夹角条件求参数",
+      "topicTag": "向量",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "向量 $\\vec a, \\vec b$ 夹角 $60°$，$|\\vec a| = 1, |\\vec b| = 2$。$\\vec u = x\\vec a + \\vec b$，$\\vec v = x\\vec a - \\vec b$（$x > 1$）。$\\vec u, \\vec v$ 夹角为 $30°$，求 $x$。\n\n由夹角 $30°$ 得 $(\\vec u \\cdot \\vec v)^2 = \\dfrac{\\fbox{A}}{\\fbox{B}}|\\vec u|^2|\\vec v|^2$。注意 $\\vec a \\cdot \\vec b = \\fbox{C}$，化为\n$$x^4 - \\fbox{DE}\\,x^2 + \\fbox{FG} = 0$$\n变形 $(x^2 - \\fbox{H})^2 = (\\fbox{I}\\,x)^2$，由 $x > 1$ 得 $x = \\fbox{J} + \\sqrt{\\fbox{KL}}$。",
+      "solution": {
+        "translation": "夹角 $30°$ ⇒ $\\cos^2 30° = 3/4$，用 $(\\vec u\\cdot\\vec v)^2 = \\cos^2\\theta\\,|\\vec u|^2|\\vec v|^2$。",
+        "analysis": "$\\vec a\\cdot\\vec b = 1\\cdot 2\\cos 60° = 1$。",
+        "steps": [
+          {
+            "title": "建立方程",
+            "content": "$\\vec a\\cdot\\vec b = 1$。$\\fbox{C} = 1$。$\\cos^2 30° = \\dfrac{3}{4}$，$\\fbox{A}=3, \\fbox{B}=4$。\n\n$\\vec u\\cdot\\vec v = x^2|\\vec a|^2 - |\\vec b|^2 = x^2 - 4$。\n$|\\vec u|^2 = x^2 + 2x + 4$，$|\\vec v|^2 = x^2 - 2x + 4$，积 $= (x^2+4)^2 - 4x^2 = x^4 + 4x^2 + 16$。\n\n$(x^2-4)^2 = \\dfrac{3}{4}(x^4 + 4x^2 + 16)$。乘 $4$：$4x^4 - 32x^2 + 64 = 3x^4 + 12x^2 + 48$\n$\\Rightarrow x^4 - 44x^2 + 16 = 0$。$\\fbox{DE}=44, \\fbox{FG}=16$。"
+          },
+          {
+            "title": "求解",
+            "content": "$(x^2 - 4)^2 = (6x)^2$（$x^4 - 44x^2 + 16 = (x^2-4)^2 - (6x)^2$ 验证：$(x^2-4)^2 = x^4-8x^2+16$，减 $36x^2$ 得 $x^4-44x^2+16$ ✓）。$\\fbox{H}=4, \\fbox{I}=6$。\n\n$x^2 - 4 = \\pm 6x$。$x^2 - 6x - 4 = 0 \\Rightarrow x = 3 \\pm \\sqrt{13}$；$x^2 + 6x - 4 = 0 \\Rightarrow x = -3 \\pm\\sqrt{13}$。\n\n$x > 1$：$x = 3 + \\sqrt{13}$。$\\fbox{J}=3, \\fbox{KL}=13$。"
+          }
+        ],
+        "finalAnswer": "AB=34, C=1, DEFG=4416, HI=46, JKL=313"
+      }
+    },
+    {
+      "id": "c2-II-2",
+      "number": "II-2",
+      "topic": "复数立方为实数的图形",
+      "topicTag": "复数",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "复数平面上，$z^3$ 为实数的复数 $z$。\n\n(1) $z = x + iy$ 满足条件的图形 $C$：$\\arg z = \\dfrac{\\pi}{\\fbox{M}}k$（$k$ 整数）。故 $C$ 是 $3$ 条直线 $y = \\fbox{N}$，$y = \\sqrt{\\fbox{O}}\\,x$，$y = -\\sqrt{\\fbox{P}}\\,x$。\n\n(2) $C$ 上恰有 $1$ 个 $z$ 满足 $|z - 1 - i| = r$。则 $r = \\dfrac{\\sqrt{\\fbox{Q}} - \\fbox{R}}{\\fbox{S}}$，此时 $z = \\dfrac{\\fbox{T} + \\sqrt{\\fbox{U}}}{\\fbox{V}}(1 + \\sqrt{\\fbox{W}}\\,i)$。",
+      "solution": {
+        "translation": "$z^3$ 实 ⇔ $3\\arg z = k\\pi$ ⇔ $\\arg z = k\\pi/3$，给出过原点的三条直线。",
+        "analysis": "(2) 圆心 $(1,1)$ 半径 $r$ 与三直线恰一交点 ⇒ 与最近直线相切。",
+        "steps": [
+          {
+            "title": "(1) 三直线",
+            "content": "$z^3$ 实 $\\Leftrightarrow 3\\arg z = k\\pi \\Leftrightarrow \\arg z = \\dfrac{\\pi}{3}k$。$\\fbox{M} = 3$。\n\n方向角 $0, \\pi/3, 2\\pi/3$（及反向）对应：$y = 0$、$y = \\tan\\dfrac{\\pi}{3}x = \\sqrt 3 x$、$y = -\\sqrt 3 x$。$\\fbox{N}=0, \\fbox{O}=3, \\fbox{P}=3$。"
+          },
+          {
+            "title": "(2) 相切",
+            "content": "圆心 $(1,1)$ 到三直线距离：到 $y=0$ 为 $1$；到 $\\sqrt 3 x - y = 0$ 为 $\\dfrac{|\\sqrt 3 - 1|}{2} = \\dfrac{\\sqrt 3 - 1}{2}$；到 $\\sqrt 3 x + y = 0$ 为 $\\dfrac{\\sqrt 3 + 1}{2}$。\n\n最近为 $\\dfrac{\\sqrt 3 - 1}{2}$。当 $r$ 等于此值时圆与该直线相切（一个交点），且不及其他直线。$r = \\dfrac{\\sqrt 3 - 1}{2}$。$\\fbox{Q}=3, \\fbox{R}=1, \\fbox{S}=2$。"
+          },
+          {
+            "title": "(2) 求 $z$",
+            "content": "切点 = 从 $(1,1)$ 到 $\\sqrt 3 x - y = 0$ 的垂足：\n$(1,1) - \\dfrac{\\sqrt 3 - 1}{4}(\\sqrt 3, -1) = \\left(\\dfrac{1+\\sqrt 3}{4}, \\dfrac{3+\\sqrt 3}{4}\\right)$。\n\n$z = \\dfrac{1+\\sqrt 3}{4} + \\dfrac{3+\\sqrt 3}{4}i = \\dfrac{1 + \\sqrt 3}{4}(1 + \\sqrt 3\\,i)$（因 $(1+\\sqrt3)\\sqrt3 = 3+\\sqrt3$）。\n\n$\\fbox{T}=1, \\fbox{U}=3, \\fbox{V}=4, \\fbox{W}=3$。"
+          }
+        ],
+        "finalAnswer": "M=3, NOP=033, QRS=312, TUVW=1343"
+      }
+    },
+    {
+      "id": "c2-III-1",
+      "number": "III",
+      "topic": "三次函数区间最大值条件",
+      "topicTag": "微分·极值",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "三次函数 $f(x) = \\dfrac{1}{3}x^3 - \\dfrac{t+2}{2}x^2 + 2tx + \\dfrac{2}{3}$。求使 $f(x)$ 在 $x \\le 4$ 上最大值大于 $6$ 的实数 $t$ 范围。\n\n$f'(x) = (x - \\fbox{A})(x - t)$。分情形：\n\n(i) $t > \\fbox{A}$：$f$ 在 $x = \\fbox{A}$ 极大、$x = t$ 极小。$f(4) = \\fbox{B}$，需 $f(\\fbox{A}) > 6$。\n\n(ii) $t = \\fbox{A}$：$x \\le 4$ 上最大值 $f(\\fbox{C}) = \\fbox{D}$，不满足。\n\n(iii) $t < \\fbox{A}$：$f$ 在 $x = t$ 极大、$x = \\fbox{A}$ 极小。需 $f(t) > 6$，其中 $f(t) - 6 = -\\dfrac{1}{6}(t + \\fbox{E})(t - \\fbox{F})^2$。\n\n综上：$t > \\dfrac{\\fbox{GH}}{\\fbox{I}}$ 或 $t < \\fbox{JK}$。",
+      "solution": {
+        "translation": "$f'(x) = (x-2)(x-t)$，极值点 $x = 2, t$。按 $t$ 与 $2$ 的大小分情形。",
+        "analysis": "$f(4) = 6$ 恒成立；最大值在端点 $x=4$ 或极大点取得。",
+        "steps": [
+          {
+            "title": "导数与 $f(4)$",
+            "content": "$f'(x) = x^2 - (t+2)x + 2t = (x-2)(x-t)$。$\\fbox{A} = 2$。\n\n$f(4) = \\dfrac{64}{3} - 8(t+2) + 8t + \\dfrac{2}{3} = 22 - 16 = 6$。$\\fbox{B} = 6$。"
+          },
+          {
+            "title": "(ii) $t = 2$",
+            "content": "$f'(x) = (x-2)^2 \\ge 0$，$f$ 单调增。$x \\le 4$ 上最大值 $f(4) = 6$，不 $> 6$。$\\fbox{C} = 4, \\fbox{D} = 6$。"
+          },
+          {
+            "title": "(iii) $t < 2$ 与 $f(t)$",
+            "content": "$f(t) = -\\dfrac{t^3}{6} + t^2 + \\dfrac{2}{3}$。\n\n$f(t) - 6 = -\\dfrac{t^3}{6} + t^2 - \\dfrac{16}{3}$。乘 $-6$：$t^3 - 6t^2 + 32 = (t+2)(t-4)^2$。\n\n故 $f(t) - 6 = -\\dfrac{1}{6}(t+2)(t-4)^2$。$\\fbox{E}=2, \\fbox{F}=4$。\n\n$f(t) > 6 \\Leftrightarrow -(t+2) > 0 \\Leftrightarrow t < -2$（$t<2$ 时 $(t-4)^2>0$）。"
+          },
+          {
+            "title": "(i) $t > 2$ 与合并",
+            "content": "$f(2) = -\\dfrac{2}{3} + 2t$。$f(2) > 6 \\Leftrightarrow 2t > \\dfrac{20}{3} \\Leftrightarrow t > \\dfrac{10}{3}$。\n\n综上：$t > \\dfrac{10}{3}$ 或 $t < -2$。$\\fbox{GH}=10, \\fbox{I}=3, \\fbox{JK}=-2$。"
+          }
+        ],
+        "finalAnswer": "A=2, B=6, CD=46, EF=24, GHI=103, JK=-2"
+      }
+    },
+    {
+      "id": "c2-IV-1",
+      "number": "IV",
+      "topic": "分式三角函数的极值与面积",
+      "topicTag": "微分·积分",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "$f(x) = \\dfrac{\\sin x}{3 - 2\\cos x}$（$0 \\le x \\le \\pi$）。\n\n(1) $f'(x) = \\dfrac{\\fbox{A}\\cos x - \\fbox{B}}{(\\fbox{C} - \\fbox{D}\\cos x)^2}$。$f$ 取极值的 $x = \\alpha$，$\\cos\\alpha = \\dfrac{\\fbox{E}}{\\fbox{F}}$。\n\n(2) $y = f(x)$ 与 $x$ 轴围成部分被 $x = \\alpha$ 分为两部分。左部面积\n$$S_1 = \\int_{\\fbox{G}/\\fbox{H}}^{\\fbox{I}} \\dfrac{dt}{\\fbox{J} - \\fbox{K}\\,t} = \\dfrac{\\fbox{L}}{\\fbox{M}}\\log\\dfrac{\\fbox{N}}{\\fbox{O}}$$\n右部面积 $S_2 = \\dfrac{\\fbox{P}}{2}\\log\\fbox{Q}$。",
+      "solution": {
+        "translation": "商法求导得 $f'$；用代换 $t = \\cos x$ 把面积积分化为有理积分。",
+        "analysis": "$\\dfrac{d}{dx}\\sin x = \\cos x$；$3\\cos x - 2(\\sin^2 x + \\cos^2 x) = 3\\cos x - 2$。",
+        "steps": [
+          {
+            "title": "(1) 求导",
+            "content": "$f'(x) = \\dfrac{\\cos x(3 - 2\\cos x) - \\sin x \\cdot 2\\sin x}{(3 - 2\\cos x)^2} = \\dfrac{3\\cos x - 2\\cos^2 x - 2\\sin^2 x}{(3-2\\cos x)^2} = \\dfrac{3\\cos x - 2}{(3 - 2\\cos x)^2}$。\n\n$\\fbox{A}=3, \\fbox{B}=2, \\fbox{C}=3, \\fbox{D}=2$。\n\n$f' = 0 \\Rightarrow \\cos x = \\dfrac{2}{3}$。$\\fbox{E}=2, \\fbox{F}=3$。"
+          },
+          {
+            "title": "(2) $S_1$",
+            "content": "令 $t = \\cos x$，$dt = -\\sin x\\,dx$。$S_1 = \\int_0^\\alpha \\dfrac{\\sin x}{3-2\\cos x}dx = \\int_{2/3}^1 \\dfrac{dt}{3 - 2t}$（$x:0\\to\\alpha$ 时 $t:1\\to 2/3$）。\n\n$\\fbox{G}=2, \\fbox{H}=3, \\fbox{I}=1, \\fbox{J}=3, \\fbox{K}=2$。\n\n$= \\left[-\\dfrac{1}{2}\\log(3-2t)\\right]_{2/3}^1 = -\\dfrac{1}{2}\\left(\\log 1 - \\log\\dfrac{5}{3}\\right) = \\dfrac{1}{2}\\log\\dfrac{5}{3}$。$\\fbox{L}=1, \\fbox{M}=2, \\fbox{N}=5, \\fbox{O}=3$。"
+          },
+          {
+            "title": "(2) $S_2$",
+            "content": "$S_2 = \\int_\\alpha^\\pi \\dfrac{\\sin x}{3-2\\cos x}dx = \\int_{-1}^{2/3}\\dfrac{dt}{3-2t} = \\left[-\\dfrac{1}{2}\\log(3-2t)\\right]_{-1}^{2/3}$\n$= -\\dfrac{1}{2}\\left(\\log\\dfrac{5}{3} - \\log 5\\right) = -\\dfrac{1}{2}\\log\\dfrac{1}{3} = \\dfrac{1}{2}\\log 3$。\n\n$\\fbox{P}=1, \\fbox{Q}=3$。"
+          }
+        ],
+        "finalAnswer": "ABCD=3232, EF=23, GHI=231, JK=32, LMNO=1253, PQ=13"
+      }
+    }
+  ]
+}
