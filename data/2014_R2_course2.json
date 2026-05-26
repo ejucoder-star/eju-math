@@ -1,0 +1,188 @@
+{
+  "metadata": {
+    "course": "course2",
+    "year": "2014",
+    "session": "2",
+    "courseNameJa": "数学2",
+    "courseNameEn": "Course 2 (Advanced)",
+    "description": "上级课程｜理科方向",
+    "color": "#9333ea",
+    "examTitle": "2014年度（平成26年）第2回",
+    "examDate": "2014年11月"
+  },
+  "questions": [
+    {
+      "id": "c2-I-1",
+      "number": "I-1",
+      "topic": "两二次函数最小值与唯一交点",
+      "topicTag": "二次函数",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "$a, b$ 实数，$a > 0$。$f(x) = 2x^2 - 4x + 5$，$g(x) = x^2 + ax + b$。$g$ 满足两条件：\n(i) $g$ 的最小值比 $f$ 的最小值小 $8$；(ii) $f(x) = g(x)$ 恰有一解。求 $a, b$。\n\n$f$ 的最小值为 $\\fbox{A}$，由 (i) 得\n$$b = \\dfrac{a^2}{\\fbox{B}} - \\fbox{C}$$\n$f(x) = g(x)$ 的方程为\n$$x^2 - (a + \\fbox{D})x - \\dfrac{a^2}{\\fbox{E}} + \\fbox{FG} = 0$$\n由 (ii) 与 $a > 0$ 得 $a = \\fbox{H}, b = \\fbox{IJ}$。此时 $f(x) = g(x)$ 的解 $x = \\fbox{K}$。",
+      "solution": {
+        "translation": "$f$ 配方求最小；$g$ 最小 = $f$ 最小 $-8$ 确定 $b$ 与 $a$ 关系；唯一交点 ⇒ 判别式 = 0。",
+        "analysis": "$f(x) = 2(x-1)^2 + 3$，最小 $3$；$g$ 最小 $= b - a^2/4$。",
+        "steps": [
+          {
+            "title": "条件 (i)",
+            "content": "$f$ 最小 $= 3$。$\\fbox{A} = 3$。\n\n$g$ 最小 $= b - \\dfrac{a^2}{4} = 3 - 8 = -5 \\Rightarrow b = \\dfrac{a^2}{4} - 5$。$\\fbox{B} = 4, \\fbox{C} = 5$。"
+          },
+          {
+            "title": "$f = g$ 方程",
+            "content": "$2x^2 - 4x + 5 = x^2 + ax + b \\Rightarrow x^2 - (a+4)x + (5 - b) = 0$。\n\n$5 - b = 5 - \\dfrac{a^2}{4} + 5 = 10 - \\dfrac{a^2}{4}$。\n\n方程 $x^2 - (a+4)x - \\dfrac{a^2}{4} + 10 = 0$。$\\fbox{D} = 4, \\fbox{E} = 4, \\fbox{FG} = 10$。"
+          },
+          {
+            "title": "条件 (ii)",
+            "content": "判别式 $= 0$：$(a+4)^2 - 4\\left(10 - \\dfrac{a^2}{4}\\right) = 0$\n$\\Rightarrow a^2 + 8a + 16 - 40 + a^2 = 0 \\Rightarrow 2a^2 + 8a - 24 = 0 \\Rightarrow a^2 + 4a - 12 = 0$\n$\\Rightarrow (a+6)(a-2) = 0$。\n\n$a > 0$，故 $a = 2$。$\\fbox{H} = 2$。$b = \\dfrac{4}{4} - 5 = -4$。$\\fbox{IJ} = -4$。\n\n唯一解 $x = \\dfrac{a+4}{2} = 3$。$\\fbox{K} = 3$。"
+          }
+        ],
+        "finalAnswer": "A=3, BC=45, DEFG=4410, H=2, IJ=-4, K=3"
+      }
+    },
+    {
+      "id": "c2-I-2",
+      "number": "I-2",
+      "topic": "倍数集合的必要充分性与计数",
+      "topicTag": "集合·逻辑",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "集合 $A = \\{4m \\mid m \\text{ 自然数}\\}$，$B = \\{6m \\mid m \\text{ 自然数}\\}$。\n\n(1) $n$ 自然数。\n  (i) 「$n \\in A$」是「$n$ 被 $2$ 整除」的 $\\fbox{L}$。\n  (ii) 「$n \\in B$」是「$n$ 被 $24$ 整除」的 $\\fbox{M}$。\n  (iii) 「$n \\in A \\cup B$」是「$n$ 被 $3$ 整除」的 $\\fbox{N}$。\n  (iv) 「$n \\in A \\cap B$」是「$n$ 被 $12$ 整除」的 $\\fbox{O}$。\n\n选项：⓪ 必要充分；① 必要非充分；② 充分非必要；③ 既不必要也不充分。\n\n(2) $C = \\{m \\mid 1 \\le m \\le 100\\}$。$(\\bar A \\cup \\bar B) \\cap C$ 元素个数 $\\fbox{PQ}$；$\\bar A \\cap \\bar B \\cap C$ 元素个数 $\\fbox{RS}$。",
+      "solution": {
+        "translation": "$A$ 为 $4$ 的倍数集，$B$ 为 $6$ 的倍数集。$A \\cap B$ 为 $12$ 的倍数集。",
+        "analysis": "「$P$ 是 $Q$ 的□」判断 $P \\Rightarrow Q$（充分）与 $Q \\Rightarrow P$（必要）。",
+        "steps": [
+          {
+            "title": "(1) 各条件",
+            "content": "(i) $n \\in A$（$4$ 倍）$\\Rightarrow$ $2$ 整除（真）；反之假。充分非必要。$\\fbox{L} = ②$。\n\n(ii) $n \\in B$（$6$ 倍）；$24$ 整除 $\\Rightarrow$ $6$ 倍（真），反之假。必要非充分。$\\fbox{M} = ①$。\n\n(iii) $n \\in A \\cup B$（$4$ 倍或 $6$ 倍）；与「$3$ 整除」：$4 \\in A\\cup B$ 但非 $3$ 倍；$3$ 是 $3$ 倍但 $\\notin A\\cup B$。既不必要也不充分。$\\fbox{N} = ③$。\n\n(iv) $n \\in A \\cap B = $ $12$ 倍集 $\\Leftrightarrow$ $12$ 整除。必要充分。$\\fbox{O} = ⓪$。"
+          },
+          {
+            "title": "(2) 计数",
+            "content": "$(\\bar A \\cup \\bar B) = \\overline{A \\cap B} = $ 非 $12$ 倍。$[1,100]$ 中 $12$ 倍：$12,\\ldots,96$ 共 $8$ 个。\n$(\\bar A \\cup \\bar B) \\cap C = 100 - 8 = 92$。$\\fbox{PQ} = 92$。\n\n$\\bar A \\cap \\bar B = \\overline{A \\cup B} = $ 既非 $4$ 倍也非 $6$ 倍。$4$ 倍 $25$ 个，$6$ 倍 $16$ 个，$12$ 倍 $8$ 个。$4$ 或 $6$ 倍 $= 25 + 16 - 8 = 33$。\n非者 $= 100 - 33 = 67$。$\\fbox{RS} = 67$。"
+          }
+        ],
+        "finalAnswer": "L=②, M=①, N=③, O=⓪, PQ=92, RS=67"
+      }
+    },
+    {
+      "id": "c2-II-1",
+      "number": "II",
+      "topic": "圆内接三角形向量与切线",
+      "topicTag": "向量·几何",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "questionDiagram": {
+        "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 340 280' font-family='serif' font-size='14'><circle cx='150' cy='140' r='100' fill='none' stroke='#1c1917' stroke-width='1.2'/><circle cx='150' cy='140' r='2.5' fill='#1c1917'/><polygon points='225,75 60,175 235,180' fill='none' stroke='#2563eb' stroke-width='1.3'/><line x1='60' y1='175' x2='320' y2='185' stroke='#1c1917' stroke-width='1'/><circle cx='225' cy='75' r='2.5' fill='#1c1917'/><circle cx='60' cy='175' r='2.5' fill='#1c1917'/><circle cx='235' cy='180' r='2.5' fill='#1c1917'/><circle cx='300' cy='184' r='2.5' fill='#1c1917'/><text x='232' y='72' text-anchor='start'>A</text><text x='50' y='180' text-anchor='end'>B</text><text x='232' y='196' text-anchor='middle'>C</text><text x='308' y='186' text-anchor='start'>D</text><text x='140' y='138' text-anchor='end'>O</text></svg>"
+      },
+      "japanese": "$O$ 为中心、半径 $1$ 的圆周 $S$。三角形 $ABC$ 顶点全在 $S$ 上，$AB:AC = 3:2$。在 $BC$ 延长线上取 $D$，使 $BC:CD = 2:k$。设 $\\vec{OA} = \\vec a, \\vec{OB} = \\vec b, \\vec{OC} = \\vec c$。\n\n(1) $\\vec{OD} = \\left(\\dfrac{k}{\\fbox{A}} + \\fbox{B}\\right)\\vec c - \\dfrac{k}{\\fbox{C}}\\vec b$。\n\n(2) 由 $|\\vec b - \\vec a| = \\dfrac{\\fbox{D}}{\\fbox{E}}|\\vec c - \\vec a|$ 得 $\\vec a \\cdot \\vec b = \\dfrac{\\fbox{F}}{\\fbox{G}}\\vec a \\cdot \\vec c - \\dfrac{\\fbox{H}}{\\fbox{I}}$。\n\n(3) 点 $A$ 处 $S$ 的切线过 $D$ 时，$k = \\dfrac{\\fbox{J}}{\\fbox{K}}$。",
+      "solution": {
+        "translation": "$D$ 由 $BC:CD = 2:k$ 在 $BC$ 延长线上；$|\\vec b - \\vec a| = AB$, $|\\vec c - \\vec a| = AC$。",
+        "analysis": "(3) 切线过 $D$ ⇔ $DA$ 切于 $A$，用相似三角形 $\\triangle DAC \\sim \\triangle DBA$ 或幂。",
+        "steps": [
+          {
+            "title": "(1) $\\vec{OD}$",
+            "content": "$D = C + \\dfrac{k}{2}\\vec{BC} = C + \\dfrac{k}{2}(C - B)$。\n\n$\\vec{OD} = \\left(1 + \\dfrac{k}{2}\\right)\\vec c - \\dfrac{k}{2}\\vec b = \\left(\\dfrac{k}{2} + 1\\right)\\vec c - \\dfrac{k}{2}\\vec b$。\n\n$\\fbox{A} = 2, \\fbox{B} = 1, \\fbox{C} = 2$。"
+          },
+          {
+            "title": "(2) $\\vec a \\cdot \\vec b$",
+            "content": "$AB:AC = 3:2 \\Rightarrow |\\vec b - \\vec a| = \\dfrac{3}{2}|\\vec c - \\vec a|$。$\\fbox{D} = 3, \\fbox{E} = 2$。\n\n平方：$|\\vec b|^2 - 2\\vec a\\cdot\\vec b + |\\vec a|^2 = \\dfrac{9}{4}(|\\vec c|^2 - 2\\vec a\\cdot\\vec c + |\\vec a|^2)$。\n\n$2 - 2\\vec a\\cdot\\vec b = \\dfrac{9}{4}(2 - 2\\vec a\\cdot\\vec c) = \\dfrac{9}{2} - \\dfrac{9}{2}\\vec a\\cdot\\vec c$。\n\n$\\vec a\\cdot\\vec b = \\dfrac{9}{4}\\vec a\\cdot\\vec c - \\dfrac{5}{4}$。$\\fbox{F} = 9, \\fbox{G} = 4, \\fbox{H} = 5, \\fbox{I} = 4$。"
+          },
+          {
+            "title": "(3) 切线过 $D$",
+            "content": "$DA$ 切圆于 $A$。切线-弦角：$\\angle DAC = \\angle ABC$，又 $\\angle D$ 公共，故 $\\triangle DAC \\sim \\triangle DBA$。\n\n$\\dfrac{DC}{DA} = \\dfrac{DA}{DB} = \\dfrac{AC}{BA} = \\dfrac{2}{3}$。\n\n所以 $\\dfrac{DC}{DB} = \\dfrac{DC}{DA}\\cdot\\dfrac{DA}{DB} = \\dfrac{4}{9}$。\n\n设 $BC = 2$，$CD = k$，$DB = 2 + k$。$\\dfrac{k}{2+k} = \\dfrac{4}{9} \\Rightarrow 9k = 8 + 4k \\Rightarrow 5k = 8 \\Rightarrow k = \\dfrac{8}{5}$。\n\n$\\fbox{J} = 8, \\fbox{K} = 5$。"
+          }
+        ],
+        "finalAnswer": "ABC=212, DE=32, FGHI=9454, JK=85"
+      }
+    },
+    {
+      "id": "c2-III-1",
+      "number": "III",
+      "topic": "指数方程与对数根的最小值",
+      "topicTag": "指数·对数",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "$p > 1, q > 1$。方程 $e^{2x} - ae^x + b = 0$（①）中令 $t = e^x$，得 $t^2 - at + b = 0$，其解为 $\\log_{q^2} p$ 与 $\\log_{p^3} q$。求 $a$ 的最小值及此时 ① 的解。\n\n(1) $b = \\dfrac{\\fbox{A}}{\\fbox{B}}$，$a = \\dfrac{\\fbox{C}}{\\fbox{D}}\\log_q p + \\dfrac{\\fbox{E}}{\\fbox{F}}\\log_p q$。\n\n(2) $p, q > 1$ 变动时 $\\log_p q > \\fbox{G}$。$a$ 最小值 $\\dfrac{\\sqrt{\\fbox{H}}}{\\fbox{I}}$，在 $\\log_p q = \\dfrac{\\sqrt{\\fbox{J}}}{\\fbox{K}}$ 时取得。此时 ① 的解 $x = -\\dfrac{\\fbox{L}}{\\fbox{M}}\\log_e \\fbox{N}$。",
+      "solution": {
+        "translation": "二次方程根与系数：和 = $a$，积 = $b$。用换底公式化简，再用 AM-GM 求最小。",
+        "analysis": "$\\log_{q^2} p = \\dfrac{1}{2}\\log_q p$，$\\log_{p^3} q = \\dfrac{1}{3}\\log_p q$。",
+        "steps": [
+          {
+            "title": "(1) $b$ 与 $a$",
+            "content": "积 $b = \\log_{q^2} p \\cdot \\log_{p^3} q = \\dfrac{\\ln p}{2\\ln q} \\cdot \\dfrac{\\ln q}{3\\ln p} = \\dfrac{1}{6}$。$\\fbox{A} = 1, \\fbox{B} = 6$。\n\n和 $a = \\dfrac{1}{2}\\log_q p + \\dfrac{1}{3}\\log_p q$。$\\fbox{C}=1, \\fbox{D}=2, \\fbox{E}=1, \\fbox{F}=3$。"
+          },
+          {
+            "title": "(2) 最小值",
+            "content": "$p, q > 1 \\Rightarrow \\log_p q > 0$。$\\fbox{G} = 0$。\n\n令 $u = \\log_p q > 0$，则 $\\log_q p = 1/u$。$a = \\dfrac{1}{2u} + \\dfrac{u}{3}$。\n\nAM-GM：$a \\ge 2\\sqrt{\\dfrac{1}{2u}\\cdot\\dfrac{u}{3}} = 2\\sqrt{\\dfrac{1}{6}} = \\dfrac{2}{\\sqrt 6} = \\dfrac{\\sqrt 6}{3}$。$\\fbox{H} = 6, \\fbox{I} = 3$。\n\n等号当 $\\dfrac{1}{2u} = \\dfrac{u}{3} \\Rightarrow u^2 = \\dfrac{3}{2} \\Rightarrow u = \\dfrac{\\sqrt 6}{2}$。$\\fbox{J} = 6, \\fbox{K} = 2$。"
+          },
+          {
+            "title": "求 ① 的解",
+            "content": "此时（判别式 $= 0$）$t^2 - at + b = 0$ 有重根。$\\log_{q^2}p = \\dfrac{1}{2}\\cdot\\dfrac{1}{u} = \\dfrac{1}{\\sqrt 6}$，$\\log_{p^3}q = \\dfrac{1}{3}u = \\dfrac{\\sqrt 6}{6} = \\dfrac{1}{\\sqrt 6}$，两根皆 $\\dfrac{1}{\\sqrt 6}$。\n\n$t = e^x = \\dfrac{1}{\\sqrt 6} \\Rightarrow x = \\ln\\dfrac{1}{\\sqrt 6} = -\\dfrac{1}{2}\\ln 6$。$\\fbox{L} = 1, \\fbox{M} = 2, \\fbox{N} = 6$。"
+          }
+        ],
+        "finalAnswer": "AB=16, CDEF=1213, G=0, HI=63, JK=62, LMN=126"
+      }
+    },
+    {
+      "id": "c2-IV-1",
+      "number": "IV-1",
+      "topic": "三次曲线切线与面积比",
+      "topicTag": "微分·积分",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "$a, t$ 正实数。$y = ax^3$ 的图象 $C$，点 $P(t, at^3)$。$C$ 在 $P$ 的切线 $\\ell$ 再次与 $C$ 交于 $Q$。过 $P$ 平行 $x$ 轴的直线 $p$、过 $Q$ 平行 $y$ 轴的直线 $q$ 交于 $R$。设 $S_1$ 为 $C, p, q$ 围成面积，$S_2$ 为 $C$ 与 $\\ell$ 围成面积。求 $\\dfrac{S_1}{S_2}$。\n\n切线 $\\ell$：$y = \\fbox{A}\\,at^{\\fbox{B}}x - \\fbox{C}\\,at^{\\fbox{D}}$，故 $Q$ 的 $x$ 坐标 $= -\\fbox{E}\\,t$。\n\n$S_1 = \\dfrac{\\fbox{FG}}{\\fbox{H}}at^{\\fbox{I}}$，$S_2 = \\dfrac{\\fbox{JK}}{\\fbox{L}}at^{\\fbox{M}}$（由 $\\triangle PQR$ 面积减 $S_1$），故 $\\dfrac{S_1}{S_2} = \\fbox{N}$。",
+      "solution": {
+        "translation": "切线方程由导数；与 $C$ 联立得 $Q$；面积用定积分与三角形面积。",
+        "analysis": "$y' = 3ax^2$；$x^3 - 3t^2 x + 2t^3 = (x-t)^2(x+2t)$。",
+        "steps": [
+          {
+            "title": "切线与 $Q$",
+            "content": "$y - at^3 = 3at^2(x - t) \\Rightarrow y = 3at^2 x - 2at^3$。$\\fbox{A}=3, \\fbox{B}=2, \\fbox{C}=2, \\fbox{D}=3$。\n\n联立 $ax^3 = 3at^2 x - 2at^3 \\Rightarrow x^3 - 3t^2 x + 2t^3 = (x-t)^2(x+2t) = 0$，$Q$ 的 $x = -2t$。$\\fbox{E} = 2$。"
+          },
+          {
+            "title": "$S_1$",
+            "content": "$P = (t, at^3)$，$Q = (-2t, -8at^3)$，$R = (-2t, at^3)$。\n\n$S_1 = \\int_{-2t}^t (at^3 - ax^3) dx = a\\left[t^3 x - \\dfrac{x^4}{4}\\right]_{-2t}^t = a\\left[\\dfrac{3t^4}{4} - \\left(-2t^4 - 4t^4\\right)\\right] = a\\cdot\\dfrac{27t^4}{4}$。\n\n$\\fbox{FG} = 27, \\fbox{H} = 4, \\fbox{I} = 4$。"
+          },
+          {
+            "title": "$S_2$ 与比值",
+            "content": "$\\triangle PQR$ 直角三角形，腿 $PR = 3t$，$QR = 9at^3$，面积 $= \\dfrac{1}{2}\\cdot 3t \\cdot 9at^3 = \\dfrac{27}{2}at^4$。\n\n$S_2 = \\triangle PQR - S_1 = \\dfrac{27}{2}at^4 - \\dfrac{27}{4}at^4 = \\dfrac{27}{4}at^4$。$\\fbox{JK} = 27, \\fbox{L} = 4, \\fbox{M} = 4$。\n\n$\\dfrac{S_1}{S_2} = \\dfrac{27/4}{27/4} = 1$。$\\fbox{N} = 1$。"
+          }
+        ],
+        "finalAnswer": "ABCD=3223, E=2, FGHI=2744, JKLM=2744, N=1"
+      }
+    },
+    {
+      "id": "c2-IV-2",
+      "number": "IV-2",
+      "topic": "极限存在条件与定积分级数",
+      "topicTag": "极限·定积分",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "$f_n(x) = \\sin^n x$（$n = 1, 2, 3, \\ldots$）。\n\n(1) 考虑 $\\displaystyle\\lim_{x\\to 0}\\dfrac{a - x^2 - (b - x^2)^2}{f_n(x)} = c$（$a, b, c$ 实数）。\n  (i) $a = b^{\\fbox{O}}$。\n  (ii) $n = 2, c = 6$ 时 $b = \\dfrac{\\fbox{P}}{\\fbox{Q}}$。\n  (iii) $n = 4$ 时 $b = \\dfrac{\\fbox{R}}{\\fbox{S}}$，$c = -\\fbox{T}$。\n\n(2) $I_n = \\displaystyle\\int_0^{\\pi/2} f_n(x)\\sin 2x\\,dx$。计算得 $I_n = \\dfrac{\\fbox{U}}{n + \\fbox{V}}$。故\n$$\\lim_{n\\to\\infty}(I_{n-1} + I_n + \\cdots + I_{2n-2}) = \\int_0^{\\fbox{W}}\\dfrac{\\fbox{X}}{\\fbox{Y} + x}dx = \\log\\fbox{Z}$$",
+      "solution": {
+        "translation": "极限存在 ⇒ 分子在 $x\\to 0$ 与分母同阶消去；积分用代换 $u = \\sin x$；级数化 Riemann 和。",
+        "analysis": "分子展开 $(a - b^2) + (2b-1)x^2 - x^4$；$\\sin^n x \\sim x^n$。",
+        "steps": [
+          {
+            "title": "(1) 极限条件",
+            "content": "分子 $= a - x^2 - (b^2 - 2bx^2 + x^4) = (a - b^2) + (2b - 1)x^2 - x^4$。\n\n(i) 分母 $\\to 0$，极限有限需分子 $\\to 0$：$a - b^2 = 0 \\Rightarrow a = b^2$。$\\fbox{O} = 2$。\n\n(ii) $n = 2$：$\\dfrac{(2b-1)x^2 - x^4}{\\sin^2 x} \\to 2b - 1 = c = 6 \\Rightarrow b = \\dfrac{7}{2}$。$\\fbox{P}=7, \\fbox{Q}=2$。\n\n(iii) $n = 4$：$\\sin^4 x \\sim x^4$。极限有限需 $x^2$ 项系数为 $0$：$2b - 1 = 0 \\Rightarrow b = \\dfrac{1}{2}$。$\\fbox{R}=1, \\fbox{S}=2$。此时分子 $= -x^4$，$c = \\lim\\dfrac{-x^4}{\\sin^4 x} = -1$。$\\fbox{T} = 1$。"
+          },
+          {
+            "title": "(2) 积分 $I_n$",
+            "content": "$I_n = \\int_0^{\\pi/2}\\sin^n x \\cdot 2\\sin x\\cos x\\,dx = 2\\int_0^{\\pi/2}\\sin^{n+1}x\\cos x\\,dx$。\n\n令 $u = \\sin x$：$= 2\\int_0^1 u^{n+1}du = \\dfrac{2}{n+2}$。$\\fbox{U} = 2, \\fbox{V} = 2$。"
+          },
+          {
+            "title": "级数极限",
+            "content": "$I_k = \\dfrac{2}{k+2}$。$\\sum_{k=n-1}^{2n-2} I_k = 2\\sum_{k=n-1}^{2n-2}\\dfrac{1}{k+2} = 2\\sum_{j=n+1}^{2n}\\dfrac{1}{j}$。\n\n$= 2\\cdot\\dfrac{1}{n}\\sum_{i=1}^n\\dfrac{1}{1 + i/n} \\to 2\\int_0^1\\dfrac{1}{1+x}dx$。\n\n$\\fbox{W} = 1, \\fbox{X} = 2, \\fbox{Y} = 1$。\n\n$\\int_0^1\\dfrac{2}{1+x}dx = 2\\log 2 = \\log 4$。$\\fbox{Z} = 4$。"
+          }
+        ],
+        "finalAnswer": "O=2, PQ=72, RS=12, T=1, UV=22, WXY=121, Z=4"
+      }
+    }
+  ]
+}
