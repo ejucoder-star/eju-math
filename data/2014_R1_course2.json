@@ -1,0 +1,188 @@
+{
+  "metadata": {
+    "course": "course2",
+    "year": "2014",
+    "session": "1",
+    "courseNameJa": "数学2",
+    "courseNameEn": "Course 2 (Advanced)",
+    "description": "上级课程｜理科方向",
+    "color": "#9333ea",
+    "examTitle": "2014年度（平成26年）第1回",
+    "examDate": "2014年6月"
+  },
+  "questions": [
+    {
+      "id": "c2-I-1",
+      "number": "I-1",
+      "topic": "二次函数最大值条件求参数",
+      "topicTag": "二次函数",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "二次函数 $y = ax^2 + bx + \\dfrac{3}{a}$ 满足两条件：\n(i) $x = 3$ 时 $y$ 取最大值；(ii) $x = 1$ 时 $y = 2$。求 $a, b$。\n\n由 (i)(ii)：\n$$\\begin{cases} b = \\fbox{AB}\\,a \\\\ \\fbox{C} = a + b + \\dfrac{\\fbox{D}}{a} \\end{cases}$$\n由此得方程 $\\fbox{E}\\,a^2 + \\fbox{F}\\,a - \\fbox{G} = 0$，故 $a = \\fbox{HI}, b = \\fbox{J}$。此时函数最大值为 $\\fbox{K}$。",
+      "solution": {
+        "translation": "最大值存在 ⇒ 开口向下 $a<0$；对称轴 $x = -b/(2a) = 3$。",
+        "analysis": "条件 (i) 给对称轴方程，(ii) 给函数值方程。",
+        "steps": [
+          {
+            "title": "建立方程",
+            "content": "(i) 对称轴 $-\\dfrac{b}{2a} = 3 \\Rightarrow b = -6a$。$\\fbox{AB} = -6$。\n\n(ii) $y(1) = a + b + \\dfrac{3}{a} = 2$。$\\fbox{C} = 2, \\fbox{D} = 3$。\n\n代 $b = -6a$：$a - 6a + \\dfrac{3}{a} = 2 \\Rightarrow -5a + \\dfrac{3}{a} = 2$。乘 $a$：$-5a^2 + 3 = 2a \\Rightarrow 5a^2 + 2a - 3 = 0$。$\\fbox{E}=5, \\fbox{F}=2, \\fbox{G}=3$。"
+          },
+          {
+            "title": "解 $a, b$ 与最大值",
+            "content": "$(5a - 3)(a + 1) = 0 \\Rightarrow a = \\dfrac{3}{5}$ 或 $a = -1$。\n\n最大值存在需 $a < 0$，故 $a = -1$。$\\fbox{HI} = -1$。$b = -6a = 6$。$\\fbox{J} = 6$。\n\n最大值 $y(3) = -9 + 18 - 3 = 6$。$\\fbox{K} = 6$。"
+          }
+        ],
+        "finalAnswer": "AB=-6, CD=23, EFG=523, HI=-1, J=6, K=6"
+      }
+    },
+    {
+      "id": "c2-I-2",
+      "number": "I-2",
+      "topic": "整式因式分解与无理数代入",
+      "topicTag": "因式分解",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "$P = 2x^2 - x + 2$，$Q = x^2 - 2x + 1$，$E = P^2 - 4Q^2 - 3P + 6Q$。\n\n(1) $E = (P - \\fbox{L}\\,Q)(P + \\fbox{M}\\,Q - \\fbox{N})$。\n\n(2) 用 $x$ 表示：$E = \\fbox{O}\\,x(x - \\fbox{P})(\\fbox{Q}\\,x - \\fbox{R})$。\n\n(3) $x = -\\dfrac{1 - \\sqrt 5}{3 - \\sqrt 5}$ 时，$E = \\fbox{S} + \\fbox{T}\\sqrt{\\fbox{U}}$。",
+      "solution": {
+        "translation": "$E = (P^2 - 4Q^2) - 3(P - 2Q) = (P-2Q)(P+2Q) - 3(P-2Q) = (P-2Q)(P+2Q-3)$。",
+        "analysis": "先按 $P, Q$ 因式分解，再代入 $P, Q$ 的 $x$ 表达。",
+        "steps": [
+          {
+            "title": "(1) 按 P, Q 分解",
+            "content": "$E = P^2 - 4Q^2 - 3P + 6Q = (P - 2Q)(P + 2Q) - 3(P - 2Q) = (P - 2Q)(P + 2Q - 3)$。\n\n$\\fbox{L} = 2, \\fbox{M} = 2, \\fbox{N} = 3$。"
+          },
+          {
+            "title": "(2) 用 $x$ 表示",
+            "content": "$P - 2Q = (2x^2 - x + 2) - 2(x^2 - 2x + 1) = 3x$。\n\n$P + 2Q - 3 = (2x^2 - x + 2) + 2(x^2 - 2x + 1) - 3 = 4x^2 - 5x + 1 = (4x - 1)(x - 1)$。\n\n$E = 3x(4x - 1)(x - 1) = 3x(x - 1)(4x - 1)$。$\\fbox{O} = 3, \\fbox{P} = 1, \\fbox{Q} = 4, \\fbox{R} = 1$。"
+          },
+          {
+            "title": "(3) 代入",
+            "content": "$x = -\\dfrac{1-\\sqrt 5}{3-\\sqrt 5} = -\\dfrac{(1-\\sqrt 5)(3+\\sqrt 5)}{(3)^2 - 5} = -\\dfrac{-2 - 2\\sqrt 5}{4} = \\dfrac{1 + \\sqrt 5}{2}$。\n\n$x(x-1) = \\dfrac{1+\\sqrt 5}{2} \\cdot \\dfrac{\\sqrt 5 - 1}{2} = \\dfrac{(\\sqrt 5)^2 - 1}{4} = 1$。\n\n$4x - 1 = 2(1 + \\sqrt 5) - 1 = 1 + 2\\sqrt 5$。\n\n$E = 3 \\cdot x(x-1) \\cdot (4x-1) = 3 \\cdot 1 \\cdot (1 + 2\\sqrt 5) = 3 + 6\\sqrt 5$。$\\fbox{S} = 3, \\fbox{T} = 6, \\fbox{U} = 5$。"
+          }
+        ],
+        "finalAnswer": "LMN=223, OPQR=3141, STU=365"
+      }
+    },
+    {
+      "id": "c2-II-1",
+      "number": "II",
+      "topic": "正四面体内分点向量",
+      "topicTag": "空间向量",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "questionDiagram": {
+        "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 280' font-family='serif' font-size='14'><polygon points='200,40 60,200 280,230' fill='none' stroke='#1c1917' stroke-width='1.3'/><line x1='200' y1='40' x2='180' y2='250' stroke='#1c1917' stroke-width='1.3'/><line x1='60' y1='200' x2='180' y2='250' stroke='#1c1917' stroke-width='1' stroke-dasharray='3,2'/><line x1='280' y1='230' x2='180' y2='250' stroke='#1c1917' stroke-width='1.3'/><circle cx='200' cy='40' r='2.5' fill='#1c1917'/><circle cx='60' cy='200' r='2.5' fill='#1c1917'/><circle cx='180' cy='250' r='2.5' fill='#1c1917'/><circle cx='280' cy='230' r='2.5' fill='#1c1917'/><circle cx='165' cy='80' r='2.5' fill='#dc2626'/><circle cx='230' cy='240' r='2.5' fill='#16a34a'/><line x1='165' y1='80' x2='230' y2='240' stroke='#2563eb' stroke-width='1.2' stroke-dasharray='3,2'/><circle cx='200' cy='170' r='2.5' fill='#7c3aed'/><text x='205' y='35' text-anchor='start'>O</text><text x='50' y='205' text-anchor='end'>A</text><text x='178' y='265' text-anchor='middle'>B</text><text x='288' y='232' text-anchor='start'>C</text><text x='155' y='80' text-anchor='end' fill='#dc2626'>L</text><text x='240' y='243' text-anchor='start' fill='#16a34a'>M</text><text x='205' y='165' text-anchor='start' fill='#7c3aed'>P</text></svg>"
+      },
+      "japanese": "边长 $1$ 的正四面体 $OABC$ 中，$L$ 分 $OA$ 为 $3:1$，$M$ 为 $BC$ 中点，$P$ 分 $LM$ 为 $t:(1-t)$（$0 < t < 1$）。\n\n(1) 设 $\\vec{OA} = \\vec a, \\vec{OB} = \\vec b, \\vec{OC} = \\vec c$。则\n$$\\vec{OP} = \\dfrac{\\fbox{A}}{\\fbox{B}}(\\fbox{C} - t)\\vec a + \\dfrac{\\fbox{D}}{\\fbox{E}}t(\\vec b + \\vec c)$$\n又 $\\vec a \\cdot (\\vec b + \\vec c) = \\fbox{F}$，$|\\vec b + \\vec c|^2 = \\fbox{G}$，故\n$$|\\vec{OP}| = \\dfrac{1}{\\fbox{H}}\\sqrt{\\fbox{I}\\,t^2 - \\fbox{J}\\,t + \\fbox{K}}$$\n\n(2) $|\\vec{OP}|$ 最小时 $t = \\dfrac{\\fbox{L}}{\\fbox{M}}$，最小值 $= \\dfrac{\\sqrt{\\fbox{N}}}{\\fbox{O}}$。\n\n(3) (2) 时，$\\cos\\angle AOP = \\dfrac{\\fbox{P}\\sqrt{\\fbox{Q}}}{\\fbox{R}}$。",
+      "solution": {
+        "translation": "正四面体边长 $1$：$|\\vec a| = |\\vec b| = |\\vec c| = 1$，两两内积 $= \\cos 60° = 1/2$。",
+        "analysis": "$L = \\frac34\\vec a$（$OL:LA = 3:1$），$M = \\frac12(\\vec b + \\vec c)$，$\\vec{OP} = (1-t)\\vec{OL} + t\\vec{OM}$。",
+        "steps": [
+          {
+            "title": "(1) $\\vec{OP}$ 与 $|\\vec{OP}|$",
+            "content": "$\\vec{OP} = (1-t)\\cdot\\dfrac34\\vec a + t\\cdot\\dfrac12(\\vec b + \\vec c) = \\dfrac34(1 - t)\\vec a + \\dfrac12 t(\\vec b + \\vec c)$。\n\n$\\fbox{A}=3, \\fbox{B}=4, \\fbox{C}=1, \\fbox{D}=1, \\fbox{E}=2$。\n\n$\\vec a \\cdot (\\vec b + \\vec c) = \\dfrac12 + \\dfrac12 = 1$。$\\fbox{F} = 1$。\n$|\\vec b + \\vec c|^2 = 1 + 2\\cdot\\dfrac12 + 1 = 3$。$\\fbox{G} = 3$。\n\n$|\\vec{OP}|^2 = \\dfrac{9}{16}(1-t)^2 + 2\\cdot\\dfrac34(1-t)\\cdot\\dfrac{t}{2}\\cdot 1 + \\dfrac{t^2}{4}\\cdot 3$\n$= \\dfrac{9}{16}(1-t)^2 + \\dfrac34 t(1-t) + \\dfrac34 t^2 = \\dfrac{1}{16}(9t^2 - 6t + 9)$。\n\n$|\\vec{OP}| = \\dfrac14\\sqrt{9t^2 - 6t + 9}$。$\\fbox{H}=4, \\fbox{I}=9, \\fbox{J}=6, \\fbox{K}=9$。"
+          },
+          {
+            "title": "(2) 最小值",
+            "content": "$9t^2 - 6t + 9$ 顶点 $t = \\dfrac{6}{18} = \\dfrac13$。$\\fbox{L}=1, \\fbox{M}=3$。\n\n最小 $9\\cdot\\dfrac19 - 6\\cdot\\dfrac13 + 9 = 1 - 2 + 9 = 8$。$|\\vec{OP}| = \\dfrac14\\sqrt 8 = \\dfrac{2\\sqrt 2}{4} = \\dfrac{\\sqrt 2}{2}$。$\\fbox{N}=2, \\fbox{O}=2$。"
+          },
+          {
+            "title": "(3) $\\cos\\angle AOP$",
+            "content": "$t = \\dfrac13$：$\\vec{OP} = \\dfrac34\\cdot\\dfrac23\\vec a + \\dfrac12\\cdot\\dfrac13(\\vec b + \\vec c) = \\dfrac12\\vec a + \\dfrac16(\\vec b + \\vec c)$。\n\n$\\vec a \\cdot \\vec{OP} = \\dfrac12|\\vec a|^2 + \\dfrac16\\vec a\\cdot(\\vec b+\\vec c) = \\dfrac12 + \\dfrac16 = \\dfrac23$。\n\n$\\cos\\angle AOP = \\dfrac{\\vec a\\cdot\\vec{OP}}{|\\vec a||\\vec{OP}|} = \\dfrac{2/3}{1\\cdot\\sqrt2/2} = \\dfrac{2/3 \\cdot 2}{\\sqrt 2} = \\dfrac{4}{3\\sqrt 2} = \\dfrac{2\\sqrt 2}{3}$。\n\n$\\fbox{P}=2, \\fbox{Q}=2, \\fbox{R}=3$。"
+          }
+        ],
+        "finalAnswer": "ABCDE=34112, F=1, G=3, HIJK=4969, LM=13, NO=22, PQR=223"
+      }
+    },
+    {
+      "id": "c2-III-1",
+      "number": "III",
+      "topic": "三角方程组的公共解",
+      "topicTag": "三角方程",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "$a > 0$。在 $-\\dfrac{\\pi}{2} < x < \\dfrac{\\pi}{2}$ 上考虑\n$$\\sin 2x + a\\cos x = 0 \\quad ①, \\qquad \\cos 2x + a\\sin x = -2 \\quad ②$$\n\n例：$a = \\sqrt 2$ 时，满足 ① 的 $x = \\dfrac{\\fbox{AB}}{\\fbox{C}}\\pi$。此时 ② 左边值为 $\\fbox{DE}$，② 不成立，故无公共解。\n\n求 ①② 有公共解的 $a$ 及公共解：\n由 ① 得 $\\sin x = \\dfrac{\\fbox{FG}}{\\fbox{H}}a$，$\\cos 2x = \\fbox{I} - \\dfrac{a^2}{\\fbox{J}}$。代入 ② 得 $a^2 = \\fbox{K}$，故 $a = \\sqrt{\\fbox{K}}$，公共解 $x = \\dfrac{\\fbox{LM}}{\\fbox{N}}\\pi$。",
+      "solution": {
+        "translation": "① 因式分解出 $\\cos x(2\\sin x + a) = 0$；用 $\\cos x > 0$ 得 $\\sin x = -a/2$。",
+        "analysis": "$\\sin 2x = 2\\sin x\\cos x$，$\\cos 2x = 1 - 2\\sin^2 x$。",
+        "steps": [
+          {
+            "title": "$a = \\sqrt 2$ 例",
+            "content": "① $2\\sin x\\cos x + \\sqrt 2\\cos x = \\cos x(2\\sin x + \\sqrt 2) = 0$。$\\cos x > 0$，故 $\\sin x = -\\dfrac{\\sqrt 2}{2} \\Rightarrow x = -\\dfrac{\\pi}{4}$。$\\fbox{AB}=-1, \\fbox{C}=4$。\n\n② 左边：$\\cos(-\\pi/2) + \\sqrt 2\\sin(-\\pi/4) = 0 + \\sqrt 2\\cdot(-\\tfrac{\\sqrt2}{2}) = -1$。$\\fbox{DE} = -1$。右边 $-2 \\ne -1$，无公共解。"
+          },
+          {
+            "title": "一般求解",
+            "content": "① ⇒ $\\cos x(2\\sin x + a) = 0$，$\\cos x > 0$，故 $\\sin x = -\\dfrac12 a$。$\\fbox{FG}=-1, \\fbox{H}=2$。\n\n$\\cos 2x = 1 - 2\\sin^2 x = 1 - 2\\cdot\\dfrac{a^2}{4} = 1 - \\dfrac{a^2}{2}$。$\\fbox{I}=1, \\fbox{J}=2$。"
+          },
+          {
+            "title": "代入 ② 求 $a, x$",
+            "content": "② $\\cos 2x + a\\sin x = \\left(1 - \\dfrac{a^2}{2}\\right) + a\\left(-\\dfrac{a}{2}\\right) = 1 - a^2 = -2$。\n\n$a^2 = 3$。$\\fbox{K} = 3$。$a = \\sqrt 3$。\n\n$\\sin x = -\\dfrac{\\sqrt 3}{2} \\Rightarrow x = -\\dfrac{\\pi}{3}$。$\\fbox{LM} = -1, \\fbox{N} = 3$。"
+          }
+        ],
+        "finalAnswer": "ABC=-14, DE=-1, FGH=-12, IJ=12, K=3, LMN=-13"
+      }
+    },
+    {
+      "id": "c2-IV-1",
+      "number": "IV-1",
+      "topic": "两曲线公切线条数",
+      "topicTag": "微分·切线",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "$a > 0$。两曲线 $C_1: y = e^{6x}$，$C_2: y = ax^2$。求使 $C_1, C_2$ 有 $2$ 条公切线的 $a$ 条件。\n\n$C_1$ 上点 $(t, e^{6t})$ 的切线 $y = \\fbox{A}\\,e^{6t}x - e^{6t}(\\fbox{B}\\,t - \\fbox{C})$。\n\n此切线也切 $C_2$：$ax^2 = \\fbox{A}e^{6t}x - e^{6t}(\\fbox{B}t - \\fbox{C})$ 有重根，故\n$$\\fbox{D}\\,e^{12t} - ae^{6t}(\\fbox{E}\\,t - \\fbox{F}) = 0$$\n得 $a = \\dfrac{\\fbox{D}\\,e^{6t}}{\\fbox{E}\\,t - \\fbox{F}} = f(t)$。\n\n$f'(t) = \\dfrac{108e^{6t}(\\fbox{G}\\,t - \\fbox{H})}{(\\fbox{E}\\,t - \\fbox{F})^2}$。\n\n所求条件 $a > \\fbox{I}\\,e^{\\fbox{J}}$。",
+      "solution": {
+        "translation": "切线方程由导数确定；公切线 ⇔ 与 $C_2$ 相切（判别式 = 0）。所得 $a = f(t)$，$s = a$ 与 $s = f(t)$ 交 $2$ 点即 2 条公切线。",
+        "analysis": "$C_1$ 切线斜率 $= 6e^{6t}$。",
+        "steps": [
+          {
+            "title": "切线方程",
+            "content": "$y - e^{6t} = 6e^{6t}(x - t) \\Rightarrow y = 6e^{6t}x - e^{6t}(6t - 1)$。$\\fbox{A}=6, \\fbox{B}=6, \\fbox{C}=1$。"
+          },
+          {
+            "title": "与 $C_2$ 相切",
+            "content": "$ax^2 - 6e^{6t}x + e^{6t}(6t-1) = 0$ 判别式 $= 0$：\n$(6e^{6t})^2 - 4a e^{6t}(6t-1) = 0 \\Rightarrow 36e^{12t} - 4ae^{6t}(6t-1) = 0$。\n\n除以 $4$：$9e^{12t} - ae^{6t}(6t-1) = 0$。$\\fbox{D}=9, \\fbox{E}=6, \\fbox{F}=1$。\n\n$a = \\dfrac{9e^{6t}}{6t-1} = f(t)$。"
+          },
+          {
+            "title": "$f'$ 与条件",
+            "content": "$f'(t) = \\dfrac{9\\cdot 6e^{6t}(6t-1) - 9e^{6t}\\cdot 6}{(6t-1)^2} = \\dfrac{54e^{6t}(6t - 2)}{(6t-1)^2} = \\dfrac{108e^{6t}(3t - 1)}{(6t-1)^2}$。$\\fbox{G}=3, \\fbox{H}=1$。\n\n$a > 0$ 需 $6t - 1 > 0$，即 $t > 1/6$。$f$ 在 $(1/6, 1/3)$ 递减、$(1/3, \\infty)$ 递增，最小 $f(1/3) = \\dfrac{9e^2}{1} = 9e^2$。两端 $\\to +\\infty$。\n\n$s = a$ 与 $s = f(t)$ 有 $2$ 交点 ⇔ $a > 9e^2$。$\\fbox{I}=9, \\fbox{J}=2$。"
+          }
+        ],
+        "finalAnswer": "ABC=661, DEF=961, GH=31, IJ=92"
+      }
+    },
+    {
+      "id": "c2-IV-2",
+      "number": "IV-2",
+      "topic": "旋转体体积相等",
+      "topicTag": "积分·旋转体",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "$a, t$ 正实数。$y = \\dfrac{1}{t^2}(x - at^2)^2$ 的图象与 $x$ 轴、$y$ 轴围成区域 $D$。$D$ 绕 $x$ 轴旋转得体积 $V_1$，绕 $y$ 轴旋转得 $V_2$。求使 $V_1 = V_2$（与 $t$ 无关）的 $a$。\n\n$$V_1 = \\pi\\int_{\\fbox{K}}^{\\fbox{L}} \\dfrac{1}{t^{\\fbox{M}}}(x - at^2)^{\\fbox{N}} dx = \\dfrac{\\pi}{\\fbox{O}}a^{\\fbox{P}}t^{\\fbox{Q}}$$\n$$V_2 = \\pi\\int_{\\fbox{R}}^{\\fbox{K}} (\\fbox{S} - \\fbox{T}\\sqrt y)^{\\fbox{U}} dy = \\dfrac{\\pi}{\\fbox{V}}a^{\\fbox{W}}t^{\\fbox{X}}$$\n故 $a = \\dfrac{\\fbox{Y}}{\\fbox{Z}}$ 时 $V_1 = V_2$。\n\n选项：⓪ $0$ ① $1$ ② $2$ ③ $3$ ④ $4$ ⑤ $5$ ⑥ $6$ ⑦ $t$ ⑧ $at^2$ ⑨ $a^2t^2$。",
+      "solution": {
+        "translation": "抛物线顶点 $(at^2, 0)$，与 $y$ 轴交于 $(0, a^2t^2)$。$D$ 为该曲线、$x$ 轴、$y$ 轴围成区域。",
+        "analysis": "绕 $x$ 轴：$V_1 = \\pi\\int y^2 dx$；绕 $y$ 轴：用 $x = at^2 - t\\sqrt y$，$V_2 = \\pi\\int x^2 dy$。",
+        "steps": [
+          {
+            "title": "$V_1$",
+            "content": "$y^2 = \\dfrac{1}{t^4}(x-at^2)^4$。$x$ 从 $0$ 到 $at^2$。\n\n$V_1 = \\pi\\int_0^{at^2} \\dfrac{1}{t^4}(x-at^2)^4 dx$。$\\fbox{K}=⓪(0), \\fbox{L}=⑧(at^2), \\fbox{M}=4, \\fbox{N}=4$。\n\n令 $u = x - at^2$：$\\int_0^{at^2}(x-at^2)^4 dx = \\int_{-at^2}^0 u^4 du = \\dfrac{(at^2)^5}{5} = \\dfrac{a^5 t^{10}}{5}$。\n\n$V_1 = \\dfrac{\\pi}{t^4}\\cdot\\dfrac{a^5 t^{10}}{5} = \\dfrac{\\pi}{5}a^5 t^6$。$\\fbox{O}=5, \\fbox{P}=5, \\fbox{Q}=6$。"
+          },
+          {
+            "title": "$V_2$",
+            "content": "由曲线 $(x - at^2)^2 = t^2 y$，左支 $x = at^2 - t\\sqrt y$。$y$ 从 $0$ 到 $a^2t^2$。\n\n$V_2 = \\pi\\int_0^{a^2 t^2}(at^2 - t\\sqrt y)^2 dy$。$\\fbox{R}=⑨(a^2t^2), \\fbox{K}=⓪(0), \\fbox{S}=⑧(at^2), \\fbox{T}=⑦(t), \\fbox{U}=2$。\n\n展开 $(at^2 - t\\sqrt y)^2 = a^2t^4 - 2at^3\\sqrt y + t^2 y$。\n$\\int_0^{a^2t^2} a^2t^4 dy = a^4 t^6$；$\\int_0^{a^2t^2}(-2at^3\\sqrt y)dy = -2at^3\\cdot\\dfrac23(a^2t^2)^{3/2} = -\\dfrac43 a^4 t^6$；$\\int_0^{a^2t^2} t^2 y\\,dy = t^2\\cdot\\dfrac{(a^2t^2)^2}{2} = \\dfrac12 a^4 t^6$。\n\n$V_2 = \\pi a^4 t^6\\left(1 - \\dfrac43 + \\dfrac12\\right) = \\pi a^4 t^6\\cdot\\dfrac16 = \\dfrac{\\pi}{6}a^4 t^6$。$\\fbox{V}=6, \\fbox{W}=4, \\fbox{X}=6$。"
+          },
+          {
+            "title": "$V_1 = V_2$",
+            "content": "$\\dfrac{\\pi}{5}a^5 t^6 = \\dfrac{\\pi}{6}a^4 t^6 \\Rightarrow \\dfrac{a}{5} = \\dfrac16 \\Rightarrow a = \\dfrac56$。$\\fbox{Y}=5, \\fbox{Z}=6$。"
+          }
+        ],
+        "finalAnswer": "KLMN=0844, OPQ=556, RSTU=9872, VWX=646, YZ=56"
+      }
+    }
+  ]
+}
