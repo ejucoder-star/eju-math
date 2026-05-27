@@ -24,10 +24,164 @@
         "translation": "顶点 $(p, q)$ 的二次函数与水平线 $y = 1, y = 3$ 截得线段长分别为 $4, 6$；又过点 $(2, -1/5)$ 且 $p < 2$，求各系数。",
         "analysis": "对 $y = a(x-p)^2 + q$，与 $y = k$ 的两交点距离 $= 2\\sqrt{(k-q)/a}$。",
         "steps": [
-          {"title": "(1) 由两条截线得 $a, q$", "content": "$|\\alpha - p|$ 是交点到对称轴距离，等于半弦长 $4/2 = 2$。$\\fbox{A} = 2$。\n\n顶点式 $y = a(x-p)^2 + q$，代入 $(\\alpha, 1)$:\n$$1 = a(\\alpha - p)^2 + q = a \\cdot 4 + q \\Rightarrow 4a + q = 1$$\n$\\fbox{B}=4, \\fbox{C}=1$。\n\n对 $y = 3$，$|\\beta - p| = 6/2 = 3$，代入得\n$$3 = a \\cdot 9 + q \\Rightarrow 9a + q = 3$$\n$\\fbox{D}=9, \\fbox{E}=3$。\n\n两式相减：$5a = 2 \\Rightarrow a = \\dfrac{2}{5}$，$\\fbox{F}=2, \\fbox{G}=5$。\n$q = 1 - 4 \\cdot \\dfrac{2}{5} = -\\dfrac{3}{5}$，$\\fbox{H}=3, \\fbox{I}=5$。"},
-          {"title": "(2) 由过点条件求 $b, c$", "content": "$C$ 过 $(2, -\\dfrac{1}{5})$：\n$$\\dfrac{2}{5}(2 - p)^2 - \\dfrac{3}{5} = -\\dfrac{1}{5} \\Rightarrow (2-p)^2 = 1 \\Rightarrow p = 1 \\text{ 或 } 3$$\n由 $p < 2$，$p = 1$。\n\n$b = -2ap = -\\dfrac{4}{5}$，$\\fbox{J}=4, \\fbox{K}=5$。\n$c = ap^2 + q = \\dfrac{2}{5} - \\dfrac{3}{5} = -\\dfrac{1}{5}$，$\\fbox{L}=1, \\fbox{M}=5$。"}
+          {
+            "title": "(1) 由两条截线得 $a, q$",
+            "content": "$|\\alpha - p|$ 是交点到对称轴距离，等于半弦长 $4/2 = 2$。$\\fbox{A} = 2$。\n\n顶点式 $y = a(x-p)^2 + q$，代入 $(\\alpha, 1)$:\n$$1 = a(\\alpha - p)^2 + q = a \\cdot 4 + q \\Rightarrow 4a + q = 1$$\n$\\fbox{B}=4, \\fbox{C}=1$。\n\n对 $y = 3$，$|\\beta - p| = 6/2 = 3$，代入得\n$$3 = a \\cdot 9 + q \\Rightarrow 9a + q = 3$$\n$\\fbox{D}=9, \\fbox{E}=3$。\n\n两式相减：$5a = 2 \\Rightarrow a = \\dfrac{2}{5}$，$\\fbox{F}=2, \\fbox{G}=5$。\n$q = 1 - 4 \\cdot \\dfrac{2}{5} = -\\dfrac{3}{5}$，$\\fbox{H}=3, \\fbox{I}=5$。"
+          },
+          {
+            "title": "(2) 由过点条件求 $b, c$",
+            "content": "$C$ 过 $(2, -\\dfrac{1}{5})$：\n$$\\dfrac{2}{5}(2 - p)^2 - \\dfrac{3}{5} = -\\dfrac{1}{5} \\Rightarrow (2-p)^2 = 1 \\Rightarrow p = 1 \\text{ 或 } 3$$\n由 $p < 2$，$p = 1$。\n\n$b = -2ap = -2 \\cdot \\dfrac{2}{5} \\cdot 1 = -\\dfrac{4}{5}$，$\\fbox{J}=4, \\fbox{K}=5$。\n$c = ap^2 + q = \\dfrac{2}{5} - \\dfrac{3}{5} = -\\dfrac{1}{5}$，$\\fbox{L}=1, \\fbox{M}=5$。"
+          }
         ],
         "finalAnswer": "A=2, B=4, C=1, D=9, E=3, F=2, G=5, H=3, I=5, J=4, K=5, L=1, M=5"
+      }
+    },
+    {
+      "id": "c1-I-2",
+      "number": "I-2",
+      "topic": "骰子连续点数试行概率",
+      "topicTag": "概率",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "称两个整数 $m, n$ 「相连 (つながっている)」当 $n$ 为 $m-1, m, m+1$ 中的某个数。投掷一个骰子并重复操作：先掷第 $1$ 次；从第 $2$ 次起，若与上一次出现的点数相连则继续，否则试行终止。\n\n(1) 第 $2$ 次操作结束时，试行尚未终止的概率为 $\\dfrac{\\fbox{N}}{\\fbox{O}}$。\n\n(2) 第 $2$ 次操作就让试行终止的概率为 $\\dfrac{\\fbox{P}}{\\fbox{Q}}$。\n\n以下 $\\fbox{R}, \\fbox{S}, \\fbox{T}$ 从下方选项 ⓪～⑨ 中选择适当者：\n\n(3) 第 $3$ 次操作结束时，试行尚未终止的概率为 $\\fbox{R}$。\n\n(4) $3$ 次操作以内试行终止的概率为 $\\fbox{S}$。\n\n(5) 第 $3$ 次操作让试行终止的概率为 $\\fbox{T}$。\n\n选项：⓪ $\\dfrac{12}{27}$ ① $\\dfrac{16}{27}$ ② $\\dfrac{11}{54}$ ③ $\\dfrac{13}{54}$ ④ $\\dfrac{19}{54}$ ⑤ $\\dfrac{37}{54}$ ⑥ $\\dfrac{41}{54}$ ⑦ $\\dfrac{43}{54}$ ⑧ $\\dfrac{49}{108}$ ⑨ $\\dfrac{71}{108}$",
+      "solution": {
+        "translation": "对每个点数 $m$，「连续点数集合」$\\{m-1, m, m+1\\} \\cap \\{1,...,6\\}$ 大小：$1, 6$ 各 $2$；$2, 3, 4, 5$ 各 $3$。",
+        "analysis": "记 $c(m) = |\\{m-1, m, m+1\\} \\cap \\{1,...,6\\}|$。则 $c(1) = c(6) = 2$，$c(2)=c(3)=c(4)=c(5)=3$。",
+        "steps": [
+          {
+            "title": "(1)(2) 第 $2$ 次未终止/终止概率",
+            "content": "未终止概率 = $\\dfrac{1}{36} \\sum_m c(m) = \\dfrac{2+3+3+3+3+2}{36} = \\dfrac{16}{36} = \\dfrac{4}{9}$。$\\fbox{N}=4, \\fbox{O}=9$。\n\n终止概率 = $1 - \\dfrac{4}{9} = \\dfrac{5}{9}$。$\\fbox{P}=5, \\fbox{Q}=9$。"
+          },
+          {
+            "title": "(3) 第 $3$ 次未终止",
+            "content": "$P = \\dfrac{1}{216} \\sum_{m_1} \\sum_{m_2 \\in \\text{conn}(m_1)} c(m_2)$\n\n按 $m_1$:\n- $m_1=1$: conn $=\\{1,2\\}$，$c(1)+c(2) = 2+3 = 5$\n- $m_1=2$: conn $=\\{1,2,3\\}$，$2+3+3 = 8$\n- $m_1=3$: conn $=\\{2,3,4\\}$，$3+3+3 = 9$\n- $m_1=4$: conn $=\\{3,4,5\\}$，$9$\n- $m_1=5$: conn $=\\{4,5,6\\}$，$3+3+2 = 8$\n- $m_1=6$: conn $=\\{5,6\\}$，$3+2 = 5$\n\n合计 $5+8+9+9+8+5 = 44$，所以 $P = \\dfrac{44}{216} = \\dfrac{11}{54}$。$\\fbox{R} = $ ②。"
+          },
+          {
+            "title": "(4)(5) 终止概率",
+            "content": "(4) $3$ 次以内终止概率 $= 1 - \\dfrac{11}{54} = \\dfrac{43}{54}$。$\\fbox{S} = $ ⑦。\n\n(5) 第 $3$ 次终止概率 $=$ (第 $2$ 次未终止) $-$ (第 $3$ 次未终止) $= \\dfrac{4}{9} - \\dfrac{11}{54} = \\dfrac{24 - 11}{54} = \\dfrac{13}{54}$。$\\fbox{T} = $ ③。"
+          }
+        ],
+        "finalAnswer": "N=4, O=9, P=5, Q=9, R=②, S=⑦, T=③"
+      }
+    },
+    {
+      "id": "c1-II-1",
+      "number": "II-1",
+      "topic": "由不等式确定卡片张数",
+      "topicTag": "代数·不等式",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "写着数字 $3$ 的蓝色卡片，写着数字 $2$ 的红色卡片各有若干张。红色卡片多于蓝色卡片，且红色卡片少于蓝色卡片的 $2$ 倍。卡片上所写数字之和为 $70$。求各色卡片张数。\n\n设蓝色卡片 $x$ 张，红色卡片 $y$ 张：\n$$x < y < \\fbox{A}\\,x, \\qquad \\fbox{B}\\,x + \\fbox{C}\\,y = 70$$\n由两式消去 $y$：\n$$\\fbox{D}\\,x < 70 < \\fbox{E}\\,x$$\n因此 $\\fbox{FG} < x < \\fbox{HI}$。\n\n又由 $\\fbox{B}\\,x + \\fbox{C}\\,y = 70$，$x$ 必为 $\\fbox{J}$ 的倍数，所以\n$$x = \\fbox{KL}, \\qquad y = \\fbox{MN}$$\n即蓝色卡片 $\\fbox{KL}$ 张，红色卡片 $\\fbox{MN}$ 张。",
+      "solution": {
+        "translation": "求满足 $x < y < 2x$ 和 $3x + 2y = 70$ 的正整数 $x, y$。",
+        "analysis": "把不等式与等式联立，求 $x$ 的范围，并利用整除性确定 $x$。",
+        "steps": [
+          {
+            "title": "建立条件",
+            "content": "$\\fbox{A} = 2$。\n$3x + 2y = 70 \\Rightarrow \\fbox{B}=3, \\fbox{C}=2$。\n\n由 $y = (70 - 3x)/2$ 代入 $x < y < 2x$:\n- $x < (70-3x)/2 \\Rightarrow 5x < 70$，故 $\\fbox{D}=5$；\n- $(70-3x)/2 < 2x \\Rightarrow 70 < 7x$，故 $\\fbox{E}=7$。\n\n即 $10 < x < 14$。$\\fbox{FG}=10, \\fbox{HI}=14$。"
+          },
+          {
+            "title": "求 $x, y$",
+            "content": "由 $3x + 2y = 70 \\Rightarrow 2y = 70 - 3x$ 为偶数 $\\Rightarrow 3x$ 偶 $\\Rightarrow x$ 偶。$\\fbox{J} = 2$。\n\n$x \\in (10, 14)$ 且偶数：$x = 12$。\n$y = (70 - 36)/2 = 17$。\n\n$\\fbox{KL}=12, \\fbox{MN}=17$。"
+          }
+        ],
+        "finalAnswer": "A=2, B=3, C=2, D=5, E=7, FG=10, HI=14, J=2, KL=12, MN=17"
+      }
+    },
+    {
+      "id": "c1-II-2",
+      "number": "II-2",
+      "topic": "二次方程根差为偶数的参数",
+      "topicTag": "二次方程",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "$x$ 的二次方程\n$$x^2 + 2ax + 4a^2 - 10a + 7 = 0$$\n有两个相异实数解 $\\alpha, \\beta$（$\\alpha > \\beta$），且 $\\alpha - \\beta$ 为整数且为 $2$ 的倍数。求满足条件的常数 $a$ 的值。\n\n此二次方程有两个相异实数解的 $a$ 范围\n$$\\fbox{O} < a < \\dfrac{\\fbox{P}}{\\fbox{Q}}$$\n又\n$$\\alpha - \\beta = \\fbox{R} \\sqrt{-\\fbox{S}\\,a^2 + 10a - \\fbox{T}}$$\n在 $\\fbox{O} < a < \\dfrac{\\fbox{P}}{\\fbox{Q}}$ 时，$-\\fbox{S}\\,a^2 + 10a - \\fbox{T}$ 的最大值为 $\\dfrac{\\fbox{U}}{\\fbox{V}}$。\n由 $\\alpha - \\beta$ 是 $2$ 的倍数，得\n$$-\\fbox{S}\\,a^2 + 10a - \\fbox{T} = \\fbox{W}$$\n所以\n$$a = \\dfrac{\\fbox{X}}{\\fbox{Y}},\\ \\fbox{Z}$$",
+      "solution": {
+        "translation": "由判别式确定 $a$ 的范围，由根差为 $2$ 的偶数倍 (即等于 $2$) 求 $a$。",
+        "analysis": "对 $x^2 + 2ax + (4a^2 - 10a + 7) = 0$，$\\alpha - \\beta = 2\\sqrt{(\\frac{2a}{2})^2 - (4a^2-10a+7)} = 2\\sqrt{-3a^2+10a-7}$。",
+        "steps": [
+          {
+            "title": "判别式与根差",
+            "content": "判别式 $> 0$：$(2a)^2 - 4(4a^2 - 10a + 7) > 0$\n$\\Leftrightarrow -12a^2 + 40a - 28 > 0$\n$\\Leftrightarrow 3a^2 - 10a + 7 < 0$\n$\\Leftrightarrow (3a-7)(a-1) < 0$\n$\\Leftrightarrow 1 < a < \\dfrac{7}{3}$。$\\fbox{O}=1, \\fbox{P}=7, \\fbox{Q}=3$。\n\n$\\alpha - \\beta = 2 \\sqrt{-3a^2 + 10a - 7}$。$\\fbox{R}=2, \\fbox{S}=3, \\fbox{T}=7$。"
+          },
+          {
+            "title": "最大值与解",
+            "content": "$f(a) = -3a^2 + 10a - 7$，对称轴 $a = \\dfrac{10}{6} = \\dfrac{5}{3}$（在 $(1, 7/3)$ 内）。\n$f(5/3) = -3 \\cdot \\dfrac{25}{9} + \\dfrac{50}{3} - 7 = -\\dfrac{25}{3} + \\dfrac{50}{3} - \\dfrac{21}{3} = \\dfrac{4}{3}$。$\\fbox{U}=4, \\fbox{V}=3$。\n\n$\\alpha - \\beta = 2\\sqrt{f(a)}$ 最大 $= 2\\sqrt{4/3} = \\dfrac{4}{\\sqrt{3}} \\approx 2.31$。\n$\\alpha - \\beta$ 为正偶数仅能 $= 2$，即 $\\sqrt{f(a)} = 1$，$f(a) = 1$。$\\fbox{W} = 1$。\n\n$-3a^2 + 10a - 7 = 1 \\Rightarrow 3a^2 - 10a + 8 = 0 \\Rightarrow (3a - 4)(a - 2) = 0$\n$a = \\dfrac{4}{3}$ 或 $a = 2$，两者皆在 $(1, 7/3)$ 内。\n\n$\\fbox{X}=4, \\fbox{Y}=3, \\fbox{Z}=2$。"
+          }
+        ],
+        "finalAnswer": "O=1, P=7, Q=3, R=2, S=3, T=7, U=4, V=3, W=1, X=4, Y=3, Z=2"
+      }
+    },
+    {
+      "id": "c1-III-1",
+      "number": "III",
+      "topic": "不被 3 和 5 整除的正整数集合",
+      "topicTag": "整数·数论",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "设 $S$ 为既不能被 $3$ 整除也不能被 $5$ 整除的正整数全体的集合。\n\n(1) 正整数 $a$ 除以 $15$ 商为 $q$、余数为 $r$，则\n$$a = \\fbox{AB}\\,q + r, \\qquad \\fbox{C} \\le r \\le \\fbox{DE}$$\n特别当 $a \\in S$ 时，$r$ 为 $\\fbox{G}$ 个整数中之一，其中 $\\fbox{F}$ 从下方选项 ⓪～④ 中选取：\n\n⓪ $0, 2, 4, 6, 8, 10, 12, 14$\n① $1, 3, 5, 7, 9, 11, 13$\n② $0, 1, 2, 4, 7, 8, 11, 13, 14$\n③ $1, 2, 4, 7, 8, 11, 13, 14$\n④ $1, 2, 4, 7, 8, 10, 11, 13, 14$\n\n(2) 将 $S$ 的元素从小到大排列，从小的方向数第 $50$ 个整数是 $\\fbox{HI}$。\n\n(3) 求满足 $a \\in S, a \\le 50$ 的 $a$ 个数 $n$。满足 $a \\in S, a \\le 45$ 的 $a$ 个数为 $\\fbox{JK}$，所以 $n = \\fbox{LM}$。\n\n(4) 满足 $30 \\le a < b \\le 45$ 的 $S$ 的两个元素 $a, b$ 中，$a + b$ 除以 $15$ 余 $2$ 的，是 $a = \\fbox{NO}, b = \\fbox{PQ}$。",
+      "solution": {
+        "translation": "$S =$ 与 $15$ 互素的正整数。基于 $a \\mod 15$ 的分类。",
+        "analysis": "$\\gcd(a, 15) = 1 \\Leftrightarrow$ $a \\mod 15 \\in \\{1, 2, 4, 7, 8, 11, 13, 14\\}$。每个长度 $15$ 的区间含 $8$ 个 $S$ 元素。",
+        "steps": [
+          {
+            "title": "(1) 模 15 分析",
+            "content": "$\\fbox{AB}=15, \\fbox{C}=0, \\fbox{DE}=14$。\n\n$a \\in S$ 即 $\\gcd(a, 15) = 1$，等价于 $r \\in \\{1,2,4,7,8,11,13,14\\}$（共 $8$ 个）。$\\fbox{F} = $ ③，$\\fbox{G} = 8$。"
+          },
+          {
+            "title": "(2) 第 $50$ 个元素",
+            "content": "每个 $15$ 长区间含 $8$ 个 $S$ 元素。$6$ 个完整区间 $\\to$ $48$ 个元素 (最后一个为 $90 - 1 = 89$)。\n第 $49$ 个 $= 90 + 1 = 91$，第 $50$ 个 $= 90 + 2 = 92$。$\\fbox{HI} = 92$。"
+          },
+          {
+            "title": "(3) $a \\le 50$ 的个数",
+            "content": "$a \\le 45$：$3$ 个完整区间 $\\to 3 \\times 8 = 24$ 个。$\\fbox{JK} = 24$。\n\n$a \\in [46, 50]$ 中：$46 \\in S$，$47 \\in S$，$48 = 3 \\cdot 16 \\notin S$，$49 \\in S$，$50 = 2 \\cdot 25 \\notin S$。共 $3$ 个。\n\n$n = 24 + 3 = 27$。$\\fbox{LM} = 27$。"
+          },
+          {
+            "title": "(4) 求 $a, b$",
+            "content": "$S \\cap [30, 45] = \\{31, 32, 34, 37, 38, 41, 43, 44\\}$。\n\n两数之和范围 $\\in [31+32, 43+44] = [63, 87]$；且和 $\\equiv 2 \\pmod{15}$，候选和 $= 77$。\n\n列举 $a + b = 77$：\n- $34 + 43 = 77$（两者均 $\\in S$）✓\n其他配对中至少一个不在 $S$ 中。\n\n$a = 34, b = 43$。$\\fbox{NO} = 34, \\fbox{PQ} = 43$。"
+          }
+        ],
+        "finalAnswer": "AB=15, C=0, DE=14, F=③, G=8, HI=92, JK=24, LM=27, NO=34, PQ=43"
+      }
+    },
+    {
+      "id": "c1-IV-1",
+      "number": "IV",
+      "topic": "矩形内切圆切线问题",
+      "topicTag": "平面几何",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "questionDiagram": {
+        "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 360 260' font-family='serif' font-size='14'><rect x='40' y='40' width='280' height='160' fill='none' stroke='#1c1917' stroke-width='1.5'/><path d='M 40 200 A 140 140 0 0 1 320 200' fill='none' stroke='#1c1917' stroke-width='1.5'/><line x1='40' y1='100' x2='320' y2='40' stroke='#2563eb' stroke-width='1.5'/><circle cx='40' cy='40' r='2.5' fill='#1c1917'/><circle cx='320' cy='40' r='2.5' fill='#1c1917'/><circle cx='40' cy='200' r='2.5' fill='#1c1917'/><circle cx='320' cy='200' r='2.5' fill='#1c1917'/><circle cx='180' cy='200' r='2.5' fill='#1c1917'/><circle cx='40' cy='100' r='2.5' fill='#dc2626'/><circle cx='234' cy='60' r='2.5' fill='#dc2626'/><text x='30' y='38' text-anchor='end'>A</text><text x='330' y='38' text-anchor='start'>D</text><text x='30' y='208' text-anchor='end'>B</text><text x='330' y='208' text-anchor='start'>C</text><text x='180' y='216' text-anchor='middle'>M</text><text x='30' y='105' text-anchor='end' fill='#dc2626'>P</text><text x='240' y='55' text-anchor='start' fill='#dc2626'>T</text></svg>"
+      },
+      "japanese": "长方形 $ABCD$ 内部，以边 $BC$ 为直径的半圆 $O$，边 $AB$ 上分 $1:3$ 的点为 $P$，且线段 $DP$ 与半圆 $O$ 切于点 $T$。\n\n(1) 首先求三角形 $PBT$ 与三角形 $DCT$ 的面积比。\n由假设，$PB = \\dfrac{\\fbox{A}}{\\fbox{B}} AB$，所以 $PD = \\dfrac{\\fbox{C}}{\\fbox{D}} AB$，进而长方形的纵横比 $AB : BC = \\fbox{E} : \\sqrt{\\fbox{F}}$。又设 $BC$ 中点为 $M$，则 $PB : MC = \\sqrt{\\fbox{G}} : \\fbox{H}$，故\n$$BT : CT = \\sqrt{\\fbox{I}} : \\fbox{J}$$\n所以三角形 $PBT$ 与三角形 $MCT$ 的面积比及三角形 $MBT$ 与三角形 $DCT$ 的面积比分别为\n$$\\dfrac{\\triangle PBT}{\\triangle MCT} = \\dfrac{\\fbox{K}}{\\fbox{L}}, \\qquad \\dfrac{\\triangle MBT}{\\triangle DCT} = \\dfrac{\\fbox{M}}{\\fbox{N}}$$\n因此三角形 $PBT$ 与三角形 $DCT$ 的面积比为\n$$\\dfrac{\\triangle PBT}{\\triangle DCT} = \\dfrac{\\fbox{O}}{\\fbox{PQ}}$$\n\n(2) 其次求 $\\cos\\angle DCT$ 的值。设 $\\angle PBT = \\theta$，则\n$$\\tan\\theta = \\dfrac{\\sqrt{\\fbox{R}}}{\\fbox{S}}, \\qquad \\cos\\theta = \\dfrac{\\fbox{T}\\sqrt{\\fbox{U}}}{\\fbox{V}}$$\n所以\n$$\\cos\\angle DCT = \\dfrac{\\sqrt{\\fbox{WX}}}{\\fbox{Y}}$$",
+      "solution": {
+        "translation": "矩形 $ABCD$，半圆以 $BC$ 为直径，$P$ 在 $AB$ 上分 $AP:PB = 1:3$，$DP$ 切半圆于 $T$。",
+        "analysis": "建立坐标：$B = (0,0)$，$C = (c,0)$，$A = (0,h)$，$D = (c,h)$。$AB \\perp BC$ 故 $AB$ 在 $B$ 切圆；同理 $DC$ 在 $C$ 切圆。从 $P$ 与 $D$ 引切线长公式给出 $PT = PB$，$DT = DC$。",
+        "steps": [
+          {
+            "title": "(1) 长度比例",
+            "content": "$AP:PB = 1:3 \\Rightarrow PB = \\dfrac{3}{4} AB$。$\\fbox{A}=3, \\fbox{B}=4$。\n\n$PT = PB$（$P$ 到圆的两条切线 $PB$、$PT$），$DT = DC = AB$。\n$PD = PT + TD = \\dfrac{3}{4} AB + AB = \\dfrac{7}{4} AB$。$\\fbox{C}=7, \\fbox{D}=4$。\n\n由 $\\triangle PBD$（$\\angle B = 90°$）：$BD^2 = PD^2 - PB^2 = \\dfrac{49 - 9}{16}AB^2 = \\dfrac{40}{16}AB^2 = \\dfrac{5}{2}AB^2$。\n而 $BD^2 = AB^2 + AD^2 = AB^2 + BC^2$，故 $BC^2 = \\dfrac{3}{2}AB^2 \\Rightarrow BC = \\sqrt{3} \\cdot AB$。\n所以 $AB : BC = 1 : \\sqrt{3}$。$\\fbox{E}=1, \\fbox{F}=3$。"
+          },
+          {
+            "title": "(1) 计算 $BT : CT$",
+            "content": "取 $AB = 2$，则 $BC = 2\\sqrt{3}$，$P = (0, 3/2)$，$D = (2\\sqrt{3}, 2)$，$O = (\\sqrt{3}, 0)$，半径 $= \\sqrt{3}$。\n\n$MC = BC/2 = \\sqrt{3}$，$PB = 3/2$。\n$PB : MC = \\dfrac{3}{2} : \\sqrt{3} = 3 : 2\\sqrt{3} = \\sqrt{3} : 2$。$\\fbox{G}=3, \\fbox{H}=2$。\n\n切线 $T$ 处 $OT \\perp PD$。由 $T$ 到 $PD$ 的脚位置可解得 $T = \\left(\\dfrac{6\\sqrt{3}}{7}, \\dfrac{12}{7}\\right)$。\n\n$BT = \\sqrt{\\left(\\dfrac{6\\sqrt{3}}{7}\\right)^2 + \\left(\\dfrac{12}{7}\\right)^2} = \\dfrac{1}{7}\\sqrt{108 + 144} = \\dfrac{6\\sqrt{7}}{7}$\n$CT = \\sqrt{\\left(\\dfrac{8\\sqrt{3}}{7}\\right)^2 + \\left(\\dfrac{12}{7}\\right)^2} = \\dfrac{1}{7}\\sqrt{192 + 144} = \\dfrac{4\\sqrt{21}}{7}$\n\n$BT : CT = 6\\sqrt{7} : 4\\sqrt{21} = 3 : 2\\sqrt{3} = \\sqrt{3} : 2$。$\\fbox{I}=3, \\fbox{J}=2$。"
+          },
+          {
+            "title": "(1) 面积比",
+            "content": "$\\triangle PBT$ 与 $\\triangle MCT$ 同高（顶点 $T$ 到底 $BC$ 的距离相同），底 $PB$ 与 $MC$ 比为 $\\sqrt{3}/2 \\times \\sqrt{3}/2$... 不对，应通过分割看：\n\n用三角形面积公式 $S = \\dfrac{1}{2} \\cdot \\text{底} \\cdot \\text{高}$。$T$ 到 $x$ 轴距离 $= 12/7$。\n$[PBT] = \\dfrac{1}{2} \\cdot PB \\cdot x_T = \\dfrac{1}{2} \\cdot \\dfrac{3}{2} \\cdot \\dfrac{6\\sqrt{3}}{7} = \\dfrac{9\\sqrt{3}}{14}$。\n$[MCT] = \\dfrac{1}{2} \\cdot MC \\cdot y_T = \\dfrac{1}{2} \\cdot \\sqrt{3} \\cdot \\dfrac{12}{7} = \\dfrac{6\\sqrt{3}}{7} = \\dfrac{12\\sqrt{3}}{14}$。\n\n$\\dfrac{[PBT]}{[MCT]} = \\dfrac{9}{12} = \\dfrac{3}{4}$。$\\fbox{K}=3, \\fbox{L}=4$。\n\n$[MBT] = \\dfrac{1}{2} \\cdot MB \\cdot y_T = \\dfrac{1}{2} \\cdot \\sqrt{3} \\cdot \\dfrac{12}{7} = \\dfrac{12\\sqrt{3}}{14}$。\n$[DCT] = \\dfrac{1}{2} \\cdot DC \\cdot (c - x_T) = \\dfrac{1}{2} \\cdot 2 \\cdot \\dfrac{8\\sqrt{3}}{7} = \\dfrac{16\\sqrt{3}}{14}$。\n\n$\\dfrac{[MBT]}{[DCT]} = \\dfrac{12}{16} = \\dfrac{3}{4}$。$\\fbox{M}=3, \\fbox{N}=4$。\n\n$\\dfrac{[PBT]}{[DCT]} = \\dfrac{9\\sqrt{3}/14}{16\\sqrt{3}/14} = \\dfrac{9}{16}$。$\\fbox{O}=9, \\fbox{PQ}=16$。"
+          },
+          {
+            "title": "(2) 角度计算",
+            "content": "$\\theta = \\angle PBT$。向量 $\\vec{BP} = (0, 3/2)$，$\\vec{BT} = (6\\sqrt{3}/7, 12/7)$。\n\n$\\cos\\theta = \\dfrac{\\vec{BP} \\cdot \\vec{BT}}{|\\vec{BP}||\\vec{BT}|} = \\dfrac{(3/2)(12/7)}{(3/2)(6\\sqrt{7}/7)} = \\dfrac{12/7}{6\\sqrt{7}/7} = \\dfrac{2}{\\sqrt{7}} = \\dfrac{2\\sqrt{7}}{7}$。\n$\\fbox{T}=2, \\fbox{U}=7, \\fbox{V}=7$。\n\n$\\sin\\theta = \\sqrt{1 - 4/7} = \\sqrt{3/7} = \\dfrac{\\sqrt{21}}{7}$。\n$\\tan\\theta = \\dfrac{\\sin\\theta}{\\cos\\theta} = \\dfrac{\\sqrt{21}/7}{2\\sqrt{7}/7} = \\dfrac{\\sqrt{21}}{2\\sqrt{7}} = \\dfrac{\\sqrt{3}}{2}$。$\\fbox{R}=3, \\fbox{S}=2$。\n\n$\\angle DCT$：$\\vec{CD} = (0, 2)$，$\\vec{CT} = (-8\\sqrt{3}/7, 12/7)$。\n$\\cos\\angle DCT = \\dfrac{2 \\cdot 12/7}{2 \\cdot 4\\sqrt{21}/7} = \\dfrac{24/7}{8\\sqrt{21}/7} = \\dfrac{3}{\\sqrt{21}} = \\dfrac{\\sqrt{21}}{7}$。\n$\\fbox{WX}=21, \\fbox{Y}=7$。"
+          }
+        ],
+        "finalAnswer": "A=3, B=4, C=7, D=4, E=1, F=3, G=3, H=2, I=3, J=2, K=3, L=4, M=3, N=4, O=9, PQ=16, R=3, S=2, T=2, U=7, V=7, WX=21, Y=7"
       }
     }
   ]
