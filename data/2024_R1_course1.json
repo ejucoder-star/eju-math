@@ -1,191 +1,207 @@
 {
   "metadata": {
     "course": "course1",
-    "year": "2023",
+    "year": "2024",
     "session": "1",
     "courseNameJa": "数学1",
     "courseNameEn": "Course 1 (Basic)",
     "description": "基础课程｜文科方向",
     "color": "#2563eb",
-    "examTitle": "2023年度（令和5年）第1回",
-    "examDate": "2023年6月"
+    "examTitle": "2024年度（令和6年）第1回",
+    "examDate": "2024年6月"
   },
   "questions": [
     {
       "id": "c1-I-1",
       "number": "I-1",
-      "topic": "两个二次函数的交点与最大/最小差",
+      "topic": "区间上二次函数最值反解参数",
       "topicTag": "二次函数",
       "humanVerified": false,
       "answer_match": true,
       "needs_review": true,
-      "japanese": "$f(x) = \\dfrac{1}{3}x^2 + ax - b$，$g(x) = -x^2 + cx + b$ 满足条件\n\n(A) $y = f(x)$ 与 $y = g(x)$ 的图象在两条直线 $x = -1, x = 3$ 上相交。\n\n(B) $g(x)$ 的最大值与 $f(x)$ 的最小值的差为 $\\dfrac{16}{3}$。\n\n求 $a, b, c$。\n\n由条件 (A)：两图象在 $x = -1$ 处相交，得\n$$3a + \\fbox{A}\\,b - \\fbox{B}\\,c = \\fbox{C} \\quad \\cdots ①$$\n在 $x = 3$ 处相交，得\n$$\\fbox{D}\\,a - 2b - \\fbox{E}\\,c = -12 \\quad \\cdots ②$$\n由 ①② 得 $b = \\fbox{F}$。\n\n再由条件 (B) 及 $b = \\fbox{F}$，得\n$$\\fbox{G}\\,a^2 + 3c^2 = \\fbox{HI}$$\n由此\n$$a = -\\dfrac{\\fbox{J}}{\\fbox{K}}, \\qquad c = \\fbox{L}$$",
+      "japanese": "二次函数 $y = ax^2 - 6ax + 2b$ 在 $1 \\le x \\le 4$ 的最大值为 $6$、最小值为 $-2$，求 $a, b$。\n\n(1) 该二次函数的图象顶点坐标为 $\\left(\\fbox{A},\\ -\\fbox{B}\\,a + \\fbox{C}\\,b\\right)$。\n\n(2) $a > 0$：在 $1 \\le x \\le 4$ 上，$x = \\fbox{D}$ 取最大值，$x = \\fbox{E}$ 取最小值，故 $a = \\fbox{F}$，$b = \\fbox{G}$。\n\n(3) $a < 0$：在 $1 \\le x \\le 4$ 上，$x = \\fbox{H}$ 取最大值，$x = \\fbox{I}$ 取最小值，故 $a = \\fbox{JK}$，$b = \\fbox{LM}$。\n\n(4) 记 (2) 的二次函数为 $f(x)$、(3) 的为 $g(x)$，则 $g(x)$ 的图象由 $f(x)$ 的图象关于 $x$ 轴对称后再沿 $y$ 轴方向平行移动 $\\fbox{N}$ 而得。",
       "solution": {
-        "translation": "两条二次曲线在 $x=-1,3$ 相交确定线性关系；最大最小差条件给出二次约束。",
-        "analysis": "在交点处 $f = g$；$g$ 最大值在顶点 $x=c/2$，$f$ 最小值在 $x=-3a/2$。",
+        "translation": "二次函数 $y = a(x-3)^2 + (-9a+2b)$ 的顶点在 $x=3$。",
+        "analysis": "若 $a>0$ 开口向上，顶点为最小；$a<0$ 开口向下，顶点为最大。区间内最大/最小看与对称轴的距离。",
         "steps": [
           {
-            "title": "条件 (A) 列方程",
-            "content": "$x = -1$：$\\dfrac{1}{3} - a - b = -1 - c + b \\Rightarrow 3a + 6b - 3c = 4$。$\\fbox{A}=6, \\fbox{B}=3, \\fbox{C}=4$。\n\n$x = 3$：$3 + 3a - b = -9 + 3c + b \\Rightarrow 3a - 2b - 3c = -12$。$\\fbox{D}=3, \\fbox{E}=3$。\n\n两式相减：$8b = 16 \\Rightarrow b = 2$。$\\fbox{F} = 2$。"
+            "title": "(1) 顶点",
+            "content": "$y = a(x^2 - 6x) + 2b = a(x-3)^2 - 9a + 2b$。顶点 $(3, -9a + 2b)$。$\\fbox{A}=3, \\fbox{B}=9, \\fbox{C}=2$。"
           },
           {
-            "title": "条件 (B) 与求解",
-            "content": "$\\max g = \\dfrac{c^2}{4} + b$，$\\min f = -\\dfrac{3a^2}{4} - b$。差 $= \\dfrac{c^2}{4} + \\dfrac{3a^2}{4} + 2b = \\dfrac{16}{3}$。\n\n代入 $b = 2$：$\\dfrac{c^2 + 3a^2}{4} = \\dfrac{16}{3} - 4 = \\dfrac{4}{3}$，即 $9a^2 + 3c^2 = 16$。$\\fbox{G}=9, \\fbox{HI}=16$。\n\n由 ①：$3a + 12 - 3c = 4 \\Rightarrow c = a + \\dfrac{8}{3}$。代入：\n$$9a^2 + 3\\left(a + \\dfrac{8}{3}\\right)^2 = 16 \\Rightarrow 9a^2 + 12a + 4 = 0 \\Rightarrow (3a+2)^2 = 0$$\n$a = -\\dfrac{2}{3}$，$c = 2$。$\\fbox{J}=2, \\fbox{K}=3, \\fbox{L}=2$。"
+            "title": "(2) $a>0$",
+            "content": "对称轴 $x=3 \\in [1,4]$。开口向上：min 在 $x=3$，max 在距离对称轴更远的端点 $x=1$（距 $2$ > $|4-3|=1$）。$\\fbox{D}=1, \\fbox{E}=3$。\n\n$x=1$：$a - 6a + 2b = -5a + 2b = 6$；$x=3$：$-9a+2b = -2$。相减：$4a = 8 \\Rightarrow a = 2$，$b = 8$。$\\fbox{F}=2, \\fbox{G}=8$。"
+          },
+          {
+            "title": "(3) $a<0$",
+            "content": "对称轴 $x=3$。开口向下：max 在 $x=3$，min 在 $x=1$。$\\fbox{H}=3, \\fbox{I}=1$。\n\n$-9a + 2b = 6$ 与 $-5a + 2b = -2$。相减：$-4a = 8 \\Rightarrow a = -2$，$b = -6$。$\\fbox{JK}=-2, \\fbox{LM}=-6$。"
+          },
+          {
+            "title": "(4) 平移",
+            "content": "$f(x) = 2x^2 - 12x + 16$，$-f(x) = -2x^2 + 12x - 16$。$g(x) = -2x^2 + 12x - 12 = -f(x) + 4$。沿 $y$ 轴平移 $+4$。$\\fbox{N} = 4$。"
           }
         ],
-        "finalAnswer": "A=6, B=3, C=4, D=3, E=3, F=2, G=9, HI=16, J=2, K=3, L=2"
+        "finalAnswer": "A=3, BC=92, D=1, E=3, F=2, G=8, H=3, I=1, JK=-2, LM=-6, N=4"
       }
     },
     {
       "id": "c1-I-2",
       "number": "I-2",
-      "topic": "卡片抽取与组合概率",
+      "topic": "袋中卡片组合概率",
       "topicTag": "概率",
       "humanVerified": false,
       "answer_match": true,
       "needs_review": true,
-      "japanese": "$A, B, C$ 三个盒子各装有写着 $1$ 到 $9$ 数字的 $9$ 张卡片。\n\n(1) 从 $A, B, C$ 依次各抽 $1$ 张，分别记为 $a, b, c$。\n  (i) $a = b \\ne c$ 的概率为 $\\fbox{M}$。\n  (ii) $a, b, c$ 中无相同者的概率为 $\\fbox{N}$。\n  (iii) $a > 2b > 3c$ 的概率 $p$：使条件成立的 $b$ 范围为 $\\fbox{O} \\le b \\le \\fbox{P}$，由此 $p = \\fbox{Q}$。\n\n(2) 从 $A$ 取 $3$ 张、$B$ 取 $2$ 张，合计 $5$ 张。\n  (i) 其中奇数 $4$ 张、偶数 $1$ 张的概率为 $\\fbox{R}$。\n  (ii) 其中至少有 $1$ 张奇数的概率为 $\\fbox{S}$。\n\n选项（$\\fbox{M}, \\fbox{N}, \\fbox{Q}, \\fbox{R}, \\fbox{S}$ 共用）：⓪ $\\dfrac{8}{81}$ ① $\\dfrac{14}{81}$ ② $\\dfrac{56}{81}$ ③ $\\dfrac{64}{81}$ ④ $\\dfrac{25}{126}$ ⑤ $\\dfrac{35}{126}$ ⑥ $\\dfrac{115}{126}$ ⑦ $\\dfrac{125}{126}$ ⑧ $\\dfrac{8}{729}$ ⑨ $\\dfrac{10}{729}$",
+      "japanese": "袋中有 $2$ 张白卡（写 $1, 2$）、$3$ 张红卡（写 $3, 4, 5$）、$4$ 张蓝卡（写 $6, 7, 8, 9$），共 $9$ 张。从中同时抽 $3$ 张。\n\n(1) $3$ 张同色的概率为 $\\dfrac{\\fbox{O}}{\\fbox{PQ}}$；$3$ 张颜色全不同的概率为 $\\dfrac{\\fbox{R}}{\\fbox{S}}$。\n\n(2) $3$ 张所写数字之和为 $10$ 的概率为 $\\dfrac{\\fbox{T}}{\\fbox{UV}}$。\n\n(3) $3$ 张中含至少 $2$ 种不同颜色，且至少有 $1$ 张为偶数的概率为 $\\dfrac{\\fbox{WX}}{\\fbox{YZ}}$。",
       "solution": {
-        "translation": "各盒 $9$ 张卡片独立抽取，用基本概率公式求各情形。",
-        "analysis": "(1) 样本空间 $9^3 = 729$；(2) 从 $A$ 选 $3$ 取自 $\\binom{9}{3}$，从 $B$ 选 $2$ 取自 $\\binom{9}{2}$。",
+        "translation": "样本空间 $\\binom{9}{3} = 84$。",
+        "analysis": "(3) 用反面法：「至少两色 且 有偶数」 $=$ 「不全同色」 $-$ 「不全同色且全奇数」。",
         "steps": [
           {
-            "title": "(1)(i)(ii)",
-            "content": "(i) $P(a=b \\ne c) = \\dfrac{9 \\cdot 1 \\cdot 8}{729} = \\dfrac{72}{729} = \\dfrac{8}{81}$。$\\fbox{M} = $ ⓪。\n\n(ii) $P($ 无重复 $) = \\dfrac{9 \\cdot 8 \\cdot 7}{729} = \\dfrac{504}{729} = \\dfrac{56}{81}$。$\\fbox{N} = $ ②。"
+            "title": "(1) 全同色 / 全异色",
+            "content": "全同色：$\\binom{2}{3} + \\binom{3}{3} + \\binom{4}{3} = 0 + 1 + 4 = 5$。$P = \\dfrac{5}{84}$。$\\fbox{O}=5, \\fbox{PQ}=84$。\n\n全不同色：$2 \\cdot 3 \\cdot 4 = 24$。$P = \\dfrac{24}{84} = \\dfrac{2}{7}$。$\\fbox{R}=2, \\fbox{S}=7$。"
           },
           {
-            "title": "(1)(iii)",
-            "content": "$a > 2b > 3c$ 且 $a, b, c \\in \\{1,...,9\\}$，整数。\n$2b < 9$ 且 $3c < 2b$；$3c \\ge 3$（$c \\ge 1$），$2b \\ge 4 \\Rightarrow b \\ge 2$。$2b \\le 8 \\Rightarrow b \\le 4$。$\\fbox{O}=2, \\fbox{P}=4$。\n\n分类计数：\n- $b = 2$：$a > 4$（$5$ 个）且 $3c < 4 \\Rightarrow c=1$（$1$ 个）：$5 \\times 1 = 5$。\n- $b = 3$：$a > 6$（$3$ 个）且 $3c < 6 \\Rightarrow c=1$（$1$ 个）：$3 \\times 1 = 3$。\n- $b = 4$：$a > 8$（$1$ 个）且 $3c < 8 \\Rightarrow c \\in \\{1,2\\}$（$2$ 个）：$1 \\times 2 = 2$。\n\n合计 $10$，$p = \\dfrac{10}{729}$。$\\fbox{Q} = $ ⑨。"
+            "title": "(2) 和 = 10",
+            "content": "从 $\\{1,\\ldots,9\\}$ 选 $3$ 个相异数和为 $10$：$\\{1,2,7\\}, \\{1,3,6\\}, \\{1,4,5\\}, \\{2,3,5\\}$ 共 $4$ 组。$P = \\dfrac{4}{84} = \\dfrac{1}{21}$。$\\fbox{T}=1, \\fbox{UV}=21$。"
           },
           {
-            "title": "(2)",
-            "content": "$A, B$ 各 $5$ 奇 $4$ 偶。\n\n(i) 「$3$ 张 + $2$ 张里 $4$ 奇 $1$ 偶」分两种：\n- $A$ 抽 $3$ 奇，$B$ 抽 $1$ 奇 $1$ 偶：$\\binom{5}{3} \\binom{5}{1}\\binom{4}{1} = 10 \\cdot 5 \\cdot 4 = 200$。\n- $A$ 抽 $2$ 奇 $1$ 偶，$B$ 抽 $2$ 奇：$\\binom{5}{2}\\binom{4}{1}\\binom{5}{2} = 10 \\cdot 4 \\cdot 10 = 400$。\n\n分母 $\\binom{9}{3}\\binom{9}{2} = 84 \\cdot 36 = 3024$。$\\dfrac{600}{3024} = \\dfrac{25}{126}$。$\\fbox{R} = $ ④。\n\n(ii) $1 - P($ 全偶 $) = 1 - \\dfrac{\\binom{4}{3}\\binom{4}{2}}{3024} = 1 - \\dfrac{24}{3024} = 1 - \\dfrac{1}{126} = \\dfrac{125}{126}$。$\\fbox{S} = $ ⑦。"
+            "title": "(3) 至少两色 且 有偶",
+            "content": "全奇数卡：$\\{1, 3, 5, 7, 9\\}$（$5$ 张）。$P($ 全奇 $) = \\dfrac{\\binom{5}{3}}{84} = \\dfrac{10}{84}$。\n\n$P($ 全奇且全同色 $)$：奇数按色为 白$\\{1\\}$、红$\\{3,5\\}$、蓝$\\{7,9\\}$，无法构成 $3$ 张同色，故 $= 0$。\n\n所求 $= P($ 不全同色 $) - P($ 全奇 $) = \\dfrac{79}{84} - \\dfrac{10}{84} = \\dfrac{69}{84} = \\dfrac{23}{28}$。$\\fbox{WX}=23, \\fbox{YZ}=28$。"
           }
         ],
-        "finalAnswer": "M=⓪, N=②, OP=24, Q=⑨, R=④, S=⑦"
+        "finalAnswer": "OPQ=584, RS=27, TUV=121, WXYZ=2328"
       }
     },
     {
       "id": "c1-II-1",
       "number": "II-1",
-      "topic": "无理式因式分解使其有理",
-      "topicTag": "因式分解",
+      "topic": "无理数整数部分与等式求未知",
+      "topicTag": "无理数·整数部分",
       "humanVerified": false,
       "answer_match": true,
       "needs_review": true,
-      "japanese": "$a$ 为有理数。$x = 3 + \\sqrt{5}$，$y = a + \\sqrt{5}$，$z = -3 + \\sqrt{5}$。求使\n$$P = 2x^2 + 12y^2 - 2z^2 - 11xy + 5yz$$\n为有理数的 $a$。\n\n先将 $P$ 中不含 $x$ 的项之和因式分解：\n$$12y^2 + 5yz - 2z^2 = (\\fbox{A}y - z)(\\fbox{B}y + \\fbox{C}z)$$\n再把 $P$ 按 $x$ 整理，则\n$$P = \\fbox{D}$$\n这里 $x - z = \\fbox{E}$，$x + z = \\fbox{F}\\sqrt{\\fbox{G}}$，代入并令 $y = a + \\sqrt{5}$：\n$$P = \\fbox{H}\\,(\\fbox{I}\\,a + \\sqrt{5})(a - \\fbox{J} + \\sqrt{5})$$\n展开整理后，使 $P$ 有理的 $a$ 为 $a = \\dfrac{\\fbox{K}}{\\fbox{L}}$。\n\n选项 $\\fbox{D}$：⓪ $(x-4y+z)(x+3y+2z)$ ① $(x-4y+z)(2x-3y-2z)$ ② $(x+4y-z)(x+3y+2z)$ ③ $(x+4y-z)(2x+3y+2z)$ ④ $(2x-4y+z)(x-3y-2z)$ ⑤ $(2x-4y+z)(2x-3y-2z)$ ⑥ $(2x+4y-z)(x+3y+2z)$ ⑦ $(2x+4y-z)(2x+3y+2z)$",
+      "japanese": "$3\\sqrt 5 + 2$ 的整数部分为 $a$、小数部分为 $b$。求满足 $\\dfrac{x}{b} + \\dfrac{b}{y} = a$ 的有理数 $x, y$。\n\n首先求 $a, b$。$\\fbox{A} < 3\\sqrt 5 < \\fbox{A} + 1$，所以\n$$a = \\fbox{B}, \\qquad b = 3\\sqrt 5 - \\fbox{C}$$\n因此\n$$\\dfrac{x}{b} + \\dfrac{b}{y} = \\dfrac{(xy + \\fbox{D})\\sqrt 5 + \\fbox{E}(xy - \\fbox{F})}{\\fbox{G}\\,y}$$\n而该值等于整数 $\\fbox{B}$，故\n$$xy + \\fbox{D} = \\fbox{H} \\qquad \\text{且} \\qquad xy - \\fbox{F} = \\fbox{IJ}\\,y$$\n由此 $x = \\fbox{K}, y = -\\dfrac{\\fbox{L}}{\\fbox{M}}$。",
       "solution": {
-        "translation": "将 $P$ 表为 $x$ 的二次式后因式分解，再代入具体 $x, y, z$ 表达式。",
-        "analysis": "$12y^2 + 5yz - 2z^2 = (4y-z)(3y+2z)$。",
+        "translation": "$3\\sqrt 5 \\approx 6.7$，整数部分 $6$；故 $3\\sqrt 5 + 2$ 整数部分 $8$，小数部分 $3\\sqrt 5 - 6$。",
+        "analysis": "把 $\\dfrac{x}{b} + \\dfrac{b}{y}$ 通分有理化后，$\\sqrt 5$ 系数与有理部分分别配对。",
         "steps": [
           {
-            "title": "因式分解",
-            "content": "$12y^2 + 5yz - 2z^2 = (4y - z)(3y + 2z)$。$\\fbox{A}=4, \\fbox{B}=3, \\fbox{C}=2$。\n\n$P = 2x^2 - 11xy + (4y - z)(3y + 2z)$，验证 $(x-4y+z)(2x-3y-2z)$：\n- $x^2$ 项：$2$ ✓；$xy$：$-3 - 8 = -11$ ✓；$xz$：$-2 + 2 = 0$ ✓；$y^2$：$12$ ✓；$yz$：$8 - 3 = 5$ ✓；$z^2$：$-2$ ✓。\n\n$\\fbox{D} = $ ①。"
+            "title": "求 $a, b$",
+            "content": "$6 < 3\\sqrt 5 < 7$（$36 < 45 < 49$）。$\\fbox{A} = 6$。$a = 6+2 = 8$，$\\fbox{B} = 8$。\n\n$b = (3\\sqrt 5 + 2) - 8 = 3\\sqrt 5 - 6$。$\\fbox{C} = 6$。"
           },
           {
-            "title": "代入与求 $a$",
-            "content": "$x - z = (3+\\sqrt5) - (-3+\\sqrt5) = 6$。$\\fbox{E} = 6$。\n$x + z = 2\\sqrt 5$。$\\fbox{F}=2, \\fbox{G}=5$。\n\n$x - 4y + z = (x+z) - 4y = 2\\sqrt{5} - 4(a + \\sqrt{5}) = -2(2a + \\sqrt{5})$。\n$2x - 3y - 2z = 2(x-z) - 3y = 12 - 3(a + \\sqrt{5}) = -3(a - 4 + \\sqrt{5})$。\n\n$P = (-2)(-3)(2a + \\sqrt{5})(a - 4 + \\sqrt{5}) = 6(2a + \\sqrt 5)(a - 4 + \\sqrt 5)$。$\\fbox{H}=6, \\fbox{I}=2, \\fbox{J}=4$。\n\n展开：$(2a + \\sqrt 5)(a - 4 + \\sqrt 5) = (2a^2 - 8a + 5) + (3a - 4)\\sqrt{5}$。\n\n$P$ 有理需 $\\sqrt 5$ 系数为 $0$：$3a - 4 = 0 \\Rightarrow a = \\dfrac{4}{3}$。$\\fbox{K}=4, \\fbox{L}=3$。"
+            "title": "化简表达式",
+            "content": "$\\dfrac{1}{b} = \\dfrac{1}{3\\sqrt 5 - 6} = \\dfrac{3\\sqrt 5 + 6}{9}$。\n\n$\\dfrac{x}{b} + \\dfrac{b}{y} = \\dfrac{x(3\\sqrt 5 + 6)}{9} + \\dfrac{3\\sqrt 5 - 6}{y} = \\dfrac{xy(3\\sqrt 5 + 6) + 9(3\\sqrt 5 - 6)}{9y}$\n\n$= \\dfrac{3(xy + 9)\\sqrt 5 + 6(xy - 9)}{9y} = \\dfrac{(xy + 9)\\sqrt 5 + 2(xy - 9)}{3y}$。\n\n$\\fbox{D}=9, \\fbox{E}=2, \\fbox{F}=9, \\fbox{G}=3$。"
+          },
+          {
+            "title": "解出 $x, y$",
+            "content": "等于 $8$（有理）：$\\sqrt 5$ 系数为 $0$：$xy + 9 = 0$。$\\fbox{H} = 0$。\n\n有理部分：$\\dfrac{2(xy - 9)}{3y} = 8 \\Rightarrow xy - 9 = 12y$。$\\fbox{IJ} = 12$。\n\n由 $xy = -9$ 与 $xy = 12y + 9$：$-9 = 12y + 9 \\Rightarrow y = -\\dfrac{3}{2}$。$x = \\dfrac{-9}{y} = 6$。\n\n$\\fbox{K} = 6$，$\\fbox{L} = 3, \\fbox{M} = 2$。"
           }
         ],
-        "finalAnswer": "ABC=432, D=①, E=6, FG=25, H=6, I=2, J=4, KL=43"
+        "finalAnswer": "A=6, B=8, C=6, DEFG=9293, H=0, IJ=12, K=6, LM=32"
       }
     },
     {
       "id": "c1-II-2",
       "number": "II-2",
-      "topic": "两个二次方程实数解的参数条件",
+      "topic": "二次方程实数解符号条件",
       "topicTag": "二次方程",
       "humanVerified": false,
       "answer_match": true,
       "needs_review": true,
-      "japanese": "$a, b$ 为实数，考虑两个二次方程\n$$x^2 + (a-1)x - a + 1 = 0 \\quad \\cdots ①$$\n$$4x^2 - 4ax + 4ab - 1 = 0 \\quad \\cdots ②$$\n\n(1) ① 有实数解的 $a$ 范围：$\\fbox{M} \\ge 0$，$a$ 范围为 $\\fbox{N}$。\n\n选项：⓪ $a^2 - 2a - 3$ ① $a^2 + 2a - 3$ ② $a^2 - 3a - 2$ ③ $a^2 + 3a - 2$ ④ $-1 \\le a \\le 3$ ⑤ $a \\le -1, 3 \\le a$ ⑥ $-3 \\le a \\le 1$ ⑦ $a \\le -3, 1 \\le a$ ⑧ $1 \\le a \\le 2$ ⑨ $a \\le 1, 2 \\le a$\n\n(2) 求使如下 [条件] 成立的 $b$ 范围：[条件] 对所有使 ① 有实数解的 $a$，② 都有实数解。\n\n(i) ② 有实数解条件：$\\fbox{O} \\ge 0$。$f(a) = \\fbox{O}$（视为 $a$ 的函数），平方完成 $f(a) = \\fbox{P}$。\n\n选项：⓪ $a^2 - 2ab + 1$ ① $a^2 + 2ab - 1$ ② $a^2 - 4ab + \\tfrac{1}{4}$ ③ $a^2 - 4ab + 1$ ④ $a^2 + 4ab - 1$ ⑤ $(a-b)^2 - b^2 + 1$ ⑥ $(a+b)^2 - b^2 - 1$ ⑦ $(a-2b)^2 - 4b^2 - \\tfrac{1}{4}$ ⑧ $(a-2b)^2 - 4b^2 + 1$ ⑨ $(a+2b)^2 - 4b^2 - 1$\n\n(ii) 由 $f(a)$ 顶点位置在范围 $\\fbox{N}$ 上的最小值 $m$：\n$$\\begin{aligned}b \\le \\fbox{Q} &: m = \\fbox{R} \\\\ \\fbox{Q} < b \\le \\fbox{S} &: m = \\fbox{T} \\\\ \\fbox{S} < b \\le \\fbox{U} &: m = \\fbox{V} \\\\ \\fbox{U} < b &: m = \\fbox{W}\\end{aligned}$$\n\n故满足 [条件] 的 $b$ 范围 $\\fbox{X} \\le b \\le \\fbox{Y}$。\n\n选项：⓪ $-\\tfrac{19}{12}$ ① $-\\tfrac{3}{2}$ ② $-\\tfrac{5}{6}$ ③ $-\\tfrac{1}{2}$ ④ $\\tfrac{1}{2}$ ⑤ $-4b+2$ ⑥ $6b+8$ ⑦ $12b+10$ ⑧ $-2b^2+1$ ⑨ $-4b^2+1$",
+      "japanese": "$a$ 为实常数，$f(x) = 2x^2 - 4ax + 2a^2 + a - 3$。考虑方程\n$$f(x) = 0 \\quad \\cdots ①$$\n\n(1) ① 有两个相异实数解的 $a$ 范围 $a < \\fbox{N}$。\n\n(2) ① 有两个相异正实数解的 $a$ 范围 $\\fbox{O} < a < \\fbox{P}$。\n\n(3) ① 有两个相异实数解且一正一负的 $a$ 范围 $\\dfrac{\\fbox{QR}}{\\fbox{S}} < a < \\fbox{T}$。\n\n(4) ① 有两个相异实数解，其中一个在 $0 < x < 2$ 内、另一个在 $x > 2$ 内，则 $a$ 范围 $\\fbox{U} < a < \\dfrac{\\fbox{V}}{\\fbox{W}}$。",
       "solution": {
-        "translation": "通过两个判别式条件并对参数 $b$ 在 $a$ 上做分段讨论。",
-        "analysis": "① 判别式 $= (a-1)^2 + 4(a-1) = (a-1)(a+3)$；② 判别式 $/16 = a^2 - 4ab + 1$。",
+        "translation": "用判别式、根之积、根之和及 $f(0), f(2)$ 的符号控制解的位置。",
+        "analysis": "和 $= 2a$，积 $= (2a^2+a-3)/2$。",
         "steps": [
           {
-            "title": "(1) ① 的判别式",
-            "content": "$(a-1)^2 - 4(-a+1) = (a-1)(a-1+4) = (a-1)(a+3) = a^2 + 2a - 3$。$\\fbox{M} = $ ①。\n\n$(a-1)(a+3) \\ge 0 \\Rightarrow a \\le -3$ 或 $a \\ge 1$。$\\fbox{N} = $ ⑦。"
+            "title": "(1) 判别式",
+            "content": "$D = (4a)^2 - 8(2a^2 + a - 3) = 16a^2 - 16a^2 - 8a + 24 = -8a + 24$。$D > 0 \\Leftrightarrow a < 3$。$\\fbox{N} = 3$。"
           },
           {
-            "title": "(2)(i)",
-            "content": "② 判别式 $= 16a^2 - 16(4ab - 1) = 16(a^2 - 4ab + 1)$，故 $a^2 - 4ab + 1 \\ge 0$。$\\fbox{O} = $ ③。\n\n$f(a) = (a - 2b)^2 - 4b^2 + 1$。$\\fbox{P} = $ ⑧。"
+            "title": "(2) 两正实数解",
+            "content": "$D > 0$，和 $> 0$，积 $> 0$。\n和 $> 0$：$2a > 0 \\Rightarrow a > 0$。\n积 $> 0$：$2a^2 + a - 3 > 0 \\Leftrightarrow (2a+3)(a-1) > 0 \\Leftrightarrow a < -\\tfrac{3}{2}$ 或 $a > 1$。\n\n合并：$1 < a < 3$。$\\fbox{O} = 1, \\fbox{P} = 3$。"
           },
           {
-            "title": "(2)(ii) 分段最小值",
-            "content": "$f(a) = (a-2b)^2 - 4b^2 + 1$，顶点 $a = 2b$，$f(-3) = 12b + 10$，$f(1) = -4b + 2$。\n\n在 $\\fbox{N}: a \\le -3$ 或 $a \\ge 1$ 上：\n- $2b \\le -3$（$b \\le -\\tfrac{3}{2}$）：顶点在左侧段，min $= -4b^2 + 1$。\n- $-3 < 2b \\le -1$（$-\\tfrac{3}{2} < b \\le -\\tfrac{1}{2}$）：顶点在两段之间，比较 $f(-3), f(1)$；$12b+10 \\le -4b+2 \\Leftrightarrow 16b \\le -8 \\Leftrightarrow b \\le -\\tfrac{1}{2}$，本段成立，min $= 12b + 10$。\n- $-1 < 2b \\le 1$（$-\\tfrac{1}{2} < b \\le \\tfrac{1}{2}$）：min $= -4b + 2$。\n- $2b > 1$（$b > \\tfrac{1}{2}$）：顶点在右段，min $= -4b^2 + 1$。\n\n$\\fbox{Q} = $ ①，$\\fbox{R} = $ ⑨，$\\fbox{S} = $ ③，$\\fbox{T} = $ ⑦，$\\fbox{U} = $ ④，$\\fbox{V} = $ ⑤，$\\fbox{W} = $ ⑨。"
+            "title": "(3) 一正一负",
+            "content": "$D > 0$（自动）且积 $< 0$：$(2a+3)(a-1) < 0 \\Rightarrow -\\dfrac{3}{2} < a < 1$。$\\fbox{QR} = -3, \\fbox{S} = 2, \\fbox{T} = 1$。"
           },
           {
-            "title": "(2)(ii) $b$ 的最终范围",
-            "content": "需要每段 $m \\ge 0$：\n- $b \\le -\\tfrac{3}{2}$：$-4b^2 + 1 \\ge 0 \\Rightarrow |b| \\le \\tfrac{1}{2}$，矛盾；\n- $-\\tfrac{3}{2} < b \\le -\\tfrac{1}{2}$：$12b + 10 \\ge 0 \\Rightarrow b \\ge -\\tfrac{5}{6}$，得 $-\\tfrac{5}{6} \\le b \\le -\\tfrac{1}{2}$；\n- $-\\tfrac{1}{2} < b \\le \\tfrac{1}{2}$：$-4b + 2 \\ge 0$ 恒成立；\n- $b > \\tfrac{1}{2}$：$-4b^2 + 1 \\ge 0$ 矛盾。\n\n合并 $-\\tfrac{5}{6} \\le b \\le \\tfrac{1}{2}$。$\\fbox{X} = $ ②，$\\fbox{Y} = $ ④。"
+            "title": "(4) 一根在 $(0,2)$，另一根 $> 2$",
+            "content": "开口向上时需 $f(0) > 0$ 且 $f(2) < 0$。\n\n$f(0) = 2a^2 + a - 3 > 0 \\Rightarrow a < -\\tfrac{3}{2}$ 或 $a > 1$。\n$f(2) = 8 - 8a + 2a^2 + a - 3 = 2a^2 - 7a + 5 < 0 \\Leftrightarrow (2a - 5)(a - 1) < 0 \\Leftrightarrow 1 < a < \\dfrac{5}{2}$。\n\n合并：$1 < a < \\dfrac{5}{2}$。$\\fbox{U} = 1, \\fbox{V} = 5, \\fbox{W} = 2$。"
           }
         ],
-        "finalAnswer": "M=①, N=⑦, O=③, P=⑧, Q=①, R=⑨, S=③, T=⑦, U=④, V=⑤, W=⑨, X=②, Y=④"
+        "finalAnswer": "N=3, O=1, P=3, QRS=-32, T=1, U=1, VW=52"
       }
     },
     {
       "id": "c1-III-1",
       "number": "III",
-      "topic": "由数字约束确定的整数集合",
-      "topicTag": "整数·集合",
+      "topic": "中国剩余定理类型同余方程",
+      "topicTag": "整数·同余",
       "humanVerified": false,
       "answer_match": true,
       "needs_review": true,
-      "japanese": "全集 $U = \\{1, 2, \\ldots, 999\\}$。$A$ 是从 $U$ 中除去含数字 $7, 8, 9$ 任一者后的集合；$B$ 是从 $U$ 中除去含数字 $3, 6, 9$ 任一者后的集合。\n\n(1) $|A| = \\fbox{ABC}$，$|A \\cap B| = \\fbox{DEF}$，$|\\bar A \\cap B| = \\fbox{GHI}$。\n\n(2) $A$ 元素由小到大排第 $160$ 个为 $\\fbox{JKL}$；$B$ 元素由小到大排第 $160$ 个为 $\\fbox{MNO}$。\n\n(3) $B$ 中 $3$ 位数中，第 $2$ 大的 $9$ 的倍数为 $\\fbox{PQR}$；第 $2$ 小的 $18$ 的倍数为 $\\fbox{STU}$。",
+      "japanese": "考虑满足以下条件的整数：\n[条件] 被 $3$ 整除；被 $5$ 除余 $3$；被 $7$ 除余 $4$。\n\n(1) 设满足条件的整数 $N$ 表为 $N = 3x = 5y + 3 = 7z + 4$。\n\n由 ①②：$\\fbox{A}(x - \\fbox{B}) = \\fbox{C}\\,y$，所以 $y = \\fbox{D}\\,k$（$k$ 为整数）。\n\n由 ②③：$\\fbox{E}(z - \\fbox{F}) = 5(y - \\fbox{G})$，所以 $y = \\fbox{H}\\,\\ell + \\fbox{I}$（$\\ell$ 为整数）。\n\n由 $\\fbox{H}\\,\\ell + \\fbox{I} = \\fbox{D}\\,k$ 得 $\\fbox{H}\\,\\ell = \\fbox{D}(k - \\fbox{J})$，故 $k = \\fbox{K}\\,m + 1$。\n\n代入 ②：$N = \\fbox{LMN}\\,m + \\fbox{OP}$。\n\n故满足条件最小 $3$ 位自然数为 $\\fbox{QRS}$。\n\n(2) 满足条件且不超过 $500$ 的自然数有 $\\fbox{T}$ 个，其中最大者为 $\\fbox{UVW}$。",
       "solution": {
-        "translation": "$A$ 的元素是只含数字 $\\{0,1,2,3,4,5,6\\}$ 的正整数（不超过 $3$ 位）；$B$ 的元素是只含数字 $\\{0,1,2,4,5,7,8\\}$ 的正整数。",
-        "analysis": "把 $1 \\sim 999$ 的元素看作 $3$ 位带前导零的字符串。",
+        "translation": "$N \\equiv 0 \\pmod 3, \\equiv 3 \\pmod 5, \\equiv 4 \\pmod 7$，求合并模 $105$ 的通解。",
+        "analysis": "逐步消元：先 ①② 得到 $y$ 的形式，再 ②③ 得到 $y$ 的另一形式。",
         "steps": [
           {
-            "title": "(1) 计数",
-            "content": "$|A| = 7^3 - 1 = 342$（除去 $000$）。$\\fbox{ABC} = 342$。\n\n$A \\cap B$：数字 $\\in \\{0,1,2,4,5\\}$，$|A \\cap B| = 5^3 - 1 = 124$。$\\fbox{DEF} = 124$。\n\n$|\\bar A \\cap B| = |B| - |A \\cap B| = (7^3 - 1) - 124 = 342 - 124 = 218$。$\\fbox{GHI} = 218$。"
+            "title": "①② 联立",
+            "content": "$3x = 5y + 3 \\Rightarrow 3(x - 1) = 5y$。$\\fbox{A}=3, \\fbox{B}=1, \\fbox{C}=5$。\n\n$5 \\mid 3(x-1)$，$\\gcd(3,5)=1$ 所以 $5 \\mid (x-1)$，等价 $3 \\mid y$，即 $y = 3k$。$\\fbox{D} = 3$。"
           },
           {
-            "title": "(2) 第 $160$ 个",
-            "content": "把 $A$ 元素与七进制对应：$A$ 第 $k$ 小 ↔ $k$ 的七进制。$160 = 3 \\cdot 49 + 1 \\cdot 7 + 6 = (316)_7$，故第 $160$ 个 $= 316$。$\\fbox{JKL} = 316$。\n\n$B$ 的数字按大小为 $0, 1, 2, 4, 5, 7, 8$，映射 $3 \\to 4, 4 \\to 5, 5 \\to 7, 6 \\to 8$。$(316)_7$ 各位映射为 $4, 1, 8 \\Rightarrow 418$。$\\fbox{MNO} = 418$。"
+            "title": "②③ 联立",
+            "content": "$5y + 3 = 7z + 4 \\Rightarrow 5y - 7z = 1$。特解 $y=3, z=2$。\n\n所以 $7(z - 2) = 5(y - 3)$。$\\fbox{E}=7, \\fbox{F}=2, \\fbox{G}=3$。\n\n$y = 7\\ell + 3$。$\\fbox{H} = 7, \\fbox{I} = 3$。"
           },
           {
-            "title": "(3) 9 的倍数与 18 的倍数",
-            "content": "$B$ 的数字 $\\{0,1,2,4,5,7,8\\}$。$3$ 位数首位 $\\ne 0$。\n\n找最大的 $9$ 倍数 $8XY$（$X, Y \\in B$，$8+X+Y \\equiv 0 \\pmod 9$ 即 $X+Y \\equiv 1$）：$X+Y \\in \\{1, 10\\}$ 的 $B$ 内对，按 $XY$ 降序为 $(8,2), (5,5), (2,8), (1,0), (0,1)$，即 $882, 855, 828, 810, 801$。第 $2$ 大 $= 855$。$\\fbox{PQR} = 855$。\n\n$18$ 的倍数：偶数 + $9$ 的倍数。最小的 $3$ 位 $18$ 倍数 $108$（$1,0,8 \\in B$） ✓。次小：$126$（含 $6$）×；$144$（$1,4,4 \\in B$） ✓。$\\fbox{STU} = 144$。"
+            "title": "合并",
+            "content": "$7\\ell + 3 = 3k \\Rightarrow 7\\ell = 3(k - 1)$，$\\fbox{J} = 1$。\n\n$3 \\mid 7\\ell$，$\\gcd(3,7)=1$ 所以 $3 \\mid \\ell$，即 $\\ell = 3m$。则 $k = (7 \\cdot 3m + 3)/3 = 7m + 1$。$\\fbox{K} = 7$。\n\n$y = 3k = 3(7m+1) = 21m + 3$。$N = 5y + 3 = 105m + 18$。$\\fbox{LMN} = 105, \\fbox{OP} = 18$。\n\n$3$ 位最小：$m=1$，$N = 123$。$\\fbox{QRS} = 123$。"
+          },
+          {
+            "title": "(2) 不超过 500",
+            "content": "$105m + 18 \\le 500 \\Rightarrow m \\le 4.59$，$m \\in \\{0,1,2,3,4\\}$，共 $5$ 个。$\\fbox{T} = 5$。\n\n最大 $m = 4$：$N = 105 \\cdot 4 + 18 = 438$。$\\fbox{UVW} = 438$。"
           }
         ],
-        "finalAnswer": "ABC=342, DEF=124, GHI=218, JKL=316, MNO=418, PQR=855, STU=144"
+        "finalAnswer": "ABC=315, D=3, EFG=723, HI=73, J=1, K=7, LMNOP=10518, QRS=123, T=5, UVW=438"
       }
     },
     {
       "id": "c1-IV-1",
       "number": "IV",
-      "topic": "圆内接五边形",
+      "topic": "三角形与等角条件求长度·内心距离",
       "topicTag": "平面几何",
       "humanVerified": false,
       "answer_match": true,
       "needs_review": true,
       "questionDiagram": {
-        "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 320' font-family='serif' font-size='14'><circle cx='160' cy='160' r='130' fill='none' stroke='#1c1917' stroke-width='1.5'/><polygon points='105,60 65,135 165,290 280,155 195,55' fill='none' stroke='#1c1917' stroke-width='1.5'/><line x1='65' y1='135' x2='280' y2='155' stroke='#2563eb' stroke-width='1.2'/><line x1='65' y1='135' x2='195' y2='55' stroke='#2563eb' stroke-width='1.2'/><line x1='280' y1='155' x2='195' y2='55' stroke='#2563eb' stroke-width='1.2'/><text x='100' y='55' text-anchor='end'>A</text><text x='55' y='140' text-anchor='end'>B</text><text x='170' y='305' text-anchor='middle'>C</text><text x='290' y='160' text-anchor='start'>D</text><text x='200' y='50' text-anchor='start'>E</text></svg>"
+        "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 360 280' font-family='serif' font-size='14'><polygon points='240,40 40,240 280,240' fill='none' stroke='#1c1917' stroke-width='1.5'/><line x1='240' y1='40' x2='340' y2='240' stroke='#1c1917' stroke-width='1.5'/><line x1='280' y1='240' x2='340' y2='240' stroke='#1c1917' stroke-width='1.5'/><circle cx='240' cy='40' r='2.5' fill='#1c1917'/><circle cx='40' cy='240' r='2.5' fill='#1c1917'/><circle cx='280' cy='240' r='2.5' fill='#1c1917'/><circle cx='340' cy='240' r='2.5' fill='#1c1917'/><text x='248' y='35' text-anchor='start'>A</text><text x='30' y='250' text-anchor='end'>B</text><text x='280' y='258' text-anchor='middle'>C</text><text x='345' y='250' text-anchor='start'>D</text><circle cx='220' cy='80' r='2' fill='#dc2626'/><circle cx='250' cy='90' r='2' fill='#dc2626'/></svg>"
       },
-      "japanese": "圆 $O$ 内接五边形 $ABCDE$ 中，$AB = \\sqrt{3}$，$BC = 4$，$DE = \\sqrt{7}$，$EA = 1$，$\\angle EAB = 150°$。求圆 $O$ 半径、$CD$ 及五边形面积。\n\n(1) $EB = \\sqrt{\\fbox{A}}$，圆 $O$ 半径 $= \\sqrt{\\fbox{B}}$。\n\n(2) $\\angle BDE = \\fbox{CD}°$，三角形 $BDE$ 中 $\\angle DEB = \\fbox{EFG}°$，$BD = \\sqrt{\\fbox{HI}}$。\n\n(3) $\\angle BCD = \\fbox{JK}°$。三角形 $BCD$ 中令 $CD = x$，由余弦定理得\n$$x^2 - \\fbox{L}\\,x - \\fbox{M} = 0$$\n由 $x > 0$，$x = \\fbox{N}$。\n\n(4) 五边形 $ABCDE$ 面积 $= \\fbox{O}\\sqrt{\\fbox{P}}$。",
+      "japanese": "三角形 $ABC$ 中 $AB = 4$，$BC = 2$，$CA = 3$。在边 $BC$ 的延长线上取点 $D$ 使 $\\angle CAD = \\angle BAC$。\n\n(1) 求线段 $AD$ 长 $x$ 与线段 $CD$ 长 $y$。\n\n$\\cos\\angle BAC = \\dfrac{\\fbox{A}}{\\fbox{B}}$，故 $x, y$ 满足\n$$x^2 - y^2 - \\dfrac{\\fbox{CD}}{\\fbox{E}}\\,x + \\fbox{F} = 0$$\n再者，$x, y$ 满足 $x = \\fbox{G}\\,y$。由此两式得\n$$x = \\fbox{H}, \\qquad y = \\dfrac{\\fbox{I}}{\\fbox{J}}$$\n\n(2) 设 $\\triangle ABC, \\triangle ABD$ 的面积分别为 $S_1, S_2$，内切圆半径分别为 $r_1, r_2$。则\n$$\\dfrac{r_2}{r_1} = \\dfrac{\\fbox{K}\\,S_2}{\\fbox{L}\\,S_1} = \\dfrac{\\fbox{M}}{\\fbox{N}}$$\n\n(3) $\\triangle ABC, \\triangle ABD$ 的内心分别为 $I_1, I_2$。求 $I_1 I_2$ 长。\n\n设 $\\ell = BI_2$，对 $\\triangle ABI_2$ 应用余弦定理得 $\\ell = \\sqrt{\\fbox{O}}$。又 $\\dfrac{I_1 I_2}{B I_1} = \\dfrac{\\fbox{P}}{\\fbox{Q}}$，故 $I_1 I_2 = \\dfrac{\\sqrt{\\fbox{R}}}{\\fbox{S}}$。",
       "solution": {
-        "translation": "用三角形中的余弦定理与正弦定理；圆内接四边形对角互补；面积由各三角形面积求和。",
-        "analysis": "以对角线 $BE, BD$ 将五边形划分为 $\\triangle ABE, \\triangle BCD, \\triangle BDE$。",
+        "translation": "由 $\\angle BAC = \\angle CAD$，$AC$ 在 $\\triangle ABD$ 中是 $\\angle BAD$ 的内角平分线。",
+        "analysis": "(1) 用 $\\cos\\angle CAD = \\cos\\angle BAC$ 得方程；角平分线定理 $AB/AD = BC/CD$ 得比例。\n(2) 同高三角形面积比 $= $ 底比；$r = S/s$。\n(3) $I_1, I_2$ 同在 $\\angle ABC = \\angle ABD$ 的平分线上，故 $B, I_1, I_2$ 共线。",
         "steps": [
           {
-            "title": "(1) $EB$ 与半径",
-            "content": "$\\triangle ABE$：余弦定理\n$EB^2 = 1 + 3 - 2 \\cdot 1 \\cdot \\sqrt 3 \\cos 150° = 4 + 3 = 7$。$\\fbox{A} = 7$。\n\n正弦定理：$2R = \\dfrac{EB}{\\sin\\angle EAB} = \\dfrac{\\sqrt 7}{1/2} = 2\\sqrt 7 \\Rightarrow R = \\sqrt 7$。$\\fbox{B} = 7$。"
+            "title": "(1) $\\cos\\angle BAC$ 与方程",
+            "content": "$\\cos\\angle BAC = \\dfrac{AB^2 + AC^2 - BC^2}{2 \\cdot AB \\cdot AC} = \\dfrac{16 + 9 - 4}{24} = \\dfrac{21}{24} = \\dfrac{7}{8}$。$\\fbox{A}=7, \\fbox{B}=8$。\n\n在 $\\triangle ACD$ 中，$\\cos\\angle CAD = \\dfrac{AC^2 + AD^2 - CD^2}{2 \\cdot AC \\cdot AD} = \\dfrac{9 + x^2 - y^2}{6x}$。\n\n令 $\\dfrac{9 + x^2 - y^2}{6x} = \\dfrac{7}{8}$，整理：$8(9 + x^2 - y^2) = 42x \\Rightarrow x^2 - y^2 - \\dfrac{21}{4}x + 9 = 0$。$\\fbox{CD}=21, \\fbox{E}=4, \\fbox{F}=9$。"
           },
           {
-            "title": "(2) $\\angle BDE, \\angle DEB, BD$",
-            "content": "$ABDE$ 内接圆 $O$，对角互补：$\\angle BDE = 180° - 150° = 30°$。$\\fbox{CD} = 30$。\n\n$\\triangle BDE$ 中 $BE = DE = \\sqrt 7$（等腰），$\\angle BDE = \\angle DBE = 30°$ (底角相等)，$\\angle DEB = 180° - 60° = 120°$。$\\fbox{EFG} = 120$。\n\n$BD^2 = 7 + 7 - 2 \\cdot 7 \\cos 120° = 14 + 7 = 21$。$\\fbox{HI} = 21$。"
+            "title": "(1) 角平分线与解出",
+            "content": "$AC$ 平分 $\\triangle ABD$ 的 $\\angle BAD$（因 $\\angle BAC = \\angle CAD$），由角平分线定理：\n$$\\dfrac{AB}{AD} = \\dfrac{BC}{CD} \\Rightarrow \\dfrac{4}{x} = \\dfrac{2}{y} \\Rightarrow x = 2y$$\n$\\fbox{G} = 2$。\n\n代入：$4y^2 - y^2 - \\dfrac{21}{4} \\cdot 2y + 9 = 0 \\Rightarrow 3y^2 - \\dfrac{21}{2}y + 9 = 0 \\Rightarrow 2y^2 - 7y + 6 = 0$\n$(2y - 3)(y - 2) = 0 \\Rightarrow y = \\dfrac{3}{2}$ 或 $y = 2$。\n\n验 $x^2 - y^2 - \\tfrac{21}{4}x + 9 = 0$（$x = 2y$）：$y = 3/2$ 给 $x = 3$，符合。$y = 2$ 给 $x = 4$，但需检验角度限制（实际几何中 $y = 3/2$）。\n\n$\\fbox{H} = 3, \\fbox{I} = 3, \\fbox{J} = 2$。"
           },
           {
-            "title": "(3) $\\angle BCD$ 与 $CD$",
-            "content": "$BCDE$ 内接圆 $O$，对角互补：$\\angle BCD = 180° - 120° = 60°$。$\\fbox{JK} = 60$。\n\n$\\triangle BCD$ 余弦定理：$BD^2 = BC^2 + CD^2 - 2 \\cdot BC \\cdot CD \\cos 60°$\n$21 = 16 + x^2 - 4x \\Rightarrow x^2 - 4x - 5 = 0$。$\\fbox{L} = 4, \\fbox{M} = 5$。\n\n$(x - 5)(x + 1) = 0 \\Rightarrow x = 5$。$\\fbox{N} = 5$。"
+            "title": "(2) 半径比",
+            "content": "同高（$A$ 到直线 $BD$）：$\\dfrac{S_2}{S_1} = \\dfrac{BD}{BC} = \\dfrac{2 + 3/2}{2} = \\dfrac{7/2}{2} = \\dfrac{7}{4}$。\n\n半周长：$s_1 = \\dfrac{4+2+3}{2} = \\dfrac{9}{2}$，$s_2 = \\dfrac{4 + 7/2 + 3}{2} = \\dfrac{21}{4}$。\n\n$\\dfrac{r_2}{r_1} = \\dfrac{S_2/s_2}{S_1/s_1} = \\dfrac{s_1}{s_2} \\cdot \\dfrac{S_2}{S_1} = \\dfrac{9/2}{21/4} \\cdot \\dfrac{S_2}{S_1} = \\dfrac{6}{7} \\cdot \\dfrac{S_2}{S_1} = \\dfrac{6 S_2}{7 S_1}$。\n\n$\\fbox{K}=6, \\fbox{L}=7$。\n\n数值：$\\dfrac{6}{7} \\cdot \\dfrac{7}{4} = \\dfrac{3}{2}$。$\\fbox{M}=3, \\fbox{N}=2$。"
           },
           {
-            "title": "(4) 五边形面积",
-            "content": "$[\\triangle ABE] = \\dfrac{1}{2} \\cdot 1 \\cdot \\sqrt 3 \\cdot \\sin 150° = \\dfrac{\\sqrt 3}{4}$。\n\n$[\\triangle BCD] = \\dfrac{1}{2} \\cdot 4 \\cdot 5 \\cdot \\sin 60° = 5\\sqrt 3$。\n\n$[\\triangle BDE] = \\dfrac{1}{2} \\cdot \\sqrt 7 \\cdot \\sqrt 7 \\cdot \\sin 120° = \\dfrac{7\\sqrt 3}{4}$。\n\n合计 $= \\dfrac{\\sqrt 3 + 20\\sqrt 3 + 7\\sqrt 3}{4} = \\dfrac{28\\sqrt 3}{4} = 7\\sqrt 3$。$\\fbox{O} = 7, \\fbox{P} = 3$。"
+            "title": "(3) 内心距离",
+            "content": "$\\cos\\angle ABC = \\dfrac{16 + 4 - 9}{16} = \\dfrac{11}{16}$，$\\sin\\angle ABC = \\dfrac{\\sqrt{1 - 121/256}}{1} = \\dfrac{\\sqrt{135}}{16} = \\dfrac{3\\sqrt{15}}{16}$。\n\n$\\sin(\\angle ABC/2) = \\sqrt{\\dfrac{1 - 11/16}{2}} = \\sqrt{\\dfrac{5}{32}} = \\dfrac{\\sqrt{10}}{8}$。\n\n海伦公式：$S_1 = \\sqrt{\\dfrac{9}{2} \\cdot \\dfrac{1}{2} \\cdot \\dfrac{5}{2} \\cdot \\dfrac{3}{2}} = \\dfrac{3\\sqrt{15}}{4}$。$r_1 = \\dfrac{S_1}{s_1} = \\dfrac{3\\sqrt{15}/4}{9/2} = \\dfrac{\\sqrt{15}}{6}$。\n$S_2 = \\dfrac{7}{4} S_1 = \\dfrac{21\\sqrt{15}}{16}$。$r_2 = \\dfrac{S_2}{s_2} = \\dfrac{21\\sqrt{15}/16}{21/4} = \\dfrac{\\sqrt{15}}{4}$。\n\n$BI_2 = \\dfrac{r_2}{\\sin(\\angle ABC/2)} = \\dfrac{\\sqrt{15}/4}{\\sqrt{10}/8} = \\dfrac{2\\sqrt{15}}{\\sqrt{10}} = \\sqrt{6}$。$\\fbox{O} = 6$。\n\n$BI_1 = \\dfrac{r_1}{\\sin(\\angle ABC/2)} = \\dfrac{\\sqrt{15}/6}{\\sqrt{10}/8} = \\dfrac{8\\sqrt{15}}{6\\sqrt{10}} = \\dfrac{4\\sqrt{6}}{6} = \\dfrac{2\\sqrt 6}{3}$。\n\n$I_1, I_2$ 同在 $B$ 的角平分线上：$I_1 I_2 = BI_2 - BI_1 = \\sqrt 6 - \\dfrac{2\\sqrt 6}{3} = \\dfrac{\\sqrt 6}{3}$。\n\n$\\dfrac{I_1 I_2}{BI_1} = \\dfrac{\\sqrt 6/3}{2\\sqrt 6/3} = \\dfrac{1}{2}$。$\\fbox{P}=1, \\fbox{Q}=2$。\n\n$I_1 I_2 = \\dfrac{\\sqrt 6}{3}$。$\\fbox{R} = 6, \\fbox{S} = 3$。"
           }
         ],
-        "finalAnswer": "A=7, B=7, CD=30, EFG=120, HI=21, JK=60, L=4, M=5, N=5, OP=73"
+        "finalAnswer": "AB=78, CDEF=2149, G=2, H=3, IJ=32, KL=67, MN=32, O=6, PQ=12, RS=63"
       }
     }
   ]
