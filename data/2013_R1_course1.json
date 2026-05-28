@@ -38,7 +38,7 @@
             "why": "只用二次函数开口方向与对称轴位置判断。"
           }
         ],
-        "finalAnswer": "填空：$AB=-2,\\ C=6,\\ DE=-3,\\ F=2,\\ G=1,\\ H=3,\\ I=3,\\ J=2,\\ KL=-3,\\ M=2$。\n\n条件：\n$$b=6-2a,\\ c=-3a-2,\\ 0<a\\le\\frac32\\ \\text{或}\\ -\\frac32\\le a<0.$$"
+        "finalAnswer": "AB=-2, C=6, DE=-3, F=2, G=1, H=3, I=3, J=2, KL=-3, M=2"
       },
       "answer_match": true,
       "needs_review": true
@@ -70,7 +70,7 @@
             "why": "端点开闭由是否取等号与补集决定。"
           }
         ],
-        "finalAnswer": "(1) $a=-3,\\ b=1,\\ c=3,\\ d=8$。\n\n(2) $a=-6,\\ b=1,\\ c=3,\\ d=6$。\n\n填空：\n$NO=-3,\\ P=1,\\ Q=3,\\ R=8,\\ ST=-6,\\ U=1,\\ V=3,\\ W=6$。"
+        "finalAnswer": "NO=-3, P=1, Q=3, R=8, ST=-6, U=1, V=3, W=6"
       },
       "answer_match": true,
       "needs_review": true
@@ -102,7 +102,7 @@
             "why": "直接比较有限个取值即可。"
           }
         ],
-        "finalAnswer": "填空：$AB=20,\\ C=4,\\ DE=12,\\ FGH=240,\\ I=5,\\ J=3$。\n\n结论：$a_1=240$，且 $a_n$ 在 $n=3$ 时最大。"
+        "finalAnswer": "AB=20, C=4, DE=12, FGH=240, I=5, J=3"
       },
       "answer_match": true,
       "needs_review": true
@@ -134,7 +134,7 @@
             "why": "含 $\\sqrt6$ 的系数必须为 0。"
           }
         ],
-        "finalAnswer": "填空：$K=2,\\ L=4,\\ M=1,\\ NOP=-11,\\ Q=3,\\ RS=-3,\\ TU=-7$。\n\n并且\n$$P=(x^2-2)(y+4),$$\n$$P=7\\text{ 的整数解 }(x,y)=(\\pm1,-11),(\\pm3,-3),$$\n使 $P$ 有理时 $a=-7$。"
+        "finalAnswer": "K=2, L=4, M=1, NOP=-11, Q=3, RS=-3, TU=-7"
       },
       "answer_match": true,
       "needs_review": true
@@ -166,7 +166,7 @@
             "why": "按整数约束从小到大枚举。"
           }
         ],
-        "finalAnswer": "$A=0,\\ B=3,\\ C=1,\\ D=0,\\ E=4,\\ F=2,\\ G=1$。"
+        "finalAnswer": "A=0, B=3, C=1, D=0, E=4, F=2, G=1"
       },
       "answer_match": true,
       "needs_review": true
@@ -201,7 +201,7 @@
             "why": "配方求最小值。"
           }
         ],
-        "finalAnswer": "填空：\n$$ABC=120,\\ D=3,\\ E=2,\\ F=7,\\ G=3,\\ H=2,\\ I=3,\\ J=3.$$"
+        "finalAnswer": "ABC=120, D=3, E=2, F=7, G=3, H=2, I=3, J=3"
       },
       "answer_match": true,
       "needs_review": true
