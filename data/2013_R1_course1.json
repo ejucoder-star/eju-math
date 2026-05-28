@@ -157,7 +157,7 @@
           },
           {
             "title": "判定 (1)(2)(3)(4)",
-            "content": "(1) $0<b<a\\Rightarrow a>b$，故 $\\fbox{A}=0$。\n\n(2) $b>0,c>0$，故 $\\fbox{B}=3$。\n\n(3)\n$$2b=a(r_1+r_2),\\ a+c=a(1+r_1r_2),$$\n且\n$$(1-r_1)(1-r_2)>0\\Rightarrow r_1+r_2<1+r_1r_2,$$\n故 $2b<a+c$，$\\fbox{C}=1$。\n\n(4)\n$$b-c=\\frac a2\\bigl[(r_1+r_2)-2r_1r_2\\bigr]\n=\\frac a2\\bigl[r_1(1-r_2)+r_2(1-r_1)\\bigr]>0,$$\n故 $b>c$，$\\fbox{D}=0$。",
+            "content": "(1) $0<b<a \\Rightarrow a>b$，故 $\\fbox{A}=0$。\n\n(2) $b>0, c>0$，故 $\\fbox{B}=3$。\n\n(3) $2b=a(r_1+r_2)$，$a+c=a(1+r_1r_2)$。由 $(1-r_1)(1-r_2)>0$ 得 $r_1+r_2<1+r_1r_2$，故 $2b<a+c$，$\\fbox{C}=1$。\n\n(4) $b-c = \\dfrac{a}{2}[(r_1+r_2)-2r_1r_2] = \\dfrac{a}{2}[r_1(1-r_2)+r_2(1-r_1)] > 0$，故 $b>c$，$\\fbox{D}=0$。",
             "why": null
           },
           {
