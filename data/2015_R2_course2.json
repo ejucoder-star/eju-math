@@ -1,0 +1,181 @@
+{
+  "metadata": {
+    "course": "course2",
+    "year": "2015",
+    "session": "2",
+    "courseNameJa": "数学2",
+    "courseNameEn": "Course 2 (Advanced)",
+    "description": "上级课程｜理科方向",
+    "color": "#9333ea",
+    "examTitle": "2015年度（平成27年）第2回",
+    "examDate": "2015年11月"
+  },
+  "questions": [
+    {
+      "id": "c2-I-1",
+      "number": "I-1",
+      "topic": "区间二次函数最大最小值",
+      "topicTag": "二次函数",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "$a, b$ 实数，$0 < b < 7$。二次函数 $f(x) = x^2 - 6x + a$ 在 $b \\le x \\le 7$ 的最大值 $M$、最小值 $m$。\n\n$f(x) = (x - \\fbox{A})^2 + a - \\fbox{B}$。\n\n(1) 分两种情形（$\\fbox{C}$～$\\fbox{G}$ 从下方 ⓪～⑨ 选）：\n  (i) $0 < b \\le \\fbox{C}$ 时 $M = \\fbox{D}$，$m = \\fbox{E}$。\n  (ii) $\\fbox{C} < b < 7$ 时 $M = \\fbox{F}$，$m = \\fbox{G}$。\n\n选项：⓪ $0$ ① $1$ ② $2$ ③ $3$ ④ $a-6$ ⑤ $a+7$ ⑥ $a+8$ ⑦ $a-9$ ⑧ $b^2-6b+a$ ⑨ $b^2+6b+a$\n\n(2) $M = 13, m = 1$ 时 $a = \\fbox{H}, b = \\fbox{I}$。",
+      "solution": {
+        "translation": "$f(x) = (x-3)^2 + a - 9$，顶点 $x=3$。区间左端 $b$ 变动。",
+        "analysis": "顶点 $x=3$ 是否在 $[b,7]$ 内决定最小值位置；最大值在距顶点较远端点。",
+        "steps": [
+          {
+            "title": "配方与分情形",
+            "content": "$f(x) = (x-3)^2 + a - 9$。$\\fbox{A}=3, \\fbox{B}=9$。\n\n顶点 $x=3$。端点 $b, 7$，$7$ 距顶点 $4$，$b$ 距顶点 $3-b < 3 < 4$，故最大值恒在 $x=7$：$f(7) = a + 7$。\n\n(i) $0 < b \\le 3$：顶点在区间内，min $= f(3) = a - 9$，max $= a+7$。$\\fbox{C}=③(3), \\fbox{D}=⑤(a+7), \\fbox{E}=⑦(a-9)$。\n\n(ii) $3 < b < 7$：$f$ 在 $[b,7]$ 递增，min $= f(b) = b^2-6b+a$，max $= a+7$。$\\fbox{F}=⑤(a+7), \\fbox{G}=⑧(b^2-6b+a)$。"
+          },
+          {
+            "title": "(2) 求 $a, b$",
+            "content": "$M = a + 7 = 13 \\Rightarrow a = 6$。\n\n若情形 (i)：$m = a - 9 = -3 \\ne 1$，舍。\n情形 (ii)：$m = b^2 - 6b + a = b^2 - 6b + 6 = 1 \\Rightarrow b^2 - 6b + 5 = 0 \\Rightarrow (b-1)(b-5)=0$。$3 < b < 7$ 取 $b = 5$。\n\n$\\fbox{H}=6, \\fbox{I}=5$。"
+          }
+        ],
+        "finalAnswer": "AB=39, C=③, D=⑤, E=⑦, F=⑤, G=⑧, H=6, I=5"
+      }
+    },
+    {
+      "id": "c2-I-2",
+      "number": "I-2",
+      "topic": "三骰子事件计数与概率",
+      "topicTag": "概率",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "大中小 $3$ 个骰子同时投掷，点数 $x, y, z$。事件 $A$：$x=y=z$；$B$：$x+y+z=6$；$C$：$x+y=z$。\n\n(1) $A, B, C$ 的情形数分别为 $A$ 有 $\\fbox{J}$、$B$ 有 $\\fbox{KL}$、$C$ 有 $\\fbox{MN}$。\n\n(2) $A\\cap B$ 有 $\\fbox{O}$、$B\\cap C$ 有 $\\fbox{P}$、$C\\cap A$ 有 $\\fbox{Q}$。\n\n(3) $P(B \\cup C) = \\dfrac{\\fbox{RS}}{\\fbox{TUV}}$。",
+      "solution": {
+        "translation": "样本空间 $6^3 = 216$。",
+        "analysis": "用枚举/组合数计数；$P(B\\cup C) = (|B| + |C| - |B\\cap C|)/216$。",
+        "steps": [
+          {
+            "title": "(1) 各事件计数",
+            "content": "$A$（$x=y=z$）：$6$ 种。$\\fbox{J}=6$。\n\n$B$（和 $=6$，各 $\\ge 1$）：$\\binom{5}{2} = 10$（不超 $6$）。$\\fbox{KL}=10$。\n\n$C$（$x+y=z$）：$z=2$ 时 $1$，…，$z=6$ 时 $5$，合计 $1+2+3+4+5=15$。$\\fbox{MN}=15$。"
+          },
+          {
+            "title": "(2) 交集",
+            "content": "$A\\cap B$：$x=y=z$ 且和 $6 \\Rightarrow (2,2,2)$，$1$ 种。$\\fbox{O}=1$。\n\n$B\\cap C$：$x+y=z$ 且 $x+y+z=6 \\Rightarrow 2z=6, z=3, x+y=3$：$(1,2),(2,1)$，$2$ 种。$\\fbox{P}=2$。\n\n$C\\cap A$：$x=y=z$ 且 $x+y=z \\Rightarrow x=0$，不可能，$0$ 种。$\\fbox{Q}=0$。"
+          },
+          {
+            "title": "(3) $P(B\\cup C)$",
+            "content": "$|B\\cup C| = 10 + 15 - 2 = 23$。$P = \\dfrac{23}{216}$。$\\fbox{RS}=23, \\fbox{TUV}=216$。"
+          }
+        ],
+        "finalAnswer": "J=6, KL=10, MN=15, O=1, P=2, Q=0, RSTUV=23216"
+      }
+    },
+    {
+      "id": "c2-II-1",
+      "number": "II-1",
+      "topic": "空间向量最小模与三角形面积",
+      "topicTag": "空间向量",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "原点 $O$ 的坐标空间中 $A(1, -1, 0), B(-2, 1, 2)$，$\\vec a = \\vec{OA}, \\vec b = \\vec{OB}$。\n\n(1) $|\\vec a + t\\vec b|^2 = \\fbox{A}\\,t^2 - \\fbox{B}\\,t + \\fbox{C}$，故 $t = \\dfrac{\\fbox{D}}{\\fbox{E}}$ 时最小，最小值 $\\fbox{F}$。\n\n(2) 与 $\\vec a, \\vec b$ 都正交的向量 $\\vec c = s(\\fbox{G}, \\fbox{H}, 1)$（$s \\ne 0$）。取 $\\vec{OC} = (\\fbox{G}, \\fbox{H}, 1)$，$\\vec{OD} = 3\\vec a + \\vec b$。则 $\\angle CBD = \\dfrac{\\pi}{\\fbox{I}}$，三角形 $BCD$ 面积 $= \\dfrac{\\fbox{J}\\sqrt{\\fbox{K}}}{\\fbox{L}}$。",
+      "solution": {
+        "translation": "$|\\vec a|^2 = 2, |\\vec b|^2 = 9, \\vec a\\cdot\\vec b = -3$。",
+        "analysis": "正交向量由两内积为零确定；面积用叉积。",
+        "steps": [
+          {
+            "title": "(1) 最小模",
+            "content": "$|\\vec a + t\\vec b|^2 = |\\vec b|^2 t^2 + 2(\\vec a\\cdot\\vec b)t + |\\vec a|^2 = 9t^2 - 6t + 2$。$\\fbox{A}=9, \\fbox{B}=6, \\fbox{C}=2$。\n\n顶点 $t = \\dfrac{6}{18} = \\dfrac{1}{3}$。$\\fbox{D}=1, \\fbox{E}=3$。最小值 $9\\cdot\\tfrac19 - 6\\cdot\\tfrac13 + 2 = 1$。$\\fbox{F}=1$。"
+          },
+          {
+            "title": "(2) 正交向量",
+            "content": "$\\vec c = s(G, H, 1)$，$\\vec c\\cdot\\vec a = G - H = 0 \\Rightarrow G = H$；$\\vec c\\cdot\\vec b = -2G + H + 2 = 0$。代 $H=G$：$-G + 2 = 0 \\Rightarrow G = 2$。$\\fbox{G}=2, \\fbox{H}=2$。\n\n$\\vec{OC} = (2,2,1)$，$\\vec{OD} = 3(1,-1,0) + (-2,1,2) = (1,-2,2)$。"
+          },
+          {
+            "title": "角与面积",
+            "content": "$\\vec{BC} = C - B = (4, 1, -1)$，$\\vec{BD} = D - B = (3, -3, 0)$。\n\n$\\cos\\angle CBD = \\dfrac{\\vec{BC}\\cdot\\vec{BD}}{|\\vec{BC}||\\vec{BD}|} = \\dfrac{12 - 3 + 0}{\\sqrt{18}\\sqrt{18}} = \\dfrac{9}{18} = \\dfrac{1}{2}$。$\\angle CBD = \\dfrac{\\pi}{3}$。$\\fbox{I}=3$。\n\n$\\vec{BC}\\times\\vec{BD} = (-3, -3, -15)$，$|\\cdots| = \\sqrt{9+9+225} = 9\\sqrt 3$。面积 $= \\dfrac{9\\sqrt 3}{2}$。$\\fbox{J}=9, \\fbox{K}=3, \\fbox{L}=2$。"
+          }
+        ],
+        "finalAnswer": "ABC=962, DE=13, F=1, GH=22, I=3, JKL=932"
+      }
+    },
+    {
+      "id": "c2-II-2",
+      "number": "II-2",
+      "topic": "复数方程的解与距离",
+      "topicTag": "复数",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "复数 $z$ 的方程 $z^4 = -324$（①），正实数 $t$ 下 $z^4 = t^4$（②）。\n\n(1) $z = r(\\cos\\theta + i\\sin\\theta)$（$r > 0, 0 < \\theta \\le 2\\pi$）。$z^4 = r^{\\fbox{M}}(\\cos\\fbox{N}\\theta + i\\sin\\fbox{N}\\theta)$。① 的解：$r = \\fbox{O}\\sqrt{\\fbox{P}}$，$\\theta = \\dfrac{\\fbox{Q}}{\\fbox{R}}\\pi, \\dfrac{\\fbox{S}}{\\fbox{R}}\\pi, \\dfrac{\\fbox{T}}{\\fbox{R}}\\pi, \\dfrac{\\fbox{U}}{\\fbox{R}}\\pi$（$\\fbox{Q} < \\fbox{S} < \\fbox{T} < \\fbox{U}$）。\n\n(2) ② 有 $\\fbox{V}$ 个解。从 ①② 各取一解，距离 $d$。$t \\in (0, 4]$ 变动时 $d$ 最小值 $\\fbox{W}$、最大值 $\\sqrt{\\fbox{XY}}$。",
+      "solution": {
+        "translation": "$z^4 = r^4(\\cos 4\\theta + i\\sin 4\\theta)$；$-324$ 的模 $324$、辐角 $\\pi$。",
+        "analysis": "① 的解在半径 $3\\sqrt 2$ 圆上、辐角 $\\pi/4, 3\\pi/4, 5\\pi/4, 7\\pi/4$（即 $(\\pm3, \\pm3)$）；② 的解在坐标轴上 $(\\pm t, 0), (0, \\pm t)$。",
+        "steps": [
+          {
+            "title": "(1) ① 的解",
+            "content": "$z^4 = r^4(\\cos 4\\theta + i\\sin 4\\theta)$。$\\fbox{M}=4, \\fbox{N}=4$。\n\n$r^4 = 324 \\Rightarrow r^2 = 18 \\Rightarrow r = 3\\sqrt 2$。$\\fbox{O}=3, \\fbox{P}=2$。\n\n$4\\theta = \\pi + 2k\\pi \\Rightarrow \\theta = \\dfrac{\\pi}{4} + \\dfrac{k\\pi}{2}$，$\\theta \\in (0, 2\\pi]$：$\\dfrac{1}{4}\\pi, \\dfrac{3}{4}\\pi, \\dfrac{5}{4}\\pi, \\dfrac{7}{4}\\pi$。$\\fbox{Q}=1, \\fbox{R}=4, \\fbox{S}=3, \\fbox{T}=5, \\fbox{U}=7$。"
+          },
+          {
+            "title": "(2) ② 与距离",
+            "content": "$z^4 = t^4 \\Rightarrow (z/t)^4 = 1 \\Rightarrow z = t, ti, -t, -ti$，共 $4$ 个。$\\fbox{V}=4$。\n\n① 解 $(\\pm 3, \\pm 3)$（半径 $3\\sqrt2$）；② 解 $(\\pm t, 0), (0, \\pm t)$。\n\n最小 $d$：如 $(3,3)$ 到 $(t, 0)$ 距离 $\\sqrt{(3-t)^2 + 9}$，$t=3$ 时 $= 3$（最小）。$\\fbox{W}=3$。\n\n最大 $d$：如 $(3,3)$ 到 $(-t, 0)$ 距离 $\\sqrt{(3+t)^2 + 9}$，$t=4$ 时 $\\sqrt{49+9} = \\sqrt{58}$。$\\fbox{XY}=58$。"
+          }
+        ],
+        "finalAnswer": "MN=44, OP=32, QRSTU=14357, V=4, W=3, XY=58"
+      }
+    },
+    {
+      "id": "c2-III-1",
+      "number": "III",
+      "topic": "由 y 轴上点引三条切线",
+      "topicTag": "微分·切线",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "$f(x) = x^4 + 2x^3 - 12x^2 + 4$，$y$ 轴上点 $P(0, p)$。求使从 $P$ 能引 $3$ 条切线到 $y = f(x)$ 的 $p$。\n\n(i) 点 $(t, f(t))$ 的切线方程\n$$y = (\\fbox{A}t^3 + \\fbox{B}t^2 - \\fbox{CD}t)x - \\fbox{E}t^4 - \\fbox{F}t^3 + \\fbox{GH}t^2 + \\fbox{I}$$\n过 $P(0, p)$ 的条件\n$$p = -\\fbox{J}t^4 - \\fbox{K}t^3 + \\fbox{LM}t^2 + \\fbox{N} \\quad \\cdots ①$$\n\n(ii) 设 ① 右边为 $g(t)$。$g(t)$ 在 $t = \\fbox{PQ}$ 与 $t = \\fbox{R}$ 取 $\\fbox{O}$；在 $t = \\fbox{T}$ 取 $\\fbox{S}$。\n\n故能引 $3$ 条切线的 $p = \\fbox{U}$ 与 $p = \\fbox{V}$（$\\fbox{U} < \\fbox{V}$）。\n\n选项 $\\fbox{O}, \\fbox{S}$：⓪ 极小值 ① 极大值。",
+      "solution": {
+        "translation": "切线条数 = 方程 $p = g(t)$ 的相异实根个数。",
+        "analysis": "$f'(t) = 4t^3 + 6t^2 - 24t$；切线过 $(0,p)$ 给出 $p = g(t)$；$g'$ 求极值。",
+        "steps": [
+          {
+            "title": "(i) 切线方程",
+            "content": "$f'(t) = 4t^3 + 6t^2 - 24t$。切线 $y = f'(t)x - f'(t)t + f(t)$\n$= (4t^3 + 6t^2 - 24t)x - 3t^4 - 4t^3 + 12t^2 + 4$。\n$\\fbox{A}=4, \\fbox{B}=6, \\fbox{CD}=24, \\fbox{E}=3, \\fbox{F}=4, \\fbox{GH}=12, \\fbox{I}=4$。\n\n过 $(0,p)$：$p = -3t^4 - 4t^3 + 12t^2 + 4$。$\\fbox{J}=3, \\fbox{K}=4, \\fbox{LM}=12, \\fbox{N}=4$。"
+          },
+          {
+            "title": "(ii) $g(t)$ 极值",
+            "content": "$g(t) = -3t^4 - 4t^3 + 12t^2 + 4$，$g'(t) = -12t^3 - 12t^2 + 24t = -12t(t+2)(t-1)$。\n\n极值点 $t = -2, 0, 1$。符号分析：$t=-2$ 极大，$t=0$ 极小，$t=1$ 极大。\n\n$g(-2) = 36, g(0) = 4, g(1) = 9$。\n\n$g$ 在 $t = -2$ 与 $t = 1$ 取极大值。$\\fbox{O}=①, \\fbox{PQ}=-2, \\fbox{R}=1$。\n$g$ 在 $t = 0$ 取极小值。$\\fbox{S}=⓪, \\fbox{T}=0$。"
+          },
+          {
+            "title": "三条切线",
+            "content": "$g$ 形状：$\\to -\\infty$，升至 $(-2, 36)$，降至 $(0, 4)$，升至 $(1, 9)$，降至 $-\\infty$。\n\n$p = g(t)$ 有 $3$ 个相异根当 $p$ 等于较小的极大值 $9$ 或极小值 $4$。\n\n$\\fbox{U}=4, \\fbox{V}=9$。"
+          }
+        ],
+        "finalAnswer": "ABCD=4624, EFGHI=34124, JKLMN=34124, O=①, PQ=-2, R=1, S=⓪, T=0, U=4, V=9"
+      }
+    },
+    {
+      "id": "c2-IV-1",
+      "number": "IV",
+      "topic": "参数曲线的速度与弧长",
+      "topicTag": "参数方程·积分",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "动点 $P$ 坐标 $(x, y)$ 随时刻 $t$：$x = 4t - \\sin 4t$，$y = 4 - \\cos 4t$。\n\n(1) $\\dfrac{dx}{dt} = \\fbox{A}(\\fbox{B} - \\cos 4t)$，$\\dfrac{dy}{dt} = \\fbox{C}\\sin 4t$。故 $\\left(\\dfrac{dx}{dt}\\right)^2 + \\left(\\dfrac{dy}{dt}\\right)^2 = \\fbox{DE}\\sin^2\\fbox{F}t$。\n\n(2) $P$ 从 $t=0$ 到 $t=2\\pi$，速度 $v$ 最大的时刻共 $\\fbox{G}$ 次。最初 $t_0 = \\dfrac{\\fbox{H}}{\\fbox{I}}\\pi$，最后 $t_1 = \\dfrac{\\fbox{J}}{\\fbox{K}}\\pi$，最大速度 $v = \\fbox{L}$。\n\n(3) 从 $t = t_0$ 到 $t = t_1$ 点 $P$ 走过的路程为 $\\fbox{MN}$。",
+      "solution": {
+        "translation": "速度 $v = \\sqrt{(dx/dt)^2 + (dy/dt)^2}$；路程 $= \\int v\\,dt$。",
+        "analysis": "$1 - \\cos 4t = 2\\sin^2 2t$。",
+        "steps": [
+          {
+            "title": "(1) 导数与速率平方",
+            "content": "$\\dfrac{dx}{dt} = 4 - 4\\cos 4t = 4(1 - \\cos 4t)$。$\\fbox{A}=4, \\fbox{B}=1$。\n$\\dfrac{dy}{dt} = 4\\sin 4t$。$\\fbox{C}=4$。\n\n$\\left(\\dfrac{dx}{dt}\\right)^2 + \\left(\\dfrac{dy}{dt}\\right)^2 = 16(1-\\cos4t)^2 + 16\\sin^2 4t = 32(1 - \\cos 4t) = 64\\sin^2 2t$。$\\fbox{DE}=64, \\fbox{F}=2$。"
+          },
+          {
+            "title": "(2) 最大速度",
+            "content": "$v = \\sqrt{64\\sin^2 2t} = 8|\\sin 2t|$，最大 $8$（$|\\sin 2t| = 1$）。$\\fbox{L}=8$。\n\n$\\sin 2t = \\pm 1 \\Rightarrow t = \\dfrac{\\pi}{4} + \\dfrac{k\\pi}{2}$，$t\\in[0, 2\\pi]$：$\\dfrac{\\pi}{4}, \\dfrac{3\\pi}{4}, \\dfrac{5\\pi}{4}, \\dfrac{7\\pi}{4}$，共 $4$ 次。$\\fbox{G}=4$。\n\n$t_0 = \\dfrac{1}{4}\\pi$（$\\fbox{H}=1, \\fbox{I}=4$），$t_1 = \\dfrac{7}{4}\\pi$（$\\fbox{J}=7, \\fbox{K}=4$）。"
+          },
+          {
+            "title": "(3) 路程",
+            "content": "路程 $= \\int_{\\pi/4}^{7\\pi/4} 8|\\sin 2t|\\,dt$。令 $u = 2t$：$= 4\\int_{\\pi/2}^{7\\pi/2}|\\sin u|\\,du$。\n\n区间长 $3\\pi = 3$ 个周期，$\\int|\\sin u|$ 每周期 $= 2$，共 $6$。路程 $= 4 \\times 6 = 24$。$\\fbox{MN}=24$。"
+          }
+        ],
+        "finalAnswer": "AB=41, C=4, DEF=642, G=4, HI=14, JK=74, L=8, MN=24"
+      }
+    }
+  ]
+}
