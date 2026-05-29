@@ -1,0 +1,184 @@
+{
+  "metadata": {
+    "course": "course2",
+    "year": "2016",
+    "session": "1",
+    "courseNameJa": "数学2",
+    "courseNameEn": "Course 2 (Advanced)",
+    "description": "上级课程｜理科方向",
+    "color": "#9333ea",
+    "examTitle": "2016年度（平成28年）第1回",
+    "examDate": "2016年6月"
+  },
+  "questions": [
+    {
+      "id": "c2-I-1",
+      "number": "I-1",
+      "topic": "顶点在直线上的二次函数",
+      "topicTag": "二次函数",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "二次函数 $y = -\\dfrac{1}{8}x^2 + ax + b$（①）的图象顶点 $(p, q)$，则 $p = \\fbox{A}\\,a$，$q = \\fbox{B}\\,a^2 + b$。\n\n(1) 点 $(p, q)$ 在直线 $x + y = 1$ 上时，$b = \\fbox{CD}\\,a^2 - \\fbox{E}\\,a + \\fbox{F}$。此时 $8a + b$ 在 $a = \\fbox{G}$ 取最大值 $\\fbox{H}$。\n\n(2) ① 的图象与 $x$ 轴相切时，$a + b \\le \\dfrac{\\fbox{I}}{\\fbox{J}}$。",
+      "solution": {
+        "translation": "二次函数 $y = -\\frac{1}{8}x^2 + ax + b$ 配方求顶点；条件「顶点在直线」与「与 x 轴相切（顶点 y=0）」给出 a, b 关系。",
+        "analysis": "对 $-\\frac18 x^2$ 类形式，对称轴 $x = -a/(2 \\cdot -1/8) = 4a$。",
+        "steps": [
+          {
+            "title": "顶点坐标",
+            "content": "$y = -\\dfrac{1}{8}(x^2 - 8ax) + b = -\\dfrac{1}{8}(x - 4a)^2 + 2a^2 + b$。\n顶点 $(4a, 2a^2 + b)$。$\\fbox{A}=4, \\fbox{B}=2$。"
+          },
+          {
+            "title": "(1) 顶点在 $x+y=1$",
+            "content": "$4a + 2a^2 + b = 1 \\Rightarrow b = -2a^2 - 4a + 1$。$\\fbox{CD}=-2, \\fbox{E}=4, \\fbox{F}=1$。\n\n$8a + b = 8a + (-2a^2 - 4a + 1) = -2a^2 + 4a + 1$，顶点 $a = 1$，最大值 $-2 + 4 + 1 = 3$。$\\fbox{G}=1, \\fbox{H}=3$。"
+          },
+          {
+            "title": "(2) 与 $x$ 轴相切",
+            "content": "顶点 $y = 0$：$2a^2 + b = 0 \\Rightarrow b = -2a^2$。\n\n$a + b = a - 2a^2 = -2(a^2 - a/2) = -2(a - 1/4)^2 + 1/8$。最大 $\\dfrac{1}{8}$（在 $a = 1/4$）。\n\n$a + b \\le \\dfrac{1}{8}$。$\\fbox{I}=1, \\fbox{J}=8$。"
+          }
+        ],
+        "finalAnswer": "A=4, B=2, CDEF=-241, G=1, H=3, IJ=18"
+      }
+    },
+    {
+      "id": "c2-I-2",
+      "number": "I-2",
+      "topic": "网格点构成三角形计数",
+      "topicTag": "组合",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "questionDiagram": {
+        "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 220' font-family='serif' font-size='13'><line x1='30' y1='180' x2='280' y2='180' stroke='#1c1917' stroke-width='1'/><line x1='30' y1='180' x2='30' y2='30' stroke='#1c1917' stroke-width='1'/><g fill='#1c1917'><circle cx='70' cy='150' r='3'/><circle cx='120' cy='150' r='3'/><circle cx='170' cy='150' r='3'/><circle cx='220' cy='150' r='3'/><circle cx='70' cy='100' r='3'/><circle cx='120' cy='100' r='3'/><circle cx='170' cy='100' r='3'/><circle cx='220' cy='100' r='3'/><circle cx='70' cy='50' r='3'/><circle cx='120' cy='50' r='3'/><circle cx='170' cy='50' r='3'/><circle cx='220' cy='50' r='3'/></g><text x='70' y='198' text-anchor='middle' font-size='11'>1</text><text x='120' y='198' text-anchor='middle' font-size='11'>2</text><text x='170' y='198' text-anchor='middle' font-size='11'>3</text><text x='220' y='198' text-anchor='middle' font-size='11'>4</text><text x='22' y='154' text-anchor='end' font-size='11'>1</text><text x='22' y='104' text-anchor='end' font-size='11'>2</text><text x='22' y='54' text-anchor='end' font-size='11'>3</text><text x='285' y='185' text-anchor='start' font-size='11'>x</text></svg>"
+      },
+      "japanese": "坐标平面上 $12$ 个点（$x \\in \\{1,2,3,4\\}, y \\in \\{1,2,3\\}$）。从中选 $3$ 点为顶点构成三角形，求三角形数。\n\n$12$ 点中选 $3$ 点共 $\\fbox{KLM}$ 通。$3$ 点以上共线的直线中：\n  (i) 过 $4$ 点的直线 $\\fbox{N}$ 条；\n  (ii) 过 $3$ 点的直线 $\\fbox{O}$ 条。\n\n故同一直线上不能构成三角形的 $3$ 点组合：(i) 情形 $\\fbox{PQ}$ 通、(ii) 情形 $\\fbox{R}$ 通。所求三角形 $\\fbox{STU}$ 个。\n\n设 $A(1,1), B(4,1)$。线段 $AB$ 上有 $2$ 个顶点的三角形共 $\\fbox{VW}$ 个。",
+      "solution": {
+        "translation": "总组合数减去三点共线的「退化」情形。AB 段上 4 点中选 2 + 其余 8 点中选 1。",
+        "analysis": "枚举所有 ≥3 点共线的直线（水平、垂直、对角线）。",
+        "steps": [
+          {
+            "title": "(1) 总数与共线直线",
+            "content": "$\\binom{12}{3} = 220$。$\\fbox{KLM} = 220$。\n\n$4$ 点共线（水平线 $y=1,2,3$）：$3$ 条。$\\fbox{N} = 3$。\n\n$3$ 点共线：垂直 $4$ 条（$x=1,2,3,4$）；斜率 $1$（$y=x, y=x-1$）$2$ 条；斜率 $-1$（$y=-x+4, y=-x+5$）$2$ 条。合计 $4+2+2 = 8$。$\\fbox{O} = 8$。\n\n退化数：(i) $3 \\cdot \\binom{4}{3} = 3 \\cdot 4 = 12$，$\\fbox{PQ}=12$；(ii) $8 \\cdot \\binom{3}{3} = 8$，$\\fbox{R}=8$。\n\n三角形数 $= 220 - 12 - 8 = 200$。$\\fbox{STU} = 200$。"
+          },
+          {
+            "title": "(2) $AB$ 上 2 顶点",
+            "content": "$AB$ 在 $y=1$ 线，含 $4$ 个点 $(1,1),(2,1),(3,1),(4,1)$。\n\n选 $2$ 个作顶点：$\\binom{4}{2} = 6$。第 $3$ 顶点必须不在 $AB$ 线上：$12 - 4 = 8$ 种。\n\n合计 $6 \\times 8 = 48$。$\\fbox{VW} = 48$。"
+          }
+        ],
+        "finalAnswer": "KLM=220, N=3, O=8, PQ=12, R=8, STU=200, VW=48"
+      }
+    },
+    {
+      "id": "c2-II-1",
+      "number": "II-1",
+      "topic": "三角形向量内积与等分点极限",
+      "topicTag": "向量·极限",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "三角形 $ABC$ 中 $AB = 2, BC = 3, CA = 4$。\n\n(1) $\\angle ABC = \\theta$。$\\vec{AB} \\cdot \\vec{BC} = \\fbox{AB}\\cos\\theta$。由余弦定理求 $\\cos\\theta$ 后 $\\vec{AB} \\cdot \\vec{BC} = \\dfrac{\\fbox{C}}{\\fbox{D}}$（①）。\n\n(2) 把 $BC$ $n$ 等分，从 $B$ 起依次为 $P_1, \\ldots, P_{n-1}$，$B = P_0, C = P_n$。则\n$$\\vec{AP_{k-1}} \\cdot \\vec{AP_k} = \\fbox{E} + \\dfrac{\\fbox{F}\\,k - \\fbox{G}}{2n} + \\dfrac{\\fbox{H}(k^2 - k)}{n^2}$$\n$$\\lim_{n\\to\\infty}\\dfrac{1}{n}\\sum_{k=1}^n \\vec{AP_{k-1}}\\cdot\\vec{AP_k} = \\dfrac{\\fbox{IJ}}{\\fbox{K}}$$",
+      "solution": {
+        "translation": "$\\vec{AB}\\cdot\\vec{BC}$ 中两向量夹角是 $180°-\\theta$，故 $= -|AB||BC|\\cos\\theta$。",
+        "analysis": "$\\vec{AP_k} = \\vec{AB} + (k/n)\\vec{BC}$。",
+        "steps": [
+          {
+            "title": "(1) $\\vec{AB}\\cdot\\vec{BC}$",
+            "content": "$\\vec{AB}, \\vec{BC}$ 夹角 $= 180°-\\theta$（因 $\\vec{BA}$ 与 $\\vec{BC}$ 夹角为 $\\theta$）。\n\n$\\vec{AB}\\cdot\\vec{BC} = |AB||BC|\\cos(180°-\\theta) = -6\\cos\\theta$。$\\fbox{AB} = -6$。\n\n$\\cos\\theta = \\dfrac{AB^2+BC^2-CA^2}{2\\cdot AB\\cdot BC} = \\dfrac{4+9-16}{12} = -\\dfrac{1}{4}$。\n\n$\\vec{AB}\\cdot\\vec{BC} = -6\\cdot\\left(-\\dfrac{1}{4}\\right) = \\dfrac{3}{2}$。$\\fbox{C}=3, \\fbox{D}=2$。"
+          },
+          {
+            "title": "(2) 等分点内积",
+            "content": "$\\vec{AP_k} = \\vec{AB} + \\dfrac{k}{n}\\vec{BC}$，类似 $\\vec{AP_{k-1}}$。展开：\n\n$\\vec{AP_{k-1}}\\cdot\\vec{AP_k} = |\\vec{AB}|^2 + \\dfrac{2k-1}{n}\\vec{AB}\\cdot\\vec{BC} + \\dfrac{k(k-1)}{n^2}|\\vec{BC}|^2$\n\n$= 4 + \\dfrac{(2k-1)}{n}\\cdot\\dfrac{3}{2} + \\dfrac{9(k^2-k)}{n^2} = 4 + \\dfrac{6k - 3}{2n} + \\dfrac{9(k^2-k)}{n^2}$。\n\n$\\fbox{E}=4, \\fbox{F}=6, \\fbox{G}=3, \\fbox{H}=9$。"
+          },
+          {
+            "title": "极限",
+            "content": "$\\sum_{k=1}^n = 4n + \\dfrac{1}{2n}(6\\cdot\\tfrac{n(n+1)}{2} - 3n) + \\dfrac{9}{n^2}\\left(\\tfrac{n(n+1)(2n+1)}{6} - \\tfrac{n(n+1)}{2}\\right)$\n\n$= 4n + \\dfrac{3n^2}{2n} + \\dfrac{9(n^2-1)}{n} = 4n + \\dfrac{3n}{2} + 9 - \\dfrac{9}{n}$\n\n等等，让我重算：$\\dfrac{9}{n^2}\\cdot n(n+1)\\cdot\\dfrac{(2n+1)-3}{6} = \\dfrac{9(n+1)(2n-2)}{6n} = \\dfrac{3(n+1)(n-1)}{n} = \\dfrac{3(n^2-1)}{n}$。\n\n所以 $\\sum = 4n + \\dfrac{3n}{2} + \\dfrac{3n^2-3}{n} = 4n + \\dfrac{3n}{2} + 3n - \\dfrac{3}{n} = \\dfrac{17n}{2} - \\dfrac{3}{n}$。\n\n$\\dfrac{1}{n}\\sum = \\dfrac{17}{2} - \\dfrac{3}{n^2} \\to \\dfrac{17}{2}$。$\\fbox{IJ}=17, \\fbox{K}=2$。"
+          }
+        ],
+        "finalAnswer": "AB=-6, CD=32, EFGH=4639, IJK=172"
+      }
+    },
+    {
+      "id": "c2-II-2",
+      "number": "II-2",
+      "topic": "复数不等式表示的圆与直线",
+      "topicTag": "复数",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "复数 $z$ 满足 $z\\bar z - (1-2i)z - (1+2i)\\bar z \\le 15$（①）。\n\n(1) 不等式 ① 表示的图形是圆心 $\\fbox{L} + \\fbox{M}\\,i$、半径 $\\fbox{N}\\sqrt{\\fbox{O}}$ 的圆内部及圆周。\n\n(2) 直线 $(1-i)z - (1+i)\\bar z = 2i$ 上、满足 ① 的复数 $z$ 中，$|z|$ 最大者 $z_1$、最小者 $z_2$：\n$$z_1 = \\sqrt{\\fbox{PQ}} + \\fbox{R} + (\\sqrt{\\fbox{ST}} + \\fbox{U})i, \\qquad z_2 = -\\dfrac{\\fbox{V}}{\\fbox{W}} + \\dfrac{\\fbox{X}}{\\fbox{Y}}i$$",
+      "solution": {
+        "translation": "$z\\bar z = |z|^2$；$(1-2i)z + (1+2i)\\bar z = 2\\text{Re}[(1-2i)z]$。",
+        "analysis": "用 $z = x + iy$ 化为 $x, y$ 二次形，配方得圆方程。",
+        "steps": [
+          {
+            "title": "(1) 圆",
+            "content": "$z = x+iy$：$z\\bar z = x^2 + y^2$。$(1-2i)z = (x+2y) + i(y-2x)$，$(1+2i)\\bar z = (x+2y) + i(2x-y)$。\n\n$(1-2i)z + (1+2i)\\bar z = 2(x + 2y)$。\n\n不等式：$x^2+y^2 - 2(x+2y) \\le 15 \\Leftrightarrow (x-1)^2 + (y-2)^2 \\le 20$。\n\n圆心 $1 + 2i$，半径 $\\sqrt{20} = 2\\sqrt 5$。$\\fbox{L}=1, \\fbox{M}=2, \\fbox{N}=2, \\fbox{O}=5$。"
+          },
+          {
+            "title": "(2) 直线与最值",
+            "content": "$(1-i)z - (1+i)\\bar z = 2i(y - x) = 2i \\Rightarrow y - x = 1$，即 $y = x + 1$。\n\n代入圆：$(x-1)^2 + (x-1)^2 \\le 20 \\Rightarrow (x-1)^2 \\le 10 \\Rightarrow 1 - \\sqrt{10} \\le x \\le 1 + \\sqrt{10}$。\n\n$|z|^2 = x^2 + (x+1)^2 = 2x^2 + 2x + 1$。顶点 $x = -1/2 \\in [1-\\sqrt{10}, 1+\\sqrt{10}]$，最小 $|z|^2 = 1/2$。\n\n$z_2$（最小）：$x = -1/2, y = 1/2$，$z_2 = -\\dfrac{1}{2} + \\dfrac{1}{2}i$。$\\fbox{V}=1, \\fbox{W}=2, \\fbox{X}=1, \\fbox{Y}=2$。\n\n$z_1$（最大）：$x = 1+\\sqrt{10}, y = 2+\\sqrt{10}$，$z_1 = (1+\\sqrt{10}) + (2+\\sqrt{10})i = \\sqrt{10} + 1 + (\\sqrt{10} + 2)i$。$\\fbox{PQ}=10, \\fbox{R}=1, \\fbox{ST}=10, \\fbox{U}=2$。"
+          }
+        ],
+        "finalAnswer": "LM=12, NO=25, PQR=101, STU=102, VWXY=1212"
+      }
+    },
+    {
+      "id": "c2-III-1",
+      "number": "III",
+      "topic": "圆弧上 $t, u$ 的范围",
+      "topicTag": "曲线·微分",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "满足以下 $4$ 个条件的实数 $x, y, t, u$：\n$y \\ge |x|$ … ①，$x + y = t$ … ②，$x^2 + y^2 = 12$ … ③，$x^3 + y^3 = u$ … ④。\n\n(1) 由 ①③，$(x, y)$ 在以原点为中心、半径 $\\fbox{A}\\sqrt{\\fbox{B}}$ 的圆四分之一弧上，弧端点 $\\left(\\sqrt{\\fbox{C}}, \\sqrt{\\fbox{D}}\\right), \\left(-\\sqrt{\\fbox{C}}, \\sqrt{\\fbox{D}}\\right)$。由 ② $t$ 范围 $\\fbox{E} \\le t \\le \\fbox{F}\\sqrt{\\fbox{G}}$（⑤）。\n\n(2) 由 ②③ 得 $xy = \\dfrac{\\fbox{H}}{\\fbox{I}}(t^2 - \\fbox{JK})$。由 ④ 得 $u = \\dfrac{\\fbox{L}}{\\fbox{M}}(\\fbox{NO}\\,t - t^3)$。$\\dfrac{du}{dt} = \\dfrac{\\fbox{P}}{\\fbox{Q}}(\\fbox{RS} - t^2)$。在 ⑤ 范围内 $u$ 范围 $\\fbox{T} \\le u \\le \\fbox{UV}\\sqrt{\\fbox{W}}$。",
+      "solution": {
+        "translation": "$y \\ge |x|$ 且 $x^2+y^2=12$ 把点限制在四分之一弧 $y \\ge |x|$（圆上方区域）。",
+        "analysis": "$x^3+y^3 = (x+y)^3 - 3xy(x+y)$。",
+        "steps": [
+          {
+            "title": "(1) 弧与 $t$",
+            "content": "半径 $\\sqrt{12} = 2\\sqrt 3$。$\\fbox{A}=2, \\fbox{B}=3$。\n\n端点：$y = |x|$ 与圆交：$2x^2 = 12 \\Rightarrow x = \\pm\\sqrt 6, y = \\sqrt 6$。$\\fbox{C}=6, \\fbox{D}=6$。\n\n$t = x + y$ 取值：用参数 $x = 2\\sqrt 3\\cos\\theta, y = 2\\sqrt 3\\sin\\theta$，$\\theta \\in [\\pi/4, 3\\pi/4]$。$t = 2\\sqrt 3(\\cos\\theta + \\sin\\theta) = 2\\sqrt 6\\sin(\\theta + \\pi/4)$，$\\theta + \\pi/4 \\in [\\pi/2, \\pi]$，$t \\in [0, 2\\sqrt 6]$。$\\fbox{E}=0, \\fbox{F}=2, \\fbox{G}=6$。"
+          },
+          {
+            "title": "(2) $xy, u$",
+            "content": "$xy = \\dfrac{(x+y)^2 - (x^2+y^2)}{2} = \\dfrac{t^2 - 12}{2}$。$\\fbox{H}=1, \\fbox{I}=2, \\fbox{JK}=12$。\n\n$u = (x+y)^3 - 3xy(x+y) = t^3 - 3\\cdot\\dfrac{t^2-12}{2}\\cdot t = \\dfrac{2t^3 - 3t^3 + 36t}{2} = \\dfrac{36t - t^3}{2}$。$\\fbox{L}=1, \\fbox{M}=2, \\fbox{NO}=36$。\n\n$\\dfrac{du}{dt} = \\dfrac{36 - 3t^2}{2} = \\dfrac{3(12 - t^2)}{2}$。$\\fbox{P}=3, \\fbox{Q}=2, \\fbox{RS}=12$。"
+          },
+          {
+            "title": "$u$ 范围",
+            "content": "$du/dt = 0$ 在 $t = \\sqrt{12} = 2\\sqrt 3$；$0 \\le t \\le 2\\sqrt 3$ 递增，$2\\sqrt 3 \\le t \\le 2\\sqrt 6$ 递减。\n\n$u(0) = 0$；$u(2\\sqrt 3) = \\dfrac{36\\cdot 2\\sqrt 3 - 24\\sqrt 3}{2} = \\dfrac{48\\sqrt 3}{2} = 24\\sqrt 3$；$u(2\\sqrt 6) = \\dfrac{72\\sqrt 6 - 48\\sqrt 6}{2} = 12\\sqrt 6$。\n\n比较 $24\\sqrt 3 = \\sqrt{1728}$，$12\\sqrt 6 = \\sqrt{864}$，$24\\sqrt 3 > 12\\sqrt 6$。\n\n所以 $u$ 最大 $= 24\\sqrt 3$，最小 $= 0$（端点 $t=0$）。$\\fbox{T}=0, \\fbox{UV}=24, \\fbox{W}=3$。"
+          }
+        ],
+        "finalAnswer": "AB=23, CD=66, E=0, FG=26, HIJK=1212, LMNO=1236, PQRS=3212, T=0, UVW=243"
+      }
+    },
+    {
+      "id": "c2-IV-1",
+      "number": "IV",
+      "topic": "$y=1$ 分割面积之差最大",
+      "topicTag": "微分·积分",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "$a > 1$。区域 $0 \\le x \\le \\dfrac{\\pi}{6}, 0 \\le y \\le a\\cos 3x$ 被直线 $y = 1$ 分为两部分：$y \\ge 1$ 部分面积 $S$，$y \\le 1$ 部分面积 $T$。求 $T - S$ 最大时 $a$ 与最大值。\n\n令 $a\\cos 3t = 1$（$t \\in [0, \\pi/6]$），则\n$$S = \\dfrac{\\sin 3t}{\\fbox{A}\\cos 3t} - t, \\qquad S + T = \\dfrac{1}{\\fbox{B}\\cos 3t}$$\n令 $f(t) = T - S$，则\n$$f'(t) = \\dfrac{(\\fbox{C} - \\fbox{D}\\sin 3t)\\sin 3t}{\\cos^{\\fbox{E}}3t}$$\n故 $T - S$ 在 $t = \\dfrac{\\pi}{\\fbox{FG}}$ 取最大，对应 $a = \\dfrac{\\fbox{H}\\sqrt{\\fbox{I}}}{\\fbox{J}}$，$T - S$ 最大值 $\\dfrac{\\pi}{\\fbox{K}}$。",
+      "solution": {
+        "translation": "用 $t$ 表示交点：$a\\cos 3t = 1$。$S$ 是曲线超过 $1$ 的部分；总面积 $S+T = \\int a\\cos 3x\\,dx$。",
+        "analysis": "$a = 1/\\cos 3t$。$T - S = (S+T) - 2S$。",
+        "steps": [
+          {
+            "title": "$S$ 与 $S+T$",
+            "content": "$S = \\int_0^t (a\\cos 3x - 1)dx = \\dfrac{a\\sin 3t}{3} - t = \\dfrac{\\sin 3t}{3\\cos 3t} - t$（因 $a\\sin 3t = \\sin 3t/\\cos 3t$）。$\\fbox{A} = 3$。\n\n$S + T = \\int_0^{\\pi/6} a\\cos 3x\\,dx = \\dfrac{a}{3}\\sin\\dfrac{\\pi}{2} = \\dfrac{a}{3} = \\dfrac{1}{3\\cos 3t}$。$\\fbox{B} = 3$。"
+          },
+          {
+            "title": "$f'(t)$",
+            "content": "$f(t) = T - S = (S+T) - 2S = \\dfrac{1 - 2\\sin 3t}{3\\cos 3t} + 2t$。\n\n对 $\\dfrac{1-2\\sin 3t}{3\\cos 3t}$ 求导：\n分子导 $-6\\cos 3t \\cdot 3\\cos 3t - (1-2\\sin 3t)(-9\\sin 3t)$，分母 $(3\\cos 3t)^2$。\n$= [-18\\cos^2 3t + 9\\sin 3t - 18\\sin^2 3t]/(9\\cos^2 3t) = \\dfrac{9\\sin 3t - 18}{9\\cos^2 3t} = \\dfrac{\\sin 3t - 2}{\\cos^2 3t}$。\n\n加 $+2$：$f'(t) = \\dfrac{\\sin 3t - 2 + 2\\cos^2 3t}{\\cos^2 3t} = \\dfrac{\\sin 3t - 2\\sin^2 3t}{\\cos^2 3t} = \\dfrac{(1 - 2\\sin 3t)\\sin 3t}{\\cos^2 3t}$。\n\n$\\fbox{C}=1, \\fbox{D}=2, \\fbox{E}=2$。"
+          },
+          {
+            "title": "最大点",
+            "content": "$f'(t) = 0$（$0 < t < \\pi/6$）：$\\sin 3t = 1/2 \\Rightarrow 3t = \\pi/6 \\Rightarrow t = \\pi/18$。$\\fbox{FG} = 18$。\n\n验为极大（$t<\\pi/18$ 时 $1-2\\sin3t>0$、$\\sin3t>0$，$f'>0$；之后变号）。\n\n$a = \\dfrac{1}{\\cos(\\pi/6)} = \\dfrac{2}{\\sqrt 3} = \\dfrac{2\\sqrt 3}{3}$。$\\fbox{H}=2, \\fbox{I}=3, \\fbox{J}=3$。\n\n$f(\\pi/18)$：$3t=\\pi/6$，$\\sin=1/2, \\cos=\\sqrt 3/2$。$\\dfrac{1-1}{3\\sqrt 3/2} + 2\\cdot\\dfrac{\\pi}{18} = 0 + \\dfrac{\\pi}{9} = \\dfrac{\\pi}{9}$。$\\fbox{K} = 9$。"
+          }
+        ],
+        "finalAnswer": "A=3, B=3, CDE=122, FG=18, HIJ=233, K=9"
+      }
+    }
+  ]
+}
