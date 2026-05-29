@@ -1,0 +1,177 @@
+{
+  "metadata": {
+    "course": "course2",
+    "year": "2016",
+    "session": "2",
+    "courseNameJa": "数学2",
+    "courseNameEn": "Course 2 (Advanced)",
+    "description": "上级课程｜理科方向",
+    "color": "#9333ea",
+    "examTitle": "2016年度（平成28年）第2回",
+    "examDate": "2016年11月"
+  },
+  "questions": [
+    {
+      "id": "c2-I-1",
+      "number": "I-1",
+      "topic": "二次函数最大值与零点距离",
+      "topicTag": "二次函数",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "二次函数 $y = ax^2 + bx + c$（①）在 $x = 1$ 时取最大值 $16$，与 $x$ 轴两交点间距离为 $8$。求 $a, b, c$。\n\n由条件 ① 可写为 $y = a(x - \\fbox{A})^2 + \\fbox{BC}$。与 $x$ 轴交点 $(-\\fbox{D}, 0), (\\fbox{E}, 0)$。故 $a = \\fbox{FG}$，$b = \\fbox{H}$，$c = \\fbox{IJ}$。",
+      "solution": {
+        "translation": "「最大值」要 $a < 0$；顶点 $(1, 16)$；两交点距离 $8$。",
+        "analysis": "$y = a(x-1)^2 + 16$，零点距对称轴 $\\sqrt{-16/a}$，距离 $2\\sqrt{-16/a} = 8$。",
+        "steps": [
+          {
+            "title": "求 $a$ 与零点",
+            "content": "$y = a(x-1)^2 + 16$。$\\fbox{A}=1, \\fbox{BC}=16$。\n\n零点：$a(x-1)^2 = -16 \\Rightarrow (x-1)^2 = -16/a$。距离 $2\\sqrt{-16/a} = 8 \\Rightarrow -16/a = 16 \\Rightarrow a = -1$。$\\fbox{FG}=-1$。\n\n零点 $x = 1 \\pm 4$，即 $-3, 5$。$\\fbox{D}=3, \\fbox{E}=5$。"
+          },
+          {
+            "title": "求 $b, c$",
+            "content": "$y = -(x-1)^2 + 16 = -x^2 + 2x + 15$。$b=2, c=15$。$\\fbox{H}=2, \\fbox{IJ}=15$。"
+          }
+        ],
+        "finalAnswer": "ABC=116, D=3, E=5, FG=-1, H=2, IJ=15"
+      }
+    },
+    {
+      "id": "c2-I-2",
+      "number": "I-2",
+      "topic": "卡片同时取与放回取的概率",
+      "topicTag": "概率",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "盒中有 $0$～$9$ 共 $10$ 张卡片。\n\n(1) 同时取 $3$ 张：\n  (i) $3$ 张数字都在 $[2, 6]$ 的概率 $\\dfrac{\\fbox{K}}{\\fbox{LM}}$。\n  (ii) 最小数 $\\le 2$ 且最大数 $\\ge 8$ 的概率 $\\dfrac{\\fbox{NO}}{\\fbox{PQ}}$。\n\n(2) 取 $1$ 张看完放回，重复 $3$ 次。最小数 $\\ge 2$ 且最大数 $\\le 6$ 的概率 $\\dfrac{\\fbox{R}}{\\fbox{S}}$。",
+      "solution": {
+        "translation": "$\\binom{10}{3} = 120$。",
+        "analysis": "(1)(ii) 用容斥；(2) 各次独立。",
+        "steps": [
+          {
+            "title": "(1)(i) 全在 $[2,6]$",
+            "content": "可选 $\\{2,3,4,5,6\\}$，$\\binom{5}{3} = 10$。$P = \\dfrac{10}{120} = \\dfrac{1}{12}$。$\\fbox{K}=1, \\fbox{LM}=12$。"
+          },
+          {
+            "title": "(1)(ii) min $\\le 2$ 且 max $\\ge 8$",
+            "content": "$A$：min $\\le 2$；$B$：max $\\ge 8$。\n\n$P(A \\cap B) = 1 - P(A^c) - P(B^c) + P(A^c \\cap B^c)$\n$A^c$（min $>2$）：$\\binom{7}{3} = 35$；$B^c$（max $<8$）：$\\binom{8}{3} = 56$；$A^c \\cap B^c$：$\\binom{5}{3} = 10$。\n\n$P(A\\cap B) = (120 - 35 - 56 + 10)/120 = 39/120 = 13/40$。$\\fbox{NO}=13, \\fbox{PQ}=40$。"
+          },
+          {
+            "title": "(2) 放回 3 次",
+            "content": "每次抽到 $\\{2,3,4,5,6\\}$ 概率 $1/2$。$3$ 次独立：$(1/2)^3 = 1/8$。$\\fbox{R}=1, \\fbox{S}=8$。"
+          }
+        ],
+        "finalAnswer": "KLM=112, NOPQ=1340, RS=18"
+      }
+    },
+    {
+      "id": "c2-II-1",
+      "number": "II",
+      "topic": "对数递推与极限",
+      "topicTag": "数列·极限",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "正数列 $\\{a_n\\}$ 满足 $a_1 = 1, a_2 = 10$，$(a_n)^2 a_{n-2} = (a_{n-1})^3$（$n \\ge 3$，①）。求 $\\lim_{n\\to\\infty} a_n$。\n\n对 ① 取常用对数：$\\fbox{A}\\log_{10}a_n + \\log_{10}a_{n-2} = \\fbox{B}\\log_{10}a_{n-1}$。令 $b_n = \\log_{10}a_n$：$\\fbox{A}\\,b_n + b_{n-2} = \\fbox{B}\\,b_{n-1}$（②）。变形：\n$$b_n - b_{n-1} = \\dfrac{1}{\\fbox{C}}(b_{n-1} - b_{n-2})$$\n$$b_n - b_{n-1} = \\left(\\dfrac{1}{\\fbox{C}}\\right)^{n-\\fbox{D}}(b_2 - b_1) \\quad \\cdots ③$$\n\n$b_1 = \\fbox{E}, b_2 = \\fbox{F}$。由 ③：$b_n = \\sum_{k=2}^n \\left(\\dfrac{1}{\\fbox{C}}\\right)^{k - \\fbox{G}}$，故 $b_n = \\fbox{H} - \\left(\\dfrac{1}{\\fbox{C}}\\right)^{n - \\fbox{I}}$。$\\lim_{n\\to\\infty} a_n = \\fbox{JKL}$。",
+      "solution": {
+        "translation": "把递推取对数化为线性递推；差分公比 $1/2$。",
+        "analysis": "$2b_n + b_{n-2} = 3b_{n-1} \\Leftrightarrow 2(b_n - b_{n-1}) = b_{n-1} - b_{n-2}$。",
+        "steps": [
+          {
+            "title": "化为线性递推",
+            "content": "取对数：$2\\log a_n + \\log a_{n-2} = 3\\log a_{n-1}$。$\\fbox{A}=2, \\fbox{B}=3$。\n\n$2b_n + b_{n-2} = 3b_{n-1} \\Rightarrow 2(b_n - b_{n-1}) = b_{n-1} - b_{n-2} \\Rightarrow b_n - b_{n-1} = \\dfrac{1}{2}(b_{n-1} - b_{n-2})$。$\\fbox{C}=2$。\n\n几何递推 $b_n - b_{n-1} = (1/2)^{n-2}(b_2 - b_1)$。$\\fbox{D}=2$。"
+          },
+          {
+            "title": "求 $b_n$",
+            "content": "$b_1 = \\log 1 = 0$（$\\fbox{E}=0$），$b_2 = \\log 10 = 1$（$\\fbox{F}=1$）。\n\n$b_n = \\sum_{k=2}^n (b_k - b_{k-1}) = \\sum_{k=2}^n (1/2)^{k-2}\\cdot 1$。$\\fbox{G}=2$。\n\n等比和：$\\sum_{k=2}^n (1/2)^{k-2} = \\dfrac{1 - (1/2)^{n-1}}{1/2} = 2 - (1/2)^{n-2}$。$\\fbox{H}=2, \\fbox{I}=2$。\n\n$b_n \\to 2$，$a_n = 10^{b_n} \\to 100$。$\\fbox{JKL}=100$。"
+          }
+        ],
+        "finalAnswer": "AB=23, C=2, D=2, E=0, F=1, G=2, HI=22, JKL=100"
+      }
+    },
+    {
+      "id": "c2-III-1",
+      "number": "III",
+      "topic": "复数方程与三条件交集",
+      "topicTag": "复数",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "$x^2 + \\sqrt 3 x + 1 = 0$ 的两根 $\\alpha, \\beta$（$0 < \\arg\\alpha < \\arg\\beta < 2\\pi$）。考虑满足下列三条件的复数 $z$（$k$ 实数）：\n①  $\\arg\\dfrac{\\alpha - z}{\\beta - z} = \\dfrac{\\pi}{2}$；② $(1+i)z + (1-i)\\bar z + k = 0$；③ $\\dfrac{\\pi}{2} < \\arg z < \\pi$。\n\n复数平面上 $\\alpha, \\beta, z$ 对应点 $A, B, P$。\n\n(1) $\\arg\\alpha = \\dfrac{\\fbox{AB}}{\\fbox{C}}\\pi$ — 这里 $\\fbox{A}/\\fbox{B} \\to $ 实际答案为 $\\dfrac{\\fbox{A}}{\\fbox{B}}\\pi$（A=5,B=6），$\\arg\\beta = \\dfrac{\\fbox{C}}{\\fbox{D}}\\pi$。\n\n(2) 选项从下方 ⓪～⑨ 中选 $\\fbox{E}, \\fbox{Q}$ 等。\n  由 ①，$\\fbox{E} = \\dfrac{\\pi}{2}$，故 $P$ 在中心 $-\\dfrac{\\sqrt{\\fbox{F}}}{\\fbox{G}}$、半径 $\\dfrac{\\fbox{H}}{\\fbox{I}}$ 的圆周上。\n  由 ②，$P$ 在斜率 $\\fbox{J}$、虚轴交点 $\\dfrac{\\fbox{K}}{\\fbox{L}}\\,ki$ 的直线上。\n\n  ①②③ 公共解个数 $n$，最大值 $\\fbox{M}$；对应 $k$ 范围 $\\fbox{N} + \\sqrt{\\fbox{O}} < k < \\sqrt{\\fbox{P}} + \\sqrt{\\fbox{Q}}$（$\\fbox{P} < \\fbox{Q}$）。\n\n选项：⓪ $0$ ① $1$ ② $2$ ③ $3$ ④ $4$ ⑤ $5$ ⑥ $6$ ⑦ $\\angle PAB$ ⑧ $\\angle PBA$ ⑨ $\\angle APB$。",
+      "solution": {
+        "translation": "$\\alpha, \\beta$ 是单位圆上方/下方对称根；条件 ① 把 $z$ 限于以 $\\alpha\\beta$ 为直径的圆；②是直线；③限制在第二象限。",
+        "analysis": "$\\alpha = (-\\sqrt 3 + i)/2, \\beta = (-\\sqrt 3 - i)/2$。",
+        "steps": [
+          {
+            "title": "(1) $\\arg\\alpha, \\arg\\beta$",
+            "content": "$\\alpha = -\\dfrac{\\sqrt 3}{2} + \\dfrac{1}{2}i$：第二象限，$\\arg = \\pi - \\pi/6 = \\dfrac{5\\pi}{6}$。$\\fbox{A}=5, \\fbox{B}=6$。\n\n$\\beta = -\\dfrac{\\sqrt 3}{2} - \\dfrac{1}{2}i$：第三象限，$\\arg = \\pi + \\pi/6 = \\dfrac{7\\pi}{6}$。$\\fbox{C}=7, \\fbox{D}=6$。"
+          },
+          {
+            "title": "(2) ①② 的几何",
+            "content": "$\\arg\\dfrac{\\alpha-z}{\\beta-z} = \\pi/2$ 即 $\\angle APB = \\pi/2$。$\\fbox{E} = ⑨$。\n\n圆心 $(\\alpha+\\beta)/2 = -\\sqrt 3/2$，半径 $|\\alpha-\\beta|/2 = 1/2$。$\\fbox{F}=3, \\fbox{G}=2, \\fbox{H}=1, \\fbox{I}=2$。\n\n② $(1+i)z + (1-i)\\bar z + k = 0$：代 $z=x+iy$，得 $2(x-y) + k = 0 \\Rightarrow y = x + k/2$。斜率 $1$（$\\fbox{J} = ①$），与虚轴交于 $(0, k/2) = \\dfrac{1}{2}ki$。$\\fbox{K}=1, \\fbox{L}=2$。"
+          },
+          {
+            "title": "公共解",
+            "content": "①② 直线与圆交点最多 $2$。结合 ③（$z$ 在第二象限）与 ① 实际限制（圆上 $\\alpha\\beta$ 左侧弧），落在上左四分之一弧。\n\n线斜率 $1$，切弧时 $k = \\sqrt 3 + \\sqrt 2$；过端点 $\\alpha$ 与最左点时 $k = 1 + \\sqrt 3$。所以 $1 + \\sqrt 3 < k < \\sqrt 2 + \\sqrt 3$，此时 2 个交点。$\\fbox{M}=2, \\fbox{N}=1, \\fbox{O}=3, \\fbox{P}=2, \\fbox{Q}=3$。"
+          }
+        ],
+        "finalAnswer": "AB=56, CD=76, E=⑨, FG=32, HI=12, J=①, KL=12, M=2, NO=13, PQ=23"
+      }
+    },
+    {
+      "id": "c2-IV-1",
+      "number": "IV-1",
+      "topic": "对数不等式条件下函数最大值",
+      "topicTag": "对数·微分",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "$x$ 满足 $2(\\log_{1/3}x)^2 + 9\\log_{1/3}x + 9 \\le 0$（①）时，求 $f(x) = (\\log_3 x)(\\log_3\\frac{x}{3})(\\log_3\\frac{x}{9})$（②）的最大值。\n\n① 的解：$\\fbox{A}\\sqrt{\\fbox{B}} \\le x \\le \\fbox{CD}$。\n令 $\\log_3 x = t$，则 $\\dfrac{\\fbox{E}}{\\fbox{F}} \\le t \\le \\fbox{G}$。\n② 化为 $g(t)$，$g'(t) = \\fbox{H}t^2 - \\fbox{I}t + \\fbox{J}$。\n$f(x)$ 在 $x = \\fbox{KL}$ 取最大值 $\\fbox{M}$。",
+      "solution": {
+        "translation": "$\\log_{1/3} x = -\\log_3 x = -t$；① 关于 $-t$ 二次不等式。",
+        "analysis": "$g(t) = t(t-1)(t-2)$。",
+        "steps": [
+          {
+            "title": "$x, t$ 范围",
+            "content": "令 $s = \\log_{1/3}x$。$2s^2 + 9s + 9 \\le 0 \\Rightarrow (2s+3)(s+3) \\le 0 \\Rightarrow -3 \\le s \\le -\\dfrac{3}{2}$。\n\n$x = (1/3)^s$ 递减：$s=-3 \\Rightarrow x=27$；$s=-3/2 \\Rightarrow x = 3^{3/2} = 3\\sqrt 3$。\n\n$3\\sqrt 3 \\le x \\le 27$。$\\fbox{A}=3, \\fbox{B}=3, \\fbox{CD}=27$。\n\n$t = \\log_3 x \\in [\\log_3(3\\sqrt 3), 3] = [3/2, 3]$。$\\fbox{EF}=32, \\fbox{G}=3$。"
+          },
+          {
+            "title": "$g'$ 与最大",
+            "content": "$g(t) = t(t-1)(t-2) = t^3 - 3t^2 + 2t$。$g'(t) = 3t^2 - 6t + 2$。$\\fbox{HIJ}=362$。\n\n$g'(t) = 0$ 在 $t = 1 \\pm \\sqrt 3/3$，仅 $1+\\sqrt 3/3 \\approx 1.58$ 在 $[3/2, 3]$ 内。$g'(3/2) = 27/4 - 9 + 2 = -1/4 < 0$，$g'(3) = 11 > 0$。\n\n$g$ 在 $[3/2, 1+\\sqrt3/3]$ 递减，之后递增。比较端点：$g(3/2) = (3/2)(1/2)(-1/2) = -3/8$；$g(3) = 3 \\cdot 2 \\cdot 1 = 6$。\n\n最大 $g(3) = 6$，对应 $x = 3^3 = 27$。$\\fbox{KL}=27, \\fbox{M}=6$。"
+          }
+        ],
+        "finalAnswer": "AB=33, CD=27, EF=32, G=3, HIJ=362, KL=27, M=6"
+      }
+    },
+    {
+      "id": "c2-IV-2",
+      "number": "IV-2",
+      "topic": "$y=\\sqrt{x}e^{-x}$ 旋转体体积及变化率",
+      "topicTag": "积分·旋转体",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "$a > 0$。$y = \\sqrt x \\,e^{-x}$、$x$ 轴及直线 $x = a$ 围成的区域绕 $x$ 轴旋转得体积 $V$。\n\n(1) $V$ 作为 $a$ 的函数：\n$$V = -\\dfrac{\\pi}{4}\\left\\{(\\fbox{N}\\,a + \\fbox{O})e^{-\\fbox{P}\\,a} - \\fbox{Q}\\right\\}$$\n\n(2) $A(a,0)$ 从原点沿 $x$ 轴正方向移动，$t$ 秒后速度 $4t$。$V$ 关于 $t$ 的变化率为\n$$\\dfrac{dV}{dt} = \\fbox{R}\\pi t^{\\fbox{S}}e^{-\\fbox{T}\\,t^{\\fbox{U}}}$$\n该变化率最大时 $t = \\dfrac{\\sqrt{\\fbox{V}}}{4}$，此时 $V = -\\dfrac{\\pi}{8}\\left(\\fbox{W}\\,e^{-\\fbox{X}/\\fbox{Y}} - \\fbox{Z}\\right)$。",
+      "solution": {
+        "translation": "$V = \\pi\\int_0^a y^2 dx = \\pi\\int_0^a x e^{-2x}dx$；用分部积分。",
+        "analysis": "$\\int x e^{-2x}dx = -\\dfrac{x}{2}e^{-2x} - \\dfrac{1}{4}e^{-2x}$。",
+        "steps": [
+          {
+            "title": "(1) $V(a)$",
+            "content": "$V = \\pi\\int_0^a x e^{-2x} dx = \\pi\\left[-\\dfrac{x e^{-2x}}{2} - \\dfrac{e^{-2x}}{4}\\right]_0^a$\n$= \\pi\\left[-\\dfrac{a e^{-2a}}{2} - \\dfrac{e^{-2a}}{4} + \\dfrac{1}{4}\\right] = \\dfrac{\\pi}{4}\\left[1 - (2a+1)e^{-2a}\\right]$\n$= -\\dfrac{\\pi}{4}\\left\\{(2a+1)e^{-2a} - 1\\right\\}$。\n\n$\\fbox{N}=2, \\fbox{O}=1, \\fbox{P}=2, \\fbox{Q}=1$。"
+          },
+          {
+            "title": "(2) $dV/dt$",
+            "content": "$a(t) = \\int_0^t 4s\\,ds = 2t^2$。\n\n$\\dfrac{dV}{da} = \\dfrac{\\pi}{4}\\dfrac{d}{da}[1 - (2a+1)e^{-2a}] = \\dfrac{\\pi}{4}\\cdot 4a e^{-2a} = \\pi a e^{-2a}$。\n\n$\\dfrac{dV}{dt} = \\dfrac{dV}{da}\\cdot\\dfrac{da}{dt} = \\pi(2t^2)e^{-4t^2}\\cdot 4t = 8\\pi t^3 e^{-4t^2}$。\n\n$\\fbox{R}=8, \\fbox{S}=3, \\fbox{T}=4, \\fbox{U}=2$。"
+          },
+          {
+            "title": "最大化",
+            "content": "$\\dfrac{d}{dt}(8\\pi t^3 e^{-4t^2}) = 8\\pi t^2 e^{-4t^2}(3 - 8t^2)$。\n\n$=0$ 时 $t^2 = 3/8$，$t = \\dfrac{\\sqrt 6}{4}$。$\\fbox{V}=6$。\n\n$a = 2t^2 = 3/4$，$e^{-2a} = e^{-3/2}$。\n$V = \\dfrac{\\pi}{4}[1 - (3/2 + 1)e^{-3/2}] = \\dfrac{\\pi}{4} - \\dfrac{5\\pi}{8}e^{-3/2} = -\\dfrac{\\pi}{8}(5 e^{-3/2} - 2)$。\n\n$\\fbox{W}=5, \\fbox{X}=3, \\fbox{Y}=2, \\fbox{Z}=2$。"
+          }
+        ],
+        "finalAnswer": "NOPQ=2121, RSTU=8342, V=6, WXYZ=5322"
+      }
+    }
+  ]
+}
