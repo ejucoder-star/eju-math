@@ -1,0 +1,180 @@
+{
+  "metadata": {
+    "course": "course2",
+    "year": "2017",
+    "session": "1",
+    "courseNameJa": "数学2",
+    "courseNameEn": "Course 2 (Advanced)",
+    "description": "上级课程｜理科方向",
+    "color": "#9333ea",
+    "examTitle": "2017年度（平成29年）第1回",
+    "examDate": "2017年6月"
+  },
+  "questions": [
+    {
+      "id": "c2-I-1",
+      "number": "I-1",
+      "topic": "二次函数平移与对称",
+      "topicTag": "二次函数",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "二次函数 $y = 3x^2 - 6$。\n\n(1) 平移 $y = 3x^2 - 6$ 使图象经过 $(1, 5), (4, 14)$。结果为\n$$y = \\fbox{A}\\,x^2 - \\fbox{BC}\\,x + \\fbox{DE} \\quad \\cdots ①$$\n该图象由 $y = 3x^2 - 6$ 沿 $x$ 轴平移 $\\fbox{F}$、沿 $y$ 轴平移 $\\fbox{G}$ 而得。\n\n(2) 关于直线 $y = c$，与 $y = 3x^2 - 6$ 的图象对称的图象为\n$$y = -\\fbox{H}\\,x^2 + \\fbox{I}\\,c + \\fbox{J} \\quad \\cdots ②$$\n①② 恰有 $1$ 个公共点时 $c = \\fbox{K}$，公共点 $(\\fbox{L}, \\fbox{M})$。",
+      "solution": {
+        "translation": "平移 $(h,k)$：$y = 3(x-h)^2 - 6 + k$。对称于 $y=c$：$y \\to 2c - y$。",
+        "analysis": "两点代入解 $h, k$；公共点用判别式 $= 0$。",
+        "steps": [
+          {
+            "title": "(1) 平移",
+            "content": "$y = 3(x-h)^2 - 6 + k$ 经 $(1,5), (4,14)$：\n$5 = 3(1-h)^2 - 6 + k$，$14 = 3(4-h)^2 - 6 + k$。\n相减：$3[(4-h)^2 - (1-h)^2] = 9 \\Rightarrow (4-h+1-h)(4-h-1+h) = 3 \\Rightarrow (5-2h)\\cdot 3 = 3 \\Rightarrow h = 2$。\n$k = 11 - 3 = 8$。$\\fbox{F}=2, \\fbox{G}=8$。\n\n$y = 3(x-2)^2 + 2 = 3x^2 - 12x + 14$。$\\fbox{A}=3, \\fbox{BC}=12, \\fbox{DE}=14$。"
+          },
+          {
+            "title": "(2) 对称与公共点",
+            "content": "$(x, y) \\to (x, 2c-y)$。新方程：$2c - y = 3x^2 - 6 \\Rightarrow y = -3x^2 + 2c + 6$。$\\fbox{H}=3, \\fbox{I}=2, \\fbox{J}=6$。\n\n①② 联立：$3x^2 - 12x + 14 = -3x^2 + 2c + 6 \\Rightarrow 6x^2 - 12x + 8 - 2c = 0 \\Rightarrow 3x^2 - 6x + (4 - c) = 0$。\n\n判别式 $= 0$：$36 - 12(4-c) = 0 \\Rightarrow c = 1$。$\\fbox{K}=1$。\n\n$x = \\dfrac{6}{6} = 1$，$y = 3 - 12 + 14 = 5$。$\\fbox{L}=1, \\fbox{M}=5$。"
+          }
+        ],
+        "finalAnswer": "ABCDE=31214, F=2, G=8, HIJ=326, K=1, LM=15"
+      }
+    },
+    {
+      "id": "c2-I-2",
+      "number": "I-2",
+      "topic": "卡片色组合与抽取概率",
+      "topicTag": "概率·组合",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "白卡 $4$、红卡 $3$、黑卡 $3$（共 $10$ 张，数字皆不同）。\n\n(1) 取 $2$ 张分别放入 $A, B$ 箱（区分顺序）：共 $\\fbox{NO}$ 通。\n\n(2) 取 $2$ 张（不分顺序）：同色 $\\fbox{PQ}$ 通；异色 $\\fbox{RS}$ 通。\n\n依次抽 $2$ 张不放回：\n\n(3) 同色概率 $\\dfrac{\\fbox{T}}{\\fbox{UV}}$。\n\n(4) 第 $1$ 张白或红、第 $2$ 张红或黑的概率 $\\dfrac{\\fbox{WX}}{\\fbox{YZ}}$。",
+      "solution": {
+        "translation": "用组合或条件概率分情形求和。",
+        "analysis": "(4) 按第 1 张是 W/R 分支。",
+        "steps": [
+          {
+            "title": "(1)(2)",
+            "content": "(1) 顺序 $P(10,2) = 10 \\cdot 9 = 90$。$\\fbox{NO}=90$。\n\n(2) 同色 $\\binom{4}{2} + \\binom{3}{2} + \\binom{3}{2} = 6+3+3 = 12$。$\\fbox{PQ}=12$。异色 $\\binom{10}{2} - 12 = 45 - 12 = 33$。$\\fbox{RS}=33$。"
+          },
+          {
+            "title": "(3) 同色",
+            "content": "$\\dfrac{4 \\cdot 3 + 3 \\cdot 2 + 3 \\cdot 2}{10 \\cdot 9} = \\dfrac{12+6+6}{90} = \\dfrac{24}{90} = \\dfrac{4}{15}$。$\\fbox{T}=4, \\fbox{UV}=15$。"
+          },
+          {
+            "title": "(4) W/R 然后 R/B",
+            "content": "$P($ 1W, 2 R/B$) = \\dfrac{4}{10} \\cdot \\dfrac{6}{9} = \\dfrac{24}{90}$。\n$P($ 1R, 2 R/B$) = \\dfrac{3}{10} \\cdot \\dfrac{5}{9} = \\dfrac{15}{90}$。\n\n合计 $\\dfrac{39}{90} = \\dfrac{13}{30}$。$\\fbox{WX}=13, \\fbox{YZ}=30$。"
+          }
+        ],
+        "finalAnswer": "NO=90, PQ=12, RS=33, TUV=415, WXYZ=1330"
+      }
+    },
+    {
+      "id": "c2-II-1",
+      "number": "II-1",
+      "topic": "向量与重心共线",
+      "topicTag": "向量",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "questionDiagram": {
+        "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 340 280' font-family='serif' font-size='14'><polygon points='40,240 240,240 160,40' fill='none' stroke='#1c1917' stroke-width='1.3'/><polygon points='40,240 240,240 320,140' fill='none' stroke='#1c1917' stroke-width='1.3'/><circle cx='40' cy='240' r='3' fill='#1c1917'/><circle cx='240' cy='240' r='3' fill='#1c1917'/><circle cx='160' cy='40' r='3' fill='#dc2626'/><circle cx='320' cy='140' r='3' fill='#dc2626'/><text x='32' y='256' text-anchor='end'>O</text><text x='248' y='256' text-anchor='start'>A</text><text x='160' y='32' text-anchor='middle' fill='#dc2626'>B</text><text x='328' y='140' text-anchor='start' fill='#dc2626'>C</text></svg>"
+      },
+      "japanese": "共享边 $OA$ 的三角形 $OAB, OAC$ 满足：(i) $\\vec{OC} = x\\vec{OA} + \\dfrac{1}{2}\\vec{OB}$；(ii) $\\triangle OAC$ 的重心 $G$ 在线段 $AB$ 上。\n\n设 $D$ 为 $OC$ 与 $AB$ 的交点：\n$$\\vec{OD} = \\dfrac{x}{\\fbox{A}}\\vec{OA} + \\dfrac{\\fbox{B}}{\\fbox{C}}\\vec{OB}$$\n由 $D$ 在 $AB$ 上得 $x = \\dfrac{\\fbox{D}}{\\fbox{E}}$。故\n$$\\vec{OG} = \\dfrac{\\fbox{F}}{\\fbox{G}}\\vec{OA} + \\dfrac{\\fbox{H}}{\\fbox{I}}\\vec{OB}$$\n特别 $OA = 1, OB = 2, \\angle AOB = 60°$ 时 $OG = \\dfrac{\\sqrt{\\fbox{JK}}}{\\fbox{L}}$。",
+      "solution": {
+        "translation": "用 $\\vec{OG} = (\\vec{OA} + \\vec{OC})/3$；$G$ 在 $AB$ 上 ⇔ 系数和 $=1$。",
+        "analysis": "再用 $|OG|^2$ 展开。",
+        "steps": [
+          {
+            "title": "由 $G$ 在 $AB$ 求 $x$",
+            "content": "$\\vec{OG} = \\dfrac{1}{3}(\\vec{OA} + \\vec{OC}) = \\dfrac{1+x}{3}\\vec{OA} + \\dfrac{1}{6}\\vec{OB}$。\n\n$G$ 在 $AB$ ⇒ 系数和 $= 1$：$\\dfrac{1+x}{3} + \\dfrac{1}{6} = 1 \\Rightarrow x = \\dfrac{3}{2}$。$\\fbox{D}=3, \\fbox{E}=2$。"
+          },
+          {
+            "title": "$\\vec{OD}, \\vec{OG}$",
+            "content": "$\\vec{OD}$：$D$ 在 $OC$ 上 $\\vec{OD} = t\\vec{OC} = (tx)\\vec{OA} + (t/2)\\vec{OB}$；$D$ 在 $AB$ 上 ⇒ $tx + t/2 = 1$。$x=3/2$：$t = 1/2$，$\\vec{OD} = \\dfrac{3}{4}\\vec{OA} + \\dfrac{1}{4}\\vec{OB} = \\dfrac{x}{2}\\vec{OA} + \\dfrac{1}{4}\\vec{OB}$。$\\fbox{A}=2, \\fbox{B}=1, \\fbox{C}=4$。\n\n$\\vec{OG} = \\dfrac{1+3/2}{3}\\vec{OA} + \\dfrac{1}{6}\\vec{OB} = \\dfrac{5}{6}\\vec{OA} + \\dfrac{1}{6}\\vec{OB}$。$\\fbox{F}=5, \\fbox{G}=6, \\fbox{H}=1, \\fbox{I}=6$。"
+          },
+          {
+            "title": "$|OG|$",
+            "content": "$\\vec{OA}\\cdot\\vec{OB} = 1\\cdot 2\\cos 60° = 1$。\n\n$|OG|^2 = \\dfrac{25}{36}\\cdot 1 + 2\\cdot\\dfrac{5}{36}\\cdot 1 + \\dfrac{1}{36}\\cdot 4 = \\dfrac{25 + 10 + 4}{36} = \\dfrac{39}{36} = \\dfrac{13}{12}$。\n\n$OG = \\sqrt{\\dfrac{13}{12}} = \\dfrac{\\sqrt{39}}{6}$。$\\fbox{JK}=39, \\fbox{L}=6$。"
+          }
+        ],
+        "finalAnswer": "ABC=214, DE=32, FG=56, HI=16, JKL=396"
+      }
+    },
+    {
+      "id": "c2-II-2",
+      "number": "II-2",
+      "topic": "$|z|=2$ 的复数与三角形",
+      "topicTag": "复数",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "$|z| = 2$ 的复数 $z$。原点 $O$，$A$ 表示 $1+z$、$B$ 表示 $1 - \\dfrac{1}{2}z$。\n\n$z = \\fbox{M}(\\cos\\theta + i\\sin\\theta)$（$-\\pi \\le \\theta < \\pi$）。\n\n(1) $z$ 非实数时三角形 $OAB$ 面积 $S = \\fbox{N}$（从下方 ⓪～⑧ 选）。故 $\\theta = \\pm\\dfrac{\\fbox{O}}{\\fbox{P}}\\pi$ 时 $S$ 最大。\n\n选项：⓪ $\\dfrac{1}{2}|\\sin(\\theta+\\tfrac{\\pi}{3})|$ ① $\\dfrac{1}{2}|\\sin\\theta|$ ② $\\dfrac{1}{2}|\\sin(\\theta-\\tfrac{\\pi}{3})|$ ③ $|\\sin(\\theta+\\tfrac{\\pi}{3})|$ ④ $|\\sin\\theta|$ ⑤ $|\\sin(\\theta-\\tfrac{\\pi}{3})|$ ⑥ $\\dfrac{3}{2}|\\sin(\\theta+\\tfrac{\\pi}{3})|$ ⑦ $\\dfrac{3}{2}|\\sin\\theta|$ ⑧ $\\dfrac{3}{2}|\\sin(\\theta-\\tfrac{\\pi}{3})|$\n\n(2) $\\triangle OAB$ 等腰（$OA = OB$）时\n$$|1+z| = |1 - \\tfrac{1}{2}z| = \\sqrt{\\fbox{Q}}$$\n且 $\\arg(1+z) = \\pm\\dfrac{\\fbox{R}}{\\fbox{S}}\\pi$，$\\arg(1 - \\tfrac{1}{2}z) = \\mp\\dfrac{\\fbox{T}}{\\fbox{U}}\\pi$（复号同顺）。",
+      "solution": {
+        "translation": "$|z|=2$ 写为 $2(\\cos\\theta + i\\sin\\theta)$；面积 $= \\frac12|\\text{Im}(\\overline{OA}\\cdot OB)|$。",
+        "analysis": "$\\text{Im}((1+z)\\overline{(1-z/2)}) = \\dfrac{3}{2}\\text{Im}(z)$。",
+        "steps": [
+          {
+            "title": "(1) 面积",
+            "content": "$M = |z| = 2$。\n\n$(1+z)(\\overline{1-z/2}) = (1+z)(1 - \\bar z/2) = 1 + z - \\bar z/2 - |z|^2/2 = 1 + z - \\bar z/2 - 2 = -1 + z - \\bar z/2$。\n\n$\\text{Im} = \\text{Im}(z) - \\text{Im}(\\bar z)/2 = \\text{Im}(z) + \\text{Im}(z)/2 = \\dfrac{3}{2}\\text{Im}(z) = 3\\sin\\theta$。\n\n面积 $S = \\dfrac{1}{2}|3\\sin\\theta| = \\dfrac{3}{2}|\\sin\\theta|$。$\\fbox{N} = ⑦$。\n\n最大当 $|\\sin\\theta| = 1$，$\\theta = \\pm\\pi/2$。$\\fbox{O}=1, \\fbox{P}=2$。"
+          },
+          {
+            "title": "(2) 等腰",
+            "content": "$|1+z|^2 = |1 - z/2|^2$。展开 $\\Rightarrow$ $z+\\bar z = -2$，即 $\\text{Re}(z) = -1$。结合 $|z|=2$：$z = -1 \\pm \\sqrt 3 i$。\n\n$|1+z| = |0 \\pm \\sqrt 3 i| = \\sqrt 3$。$\\fbox{Q} = 3$。\n\n$\\arg(1+z) = \\arg(\\pm\\sqrt 3 i) = \\pm\\dfrac{\\pi}{2}$。$\\fbox{R}=1, \\fbox{S}=2$。\n\n$1 - z/2 = 1 - (-1 \\pm \\sqrt 3 i)/2 = \\dfrac{3}{2} \\mp \\dfrac{\\sqrt 3}{2}i$，$\\arg = \\mp\\arctan\\dfrac{\\sqrt 3/2}{3/2} = \\mp\\arctan\\dfrac{\\sqrt 3}{3} = \\mp\\dfrac{\\pi}{6}$。$\\fbox{T}=1, \\fbox{U}=6$。"
+          }
+        ],
+        "finalAnswer": "M=2, N=⑦, OP=12, Q=3, RS=12, TU=16"
+      }
+    },
+    {
+      "id": "c2-III-1",
+      "number": "III",
+      "topic": "指数函数最小与不等式",
+      "topicTag": "对数·指数",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "函数 $y = \\dfrac{2^{x^2}}{5^{3x}}$（$x \\ge 0$）。\n\n(1) $y$ 最小的 $x$。微分：\n$$\\dfrac{dy}{dx} = \\dfrac{2^{x^2}}{5^{3x}}(2x\\log_e \\fbox{A} - \\fbox{B}\\log_e \\fbox{C})$$\n故 $y$ 最小时\n$$x = \\dfrac{\\fbox{D}(1 - \\log_{10}\\fbox{E})}{\\fbox{F}\\log_{10}\\fbox{G}}$$\n\n(2) $\\dfrac{2^{x^2}}{5^{3x}} > 1000$ 的最小正整数 $x$。从 $y > 1000$ 得\n$$x^{\\fbox{H}}\\log_{10}\\fbox{I} - \\fbox{J}\\,x\\log_{10}\\fbox{K} - \\fbox{L} > 0 \\quad \\cdots ①$$\n用 $\\log_{10} 2 \\approx 0.3$ 解 ①：\n$$x > \\dfrac{\\fbox{M} + \\sqrt{\\fbox{NO}}}{\\fbox{P}}$$\n故最小正整数 $x = \\fbox{Q}$。",
+      "solution": {
+        "translation": "对 $y$ 取自然对数后微分；不等式 $y > 1000$ 化为关于 $x$ 的二次。",
+        "analysis": "$\\log_{10}5 = 1 - \\log_{10}2$。",
+        "steps": [
+          {
+            "title": "(1) 微分",
+            "content": "$\\ln y = x^2\\ln 2 - 3x\\ln 5$。$y'/y = 2x\\ln 2 - 3\\ln 5$。$\\fbox{A}=2, \\fbox{B}=3, \\fbox{C}=5$。\n\n$y' = 0 \\Rightarrow x = \\dfrac{3\\ln 5}{2\\ln 2} = \\dfrac{3\\log_{10}5}{2\\log_{10}2} = \\dfrac{3(1 - \\log_{10}2)}{2\\log_{10}2}$。$\\fbox{D}=3, \\fbox{E}=2, \\fbox{F}=2, \\fbox{G}=2$。"
+          },
+          {
+            "title": "(2) 不等式",
+            "content": "$\\log_{10} y > 3 \\Rightarrow x^2\\log_{10}2 - 3x\\log_{10}5 - 3 > 0$。$\\fbox{H}=2, \\fbox{I}=2, \\fbox{J}=3, \\fbox{K}=5, \\fbox{L}=3$。\n\n用 $\\log_{10}2 = 0.3$（$\\log_{10}5 = 0.7$）：$0.3x^2 - 2.1x - 3 > 0$，乘 $10/3$：$x^2 - 7x - 10 > 0$。\n\n$x > \\dfrac{7 + \\sqrt{49+40}}{2} = \\dfrac{7 + \\sqrt{89}}{2}$。$\\fbox{M}=7, \\fbox{NO}=89, \\fbox{P}=2$。\n\n$\\dfrac{7 + \\sqrt{89}}{2} \\approx 8.22$，最小正整数 $x = 9$。$\\fbox{Q}=9$。"
+          }
+        ],
+        "finalAnswer": "ABC=235, DEFG=3222, HIJKL=22353, MNOP=7892, Q=9"
+      }
+    },
+    {
+      "id": "c2-IV-1",
+      "number": "IV",
+      "topic": "$f(x)=x\\sin^2 x$ 的切线与面积",
+      "topicTag": "微分·积分",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "$0 \\le x \\le \\pi$ 上 $f(x) = x\\sin^2 x$。原点过切线 $\\ell$（非 $x$ 轴）。求曲线与 $\\ell$ 围成面积 $S$。\n\n(1) 切点 $(t, f(t))$，$\\ell$ 过原点 ⇒ $\\fbox{A}$。又 $f'(t) = \\fbox{B} + 2t\\fbox{C}$，故 $t = \\fbox{D}$。\n\n选项 (1)：⓪ $f(t) = tf'(t)$ ① $f'(t) = tf(t)$ ② $\\sin t$ ③ $\\sin^2 t$ ④ $\\cos^2 t$ ⑤ $\\sin t\\cos t$ ⑥ $\\pi/2$ ⑦ $\\pi/3$ ⑧ $\\pi/4$ ⑨ $\\pi/6$\n\n(2) $\\int f(x)\\,dx = \\fbox{E}(2x^2 - 2x\\fbox{F} - \\fbox{G}) + C$。\n\n选项 (2)：⓪ $1/8$ ① $1/4$ ② $1/2$ ③ $2$ ④ $4$ ⑤ $8$ ⑥ $\\sin x$ ⑦ $\\cos x$ ⑧ $\\sin 2x$ ⑨ $\\cos 2x$\n\n(3) $S = \\dfrac{\\fbox{H}}{\\fbox{IJ}}\\pi^{\\fbox{K}} - \\dfrac{\\fbox{L}}{\\fbox{M}}$。",
+      "solution": {
+        "translation": "过原点切线满足 $f(t) - tf'(t) = 0$；不定积分用 $\\sin^2 x = (1-\\cos 2x)/2$ 分部。",
+        "analysis": "$f'(t) = \\sin^2 t + t \\sin 2t$。$f(t) = tf'(t) \\Rightarrow t^2 \\sin 2t = 0$。",
+        "steps": [
+          {
+            "title": "(1) 切点",
+            "content": "过原点切线 $y = f'(t)(x-t) + f(t)$，过 $(0,0)$：$f(t) = tf'(t)$。$\\fbox{A}=⓪$。\n\n$f'(t) = \\sin^2 t + 2t\\sin t\\cos t$，$\\fbox{B}=③(\\sin^2 t), \\fbox{C}=⑤(\\sin t\\cos t)$。\n\n$f(t) = tf'(t) \\Rightarrow t\\sin^2 t = t\\sin^2 t + 2t^2\\sin t\\cos t \\Rightarrow t^2\\sin 2t = 0$。\n\n$t \\in (0, \\pi]$，$\\sin 2t = 0 \\Rightarrow 2t = \\pi$（$t = \\pi$ 给切线 $y=0$ 即 $x$ 轴，排除）。$t = \\pi/2$。$\\fbox{D}=⑥$。"
+          },
+          {
+            "title": "(2) 不定积分",
+            "content": "$\\int x\\sin^2 x\\,dx = \\int x\\cdot\\dfrac{1-\\cos 2x}{2}dx = \\dfrac{x^2}{4} - \\dfrac{1}{2}\\int x\\cos 2x\\,dx$。\n\n分部 $\\int x\\cos 2x\\,dx = \\dfrac{x\\sin 2x}{2} + \\dfrac{\\cos 2x}{4} + C$。\n\n$\\int f = \\dfrac{x^2}{4} - \\dfrac{x\\sin 2x}{4} - \\dfrac{\\cos 2x}{8} + C = \\dfrac{1}{8}(2x^2 - 2x\\sin 2x - \\cos 2x) + C$。\n\n$\\fbox{E}=⓪(1/8), \\fbox{F}=⑧(\\sin 2x), \\fbox{G}=⑨(\\cos 2x)$。"
+          },
+          {
+            "title": "(3) 面积",
+            "content": "$t = \\pi/2$：$f(\\pi/2) = \\pi/2$，$f'(\\pi/2) = 1$，切线 $y = x$。\n\n$f(x) - x = x(\\sin^2 x - 1) = -x\\cos^2 x \\le 0$，曲线在切线下方。\n\n两图在 $x=0$（端点）与 $x=\\pi/2$（切点）相切。$S = \\int_0^{\\pi/2}(x - x\\sin^2 x)dx = \\int_0^{\\pi/2}x\\cos^2 x\\,dx$\n$= \\int_0^{\\pi/2}\\dfrac{x(1+\\cos 2x)}{2}dx = \\dfrac{1}{2}\\left[\\dfrac{x^2}{2}\\right]_0^{\\pi/2} + \\dfrac{1}{2}\\left[\\dfrac{x\\sin 2x}{2} + \\dfrac{\\cos 2x}{4}\\right]_0^{\\pi/2}$\n$= \\dfrac{\\pi^2}{16} + \\dfrac{1}{2}\\left[(0 + (-1)/4) - (0 + 1/4)\\right] = \\dfrac{\\pi^2}{16} - \\dfrac{1}{4}$。\n\n$\\fbox{H}=1, \\fbox{IJ}=16, \\fbox{K}=2, \\fbox{L}=1, \\fbox{M}=4$。"
+          }
+        ],
+        "finalAnswer": "A=⓪, BC=35, D=⑥, EFG=089, HIJKLM=116214"
+      }
+    }
+  ]
+}
