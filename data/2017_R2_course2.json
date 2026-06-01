@@ -1,0 +1,176 @@
+{
+  "metadata": {
+    "course": "course2",
+    "year": "2017",
+    "session": "2",
+    "courseNameJa": "数学2",
+    "courseNameEn": "Course 2 (Advanced)",
+    "description": "上级课程｜理科方向",
+    "color": "#9333ea",
+    "examTitle": "2017年度（平成29年）第2回",
+    "examDate": "2017年11月"
+  },
+  "questions": [
+    {
+      "id": "c2-I-1",
+      "number": "I-1",
+      "topic": "二次函数最小值最值",
+      "topicTag": "二次函数",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "$f(x) = 2x^2 + ax - 1$ 满足 $f(-1) \\ge -3, f(2) \\ge 3$（①）。最小值 $m$。\n\n(1) $m = -\\dfrac{\\fbox{A}}{\\fbox{B}}a^2 - \\fbox{C}$。\n\n(2) $a$ 范围 $\\fbox{DE} \\le a \\le \\fbox{F}$。\n\n(3) $m$ 最大在轴 $x = \\fbox{G}$，最大值 $\\fbox{HI}$。\n\n(4) $m$ 最小在轴 $x = \\fbox{JK}$，最小值 $\\fbox{LM}$。",
+      "solution": {
+        "translation": "$f(x) = 2(x + a/4)^2 - a^2/8 - 1$。",
+        "analysis": "由两点不等式得 $a$ 范围；$m = -a^2/8 - 1$ 是 $a$ 的二次。",
+        "steps": [
+          {
+            "title": "$m$ 与范围",
+            "content": "$m = -\\dfrac{a^2}{8} - 1$。$\\fbox{A}=1, \\fbox{B}=8, \\fbox{C}=1$。\n\n$f(-1) = 1 - a \\ge -3 \\Rightarrow a \\le 4$。$f(2) = 7 + 2a \\ge 3 \\Rightarrow a \\ge -2$。\n\n$-2 \\le a \\le 4$。$\\fbox{DE}=-2, \\fbox{F}=4$。"
+          },
+          {
+            "title": "最值",
+            "content": "$m = -a^2/8 - 1$。$a^2$ 最小在 $a=0$，$m=-1$。轴 $x = -a/4 = 0$。$\\fbox{G}=0, \\fbox{HI}=-1$。\n\n$a^2$ 最大在 $a=4$（$a^2=16$）。$m = -2 - 1 = -3$。轴 $x = -1$。$\\fbox{JK}=-1, \\fbox{LM}=-3$。"
+          }
+        ],
+        "finalAnswer": "ABC=181, DE=-2, F=4, G=0, HI=-1, JK=-1, LM=-3"
+      }
+    },
+    {
+      "id": "c2-I-2",
+      "number": "I-2",
+      "topic": "球在三角形顶点间移动概率",
+      "topicTag": "概率",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "三角形 $ABC$，球在 $A$。掷骰子：\n(i) 在 $A$：出 $1$ 移 $B$；否则不动。\n(ii) 在 $B$：出 $\\le 4$ 移 $C$；否则不动。\n球到 $C$ 即停。\n\n(1) $2$ 次到 $C$ 的概率 $\\dfrac{1}{\\fbox{N}}$。\n\n(2) $3$ 次到 $C$：$\\dfrac{\\fbox{O}}{\\fbox{PQ}}$。\n\n(3) $4$ 次到 $C$：$\\dfrac{\\fbox{RS}}{\\fbox{TUV}}$。\n\n$4$ 次以内到 $C$：$\\dfrac{\\fbox{WX}}{\\fbox{YZ}}$。",
+      "solution": {
+        "translation": "$P(A\\to B) = 1/6, P(A\\to A) = 5/6$；$P(B\\to C) = 2/3, P(B\\to B) = 1/3$。",
+        "analysis": "枚举从 $A$ 第几步进入 $B$。",
+        "steps": [
+          {
+            "title": "(1) 2 步",
+            "content": "$A \\to B \\to C$：$\\dfrac{1}{6}\\cdot\\dfrac{2}{3} = \\dfrac{1}{9}$。$\\fbox{N}=9$。"
+          },
+          {
+            "title": "(2) 3 步",
+            "content": "路径 $AAB C$：$\\dfrac{5}{6}\\cdot\\dfrac{1}{6}\\cdot\\dfrac{2}{3} = \\dfrac{10}{108}$。\n路径 $ABBC$：$\\dfrac{1}{6}\\cdot\\dfrac{1}{3}\\cdot\\dfrac{2}{3} = \\dfrac{4}{108}$。\n合 $\\dfrac{14}{108} = \\dfrac{7}{54}$。$\\fbox{O}=7, \\fbox{PQ}=54$。"
+          },
+          {
+            "title": "(3)(4) 4 步与累计",
+            "content": "4 步：按何时 $A\\to B$ 枚举：\n- 步 1：$ABBBC$：$\\dfrac{1}{6}\\cdot\\dfrac{1}{3}\\cdot\\dfrac{1}{3}\\cdot\\dfrac{2}{3} = \\dfrac{2}{162}$。\n- 步 2：$AABBC$：$\\dfrac{5}{6}\\cdot\\dfrac{1}{6}\\cdot\\dfrac{1}{3}\\cdot\\dfrac{2}{3} = \\dfrac{10}{324}$。\n- 步 3：$AAABC$：$\\dfrac{5}{6}\\cdot\\dfrac{5}{6}\\cdot\\dfrac{1}{6}\\cdot\\dfrac{2}{3} = \\dfrac{50}{648}$。\n\n合 $= \\dfrac{4 + 10 + 25}{324} = \\dfrac{39}{324} = \\dfrac{13}{108}$。$\\fbox{RS}=13, \\fbox{TUV}=108$。\n\n$4$ 次以内 $= \\dfrac{1}{9} + \\dfrac{7}{54} + \\dfrac{13}{108} = \\dfrac{12+14+13}{108} = \\dfrac{39}{108} = \\dfrac{13}{36}$。$\\fbox{WX}=13, \\fbox{YZ}=36$。"
+          }
+        ],
+        "finalAnswer": "N=9, OPQ=754, RSTUV=13108, WXYZ=1336"
+      }
+    },
+    {
+      "id": "c2-II-1",
+      "number": "II-1",
+      "topic": "线性递推与通项",
+      "topicTag": "数列",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "$a_1 = 18$，$a_{n+1} - 12a_n + 3^{n+2} = 0$。求通项。\n\n设 $b_n = \\dfrac{a_n}{\\fbox{A}^n}$。则 $b_1 = \\fbox{B}$，$b_{n+1} - \\fbox{C}\\,b_n + \\fbox{D} = 0$。变形 $b_{n+1} - \\fbox{E} = \\fbox{F}(b_n - \\fbox{E})$。$c_n = b_n - \\fbox{E}$ 是等比数列，首项 $\\fbox{G}$、公比 $\\fbox{H}$。\n\n故 $a_n = \\fbox{I}^n(\\fbox{J}\\cdot\\fbox{K}^{n-1} + \\fbox{L})$。",
+      "solution": {
+        "translation": "用 $b_n = a_n/3^n$ 把非齐次项消去。",
+        "analysis": "$a_{n+1} = 12a_n - 3^{n+2}$，除以 $3^{n+1}$。",
+        "steps": [
+          {
+            "title": "化为 $b_n$",
+            "content": "除以 $3^{n+1}$：$b_{n+1} = 4 b_n - 3$。$\\fbox{A}=3, \\fbox{B}=18/3=6, \\fbox{C}=4, \\fbox{D}=3$。\n\n求不动点 $E$：$E = 4E - 3 \\Rightarrow E = 1$。变形 $b_{n+1} - 1 = 4(b_n - 1)$。$\\fbox{E}=1, \\fbox{F}=4$。"
+          },
+          {
+            "title": "$c_n$ 与 $a_n$",
+            "content": "$c_n = b_n - 1$，$c_1 = 5$，公比 $4$。$\\fbox{G}=5, \\fbox{H}=4$。\n\n$c_n = 5\\cdot 4^{n-1}$，$b_n = 5\\cdot 4^{n-1} + 1$，$a_n = 3^n(5\\cdot 4^{n-1} + 1)$。$\\fbox{I}=3, \\fbox{J}=5, \\fbox{K}=4, \\fbox{L}=1$。"
+          }
+        ],
+        "finalAnswer": "A=3, B=6, CD=43, EF=14, G=5, H=4, IJKL=3541"
+      }
+    },
+    {
+      "id": "c2-II-2",
+      "number": "II-2",
+      "topic": "等腰三角形内切圆半径",
+      "topicTag": "解析几何",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "questionDiagram": {
+        "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 340 320' font-family='serif' font-size='14'><line x1='30' y1='240' x2='320' y2='240' stroke='#aaa' stroke-width='1'/><line x1='160' y1='40' x2='160' y2='300' stroke='#aaa' stroke-width='1'/><polygon points='160,50 60,240 280,240' fill='none' stroke='#2563eb' stroke-width='1.4'/><circle cx='160' cy='200' r='40' fill='none' stroke='#1c1917' stroke-width='1.2'/><circle cx='160' cy='200' r='2.5' fill='#1c1917'/><circle cx='160' cy='50' r='3' fill='#1c1917'/><circle cx='60' cy='240' r='3' fill='#1c1917'/><circle cx='280' cy='240' r='3' fill='#1c1917'/><circle cx='130' cy='100' r='2.5' fill='#dc2626'/><circle cx='220' cy='130' r='2.5' fill='#dc2626'/><text x='168' y='48' text-anchor='start'>A</text><text x='52' y='256' text-anchor='end'>B</text><text x='288' y='256' text-anchor='start'>C</text><text x='168' y='204' text-anchor='start'>I</text><text x='120' y='98' text-anchor='end' fill='#dc2626'>P</text><text x='230' y='130' text-anchor='start' fill='#dc2626'>Q</text></svg>"
+      },
+      "japanese": "原点 $O$ 的 $xy$ 平面上，等腰三角形 $ABC$（$AB = AC$）。$B, C$ 在 $x$ 轴上、$A$ 在上方。$AB$ 过 $P(-1, 5)$、$AC$ 过 $Q(3, 3)$。设 $\\ell_1$ 斜率 $a$：\n$$\\ell_1: y = ax + a + \\fbox{M}, \\quad \\ell_2: y = -ax + \\fbox{N}\\,a + \\fbox{O}$$\n内切圆心 $I$ 坐标 $\\left(\\fbox{P} - \\dfrac{\\fbox{Q}}{a}, r\\right)$，半径\n$$r = \\dfrac{\\fbox{R}\\,a + \\fbox{S}}{\\fbox{T} + \\sqrt{a^2 + \\fbox{U}}}$$\n$r = \\dfrac{5}{2}$ 时 $A$ 坐标 $\\left(\\dfrac{\\fbox{V}}{\\fbox{W}}, \\dfrac{\\fbox{XY}}{\\fbox{Z}}\\right)$。",
+      "solution": {
+        "translation": "$AB=AC$ 等腰对称（$BC$ 中点在 $A$ 正下方），故 $\\ell_1, \\ell_2$ 斜率互为相反数。",
+        "analysis": "内切圆 $I$ 在 $A$ 与 $BC$ 中点的连线上；半径 $=$ $I$ 到 $\\ell_1$ 距离。",
+        "steps": [
+          {
+            "title": "$\\ell_1, \\ell_2, I$",
+            "content": "$\\ell_1$ 过 $(-1, 5)$ 斜率 $a$：$y = ax + a + 5$。$\\fbox{M}=5$。\n\n$\\ell_2$ 过 $(3, 3)$ 斜率 $-a$：$y = -ax + 3a + 3$。$\\fbox{N}=3, \\fbox{O}=3$。\n\n$A = \\ell_1 \\cap \\ell_2$：$2ax = 2a - 2 \\Rightarrow x_A = 1 - 1/a$，$y_A = 2a + 4$。\n\n$BC$ 中点 = $A$ 的 $x$ 坐标投影：$x_I = 1 - 1/a$。$BC$ 在 $x$ 轴，故 $y_I = r$。$\\fbox{P}=1, \\fbox{Q}=1$。"
+          },
+          {
+            "title": "$r$",
+            "content": "$\\ell_1$：$ax - y + a + 5 = 0$。$I = (1 - 1/a, r)$ 到 $\\ell_1$ 距离 $= r$：\n$\\dfrac{|a(1 - 1/a) - r + a + 5|}{\\sqrt{a^2+1}} = r \\Rightarrow \\dfrac{|2a + 4 - r|}{\\sqrt{a^2+1}} = r$。\n\n$2a + 4 - r > 0$：$2a + 4 = r(1 + \\sqrt{a^2 + 1})$，$r = \\dfrac{2a + 4}{1 + \\sqrt{a^2 + 1}}$。\n\n$\\fbox{R}=2, \\fbox{S}=4, \\fbox{T}=1, \\fbox{U}=1$。"
+          },
+          {
+            "title": "$r = 5/2$ 时 $A$",
+            "content": "$\\dfrac{5}{2} = \\dfrac{2a+4}{1 + \\sqrt{a^2+1}}$\n$\\Rightarrow 5(1 + \\sqrt{a^2+1}) = 4a + 8$\n$\\Rightarrow 5\\sqrt{a^2+1} = 4a + 3$。\n\n平方：$25(a^2+1) = 16a^2 + 24a + 9 \\Rightarrow 9a^2 - 24a + 16 = 0 \\Rightarrow (3a-4)^2 = 0 \\Rightarrow a = 4/3$。\n\n$x_A = 1 - 3/4 = 1/4$，$y_A = 8/3 + 4 = 20/3$。$A = (1/4, 20/3)$。$\\fbox{V}=1, \\fbox{W}=4, \\fbox{XY}=20, \\fbox{Z}=3$。"
+          }
+        ],
+        "finalAnswer": "M=5, NO=33, PQ=11, RSTU=2411, VW=14, XYZ=203"
+      }
+    },
+    {
+      "id": "c2-III-1",
+      "number": "III",
+      "topic": "对数不等式恒成立的参数范围",
+      "topicTag": "对数·微分",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "对所有正实数 $x$ 不等式 $\\dfrac{\\log 3x}{4x+1} \\le \\log\\dfrac{2kx}{4x+1}$（①，$\\log$ 自然对数）。求正实数 $k$ 范围。\n\n(1) ① 变形得 $\\log k \\ge \\fbox{A}$（②）。设 ② 右边 $g(x)$，$g'(x) = \\fbox{B}$。\n\n选项（$\\fbox{A}, \\fbox{B}$）：⓪ $\\dfrac{\\log 3x}{4x+1} - \\log(4x+1) - \\log 2x$；① $\\dfrac{\\log 3x}{4x+1} - \\log(4x+1) + \\log 2x$；② $\\dfrac{\\log 3x}{4x+1} + \\log(4x+1) + \\log 2x$；③ $\\dfrac{\\log 3x}{4x+1} + \\log(4x+1) - \\log 2x$；④ $\\dfrac{4\\log 3x}{(4x+1)^2}$；⑤ $\\dfrac{3x+2\\log 3x}{(4x+1)^2}$；⑥ $-\\dfrac{4\\log 3x}{(4x+1)^2}$；⑦ $\\dfrac{3x-2-\\log 2x}{(4x+1)^2}$；⑧ $-\\dfrac{3\\log 2x}{(4x+1)^2}$\n\n(2) $g(x)$ 在 $0 < x < \\dfrac{\\fbox{C}}{\\fbox{D}}$ $\\fbox{E}$；$\\dfrac{\\fbox{C}}{\\fbox{D}} < x$ $\\fbox{F}$。$x = \\dfrac{\\fbox{C}}{\\fbox{D}}$ 时 $g$ 为 $\\fbox{G}$。故 $k \\ge \\dfrac{\\fbox{H}}{\\fbox{I}}$。\n\n选项：⓪ 増加 ① 減少 ② 最大 ③ 最小。",
+      "solution": {
+        "translation": "$\\log\\dfrac{2kx}{4x+1} = \\log 2k + \\log x - \\log(4x+1)$；约 $\\log 2$ 后 $\\log k \\ge $ 右式。",
+        "analysis": "求 $g$ 的最大值，再 $\\log k \\ge $ 最大值。",
+        "steps": [
+          {
+            "title": "(1) 变形与求导",
+            "content": "$\\log 2 + \\log k + \\log x - \\log(4x+1) \\ge \\dfrac{\\log 3x}{4x+1}$\n$\\Rightarrow \\log k \\ge \\dfrac{\\log 3x}{4x+1} + \\log(4x+1) - \\log 2x$。$\\fbox{A} = ③$。\n\n$g'(x)$：\n- $\\dfrac{d}{dx}\\dfrac{\\log 3x}{4x+1} = \\dfrac{(1/x)(4x+1) - 4\\log 3x}{(4x+1)^2} = \\dfrac{(4x+1) - 4x\\log 3x}{x(4x+1)^2}$。\n- $\\dfrac{d}{dx}\\log(4x+1) = \\dfrac{4}{4x+1}$。\n- $\\dfrac{d}{dx}(-\\log 2x) = -\\dfrac{1}{x}$。\n\n通分至 $x(4x+1)^2$：分子和 $= (4x+1) + 4x(4x+1) - (4x+1)^2 - 4x\\log 3x = (4x+1)(1 + 4x - 4x - 1) - 4x\\log 3x = -4x\\log 3x$。\n\n$g'(x) = -\\dfrac{4\\log 3x}{(4x+1)^2}$。$\\fbox{B} = ⑥$。"
+          },
+          {
+            "title": "(2) 最大值与 $k$",
+            "content": "$g'(x) = 0$ 在 $\\log 3x = 0 \\Rightarrow x = 1/3$。$\\fbox{CD} = 13$。\n\n$0 < x < 1/3$：$\\log 3x < 0$，$g'(x) > 0$，増加。$\\fbox{E}=⓪$。\n$x > 1/3$：$g'(x) < 0$，減少。$\\fbox{F}=①$。\n$x = 1/3$ 时 $g$ 最大。$\\fbox{G}=②$。\n\n$g(1/3) = \\dfrac{\\log 1}{7/3} + \\log(7/3) - \\log(2/3) = 0 + \\log\\dfrac{7/3}{2/3} = \\log\\dfrac{7}{2}$。\n\n$\\log k \\ge \\log(7/2) \\Rightarrow k \\ge 7/2$。$\\fbox{HI}=72$。"
+          }
+        ],
+        "finalAnswer": "A=③, B=⑥, CD=13, EFG=012, HI=72"
+      }
+    },
+    {
+      "id": "c2-IV-1",
+      "number": "IV",
+      "topic": "圆与双曲线围成面积",
+      "topicTag": "积分",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "曲线 $x^2 + y^2 = 1$（①）与 $4xy = 1$（②），$x > 0, y > 0$。求 ①② 围成面积 $S$。\n\n(1) 交点 $P, Q$，$x$ 坐标 $p, q$（$p < q$）。\n用 $x = \\cos\\theta, y = \\sin\\theta$（$0 < \\theta < \\pi/2$）。\n由 ②：$\\sin\\fbox{A}\\theta = \\dfrac{\\fbox{B}}{\\fbox{C}}$。\n故 $\\theta = \\dfrac{\\fbox{D}}{\\fbox{EF}}\\pi, \\dfrac{\\fbox{G}}{\\fbox{HI}}\\pi$（$\\dfrac{\\fbox{D}}{\\fbox{EF}} < \\dfrac{\\fbox{G}}{\\fbox{HI}}$）。\n$p = \\cos\\dfrac{\\fbox{J}}{\\fbox{KL}}\\pi$，$q = \\cos\\dfrac{\\fbox{M}}{\\fbox{NO}}\\pi$。\n\n(2) $S = \\int_p^q \\left(\\sqrt{1-x^2} - \\dfrac{1}{4x}\\right)dx$。设 $I = \\int_p^q\\sqrt{1-x^2}dx, J = \\int_p^q \\dfrac{1}{x}dx$。\n$I = \\dfrac{\\fbox{P}}{\\fbox{Q}}\\pi$，$J = \\log(\\fbox{R} + \\sqrt{\\fbox{S}})$。$S = \\dfrac{\\fbox{P}}{\\fbox{Q}}\\pi - \\dfrac{\\fbox{T}}{\\fbox{U}}\\log(\\fbox{R} + \\sqrt{\\fbox{S}})$。",
+      "solution": {
+        "translation": "圆参数化得 $\\sin 2\\theta = 1/2$；$I$ 用 $x=\\cos\\theta$ 代换；$J$ 是 $\\log(q/p)$。",
+        "analysis": "$\\cos(\\pi/12)/\\cos(5\\pi/12) = \\cos(\\pi/12)/\\sin(\\pi/12) = \\cot(\\pi/12) = 2 + \\sqrt 3$。",
+        "steps": [
+          {
+            "title": "(1) 交点",
+            "content": "$4\\cos\\theta\\sin\\theta = 2\\sin 2\\theta = 1 \\Rightarrow \\sin 2\\theta = 1/2$。$\\fbox{A}=2, \\fbox{B}=1, \\fbox{C}=2$。\n\n$2\\theta \\in (0,\\pi)$：$2\\theta = \\pi/6$ 或 $5\\pi/6$。$\\theta = \\pi/12$ 或 $5\\pi/12$。$\\fbox{D}=1, \\fbox{EF}=12, \\fbox{G}=5, \\fbox{HI}=12$。\n\n$\\cos$ 递减：$p = \\cos(5\\pi/12)$（小），$q = \\cos(\\pi/12)$（大）。$\\fbox{J}=5, \\fbox{KL}=12, \\fbox{M}=1, \\fbox{NO}=12$。"
+          },
+          {
+            "title": "(2) $I, J, S$",
+            "content": "$x = \\cos\\theta$：$I = \\int_{5\\pi/12}^{\\pi/12}\\sin\\theta\\cdot(-\\sin\\theta)d\\theta = \\int_{\\pi/12}^{5\\pi/12}\\sin^2\\theta\\,d\\theta$\n$= \\left[\\dfrac{\\theta}{2} - \\dfrac{\\sin 2\\theta}{4}\\right]_{\\pi/12}^{5\\pi/12} = \\dfrac{4\\pi/12}{2} - \\dfrac{\\sin(5\\pi/6) - \\sin(\\pi/6)}{4} = \\dfrac{\\pi}{6} - 0 = \\dfrac{\\pi}{6}$。\n\n$\\fbox{P}=1, \\fbox{Q}=6$。\n\n$J = \\log\\dfrac{q}{p} = \\log\\dfrac{\\cos(\\pi/12)}{\\cos(5\\pi/12)} = \\log\\dfrac{\\cos(\\pi/12)}{\\sin(\\pi/12)} = \\log\\cot(\\pi/12) = \\log(2 + \\sqrt 3)$。\n\n（$\\tan 15° = 2 - \\sqrt 3$，倒数 $2 + \\sqrt 3$）。$\\fbox{R}=2, \\fbox{S}=3$。\n\n$S = I - \\dfrac{J}{4} = \\dfrac{\\pi}{6} - \\dfrac{1}{4}\\log(2 + \\sqrt 3)$。$\\fbox{T}=1, \\fbox{U}=4$。"
+          }
+        ],
+        "finalAnswer": "ABC=212, DEF=112, GHI=512, JKL=512, MNO=112, PQ=16, RS=23, TU=14"
+      }
+    }
+  ]
+}
