@@ -1,0 +1,188 @@
+{
+  "metadata": {
+    "course": "course2",
+    "year": "2018",
+    "session": "1",
+    "courseNameJa": "数学2",
+    "courseNameEn": "Course 2 (Advanced)",
+    "description": "上级课程｜理科方向",
+    "color": "#9333ea",
+    "examTitle": "2018年度（平成30年）第1回",
+    "examDate": "2018年6月"
+  },
+  "questions": [
+    {
+      "id": "c2-I-1",
+      "number": "I-1",
+      "topic": "二次函数零点在区间内的参数范围",
+      "topicTag": "二次函数",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "$a$ 实数，$f(x) = \\dfrac{1}{4}x^2 - (2a-1)x + a$。\n\n(1) 顶点坐标 $(\\fbox{A}\\,a - \\fbox{B}, -\\fbox{C}\\,a^2 + \\fbox{D}\\,a - \\fbox{E})$。\n\n(2) $y = f(x)$ 与 $x$ 轴有 $2$ 个不同交点的 $a$ 范围：$a < \\dfrac{\\fbox{F}}{\\fbox{G}}$ 或 $\\fbox{H} < a$。\n\n(3) (2) 的两交点 $x$ 坐标都在 $[0, 6]$ 内的 $a$ 范围：$\\fbox{I} < a \\le \\dfrac{\\fbox{JK}}{\\fbox{LM}}$。",
+      "solution": {
+        "translation": "配方得顶点；交点条件需判别式 > 0；区间内需 $f(0) \\ge 0, f(6) \\ge 0$、对称轴在 $[0,6]$。",
+        "analysis": "$f(x) = (1/4)(x - (4a-2))^2 - 4a^2 + 5a - 1$。",
+        "steps": [
+          {
+            "title": "(1) 顶点",
+            "content": "$f(x) = \\dfrac{1}{4}(x^2 - 4(2a-1)x) + a = \\dfrac{1}{4}(x - (4a-2))^2 - (2a-1)^2 + a$。\n顶点 $(4a-2, -4a^2 + 5a - 1)$。$\\fbox{A}=4, \\fbox{B}=2, \\fbox{C}=4, \\fbox{D}=5, \\fbox{E}=1$。"
+          },
+          {
+            "title": "(2) 两实根条件",
+            "content": "判别式 $(2a-1)^2 - 4\\cdot\\dfrac{1}{4}\\cdot a > 0 \\Rightarrow 4a^2 - 5a + 1 > 0 \\Rightarrow (4a-1)(a-1) > 0$。\n\n$a < 1/4$ 或 $a > 1$。$\\fbox{F}=1, \\fbox{G}=4, \\fbox{H}=1$。"
+          },
+          {
+            "title": "(3) 两根在 $[0, 6]$",
+            "content": "开口向上：$f(0) = a \\ge 0$；$f(6) = 15 - 11a \\ge 0 \\Rightarrow a \\le 15/11$；轴 $4a-2 \\in [0, 6] \\Rightarrow 1/2 \\le a \\le 2$；并判别式 $> 0$（$a<1/4$ 或 $a>1$）。\n\n综合：$1 < a \\le \\dfrac{15}{11}$。$\\fbox{I}=1, \\fbox{JK}=15, \\fbox{LM}=11$。"
+          }
+        ],
+        "finalAnswer": "AB=42, CDE=451, FG=14, H=1, I=1, JKLM=1511"
+      }
+    },
+    {
+      "id": "c2-I-2",
+      "number": "I-2",
+      "topic": "卡片着色组合计数",
+      "topicTag": "组合·容斥",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "$4$ 张不同大小卡片，可染红、黑、蓝、黄。每张 $1$ 色（同色可重复）。\n\n(1) 全部 $\\fbox{NOP}$ 通。\n\n(2) 用满 $4$ 色：$\\fbox{QR}$ 通。\n\n(3) $2$ 张红、$1$ 张黑、$1$ 张蓝：$\\fbox{ST}$ 通。\n\n(4) 恰用 $3$ 色：$\\fbox{UVW}$ 通。\n\n(5) 恰用 $2$ 色：$\\fbox{XY}$ 通。",
+      "solution": {
+        "translation": "$4^4 = 256$ 总；用容斥求 $k$ 色满射个数。",
+        "analysis": "$k$ 色满射 = $\\sum_{i=0}^k (-1)^i\\binom{k}{i}(k-i)^4$。",
+        "steps": [
+          {
+            "title": "(1)(2)(3)",
+            "content": "(1) $4^4 = 256$。$\\fbox{NOP}=256$。\n(2) $4! = 24$。$\\fbox{QR}=24$。\n(3) 选 $2$ 张红：$\\binom{4}{2}=6$；剩 $2$ 张中选 $1$ 张黑：$2$；剩 $1$ 张蓝：$1$。$6\\cdot 2\\cdot 1 = 12$。$\\fbox{ST}=12$。"
+          },
+          {
+            "title": "(4) 恰 3 色",
+            "content": "$3$ 色满射数：$3^4 - 3\\cdot 2^4 + 3\\cdot 1 = 81 - 48 + 3 = 36$。\n选 $3$ 色：$\\binom{4}{3} = 4$。合 $4\\cdot 36 = 144$。$\\fbox{UVW}=144$。"
+          },
+          {
+            "title": "(5) 恰 2 色",
+            "content": "$2$ 色满射：$2^4 - 2 = 14$。选 $2$ 色：$\\binom{4}{2}=6$。合 $6\\cdot 14 = 84$。$\\fbox{XY}=84$。"
+          }
+        ],
+        "finalAnswer": "NOP=256, QR=24, ST=12, UVW=144, XY=84"
+      }
+    },
+    {
+      "id": "c2-II-1",
+      "number": "II-1",
+      "topic": "平行六面体中线段最大长度",
+      "topicTag": "空间向量",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "questionDiagram": {
+        "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 360 240' font-family='serif' font-size='13'><polygon points='60,150 240,150 280,80 100,80' fill='none' stroke='#1c1917' stroke-width='1.3'/><polygon points='90,200 270,200 310,130 130,130' fill='none' stroke='#1c1917' stroke-width='1.3'/><line x1='60' y1='150' x2='90' y2='200' stroke='#1c1917' stroke-width='1.3'/><line x1='240' y1='150' x2='270' y2='200' stroke='#1c1917' stroke-width='1.3'/><line x1='280' y1='80' x2='310' y2='130' stroke='#1c1917' stroke-width='1.3'/><line x1='100' y1='80' x2='130' y2='130' stroke='#1c1917' stroke-width='1' stroke-dasharray='3,2'/><text x='95' y='75' text-anchor='end'>A</text><text x='240' y='75' text-anchor='end'>D</text><text x='278' y='75' text-anchor='start'>C</text><text x='52' y='154' text-anchor='end'>E</text><text x='240' y='160' text-anchor='end'>B</text><text x='318' y='130' text-anchor='start'>G</text><text x='275' y='210' text-anchor='start'>F</text></svg>"
+      },
+      "japanese": "平行六面体 $ABCD$-$EFGH$ 中 $AB = 2, AD = 3, AE = 1$，$\\angle BAD = 60°, \\angle BAE = 90°, \\angle DAE = 120°$。$M$ 为 $GH$ 中点。$P$ 在 $BF$、$Q$ 在 $DH$ 上。$A, P, M, Q$ 共面时求 $PQ$ 最大。\n\n(1) $\\vec a = \\vec{AB}, \\vec b = \\vec{AD}, \\vec c = \\vec{AE}$。\n$\\vec a\\cdot\\vec b = \\fbox{A}$，$\\vec b\\cdot\\vec c = -\\dfrac{\\fbox{B}}{\\fbox{C}}$，$\\vec c\\cdot\\vec a = \\fbox{D}$。\n\n(2) $BP:PF = s:(1-s)$，$DQ:QH = t:(1-t)$（$s, t \\in [0,1]$）。由共面 $\\vec{AM} = \\alpha\\vec{AP} + \\beta\\vec{AQ}$ 得 $s = \\fbox{E}(\\fbox{F} - t)$。\n\n$|\\vec{PQ}|^2 = \\fbox{G}\\,t^2 - \\fbox{HI}\\,t + \\fbox{JK}$。$PQ$ 最大时 $\\fbox{L}$（选项 ⓪～⑤）：\n⓪ $s=0, t=1$ ① $s=0, t=1/2$ ② $s=1/2, t=3/4$ ③ $s=2/3, t=2/3$ ④ $s=1, t=1/2$ ⑤ $s=1, t=2/3$",
+      "solution": {
+        "translation": "用 $A$ 为原点写各点向量；$M = a/2 + b + c$；$P = a + sc, Q = b + tc$。",
+        "analysis": "$\\vec{AM} = \\alpha\\vec{AP} + \\beta\\vec{AQ}$ 给出三个分量等式，解出关系 $s$ 与 $t$。",
+        "steps": [
+          {
+            "title": "(1) 内积",
+            "content": "$\\vec a\\cdot\\vec b = 2\\cdot 3\\cos 60° = 3$。$\\fbox{A}=3$。\n$\\vec b\\cdot\\vec c = 3\\cdot 1\\cos 120° = -3/2$。$\\fbox{B}=3, \\fbox{C}=2$。\n$\\vec c\\cdot\\vec a = 1\\cdot 2\\cos 90° = 0$。$\\fbox{D}=0$。"
+          },
+          {
+            "title": "(2) 共面关系",
+            "content": "$M = a/2 + b + c$，$P = a + sc$，$Q = b + tc$。\n$\\alpha(a + sc) + \\beta(b + tc) = a/2 + b + c$ → $\\alpha = 1/2, \\beta = 1, \\alpha s + \\beta t = 1$。\n\n$s/2 + t = 1 \\Rightarrow s = 2(1 - t)$。$\\fbox{E}=2, \\fbox{F}=1$。"
+          },
+          {
+            "title": "$|PQ|^2$ 与最大",
+            "content": "$\\vec{PQ} = Q - P = -\\vec a + \\vec b + (t - s)\\vec c = -a + b + (3t-2)c$（代 $s = 2-2t$）。\n\n$|PQ|^2 = |a|^2 + |b|^2 + (3t-2)^2|c|^2 - 2\\vec a\\cdot\\vec b + 2(3t-2)\\vec b\\cdot\\vec c - 2(3t-2)\\vec a\\cdot\\vec c$\n$= 4 + 9 + (3t-2)^2 - 6 + 2(3t-2)(-3/2) - 0$\n$= 7 + 9t^2 - 12t + 4 - 9t + 6 = 9t^2 - 21t + 17$。\n\n$\\fbox{G}=9, \\fbox{HI}=21, \\fbox{JK}=17$。\n\n$s \\in [0,1] \\Rightarrow t \\in [1/2, 1]$。在此区间上 $9t^2 - 21t + 17$（顶点 $t=7/6$）递减，最大在 $t=1/2$（$s=1$）。$\\fbox{L} = ④$。"
+          }
+        ],
+        "finalAnswer": "A=3, BC=32, D=0, EF=21, GHIJK=92117, L=④"
+      }
+    },
+    {
+      "id": "c2-II-2",
+      "number": "II-2",
+      "topic": "三个量的最小与几何区域",
+      "topicTag": "最值·几何",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "$x, y > 0$，$m = \\min(y/x, x, 8/y)$。$A = \\{(x,y) : m = y/x\\}$，$B = \\{(x,y) : m = 8/y\\}$。\n\n(1) （$\\fbox{M}$-$\\fbox{S}$ 从下方 ⓪～⑦ 选）\n$A = \\{(x,y) \\mid \\fbox{M} \\le \\fbox{N}, \\fbox{O} \\le 8\\fbox{P}\\}$\n$B = \\{(x,y) \\mid 8\\fbox{Q} \\le \\fbox{R}, 8 \\le \\fbox{S}\\}$\n\n选项：⓪ $x$ ① $y$ ② $x+y$ ③ $x-y$ ④ $x^2$ ⑤ $xy$ ⑥ $y^2$ ⑦ $x^2+y^2$\n\n(2) $A$ 是 $\\fbox{T}$ 的灰色部分、$B$ 是 $\\fbox{U}$ 的灰色部分（图选项 ⓪～⑧，含曲线 $y=x^2$ 与 $y^2=8x$ 或 $y=8/x$）。\n\n(3) $(x,y) \\in A \\cup B$ 时 $m$ 最大。$P \\in A$ 时 $m = y/x$（过原点斜率最大）；$P \\in B$ 时 $m = 8/y$（$y$ 最小）。故最大 $m$ 在 $(x,y) = (\\fbox{V}, \\fbox{W})$ 取得，最大值 $\\fbox{X}$。",
+      "solution": {
+        "translation": "比较 $y/x, x, 8/y$ 三量大小，写出 $A, B$ 的不等式定义。",
+        "analysis": "$y/x \\le x \\Leftrightarrow y \\le x^2$；$y/x \\le 8/y \\Leftrightarrow y^2 \\le 8x$；$8/y \\le y/x \\Leftrightarrow 8x \\le y^2$；$8/y \\le x \\Leftrightarrow 8 \\le xy$。",
+        "steps": [
+          {
+            "title": "(1) $A, B$ 定义",
+            "content": "$A$: $y/x \\le x$（即 $y \\le x^2$）且 $y/x \\le 8/y$（即 $y^2 \\le 8x$）。$\\fbox{M}=①(y), \\fbox{N}=④(x^2), \\fbox{O}=⑥(y^2), \\fbox{P}=⓪(x)$。\n\n$B$: $8/y \\le y/x$（即 $8x \\le y^2$）且 $8/y \\le x$（即 $8 \\le xy$）。$\\fbox{Q}=⓪(x), \\fbox{R}=⑥(y^2), \\fbox{S}=⑤(xy)$。"
+          },
+          {
+            "title": "(2) 图示",
+            "content": "$A$：曲线 $y=x^2$ 与 $y^2=8x$ 下方区域；$B$：曲线 $y=8/x$ 与 $y^2=8x$ 上方区域。\n\n两曲线交点：$y=x^2, y^2=8x \\Rightarrow x^4 = 8x \\Rightarrow x = 2, y = 4$；$y=8/x$ 同样过此点。\n\n按图选项 $\\fbox{T}=⓪, \\fbox{U}=⑦$。"
+          },
+          {
+            "title": "(3) 最大 $m$",
+            "content": "$A$ 上 $m = y/x$，最大时该比最大。$A$ 边界（共同点 $(2,4)$）处 $y/x = 2$。\n$B$ 上 $m = 8/y$，最大时 $y$ 最小。$B$ 边界处 $y \\ge 4$（$y = 8/x$ 与 $y^2 = 8x$ 交于 $(2,4)$）。$8/y \\le 8/4 = 2$。\n\n两边都在 $(2, 4)$ 取到 $m = 2$。$\\fbox{V}=2, \\fbox{W}=4, \\fbox{X}=2$。"
+          }
+        ],
+        "finalAnswer": "MNOP=1460, QRS=065, T=⓪, U=⑦, VW=24, X=2"
+      }
+    },
+    {
+      "id": "c2-III-1",
+      "number": "III",
+      "topic": "三角和差代换求极值",
+      "topicTag": "三角·微分",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "$0 \\le x \\le \\pi$ 上 $f(x) = 4\\sin^3 x + 4\\cos^3 x - 8\\sin 2x - 7$ 的最大、最小。\n\n令 $t = \\sin x + \\cos x = \\sqrt{\\fbox{A}}\\sin(x + \\dfrac{\\fbox{B}}{\\fbox{C}}\\pi)$（$\\fbox{B} < \\fbox{C}$），故 $-\\fbox{D} \\le t \\le \\sqrt{\\fbox{E}}$。\n\n$\\sin 2x = t^2 - \\fbox{F}$，$4\\sin^3 x + 4\\cos^3 x = -\\fbox{G}\\,t^3 + \\fbox{H}\\,t$。\n\n$f(x) = -\\fbox{G}\\,t^3 - \\fbox{I}\\,t^2 + \\fbox{H}\\,t + \\fbox{J}$（①）。设 ① 右边 $g(t)$，则 $g'(t) = -\\fbox{K}(\\fbox{L}\\,t - \\fbox{M})(t + \\fbox{N})$。\n\n$g(t)$ 在 $t = \\dfrac{\\fbox{O}}{\\fbox{P}}$ 取最大 $\\dfrac{\\fbox{QR}}{\\fbox{ST}}$；在 $t = \\sqrt{\\fbox{U}}$ 取最小 $\\fbox{V}\\sqrt{\\fbox{W}} - \\fbox{XY}$。",
+      "solution": {
+        "translation": "$\\sin x + \\cos x = \\sqrt 2\\sin(x+\\pi/4)$；$\\sin 2x = (s+c)^2 - 1 = t^2 - 1$；$\\sin^3 + \\cos^3 = (s+c)(1 - sc) = t(1 - (t^2-1)/2)$。",
+        "analysis": "$g(t) = -2t^3 - 8t^2 + 6t + 1$；$g' = -2(3t-1)(t+3)$。",
+        "steps": [
+          {
+            "title": "$t$ 范围",
+            "content": "$t = \\sqrt 2\\sin(x + \\pi/4)$，$x+\\pi/4 \\in [\\pi/4, 5\\pi/4]$，$\\sin$ 范围 $[-\\sqrt 2/2, 1]$，$t \\in [-1, \\sqrt 2]$。\n\n$\\fbox{A}=2, \\fbox{B}=1, \\fbox{C}=4, \\fbox{D}=1, \\fbox{E}=2$。"
+          },
+          {
+            "title": "$f(x)$ 化为 $g(t)$",
+            "content": "$\\sin 2x = t^2 - 1$（$\\fbox{F}=1$）。\n\n$\\sin^3 x + \\cos^3 x = (\\sin x + \\cos x)(1 - \\sin x\\cos x) = t \\cdot(1 - (t^2-1)/2) = t \\cdot (3 - t^2)/2$。\n\n$4(\\sin^3 + \\cos^3) = 2t(3 - t^2) = -2t^3 + 6t$。$\\fbox{G}=2, \\fbox{H}=6$。\n\n$f = -2t^3 + 6t - 8(t^2 - 1) - 7 = -2t^3 - 8t^2 + 6t + 1$。$\\fbox{I}=8, \\fbox{J}=1$。"
+          },
+          {
+            "title": "$g'$ 与最值",
+            "content": "$g'(t) = -6t^2 - 16t + 6 = -2(3t^2 + 8t - 3) = -2(3t - 1)(t + 3)$。$\\fbox{K}=2, \\fbox{L}=3, \\fbox{M}=1, \\fbox{N}=3$。\n\n$g'=0$：$t = 1/3$（在 $[-1, \\sqrt 2]$ 内）或 $t = -3$（外）。\n\n$g$ 在 $[-1, 1/3]$ 递增、$[1/3, \\sqrt 2]$ 递减。\n\n最大 $g(1/3) = -2/27 - 8/9 + 2 + 1 = (81 - 26)/27 = 55/27$。$\\fbox{O}=1, \\fbox{P}=3, \\fbox{QR}=55, \\fbox{ST}=27$。\n\n比较端点：$g(-1) = 2 - 8 - 6 + 1 = -11$；$g(\\sqrt 2) = -4\\sqrt 2 - 16 + 6\\sqrt 2 + 1 = 2\\sqrt 2 - 15 \\approx -12.17$。最小 $= 2\\sqrt 2 - 15$（$t=\\sqrt 2$）。$\\fbox{U}=2, \\fbox{V}=2, \\fbox{W}=2, \\fbox{XY}=15$。"
+          }
+        ],
+        "finalAnswer": "ABC=214, DE=12, F=1, GH=26, IJ=81, KLMN=2313, OP=13, QRST=5527, U=2, VWXY=2215"
+      }
+    },
+    {
+      "id": "c2-IV-1",
+      "number": "IV",
+      "topic": "递推积分极限",
+      "topicTag": "积分·递推",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "$a_n = \\int_0^1 x^{2n}\\sqrt{1-x^2}\\,dx$（$n = 0, 1, 2, \\ldots$）。求 $\\lim_{n\\to\\infty} a_n/a_{n-1}$。\n\n(1) $a_0 = \\dfrac{\\pi}{\\fbox{A}}$。$a_1$ 由分部积分：\n$$a_1 = -\\dfrac{\\fbox{B}}{\\fbox{C}}\\left[x(1-x^2)^{\\fbox{D}/\\fbox{E}}\\right]_0^1 + \\dfrac{\\fbox{F}}{\\fbox{G}}\\int_0^1(1-x^2)^{\\fbox{H}/\\fbox{I}}dx = \\dfrac{\\fbox{J}}{\\fbox{K}}\\left\\{\\int_0^1\\sqrt{1-x^2}dx - \\int_0^1 x^{\\fbox{L}}\\sqrt{1-x^2}dx\\right\\}$$\n故 $a_1 = \\dfrac{\\pi}{\\fbox{MN}}$。\n\n(2) 同法 $a_n = \\dfrac{\\fbox{O}}{\\fbox{P}}\\left\\{\\int_0^1 x^{\\fbox{Q}}\\sqrt{1-x^2}dx - \\int_0^1 x^{\\fbox{R}}\\sqrt{1-x^2}dx\\right\\}$，故 $(\\fbox{S})\\,a_n = (\\fbox{T})\\,a_{n-1}$。$\\lim_{n\\to\\infty}\\dfrac{a_n}{a_{n-1}} = \\fbox{U}$。\n\n选项 $\\fbox{O}$-$\\fbox{U}$：⓪ $0$ ① $1$ ② $2$ ③ $3$ ④ $4$ ⑤ $2n-2$ ⑥ $2n-1$ ⑦ $2n$ ⑧ $2n+1$ ⑨ $2n+2$",
+      "solution": {
+        "translation": "$a_0 = \\pi/4$（四分之一单位圆面积）；分部积分降低 $x$ 的幂次。",
+        "analysis": "$u = x^{2n-1}, dv = x\\sqrt{1-x^2}\\,dx$；$v = -\\frac{1}{3}(1-x^2)^{3/2}$。",
+        "steps": [
+          {
+            "title": "(1) $a_0, a_1$",
+            "content": "$a_0 = \\int_0^1\\sqrt{1-x^2}dx = \\pi/4$。$\\fbox{A}=4$。\n\n$a_1 = \\int_0^1 x^2\\sqrt{1-x^2}dx$。分部 $u=x, dv = x\\sqrt{1-x^2}dx$，$v = -\\dfrac{1}{3}(1-x^2)^{3/2}$。\n\n$a_1 = -\\dfrac{1}{3}\\left[x(1-x^2)^{3/2}\\right]_0^1 + \\dfrac{1}{3}\\int_0^1(1-x^2)^{3/2}dx$。$\\fbox{B}=1, \\fbox{C}=3, \\fbox{D}=3, \\fbox{E}=2, \\fbox{F}=1, \\fbox{G}=3, \\fbox{H}=3, \\fbox{I}=2$。\n\n$(1-x^2)^{3/2} = (1-x^2)\\sqrt{1-x^2}$，故 $a_1 = \\dfrac{1}{3}\\{\\int\\sqrt{1-x^2}dx - \\int x^2\\sqrt{1-x^2}dx\\} = \\dfrac{1}{3}\\{a_0 - a_1\\}$。$\\fbox{J}=1, \\fbox{K}=3, \\fbox{L}=2$。\n\n$\\dfrac{4}{3}a_1 = \\dfrac{\\pi}{12} \\Rightarrow a_1 = \\dfrac{\\pi}{16}$。$\\fbox{MN}=16$。"
+          },
+          {
+            "title": "(2) 递推与极限",
+            "content": "$a_n = \\dfrac{2n-1}{3}\\{a_{n-1} - a_n\\}$。$\\fbox{O}=⑥(2n-1), \\fbox{P}=③(3), \\fbox{Q}=⑤(2n-2), \\fbox{R}=⑦(2n)$。\n\n整理：$(2n+2)a_n = (2n-1)a_{n-1}$。$\\fbox{S}=⑨(2n+2), \\fbox{T}=⑥(2n-1)$。\n\n$\\dfrac{a_n}{a_{n-1}} = \\dfrac{2n-1}{2n+2} \\to 1$。$\\fbox{U}=①(1)$。"
+          }
+        ],
+        "finalAnswer": "A=4, BCDEFGHI=13321332, JKL=132, MN=16, OPQR=6357, ST=96, U=①"
+      }
+    }
+  ]
+}
