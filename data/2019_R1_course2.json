@@ -1,0 +1,188 @@
+{
+  "metadata": {
+    "course": "course2",
+    "year": "2019",
+    "session": "1",
+    "courseNameJa": "数学2",
+    "courseNameEn": "Course 2 (Advanced)",
+    "description": "上级课程｜理科方向",
+    "color": "#9333ea",
+    "examTitle": "2019年度（平成31年）第1回",
+    "examDate": "2019年6月"
+  },
+  "questions": [
+    {
+      "id": "c2-I-1",
+      "number": "I-1",
+      "topic": "二次函数图像判定与最小值",
+      "topicTag": "二次函数",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "questionDiagram": {
+        "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 220' font-family='serif' font-size='12'><line x1='20' y1='160' x2='280' y2='160' stroke='#1c1917'/><line x1='150' y1='20' x2='150' y2='200' stroke='#1c1917'/><path d='M 70 200 Q 175 -60 230 200' fill='none' stroke='#1c1917' stroke-width='1.5'/><circle cx='100' cy='160' r='2.5' fill='#1c1917'/><circle cx='210' cy='160' r='2.5' fill='#1c1917'/><text x='95' y='176' text-anchor='middle'>-1</text><text x='210' y='176' text-anchor='middle'>1</text><text x='148' y='176' text-anchor='end'>O</text><text x='285' y='164'>x</text><text x='155' y='25'>y</text></svg>"
+      },
+      "japanese": "$y = ax^2 + bx + c$ 的图像如图（开口向下，过 $x = 1$，与 $x$ 轴另一交点在 $-1$ 与 $0$ 之间，顶点在 $x$ 轴上方）。\n\n(1) $a \\fbox{A} 0$，$b \\fbox{B} 0$，$c \\fbox{C} 0$；$a + b + c \\fbox{D} 0$；$a - b + c \\fbox{E} 0$；$4a + 2b + c \\fbox{F} 0$；$b^2 - 4ac \\fbox{G} 0$。\n\n(2) 满足 (1)(i)(ii) 时，使 $a^2 - 8b - 8c$ 最小：$a = \\fbox{H}$，$y = \\fbox{H} x^2 + bx - b + \\fbox{I}$，$b$ 范围 $\\fbox{J} < b < \\fbox{K}$。\n\n选项：⓪ $0$ ① $1$ ② $2$ ③ $3$ ④ $4$ ⑤ $-2$ ⑥ $-4$ ⑦ $>$ ⑧ $=$ ⑨ $<$",
+      "solution": {
+        "translation": "由图：开口向下 ($a<0$)，原点处切线斜率正 ($b>0$)，$y(0)>0$ ($c>0$)；$x=1$ 是根 ($a+b+c=0$)；$x=-1$ 与 $x=2$ 都在两根之外。",
+        "analysis": "(2) 用 $c = -a - b$ 消元；$a^2 - 8b - 8c = a^2 + 8a$。",
+        "steps": [
+          {
+            "title": "(1) 符号判断",
+            "content": "开口向下：$a < 0$，$\\fbox{A}=⑨$。\n顶点 $x = -b/(2a) > 0$，由 $a<0$ 得 $b > 0$。$\\fbox{B}=⑦$。\n$y(0) = c > 0$。$\\fbox{C}=⑦$。\n图过 $(1, 0)$：$a + b + c = 0$。$\\fbox{D}=⑧$。\n$y(-1) = a - b + c < 0$。$\\fbox{E}=⑨$。\n$y(2) = 4a + 2b + c < 0$（$x = 2$ 在右侧根 $x = 1$ 之外）。$\\fbox{F}=⑨$。\n两不同根：$b^2 - 4ac > 0$。$\\fbox{G}=⑦$。"
+          },
+          {
+            "title": "(2) 极值与 $b$ 范围",
+            "content": "由 $a + b + c = 0$，$c = -a - b$。\n\n$a^2 - 8b - 8c = a^2 - 8b - 8(-a - b) = a^2 + 8a = (a+4)^2 - 16$。\n\n最小在 $a = -4$（满足 $a < 0$）。$\\fbox{H}=⑥(-4)$。\n\n$c = 4 - b$，$y = -4x^2 + bx + 4 - b = -4x^2 + bx - b + 4$。$\\fbox{I}=④(4)$。\n\n$b > 0$（条件）；$c > 0 \\Rightarrow 4 - b > 0 \\Rightarrow b < 4$。故 $0 < b < 4$。$\\fbox{J}=⓪(0), \\fbox{K}=④(4)$。"
+          }
+        ],
+        "finalAnswer": "A=9, B=7, C=7, D=8, E=9, F=9, G=7, H=6, I=4, J=0, K=4"
+      }
+    },
+    {
+      "id": "c2-I-2",
+      "number": "I-2",
+      "topic": "不均匀骰子概率比较",
+      "topicTag": "概率",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "骰子 X：$1\\sim5$ 各等概率，$6$ 是其他两倍。\n\n(1) $1\\sim5$ 概率 $p$，$6$ 概率 $\\fbox{L} p$。总和 $= \\fbox{M}$，$p = \\dfrac{\\fbox{N}}{\\fbox{O}}$。\n\n(2) 投 $2$ 次。$A$：两次都 $1\\sim5$；$B$：至少一次 $6$。\n$P(A) = \\dfrac{\\fbox{PQ}}{\\fbox{RS}}$，$P(B) = \\dfrac{\\fbox{TU}}{\\fbox{VW}}$。$\\fbox{X}$。\n选项：⓪ $P(A)<P(B)$，差 $\\ge 1/36$ ① $P(A)<P(B)$，差 $<1/36$ ② $P(A) = P(B)$ ③ $P(A) > P(B)$，差 $\\ge 1/36$ ④ $P(A) > P(B)$，差 $<1/36$\n\n(3) 投 $3$ 次。$C$：三次都 $1\\sim5$；$D$：至少一次 $6$。$\\fbox{Y}$。\n选项：⓪ $P(C)<P(D)$，$P(D) \\ge 2P(C)$ ① $P(C)<P(D)$，$P(D) < 2P(C)$ ② $P(C) = P(D)$ ③ $P(C) > P(D)$，$P(C) \\ge 2P(D)$ ④ $P(C) > P(D)$，$P(C) < 2P(D)$",
+      "solution": {
+        "translation": "$5p + 2p = 7p = 1$；$P(1\\sim5) = 5/7$，$P(6) = 2/7$。",
+        "analysis": "两次：$P(A) = (5/7)^2$，$P(B) = 1 - (5/7)^2$。",
+        "steps": [
+          {
+            "title": "(1) 单次概率",
+            "content": "$5p + 2p = 1 \\Rightarrow p = 1/7$。$\\fbox{L}=2, \\fbox{M}=1, \\fbox{NO}=17$。"
+          },
+          {
+            "title": "(2) 两次",
+            "content": "$P(A) = (5/7)^2 = 25/49$。$\\fbox{PQRS}=2549$。\n$P(B) = 1 - 25/49 = 24/49$。$\\fbox{TUVW}=2449$。\n\n$P(A) - P(B) = 1/49 > 0$，且 $1/49 < 1/36$。故 $P(A) > P(B)$ 差 $< 1/36$。$\\fbox{X}=④$。"
+          },
+          {
+            "title": "(3) 三次",
+            "content": "$P(C) = (5/7)^3 = 125/343$。$P(D) = 1 - 125/343 = 218/343$。\n$P(C) < P(D)$；$P(D)/P(C) = 218/125 \\approx 1.744 < 2$，即 $P(D) < 2P(C)$。$\\fbox{Y}=①$。"
+          }
+        ],
+        "finalAnswer": "L=2, M=1, NO=17, PQRS=2549, TUVW=2449, X=4, Y=1"
+      }
+    },
+    {
+      "id": "c2-II-1",
+      "number": "II-1",
+      "topic": "球面上四面体的向量计算",
+      "topicTag": "空间向量",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "球心 $O$、半径 $2$。四面体 $ABCD$ 顶点在球面上，$AB = BC = CA = 2$，$BD$ 为直径。$\\vec{OA} = \\vec a, \\vec{OB} = \\vec b, \\vec{OC} = \\vec c$。\n\n(1) $M, N$ 为 $DA, BC$ 中点。$\\vec{DA} = \\fbox{A}$，$\\vec{MN} = \\dfrac{\\fbox{B}}{\\fbox{C}} + \\fbox{D}$。\n\n(2) $P$ = $MN$ 中点，$G$ = $\\triangle BCD$ 重心。$\\vec{OP} = \\dfrac{\\fbox{E}}{\\fbox{F}}$，$\\vec{OG} = \\dfrac{\\fbox{G}}{\\fbox{H}}$，$|\\vec{PG}| = \\dfrac{\\sqrt{\\fbox{I}}}{\\fbox{J}}$。$\\vec{AG} = \\dfrac{\\fbox{K}}{\\fbox{L}}\\vec{AP}$，故 $A, P, G$ 共线。\n\n选项：⓪ $\\vec a$ ① $\\vec b$ ② $\\vec c$ ③ $\\vec a - \\vec b$ ④ $\\vec b - \\vec c$ ⑤ $\\vec c - \\vec a$ ⑥ $\\vec a + \\vec b$ ⑦ $\\vec b + \\vec c$ ⑧ $\\vec c + \\vec a$ ⑨ $\\vec a + \\vec b + \\vec c$",
+      "solution": {
+        "translation": "$BD$ 直径 $\\Rightarrow \\vec{OD} = -\\vec b$，$\\vec D = -\\vec b$。",
+        "analysis": "$AB = BC = CA = 2$ 与球心距离均为 $2$ 给出 $\\vec a \\cdot \\vec b = \\vec b \\cdot \\vec c = \\vec c \\cdot \\vec a = 2$。",
+        "steps": [
+          {
+            "title": "(1) $\\vec{DA}, \\vec{MN}$",
+            "content": "$\\vec D = -\\vec b$，$\\vec{DA} = \\vec a - (-\\vec b) = \\vec a + \\vec b$。$\\fbox{A}=⑥$。\n\n$M = (D+A)/2 = (\\vec a - \\vec b)/2$，$N = (B+C)/2 = (\\vec b + \\vec c)/2$。\n\n$\\vec{MN} = N - M = (\\vec b + \\vec c - \\vec a + \\vec b)/2 = \\vec b + (\\vec c - \\vec a)/2 = \\dfrac{\\vec c - \\vec a}{2} + \\vec b$。$\\fbox{B}=⑤, \\fbox{C}=2, \\fbox{D}=①$。"
+          },
+          {
+            "title": "(2) $P, G$ 与 $|PG|$",
+            "content": "$\\vec{OP} = (M+N)/2 = (\\vec a + \\vec c)/4$。$\\fbox{E}=⑧, \\fbox{F}=4$。\n\n$\\vec{OG} = (\\vec b + \\vec c + \\vec D)/3 = \\vec c/3$。$\\fbox{G}=②, \\fbox{H}=3$。\n\n$\\vec{PG} = \\vec c/3 - (\\vec a + \\vec c)/4 = (4\\vec c - 3\\vec a - 3\\vec c)/12 = (\\vec c - 3\\vec a)/12$。\n\n$|\\vec a| = |\\vec c| = 2$。$AC = 2 \\Rightarrow |\\vec c - \\vec a|^2 = 4 \\Rightarrow 4 + 4 - 2\\vec a\\cdot\\vec c = 4 \\Rightarrow \\vec a\\cdot\\vec c = 2$。\n\n$|\\vec c - 3\\vec a|^2 = |\\vec c|^2 - 6\\vec a\\cdot\\vec c + 9|\\vec a|^2 = 4 - 12 + 36 = 28$。\n\n$|\\vec{PG}| = \\sqrt{28}/12 = 2\\sqrt 7/12 = \\sqrt 7/6$。$\\fbox{I}=7, \\fbox{J}=6$。"
+          },
+          {
+            "title": "$\\vec{AG} = (4/3)\\vec{AP}$",
+            "content": "$\\vec{AG} = \\vec{OG} - \\vec a = \\vec c/3 - \\vec a = (\\vec c - 3\\vec a)/3$。\n\n$\\vec{AP} = \\vec{OP} - \\vec a = (\\vec a + \\vec c)/4 - \\vec a = (\\vec c - 3\\vec a)/4$。\n\n$\\vec{AG} = \\dfrac{4}{3}\\vec{AP}$。$\\fbox{K}=4, \\fbox{L}=3$。"
+          }
+        ],
+        "finalAnswer": "A=6, BCD=521, EF=84, GH=23, IJ=76, KL=43"
+      }
+    },
+    {
+      "id": "c2-II-2",
+      "number": "II-2",
+      "topic": "复数平面三角形面积",
+      "topicTag": "复数",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "复数平面 $A, B, C$ 对应 $\\alpha, \\beta, \\gamma$。\n\n$(\\gamma-\\alpha)^2 + (\\gamma-\\alpha)(\\beta-\\alpha) + (\\beta-\\alpha)^2 = 0$（①），$|\\beta - 2\\alpha + \\gamma| = 3$（②）。\n\n由 ①：$\\dfrac{\\gamma-\\alpha}{\\beta-\\alpha} = \\dfrac{-\\fbox{M} \\pm \\sqrt{\\fbox{N}}\\,i}{\\fbox{O}}$。\n\n$\\left|\\dfrac{\\gamma-\\alpha}{\\beta-\\alpha}\\right| = \\fbox{P}$，$\\arg\\dfrac{\\gamma-\\alpha}{\\beta-\\alpha} = \\pm\\dfrac{\\fbox{Q}}{\\fbox{R}}\\pi$（$-\\pi < \\arg < \\pi$）。\n\n$\\beta - 2\\alpha + \\gamma = (\\beta - \\alpha)\\cdot\\dfrac{\\fbox{S} \\pm \\sqrt{\\fbox{T}}\\,i}{\\fbox{U}}$，故 $|\\beta - \\alpha| = \\fbox{V}$。\n\n$\\triangle ABC$ 面积 $= \\dfrac{\\fbox{W}\\sqrt{\\fbox{X}}}{\\fbox{Y}}$。",
+      "solution": {
+        "translation": "设 $z = (\\gamma-\\alpha)/(\\beta-\\alpha)$，得 $z^2 + z + 1 = 0$。",
+        "analysis": "$z = e^{\\pm 2\\pi i/3}$，$|z| = 1$。$\\triangle ABC$ 中 $AB = |\\beta-\\alpha|, AC = |\\gamma-\\alpha| = |z|\\cdot AB = AB$。",
+        "steps": [
+          {
+            "title": "$z$ 的模与辐角",
+            "content": "$z^2 + z + 1 = 0 \\Rightarrow z = \\dfrac{-1 \\pm \\sqrt 3 i}{2}$。$\\fbox{M}=1, \\fbox{N}=3, \\fbox{O}=2$。\n\n$|z| = \\sqrt{1/4 + 3/4} = 1$。$\\fbox{P}=1$。$\\arg z = \\pm 2\\pi/3$。$\\fbox{Q}=2, \\fbox{R}=3$。"
+          },
+          {
+            "title": "$|\\beta - \\alpha|$",
+            "content": "$\\beta - 2\\alpha + \\gamma = (\\beta - \\alpha) + (\\gamma - \\alpha) = (\\beta - \\alpha)(1 + z) = (\\beta - \\alpha)\\cdot\\dfrac{1 \\pm \\sqrt 3 i}{2}$。$\\fbox{S}=1, \\fbox{T}=3, \\fbox{U}=2$。\n\n$|1 \\pm \\sqrt 3 i|/2 = 2/2 = 1$，故 $|\\beta - \\alpha| = 3$。$\\fbox{V}=3$。"
+          },
+          {
+            "title": "面积",
+            "content": "$AB = |\\beta - \\alpha| = 3$，$AC = |z|\\cdot AB = 3$。$\\angle BAC = \\arg z = 2\\pi/3$。\n\n面积 $= \\dfrac{1}{2}\\cdot 3\\cdot 3\\cdot \\sin(2\\pi/3) = \\dfrac{9}{2}\\cdot\\dfrac{\\sqrt 3}{2} = \\dfrac{9\\sqrt 3}{4}$。$\\fbox{W}=9, \\fbox{X}=3, \\fbox{Y}=4$。"
+          }
+        ],
+        "finalAnswer": "MNO=132, P=1, QR=23, STU=132, V=3, WXY=934"
+      }
+    },
+    {
+      "id": "c2-III-1",
+      "number": "III",
+      "topic": "单位圆上两动径投影长最大",
+      "topicTag": "三角·微分",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "原点 $O$ 半径 $1$ 的圆 $C$。从 $x$ 正轴旋转 $\\theta$ 的动径与 $C$ 交于 $P$，旋转 $3\\theta$ 的与 $C$ 交于 $Q$（$0 \\le \\theta \\le \\pi$）。$A, B$ 是 $P, Q$ 在 $x$ 轴上的投影。$\\ell = AB$。\n\n(1) $\\theta = \\pi/3$：$\\ell = \\dfrac{\\fbox{A}}{\\fbox{B}}$。\n\n(2) 令 $\\cos\\theta = t$：$\\ell = |\\fbox{C}\\,t^{\\fbox{D}} - \\fbox{E}\\,t|$。$g(t) = \\fbox{C}\\,t^{\\fbox{D}} - \\fbox{E}\\,t$，$g'(t) = \\fbox{F}(\\fbox{G}\\,t^{\\fbox{H}} - 1)$。$\\cos\\theta = \\pm\\sqrt{\\dfrac{\\fbox{I}}{\\fbox{J}}}$ 时 $\\ell$ 最大，最大值 $\\dfrac{\\fbox{K}\\sqrt{\\fbox{L}}}{\\fbox{M}}$。\n\n(3) 两组 $(P, Q)$ 坐标：$P(\\sqrt{1/3}, \\fbox{N})$, $Q(\\fbox{O}, \\fbox{P})$；$P(-\\sqrt{1/3}, \\fbox{Q})$, $Q(\\fbox{R}, \\fbox{S})$。\n选项：⓪ $\\sqrt 6/3$ ① $\\sqrt 6/2$ ② $4\\sqrt 3/9$ ③ $-4\\sqrt 3/9$ ④ $5\\sqrt 3/9$ ⑤ $-5\\sqrt 3/9$ ⑥ $\\sqrt 6/9$ ⑦ $-\\sqrt 6/9$ ⑧ $2\\sqrt 6/9$ ⑨ $-2\\sqrt 6/9$",
+      "solution": {
+        "translation": "$P = (\\cos\\theta, \\sin\\theta)$，$Q = (\\cos 3\\theta, \\sin 3\\theta)$。$\\ell = |\\cos\\theta - \\cos 3\\theta|$。",
+        "analysis": "$\\cos 3\\theta = 4\\cos^3\\theta - 3\\cos\\theta$，$\\ell = |4t - 4t^3|$，$t = \\cos\\theta$。",
+        "steps": [
+          {
+            "title": "(1) $\\theta = \\pi/3$",
+            "content": "$\\cos(\\pi/3) = 1/2$，$\\cos\\pi = -1$。$\\ell = |1/2 + 1| = 3/2$。$\\fbox{A}=3, \\fbox{B}=2$。"
+          },
+          {
+            "title": "(2) 最大值",
+            "content": "$\\cos 3\\theta = 4t^3 - 3t$，故 $\\cos\\theta - \\cos 3\\theta = t - (4t^3 - 3t) = 4t - 4t^3 = -(4t^3 - 4t)$。$\\ell = |4t^3 - 4t|$。$\\fbox{C}=4, \\fbox{D}=3, \\fbox{E}=4$。\n\n$g(t) = 4t^3 - 4t$，$g'(t) = 12t^2 - 4 = 4(3t^2 - 1)$。$\\fbox{F}=4, \\fbox{G}=3, \\fbox{H}=2$。\n\n$g' = 0$ 时 $t = \\pm\\sqrt{1/3}$。$\\fbox{I}=1, \\fbox{J}=3$。\n\n$g(1/\\sqrt 3) = 4/(3\\sqrt 3) - 4/\\sqrt 3 = (4 - 12)/(3\\sqrt 3) = -8/(3\\sqrt 3) = -8\\sqrt 3/9$。$\\ell_{\\max} = 8\\sqrt 3/9$。$\\fbox{K}=8, \\fbox{L}=3, \\fbox{M}=9$。"
+          },
+          {
+            "title": "(3) 两组坐标",
+            "content": "$\\sin\\theta \\ge 0$（$0 \\le \\theta \\le \\pi$）。\n\n**$\\cos\\theta = 1/\\sqrt 3$**：$\\sin\\theta = \\sqrt 6/3$。$\\fbox{N}=⓪$。\n$\\cos 3\\theta = -5\\sqrt 3/9$。$\\fbox{O}=⑤$。\n$\\sin 3\\theta = 3\\sin\\theta - 4\\sin^3\\theta = \\sqrt 6 - 24\\sqrt 6/27 = \\sqrt 6/9$。$\\fbox{P}=⑥$。\n\n**$\\cos\\theta = -1/\\sqrt 3$**：$\\sin\\theta = \\sqrt 6/3$。$\\fbox{Q}=⓪$。\n$\\cos 3\\theta = 5\\sqrt 3/9$。$\\fbox{R}=④$。$\\sin 3\\theta = \\sqrt 6/9$。$\\fbox{S}=⑥$。"
+          }
+        ],
+        "finalAnswer": "AB=32, CDE=434, FGH=432, IJ=33, KLM=839, N=0, OP=56, Q=0, RS=46"
+      }
+    },
+    {
+      "id": "c2-IV-1",
+      "number": "IV",
+      "topic": "对数不等式与面积最值",
+      "topicTag": "对数·积分",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "$\\log$ 自然对数。\n\n(1) $f(x) = x - 1 - \\log x$，$f'(x) = \\fbox{A} - \\dfrac{\\fbox{B}}{x}$。$x = \\fbox{C}$ 时最小 $\\fbox{D}$。故 $x - 1 \\ge \\log x$。\n\n(2) $k > 0$，$n$ 正整数。三直线 $y = x/k - 1$、$x = n$、$x = n+1$ 与曲线 $y = \\log(x/k)$ 围成面积 $S$。\n\n$S = \\left[\\dfrac{x^{\\fbox{E}}}{\\fbox{F}\\,k} - x - \\fbox{G} + x\\log k\\right]_n^{n+1} = \\dfrac{\\fbox{H}\\,n + 1}{\\fbox{I}\\,k} + \\log k - (n + \\fbox{J})\\log(n + \\fbox{K}) + n\\log n$。\n\n$\\fbox{G}$ 选项：⓪ $x(\\log x + 1)$ ① $x(\\log x - 1)$ ② $(\\log x + 1)/x$ ③ $(\\log x - 1)/x$\n\n(3) 固定 $n$。$\\dfrac{dS}{dk} = \\dfrac{\\fbox{L}\\,k - (\\fbox{M}\\,n + 1)}{\\fbox{N}\\,k^2}$。$S$ 在 $k = n + \\dfrac{\\fbox{O}}{\\fbox{P}}$ 最小，记为 $a_n$。\n\n$a_n = \\fbox{Q} - \\log\\left\\{\\left(\\fbox{R} + \\dfrac{\\fbox{S}}{n}\\right)^n \\cdot \\dfrac{\\fbox{T}\\,n + \\fbox{U}}{\\fbox{V}\\,n + 1}\\right\\}$，$\\lim_{n\\to\\infty} a_n = \\fbox{W}$。",
+      "solution": {
+        "translation": "(1) $f'(x) = 1 - 1/x = 0 \\Rightarrow x=1, f(1)=0$；(2) 用 $\\int\\log(x/k)dx = x\\log(x/k) - x$。",
+        "analysis": "$S = \\int_n^{n+1}[(x/k - 1) - \\log(x/k)]dx$（线在曲线上方）。",
+        "steps": [
+          {
+            "title": "(1) 不等式",
+            "content": "$f'(x) = 1 - 1/x$。$\\fbox{A}=1, \\fbox{B}=1$。最小 $f(1) = 0$。$\\fbox{C}=1, \\fbox{D}=0$。"
+          },
+          {
+            "title": "(2) $S$ 表达",
+            "content": "由 (1) 知 $x/k - 1 \\ge \\log(x/k)$。\n\n$\\int(x/k - 1 - \\log(x/k))dx = \\dfrac{x^2}{2k} - x - (x\\log x - x) + x\\log k = \\dfrac{x^2}{2k} - x - x(\\log x - 1) + x\\log k$。$\\fbox{E}=2, \\fbox{F}=2, \\fbox{G}=①$。\n\n$S = \\dfrac{(n+1)^2 - n^2}{2k} + \\log k - (n+1)\\log(n+1) + n\\log n = \\dfrac{2n+1}{2k} + \\log k - (n+1)\\log(n+1) + n\\log n$。$\\fbox{HI}=22, \\fbox{JK}=11$。"
+          },
+          {
+            "title": "(3) $a_n$ 与极限",
+            "content": "$\\dfrac{dS}{dk} = -\\dfrac{2n+1}{2k^2} + \\dfrac{1}{k} = \\dfrac{2k - (2n+1)}{2k^2}$。$\\fbox{L}=2, \\fbox{M}=2, \\fbox{N}=2$。\n\n$k = n + 1/2$。$\\fbox{O}=1, \\fbox{P}=2$。\n\n$a_n = 1 + \\log(n + 1/2) - (n+1)\\log(n+1) + n\\log n = 1 - \\log\\left[\\left(1 + \\dfrac{1}{n}\\right)^n \\cdot \\dfrac{2n+2}{2n+1}\\right]$。$\\fbox{Q}=1, \\fbox{R}=1, \\fbox{S}=1, \\fbox{T}=2, \\fbox{U}=2, \\fbox{V}=2$。\n\n$\\lim = 1 - \\log(e\\cdot 1) = 0$。$\\fbox{W}=0$。"
+          }
+        ],
+        "finalAnswer": "AB=11, C=1, D=0, EF=22, G=1, HIJK=2211, LMN=222, OP=12, QRSTUV=111222, W=0"
+      }
+    }
+  ]
+}
