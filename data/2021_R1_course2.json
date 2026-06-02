@@ -1,0 +1,177 @@
+{
+  "metadata": {
+    "course": "course2",
+    "year": "2021",
+    "session": "1",
+    "courseNameJa": "数学2",
+    "courseNameEn": "Course 2 (Advanced)",
+    "description": "上级课程｜理科方向",
+    "color": "#9333ea",
+    "examTitle": "2021年度（令和3年）第1回",
+    "examDate": "2021年6月"
+  },
+  "questions": [
+    {
+      "id": "c2-I-1",
+      "number": "I-1",
+      "topic": "两二次函数与差值最值",
+      "topicTag": "二次函数",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "$f(x) = -2x^2$，$g(x) = x^2 + ax + b$。$g$ 满足：(i) $x = 3$ 时取最小，(ii) $g(4) = f(4)$。\n\n(1) 由 (i) $a = -\\fbox{A}$，由 (ii) $b = -\\fbox{BC}$。$g$ 的最小值 $= -\\fbox{DE}$。\n\n(2) $f(x) = g(x)$ 且 $x \\ne 4$：$x^2 - \\fbox{F}\\,x - \\fbox{G} = 0$，$x = -\\fbox{H}$。\n\n(3) $-\\fbox{H} \\le x \\le 4$ 上 $f(x) - g(x)$ 在 $x = \\fbox{I}$ 取最大 $\\fbox{JK}$。",
+      "solution": {
+        "translation": "(i) $g$ 顶点 $x = -a/2 = 3$；(ii) 比较 $g(4)$ 与 $f(4) = -32$。",
+        "analysis": "$f(x) - g(x) = -3x^2 + 6x + 24$ 配方求顶点。",
+        "steps": [
+          {
+            "title": "(1)",
+            "content": "$-a/2 = 3 \\Rightarrow a = -6$。$\\fbox{A}=6$。\n\n$g(4) = 16 + 4(-6) + b = b - 8 = f(4) = -32 \\Rightarrow b = -24$。$\\fbox{BC}=24$。\n\n$g(3) = 9 - 18 - 24 = -33$。$\\fbox{DE}=33$。"
+          },
+          {
+            "title": "(2) 交点",
+            "content": "$-2x^2 = x^2 - 6x - 24 \\Rightarrow 3x^2 - 6x - 24 = 0 \\Rightarrow x^2 - 2x - 8 = 0$。$\\fbox{F}=2, \\fbox{G}=8$。\n\n$(x-4)(x+2) = 0$，$x \\ne 4$ 取 $x = -2$。$\\fbox{H}=2$。"
+          },
+          {
+            "title": "(3) 差最大",
+            "content": "$f(x) - g(x) = -3x^2 + 6x + 24 = -3(x-1)^2 + 27$。\n\n在 $-2 \\le x \\le 4$ 上，顶点 $x = 1$ 在区间内，最大 $= 27$。$\\fbox{I}=1, \\fbox{JK}=27$。"
+          }
+        ],
+        "finalAnswer": "A=6, BC=24, DE=33, FG=28, H=2, I=1, JK=27"
+      }
+    },
+    {
+      "id": "c2-I-2",
+      "number": "I-2",
+      "topic": "纸牌胜负概率",
+      "topicTag": "概率",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "$A, B$ 各持 $1, 2, 3$ 三张卡，同时各抽 $1$ 张比大小（同数平局）。\n\n(1) $1$ 局平局概率 $\\dfrac{\\fbox{L}}{\\fbox{M}}$。\n\n(2) 比 $4$ 局（每局放回）。\n(i) $A$ 胜 $\\ge 3$ 局概率 $\\dfrac{\\fbox{N}}{\\fbox{O}}$。\n(ii) $A$ 胜 $1$ 败 $1$ 平 $2$ 概率 $\\dfrac{\\fbox{P}}{\\fbox{QR}}$。\n(iii) $A$ 胜数 $=B$ 胜数概率 $\\dfrac{\\fbox{ST}}{\\fbox{UV}}$；$A$ 胜数 $> B$ 胜数概率 $\\dfrac{\\fbox{WX}}{\\fbox{UV}}$。",
+      "solution": {
+        "translation": "每局 $A$ 胜、$B$ 胜、平局概率各为 $1/3$。",
+        "analysis": "多项分布；对称性 $P(A>B) = (1 - P(A=B))/2$。",
+        "steps": [
+          {
+            "title": "(1) 平局",
+            "content": "$9$ 种结果中 $3$ 种平局（$(1,1),(2,2),(3,3)$）。概率 $= 1/3$。$\\fbox{LM}=13$。"
+          },
+          {
+            "title": "(2)(i)(ii)",
+            "content": "(i) $P(A胜 \\ge 3) = C(4,3)(1/3)^3(2/3) + C(4,4)(1/3)^4 = 8/81 + 1/81 = 9/81 = 1/9$。$\\fbox{NO}=19$。\n\n(ii) $P(1胜, 1败, 2平) = \\dfrac{4!}{1!\\,1!\\,2!}(1/3)^4 = 12/81 = 4/27$。$\\fbox{PQR}=427$。"
+          },
+          {
+            "title": "(2)(iii)",
+            "content": "$A$ 胜数 $=B$ 胜数：(胜, 败, 平) = $(0,0,4), (1,1,2), (2,2,0)$。\n各概率 $\\dfrac{1}{81}, \\dfrac{12}{81}, \\dfrac{6}{81}$。合 $19/81$。$\\fbox{STUV}=1981$。\n\n$P(A > B) = (1 - 19/81)/2 = 62/162 = 31/81$。$\\fbox{WX}=31$。"
+          }
+        ],
+        "finalAnswer": "LM=13, NO=19, PQR=427, STUV=1981, WX=31"
+      }
+    },
+    {
+      "id": "c2-II-1",
+      "number": "II-1",
+      "topic": "正四面体上角的余弦范围",
+      "topicTag": "空间向量",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "正四面体 $OABC$，边长 $1$。$0 < x < 1$，$P$ 内分 $AB$ 为 $x:(1-x)$，$Q$ 内分 $BC$ 为 $x:(1-x)$。$\\vec{OA}=\\vec a, \\vec{OB}=\\vec b, \\vec{OC}=\\vec c$。\n\n$\\vec a\\cdot\\vec b = \\vec b\\cdot\\vec c = \\vec c\\cdot\\vec a = \\dfrac{\\fbox{A}}{\\fbox{B}}$。\n\n$\\vec{OP} = \\fbox{C}, \\vec{OQ} = \\fbox{D}$，$|\\vec{OP}| = |\\vec{OQ}| = \\sqrt{\\fbox{E}}$，$\\vec{OP}\\cdot\\vec{OQ} = \\fbox{F}$。\n\n$\\cos\\angle POQ = \\dfrac{1}{\\fbox{G}} - \\dfrac{\\fbox{H}}{\\fbox{I}}$（其中 $\\fbox{G}$ 为选项 $⑤$ 即 $x^2-x+1$）。\n\n$\\dfrac{\\fbox{J}}{\\fbox{K}} < \\cos\\angle POQ \\le \\dfrac{\\fbox{L}}{\\fbox{M}}$。\n\n选项：⓪ $(1-x)\\vec a + x\\vec b$ ① $x\\vec a + (1-x)\\vec b$ ② $(1-x)\\vec b + x\\vec c$ ③ $x\\vec b + (1-x)\\vec c$ ④ $x^2 + x + 1$ ⑤ $x^2 - x + 1$ ⑥ $x^2 - x - 1$ ⑦ $\\dfrac{1}{2}(-x^2 + x + 1)$ ⑧ $\\dfrac{1}{2}(-x^2 - x + 1)$ ⑨ $\\dfrac{1}{2}(-x^2 + x - 1)$",
+      "solution": {
+        "translation": "正四面体内积 $= 1\\cdot 1 \\cos 60° = 1/2$。",
+        "analysis": "$|OP|^2 = x^2 - x + 1$；$OP\\cdot OQ = (1/2)(-x^2 + x + 1)$；$\\cos\\angle POQ = OP\\cdot OQ / |OP|^2$。",
+        "steps": [
+          {
+            "title": "内积与 $OP, OQ$",
+            "content": "$\\vec a\\cdot\\vec b = 1/2$。$\\fbox{AB}=12$。\n\n$\\vec{OP} = (1-x)\\vec a + x\\vec b$（⓪）。$\\vec{OQ} = (1-x)\\vec b + x\\vec c$（②）。$\\fbox{C}=0, \\fbox{D}=2$。\n\n$|\\vec{OP}|^2 = (1-x)^2 + x^2 + 2x(1-x)\\cdot(1/2) = x^2 - x + 1$（⑤）。$\\fbox{E}=5$。\n\n$\\vec{OP}\\cdot\\vec{OQ} = (1-x)^2(\\vec a\\cdot\\vec b) + (1-x)x(\\vec a\\cdot\\vec c) + x(1-x)|\\vec b|^2 + x^2(\\vec b\\cdot\\vec c) = \\dfrac{-x^2 + x + 1}{2}$（⑦）。$\\fbox{F}=7$。"
+          },
+          {
+            "title": "$\\cos\\angle POQ$ 与范围",
+            "content": "$\\cos\\angle POQ = \\dfrac{(-x^2 + x + 1)/2}{x^2 - x + 1} = \\dfrac{1}{x^2 - x + 1} - \\dfrac{1}{2}$。$\\fbox{G}=⑤, \\fbox{HI}=12$。\n\n$x^2-x+1 \\in [3/4, 1)$ 对 $x \\in (0, 1)$。$1/(x^2-x+1) \\in (1, 4/3]$。$\\cos\\angle POQ \\in (1/2, 5/6]$。$\\fbox{JK}=12, \\fbox{LM}=56$。"
+          }
+        ],
+        "finalAnswer": "AB=12, C=0, D=2, E=5, F=7, G=5, HI=12, JK=12, LM=56"
+      }
+    },
+    {
+      "id": "c2-II-2",
+      "number": "II-2",
+      "topic": "复数平面三角形比值",
+      "topicTag": "复数",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "$\\triangle ABC$，$A(\\alpha), B(\\beta), C(\\gamma)$，$\\dfrac{\\gamma - \\alpha}{\\beta - \\alpha} = 1 - i$。\n\n(1) $\\dfrac{\\gamma - \\alpha}{\\beta - \\alpha} = \\sqrt{\\fbox{N}}\\left(\\cos\\dfrac{\\fbox{O}}{\\fbox{P}}\\pi + i\\sin\\dfrac{\\fbox{O}}{\\fbox{P}}\\pi\\right)$。\n\n$C$ 是 $B$ 绕 $A$ 旋转 $\\dfrac{\\fbox{Q}}{\\fbox{R}}\\pi$、距离扩大 $\\sqrt{\\fbox{S}}$ 倍。\n\n$w = \\dfrac{\\gamma - \\beta}{\\alpha - \\beta}$：$|w| = \\fbox{T}$，$\\arg w = \\dfrac{\\fbox{U}}{\\fbox{V}}\\pi$。\n\n(2) $\\alpha + \\beta + \\gamma = 0$ 时 $|\\alpha| : |\\beta| : |\\gamma| = \\sqrt{\\fbox{W}} : \\sqrt{\\fbox{X}} : \\sqrt{\\fbox{Y}}$。",
+      "solution": {
+        "translation": "$1 - i = \\sqrt 2 e^{i\\cdot 7\\pi/4}$。",
+        "analysis": "由 $\\gamma = i\\alpha + (1-i)\\beta$ 与 $\\alpha+\\beta+\\gamma = 0$ 求比值。",
+        "steps": [
+          {
+            "title": "(1) 极形式",
+            "content": "$|1-i| = \\sqrt 2$，$\\arg = 7\\pi/4$（在 $[0, 2\\pi)$）。$\\fbox{N}=2, \\fbox{OP}=74, \\fbox{QR}=74, \\fbox{S}=2$。\n\n$\\gamma - \\alpha = (1-i)(\\beta-\\alpha) \\Rightarrow \\gamma = i\\alpha + (1-i)\\beta$。$\\gamma - \\beta = i(\\alpha - \\beta)$，$w = i$。$\\fbox{T}=1, \\fbox{UV}=12$。"
+          },
+          {
+            "title": "(2) 比值",
+            "content": "$-\\alpha - \\beta = i\\alpha + (1-i)\\beta \\Rightarrow \\dfrac{\\beta}{\\alpha} = -\\dfrac{1+i}{2-i} = -\\dfrac{1+3i}{5}$。$|\\beta/\\alpha|^2 = 2/5$。\n\n$\\gamma/\\alpha = i + (1-i)\\beta/\\alpha = (-4+3i)/5$，$|\\gamma/\\alpha|^2 = 1$。\n\n$|\\alpha|:|\\beta|:|\\gamma| = \\sqrt 5 : \\sqrt 2 : \\sqrt 5$。$\\fbox{WXY}=525$。"
+          }
+        ],
+        "finalAnswer": "N=2, OP=74, QR=74, S=2, T=1, UV=12, WXY=525"
+      }
+    },
+    {
+      "id": "c2-III-1",
+      "number": "III",
+      "topic": "指数函数代换求最小",
+      "topicTag": "指数·微分",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "$f(x) = 8^x + 8^{-x} - 3(4^{1+x} + 4^{1-x} - 2^{4+x} - 2^{4-x}) - 24$。\n\n令 $t = 2^x + 2^{-x}$：$4^x + 4^{-x} = t^2 - \\fbox{A}$，$8^x + 8^{-x} = t^3 - \\fbox{B}\\,t$。\n\n$f(x) = t^3 - \\fbox{CD}\\,t^2 + \\fbox{EF}\\,t$，$g'(t) = \\fbox{G}(t - \\fbox{H})(t - \\fbox{I})$（$\\fbox{H} < \\fbox{I}$）。\n\n$t \\ge \\fbox{J}$。$t = \\fbox{J}$ 时 $g(\\fbox{J}) = \\fbox{KL}$。$t > \\fbox{J}$：$t = \\fbox{M}$ 极大 $\\fbox{NO}$，$t = \\fbox{P}$ 极小 $\\fbox{QR}$。\n\n$f$ 最小 $\\fbox{ST}$，$x = \\fbox{U}$ 或 $x = \\log_2(\\fbox{V} \\pm \\sqrt{\\fbox{WX}}) - \\fbox{Y}$。",
+      "solution": {
+        "translation": "$(a+1/a)^2 = a^2 + 1/a^2 + 2$；$(a+1/a)^3 = a^3 + 1/a^3 + 3(a+1/a)$。",
+        "analysis": "$2^x + 2^{-x} \\ge 2$；$g(2) = g(5) = 50$ 同值。",
+        "steps": [
+          {
+            "title": "代换",
+            "content": "$4^x + 4^{-x} = t^2 - 2$。$\\fbox{A}=2$。$8^x + 8^{-x} = t^3 - 3t$。$\\fbox{B}=3$。\n\n$f = t^3 - 3t - 3[4(t^2-2) - 16t] - 24 = t^3 - 12t^2 + 45t$。$\\fbox{CDEF}=1245$。"
+          },
+          {
+            "title": "$g'$ 与极值",
+            "content": "$g'(t) = 3(t-3)(t-5)$。$\\fbox{GHI}=335$。$t \\ge 2$。$\\fbox{J}=2$。\n\n$g(2) = 50$，$g(3) = 54$（极大），$g(5) = 50$（极小）。$\\fbox{KL}=50, \\fbox{M}=3, \\fbox{NO}=54, \\fbox{P}=5, \\fbox{QR}=50$。"
+          },
+          {
+            "title": "最小值与 $x$",
+            "content": "最小 $= 50$ 在 $t = 2$ 与 $t = 5$ 同取。$\\fbox{ST}=50$。\n\n$t = 2 \\Rightarrow x = 0$。$\\fbox{U}=0$。\n\n$t = 5$：$y + 1/y = 5$（$y = 2^x$）$\\Rightarrow y = (5 \\pm \\sqrt{21})/2$。$x = \\log_2(5 \\pm \\sqrt{21}) - 1$。$\\fbox{VWX}=521, \\fbox{Y}=1$。"
+          }
+        ],
+        "finalAnswer": "A=2, B=3, CDEF=1245, GHI=335, J=2, KL=50, M=3, NO=54, P=5, QR=50, ST=50, U=0, VWX=521, Y=1"
+      }
+    },
+    {
+      "id": "c2-IV-1",
+      "number": "IV",
+      "topic": "两曲线围成面积差恒定",
+      "topicTag": "积分·面积",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "$k > 0$。$C_1: y = \\sin^2 x$，$C_2: y = k\\cos 2x$（$0 \\le x \\le \\pi/2$）。\n\n$C_1, C_2, y$ 轴围 $S_1$；$C_1, C_2, x = \\pi/2$ 围 $S_2$。证 $S_2 - S_1$ 不依赖 $k$。\n\n$\\sin\\alpha = \\sqrt{\\dfrac{k}{\\fbox{A}\\,k + \\fbox{B}}}$，$\\cos\\alpha = \\sqrt{\\dfrac{k + \\fbox{C}}{\\fbox{D}\\,k + \\fbox{E}}}$。\n\n$S_1 = \\dfrac{\\fbox{F}}{\\fbox{G}}\\int_0^\\alpha\\{(\\fbox{H}\\,k + \\fbox{I})\\cos\\fbox{J}\\,x - 1\\}\\,dx = \\dfrac{\\fbox{K}}{\\fbox{L}}\\{\\sqrt{k(k + \\fbox{M})} - \\alpha\\}$。\n\n$S_2 = \\dfrac{\\fbox{N}}{\\fbox{O}}\\{\\sqrt{k(k + \\fbox{P})} - \\alpha\\} + \\dfrac{\\pi}{\\fbox{Q}}$，$S_2 - S_1 = \\dfrac{\\pi}{\\fbox{R}}$。",
+      "solution": {
+        "translation": "$\\sin^2 x = (1 - \\cos 2x)/2$ 代入。",
+        "analysis": "$k\\cos 2x - \\sin^2 x = ((2k+1)/2)\\cos 2x - 1/2$。",
+        "steps": [
+          {
+            "title": "交点 $\\alpha$",
+            "content": "$\\sin^2 x = k(1 - 2\\sin^2 x) \\Rightarrow \\sin^2 x = k/(2k+1)$。$\\fbox{AB}=21$。$\\cos^2 x = (k+1)/(2k+1)$。$\\fbox{CDE}=121$。"
+          },
+          {
+            "title": "$S_1, S_2$",
+            "content": "$S_1 = \\dfrac{1}{2}\\int_0^\\alpha [(2k+1)\\cos 2x - 1]\\,dx$。$\\fbox{FG}=12, \\fbox{HIJ}=212$。\n\n$= \\dfrac{1}{2}\\left[\\dfrac{2k+1}{2}\\sin 2x - x\\right]_0^\\alpha$。$\\sin 2\\alpha = 2\\sqrt{k(k+1)}/(2k+1)$。\n\n$S_1 = \\dfrac{1}{2}\\{\\sqrt{k(k+1)} - \\alpha\\}$。$\\fbox{KLM}=121$。\n\n$S_2 = \\dfrac{1}{2}\\{\\sqrt{k(k+1)} - \\alpha\\} + \\dfrac{\\pi}{4}$。$\\fbox{NOP}=121, \\fbox{Q}=4$。\n\n$S_2 - S_1 = \\pi/4$。$\\fbox{R}=4$。"
+          }
+        ],
+        "finalAnswer": "AB=21, CDE=121, FG=12, HIJ=212, KLM=121, NOP=121, Q=4, R=4"
+      }
+    }
+  ]
+}
