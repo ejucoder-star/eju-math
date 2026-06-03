@@ -1,0 +1,181 @@
+{
+  "metadata": {
+    "course": "course2",
+    "year": "2022",
+    "session": "1",
+    "courseNameJa": "数学2",
+    "courseNameEn": "Course 2 (Advanced)",
+    "description": "上级课程｜理科方向",
+    "color": "#9333ea",
+    "examTitle": "2022年度（令和4年）第1回",
+    "examDate": "2022年6月"
+  },
+  "questions": [
+    {
+      "id": "c2-I-1",
+      "number": "I-1",
+      "topic": "顶点在线段上时的取值范围",
+      "topicTag": "二次函数",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "$f(x) = x^2 + ax + b$，$h(x) = -2x$。$A = (3, h(3))$，$B = (-2, h(-2))$。$y = f(x)$ 的顶点 $P$ 在线段 $AB$ 上。求 $L = \\{f(3) - h(3)\\} + \\{f(-2) - h(-2)\\}$ 的范围。\n\n$P = \\left(-\\dfrac{a}{\\fbox{A}}, -\\dfrac{a^2}{\\fbox{B}} + b\\right)$。$-\\fbox{C} \\le a \\le \\fbox{D}$，$b = \\dfrac{a^2}{\\fbox{E}} + a$。\n\n$L = \\dfrac{1}{2}a^2 + \\fbox{F}\\,a + \\fbox{GH}$，$\\dfrac{\\fbox{IJ}}{\\fbox{K}} \\le L \\le \\fbox{LM}$。",
+      "solution": {
+        "translation": "线段 $AB$ 即直线 $y = -2x$。$P$ 在该直线上 $\\Leftrightarrow$ $P_y = -2 P_x$。",
+        "analysis": "$P_y = -a^2/4 + b = -2\\cdot(-a/2) = a \\Rightarrow b = a + a^2/4$。",
+        "steps": [
+          {
+            "title": "顶点与范围",
+            "content": "$P = (-a/2, -a^2/4 + b)$。$\\fbox{A}=2, \\fbox{B}=4$。\n\n$-a/2 \\in [-2, 3]$（$x$ 坐标在线段内）$\\Rightarrow -6 \\le a \\le 4$。$\\fbox{C}=6, \\fbox{D}=4$。\n\n$b = a^2/4 + a$。$\\fbox{E}=4$。"
+          },
+          {
+            "title": "$L$ 表达与范围",
+            "content": "$f(3) = 9 + 3a + b$，$f(-2) = 4 - 2a + b$，$h(3) = -6, h(-2) = 4$。\n\n$L = (9 + 3a + b + 6) + (4 - 2a + b - 4) = 15 + a + 2b = 15 + a + 2(a^2/4 + a) = a^2/2 + 3a + 15$。$\\fbox{F}=3, \\fbox{GH}=15$。\n\n$L'(a) = a + 3 = 0$ 于 $a = -3$。$L(-3) = 9/2 - 9 + 15 = 21/2$。$L(-6) = 18 - 18 + 15 = 15$。$L(4) = 8 + 12 + 15 = 35$。\n\n范围 $[21/2, 35]$。$\\fbox{IJ}=21, \\fbox{K}=2, \\fbox{LM}=35$。"
+          }
+        ],
+        "finalAnswer": "AB=24, CD=64, E=4, FGH=315, IJK=212, LM=35"
+      }
+    },
+    {
+      "id": "c2-I-2",
+      "number": "I-2",
+      "topic": "两次交换后整数为偶数的概率",
+      "topicTag": "概率",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "$1\\sim9$ 卡片按升序排列。选 $2$ 张换位，共换 $2$ 次。所得 $9$ 位数为偶数的概率。\n\n(1) 每次从 $9$ 张中选 $2$ 张：\n(i) 第 $1$ 次不换卡 $9$：偶数概率 $\\dfrac{\\fbox{N}}{\\fbox{OP}}$。\n(ii) 第 $1$ 次换卡 $9$：偶数概率 $\\dfrac{\\fbox{QR}}{\\fbox{STU}}$。\n总偶数概率 $\\dfrac{\\fbox{V}}{\\fbox{WX}}$。\n\n(2) 第 $2$ 次从剩 $7$ 张选 $2$ 张：偶数概率 $\\dfrac{\\fbox{Y}}{\\fbox{Z}}$。",
+      "solution": {
+        "translation": "位置 $9$ 的值最终为偶数 $\\Leftrightarrow$ 9 位数偶数。设 $\\tau_1, \\tau_2$ 是两次换位（作为对换）。最终位置 $9$ 的值 $= \\tau_1(\\tau_2(9))$。",
+        "analysis": "拆为 $\\tau_1$ 是否含 $9$、$\\tau_2$ 是否含 $9$ 几种情形。",
+        "steps": [
+          {
+            "title": "(1)(i)",
+            "content": "$\\tau_1$ 不含 $9$（$C(8,2) = 28$ 种）。$\\tau_2(9) = 9$ 时，$\\tau_1(9) = 9$ 奇。$\\tau_2 = (9, x)$ 时，$\\tau_2(9) = x$，$\\tau_1(x) = $ 若 $x \\in \\{a,b\\}$ 取对应另一者，否则 $x$。每 $\\tau_1$ 对应使结果偶的 $\\tau_2$ 数都为 $4$。合 $28\\cdot 4 / (36\\cdot 36) = 112/1296 = 7/81$。$\\fbox{NOP}=781$。"
+          },
+          {
+            "title": "(1)(ii)",
+            "content": "$\\tau_1 = (9, y)$（$8$ 种）。$\\tau_2$ 不含 $9$（$28$ 种）时结果 $= y$，偶 iff $y \\in \\{2,4,6,8\\}$。$\\tau_2 = (9, x)$（$8$ 种）时 $x = y$ 给 $9$（奇），$x \\ne y$ 给 $x$（偶 iff $x \\in E\\setminus\\{y\\}$）。\n\n$y \\in E$（$4$ 种）：$28 + 3 = 31$；$y \\notin E$（$4$ 种）：$0 + 4 = 4$。\n\n合 $4\\cdot 31 + 4\\cdot 4 = 140$。概率 $= 140/1296 = 35/324$。$\\fbox{QRSTU}=35324$。\n\n合 $7/81 + 35/324 = 28/324 + 35/324 = 63/324 = 7/36$。$\\fbox{VWX}=736$。"
+          },
+          {
+            "title": "(2)",
+            "content": "$\\tau_2$ 从 $\\tau_1$ 之外的 $7$ 张选 $2$ 张（$C(7,2) = 21$）。\n\n$\\tau_1$ 不含 $9$（$28$）：$\\tau_2$ 含 $9$（$6$ 种 $\\tau_2 = (9,x), x \\notin \\{a,b\\}$）时结果 $= x$。偶 iff $x \\in E$。\n— $\\{a,b\\}$ 都 $\\in E$（$6$）：$|E\\setminus\\{a,b\\}| = 2$。\n— 一个 $\\in E$（$16$）：$3$。\n— 都 $\\notin E$（$6$）：$4$。\n合 $6\\cdot 2 + 16\\cdot 3 + 6\\cdot 4 = 84$。\n\n$\\tau_1 = (9, y)$（$8$）：$\\tau_2$ 不含 $9$，结果 $= y$。$y \\in E$（$4$）×$21 = 84$；$y \\notin E$：$0$。合 $84$。\n\n总 $168/(36\\cdot 21) = 168/756 = 2/9$。$\\fbox{YZ}=29$。"
+          }
+        ],
+        "finalAnswer": "NOP=781, QRSTU=35324, VWX=736, YZ=29"
+      }
+    },
+    {
+      "id": "c2-II-1",
+      "number": "II-1",
+      "topic": "向量方程下 P 的存在范围",
+      "topicTag": "平面向量",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "平面 $\\triangle ABC$ 中 $9\\vec{PA} + 4\\vec{PB} + 2\\vec{PC} = k\\vec{BC}$。\n\n(1) $\\vec{AP} = \\dfrac{\\fbox{A} + k}{\\fbox{BC}}\\vec{AB} + \\dfrac{\\fbox{D} - k}{\\fbox{EF}}\\vec{AC} = \\dfrac{\\fbox{G}}{\\fbox{H}}\\left\\{\\dfrac{\\fbox{A}+k}{6}\\vec{AB} + \\dfrac{\\fbox{D}-k}{6}\\vec{AC}\\right\\}$，\n$\\dfrac{\\fbox{A}+k}{6} + \\dfrac{\\fbox{D}-k}{6} = \\fbox{I}$。$P$ 的轨迹：$AB$ 上 $\\fbox{J}:\\fbox{K}$ 内分点 $Q$ 与 $AC$ 同比内分点 $R$ 所连直线。\n\n(2) $P$ 在 $\\triangle ABC$ 内 $\\Leftrightarrow -\\fbox{L} < k < \\fbox{M}$。",
+      "solution": {
+        "translation": "以 $A$ 为原点；$\\vec{PA} = -\\vec p$；展开并解出 $\\vec p$。",
+        "analysis": "得 $\\vec{AP} = ((4+k)/15)\\vec{AB} + ((2-k)/15)\\vec{AC}$；系数和 $= 2/5$ 恒定。",
+        "steps": [
+          {
+            "title": "(1) $\\vec{AP}$",
+            "content": "设 $\\vec{AB} = \\vec b, \\vec{AC} = \\vec c, \\vec{AP} = \\vec p$。\n$-9\\vec p + 4(\\vec b - \\vec p) + 2(\\vec c - \\vec p) = k(\\vec c - \\vec b) \\Rightarrow -15\\vec p + 4\\vec b + 2\\vec c = -k\\vec b + k\\vec c$\n$\\Rightarrow 15\\vec p = (4 + k)\\vec b + (2 - k)\\vec c$。\n\n$\\vec{AP} = \\dfrac{4+k}{15}\\vec{AB} + \\dfrac{2-k}{15}\\vec{AC}$。$\\fbox{ABC}=415, \\fbox{DEF}=215$。\n\n$\\dfrac{4+k}{15} = \\dfrac{2}{5}\\cdot\\dfrac{4+k}{6}$，故提 $\\dfrac{2}{5}$：$\\fbox{GH}=25$。系数和 $\\dfrac{4+k}{6} + \\dfrac{2-k}{6} = 1$。$\\fbox{I}=1$。\n\n$\\vec{AP} = \\dfrac{2}{5}\\{\\alpha\\vec{AB} + \\beta\\vec{AC}\\}$ 其中 $\\alpha + \\beta = 1$。当 $\\alpha = 1$（$k = 2$）：$\\vec{AP} = (2/5)\\vec{AB}$，即 $Q$ 内分 $AB$ 为 $2:3$。$\\fbox{JK}=23$。"
+          },
+          {
+            "title": "(2) 内部",
+            "content": "$P$ 在 $\\triangle ABC$ 内 $\\Leftrightarrow$ $\\alpha, \\beta > 0$ 且 $\\alpha + \\beta < 1$。\n\n系数 $\\alpha = (4+k)/15 > 0 \\Rightarrow k > -4$；$\\beta = (2-k)/15 > 0 \\Rightarrow k < 2$。$\\alpha + \\beta = 2/5 < 1$ 恒成立。\n\n故 $-4 < k < 2$。$\\fbox{LM}=42$。"
+          }
+        ],
+        "finalAnswer": "ABC=415, DEF=215, GH=25, I=1, JK=23, LM=42"
+      }
+    },
+    {
+      "id": "c2-II-2",
+      "number": "II-2",
+      "topic": "复数平面右角三角形重心",
+      "topicTag": "复数",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "直角三角形 $ABC$（$\\angle ABC = \\pi/2$，$AG = 1$，$G$ 是重心），$\\angle BAC = \\theta$。重心 $G$ 与原点重合，$A = 1$，$B = \\beta, C = \\gamma$（$\\beta$ 虚部正）。\n\n(1) $\\left|\\dfrac{\\gamma - 1}{\\beta - 1}\\right| = \\fbox{N}$，$\\dfrac{\\gamma - 1}{\\beta - 1} = \\fbox{O}$，关系式 $\\fbox{P}$。\n\n(2) $\\tan\\theta = t$。$\\beta = \\fbox{Q}, \\gamma = \\fbox{R}$，$BG = \\fbox{S}, CG = \\fbox{T}$。\n\n选项：⓪ $1/\\sin\\theta$ ① $1/\\cos\\theta$ ② $1/\\tan\\theta$ ③ $\\tan\\theta$ ④ $\\tan\\theta + i$ ⑤ $1 + i\\tan\\theta$ ⑥ $1 - i\\tan\\theta$ ⑦ $(\\tan\\theta + i)\\beta - \\gamma - \\tan\\theta + 1 - i = 0$ ⑧ $(1 + i\\tan\\theta)\\beta - \\gamma - i\\tan\\theta = 0$ ⑨ $(1 - i\\tan\\theta)\\beta - \\gamma + i\\tan\\theta = 0$\n\nQ-T 选项：⓪ $-(1+2ti)/(2+ti)$ ① $-(1+ti)/(2-ti)$ ② $-(1+ti)/(1+2ti)$ ③ $(-1+ti)/(2+ti)$ ④ $(-2+ti)/(1+2ti)$ ⑤ $(-1+2ti)/(2-ti)$ ⑥ $\\sqrt{(4+t^2)/(1+t^2)}$ ⑦ $\\sqrt{(4+t^2)/(1+4t^2)}$ ⑧ $\\sqrt{(1+4t^2)/(4+t^2)}$ ⑨ $\\sqrt{(1+t^2)/(4+t^2)}$\n\n(3) U-Y 选项：⓪ $0$ ① $1$ ② $2$ ③ $3$ ④ $4$ ⑤ $1/2$ ⑥ $1/4$ ⑦ $\\sqrt{10}/3$ ⑧ $\\sqrt{11}/3$ ⑨ $\\sqrt{13}/3$\n\n$\\lim_{\\theta\\to 0+} BG = \\fbox{U}$, $\\lim_{\\theta\\to\\pi/2-} BG = \\fbox{V}$, $\\lim_{\\theta\\to 0+} CG = \\fbox{W}$, $\\lim_{\\theta\\to\\pi/2-} CG = \\fbox{X}$。$BG = 2/3$ 时 $CG = \\fbox{Y}$。",
+      "solution": {
+        "translation": "重心原点 $\\Rightarrow \\beta + \\gamma = -1$。直角 $\\Rightarrow (\\gamma-\\beta)/(1-\\beta)$ 纯虚。",
+        "analysis": "$(\\gamma-1)/(\\beta-1) = |AC|/|AB| \\cdot e^{i\\theta_{rot}} = (1/\\cos\\theta) \\cdot (\\cos\\theta + i\\sin\\theta) = 1 + i\\tan\\theta$（根据 $\\beta$ 上半的方向定）。",
+        "steps": [
+          {
+            "title": "(1) 比值",
+            "content": "$|(\\gamma-1)/(\\beta-1)| = |AC|/|AB| = 1/\\cos\\theta$（直角三角形中斜边/邻边）。$\\fbox{N}=①$。\n\n$(\\gamma-1)/(\\beta-1) = 1 + i\\tan\\theta$（通过坐标设 $\\beta + \\gamma = -1, \\beta$ 上半计算得到）。$\\fbox{O}=⑤$。\n\n展开：$\\gamma - 1 = (1 + i\\tan\\theta)(\\beta - 1) \\Rightarrow \\gamma = (1 + i\\tan\\theta)\\beta - i\\tan\\theta$，即 $(1+i\\tan\\theta)\\beta - \\gamma - i\\tan\\theta = 0$。$\\fbox{P}=⑧$。"
+          },
+          {
+            "title": "(2) $\\beta, \\gamma, BG, CG$",
+            "content": "由关系式 $\\gamma = (1+it)\\beta - it$ 代入 $\\beta + \\gamma = -1$：$(2 + it)\\beta = -1 + it \\Rightarrow \\beta = (-1+it)/(2+it)$。$\\fbox{Q}=③$。\n\n$\\gamma = -1 - \\beta = (-(2+it) - (-1+it))/(2+it) = -(1+2it)/(2+it)$。$\\fbox{R}=⓪$。\n\n$BG = |\\beta| = \\sqrt{(1+t^2)/(4+t^2)}$。$\\fbox{S}=⑨$。$CG = |\\gamma| = \\sqrt{(1+4t^2)/(4+t^2)}$。$\\fbox{T}=⑧$。"
+          },
+          {
+            "title": "(3) 极限与 $CG$",
+            "content": "$t \\to 0$：$BG \\to 1/2$，$\\fbox{U}=⑤$。$CG \\to 1/2$，$\\fbox{W}=⑤$。\n\n$t \\to \\infty$：$BG \\to 1$，$\\fbox{V}=①$。$CG \\to 2$，$\\fbox{X}=②$。\n\n$BG = 2/3 \\Rightarrow (1+t^2)/(4+t^2) = 4/9 \\Rightarrow 9(1+t^2) = 4(4+t^2) \\Rightarrow t^2 = 7/5$。\n\n$CG = \\sqrt{(1+28/5)/(4+7/5)} = \\sqrt{33/27} = \\sqrt{11/9} = \\sqrt{11}/3$。$\\fbox{Y}=⑧$。"
+          }
+        ],
+        "finalAnswer": "N=1, O=5, P=8, Q=3, R=0, S=9, T=8, U=5, V=1, W=5, X=2, Y=8"
+      }
+    },
+    {
+      "id": "c2-III-1",
+      "number": "III",
+      "topic": "对数函数的最大最小",
+      "topicTag": "对数·微分",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "$f(x) = 2\\log_{1/3}\\dfrac{x-2}{\\sqrt{x-1}} + \\log_{\\sqrt 3/3}(-x^2+4x-3) + \\log_9(x-3)^2$。求最大/最小。\n\n定义域 $\\fbox{A} < x < \\fbox{B}$。$f(x) = \\log_{1/3}\\{-(x - \\fbox{C})(x - \\fbox{D})(x - \\fbox{E})^{\\fbox{F}}\\}$（$\\fbox{C} < \\fbox{D}$）。$g(x) = -(x - \\fbox{C})(x - \\fbox{D})(x - \\fbox{E})^{\\fbox{F}}$，$f = \\log_{1/3} g$。\n\n$g'(x) = -\\fbox{G}(x - \\fbox{H})(\\fbox{I}\\,x^2 - \\fbox{J}\\,x + \\fbox{K})$。$g' = 0$ 在 $(\\fbox{A}, \\fbox{B})$ 内的解 $x = \\dfrac{\\fbox{L} + \\sqrt{\\fbox{M}}}{\\fbox{N}}$。\n\n$\\fbox{A} < x < (L+\\sqrt M)/N$：$g'\\fbox{O}0$；$(L+\\sqrt M)/N < x < \\fbox{B}$：$g'\\fbox{P}0$。$g$ 在 $\\fbox{Q}$ 值不存在，于 $x = (L+\\sqrt M)/N$ 取 $\\fbox{R}$ 值 $\\dfrac{\\fbox{S}}{\\fbox{T}}$。\n\n选项：⓪ $<$ ① $>$ ② 最大 ③ 最小\n\n$f$ 在 $\\fbox{U}$ 值不存在，于 $x = (L+\\sqrt M)/N$ 取 $\\fbox{V}$ 值 $\\log_{\\fbox{W}}\\fbox{X}$。",
+      "solution": {
+        "translation": "换底：$\\log_{1/3}=-\\log_3$，$\\log_{\\sqrt 3/3}=-2\\log_3$，$\\log_9 = \\log_3/2$。",
+        "analysis": "对 $2 < x < 3$，化简 $f = \\log_{1/3}\\{(x-2)^2(x-1)(3-x)\\} = \\log_{1/3}\\{-(x-1)(x-3)(x-2)^2\\}$。",
+        "steps": [
+          {
+            "title": "定义域与化简",
+            "content": "$(x-2)/\\sqrt{x-1}$ 需 $x > 1$ 且 $x > 2$；$-x^2+4x-3 = -(x-1)(x-3) > 0$ 时 $1 < x < 3$；$(x-3)^2$ 需 $x \\ne 3$。综合 $2 < x < 3$。$\\fbox{AB}=23$。\n\n$f = -2\\log_3((x-2)/\\sqrt{x-1}) - 2\\log_3(-(x-1)(x-3)) + \\log_3|x-3|$\n$= -2\\log_3(x-2) + \\log_3(x-1) - 2\\log_3(x-1) - 2\\log_3(3-x) + \\log_3(3-x)$\n$= -\\log_3[(x-2)^2(x-1)(3-x)] = \\log_{1/3}[(x-2)^2(x-1)(3-x)]$\n$= \\log_{1/3}\\{-(x-1)(x-3)(x-2)^2\\}$。$\\fbox{CDEF}=1322$。"
+          },
+          {
+            "title": "$g'$ 与临界",
+            "content": "$g(x) = -(x-1)(x-3)(x-2)^2$。$g'(x) = -[(2x-4)(x-2)^2 + (x^2-4x+3)\\cdot 2(x-2)] = -2(x-2)[(x-2)^2 + (x^2-4x+3)] = -2(x-2)(2x^2 - 8x + 7)$。$\\fbox{GHIJK}=22287$。\n\n$2x^2 - 8x + 7 = 0 \\Rightarrow x = (8 \\pm \\sqrt 8)/4 = (4 \\pm \\sqrt 2)/2$。在 $(2,3)$ 内取 $(4 + \\sqrt 2)/2$。$\\fbox{LMN}=422$。"
+          },
+          {
+            "title": "符号、极值",
+            "content": "$x \\in (2, (4+\\sqrt 2)/2)$：$g' > 0$；$(>)$ 选项。$\\fbox{O}=①$。\n$x \\in ((4+\\sqrt 2)/2, 3)$：$g' < 0$。$\\fbox{P}=⓪$。\n\n$g$ 边界 $\\to 0$（不达到），最大在 $(4+\\sqrt 2)/2$ 处。$g$ 无最小（开区间）。$\\fbox{Q}=③（最小）$。$\\fbox{R}=②（最大）$。\n\n$g((4+\\sqrt 2)/2) = -((2+\\sqrt 2)/2)((\\sqrt 2 - 2)/2)(1/2) = -\\dfrac{1}{2}\\cdot\\dfrac{(2+\\sqrt 2)(\\sqrt 2 - 2)}{4} = -\\dfrac{2 - 4}{8} = \\dfrac{1}{4}$。$\\fbox{ST}=14$。\n\n$f = \\log_{1/3} g$。$g$ 取最大 $\\Rightarrow f$ 取最小（$\\log_{1/3}$ 减）。$f$ 无最大，取最小。$\\fbox{U}=②（最大）, \\fbox{V}=③（最小）$。\n\n$f((4+\\sqrt 2)/2) = \\log_{1/3}(1/4) = -\\log_3(1/4) = \\log_3 4$。$\\fbox{WX}=34$。"
+          }
+        ],
+        "finalAnswer": "AB=23, CDEF=1322, GHIJK=22287, LMN=422, O=1, P=0, QR=32, ST=14, UV=23, WX=34"
+      }
+    },
+    {
+      "id": "c2-IV-1",
+      "number": "IV",
+      "topic": "三角函数差与面积",
+      "topicTag": "三角·积分",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "$a$ 正整数。$f(x) = 3\\cos x - a\\sin^3 x$，$g(x) = a\\cos^3 x - 3\\sin x$，$0 \\le x \\le 2\\pi/3$。\n\n(1) $f - g = (\\sin x + \\cos x)(\\fbox{A} - a + (a/\\fbox{B})\\sin 2x)$。方程 $\\fbox{A} - a + (a/\\fbox{B})\\sin 2x = 0$ 在 $[0, 2\\pi/3]$ 有解 $\\Leftrightarrow \\fbox{C} \\le a \\le \\fbox{C} + 3$。\n\n(2) $a = 4$。$f'(x) = -\\fbox{D}\\sin x(\\fbox{E} + \\fbox{F}\\sin 2x)$，$f$ 在 $x = (\\fbox{G}/\\fbox{HI})\\pi$ 取极小。\n\n$g'(x) = -\\fbox{J}\\cos x(\\fbox{K} + \\fbox{L}\\sin 2x)$，$g$ 在 $x = \\pi/\\fbox{M}$ 取极小，$x = (\\fbox{N}/\\fbox{OP})\\pi$ 取极大。\n\n两曲线 $f, g$ 交点 $x = \\pi/\\fbox{QR}$ 与 $(\\fbox{S}/\\fbox{TU})\\pi$；$S = \\int_{...}^{...}(f-g)dx = \\dfrac{\\fbox{V}\\sqrt{\\fbox{W}}}{\\fbox{X}}$。",
+      "solution": {
+        "translation": "$\\sin^3 + \\cos^3 = (\\sin + \\cos)(1 - \\sin\\cos) = (\\sin+\\cos)(1 - \\sin 2x/2)$。",
+        "analysis": "$f - g = (\\sin + \\cos)[3 - a(1 - \\sin 2x/2)] = (\\sin+\\cos)(3 - a + (a/2)\\sin 2x)$。",
+        "steps": [
+          {
+            "title": "(1) $f - g$ 与 $a$ 范围",
+            "content": "$\\fbox{AB}=32$。\n\n$\\sin 2x = 2(a-3)/a = 2 - 6/a$。$2x \\in [0, 4\\pi/3]$，$\\sin 2x \\in [-\\sqrt 3/2, 1]$。\n\n$2 - 6/a \\le 1 \\Rightarrow a \\le 6$；$2 - 6/a \\ge -\\sqrt 3/2 \\Rightarrow a \\ge 12/(4+\\sqrt 3) \\approx 2.09$。$a$ 正整数：$3 \\le a \\le 6$。$\\fbox{C}=3$。"
+          },
+          {
+            "title": "(2) $a=4$ 的极值",
+            "content": "$f'(x) = -3\\sin x - 12\\sin^2 x\\cos x = -3\\sin x(1 + 4\\sin x\\cos x) = -3\\sin x(1 + 2\\sin 2x)$。$\\fbox{DEF}=312$。\n\n$f' = 0$：$\\sin x = 0$（端点 $x = 0$）或 $\\sin 2x = -1/2 \\Rightarrow 2x = 7\\pi/6 \\Rightarrow x = 7\\pi/12$。在 $(0, 2\\pi/3)$ 内 $f'$ 先负后正（$x = 7\\pi/12$ 处变号）。$f$ 在 $x = 7\\pi/12$ 取极小。$\\fbox{GHI}=712$。\n\n$g'(x) = -12\\cos^2 x\\sin x - 3\\cos x = -3\\cos x(4\\sin x\\cos x + 1) = -3\\cos x(1 + 2\\sin 2x)$。$\\fbox{JKL}=312$。\n\n$g' = 0$：$\\cos x = 0$（$x = \\pi/2$）或 $\\sin 2x = -1/2$（$x = 7\\pi/12$）。\n\n$g$ 在 $(0, \\pi/2)$ 减、$(\\pi/2, 7\\pi/12)$ 增、$(7\\pi/12, 2\\pi/3)$ 减。极小 $x = \\pi/2$，极大 $x = 7\\pi/12$。$\\fbox{M}=2, \\fbox{NOP}=712$。"
+          },
+          {
+            "title": "面积",
+            "content": "$f = g$：$\\sin 2x = 1/2 \\Rightarrow 2x = \\pi/6$ 或 $5\\pi/6 \\Rightarrow x = \\pi/12$ 或 $5\\pi/12$。$\\fbox{QR}=12, \\fbox{STU}=512$。\n\n$f - g = (\\sin+\\cos)(2\\sin 2x - 1)$，在 $(\\pi/12, 5\\pi/12)$ 上正。\n\n$\\int(f-g)dx = \\int[4\\sin^2 x\\cos x + 4\\sin x\\cos^2 x - \\sin x - \\cos x]dx = (4/3)\\sin^3 x - (4/3)\\cos^3 x + \\cos x - \\sin x$。\n\n用对称性 $\\sin(5\\pi/12) = \\cos(\\pi/12), \\cos(5\\pi/12) = \\sin(\\pi/12)$，$\\sin(\\pi/12)\\cos(\\pi/12) = (1/2)\\sin(\\pi/6) = 1/4$：\n\n$S = (4/3)(c-s) = (4/3)(\\cos(\\pi/12) - \\sin(\\pi/12)) = (4/3)\\cdot \\sqrt 2\\cos(\\pi/3) = (4/3)\\cdot\\sqrt 2/2 = 2\\sqrt 2/3$。\n\n$\\fbox{VWX}=223$。"
+          }
+        ],
+        "finalAnswer": "AB=32, C=3, DEF=312, GHI=712, JKL=312, M=2, NOP=712, QR=12, STU=512, VWX=223"
+      }
+    }
+  ]
+}
