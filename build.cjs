@@ -108,10 +108,11 @@ for (const file of jsonFiles) {
       question: q.japanese,
       solution: q.solution
     };
-
-    // 物理选择题：透传选项与正确答案
+    
+    // 物理题：透传选项、正确答案、图片路径
     if (q.questionType) converted.questionType = q.questionType;
     if (q.options) converted.options = q.options;
+    if (q.questionImage) converted.questionImage = q.questionImage;
 
     // 处理 SVG 图表（JSON 中以 SVG 字符串存储，JSX 中需要特殊渲染）
     if (q.questionDiagram && q.questionDiagram.svg) {
