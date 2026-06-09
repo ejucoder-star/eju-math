@@ -149,9 +149,42 @@ const SolutionPanel = ({ solution, humanVerified }) => (
   </div>
 );
 
+// ==================== OPTIONS LIST (for choice questions) ====================
+const OptionsList = ({ options, correctOption, revealed }) => (
+  <div style={{ display: "flex", flexDirection: "column", gap: "8px", marginTop: "14px" }}>
+    {options.map((opt) => {
+      const isCorrect = revealed && correctOption && opt.label === correctOption;
+      return (
+        <div
+          key={opt.label}
+          style={{
+            display: "flex", alignItems: "center", gap: "12px",
+            padding: "10px 14px",
+            borderRadius: "9px",
+            border: isCorrect ? "1.5px solid #16a34a" : "1px solid #e7e5e4",
+            background: isCorrect ? "rgba(22,163,74,0.08)" : "#fafaf9",
+            transition: "all 0.2s"
+          }}
+        >
+          <span style={{
+            display: "inline-flex", alignItems: "center", justifyContent: "center",
+            width: "26px", height: "26px", borderRadius: "50%",
+            background: isCorrect ? "#16a34a" : "#e7e5e4",
+            color: isCorrect ? "#fff" : "#57534e",
+            fontSize: "12px", fontWeight: "700", flexShrink: 0
+          }}>{opt.label}</span>
+          <MathText style={{ fontSize: "14px", color: "#1c1917", lineHeight: "1.7", flex: 1 }}>{opt.content}</MathText>
+          {isCorrect && <ChkIco />}
+        </div>
+      );
+    })}
+  </div>
+);
+
 // ==================== QUESTION CARD ====================
 const QuestionCard = ({ question }) => {
   const [open, setOpen] = useState(false);
+  const isChoice = question.questionType === "choice" && Array.isArray(question.options);
   return (
     <div style={{ background: "#fff", borderRadius: "14px", border: "1px solid #d6d3d1", overflow: "hidden" }}>
       <div style={{ padding: "16px 20px", display: "flex", alignItems: "center", justifyContent: "space-between", borderBottom: "1px solid #e7e5e4" }}>
@@ -164,6 +197,13 @@ const QuestionCard = ({ question }) => {
       <div style={{ padding: "18px 20px" }}>
         <MathText style={{ fontSize: "14.5px", lineHeight: "2", color: "#1c1917" }}>{question.question}</MathText>
         {question.questionDiagramSvg && <SvgDiagram svg={question.questionDiagramSvg} />}
+        {isChoice && (
+          <OptionsList
+            options={question.options}
+            correctOption={question.solution && question.solution.correctOption}
+            revealed={open}
+          />
+        )}
       </div>
       <div style={{ padding: "0 20px 18px" }}>
         <button
@@ -225,11 +265,19 @@ export default function App() {
   const [courseId, setCourseId] = useState(null);
   const [examId, setExamId] = useState(null);
 
-  // helper: color-aware badge background
-  const badgeBg = (color) => color === "#2563eb" ? "rgba(37,99,235,0.06)" : "rgba(220,38,38,0.06)";
-  const badgeBorder = (color) => color === "#2563eb" ? "rgba(37,99,235,0.12)" : "rgba(220,38,38,0.12)";
-  const iconBg = (color) => color === "#2563eb" ? "rgba(37,99,235,0.05)" : "rgba(220,38,38,0.05)";
-  const iconBorder = (color) => color === "#2563eb" ? "rgba(37,99,235,0.1)" : "rgba(220,38,38,0.1)";
+  // helper: color-aware badge background（通用 hex → rgba）
+  const hexToRgba = (hex, a) => {
+    const h = hex.replace("#", "");
+    const r = parseInt(h.slice(0, 2), 16);
+    const g = parseInt(h.slice(2, 4), 16);
+    const b = parseInt(h.slice(4, 6), 16);
+    return `rgba(${r},${g},${b},${a})`;
+  };
+  const badgeBg = (c) => hexToRgba(c, 0.06);
+  const badgeBorder = (c) => hexToRgba(c, 0.12);
+  const iconBg = (c) => hexToRgba(c, 0.05);
+  const iconBorder = (c) => hexToRgba(c, 0.1);
+  const courseIcon = (id) => id === "course1" ? "I" : id === "course2" ? "II" : id === "physics" ? "物" : "?";
 
   // ===== LEVEL 1: Course Selection =====
   if (!courseId) {
@@ -239,12 +287,12 @@ export default function App() {
           <div style={{ display: "inline-flex", alignItems: "center", justifyContent: "center", width: "58px", height: "58px", borderRadius: "16px", background: "#1c1917", marginBottom: "18px", boxShadow: "0 4px 20px rgba(0,0,0,0.12)" }}>
             <span style={{ color: "#fafaf9", fontSize: "24px", fontWeight: "900", fontFamily: "Georgia, serif" }}>E</span>
           </div>
-          <h1 style={{ fontSize: "28px", fontWeight: "800", color: "#1c1917", letterSpacing: "-0.02em" }}>EJU 数学真题解析</h1>
-          <p style={{ fontSize: "14px", color: "#78716c", marginTop: "8px" }}>日本留学考试 · 数学科目 · 全题详解</p>
+          <h1 style={{ fontSize: "28px", fontWeight: "800", color: "#1c1917", letterSpacing: "-0.02em" }}>EJU 真题解析</h1>
+          <p style={{ fontSize: "14px", color: "#78716c", marginTop: "8px" }}>日本留学考试 · 数学 / 物理 · 全题详解</p>
         </div>
         {Object.values(examDatabase).map((c, i) => {
           const qCount = Object.values(c.exams).reduce((s, e) => s + e.questions.length, 0);
-          const roman = c.id === "course2" ? "II" : "I";
+          const roman = courseIcon(c.id);
           return (
             <button key={c.id} onClick={() => setCourseId(c.id)} style={{
               display: "flex", alignItems: "center", justifyContent: "space-between", padding: "24px",
