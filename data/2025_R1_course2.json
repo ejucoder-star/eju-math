@@ -1,0 +1,140 @@
+{
+  "metadata": {
+    "course": "course2",
+    "year": "2025",
+    "session": "1",
+    "courseNameJa": "数学2",
+    "courseNameEn": "Course 2 (Advanced)",
+    "description": "上级课程｜理科方向",
+    "color": "#9333ea",
+    "examTitle": "2025年度（令和7年）第1回",
+    "examDate": "2025年6月"
+  },
+  "questions": [
+    {
+      "id": "c2-I-1",
+      "number": "I-1",
+      "topic": "二次函数在不同区间上的最小值",
+      "topicTag": "二次函数",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "$f(x)$ 二次函数，$x^2$ 系数 $2$，$m<7$ 实常数。$f(x)$ 在 $x \\le 0$ 上最小值 $7$，$f(x)$ 在 $x \\le 3$ 上最小值 $m$。\n\n设 $f(x) = 2(x-p)^2 + q$（①），轴 $x=p$。$p \\le 0$ 时两段最小值都是 $q$，故 $p > 0$。$x \\le 0$ 上最小在 $x = \\fbox{A}$，由 ①：$2p^2 + q = \\fbox{B}$（②）。\n\n(1) $m = 1$。\n(i) $0 < p < 3$：最小在 $x = \\fbox{C}$（值 1），$q = \\fbox{D}$。由 ②③：$p = \\sqrt{\\fbox{E}}$。\n(ii) $3 \\le p$：最小在 $x = \\fbox{F}$，$2(\\fbox{F}-p)^2 + q = \\fbox{G}$。$p = \\fbox{H}$（不满足，舍）。\n\n(2) $m = -23$：$p = \\fbox{I}, q = \\fbox{JKL}$。\n\n选项：⓪ $0$ ① $1$ ② $2$ ③ $3$ ④ $p$ ⑤ $q$",
+      "solution": {
+        "translation": "顶点式 $f = 2(x-p)^2 + q$。开口向上 + 轴在区间内 ⇒ 顶点取最小；轴在区间右外 ⇒ 区间右端点最小。",
+        "analysis": "$p > 0$ 必须。然后按 $p$ 与 $3$ 关系分两种。",
+        "steps": [
+          {"title": "(0) $A, B$", "content": "$p \\le 0$ 时两段最小都为 $q$，矛盾 $m < 7$。故 $p > 0$。\n\n$x \\le 0 < p$，整段 $f$ 递减，最小在右端 $x = 0$。$\\fbox{A}=0$。\n\n$f(0) = 2p^2 + q = 7$。$\\fbox{B}=7$。"},
+          {"title": "(1)(i)", "content": "$0 < p < 3$：轴在区间内，顶点取最小 $q$。$\\fbox{C}=④(p), \\fbox{D}=①(1)$。\n\n$2p^2 + 1 = 7 \\Rightarrow p^2 = 3 \\Rightarrow p = \\sqrt 3$。$\\fbox{E}=3$。"},
+          {"title": "(1)(ii)", "content": "$p \\ge 3$：右端 $x = 3$ 取最小。$\\fbox{F}=③(3), \\fbox{G}=①(1)$。\n\n$2(3-p)^2 + q = 1$ 与 $2p^2 + q = 7$ 相减：$2[p^2 - (3-p)^2] = 6$，$(2p-3)\\cdot 3 = 3 \\Rightarrow p = 2$（不满足 $p \\ge 3$，舍）。$\\fbox{H}=2$。"},
+          {"title": "(2)", "content": "$m = -23$。同法 (i) 给 $p = \\sqrt{15}$ 不在 $(0,3)$ 内，舍。(ii) 给 $(2p-3)\\cdot 3 = 30 \\Rightarrow p = 4 \\ge 3$ ✓。\n\n$q = 7 - 2(16) = -25$。$\\fbox{I}=4, \\fbox{JKL}=-25$。"}
+        ],
+        "finalAnswer": "A=0, B=7, C=4, D=1, E=3, F=3, G=1, H=2, I=4, JKL=-25"
+      }
+    },
+    {
+      "id": "c2-I-2",
+      "number": "I-2",
+      "topic": "袋中卡片直到出现3停止的概率",
+      "topicTag": "概率",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "$10$ 张卡：$1$（$4$ 张）、$2$（$3$ 张）、$3$（$3$ 张）。每次同时抽 $2$ 张（不放回），直到含 $3$ 至少 $1$ 张。\n\n(1) $1$ 次结束 $\\fbox{M}/\\fbox{NO}$。\n(2) 最大次数 $\\fbox{P}$；恰好 $\\fbox{P}$ 次结束 $\\fbox{Q}/\\fbox{RS}$。\n(3) 结束前抽出无 $1$ 且至少 $1$ 个 $2$ 的概率 $\\fbox{T}/\\fbox{UV}$。\n(4) 结束时和恰 $7$ 的概率 $\\fbox{W}/\\fbox{XY}$。",
+      "solution": {
+        "translation": "非 $3$ 卡 $7$ 张（$4+3$），$3$ 卡 $3$ 张。",
+        "analysis": "(2) $2(k-1) \\le 7 \\Rightarrow k \\le 4$；(4) 枚举 $(a,b,c)$ 满足和为 $7$。",
+        "steps": [
+          {"title": "(1)", "content": "总 $\\binom{10}{2}=45$。无 $3$：$\\binom{7}{2}=21$。含 $3$：$24$。$P = 24/45 = 8/15$。$\\fbox{MNO}=815$。"},
+          {"title": "(2)", "content": "最多 $k=4$（前 $3$ 次 $6$ 张非 $3$，第 $4$ 次必含 $3$）。$\\fbox{P}=4$。\n\n恰 $4$ 次：前 $6$ 都非 $3$ 的概率 $\\binom{7}{6}/\\binom{10}{6} = 7/210 = 1/30$。$\\fbox{QRS}=130$。"},
+          {"title": "(3)", "content": "全部抽出无 $1$ 即全是 $2$ 或 $3$。非 $3$ 卡仅 $2$ 张（最多 $3$）。\n\n$k=1$ 满足条件：$(2,3)$ 对。$3\\cdot 3/45 = 1/5$。\n$k=2$ 满足条件：第 $1$ 次 $(2,2)$，第 $2$ 次含 $3$ 且都 $2$ 或 $3$。$\\dfrac{3}{45}\\cdot\\dfrac{6}{28} = \\dfrac{1}{70}$。\n\n合 $= 14/70 + 1/70 = 15/70 = 3/14$。$\\fbox{TUV}=314$。"},
+          {"title": "(4)", "content": "枚举 $(a, b, c)$ 满足 $a + 2b + 3c = 7$ 且对应 $k$ 可行。仅 $k=2, (a,b,c) = (2,1,1)$。\n\n场景 A: 第 $1$ 次 $(1,1)$，第 $2$ 次 $(2,3)$：$\\binom{4}{2}\\cdot 3\\cdot 3 = 54$。\n场景 B: 第 $1$ 次 $(1,2)$，第 $2$ 次 $(1,3)$：$4\\cdot 3\\cdot 3\\cdot 3 = 108$。\n\n合 $162$。总 $\\binom{10}{2}\\binom{8}{2} = 1260$。$P = 162/1260 = 9/70$。$\\fbox{WXY}=970$。"}
+        ],
+        "finalAnswer": "MNO=815, P=4, QRS=130, TUV=314, WXY=970"
+      }
+    },
+    {
+      "id": "c2-II-1",
+      "number": "II-1",
+      "topic": "等差与等比数列的公共项",
+      "topicTag": "数列",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "等差 $\\{a_n\\}, \\{b_n\\}$ 与等比 $\\{c_n\\}$（公比 > 0）。$a_1 = b_1 = c_1 = 5$，$a_1 a_2 = 2c_3$，$a_3 + a_4 = b_5$，$b_2 = c_2$。\n\n$a_n = 5 + \\fbox{A}(n-1), b_n = 5 + \\fbox{B}(n-1), c_n = \\fbox{C}\\cdot\\fbox{D}^{n-1}$。\n\n三共同项 $d_1 = \\fbox{E}$。两等差共同项 $e_n$：$k = \\fbox{F}i - 4, \\ell = \\fbox{G}i - 2$，$e_n = \\fbox{H}(\\fbox{I}n - \\fbox{J})$。\n\n$c_k = e_\\ell$：$k = \\fbox{K}j - 1$，$d_n = \\fbox{L}\\cdot\\fbox{M}^{n-1}$。",
+      "solution": {
+        "translation": "三条件解出公差与公比。",
+        "analysis": "$r = 2, d_a = 3, d_b = 5$。",
+        "steps": [
+          {"title": "公差、公比", "content": "由三条件解得 $r = 2, d_a = 3, d_b = 5$。$a_n = 5+3(n-1), b_n = 5+5(n-1), c_n = 5\\cdot 2^{n-1}$。$\\fbox{A}=3, \\fbox{B}=5, \\fbox{CD}=52$。"},
+          {"title": "$d_1$", "content": "$5$ 在三个数列首项均出现，$d_1 = 5$。$\\fbox{E}=5$。"},
+          {"title": "$\\{e_n\\}$", "content": "$3(k-1) = 5(\\ell-1) \\Rightarrow \\ell \\equiv 1 \\pmod 3 \\Rightarrow \\ell = 3i-2, k = 5i-4$。$\\fbox{FG}=53$。\n\n$e_n = 5 + 3(5n - 5) = 15n - 10 = 5(3n-2)$。$\\fbox{HIJ}=532$。"},
+          {"title": "$d_n$", "content": "$2^{k-1} = 3\\ell - 2 \\Rightarrow 2^{k-1} \\equiv 1 \\pmod 3 \\Rightarrow k - 1$ 偶 $\\Rightarrow k = 2j - 1$。$\\fbox{K}=2$。\n\n$d_n = 5\\cdot 2^{2j-2} = 5\\cdot 4^{n-1}$。$\\fbox{LM}=54$。"}
+        ],
+        "finalAnswer": "A=3, B=5, CD=52, E=5, F=5, G=3, HIJ=532, K=2, LM=54"
+      }
+    },
+    {
+      "id": "c2-II-2",
+      "number": "II-2",
+      "topic": "复数方程的抛物线与辐角范围",
+      "topicTag": "复数",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "$c > 0$，$(z-c)i + \\overline{(z-c)i} + 2|z - ci| = 0$。$z = x + yi$。\n\n(1) $y = |x + (y-\\fbox{N})i|$，$y = (\\fbox{O}/\\fbox{P})x^2 + \\fbox{Q}/\\fbox{R}$。\n(2) $\\theta = \\arg z$。$OP$ 斜率 $m = \\fbox{S}$。$y=mx$ 与抛物线切：$m = \\fbox{T}$。$(\\fbox{U}/\\fbox{V})\\pi \\le \\theta \\le (\\fbox{W}/\\fbox{X})\\pi$。\n\n选项：⓪ -1 ① 1 ② 2 ③ ±1 ④ c ⑤ 2c ⑥ 3c ⑦ sin θ ⑧ cos θ ⑨ tan θ",
+      "solution": {
+        "translation": "代入 $z = x + yi$ 化简方程。",
+        "analysis": "$z + \\bar z = 2\\text{Re}(z)$ 实数。",
+        "steps": [
+          {"title": "(1)", "content": "$(z-c)i = -y + (x-c)i$，$+ \\bar{...} = -2y$。$|z - ci| = \\sqrt{x^2 + (y-c)^2}$。\n\n方程 $\\Rightarrow y = \\sqrt{x^2 + (y-c)^2} = |x + (y-c)i|$。$\\fbox{N}=④(c)$。\n\n平方：$x^2 + (y-c)^2 = y^2 \\Rightarrow y = x^2/(2c) + c/2$。$\\fbox{OPQR}=1542$（$O=1, P=⑤, Q=④, R=②$）。"},
+          {"title": "(2)", "content": "$m = y/x = \\tan\\theta$。$\\fbox{S}=⑨$。\n\n切线：$x^2 - 2cmx + c^2 = 0$，判别式 $= 0 \\Rightarrow m = \\pm 1$。$\\fbox{T}=③$。\n\n$|m| \\ge 1$ 才有交：$\\tan\\theta \\ge 1$ 给 $\\theta \\in [\\pi/4, \\pi/2)$；$\\tan\\theta \\le -1$ 给 $\\theta \\in (\\pi/2, 3\\pi/4]$；$\\theta = \\pi/2$ 顶点处。\n\n合 $\\theta \\in [\\pi/4, 3\\pi/4]$。$\\fbox{UV}=14, \\fbox{WX}=34$。"}
+        ],
+        "finalAnswer": "N=4, OPQR=1542, S=9, T=3, UV=14, WX=34"
+      }
+    },
+    {
+      "id": "c2-III-1",
+      "number": "III",
+      "topic": "曲线的切线与直交条件",
+      "topicTag": "微分·切线",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "$y = (2x^2+3)/x$（$x>0$）。\n\n$y' = (\\fbox{A}x^{\\fbox{B}} - \\fbox{C})/x^{\\fbox{D}}$，最小在 $x = \\sqrt{\\fbox{E}}/\\fbox{F}$。\n\n点 $(\\sqrt{E}/F, p)$ 切线 $2$ 条的条件 $\\sqrt{\\fbox{I}} < p < \\fbox{J}\\sqrt{\\fbox{K}}$。\n\n切线方程 $y = \\fbox{G}$。过 $(\\sqrt{E}/F, p)$ 给 $\\fbox{H} = 0$。\n\n两切线直交：$\\fbox{L}\\alpha^2\\beta^2 - \\fbox{M}(\\alpha^2+\\beta^2) + \\fbox{N} = 0$。$\\alpha+\\beta = \\fbox{O}/(p-\\sqrt{\\fbox{P}})$，$\\alpha\\beta = \\fbox{Q}\\sqrt{\\fbox{R}}/(\\fbox{S}(p-\\sqrt{\\fbox{T}}))$。$p = \\fbox{U}\\sqrt{\\fbox{VW}}/\\fbox{X}$。",
+      "solution": {
+        "translation": "$y = 2x + 3/x$，$y' = 2 - 3/x^2$。",
+        "analysis": "Vieta 公式与切线斜率乘 $-1$。",
+        "steps": [
+          {"title": "$y'$ 与最小", "content": "$y' = (2x^2-3)/x^2$。$\\fbox{ABCD}=2232$。$y'=0$：$x = \\sqrt 6/2$。$\\fbox{EF}=62$。"},
+          {"title": "切线 $G$、过点 $H$", "content": "切线：$y = \\dfrac{2t^2-3}{t^2}x + \\dfrac{6}{t}$（选项 ②）。$\\fbox{G}=2$。\n\n过 $(\\sqrt 6/2, p)$：$(p-\\sqrt 6)t^2 - 6t + 3\\sqrt 6/2 = 0$（选项 ⑧）。$\\fbox{H}=8$。"},
+          {"title": "两切线条件", "content": "判别式 $> 0$ 与两正根：$\\sqrt 6 < p < 2\\sqrt 6$。$\\fbox{IJK}=626$。"},
+          {"title": "直交方程", "content": "斜率乘 $-1$：$5\\alpha^2\\beta^2 - 6(\\alpha^2+\\beta^2) + 9 = 0$。$\\fbox{LMN}=569$。\n\nVieta：$\\alpha+\\beta = 6/(p-\\sqrt 6)$（$\\fbox{OP}=66$），$\\alpha\\beta = 3\\sqrt 6/(2(p-\\sqrt 6))$（$\\fbox{QRST}=3626$）。"},
+          {"title": "求 $p$", "content": "代入直交方程，整理 $2u^2 + 4\\sqrt 6 u - 33 = 0$（$u = p - \\sqrt 6$）。\n\n解 $u = (-2\\sqrt 6 \\pm 3\\sqrt{10})/2$，$p = \\pm 3\\sqrt{10}/2$。范围内取 $p = 3\\sqrt{10}/2$。$\\fbox{UVWX}=3102$。"}
+        ],
+        "finalAnswer": "ABCD=2232, EF=62, G=2, H=8, I=6, JK=26, LMN=569, OP=66, QRST=3626, UVWX=3102"
+      }
+    },
+    {
+      "id": "c2-IV-1",
+      "number": "IV",
+      "topic": "三角分式函数的极值与定积分",
+      "topicTag": "三角·微分·积分",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "$f(x) = (\\sin x - \\cos x)/(3 + \\sin x + \\cos x)$，$0 < x < 2\\pi$。\n\n(1) $f'(x) = [\\fbox{A}(\\sin+\\cos) + \\fbox{B}]/(3+\\sin+\\cos)^2$。$\\sin(x+\\fbox{C}) = -\\sqrt{\\fbox{D}}/\\fbox{E}$，两解 $\\alpha<\\beta$。$\\cos(\\alpha+C) = -\\sqrt{F}/G$，$\\cos(\\beta+C) = \\sqrt{F}/G$。\n\n(2) $\\sin<0,\\cos<0$：$\\fbox{H}<x<\\fbox{I}$；$\\sin<0,\\cos>0$：$\\fbox{I}<x<\\fbox{J}$。$\\alpha$ 处 $\\fbox{K}$，$\\beta$ 处 $\\fbox{L}$。\n\n(3) $\\sin\\alpha - \\cos\\alpha = \\sqrt{\\fbox{MN}}/\\fbox{O}$，$f(\\alpha) = \\sqrt{\\fbox{PQ}}/\\fbox{R}$。\n\n(4) $S = \\int_H^\\alpha f dx$，代换得 $\\int_{\\fbox{S}}^{\\fbox{T}/\\fbox{U}}(-1/t)dt = \\log(\\fbox{V}/\\fbox{W})$。\n\n选项：⓪ 0 ① π/4 ② π/2 ③ 3π/4 ④ π ⑤ 5π/4 ⑥ 3π/2 ⑦ 7π/4 ⑧ 极小 ⑨ 极大",
+      "solution": {
+        "translation": "商法则；$\\sin+\\cos = \\sqrt 2 \\sin(x+\\pi/4)$；积分代换 $t = 3+\\sin x+\\cos x$。",
+        "analysis": "$f'$ 与分子同号。",
+        "steps": [
+          {"title": "(1)", "content": "$f' = [3(\\sin+\\cos) + 2]/(3+\\sin+\\cos)^2$。$\\fbox{AB}=32$。\n\n$f'=0$：$\\sin x + \\cos x = -2/3 \\Rightarrow \\sin(x+\\pi/4) = -\\sqrt 2/3$。$\\fbox{C}=①, \\fbox{DE}=23$。\n\n$\\cos(\\alpha+\\pi/4) = -\\sqrt 7/3, \\cos(\\beta+\\pi/4) = \\sqrt 7/3$（$\\cos\\phi = \\sqrt 7/3$ 因 $\\sin\\phi = \\sqrt 2/3$）。$\\fbox{FG}=73$。"},
+          {"title": "(2)", "content": "第三象限：$x \\in (3\\pi/4, 5\\pi/4)$。$\\fbox{HI}=35$。第四象限：$x \\in (5\\pi/4, 7\\pi/4)$。$\\fbox{J}=⑦$。\n\n$\\alpha$ 处 $f'$ 由 $+$ 到 $-$ 极大；$\\beta$ 处由 $-$ 到 $+$ 极小。$\\fbox{KL}=98$。"},
+          {"title": "(3)", "content": "$\\cos(\\alpha+\\pi/4) = (\\sqrt 2/2)(\\cos\\alpha - \\sin\\alpha) = -\\sqrt 7/3 \\Rightarrow \\sin\\alpha - \\cos\\alpha = \\sqrt{14}/3$。$\\fbox{MNO}=143$。\n\n$f(\\alpha) = (\\sqrt{14}/3)/(7/3) = \\sqrt{14}/7$。$\\fbox{PQR}=147$。"},
+          {"title": "(4)", "content": "$t = 3 + \\sin x + \\cos x$，$dt = -(\\sin x - \\cos x)dx$，$f dx = -dt/t$。\n\n$x = 3\\pi/4$：$t = 3$。$x = \\alpha$：$t = 7/3$。\n\n$S = \\int_3^{7/3}(-1/t)dt = \\ln(9/7)$。$\\fbox{STU}=373, \\fbox{VW}=97$。"}
+        ],
+        "finalAnswer": "AB=32, C=1, DE=23, FG=73, HI=35, J=7, KL=98, MNO=143, PQR=147, STU=373, VW=97"
+      }
+    }
+  ]
+}
