@@ -28,9 +28,6 @@
         { "label": "④", "content": "$90°$" },
         { "label": "⑤", "content": "$120°$" }
       ],
-      "questionDiagram": {
-        "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 260 200' font-family='serif' font-size='12'><rect x='40' y='15' width='180' height='10' fill='#1c1917'/><circle cx='80' cy='40' r='10' fill='none' stroke='#1c1917' stroke-width='1.5'/><circle cx='180' cy='40' r='10' fill='none' stroke='#1c1917' stroke-width='1.5'/><line x1='75' y1='48' x2='130' y2='110' stroke='#1c1917'/><line x1='185' y1='48' x2='130' y2='110' stroke='#1c1917'/><line x1='80' y1='48' x2='80' y2='130' stroke='#1c1917'/><line x1='180' y1='48' x2='180' y2='130' stroke='#1c1917'/><line x1='130' y1='115' x2='130' y2='170' stroke='#1c1917'/><rect x='60' y='130' width='40' height='22' fill='#fff' stroke='#1c1917'/><text x='65' y='146'>4 kg</text><rect x='160' y='130' width='40' height='22' fill='#fff' stroke='#1c1917'/><text x='165' y='146'>3 kg</text><rect x='110' y='170' width='40' height='22' fill='#fff' stroke='#1c1917'/><text x='115' y='186'>5 kg</text><text x='133' y='108' font-style='italic'>x</text><text x='118' y='118' font-size='11'>O</text></svg>"
-      },
       "solution": {
         "translation": "三段绳子分别承担 4kg、3kg、5kg 物体的重量。中央点 O 处三个张力（沿绳方向）合力为零。",
         "analysis": "在 O 点：左绳张力 $T_1 = 4g$（沿绳到达 4kg），右绳张力 $T_2 = 3g$，下绳张力 $T_3 = 5g$。三个张力构成闭合三角形 → 由 $3^2 + 4^2 = 5^2$ 知是直角三角形。",
@@ -51,7 +48,8 @@
         ],
         "finalAnswer": "④ $\\theta = 90°$",
         "correctOption": "④"
-      }
+      },
+      "questionImage": "/images/2011_R1_physics/q01.png"
     },
     {
       "id": "2011-r1-phys-2",
@@ -70,9 +68,6 @@
         { "label": "④", "content": "$2.0$" },
         { "label": "⑤", "content": "$2.5$" }
       ],
-      "questionDiagram": {
-        "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 130' font-family='serif' font-size='12'><rect x='30' y='60' width='260' height='14' fill='#fafafa' stroke='#1c1917'/><polygon points='100,74 90,100 110,100' fill='#1c1917'/><polygon points='220,74 210,100 230,100' fill='#1c1917'/><text x='95' y='115'>A</text><text x='216' y='115'>B</text><circle cx='160' cy='67' r='2' fill='#1c1917'/><text x='156' y='58' font-style='italic'>O</text><line x1='100' y1='40' x2='160' y2='40' stroke='#78716c' stroke-dasharray='3,2'/><line x1='160' y1='40' x2='220' y2='40' stroke='#78716c' stroke-dasharray='3,2'/><text x='125' y='35' font-style='italic'>a</text><text x='185' y='35' font-style='italic'>b</text><rect x='30' y='100' width='260' height='12' fill='#1c1917'/></svg>"
-      },
       "solution": {
         "translation": "杆水平静止平衡：列出竖直力、力矩、水平力三个方程，结合 A 处动摩擦 = B 处最大静摩擦的条件，可解出 $b/a$。",
         "analysis": "关键：A 处发生滑动 → 是动摩擦 $\\mu_k N_A$；B 即将打滑 → 静摩擦达到极限 $\\mu_s N_B$。两个摩擦力水平方向必须互相抵消。",
@@ -93,7 +88,8 @@
         ],
         "finalAnswer": "⑤ $b/a = 2.5$",
         "correctOption": "⑤"
-      }
+      },
+      "questionImage": "/images/2011_R1_physics/q02.png"
     },
     {
       "id": "2011-r1-phys-3",
@@ -111,9 +107,6 @@
         { "label": "③", "content": "$a - \\dfrac{2\\mu' mg}{k}$" },
         { "label": "④", "content": "$-a + \\dfrac{2\\mu' mg}{k}$" }
       ],
-      "questionDiagram": {
-        "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 150' font-family='serif' font-size='12'><rect x='10' y='30' width='14' height='80' fill='#a8a29e' stroke='#1c1917'/><path d='M 24 70 q 10 -8 20 0 t 20 0 t 20 0 t 20 0 t 20 0 t 20 0' fill='none' stroke='#1c1917' stroke-width='1.5'/><rect x='168' y='60' width='30' height='22' fill='#fff' stroke='#1c1917'/><text x='176' y='76' font-style='italic'>m</text><line x1='10' y1='110' x2='310' y2='110' stroke='#1c1917' stroke-width='1.5'/><line x1='10' y1='110' x2='15' y2='120' stroke='#1c1917'/><line x1='30' y1='110' x2='35' y2='120' stroke='#1c1917'/><line x1='50' y1='110' x2='55' y2='120' stroke='#1c1917'/><line x1='70' y1='110' x2='75' y2='120' stroke='#1c1917'/><line x1='90' y1='110' x2='95' y2='120' stroke='#1c1917'/><line x1='110' y1='110' x2='115' y2='120' stroke='#1c1917'/><line x1='130' y1='110' x2='135' y2='120' stroke='#1c1917'/><line x1='150' y1='110' x2='155' y2='120' stroke='#1c1917'/><line x1='170' y1='110' x2='175' y2='120' stroke='#1c1917'/><text x='40' y='135' font-size='10' fill='#57534e'>粗糙水平地面</text><circle cx='148' cy='110' r='2' fill='#1c1917'/><text x='145' y='126' font-style='italic'>O</text><circle cx='200' cy='110' r='2' fill='#1c1917'/><text x='197' y='126' font-style='italic'>b</text><circle cx='250' cy='110' r='2' fill='#1c1917'/><text x='247' y='126' font-style='italic'>a</text><line x1='280' y1='110' x2='310' y2='110' stroke='#1c1917'/><polygon points='305,107 310,110 305,113' fill='#1c1917'/><text x='312' y='113' font-style='italic'>x</text></svg>"
-      },
       "solution": {
         "translation": "用能量守恒：弹性势能的减少 = 摩擦力消耗的能量。",
         "analysis": "释放点和停止点两端动能都是 0，所以弹性势能差全部被摩擦力做的负功消耗。",
@@ -134,7 +127,8 @@
         ],
         "finalAnswer": "④ $b = -a + \\dfrac{2\\mu' mg}{k}$",
         "correctOption": "④"
-      }
+      },
+      "questionImage": "/images/2011_R1_physics/q03.png"
     },
     {
       "id": "2011-r1-phys-4",
@@ -154,9 +148,6 @@
         { "label": "⑤", "content": "$H > \\dfrac{\\ell^2}{4(\\ell - h)}$" },
         { "label": "⑥", "content": "$H > \\dfrac{\\ell^2}{8(\\ell - h)}$" }
       ],
-      "questionDiagram": {
-        "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 200' font-family='serif' font-size='12'><circle cx='40' cy='30' r='5' fill='#1c1917'/><text x='32' y='25' font-style='italic'>S</text><path d='M 40 30 Q 50 130 150 140' fill='none' stroke='#1c1917' stroke-width='1.5'/><line x1='40' y1='30' x2='40' y2='140' stroke='#78716c' stroke-dasharray='3,2'/><text x='25' y='90' font-style='italic'>H</text><line x1='40' y1='140' x2='300' y2='140' stroke='#78716c' stroke-dasharray='3,2'/><path d='M 150 140 Q 200 80 250 140' fill='none' stroke='#1c1917' stroke-width='1.5' stroke-dasharray='2,3'/><circle cx='150' cy='140' r='3' fill='#1c1917'/><text x='155' y='150' font-style='italic'>A</text><path d='M 150 140 l 30 -30' stroke='#1c1917'/><text x='180' y='130' font-size='11'>45°</text><rect x='250' y='115' width='5' height='25' fill='#1c1917'/><line x1='150' y1='160' x2='250' y2='160' stroke='#78716c' stroke-dasharray='3,2'/><text x='195' y='175' font-style='italic'>ℓ</text><line x1='265' y1='115' x2='265' y2='140' stroke='#78716c' stroke-dasharray='3,2'/><text x='270' y='130' font-style='italic'>h</text></svg>"
-      },
       "solution": {
         "translation": "两步：(1) 用能量守恒求 A 处速度；(2) 抛体运动，要求经过水平距离 $\\ell$ 时的高度 $> h$。",
         "analysis": "斜面光滑 → A 处动能 = S 处的势能损失 $mgH$，得 $v = \\sqrt{2gH}$。然后 $45°$ 斜抛，水平速度 = 垂直速度 = $v/\\sqrt{2}$。",
@@ -177,7 +168,8 @@
         ],
         "finalAnswer": "④ $H > \\dfrac{\\ell^2}{2(\\ell - h)}$",
         "correctOption": "④"
-      }
+      },
+      "questionImage": "/images/2011_R1_physics/q04.png"
     },
     {
       "id": "2011-r1-phys-5",
@@ -197,9 +189,6 @@
         { "label": "⑤", "content": "$\\dfrac{e^2}{1-e^2}$" },
         { "label": "⑥", "content": "$\\dfrac{e^2}{(1-e)^2}$" }
       ],
-      "questionDiagram": {
-        "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 200' font-family='serif' font-size='12'><path d='M 0 40 L 80 40 L 80 80 L 160 80 L 160 120 L 240 120 L 240 160 L 320 160' fill='none' stroke='#1c1917' stroke-width='1.5'/><path d='M 80 40 Q 120 0 160 80' fill='none' stroke='#1c1917' stroke-width='1.2' stroke-dasharray='2,2'/><path d='M 160 80 Q 200 40 240 120' fill='none' stroke='#1c1917' stroke-width='1.2' stroke-dasharray='2,2'/><path d='M 240 120 Q 280 80 320 160' fill='none' stroke='#1c1917' stroke-width='1.2' stroke-dasharray='2,2'/><circle cx='280' cy='110' r='4' fill='#1c1917'/><line x1='112' y1='20' x2='112' y2='80' stroke='#78716c' stroke-dasharray='2,2'/><text x='115' y='52' font-style='italic'>h&#39;</text><line x1='192' y1='60' x2='192' y2='120' stroke='#78716c' stroke-dasharray='2,2'/><text x='195' y='92' font-style='italic'>h&#39;</text><line x1='272' y1='100' x2='272' y2='160' stroke='#78716c' stroke-dasharray='2,2'/><text x='275' y='132' font-style='italic'>h&#39;</text><line x1='205' y1='80' x2='205' y2='120' stroke='#78716c'/><text x='208' y='105' font-style='italic'>h</text><line x1='160' y1='130' x2='240' y2='130' stroke='#78716c'/><text x='195' y='145' font-style='italic'>d</text></svg>"
-      },
       "solution": {
         "translation": "稳态条件：每次反弹达到同样的高度 $h'$。从某段台阶高 $h'$ 处落下（自由下落 $h + h'$），与下段台阶碰撞，反弹后又回到 $h'$。",
         "analysis": "落地速度 $v_1 = \\sqrt{2g(h+h')}$；反弹速度 $v_2 = e \\cdot v_1$；反弹高度 $h' = \\dfrac{v_2^2}{2g} = e^2(h+h')$。",
@@ -220,7 +209,8 @@
         ],
         "finalAnswer": "⑤ $\\dfrac{h'}{h} = \\dfrac{e^2}{1 - e^2}$",
         "correctOption": "⑤"
-      }
+      },
+      "questionImage": "/images/2011_R1_physics/q05.png"
     },
     {
       "id": "2011-r1-phys-6",
@@ -240,9 +230,6 @@
         { "label": "⑤", "content": "单摆 $\\dfrac{T_1}{\\sqrt{6}}$，弹簧摆 $\\dfrac{T_2}{\\sqrt{6}}$" },
         { "label": "⑥", "content": "单摆 $T_1$，弹簧摆 $\\sqrt{6}\\,T_2$" }
       ],
-      "questionDiagram": {
-        "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 180' font-family='serif' font-size='12'><rect x='30' y='15' width='100' height='8' fill='#1c1917'/><line x1='80' y1='23' x2='80' y2='110' stroke='#1c1917'/><circle cx='80' cy='120' r='10' fill='#fafafa' stroke='#1c1917'/><path d='M 60 110 Q 80 130 100 110' stroke='#1c1917' fill='none' marker-end='url(#a1)' marker-start='url(#a1)'/><defs><marker id='a1' viewBox='0 0 10 10' refX='5' refY='5' markerWidth='6' markerHeight='6' orient='auto'><path d='M 0 0 L 10 5 L 0 10 z' fill='#1c1917'/></marker></defs><text x='70' y='160'>图1</text><rect x='190' y='15' width='100' height='8' fill='#1c1917'/><path d='M 240 23 q 6 4 12 0 t 12 0 t -12 0 t -12 0 t 12 0 t 12 0 t -12 0 t -12 0 t 12 0 t 12 0 t -12 0 t -12 0' fill='none' stroke='#1c1917' stroke-width='1.5' transform='translate(-12 60)'/><circle cx='240' cy='130' r='10' fill='#fafafa' stroke='#1c1917'/><polygon points='235,142 245,142 240,154' fill='#1c1917'/><polygon points='235,118 245,118 240,106' fill='#1c1917'/><text x='230' y='170'>图2</text></svg>"
-      },
       "solution": {
         "translation": "单摆周期 $T = 2\\pi\\sqrt{L/g}$，与 $g$ 有关；弹簧摆周期 $T = 2\\pi\\sqrt{m/k}$，与 $g$ 无关。",
         "analysis": "重力加速度从 $g$ 变为 $g/6$，单摆 $T \\propto 1/\\sqrt{g}$ 所以变为 $\\sqrt{6}$ 倍；弹簧摆与 $g$ 无关所以不变。",
@@ -263,7 +250,8 @@
         ],
         "finalAnswer": "④（单摆 $\\sqrt{6}\\,T_1$，弹簧摆 $T_2$）",
         "correctOption": "④"
-      }
+      },
+      "questionImage": "/images/2011_R1_physics/q06.png"
     },
     {
       "id": "2011-r1-phys-7",
@@ -282,9 +270,6 @@
         { "label": "④", "content": "$2\\pi\\sqrt{\\dfrac{r\\sqrt{\\ell^2-r^2}}{g\\ell}}$" },
         { "label": "⑤", "content": "$2\\pi\\sqrt{\\dfrac{r\\ell}{g\\sqrt{\\ell^2-r^2}}}$" }
       ],
-      "questionDiagram": {
-        "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 240 220' font-family='serif' font-size='12'><circle cx='180' cy='30' r='3' fill='#1c1917'/><text x='185' y='28' font-style='italic'>O</text><line x1='180' y1='30' x2='80' y2='130' stroke='#1c1917'/><line x1='180' y1='30' x2='180' y2='200' stroke='#1c1917' stroke-dasharray='2,2'/><ellipse cx='130' cy='130' rx='50' ry='14' fill='none' stroke='#78716c' stroke-dasharray='3,2'/><circle cx='80' cy='130' r='6' fill='#1c1917'/><text x='65' y='135' font-style='italic'>A</text><line x1='130' y1='130' x2='180' y2='130' stroke='#1c1917'/><text x='150' y='124' font-style='italic'>r</text><text x='123' y='90' font-style='italic'>ℓ</text><line x1='176' y1='126' x2='176' y2='134' stroke='#1c1917'/><line x1='184' y1='126' x2='184' y2='134' stroke='#1c1917'/><circle cx='180' cy='200' r='8' fill='#1c1917'/><text x='192' y='205' font-style='italic'>B</text></svg>"
-      },
       "solution": {
         "translation": "B 静止 → 绳张力 $T = Mg$。A 做圆周运动：水平方向张力的分量提供向心力，竖直方向支持重力。利用 B 静止给出的几何约束消去 $M$、$m$。",
         "analysis": "设绳与铅直方向夹角 $\\theta$。$\\sin\\theta = r/\\ell$，$\\cos\\theta = \\sqrt{\\ell^2 - r^2}/\\ell$。",
@@ -305,7 +290,8 @@
         ],
         "finalAnswer": "③ $T_{\\text{周期}} = 2\\pi\\sqrt{\\dfrac{\\sqrt{\\ell^2 - r^2}}{g}}$",
         "correctOption": "③"
-      }
+      },
+      "questionImage": "/images/2011_R1_physics/q07.png"
     },
     {
       "id": "2011-r1-phys-8",
@@ -345,7 +331,8 @@
         ],
         "finalAnswer": "③ $m \\approx 2.0\\,\\text{g}$",
         "correctOption": "③"
-      }
+      },
+      "questionImage": "/images/2011_R1_physics/q08.png"
     },
     {
       "id": "2011-r1-phys-9",
@@ -363,9 +350,6 @@
         { "label": "③", "content": "$\\Delta U = \\dfrac{5}{2}R\\Delta T,\\quad W = p_0 S \\Delta x + \\dfrac{k}{2}(\\Delta x)^2$" },
         { "label": "④", "content": "$\\Delta U = \\dfrac{5}{2}R\\Delta T,\\quad W = p_0 S \\Delta x + k(\\Delta x)^2$" }
       ],
-      "questionDiagram": {
-        "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 130' font-family='serif' font-size='12'><rect x='10' y='30' width='240' height='60' fill='none' stroke='#1c1917' stroke-width='1.5'/><rect x='10' y='30' width='8' height='60' fill='#a8a29e'/><rect x='130' y='30' width='8' height='60' fill='#78716c'/><text x='60' y='65' font-size='11'>气体</text><path d='M 138 60 q 8 -8 16 0 t 16 0 t 16 0 t 16 0 t 16 0 t 16 0' fill='none' stroke='#1c1917' stroke-width='1.5'/><rect x='250' y='30' width='8' height='60' fill='#a8a29e'/><line x1='10' y1='98' x2='310' y2='98' stroke='#1c1917' stroke-width='1.5'/><text x='150' y='115' font-size='10' fill='#57534e'>水平な床</text></svg>"
-      },
       "solution": {
         "translation": "单原子理想气体内能 $U = \\dfrac{3}{2}nRT$，气体做功 $W = \\int p\\,dV$，其中 $p$ 随活塞位移线性变化（因弹簧反力随之线性增大）。",
         "analysis": "气体压力初始 $p_0$（弹簧自然长无力），最终 $p_0 + k\\Delta x / S$（弹簧反推活塞），中间随位移 $x$ 线性变化。",
@@ -386,7 +370,8 @@
         ],
         "finalAnswer": "① $\\Delta U = \\dfrac{3}{2}R\\Delta T,\\;W = p_0 S\\Delta x + \\dfrac{k}{2}(\\Delta x)^2$",
         "correctOption": "①"
-      }
+      },
+      "questionImage": "/images/2011_R1_physics/q09.png"
     },
     {
       "id": "2011-r1-phys-10",
@@ -406,9 +391,6 @@
         { "label": "⑤", "content": "$2 \\times 10^2\\,\\text{J}$" },
         { "label": "⑥", "content": "$4 \\times 10^2\\,\\text{J}$" }
       ],
-      "questionDiagram": {
-        "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 260 200' font-family='serif' font-size='11'><line x1='40' y1='160' x2='240' y2='160' stroke='#1c1917'/><line x1='40' y1='30' x2='40' y2='170' stroke='#1c1917'/><polygon points='240,156 246,160 240,164' fill='#1c1917'/><polygon points='36,30 40,24 44,30' fill='#1c1917'/><text x='250' y='164' font-style='italic'>V</text><text x='30' y='25' font-style='italic'>p</text><line x1='100' y1='50' x2='180' y2='50' stroke='#1c1917'/><line x1='100' y1='110' x2='180' y2='110' stroke='#1c1917'/><line x1='100' y1='50' x2='100' y2='110' stroke='#1c1917'/><line x1='180' y1='50' x2='180' y2='110' stroke='#1c1917'/><polygon points='100,77 96,67 104,67' fill='#1c1917'/><polygon points='180,87 184,97 176,97' fill='#1c1917'/><polygon points='135,110 145,114 145,106' fill='#1c1917'/><polygon points='145,50 135,46 135,54' fill='#1c1917'/><text x='90' y='45' font-weight='bold'>A</text><text x='90' y='123' font-weight='bold'>B</text><text x='184' y='123' font-weight='bold'>C</text><text x='184' y='45' font-weight='bold'>D</text><line x1='38' y1='50' x2='40' y2='50' stroke='#1c1917'/><line x1='38' y1='110' x2='40' y2='110' stroke='#1c1917'/><text x='5' y='53' font-size='10'>2×10⁵</text><text x='5' y='113' font-size='10'>1×10⁵</text><text x='80' y='178' font-size='10'>1×10⁻³</text><text x='160' y='178' font-size='10'>2×10⁻³</text></svg>"
-      },
       "solution": {
         "translation": "气体做功 $W = \\int p\\,dV$。等容过程（$dV = 0$）不做功；等压过程做功 = $p \\cdot \\Delta V$。循环按反时针方向 → 净做负功。",
         "analysis": "四段分别计算后求和。循环图在 $p$-$V$ 图上闭合面积 $= 1\\times10^5 \\times 1\\times10^{-3} = 100$ J，箭头反时针表示气体净做负功（外界对气体净做正功）。",
@@ -429,9 +411,10 @@
         ],
         "finalAnswer": "③ $W_{\\text{net}} = -1 \\times 10^2$ J",
         "correctOption": "③"
-      }
+      },
+      "questionImage": "/images/2011_R1_physics/q10.png"
     },
-    {
+        {
       "id": "2011-r1-phys-11",
       "number": "III-A 问1",
       "topic": "水面波振子运动：前后波长 → 速度",
@@ -449,9 +432,6 @@
         { "label": "⑤", "content": "$0.50\\,\\text{m/s}$" },
         { "label": "⑥", "content": "$1.0\\,\\text{m/s}$" }
       ],
-      "questionDiagram": {
-        "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 160' font-family='serif' font-size='11'><circle cx='80' cy='70' r='40' fill='none' stroke='#1c1917'/><circle cx='80' cy='70' r='28' fill='none' stroke='#1c1917'/><circle cx='80' cy='70' r='16' fill='none' stroke='#1c1917'/><circle cx='80' cy='70' r='3' fill='#1c1917'/><text x='75' y='73' font-size='9' fill='#fff'>P</text><text x='66' y='135'>图1</text><circle cx='230' cy='70' r='40' fill='none' stroke='#1c1917'/><ellipse cx='234' cy='70' rx='28' ry='27' fill='none' stroke='#1c1917'/><ellipse cx='240' cy='70' rx='16' ry='14' fill='none' stroke='#1c1917'/><circle cx='225' cy='70' r='3' fill='#1c1917'/><text x='220' y='73' font-size='9' fill='#fff'>P</text><line x1='230' y1='70' x2='260' y2='70' stroke='#1c1917'/><polygon points='258,67 264,70 258,73' fill='#1c1917'/><text x='258' y='66' font-style='italic'>v</text><text x='216' y='135'>图2</text></svg>"
-      },
       "solution": {
         "translation": "波源运动会拉伸后方、压缩前方的波长。前方波长 = $(c - v)T$，后方波长 = $(c + v)T$。",
         "analysis": "联立两方程求 $c$ 与 $v$。",
@@ -467,7 +447,8 @@
         ],
         "finalAnswer": "⑤ $v = 0.50$ m/s",
         "correctOption": "⑤"
-      }
+      },
+      "questionImage": "/images/2011_R1_physics/q11.png"
     },
     {
       "id": "2011-r1-phys-12",
@@ -487,9 +468,6 @@
         { "label": "⑤", "content": "$375\\,\\text{Hz},\\;625\\,\\text{Hz}$" },
         { "label": "⑥", "content": "$375\\,\\text{Hz},\\;750\\,\\text{Hz}$" }
       ],
-      "questionDiagram": {
-        "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 280 130' font-family='serif' font-size='11'><rect x='40' y='60' width='200' height='50' fill='none' stroke='#1c1917' stroke-width='1.5'/><line x1='40' y1='60' x2='40' y2='110' stroke='#fafafa' stroke-width='2'/><line x1='240' y1='60' x2='240' y2='110' stroke='#1c1917' stroke-width='2'/><line x1='40' y1='40' x2='240' y2='40' stroke='#1c1917' stroke-dasharray='3,2'/><line x1='40' y1='35' x2='40' y2='45' stroke='#1c1917'/><line x1='240' y1='35' x2='240' y2='45' stroke='#1c1917'/><text x='115' y='30'>0.680 m</text></svg>"
-      },
       "solution": {
         "translation": "一端开放、一端封闭的管共振时 $L = (2n-1)\\dfrac{\\lambda}{4}$，因此 $f_n = (2n-1) \\dfrac{v}{4L}$（$n = 1, 2, 3, \\ldots$），只有奇数倍基频可共振。",
         "analysis": "基频 $f_1 = \\dfrac{v}{4L} = \\dfrac{340}{4 \\times 0.680} = 125$ Hz。可共振的频率：$125, 375, 625, 875, \\ldots$。",
@@ -510,7 +488,8 @@
         ],
         "finalAnswer": "⑤ $375\\,\\text{Hz},\\;625\\,\\text{Hz}$",
         "correctOption": "⑤"
-      }
+      },
+      "questionImage": "/images/2011_R1_physics/q12.png"
     },
     {
       "id": "2011-r1-phys-13",
@@ -528,9 +507,6 @@
         { "label": "③", "content": "$\\left(m - \\dfrac{1}{2}\\right)\\lambda$" },
         { "label": "④", "content": "$m\\lambda$" }
       ],
-      "questionDiagram": {
-        "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 280 160' font-family='serif' font-size='12'><line x1='130' y1='30' x2='130' y2='130' stroke='#1c1917' stroke-width='2.5'/><line x1='180' y1='30' x2='180' y2='130' stroke='#1c1917' stroke-width='2.5'/><text x='125' y='25' font-weight='bold'>A</text><text x='175' y='25' font-weight='bold'>B</text><line x1='50' y1='80' x2='125' y2='80' stroke='#1c1917'/><polygon points='123,77 130,80 123,83' fill='#1c1917'/><text x='75' y='75'>光</text><line x1='130' y1='100' x2='180' y2='100' stroke='#78716c' stroke-dasharray='2,2'/><line x1='130' y1='105' x2='180' y2='105' stroke='#1c1917'/><line x1='150' y1='113' x2='160' y2='113' stroke='#1c1917'/><polygon points='156,110 160,113 156,116' fill='#1c1917'/><polygon points='154,110 150,113 154,116' fill='#1c1917'/><text x='150' y='128' font-style='italic'>d</text></svg>"
-      },
       "solution": {
         "translation": "两束干涉光：(I) 直接透过 A→B；(II) 透过 A，在 B 左面反射回来，在 A 右面反射再向右，透过 B。比较两束光的光程差与相位差。",
         "analysis": "二次反射各发生在「空气→玻璃」界面（B 左面、A 右面），各产生 $\\pi$ 相位跳变，合计 $2\\pi$ 等价于 $0$，所以反射相位差对干涉不构成额外修正。加强条件即「光程差 = 整数倍 $\\lambda$」。",
@@ -551,7 +527,8 @@
         ],
         "finalAnswer": "② $d = m\\,\\dfrac{\\lambda}{2}$",
         "correctOption": "②"
-      }
+      },
+      "questionImage": "/images/2011_R1_physics/q13.png"
     },
     {
       "id": "2011-r1-phys-14",
@@ -570,9 +547,6 @@
         { "label": "④", "content": "$\\dfrac{1}{3}a,\\;3a$" },
         { "label": "⑤", "content": "$\\dfrac{1}{2}a,\\;2a$" }
       ],
-      "questionDiagram": {
-        "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 100' font-family='serif' font-size='12'><line x1='30' y1='60' x2='300' y2='60' stroke='#1c1917'/><polygon points='298,57 304,60 298,63' fill='#1c1917'/><text x='305' y='64' font-style='italic'>x</text><circle cx='100' cy='60' r='3' fill='#1c1917'/><circle cx='160' cy='60' r='3' fill='#1c1917'/><circle cx='220' cy='60' r='3' fill='#1c1917'/><text x='90' y='45'>2Q</text><text x='205' y='45'>-Q</text><text x='90' y='80'>-a</text><text x='155' y='80' font-style='italic'>O</text><text x='215' y='80' font-style='italic'>a</text></svg>"
-      },
       "solution": {
         "translation": "电位 $V(x) = \\dfrac{k \\cdot 2Q}{|x+a|} + \\dfrac{k \\cdot (-Q)}{|x-a|}$。令 $V = 0$ → $2|x-a| = |x+a|$。分区讨论。",
         "analysis": "去绝对值后得到两段一次方程，分别在区域内验证。",
@@ -593,7 +567,8 @@
         ],
         "finalAnswer": "④ $x = \\dfrac{a}{3},\\;3a$",
         "correctOption": "④"
-      }
+      },
+      "questionImage": "/images/2011_R1_physics/q14.png"
     },
     {
       "id": "2011-r1-phys-15",
@@ -638,7 +613,8 @@
         ],
         "finalAnswer": "⑥ $\\dfrac{3}{2}$ 倍",
         "correctOption": "⑥"
-      }
+      },
+      "questionImage": "/images/2011_R1_physics/q15.png"
     },
     {
       "id": "2011-r1-phys-16",
@@ -678,7 +654,8 @@
         ],
         "finalAnswer": "② $R_3 \\approx 1.6\\,\\Omega$",
         "correctOption": "②"
-      }
+      },
+      "questionImage": "/images/2011_R1_physics/q16.png"
     },
     {
       "id": "2011-r1-phys-17",
@@ -696,9 +673,6 @@
         { "label": "③", "content": "$1.0\\,\\Omega$" },
         { "label": "④", "content": "$10\\,\\Omega$" }
       ],
-      "questionDiagram": {
-        "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 280 120' font-family='serif' font-size='12'><line x1='30' y1='40' x2='120' y2='40' stroke='#1c1917'/><line x1='160' y1='40' x2='250' y2='40' stroke='#1c1917'/><circle cx='140' cy='40' r='15' fill='#fafafa' stroke='#1c1917'/><text x='135' y='44'>A</text><line x1='30' y1='40' x2='30' y2='80' stroke='#1c1917'/><line x1='30' y1='80' x2='100' y2='80' stroke='#1c1917'/><rect x='100' y='72' width='80' height='16' fill='#fafafa' stroke='#1c1917'/><text x='135' y='84' font-style='italic'>R</text><line x1='180' y1='80' x2='250' y2='80' stroke='#1c1917'/><line x1='250' y1='40' x2='250' y2='80' stroke='#1c1917'/></svg>"
-      },
       "solution": {
         "translation": "扩大量程需将主体电流分流。满偏时 $10\\,\\text{mA}$ 走电流计，其余 $90\\,\\text{mA}$ 走 $R$。电流计两端电压等于 $R$ 两端电压。",
         "analysis": "并联 → 电压相同 → $I_R \\cdot R = I_A \\cdot R_A$。",
@@ -715,7 +689,8 @@
         ],
         "finalAnswer": "② $R = 0.10\\,\\Omega$",
         "correctOption": "②"
-      }
+      },
+      "questionImage": "/images/2011_R1_physics/q17.png"
     },
     {
       "id": "2011-r1-phys-18",
@@ -735,9 +710,6 @@
         { "label": "⑤", "content": "$B \\to A$，$2\\pi I$" },
         { "label": "⑥", "content": "$B \\to A$，$4\\pi I$" }
       ],
-      "questionDiagram": {
-        "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 220' font-family='serif' font-size='12'><circle cx='160' cy='80' r='40' fill='none' stroke='#1c1917' stroke-width='1.5'/><circle cx='160' cy='80' r='2' fill='#1c1917'/><text x='150' y='75'>C</text><line x1='160' y1='80' x2='200' y2='80' stroke='#78716c' stroke-dasharray='3,2'/><text x='175' y='75' font-style='italic'>a</text><line x1='160' y1='80' x2='160' y2='180' stroke='#78716c' stroke-dasharray='3,2'/><text x='150' y='130'>2a</text><line x1='30' y1='180' x2='290' y2='180' stroke='#1c1917' stroke-width='1.5'/><text x='25' y='195' font-weight='bold'>A</text><text x='285' y='195' font-weight='bold'>B</text><polygon points='185,108 195,115 180,120' fill='#1c1917'/><text x='198' y='118' font-style='italic'>I</text></svg>"
-      },
       "solution": {
         "translation": "圆环在圆心产生磁场 $B_1 = \\mu_0 I / (2a)$；长直导线在距离 $2a$ 处产生 $B_2 = \\mu_0 I_{AB}/(4\\pi a)$。两者方向相反、大小相等即可抵消。",
         "analysis": "用右手定则判断方向：圆中 $I$ 顺时针（从图示箭头方向看）→ 圆心磁场方向「入纸」。长直在 C 处产生「出纸」磁场才能抵消 → 电流必须从 $B \\to A$。",
@@ -758,7 +730,8 @@
         ],
         "finalAnswer": "⑤ $B \\to A$，$2\\pi I$",
         "correctOption": "⑤"
-      }
+      },
+      "questionImage": "/images/2011_R1_physics/q18.png"
     },
     {
       "id": "2011-r1-phys-19",
@@ -800,7 +773,8 @@
         ],
         "finalAnswer": "④（$+x,-y$ 之间，右下 45°）",
         "correctOption": "④"
-      }
+      },
+      "questionImage": "/images/2011_R1_physics/q19.png"
     }
   ]
 }
