@@ -1,0 +1,806 @@
+{
+  "metadata": {
+    "course": "physics",
+    "year": "2011",
+    "session": "1",
+    "courseNameJa": "物理",
+    "courseNameEn": "Physics",
+    "description": "理科综合｜物理",
+    "color": "#16a34a",
+    "examTitle": "平成23年度（2011年度）第1回 物理",
+    "examDate": "2011年6月"
+  },
+  "questions": [
+    {
+      "id": "2011-r1-phys-1",
+      "number": "I-A 问1",
+      "topic": "三力平衡：双滑轮悬挂三物体",
+      "topicTag": "力学·静力平衡",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "如图，3 个物体（质量分别为 $3.0\\,\\text{kg}$、$4.0\\,\\text{kg}$、$5.0\\,\\text{kg}$）用绳子相连，挂在能光滑转动的两个定滑轮上。在中央点 O 用手支撑，使两侧绳子张开角度为 $x$；当 $x=\\theta$ 时松手，3 个物体恰好平衡而静止。绳的质量可忽略，求角度 $\\theta$。",
+      "options": [
+        { "label": "①", "content": "$30°$" },
+        { "label": "②", "content": "$45°$" },
+        { "label": "③", "content": "$60°$" },
+        { "label": "④", "content": "$90°$" },
+        { "label": "⑤", "content": "$120°$" }
+      ],
+      "questionDiagram": {
+        "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 260 200' font-family='serif' font-size='12'><rect x='40' y='15' width='180' height='10' fill='#1c1917'/><circle cx='80' cy='40' r='10' fill='none' stroke='#1c1917' stroke-width='1.5'/><circle cx='180' cy='40' r='10' fill='none' stroke='#1c1917' stroke-width='1.5'/><line x1='75' y1='48' x2='130' y2='110' stroke='#1c1917'/><line x1='185' y1='48' x2='130' y2='110' stroke='#1c1917'/><line x1='80' y1='48' x2='80' y2='130' stroke='#1c1917'/><line x1='180' y1='48' x2='180' y2='130' stroke='#1c1917'/><line x1='130' y1='115' x2='130' y2='170' stroke='#1c1917'/><rect x='60' y='130' width='40' height='22' fill='#fff' stroke='#1c1917'/><text x='65' y='146'>4 kg</text><rect x='160' y='130' width='40' height='22' fill='#fff' stroke='#1c1917'/><text x='165' y='146'>3 kg</text><rect x='110' y='170' width='40' height='22' fill='#fff' stroke='#1c1917'/><text x='115' y='186'>5 kg</text><text x='133' y='108' font-style='italic'>x</text><text x='118' y='118' font-size='11'>O</text></svg>"
+      },
+      "solution": {
+        "translation": "三段绳子分别承担 4kg、3kg、5kg 物体的重量。中央点 O 处三个张力（沿绳方向）合力为零。",
+        "analysis": "在 O 点：左绳张力 $T_1 = 4g$（沿绳到达 4kg），右绳张力 $T_2 = 3g$，下绳张力 $T_3 = 5g$。三个张力构成闭合三角形 → 由 $3^2 + 4^2 = 5^2$ 知是直角三角形。",
+        "steps": [
+          {
+            "title": "(1) 确认三段绳张力大小",
+            "content": "每个物体单独平衡：绳子张力等于重量。\n\n$T_1 = 4g$（4 kg 一侧）；$T_2 = 3g$（3 kg 一侧）；$T_3 = 5g$（中央 5 kg）。\n\n绳质量忽略 → 每段绳张力沿绳方向处处相等。"
+          },
+          {
+            "title": "(2) O 点三力平衡 → 力三角形",
+            "content": "在 O 点，三段绳的张力 $T_1$、$T_2$、$T_3$ 三力共点平衡，所以三个力首尾相接构成闭合三角形。\n\n三边长分别为 $4g$、$3g$、$5g$。",
+            "why": "注意：$3^2 + 4^2 = 9 + 16 = 25 = 5^2$，这是经典的 3-4-5 直角三角形！即 4 边和 3 边之间的夹角恰好是 $90°$。"
+          },
+          {
+            "title": "(3) 找到 θ 对应的角",
+            "content": "在力三角形里，$T_1$（沿左绳）与 $T_2$（沿右绳）的夹角，就是题目中两条绳之间的张角 $\\theta$。\n\n而力三角形中 $T_1$ 与 $T_2$ 之间夹的角恰好是 $90°$（直角三角形里 5 是斜边）。\n\n所以 $\\theta = 90°$。"
+          }
+        ],
+        "finalAnswer": "④ $\\theta = 90°$",
+        "correctOption": "④"
+      }
+    },
+    {
+      "id": "2011-r1-phys-2",
+      "number": "I-B 问2",
+      "topic": "杆与双支点的摩擦平衡",
+      "topicTag": "力学·摩擦",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "均匀的角棒水平地放在两个支点 A、B 上。B 固定在地上不动。将 A 以匀速向棒的中心 O 慢慢推近：起初棒在 A 上滑动（即 A 与棒之间发生相对滑动），棒相对 B 保持静止。当 A 来到某个位置时，棒开始在 B 上滑动。静摩擦系数 $\\mu_s = 0.50$，动摩擦系数 $\\mu_k = 0.20$。设此瞬间 A 与 O 距离 $a$、B 与 O 距离 $b$，求 $b/a$。",
+      "options": [
+        { "label": "①", "content": "$0.40$" },
+        { "label": "②", "content": "$0.50$" },
+        { "label": "③", "content": "$1.0$" },
+        { "label": "④", "content": "$2.0$" },
+        { "label": "⑤", "content": "$2.5$" }
+      ],
+      "questionDiagram": {
+        "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 130' font-family='serif' font-size='12'><rect x='30' y='60' width='260' height='14' fill='#fafafa' stroke='#1c1917'/><polygon points='100,74 90,100 110,100' fill='#1c1917'/><polygon points='220,74 210,100 230,100' fill='#1c1917'/><text x='95' y='115'>A</text><text x='216' y='115'>B</text><circle cx='160' cy='67' r='2' fill='#1c1917'/><text x='156' y='58' font-style='italic'>O</text><line x1='100' y1='40' x2='160' y2='40' stroke='#78716c' stroke-dasharray='3,2'/><line x1='160' y1='40' x2='220' y2='40' stroke='#78716c' stroke-dasharray='3,2'/><text x='125' y='35' font-style='italic'>a</text><text x='185' y='35' font-style='italic'>b</text><rect x='30' y='100' width='260' height='12' fill='#1c1917'/></svg>"
+      },
+      "solution": {
+        "translation": "杆水平静止平衡：列出竖直力、力矩、水平力三个方程，结合 A 处动摩擦 = B 处最大静摩擦的条件，可解出 $b/a$。",
+        "analysis": "关键：A 处发生滑动 → 是动摩擦 $\\mu_k N_A$；B 即将打滑 → 静摩擦达到极限 $\\mu_s N_B$。两个摩擦力水平方向必须互相抵消。",
+        "steps": [
+          {
+            "title": "(1) 竖直方向 + 对 O 的力矩",
+            "content": "杆重力 $W$ 作用在中央 O。\n\n竖直平衡：$N_A + N_B = W$。\n\n对 O 取力矩（W 力矩为 0）：$N_A \\cdot a = N_B \\cdot b$。\n\n→ $\\dfrac{N_A}{N_B} = \\dfrac{b}{a}$。"
+          },
+          {
+            "title": "(2) 水平方向：两个摩擦力互相抵消",
+            "content": "A 在地上向 O 移动（设向右）。相对杆，A 向右滑动 → A 给杆的动摩擦力方向也向右，大小 $f_A = \\mu_k N_A = 0.20 N_A$。\n\nB 即将打滑（B 还没动），杆受 A 推着想向右滑过 B，所以 B 给杆的静摩擦力向左，且达到极限：$f_B = \\mu_s N_B = 0.50 N_B$。\n\n杆水平静止：$f_A = f_B$ → $0.20 N_A = 0.50 N_B$ → $\\dfrac{N_A}{N_B} = 2.5$。",
+            "why": "为什么不是「A 静、B 动」？答：题目明说 A 处先发生滑动（A 在杆下滑过去），所以 A 上一直是动摩擦；B 处是「即将打滑的瞬间」，所以 B 用最大静摩擦。"
+          },
+          {
+            "title": "(3) 联立求 b/a",
+            "content": "由 (1)：$\\dfrac{N_A}{N_B} = \\dfrac{b}{a}$。\n\n由 (2)：$\\dfrac{N_A}{N_B} = 2.5$。\n\n所以 $\\dfrac{b}{a} = 2.5$。"
+          }
+        ],
+        "finalAnswer": "⑤ $b/a = 2.5$",
+        "correctOption": "⑤"
+      }
+    },
+    {
+      "id": "2011-r1-phys-3",
+      "number": "I-C 问3",
+      "topic": "弹簧+摩擦：物块释放后停止位置",
+      "topicTag": "力学·能量守恒",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "如图，弹簧（劲度系数 $k$）一端固定在墙上，另一端连接质量 $m$ 的物体放在粗糙水平地面上。沿地面取 $x$ 轴，原点取在弹簧自然长时物体的位置。将物体拉到 $x = a\\;(a > 0)$ 处，轻轻松手。之后物体在 $x = b$ 处停下。物体与地面之间的动摩擦系数为 $\\mu'$。求 $b$。",
+      "options": [
+        { "label": "①", "content": "$a - \\dfrac{\\mu' mg}{k}$" },
+        { "label": "②", "content": "$-a + \\dfrac{\\mu' mg}{k}$" },
+        { "label": "③", "content": "$a - \\dfrac{2\\mu' mg}{k}$" },
+        { "label": "④", "content": "$-a + \\dfrac{2\\mu' mg}{k}$" }
+      ],
+      "questionDiagram": {
+        "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 150' font-family='serif' font-size='12'><rect x='10' y='30' width='14' height='80' fill='#a8a29e' stroke='#1c1917'/><path d='M 24 70 q 10 -8 20 0 t 20 0 t 20 0 t 20 0 t 20 0 t 20 0' fill='none' stroke='#1c1917' stroke-width='1.5'/><rect x='168' y='60' width='30' height='22' fill='#fff' stroke='#1c1917'/><text x='176' y='76' font-style='italic'>m</text><line x1='10' y1='110' x2='310' y2='110' stroke='#1c1917' stroke-width='1.5'/><line x1='10' y1='110' x2='15' y2='120' stroke='#1c1917'/><line x1='30' y1='110' x2='35' y2='120' stroke='#1c1917'/><line x1='50' y1='110' x2='55' y2='120' stroke='#1c1917'/><line x1='70' y1='110' x2='75' y2='120' stroke='#1c1917'/><line x1='90' y1='110' x2='95' y2='120' stroke='#1c1917'/><line x1='110' y1='110' x2='115' y2='120' stroke='#1c1917'/><line x1='130' y1='110' x2='135' y2='120' stroke='#1c1917'/><line x1='150' y1='110' x2='155' y2='120' stroke='#1c1917'/><line x1='170' y1='110' x2='175' y2='120' stroke='#1c1917'/><text x='40' y='135' font-size='10' fill='#57534e'>粗糙水平地面</text><circle cx='148' cy='110' r='2' fill='#1c1917'/><text x='145' y='126' font-style='italic'>O</text><circle cx='200' cy='110' r='2' fill='#1c1917'/><text x='197' y='126' font-style='italic'>b</text><circle cx='250' cy='110' r='2' fill='#1c1917'/><text x='247' y='126' font-style='italic'>a</text><line x1='280' y1='110' x2='310' y2='110' stroke='#1c1917'/><polygon points='305,107 310,110 305,113' fill='#1c1917'/><text x='312' y='113' font-style='italic'>x</text></svg>"
+      },
+      "solution": {
+        "translation": "用能量守恒：弹性势能的减少 = 摩擦力消耗的能量。",
+        "analysis": "释放点和停止点两端动能都是 0，所以弹性势能差全部被摩擦力做的负功消耗。",
+        "steps": [
+          {
+            "title": "(1) 列能量方程",
+            "content": "起始位置 $x = a$，速度 $0$；终止位置 $x = b$，速度 $0$。\n\n弹性势能：起始 $\\dfrac{1}{2}ka^2$，终止 $\\dfrac{1}{2}kb^2$。\n\n物体经过路程 $|a-b|$，摩擦力始终与运动方向相反，做负功 $-\\mu' mg \\cdot |a-b|$。\n\n能量守恒：$\\dfrac{1}{2}ka^2 - \\dfrac{1}{2}kb^2 = \\mu' mg \\cdot |a - b|$。"
+          },
+          {
+            "title": "(2) 因式分解 + 消去 |a-b|",
+            "content": "假设 $a > b$（物体向左移动后停下）：\n\n$\\dfrac{k}{2}(a-b)(a+b) = \\mu' mg (a-b)$\n\n两边消去 $(a-b)$：$\\dfrac{k}{2}(a+b) = \\mu' mg$ → $a + b = \\dfrac{2\\mu' mg}{k}$。\n\n$b = \\dfrac{2\\mu' mg}{k} - a = -a + \\dfrac{2\\mu' mg}{k}$。",
+            "why": "为什么 $b$ 可能为负？答：意味着物体越过自然长位置 $O$，进入 $x < 0$ 区（弹簧被压缩）才停下。只要等号「$\\dfrac{k}{2}(a+b)=\\mu'mg$」成立，$b$ 由 $\\mu', m, g, k, a$ 决定，可能为正、负或零。题目本身没限定 $b$ 必须为正。"
+          },
+          {
+            "title": "(3) 对照选项",
+            "content": "$b = -a + \\dfrac{2\\mu' mg}{k}$，正是选项 ④。"
+          }
+        ],
+        "finalAnswer": "④ $b = -a + \\dfrac{2\\mu' mg}{k}$",
+        "correctOption": "④"
+      }
+    },
+    {
+      "id": "2011-r1-phys-4",
+      "number": "I-D 问4",
+      "topic": "斜面+抛体：越过障碍物的条件",
+      "topicTag": "力学·运动学",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "如图，小物体从斜面上的 S 点（初速 $0$）滑下，到 A 点时以与水平面成 $45°$ 的方向斜向上方飞出。S 比 A 高出 $H$。从 A 测起，水平距离 $\\ell$ 处有高度为 $h$ 的障碍物（$\\ell > h$）。斜面光滑（摩擦可忽略），重力加速度为 $g$。求小物体越过障碍物的条件。",
+      "options": [
+        { "label": "①", "content": "$H > \\dfrac{\\ell^2}{2h}$" },
+        { "label": "②", "content": "$H > \\dfrac{\\ell^2}{4h}$" },
+        { "label": "③", "content": "$H > \\dfrac{\\ell^2}{8h}$" },
+        { "label": "④", "content": "$H > \\dfrac{\\ell^2}{2(\\ell - h)}$" },
+        { "label": "⑤", "content": "$H > \\dfrac{\\ell^2}{4(\\ell - h)}$" },
+        { "label": "⑥", "content": "$H > \\dfrac{\\ell^2}{8(\\ell - h)}$" }
+      ],
+      "questionDiagram": {
+        "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 200' font-family='serif' font-size='12'><circle cx='40' cy='30' r='5' fill='#1c1917'/><text x='32' y='25' font-style='italic'>S</text><path d='M 40 30 Q 50 130 150 140' fill='none' stroke='#1c1917' stroke-width='1.5'/><line x1='40' y1='30' x2='40' y2='140' stroke='#78716c' stroke-dasharray='3,2'/><text x='25' y='90' font-style='italic'>H</text><line x1='40' y1='140' x2='300' y2='140' stroke='#78716c' stroke-dasharray='3,2'/><path d='M 150 140 Q 200 80 250 140' fill='none' stroke='#1c1917' stroke-width='1.5' stroke-dasharray='2,3'/><circle cx='150' cy='140' r='3' fill='#1c1917'/><text x='155' y='150' font-style='italic'>A</text><path d='M 150 140 l 30 -30' stroke='#1c1917'/><text x='180' y='130' font-size='11'>45°</text><rect x='250' y='115' width='5' height='25' fill='#1c1917'/><line x1='150' y1='160' x2='250' y2='160' stroke='#78716c' stroke-dasharray='3,2'/><text x='195' y='175' font-style='italic'>ℓ</text><line x1='265' y1='115' x2='265' y2='140' stroke='#78716c' stroke-dasharray='3,2'/><text x='270' y='130' font-style='italic'>h</text></svg>"
+      },
+      "solution": {
+        "translation": "两步：(1) 用能量守恒求 A 处速度；(2) 抛体运动，要求经过水平距离 $\\ell$ 时的高度 $> h$。",
+        "analysis": "斜面光滑 → A 处动能 = S 处的势能损失 $mgH$，得 $v = \\sqrt{2gH}$。然后 $45°$ 斜抛，水平速度 = 垂直速度 = $v/\\sqrt{2}$。",
+        "steps": [
+          {
+            "title": "(1) 求 A 处的速度",
+            "content": "斜面光滑、无摩擦。从 S 滑到 A 高度差 $H$：\n\n$\\dfrac{1}{2}m v^2 = mgH$ → $v = \\sqrt{2gH}$ → $v^2 = 2gH$。"
+          },
+          {
+            "title": "(2) 抛体轨迹方程",
+            "content": "在 A 处以 $45°$ 斜向上发射：\n\n水平分速度 $v_x = v\\cos 45° = \\dfrac{v}{\\sqrt{2}}$；竖直分速度 $v_y = v\\sin 45° = \\dfrac{v}{\\sqrt{2}}$。\n\n到达水平距离 $\\ell$ 所需时间：$t = \\dfrac{\\ell}{v_x} = \\dfrac{\\ell\\sqrt{2}}{v}$。\n\n此刻高度：$y = v_y t - \\dfrac{1}{2}g t^2 = \\dfrac{v}{\\sqrt{2}} \\cdot \\dfrac{\\ell\\sqrt{2}}{v} - \\dfrac{1}{2}g \\cdot \\dfrac{2\\ell^2}{v^2} = \\ell - \\dfrac{g\\ell^2}{v^2}$。"
+          },
+          {
+            "title": "(3) 代入 $v^2 = 2gH$，要求 $y > h$",
+            "content": "$y = \\ell - \\dfrac{g\\ell^2}{2gH} = \\ell - \\dfrac{\\ell^2}{2H}$。\n\n越过障碍要求 $y > h$：$\\ell - \\dfrac{\\ell^2}{2H} > h$ → $\\dfrac{\\ell^2}{2H} < \\ell - h$ → $H > \\dfrac{\\ell^2}{2(\\ell - h)}$。",
+            "why": "为什么用 $>$ 而不是 $\\geq$？答：题目问「能越过」，等号意味着小物体的轨迹恰好擦过障碍物顶端（边界条件），实际应严格大于。"
+          }
+        ],
+        "finalAnswer": "④ $H > \\dfrac{\\ell^2}{2(\\ell - h)}$",
+        "correctOption": "④"
+      }
+    },
+    {
+      "id": "2011-r1-phys-5",
+      "number": "I-E 问5",
+      "topic": "小球在台阶上反复弹跳，求 h'/h",
+      "topicTag": "力学·能量·恢复系数",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "如图，光滑水平面构成台阶，质量 $m$ 的小球以完全相同的方式从一段台阶弹跳到下一段台阶。每段台阶高 $h$、宽 $d$。每次反弹后达到的最高高度为 $h'$（高度从弹起的那段台阶面算起）。小球与台阶之间的恢复系数为 $e$。求 $\\dfrac{h'}{h}$。",
+      "options": [
+        { "label": "①", "content": "$\\dfrac{e}{1-e}$" },
+        { "label": "②", "content": "$\\dfrac{e}{1-e^2}$" },
+        { "label": "③", "content": "$\\dfrac{e}{(1-e)^2}$" },
+        { "label": "④", "content": "$\\dfrac{e^2}{1-e}$" },
+        { "label": "⑤", "content": "$\\dfrac{e^2}{1-e^2}$" },
+        { "label": "⑥", "content": "$\\dfrac{e^2}{(1-e)^2}$" }
+      ],
+      "questionDiagram": {
+        "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 200' font-family='serif' font-size='12'><path d='M 0 40 L 80 40 L 80 80 L 160 80 L 160 120 L 240 120 L 240 160 L 320 160' fill='none' stroke='#1c1917' stroke-width='1.5'/><path d='M 80 40 Q 120 0 160 80' fill='none' stroke='#1c1917' stroke-width='1.2' stroke-dasharray='2,2'/><path d='M 160 80 Q 200 40 240 120' fill='none' stroke='#1c1917' stroke-width='1.2' stroke-dasharray='2,2'/><path d='M 240 120 Q 280 80 320 160' fill='none' stroke='#1c1917' stroke-width='1.2' stroke-dasharray='2,2'/><circle cx='280' cy='110' r='4' fill='#1c1917'/><line x1='112' y1='20' x2='112' y2='80' stroke='#78716c' stroke-dasharray='2,2'/><text x='115' y='52' font-style='italic'>h&#39;</text><line x1='192' y1='60' x2='192' y2='120' stroke='#78716c' stroke-dasharray='2,2'/><text x='195' y='92' font-style='italic'>h&#39;</text><line x1='272' y1='100' x2='272' y2='160' stroke='#78716c' stroke-dasharray='2,2'/><text x='275' y='132' font-style='italic'>h&#39;</text><line x1='205' y1='80' x2='205' y2='120' stroke='#78716c'/><text x='208' y='105' font-style='italic'>h</text><line x1='160' y1='130' x2='240' y2='130' stroke='#78716c'/><text x='195' y='145' font-style='italic'>d</text></svg>"
+      },
+      "solution": {
+        "translation": "稳态条件：每次反弹达到同样的高度 $h'$。从某段台阶高 $h'$ 处落下（自由下落 $h + h'$），与下段台阶碰撞，反弹后又回到 $h'$。",
+        "analysis": "落地速度 $v_1 = \\sqrt{2g(h+h')}$；反弹速度 $v_2 = e \\cdot v_1$；反弹高度 $h' = \\dfrac{v_2^2}{2g} = e^2(h+h')$。",
+        "steps": [
+          {
+            "title": "(1) 落地前的速度",
+            "content": "稳态下：小球离开上一台阶时高度（相对上一台阶面）为 $h'$。\n\n但相对下一台阶面，初始高度为 $h' + h$。自由下落到下一台阶面（落地）：\n\n$v_1 = \\sqrt{2g(h + h')}$（落地瞬间速度，竖直分量）。",
+            "why": "为什么不是 $\\sqrt{2gh'}$？答：因为小球从上一段台阶面落到下一段台阶面，竖直方向多落了一段台阶高 $h$。"
+          },
+          {
+            "title": "(2) 用恢复系数算反弹后的竖直速度",
+            "content": "恢复系数定义：$e = \\dfrac{\\text{分离速度}}{\\text{接近速度}}$（垂直于碰撞面的分量）。台阶面水平 → 仅看竖直分量。\n\n反弹后向上速度：$v_2 = e \\cdot v_1 = e\\sqrt{2g(h+h')}$。"
+          },
+          {
+            "title": "(3) 反弹高度 = $h'$，列方程",
+            "content": "$h' = \\dfrac{v_2^2}{2g} = \\dfrac{e^2 \\cdot 2g(h+h')}{2g} = e^2(h + h')$。\n\n展开：$h' = e^2 h + e^2 h'$ → $h'(1 - e^2) = e^2 h$ → $\\dfrac{h'}{h} = \\dfrac{e^2}{1 - e^2}$。"
+          }
+        ],
+        "finalAnswer": "⑤ $\\dfrac{h'}{h} = \\dfrac{e^2}{1 - e^2}$",
+        "correctOption": "⑤"
+      }
+    },
+    {
+      "id": "2011-r1-phys-6",
+      "number": "I-F 问6",
+      "topic": "月面上单摆与弹簧摆的周期",
+      "topicTag": "力学·振动",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "图 1 是单摆，地球上其铅直面内振动周期为 $T_1$；图 2 是弹簧摆，地球上其铅直方向振动周期为 $T_2$。将两个摆带到月面（月面重力加速度大小为地球的 $\\dfrac{1}{6}$），求各自在月面上的周期。",
+      "options": [
+        { "label": "①", "content": "单摆 $\\sqrt{6}\\,T_1$，弹簧摆 $\\sqrt{6}\\,T_2$" },
+        { "label": "②", "content": "单摆 $\\dfrac{T_1}{\\sqrt{6}}$，弹簧摆 $T_2$" },
+        { "label": "③", "content": "单摆 $T_1$，弹簧摆 $\\dfrac{T_2}{\\sqrt{6}}$" },
+        { "label": "④", "content": "单摆 $\\sqrt{6}\\,T_1$，弹簧摆 $T_2$" },
+        { "label": "⑤", "content": "单摆 $\\dfrac{T_1}{\\sqrt{6}}$，弹簧摆 $\\dfrac{T_2}{\\sqrt{6}}$" },
+        { "label": "⑥", "content": "单摆 $T_1$，弹簧摆 $\\sqrt{6}\\,T_2$" }
+      ],
+      "questionDiagram": {
+        "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 180' font-family='serif' font-size='12'><rect x='30' y='15' width='100' height='8' fill='#1c1917'/><line x1='80' y1='23' x2='80' y2='110' stroke='#1c1917'/><circle cx='80' cy='120' r='10' fill='#fafafa' stroke='#1c1917'/><path d='M 60 110 Q 80 130 100 110' stroke='#1c1917' fill='none' marker-end='url(#a1)' marker-start='url(#a1)'/><defs><marker id='a1' viewBox='0 0 10 10' refX='5' refY='5' markerWidth='6' markerHeight='6' orient='auto'><path d='M 0 0 L 10 5 L 0 10 z' fill='#1c1917'/></marker></defs><text x='70' y='160'>图1</text><rect x='190' y='15' width='100' height='8' fill='#1c1917'/><path d='M 240 23 q 6 4 12 0 t 12 0 t -12 0 t -12 0 t 12 0 t 12 0 t -12 0 t -12 0 t 12 0 t 12 0 t -12 0 t -12 0' fill='none' stroke='#1c1917' stroke-width='1.5' transform='translate(-12 60)'/><circle cx='240' cy='130' r='10' fill='#fafafa' stroke='#1c1917'/><polygon points='235,142 245,142 240,154' fill='#1c1917'/><polygon points='235,118 245,118 240,106' fill='#1c1917'/><text x='230' y='170'>图2</text></svg>"
+      },
+      "solution": {
+        "translation": "单摆周期 $T = 2\\pi\\sqrt{L/g}$，与 $g$ 有关；弹簧摆周期 $T = 2\\pi\\sqrt{m/k}$，与 $g$ 无关。",
+        "analysis": "重力加速度从 $g$ 变为 $g/6$，单摆 $T \\propto 1/\\sqrt{g}$ 所以变为 $\\sqrt{6}$ 倍；弹簧摆与 $g$ 无关所以不变。",
+        "steps": [
+          {
+            "title": "(1) 单摆：周期公式带 g",
+            "content": "$T_{\\text{摆}} = 2\\pi\\sqrt{\\dfrac{L}{g}}$。\n\n地球：$T_1 = 2\\pi\\sqrt{L/g}$。月面：$T_1' = 2\\pi\\sqrt{L/(g/6)} = 2\\pi\\sqrt{6L/g} = \\sqrt{6} \\cdot T_1$。"
+          },
+          {
+            "title": "(2) 弹簧摆：周期公式只含 m 与 k",
+            "content": "$T_{\\text{簧}} = 2\\pi\\sqrt{\\dfrac{m}{k}}$，不含 $g$。\n\n月面与地球周期相同：$T_2' = T_2$。",
+            "why": "为什么弹簧摆与 $g$ 无关？答：恢复力来自弹簧形变（$F = -kx$，$x$ 从平衡位置算起）。重力只是把平衡位置整体下移，但对偏离平衡位置的振动恢复力不影响。所以振动周期由 $m$、$k$ 决定。"
+          },
+          {
+            "title": "(3) 组合答案",
+            "content": "单摆 $\\sqrt{6}\\,T_1$，弹簧摆 $T_2$ → 选项 ④。"
+          }
+        ],
+        "finalAnswer": "④（单摆 $\\sqrt{6}\\,T_1$，弹簧摆 $T_2$）",
+        "correctOption": "④"
+      }
+    },
+    {
+      "id": "2011-r1-phys-7",
+      "number": "I-G 问7",
+      "topic": "圆锥摆：A 在水平面圆周运动",
+      "topicTag": "力学·圆周运动",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "如图，铅直放置的细管中穿过一根轻绳，绳的一端系质量 $m$ 的小球 A，另一端系质量 $M\\;(>m)$ 的坠砣 B。让 A 在水平面内以半径 $r$ 做匀速圆周运动；此时 B 保持静止，O 到 A 中心的距离为 $\\ell$。管口 O 处的摩擦可忽略。求 A 圆周运动的周期。",
+      "options": [
+        { "label": "①", "content": "$2\\pi\\sqrt{\\dfrac{\\ell}{g}}$" },
+        { "label": "②", "content": "$2\\pi\\sqrt{\\dfrac{r}{g}}$" },
+        { "label": "③", "content": "$2\\pi\\sqrt{\\dfrac{\\sqrt{\\ell^2-r^2}}{g}}$" },
+        { "label": "④", "content": "$2\\pi\\sqrt{\\dfrac{r\\sqrt{\\ell^2-r^2}}{g\\ell}}$" },
+        { "label": "⑤", "content": "$2\\pi\\sqrt{\\dfrac{r\\ell}{g\\sqrt{\\ell^2-r^2}}}$" }
+      ],
+      "questionDiagram": {
+        "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 240 220' font-family='serif' font-size='12'><circle cx='180' cy='30' r='3' fill='#1c1917'/><text x='185' y='28' font-style='italic'>O</text><line x1='180' y1='30' x2='80' y2='130' stroke='#1c1917'/><line x1='180' y1='30' x2='180' y2='200' stroke='#1c1917' stroke-dasharray='2,2'/><ellipse cx='130' cy='130' rx='50' ry='14' fill='none' stroke='#78716c' stroke-dasharray='3,2'/><circle cx='80' cy='130' r='6' fill='#1c1917'/><text x='65' y='135' font-style='italic'>A</text><line x1='130' y1='130' x2='180' y2='130' stroke='#1c1917'/><text x='150' y='124' font-style='italic'>r</text><text x='123' y='90' font-style='italic'>ℓ</text><line x1='176' y1='126' x2='176' y2='134' stroke='#1c1917'/><line x1='184' y1='126' x2='184' y2='134' stroke='#1c1917'/><circle cx='180' cy='200' r='8' fill='#1c1917'/><text x='192' y='205' font-style='italic'>B</text></svg>"
+      },
+      "solution": {
+        "translation": "B 静止 → 绳张力 $T = Mg$。A 做圆周运动：水平方向张力的分量提供向心力，竖直方向支持重力。利用 B 静止给出的几何约束消去 $M$、$m$。",
+        "analysis": "设绳与铅直方向夹角 $\\theta$。$\\sin\\theta = r/\\ell$，$\\cos\\theta = \\sqrt{\\ell^2 - r^2}/\\ell$。",
+        "steps": [
+          {
+            "title": "(1) B 静止：张力 = Mg",
+            "content": "坠砣 B 静止挂在绳下端：$T = Mg$。\n\n绳穿过 O 时摩擦可忽略 → 绳两端张力相等，所以连到 A 这一段也是 $T = Mg$。"
+          },
+          {
+            "title": "(2) A 的两个方程",
+            "content": "A 做半径 $r$、角速度 $\\omega$ 的水平匀速圆周。\n\n竖直方向（A 不上下移动）：$T\\cos\\theta = mg$ → $Mg \\cdot \\dfrac{\\sqrt{\\ell^2 - r^2}}{\\ell} = mg$（这给出 $M$、$m$、$\\ell$、$r$ 之间的几何约束）。\n\n水平方向（向心力）：$T\\sin\\theta = m\\omega^2 r$ → $Mg \\cdot \\dfrac{r}{\\ell} = m\\omega^2 r$ → $\\omega^2 = \\dfrac{Mg}{m\\ell}$。"
+          },
+          {
+            "title": "(3) 用竖直方程消去 M/m",
+            "content": "由 (2) 竖直方程：$\\dfrac{M}{m} = \\dfrac{\\ell}{\\sqrt{\\ell^2 - r^2}}$。\n\n代入水平方程：$\\omega^2 = \\dfrac{g}{\\ell} \\cdot \\dfrac{\\ell}{\\sqrt{\\ell^2 - r^2}} = \\dfrac{g}{\\sqrt{\\ell^2 - r^2}}$。\n\n周期：$T_{\\text{周期}} = \\dfrac{2\\pi}{\\omega} = 2\\pi\\sqrt{\\dfrac{\\sqrt{\\ell^2 - r^2}}{g}}$。",
+            "why": "为什么答案不含 $M$、$m$、$r$？答：因为 B 必须静止这一条件，等价于在 $M, m, \\ell, r$ 之间施加一个约束。一旦约束成立，$\\omega$ 由 $\\ell, r, g$ 决定即可——$M$、$m$ 已隐含在 $\\ell$、$r$ 的取值中。"
+          }
+        ],
+        "finalAnswer": "③ $T_{\\text{周期}} = 2\\pi\\sqrt{\\dfrac{\\sqrt{\\ell^2 - r^2}}{g}}$",
+        "correctOption": "③"
+      }
+    },
+    {
+      "id": "2011-r1-phys-8",
+      "number": "II-A 问1",
+      "topic": "冰 + 水蒸气混合至 40°C",
+      "topicTag": "热学·相变",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "密闭容器中放入 $0°\\text{C}$、$10\\,\\text{g}$ 的冰，再吹入 $100°\\text{C}$ 的水蒸气。经过足够长时间后，冰与蒸气全部变为 $40°\\text{C}$ 的水。容器热容可忽略，与外界绝热。冰的融解热为 $3.3\\times10^2\\,\\text{J/g}$，水的比热为 $4.2\\,\\text{J/(g·K)}$，水的蒸发热为 $2.3\\times10^3\\,\\text{J/g}$。求吹入的水蒸气量。",
+      "options": [
+        { "label": "①", "content": "$0.66\\,\\text{g}$" },
+        { "label": "②", "content": "$1.3\\,\\text{g}$" },
+        { "label": "③", "content": "$2.0\\,\\text{g}$" },
+        { "label": "④", "content": "$6.6\\,\\text{g}$" },
+        { "label": "⑤", "content": "$13\\,\\text{g}$" },
+        { "label": "⑥", "content": "$20\\,\\text{g}$" }
+      ],
+      "solution": {
+        "translation": "热量守恒：冰所吸收的热（融化 + 加热到 40°C）= 蒸气放出的热（凝结 + 冷却到 40°C）。",
+        "analysis": "冰：先全部融化（$0°\\text{C}$ 冰 → $0°\\text{C}$ 水），再升温到 $40°\\text{C}$。蒸气：先全部凝结（$100°\\text{C}$ 蒸气 → $100°\\text{C}$ 水），再降温到 $40°\\text{C}$。",
+        "steps": [
+          {
+            "title": "(1) 冰获得的总热量 $Q_{\\text{吸}}$",
+            "content": "融化 $10\\,\\text{g}$ 冰：$Q_1 = 10 \\times 3.3\\times 10^2 = 3.3 \\times 10^3\\,\\text{J}$。\n\n$10\\,\\text{g}$ 水从 $0$ 升到 $40°\\text{C}$：$Q_2 = 10 \\times 4.2 \\times 40 = 1.68\\times 10^3\\,\\text{J}$。\n\n合计 $Q_{\\text{吸}} = 4.98 \\times 10^3\\,\\text{J}$。"
+          },
+          {
+            "title": "(2) 蒸气放出的总热量 $Q_{\\text{放}}$（设质量 $m$）",
+            "content": "凝结 $m$ g 蒸气：$m \\times 2.3\\times 10^3$ J。\n\n$m$ g 水从 $100$ 降到 $40°\\text{C}$：$m \\times 4.2 \\times 60 = 252m$ J。\n\n合计 $Q_{\\text{放}} = m(2300 + 252) = 2552 m$ J。"
+          },
+          {
+            "title": "(3) 热平衡 $Q_{\\text{放}} = Q_{\\text{吸}}$",
+            "content": "$2552 m = 4980$ → $m = \\dfrac{4980}{2552} \\approx 1.95\\,\\text{g}$。\n\n最接近 $2.0\\,\\text{g}$。",
+            "why": "为什么蒸气放热占比这么大？答：蒸发热（$2300$ J/g）远大于比热升温（每度 $4.2$ J/g）。所以一小克蒸气凝结释放的热量，相当于让大量水升温几十度。"
+          }
+        ],
+        "finalAnswer": "③ $m \\approx 2.0\\,\\text{g}$",
+        "correctOption": "③"
+      }
+    },
+    {
+      "id": "2011-r1-phys-9",
+      "number": "II-B 问2",
+      "topic": "气体 + 弹簧 + 加热：ΔU 与 W",
+      "topicTag": "热学·热力学第一定律",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "如图，绝热气缸 + 活塞内封 $1\\,\\text{mol}$ 单原子理想气体。活塞光滑，弹簧（劲度 $k$）一端固定在活塞、一端固定在墙；活塞截面积 $S$（质量忽略）。气体充入时弹簧自然长，外气压 $p_0$。用加热器对气体加热后，气体温度升高 $\\Delta T$，弹簧被压缩 $\\Delta x$。求气体内能变化 $\\Delta U$ 与气体所做的功 $W$。",
+      "options": [
+        { "label": "①", "content": "$\\Delta U = \\dfrac{3}{2}R\\Delta T,\\quad W = p_0 S \\Delta x + \\dfrac{k}{2}(\\Delta x)^2$" },
+        { "label": "②", "content": "$\\Delta U = \\dfrac{3}{2}R\\Delta T,\\quad W = p_0 S \\Delta x + k(\\Delta x)^2$" },
+        { "label": "③", "content": "$\\Delta U = \\dfrac{5}{2}R\\Delta T,\\quad W = p_0 S \\Delta x + \\dfrac{k}{2}(\\Delta x)^2$" },
+        { "label": "④", "content": "$\\Delta U = \\dfrac{5}{2}R\\Delta T,\\quad W = p_0 S \\Delta x + k(\\Delta x)^2$" }
+      ],
+      "questionDiagram": {
+        "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 130' font-family='serif' font-size='12'><rect x='10' y='30' width='240' height='60' fill='none' stroke='#1c1917' stroke-width='1.5'/><rect x='10' y='30' width='8' height='60' fill='#a8a29e'/><rect x='130' y='30' width='8' height='60' fill='#78716c'/><text x='60' y='65' font-size='11'>气体</text><path d='M 138 60 q 8 -8 16 0 t 16 0 t 16 0 t 16 0 t 16 0 t 16 0' fill='none' stroke='#1c1917' stroke-width='1.5'/><rect x='250' y='30' width='8' height='60' fill='#a8a29e'/><line x1='10' y1='98' x2='310' y2='98' stroke='#1c1917' stroke-width='1.5'/><text x='150' y='115' font-size='10' fill='#57534e'>水平な床</text></svg>"
+      },
+      "solution": {
+        "translation": "单原子理想气体内能 $U = \\dfrac{3}{2}nRT$，气体做功 $W = \\int p\\,dV$，其中 $p$ 随活塞位移线性变化（因弹簧反力随之线性增大）。",
+        "analysis": "气体压力初始 $p_0$（弹簧自然长无力），最终 $p_0 + k\\Delta x / S$（弹簧反推活塞），中间随位移 $x$ 线性变化。",
+        "steps": [
+          {
+            "title": "(1) 内能变化",
+            "content": "单原子理想气体 $U = \\dfrac{3}{2}nRT$，$n = 1$ mol。\n\n$\\Delta U = \\dfrac{3}{2}R\\Delta T$。"
+          },
+          {
+            "title": "(2) 气体压力随位移线性变化",
+            "content": "活塞受力（无质量）：气体推力 $p \\cdot S$，外气压力 $p_0 \\cdot S$，弹簧反力 $k x$（活塞向外推 $x$ 时弹簧压缩 $x$）。\n\n活塞瞬时平衡：$p \\cdot S = p_0 \\cdot S + k x$ → $p(x) = p_0 + \\dfrac{kx}{S}$。"
+          },
+          {
+            "title": "(3) 气体做的功 W",
+            "content": "$W = \\int_0^{\\Delta x} p(x) \\cdot S\\, dx = \\int_0^{\\Delta x} \\left(p_0 + \\dfrac{kx}{S}\\right) S\\, dx$\n\n$= p_0 S \\Delta x + \\int_0^{\\Delta x} kx\\, dx = p_0 S \\Delta x + \\dfrac{k}{2}(\\Delta x)^2$。",
+            "why": "几何理解：$W$ = $p$-$V$ 图下面积。$p$ 从 $p_0$ 线性升到 $p_0 + k\\Delta x/S$，体积增加 $S\\Delta x$，图像是个梯形。梯形面积 = 平均高 × 底 = $\\bigl(p_0 + \\dfrac{k\\Delta x}{2S}\\bigr) \\cdot S\\Delta x = p_0 S\\Delta x + \\dfrac{k(\\Delta x)^2}{2}$。✓"
+          }
+        ],
+        "finalAnswer": "① $\\Delta U = \\dfrac{3}{2}R\\Delta T,\\;W = p_0 S\\Delta x + \\dfrac{k}{2}(\\Delta x)^2$",
+        "correctOption": "①"
+      }
+    },
+    {
+      "id": "2011-r1-phys-10",
+      "number": "II-C 问3",
+      "topic": "PV 矩形循环：气体净做功",
+      "topicTag": "热学·热力学循环",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "气体按 $A \\to B \\to C \\to D \\to A$ 的循环变化（见 $p$-$V$ 图）。\n\nA: $(V=1\\times10^{-3}\\,\\text{m}^3,\\;p=2\\times10^5\\,\\text{Pa})$\nB: $(V=1\\times10^{-3},\\;p=1\\times10^5)$\nC: $(V=2\\times10^{-3},\\;p=1\\times10^5)$\nD: $(V=2\\times10^{-3},\\;p=2\\times10^5)$\n\n求气体对外所做的净功（负号表示气体被外界做功）。",
+      "options": [
+        { "label": "①", "content": "$-4 \\times 10^2\\,\\text{J}$" },
+        { "label": "②", "content": "$-2 \\times 10^2\\,\\text{J}$" },
+        { "label": "③", "content": "$-1 \\times 10^2\\,\\text{J}$" },
+        { "label": "④", "content": "$1 \\times 10^2\\,\\text{J}$" },
+        { "label": "⑤", "content": "$2 \\times 10^2\\,\\text{J}$" },
+        { "label": "⑥", "content": "$4 \\times 10^2\\,\\text{J}$" }
+      ],
+      "questionDiagram": {
+        "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 260 200' font-family='serif' font-size='11'><line x1='40' y1='160' x2='240' y2='160' stroke='#1c1917'/><line x1='40' y1='30' x2='40' y2='170' stroke='#1c1917'/><polygon points='240,156 246,160 240,164' fill='#1c1917'/><polygon points='36,30 40,24 44,30' fill='#1c1917'/><text x='250' y='164' font-style='italic'>V</text><text x='30' y='25' font-style='italic'>p</text><line x1='100' y1='50' x2='180' y2='50' stroke='#1c1917'/><line x1='100' y1='110' x2='180' y2='110' stroke='#1c1917'/><line x1='100' y1='50' x2='100' y2='110' stroke='#1c1917'/><line x1='180' y1='50' x2='180' y2='110' stroke='#1c1917'/><polygon points='100,77 96,67 104,67' fill='#1c1917'/><polygon points='180,87 184,97 176,97' fill='#1c1917'/><polygon points='135,110 145,114 145,106' fill='#1c1917'/><polygon points='145,50 135,46 135,54' fill='#1c1917'/><text x='90' y='45' font-weight='bold'>A</text><text x='90' y='123' font-weight='bold'>B</text><text x='184' y='123' font-weight='bold'>C</text><text x='184' y='45' font-weight='bold'>D</text><line x1='38' y1='50' x2='40' y2='50' stroke='#1c1917'/><line x1='38' y1='110' x2='40' y2='110' stroke='#1c1917'/><text x='5' y='53' font-size='10'>2×10⁵</text><text x='5' y='113' font-size='10'>1×10⁵</text><text x='80' y='178' font-size='10'>1×10⁻³</text><text x='160' y='178' font-size='10'>2×10⁻³</text></svg>"
+      },
+      "solution": {
+        "translation": "气体做功 $W = \\int p\\,dV$。等容过程（$dV = 0$）不做功；等压过程做功 = $p \\cdot \\Delta V$。循环按反时针方向 → 净做负功。",
+        "analysis": "四段分别计算后求和。循环图在 $p$-$V$ 图上闭合面积 $= 1\\times10^5 \\times 1\\times10^{-3} = 100$ J，箭头反时针表示气体净做负功（外界对气体净做正功）。",
+        "steps": [
+          {
+            "title": "(1) 分段计算 W",
+            "content": "$\\text{A→B}$：$V$ 不变（等容），$W_{AB} = 0$。\n\n$\\text{B→C}$：$p = 1\\times 10^5$ 不变（等压），$\\Delta V = +1\\times 10^{-3}$，$W_{BC} = 1\\times 10^5 \\times 1\\times 10^{-3} = +100$ J。\n\n$\\text{C→D}$：$V$ 不变，$W_{CD} = 0$。\n\n$\\text{D→A}$：$p = 2\\times 10^5$ 不变，$\\Delta V = -1\\times 10^{-3}$，$W_{DA} = 2\\times 10^5 \\times (-1\\times 10^{-3}) = -200$ J。"
+          },
+          {
+            "title": "(2) 求和",
+            "content": "$W_{\\text{net}} = 0 + 100 + 0 + (-200) = -100$ J $= -1 \\times 10^2$ J。"
+          },
+          {
+            "title": "(3) 几何确认",
+            "content": "$p$-$V$ 图上 4 个点围成矩形，面积 $= \\Delta p \\cdot \\Delta V = 1\\times 10^5 \\times 1\\times 10^{-3} = 100$ J。\n\n箭头方向 A→B→C→D→A 在 $p$-$V$ 图上是反时针（A 在左上，B 在左下，C 在右下，D 在右上），所以净功为 $-100$ J。",
+            "why": "为什么反时针等于负功？答：「气体做功 = $\\oint p\\,dV$」。正向（V 增大）时 $p$ 较小，反向（V 减小）时 $p$ 较大，所以反向积分占优，净积分为负。几何上等价于「顺时针 = 正功，反时针 = 负功」。"
+          }
+        ],
+        "finalAnswer": "③ $W_{\\text{net}} = -1 \\times 10^2$ J",
+        "correctOption": "③"
+      }
+    },
+    {
+      "id": "2011-r1-phys-11",
+      "number": "III-A 问1",
+      "topic": "水面波振子运动：前后波长 → 速度",
+      "topicTag": "波动·多普勒",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "深度一定的水槽水面上放置周期 $0.20\\,\\text{s}$ 的振子 P。固定时圆形波纹均匀向外扩散（图 1）。让 P 以恒定速度 $v$ 沿箭头方向运动（图 2），运动方向前方波长为 $0.70\\,\\text{m}$、后方波长为 $0.90\\,\\text{m}$。求 $v$。",
+      "options": [
+        { "label": "①", "content": "$0.020\\,\\text{m/s}$" },
+        { "label": "②", "content": "$0.040\\,\\text{m/s}$" },
+        { "label": "③", "content": "$0.10\\,\\text{m/s}$" },
+        { "label": "④", "content": "$0.20\\,\\text{m/s}$" },
+        { "label": "⑤", "content": "$0.50\\,\\text{m/s}$" },
+        { "label": "⑥", "content": "$1.0\\,\\text{m/s}$" }
+      ],
+      "questionDiagram": {
+        "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 160' font-family='serif' font-size='11'><circle cx='80' cy='70' r='40' fill='none' stroke='#1c1917'/><circle cx='80' cy='70' r='28' fill='none' stroke='#1c1917'/><circle cx='80' cy='70' r='16' fill='none' stroke='#1c1917'/><circle cx='80' cy='70' r='3' fill='#1c1917'/><text x='75' y='73' font-size='9' fill='#fff'>P</text><text x='66' y='135'>图1</text><circle cx='230' cy='70' r='40' fill='none' stroke='#1c1917'/><ellipse cx='234' cy='70' rx='28' ry='27' fill='none' stroke='#1c1917'/><ellipse cx='240' cy='70' rx='16' ry='14' fill='none' stroke='#1c1917'/><circle cx='225' cy='70' r='3' fill='#1c1917'/><text x='220' y='73' font-size='9' fill='#fff'>P</text><line x1='230' y1='70' x2='260' y2='70' stroke='#1c1917'/><polygon points='258,67 264,70 258,73' fill='#1c1917'/><text x='258' y='66' font-style='italic'>v</text><text x='216' y='135'>图2</text></svg>"
+      },
+      "solution": {
+        "translation": "波源运动会拉伸后方、压缩前方的波长。前方波长 = $(c - v)T$，后方波长 = $(c + v)T$。",
+        "analysis": "联立两方程求 $c$ 与 $v$。",
+        "steps": [
+          {
+            "title": "(1) 列方程",
+            "content": "波在介质中速率 $c$。波源周期 $T = 0.20$ s。\n\n前方波长（波源追着波走，相邻波峰被压近）：\n$\\lambda_{\\text{前}} = (c - v) T = 0.70$。\n\n后方波长（波源远离已发出的波，相邻波峰被拉远）：\n$\\lambda_{\\text{后}} = (c + v) T = 0.90$。"
+          },
+          {
+            "title": "(2) 解联立",
+            "content": "$(c - v) \\cdot 0.20 = 0.70$ → $c - v = 3.5$\n\n$(c + v) \\cdot 0.20 = 0.90$ → $c + v = 4.5$\n\n相加：$2c = 8.0$ → $c = 4.0$ m/s。\n相减：$2v = 1.0$ → $v = 0.50$ m/s。"
+          }
+        ],
+        "finalAnswer": "⑤ $v = 0.50$ m/s",
+        "correctOption": "⑤"
+      }
+    },
+    {
+      "id": "2011-r1-phys-12",
+      "number": "III-B 问2",
+      "topic": "闭管共振频率组合",
+      "topicTag": "波动·驻波",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "长 $0.680\\,\\text{m}$ 的闭管（一端封闭、一端开放）。声速 $340\\,\\text{m/s}$，开口端补正可忽略。求与该管共振的频率组合（即从选项中选出两个都能共振的频率）。",
+      "options": [
+        { "label": "①", "content": "$125\\,\\text{Hz},\\;250\\,\\text{Hz}$" },
+        { "label": "②", "content": "$150\\,\\text{Hz},\\;450\\,\\text{Hz}$" },
+        { "label": "③", "content": "$250\\,\\text{Hz},\\;500\\,\\text{Hz}$" },
+        { "label": "④", "content": "$250\\,\\text{Hz},\\;625\\,\\text{Hz}$" },
+        { "label": "⑤", "content": "$375\\,\\text{Hz},\\;625\\,\\text{Hz}$" },
+        { "label": "⑥", "content": "$375\\,\\text{Hz},\\;750\\,\\text{Hz}$" }
+      ],
+      "questionDiagram": {
+        "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 280 130' font-family='serif' font-size='11'><rect x='40' y='60' width='200' height='50' fill='none' stroke='#1c1917' stroke-width='1.5'/><line x1='40' y1='60' x2='40' y2='110' stroke='#fafafa' stroke-width='2'/><line x1='240' y1='60' x2='240' y2='110' stroke='#1c1917' stroke-width='2'/><line x1='40' y1='40' x2='240' y2='40' stroke='#1c1917' stroke-dasharray='3,2'/><line x1='40' y1='35' x2='40' y2='45' stroke='#1c1917'/><line x1='240' y1='35' x2='240' y2='45' stroke='#1c1917'/><text x='115' y='30'>0.680 m</text></svg>"
+      },
+      "solution": {
+        "translation": "一端开放、一端封闭的管共振时 $L = (2n-1)\\dfrac{\\lambda}{4}$，因此 $f_n = (2n-1) \\dfrac{v}{4L}$（$n = 1, 2, 3, \\ldots$），只有奇数倍基频可共振。",
+        "analysis": "基频 $f_1 = \\dfrac{v}{4L} = \\dfrac{340}{4 \\times 0.680} = 125$ Hz。可共振的频率：$125, 375, 625, 875, \\ldots$。",
+        "steps": [
+          {
+            "title": "(1) 基频",
+            "content": "闭管基频对应「四分之一波长 = 管长」：$\\dfrac{\\lambda_1}{4} = L = 0.680$ → $\\lambda_1 = 2.72$ m。\n\n$f_1 = \\dfrac{v}{\\lambda_1} = \\dfrac{340}{2.72} = 125$ Hz。"
+          },
+          {
+            "title": "(2) 谐波序列",
+            "content": "闭管只共振奇数倍：$f_n = (2n-1) \\times 125$ Hz，即 $125, 375, 625, 875, \\ldots$ Hz。",
+            "why": "为什么闭管只有奇数倍？答：封闭端必须是位移波节、开放端是位移波腹。从波节到最近的波腹是 $\\lambda/4$。管长 = $\\lambda/4 + n \\cdot \\lambda/2 = (2n+1)\\lambda/4$，所以只能容纳奇数倍 $\\lambda/4$。"
+          },
+          {
+            "title": "(3) 对照选项",
+            "content": "$375$ 和 $625$ 都在序列里（$n=2$ 和 $n=3$）→ 选 ⑤。\n\n其他选项各含至少一个偶数倍频率（如 $250, 450, 500, 750$），不能共振。"
+          }
+        ],
+        "finalAnswer": "⑤ $375\\,\\text{Hz},\\;625\\,\\text{Hz}$",
+        "correctOption": "⑤"
+      }
+    },
+    {
+      "id": "2011-r1-phys-13",
+      "number": "III-C 问3",
+      "topic": "两玻璃板透射干涉：加强条件",
+      "topicTag": "波动·薄膜干涉",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "如图，两块平面玻璃板 A、B 距离 $d$、平行放置。波长 $\\lambda$ 的单色光从左方垂直入射 A，经 B 透射出来。此时直接透射出来的光，与「在 B 反射、再在 A 反射、再透过 B 出来」的光发生干涉。求干涉加强时 $d$ 的最小（最一般）表达式（$m = 1, 2, \\ldots$）。",
+      "options": [
+        { "label": "①", "content": "$\\left(m - \\dfrac{1}{2}\\right)\\dfrac{\\lambda}{2}$" },
+        { "label": "②", "content": "$m\\,\\dfrac{\\lambda}{2}$" },
+        { "label": "③", "content": "$\\left(m - \\dfrac{1}{2}\\right)\\lambda$" },
+        { "label": "④", "content": "$m\\lambda$" }
+      ],
+      "questionDiagram": {
+        "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 280 160' font-family='serif' font-size='12'><line x1='130' y1='30' x2='130' y2='130' stroke='#1c1917' stroke-width='2.5'/><line x1='180' y1='30' x2='180' y2='130' stroke='#1c1917' stroke-width='2.5'/><text x='125' y='25' font-weight='bold'>A</text><text x='175' y='25' font-weight='bold'>B</text><line x1='50' y1='80' x2='125' y2='80' stroke='#1c1917'/><polygon points='123,77 130,80 123,83' fill='#1c1917'/><text x='75' y='75'>光</text><line x1='130' y1='100' x2='180' y2='100' stroke='#78716c' stroke-dasharray='2,2'/><line x1='130' y1='105' x2='180' y2='105' stroke='#1c1917'/><line x1='150' y1='113' x2='160' y2='113' stroke='#1c1917'/><polygon points='156,110 160,113 156,116' fill='#1c1917'/><polygon points='154,110 150,113 154,116' fill='#1c1917'/><text x='150' y='128' font-style='italic'>d</text></svg>"
+      },
+      "solution": {
+        "translation": "两束干涉光：(I) 直接透过 A→B；(II) 透过 A，在 B 左面反射回来，在 A 右面反射再向右，透过 B。比较两束光的光程差与相位差。",
+        "analysis": "二次反射各发生在「空气→玻璃」界面（B 左面、A 右面），各产生 $\\pi$ 相位跳变，合计 $2\\pi$ 等价于 $0$，所以反射相位差对干涉不构成额外修正。加强条件即「光程差 = 整数倍 $\\lambda$」。",
+        "steps": [
+          {
+            "title": "(1) 光程差",
+            "content": "II 比 I 多走了「B 左 → A 右 → B 左」的来回，多走光程 $= 2d$（两板间空气，折射率 $1$）。"
+          },
+          {
+            "title": "(2) 反射相位",
+            "content": "在 B 左面：从空气（低折射率）反射回到空气，但反射点位于「空气/玻璃」界面进入高折射率介质方向 → 半波损失（$\\pi$ 相移）。\n\n在 A 右面：同样空气→玻璃界面反射 → 又 $\\pi$ 相移。\n\n合计相移 $2\\pi$ = 无相移。"
+          },
+          {
+            "title": "(3) 加强条件",
+            "content": "$2d = m\\lambda$（$m = 1, 2, \\ldots$）→ $d = \\dfrac{m\\lambda}{2}$。",
+            "why": "为什么 $m \\geq 1$？答：选项中 $m$ 从 $1$ 起计数，$m=0$ 对应 $d=0$（两板贴在一起），物理上没有「中间空气层」可言，所以从 $m=1$ 起。"
+          }
+        ],
+        "finalAnswer": "② $d = m\\,\\dfrac{\\lambda}{2}$",
+        "correctOption": "②"
+      }
+    },
+    {
+      "id": "2011-r1-phys-14",
+      "number": "IV-A 问1",
+      "topic": "双点电荷在 x 轴上电位为零的位置",
+      "topicTag": "电磁·静电",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "$x$ 轴上 $x = a\\;(>0)$ 处放电荷 $-Q\\;(Q > 0)$；$x = -a$ 处放电荷 $+2Q$。以无穷远处电位为 $0$。求 $x$ 轴上电位为 $0$ 的点的坐标。",
+      "options": [
+        { "label": "①", "content": "$-\\dfrac{1}{2}a,\\;-2a$" },
+        { "label": "②", "content": "$-\\dfrac{1}{3}a,\\;-3a$" },
+        { "label": "③", "content": "$0$" },
+        { "label": "④", "content": "$\\dfrac{1}{3}a,\\;3a$" },
+        { "label": "⑤", "content": "$\\dfrac{1}{2}a,\\;2a$" }
+      ],
+      "questionDiagram": {
+        "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 100' font-family='serif' font-size='12'><line x1='30' y1='60' x2='300' y2='60' stroke='#1c1917'/><polygon points='298,57 304,60 298,63' fill='#1c1917'/><text x='305' y='64' font-style='italic'>x</text><circle cx='100' cy='60' r='3' fill='#1c1917'/><circle cx='160' cy='60' r='3' fill='#1c1917'/><circle cx='220' cy='60' r='3' fill='#1c1917'/><text x='90' y='45'>2Q</text><text x='205' y='45'>-Q</text><text x='90' y='80'>-a</text><text x='155' y='80' font-style='italic'>O</text><text x='215' y='80' font-style='italic'>a</text></svg>"
+      },
+      "solution": {
+        "translation": "电位 $V(x) = \\dfrac{k \\cdot 2Q}{|x+a|} + \\dfrac{k \\cdot (-Q)}{|x-a|}$。令 $V = 0$ → $2|x-a| = |x+a|$。分区讨论。",
+        "analysis": "去绝对值后得到两段一次方程，分别在区域内验证。",
+        "steps": [
+          {
+            "title": "(1) 化简方程",
+            "content": "$V(x) = 0$ → $\\dfrac{2Q}{|x+a|} - \\dfrac{Q}{|x-a|} = 0$ → $2|x-a| = |x+a|$。"
+          },
+          {
+            "title": "(2) 分区求解",
+            "content": "**区域 1：$x > a$**。$|x-a| = x-a$，$|x+a| = x+a$。\n$2(x-a) = x+a$ → $x = 3a$ ✓（在 $x>a$ 区域内）。\n\n**区域 2：$-a < x < a$**。$|x-a| = a-x$，$|x+a| = x+a$。\n$2(a-x) = x+a$ → $2a - 2x = x + a$ → $x = \\dfrac{a}{3}$ ✓。\n\n**区域 3：$x < -a$**。$|x-a| = a-x$，$|x+a| = -(x+a)$。\n$2(a-x) = -(x+a)$ → $2a - 2x = -x - a$ → $x = 3a$ ✗（不在 $x<-a$ 内，舍去）。"
+          },
+          {
+            "title": "(3) 结果",
+            "content": "$x = \\dfrac{a}{3}$ 和 $x = 3a$。",
+            "why": "为什么 $+2Q$ 一侧没有零点？答：$+2Q$ 的电位为正，$-Q$ 的电位为负。在 $-a$ 左侧两电荷距离悬殊不大，$+2Q$（更大）占优 → 电位为正、不可能为零。同理 $x > a$ 处虽然 $-Q$ 更近但电荷量小一半，要走到 $3a$ 才能让 $+2Q$ 与 $-Q$ 的贡献相消。"
+          }
+        ],
+        "finalAnswer": "④ $x = \\dfrac{a}{3},\\;3a$",
+        "correctOption": "④"
+      }
+    },
+    {
+      "id": "2011-r1-phys-15",
+      "number": "IV-B 问2",
+      "topic": "电容器中插入 P 板：移动后能量倍数",
+      "topicTag": "电磁·电容",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "极板 A、B 间距 $3d$ 的电容器中，平行插入与 A 距 $2d$ 的同面积薄极板 P。图 1：S₁、S₂ 张开，A、B、P 都无电荷。图 2：合上 S₁、S₂，AP、PB 间各加电位差 $V$。然后断开 S₁、S₂，再如图 3 将 P 向 A 靠近 $d$。问：从图 2 状态到图 3 状态，电容器储存的静电能变为原来的几倍？",
+      "options": [
+        { "label": "①", "content": "$\\dfrac{1}{2}$" },
+        { "label": "②", "content": "$\\dfrac{2}{3}$" },
+        { "label": "③", "content": "$\\dfrac{3}{4}$" },
+        { "label": "④", "content": "$1$" },
+        { "label": "⑤", "content": "$\\dfrac{4}{3}$" },
+        { "label": "⑥", "content": "$\\dfrac{3}{2}$" },
+        { "label": "⑦", "content": "$2$" }
+      ],
+      "solution": {
+        "translation": "断开开关后，A 上、P 上、B 上的电荷各自守恒。P 移动改变两段间距，但电荷不变 → 由 $U = \\dfrac{Q^2}{2C}$ 算新能量。",
+        "analysis": "记 $C_0 = \\dfrac{\\varepsilon_0 S}{d}$（间距为 $d$ 时的电容）。图 2 时 $C_{AP} = C_0/2$、$C_{PB} = C_0$；图 3 时 $C'_{AP} = C_0$、$C'_{PB} = C_0/2$（左右间距互换）。",
+        "steps": [
+          {
+            "title": "(1) 图 2 状态：电荷与能量",
+            "content": "$C_{AP} = \\dfrac{\\varepsilon_0 S}{2d}$，AP 间电位差 $V$：$Q_{AP} = C_{AP} V = \\dfrac{\\varepsilon_0 S V}{2d}$。\n\n$C_{PB} = \\dfrac{\\varepsilon_0 S}{d}$，PB 间电位差 $V$：$Q_{PB} = \\dfrac{\\varepsilon_0 S V}{d}$。\n\n初始总能量：$U_{\\text{初}} = \\dfrac{1}{2}C_{AP}V^2 + \\dfrac{1}{2}C_{PB}V^2 = \\dfrac{V^2}{2}\\left(\\dfrac{\\varepsilon_0 S}{2d} + \\dfrac{\\varepsilon_0 S}{d}\\right) = \\dfrac{3\\varepsilon_0 S V^2}{4d}$。"
+          },
+          {
+            "title": "(2) 断开开关 → 电荷守恒",
+            "content": "S₁ 断 → A 上电荷 $Q_{AP}$、P 左面电荷 $-Q_{AP}$ 不变。\n\nS₂ 断 → P 右面电荷 $Q_{PB}$、B 上电荷 $-Q_{PB}$ 不变。\n\n现在 P 整体向 A 移近 $d$：AP 间距变为 $d$，PB 间距变为 $2d$。各极板电荷不变。"
+          },
+          {
+            "title": "(3) 图 3 状态：新能量",
+            "content": "新电容：$C'_{AP} = \\dfrac{\\varepsilon_0 S}{d}$，$C'_{PB} = \\dfrac{\\varepsilon_0 S}{2d}$。\n\n用 $U = \\dfrac{Q^2}{2C}$（电荷不变）：\n\n$U'_{AP} = \\dfrac{Q_{AP}^2}{2 C'_{AP}} = \\dfrac{(\\varepsilon_0 S V/(2d))^2}{2 \\cdot \\varepsilon_0 S/d} = \\dfrac{\\varepsilon_0 S V^2}{8d}$。\n\n$U'_{PB} = \\dfrac{Q_{PB}^2}{2 C'_{PB}} = \\dfrac{(\\varepsilon_0 S V/d)^2}{2 \\cdot \\varepsilon_0 S/(2d)} = \\dfrac{\\varepsilon_0 S V^2}{d}$。\n\n合计：$U_{\\text{末}} = \\dfrac{\\varepsilon_0 S V^2}{8d} + \\dfrac{\\varepsilon_0 S V^2}{d} = \\dfrac{9\\varepsilon_0 S V^2}{8d}$。"
+          },
+          {
+            "title": "(4) 比值",
+            "content": "$\\dfrac{U_{\\text{末}}}{U_{\\text{初}}} = \\dfrac{9\\varepsilon_0 S V^2/(8d)}{3\\varepsilon_0 S V^2/(4d)} = \\dfrac{9}{8} \\cdot \\dfrac{4}{3} = \\dfrac{3}{2}$。",
+            "why": "为什么能量增加而不减少？答：移动 P 板时，AP 间靠近 → 电容增大但电荷不变 → 该电容器能量减少；PB 间拉远 → 电容减小但电荷不变 → 该电容器能量增加。两者总和这里是后者主导。物理上：拉开有同号反向感应电荷的两板需要外力做功，外力做的功转化为电场能。"
+          }
+        ],
+        "finalAnswer": "⑥ $\\dfrac{3}{2}$ 倍",
+        "correctOption": "⑥"
+      }
+    },
+    {
+      "id": "2011-r1-phys-16",
+      "number": "IV-C 问3",
+      "topic": "电流-电压图读 R₃",
+      "topicTag": "电磁·电路",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "可变直流电源与三个电阻 $R_1$、$R_2$、$R_3$ 按图 1 连接（$R_1$ 与 $R_2 \\parallel R_3$ 串联）。$R_1 = 3.0\\,\\Omega$。改变电源电压时，流过 $R_1$ 的电流 $I_1$、流过 $R_2$ 的电流 $I_2$ 分别如图 2、图 3 所示（图 2 中 $V = 10\\,\\text{V}$ 时 $I_1 \\approx 2.5\\,\\text{A}$；图 3 中 $V = 10\\,\\text{V}$ 时 $I_2 \\approx 0.8\\,\\text{A}$）。求 $R_3$。",
+      "options": [
+        { "label": "①", "content": "$1.2\\,\\Omega$" },
+        { "label": "②", "content": "$1.6\\,\\Omega$" },
+        { "label": "③", "content": "$2.1\\,\\Omega$" },
+        { "label": "④", "content": "$2.7\\,\\Omega$" },
+        { "label": "⑤", "content": "$3.1\\,\\Omega$" },
+        { "label": "⑥", "content": "$3.8\\,\\Omega$" }
+      ],
+      "solution": {
+        "translation": "由 $I_1$ 图求总电阻 → 求出 $R_2 \\parallel R_3$。由 $I_2$ 图求 $R_2$。再由并联公式求 $R_3$。",
+        "analysis": "$R_{\\text{总}} = R_1 + R_p$ 其中 $R_p = \\dfrac{R_2 R_3}{R_2 + R_3}$；$R_2 = \\dfrac{V_{R_2}}{I_2}$，$V_{R_2} = R_p \\cdot I_1$。",
+        "steps": [
+          {
+            "title": "(1) 由 I₁ 图求 R_p",
+            "content": "图 2 在 $V = 10$ V 时 $I_1 = 2.5$ A → $R_{\\text{总}} = \\dfrac{V}{I_1} = \\dfrac{10}{2.5} = 4\\,\\Omega$。\n\n$R_p = R_{\\text{总}} - R_1 = 4 - 3 = 1\\,\\Omega$。"
+          },
+          {
+            "title": "(2) 由 I₂ 图求 R₂",
+            "content": "并联段两端电压 $V_{R_2} = R_p \\cdot I_1 = 1 \\times 2.5 = 2.5$ V。\n\n图 3 在 $V = 10$ V 时 $I_2 \\approx 0.8$ A → $R_2 = \\dfrac{V_{R_2}}{I_2} = \\dfrac{2.5}{0.8} \\approx 3.13\\,\\Omega$。"
+          },
+          {
+            "title": "(3) 由并联求 R₃",
+            "content": "$\\dfrac{1}{R_p} = \\dfrac{1}{R_2} + \\dfrac{1}{R_3}$ → $R_3 = \\dfrac{R_2 R_p}{R_2 - R_p} = \\dfrac{3.13 \\times 1}{3.13 - 1} = \\dfrac{3.13}{2.13} \\approx 1.47\\,\\Omega$。\n\n最接近 $1.6\\,\\Omega$。",
+            "why": "为什么不是 1.2？答：1.2 对应 $R_2 = 6\\,\\Omega$、$I_2 \\approx 0.42$ A 的情形，与图 3 显示 $I_2 \\approx 0.8$ A 不符。"
+          }
+        ],
+        "finalAnswer": "② $R_3 \\approx 1.6\\,\\Omega$",
+        "correctOption": "②"
+      }
+    },
+    {
+      "id": "2011-r1-phys-17",
+      "number": "IV-D 问4",
+      "topic": "电流计加分流：扩大量程",
+      "topicTag": "电磁·电路",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "电流计满刻度 $10\\,\\text{mA}$、内阻 $0.90\\,\\Omega$。在电流计上并联电阻 $R$，使最大量程扩大到 $100\\,\\text{mA}$。求 $R$。",
+      "options": [
+        { "label": "①", "content": "$0.010\\,\\Omega$" },
+        { "label": "②", "content": "$0.10\\,\\Omega$" },
+        { "label": "③", "content": "$1.0\\,\\Omega$" },
+        { "label": "④", "content": "$10\\,\\Omega$" }
+      ],
+      "questionDiagram": {
+        "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 280 120' font-family='serif' font-size='12'><line x1='30' y1='40' x2='120' y2='40' stroke='#1c1917'/><line x1='160' y1='40' x2='250' y2='40' stroke='#1c1917'/><circle cx='140' cy='40' r='15' fill='#fafafa' stroke='#1c1917'/><text x='135' y='44'>A</text><line x1='30' y1='40' x2='30' y2='80' stroke='#1c1917'/><line x1='30' y1='80' x2='100' y2='80' stroke='#1c1917'/><rect x='100' y='72' width='80' height='16' fill='#fafafa' stroke='#1c1917'/><text x='135' y='84' font-style='italic'>R</text><line x1='180' y1='80' x2='250' y2='80' stroke='#1c1917'/><line x1='250' y1='40' x2='250' y2='80' stroke='#1c1917'/></svg>"
+      },
+      "solution": {
+        "translation": "扩大量程需将主体电流分流。满偏时 $10\\,\\text{mA}$ 走电流计，其余 $90\\,\\text{mA}$ 走 $R$。电流计两端电压等于 $R$ 两端电压。",
+        "analysis": "并联 → 电压相同 → $I_R \\cdot R = I_A \\cdot R_A$。",
+        "steps": [
+          {
+            "title": "(1) 满偏分配",
+            "content": "总电流 $100$ mA = $I_A + I_R$，满偏时 $I_A = 10$ mA → $I_R = 90$ mA。"
+          },
+          {
+            "title": "(2) 并联电压相等",
+            "content": "$V = I_A \\cdot R_A = 0.010 \\times 0.90 = 0.0090$ V。\n\n$R = \\dfrac{V}{I_R} = \\dfrac{0.0090}{0.090} = 0.10\\,\\Omega$。",
+            "why": "记忆口诀：扩大 $n$ 倍量程，分流电阻 = 内阻 / ($n-1$)。此题 $n = 10$，$R = 0.90/9 = 0.10\\,\\Omega$。"
+          }
+        ],
+        "finalAnswer": "② $R = 0.10\\,\\Omega$",
+        "correctOption": "②"
+      }
+    },
+    {
+      "id": "2011-r1-phys-18",
+      "number": "IV-E 问5",
+      "topic": "圆形电流 + 长直电流：抵消 C 处磁场",
+      "topicTag": "电磁·磁场",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "如图，长直导线 AB 与一个半径 $a$ 的圆形导线圆共存于同一平面。圆心 C 到 AB 的垂直距离为 $2a$。圆中流过电流 $I$（按图示方向）。在 AB 中通入适当方向、适当大小的电流，使 C 处合磁场为零。求 AB 中电流的方向与大小。",
+      "options": [
+        { "label": "①", "content": "$A \\to B$，$\\pi I$" },
+        { "label": "②", "content": "$A \\to B$，$2\\pi I$" },
+        { "label": "③", "content": "$A \\to B$，$4\\pi I$" },
+        { "label": "④", "content": "$B \\to A$，$\\pi I$" },
+        { "label": "⑤", "content": "$B \\to A$，$2\\pi I$" },
+        { "label": "⑥", "content": "$B \\to A$，$4\\pi I$" }
+      ],
+      "questionDiagram": {
+        "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 220' font-family='serif' font-size='12'><circle cx='160' cy='80' r='40' fill='none' stroke='#1c1917' stroke-width='1.5'/><circle cx='160' cy='80' r='2' fill='#1c1917'/><text x='150' y='75'>C</text><line x1='160' y1='80' x2='200' y2='80' stroke='#78716c' stroke-dasharray='3,2'/><text x='175' y='75' font-style='italic'>a</text><line x1='160' y1='80' x2='160' y2='180' stroke='#78716c' stroke-dasharray='3,2'/><text x='150' y='130'>2a</text><line x1='30' y1='180' x2='290' y2='180' stroke='#1c1917' stroke-width='1.5'/><text x='25' y='195' font-weight='bold'>A</text><text x='285' y='195' font-weight='bold'>B</text><polygon points='185,108 195,115 180,120' fill='#1c1917'/><text x='198' y='118' font-style='italic'>I</text></svg>"
+      },
+      "solution": {
+        "translation": "圆环在圆心产生磁场 $B_1 = \\mu_0 I / (2a)$；长直导线在距离 $2a$ 处产生 $B_2 = \\mu_0 I_{AB}/(4\\pi a)$。两者方向相反、大小相等即可抵消。",
+        "analysis": "用右手定则判断方向：圆中 $I$ 顺时针（从图示箭头方向看）→ 圆心磁场方向「入纸」。长直在 C 处产生「出纸」磁场才能抵消 → 电流必须从 $B \\to A$。",
+        "steps": [
+          {
+            "title": "(1) 大小相等",
+            "content": "$B_{\\text{圆}} = \\dfrac{\\mu_0 I}{2a}$，$B_{\\text{直}} = \\dfrac{\\mu_0 I_{AB}}{2\\pi \\cdot 2a} = \\dfrac{\\mu_0 I_{AB}}{4\\pi a}$。\n\n相等：$\\dfrac{\\mu_0 I}{2a} = \\dfrac{\\mu_0 I_{AB}}{4\\pi a}$ → $I_{AB} = 2\\pi I$。"
+          },
+          {
+            "title": "(2) 方向相反",
+            "content": "右手定则：图中圆环按图示 $I$ 方向看是顺时针 → 圆心处磁场指向「入纸」（×）。\n\n要抵消，需要长直导线在 C 处产生「出纸」（•）磁场。\n\nC 位于 AB 上方。直导线在其上方产生磁场方向：右手大拇指沿电流方向，手指弯向 C 一侧——若想 C 处磁场向外（出纸）需要电流从 $B \\to A$（即图中向左）。",
+            "why": "记忆：右手定则——大拇指沿电流方向，四指弯曲方向即磁场方向。直导线水平向左通电时，在其上方（C 位置）磁场指向「出纸面」。"
+          },
+          {
+            "title": "(3) 组合答案",
+            "content": "方向 $B \\to A$，大小 $2\\pi I$。"
+          }
+        ],
+        "finalAnswer": "⑤ $B \\to A$，$2\\pi I$",
+        "correctOption": "⑤"
+      }
+    },
+    {
+      "id": "2011-r1-phys-19",
+      "number": "IV-F 问6",
+      "topic": "带电粒子在磁场中加电场使其直行",
+      "topicTag": "电磁·洛伦兹力",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "$x > 0$ 区域有均匀磁场，垂直于纸面、由正面指向背面（即 $-\\hat{z}$ 方向）。带电粒子从原点出发，以与 $y$ 轴成 $45°$ 的方向射入（即 $+x$、$+y$ 各为 $\\dfrac{v}{\\sqrt{2}}$）。在仅有磁场时，粒子做图示的圆周运动。然后在此区域加一适当强度的电场，使粒子沿原方向（$45°$）以恒速直线前进。求电场方向（从图中 ①〜⑧ 中选一）。",
+      "options": [
+        { "label": "①", "content": "$+y$（正上）" },
+        { "label": "②", "content": "$+x,+y$ 之间（右上 $45°$）" },
+        { "label": "③", "content": "$+x$（正右）" },
+        { "label": "④", "content": "$+x,-y$ 之间（右下 $45°$）" },
+        { "label": "⑤", "content": "$-y$（正下）" },
+        { "label": "⑥", "content": "$-x,-y$ 之间（左下 $45°$）" },
+        { "label": "⑦", "content": "$-x$（正左）" },
+        { "label": "⑧", "content": "$-x,+y$ 之间（左上 $45°$）" }
+      ],
+      "solution": {
+        "translation": "粒子直行 → 合力为零 → 电力 $qE$ 与洛伦兹力 $qv\\times B$ 大小相等、方向相反 → $E = -v\\times B$（与粒子电性无关）。",
+        "analysis": "$v = (v_0/\\sqrt{2})(\\hat{x} + \\hat{y})$，$B = -B_0 \\hat{z}$。计算 $v\\times B$ 后取反即得 $E$。",
+        "steps": [
+          {
+            "title": "(1) 平衡条件",
+            "content": "$qE + qv\\times B = 0$ → $E = -v\\times B$。\n\n注意：等号两边都含 $q$，所以方程结果与 $q$ 的正负无关。"
+          },
+          {
+            "title": "(2) 算 $v\\times B$",
+            "content": "$v = \\dfrac{v_0}{\\sqrt{2}}(1, 1, 0)$，$B = (0, 0, -B_0)$。\n\n$v\\times B = \\dfrac{v_0 B_0}{\\sqrt{2}}\\begin{vmatrix}\\hat{x}&\\hat{y}&\\hat{z}\\\\1&1&0\\\\0&0&-1\\end{vmatrix} = \\dfrac{v_0 B_0}{\\sqrt{2}}(1\\cdot(-1) - 0,\\;0 - 1\\cdot(-1),\\;0) = \\dfrac{v_0 B_0}{\\sqrt{2}}(-1,\\;1,\\;0)$。\n\n方向：$-x,+y$（左上 45°）。"
+          },
+          {
+            "title": "(3) 取反 → E 方向",
+            "content": "$E = -v\\times B = \\dfrac{v_0 B_0}{\\sqrt{2}}(1, -1, 0)$。\n\n方向：$+x, -y$（右下 45°）→ 图中 ④。",
+            "why": "几何直观：磁场入纸面，圆周运动「弯向 $+x$ 区」（已观察到的事实）→ 洛伦兹力指向圆心，圆心在入射方向的「右侧」（右下方向）。电力必须正好与之反向（左上方向）才能保持平衡。但要小心：电力 = $qE$，方向是 $E$ 还是 $-E$ 取决于 $q$ 的正负。本题答案是 $E$ 的方向，所以最终方向是右下 ④。"
+          }
+        ],
+        "finalAnswer": "④（$+x,-y$ 之间，右下 45°）",
+        "correctOption": "④"
+      }
+    }
+  ]
+}
