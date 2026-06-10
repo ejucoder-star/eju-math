@@ -194,25 +194,24 @@ const QuestionCard = ({ question }) => {
         </div>
         <span style={{ fontSize: "11px", fontWeight: "600", padding: "3px 10px", borderRadius: "99px", background: "#f5f5f4", color: "#78716c", border: "1px solid #e7e5e4", whiteSpace: "nowrap" }}>{question.topicTag}</span>
       </div>
-      <div style={{ padding: "18px 20px" }}>
-        {question.questionImage ? (
-          <img
-            src={question.questionImage}
-            alt={question.topic}
-            style={{ width: "100%", height: "auto", display: "block", borderRadius: "6px", border: "1px solid #e7e5e4" }}
+           <div style={{ padding: "18px 20px" }}>
+        <MathText style={{ fontSize: "14.5px", lineHeight: "2", color: "#1c1917" }}>{question.question}</MathText>
+        {question.questionImage && (
+          <div style={{ display: "flex", justifyContent: "center", margin: "14px 0" }}>
+            <img
+              src={question.questionImage}
+              alt={question.topic}
+              style={{ maxWidth: "100%", maxHeight: "400px", height: "auto", display: "block", borderRadius: "6px", border: "1px solid #e7e5e4" }}
+            />
+          </div>
+        )}
+        {question.questionDiagramSvg && <SvgDiagram svg={question.questionDiagramSvg} />}
+        {isChoice && (
+          <OptionsList
+            options={question.options}
+            correctOption={question.solution && question.solution.correctOption}
+            revealed={open}
           />
-        ) : (
-          <>
-            <MathText style={{ fontSize: "14.5px", lineHeight: "2", color: "#1c1917" }}>{question.question}</MathText>
-            {question.questionDiagramSvg && <SvgDiagram svg={question.questionDiagramSvg} />}
-            {isChoice && (
-              <OptionsList
-                options={question.options}
-                correctOption={question.solution && question.solution.correctOption}
-                revealed={open}
-              />
-            )}
-          </>
         )}
       </div>
       <div style={{ padding: "0 20px 18px" }}>
