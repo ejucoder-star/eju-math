@@ -1,0 +1,774 @@
+{
+  "metadata": {
+    "course": "physics",
+    "year": "2011",
+    "session": "2",
+    "courseNameJa": "物理",
+    "courseNameEn": "Physics",
+    "description": "理科综合｜物理",
+    "color": "#16a34a",
+    "examTitle": "平成23年度（2011年度）第2回 物理",
+    "examDate": "2011年11月"
+  },
+  "questions": [
+    {
+      "id": "2011-r2-phys-1",
+      "number": "I-A 问1",
+      "topic": "竖直方向加速/匀速时绳的张力",
+      "topicTag": "力学·牛顿第二定律",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "用绳子悬挂质量 $0.50\\,\\text{kg}$ 的物体，握住绳子上端使物体运动，测量绳对物体的拉力。\n\n物体以等加速度（直线运动）$2.8\\,\\text{m/s}^2$ 向上加速运动时张力大小为 $a$，物体以等速度（直线运动）$1.4\\,\\text{m/s}$ 向下运动时张力大小为 $b$。求 $a$、$b$ 的组合（$g = 9.8\\,\\text{m/s}^2$）。",
+      "options": [
+        { "label": "①", "content": "$a = 3.5\\,\\text{N},\\; b = 4.2\\,\\text{N}$" },
+        { "label": "②", "content": "$a = 3.5\\,\\text{N},\\; b = 4.9\\,\\text{N}$" },
+        { "label": "③", "content": "$a = 3.5\\,\\text{N},\\; b = 5.6\\,\\text{N}$" },
+        { "label": "④", "content": "$a = 6.3\\,\\text{N},\\; b = 4.2\\,\\text{N}$" },
+        { "label": "⑤", "content": "$a = 6.3\\,\\text{N},\\; b = 4.9\\,\\text{N}$" },
+        { "label": "⑥", "content": "$a = 6.3\\,\\text{N},\\; b = 5.6\\,\\text{N}$" }
+      ],
+      "questionImage": "/images/2011_R2_physics/q01.png",
+      "solution": {
+        "translation": "两种运动状态分别用牛顿第二定律。注意「等速」就是加速度为零。",
+        "analysis": "向上加速：$T - mg = ma$；匀速下降：$T = mg$（运动方向不影响张力，只有加速度为零这个事实重要）。",
+        "steps": [
+          {
+            "title": "(1) 向上加速时的张力 a",
+            "content": "对物体竖直方向列牛顿第二定律（设向上为正）：\n\n$$T - mg = ma$$\n\n$$T = m(g + a) = 0.50 \\times (9.8 + 2.8) = 0.50 \\times 12.6 = 6.3\\,\\text{N}$$\n\n所以 $a = 6.3\\,\\text{N}$。"
+          },
+          {
+            "title": "(2) 匀速下降时的张力 b",
+            "content": "等速直线运动 → 加速度为 $0$ → 物体处于平衡状态：\n\n$$T = mg = 0.50 \\times 9.8 = 4.9\\,\\text{N}$$\n\n所以 $b = 4.9\\,\\text{N}$。",
+            "why": "为什么向下匀速时张力不是负的或不同？答：张力是绳子对物体的拉力，沿绳方向（向上）。无论物体运动方向如何，只要加速度为零，竖直方向力平衡：$T = mg$。"
+          }
+        ],
+        "finalAnswer": "⑤ $a = 6.3\\,\\text{N},\\; b = 4.9\\,\\text{N}$",
+        "correctOption": "⑤"
+      }
+    },
+    {
+      "id": "2011-r2-phys-2",
+      "number": "I-B 问2",
+      "topic": "由 v(t) 图判断 a(t) 图",
+      "topicTag": "力学·运动学",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "在 $x$ 轴上运动的小球，时刻 $t$ 的速度 $v(t)$ 随 $t$ 变化如图所示（先下凹到负值，再回升过零，最后稳定在正的常数值）。求小球加速度 $a(t)$ 的变化图形。",
+      "options": [
+        { "label": "①", "content": "起点为 $0$，先升到正峰再下降越过零到负值，最后稳定在负的常数值" },
+        { "label": "②", "content": "起点为负值，下凹到极小值后回升到 $0$ 并保持 $0$" },
+        { "label": "③", "content": "起点为负值，先升过零到正峰，再衰减回 $0$ 并保持" },
+        { "label": "④", "content": "起点为负值，单调上升后稳定在正的常数值" }
+      ],
+      "questionImage": "/images/2011_R2_physics/q02.png",
+      "solution": {
+        "translation": "加速度 $a(t) = \\dfrac{dv}{dt}$ 是 $v(t)$ 的斜率。逐段判断 $v$ 的斜率符号与大小变化。",
+        "analysis": "$v$ 先减小再增大最后稳定，对应 $a$ 先负后正最后回到 $0$。",
+        "steps": [
+          {
+            "title": "(1) v 下降阶段：a < 0",
+            "content": "从 $t=0$ 到 $v$ 的极小值点，$v$ 在下降（斜率为负）。所以这段时间 $a < 0$。起点处 $v$ 已经在下降 → $a(0)$ 非零负值。"
+          },
+          {
+            "title": "(2) v 的极小值点：a = 0",
+            "content": "在 $v$ 的极小值处，瞬时斜率为 $0$，即 $a = 0$。"
+          },
+          {
+            "title": "(3) v 上升阶段：a > 0，有正峰",
+            "content": "$v$ 极小值之后，$v$ 开始上升，$a > 0$。$v$ 上升最快的拐点处 $a$ 达到正的峰值。"
+          },
+          {
+            "title": "(4) v 趋于常数：a → 0",
+            "content": "$v$ 接近水平渐近线（正的常数）时，斜率渐变为 $0$，$a \\to 0$。\n\n综合：$a$ 起点为负 → 升过零 → 正峰 → 衰减回 $0$，这正是选项 ③。",
+            "why": "为什么不是 ①？答：① 起点为 $0$ 然后先升到正峰再下降到负值，对应的 $v$ 应该是「先增加后减小」——与本题 $v$「先减小后增大」相反。"
+          }
+        ],
+        "finalAnswer": "③",
+        "correctOption": "③"
+      }
+    },
+    {
+      "id": "2011-r2-phys-3",
+      "number": "I-C 问3",
+      "topic": "梯子斜靠墙不滑的人质量上限",
+      "topicTag": "力学·静力平衡",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "如图，质量 $M$ 的均匀梯子与水平地面成 $45°$ 角斜靠在铅直的墙上。墙是光滑的，梯子与地面之间的静摩擦系数为 $\\dfrac{2}{3}$。梯子重心在其中点。质量 $m$ 的人站在梯子上端时，若 $m < x$ 则梯子不滑，若 $m > x$ 则梯子滑动。求 $x$（用 $M$ 表示）。",
+      "options": [
+        { "label": "①", "content": "$2M$" },
+        { "label": "②", "content": "$\\dfrac{3}{2}M$" },
+        { "label": "③", "content": "$\\dfrac{2}{3}M$" },
+        { "label": "④", "content": "$\\dfrac{1}{2}M$" }
+      ],
+      "questionImage": "/images/2011_R2_physics/q03.png",
+      "solution": {
+        "translation": "梯子静止平衡，列三个方程（竖直、水平、力矩），结合摩擦力达到极限的条件解出临界质量。",
+        "analysis": "竖直平衡求出地面支持力 $N$；对底端取力矩求出墙的支持力 $N_w$；水平方向 $f = N_w$；临界滑动条件 $f = \\mu N$。",
+        "steps": [
+          {
+            "title": "(1) 列竖直、力矩方程",
+            "content": "设梯子长 $L$。\n\n**竖直方向**：地面支持力 $N$ 等于总重\n$$N = (M + m)g$$\n\n**对梯子底端取力矩**（以墙的水平支持力 $N_w$ 为未知量）：\n\n梯子重 $Mg$ 作用在中点，重力臂 $= \\dfrac{L}{2}\\cos 45°$。\n\n人重 $mg$ 作用在顶端，重力臂 $= L\\cos 45°$。\n\n墙的支持力 $N_w$（水平，作用在顶端），力臂 $= L\\sin 45°$。\n\n$$N_w \\cdot L\\sin 45° = Mg \\cdot \\frac{L}{2}\\cos 45° + mg \\cdot L\\cos 45°$$\n\n$\\sin 45° = \\cos 45°$，消去：\n\n$$N_w = \\frac{M}{2}g + mg = \\left(\\frac{M}{2} + m\\right)g$$"
+          },
+          {
+            "title": "(2) 水平方向 + 临界滑动",
+            "content": "**水平方向**：地面摩擦力 $f$ 向墙的方向（防止底端外滑），墙的支持力 $N_w$ 推梯子离墙。\n\n$$f = N_w = \\left(\\frac{M}{2} + m\\right)g$$\n\n**临界滑动**：$f$ 达到最大静摩擦：\n\n$$f_{\\max} = \\mu N = \\frac{2}{3}(M+m)g$$\n\n临界条件 $f = f_{\\max}$：\n\n$$\\left(\\frac{M}{2} + m\\right)g = \\frac{2}{3}(M+m)g$$"
+          },
+          {
+            "title": "(3) 解出临界 m",
+            "content": "消去 $g$，两边乘 $6$：\n\n$$3M + 6m = 4(M + m) = 4M + 4m$$\n\n$$2m = M \\;\\Rightarrow\\; m = \\frac{M}{2}$$\n\n所以 $x = \\dfrac{M}{2}$。",
+            "why": "为什么人在梯子上端时最容易滑？答：人越靠顶端，重力对底端的力臂越大，需要的墙支持力 $N_w$ 越大，从而要求的摩擦力越大；当超过最大静摩擦时，梯子打滑。"
+          }
+        ],
+        "finalAnswer": "④ $x = \\dfrac{M}{2}$",
+        "correctOption": "④"
+      }
+    },
+    {
+      "id": "2011-r2-phys-4",
+      "number": "I-D 问4",
+      "topic": "绳从桌缘下滑：加速度与下垂长度的关系",
+      "topicTag": "力学·变质量",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "如图，长度 $L$ 的均匀绳的一部分放在桌面上，余下部分从桌缘自然垂下。桌面上一端 A 被固定，此时垂下部分长度为 $\\ell$。松开 A 后绳开始在桌面上滑动。桌面水平，绳与桌面间摩擦可忽略。设垂下部分长度为 $x$，A 的加速度大小为 $a$。求 $a$ 与 $x$ 的关系图。",
+      "options": [
+        { "label": "①", "content": "凹形曲线，从 $(\\ell, 0)$ 升到 $(L, g)$" },
+        { "label": "②", "content": "线性直线，从原点 $(0,0)$ 经过 $(\\ell, \\text{小值})$ 延伸到 $(L, g)$" },
+        { "label": "③", "content": "凸形曲线，从 $(\\ell, 0)$ 升到 $(L, g)$" },
+        { "label": "④", "content": "凹形曲线，从 $(\\ell, \\text{小值})$ 升到 $(L, g)$" },
+        { "label": "⑤", "content": "线性直线段，从 $(\\ell, g\\ell/L)$ 升到 $(L, g)$" },
+        { "label": "⑥", "content": "近水平的曲线，在 $x \\to L$ 时陡升" }
+      ],
+      "questionImage": "/images/2011_R2_physics/q04.png",
+      "solution": {
+        "translation": "下垂部分的重力是唯一驱动力（桌面无摩擦），但整根绳全部跟着加速。用 $F = Ma$ 推导 $a$ 与 $x$ 的关系。",
+        "analysis": "设绳总质量 $m$，线密度 $\\lambda = m/L$。下垂部分质量 $\\lambda x$，重力 $\\lambda x g$ 驱动整根绳运动。",
+        "steps": [
+          {
+            "title": "(1) 列牛顿第二定律",
+            "content": "下垂段重力：$F = \\lambda x g = \\dfrac{m}{L} x g$。\n\n整根绳质量 $m$ 都以同一加速度 $a$ 运动：\n\n$$F = m a \\;\\Rightarrow\\; \\frac{m}{L} x g = m a \\;\\Rightarrow\\; a = \\frac{g}{L} x$$"
+          },
+          {
+            "title": "(2) 适用范围与图形",
+            "content": "$x$ 取值范围：物理上 $x$ 从 $\\ell$ 开始（初始下垂），增加到 $L$（绳完全离桌）。\n\n关系 $a = \\dfrac{g}{L} x$ 是过原点的直线，但只在 $x \\in [\\ell, L]$ 上有物理意义。\n\n- $x = \\ell$ 时：$a = \\dfrac{g\\ell}{L}$（一个正值）\n- $x = L$ 时：$a = g$（绳完全下垂，等同自由落体）\n\n图形是 $x \\in [\\ell, L]$ 之间的一段直线，端点 $(\\ell, g\\ell/L)$ 与 $(L, g)$。",
+            "why": "为什么不延伸到原点？答：题目限定 $x$ 从 $\\ell$ 起步——绳松开前已经垂下 $\\ell$，所以 $x < \\ell$ 在本题没有意义。"
+          }
+        ],
+        "finalAnswer": "⑤ 直线段，从 $(\\ell, g\\ell/L)$ 到 $(L, g)$",
+        "correctOption": "⑤"
+      }
+    },
+    {
+      "id": "2011-r2-phys-5",
+      "number": "I-E 问5",
+      "topic": "弹簧 + 物体力学能差 $U_2 - U_1$",
+      "topicTag": "力学·能量",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "弹簧下端系质量 $m$ 的物体悬挂着。图 1：弹簧自然长时把物体用板托住；接着慢慢往下放板，弹簧拉长 $d$ 后物体离开板静止（图 2）。设图 1 中（弹簧 + 物体）的力学能之和为 $U_1$，图 2 中为 $U_2$。求 $U_2 - U_1$。",
+      "options": [
+        { "label": "①", "content": "$-mgd$" },
+        { "label": "②", "content": "$-\\dfrac{1}{2}mgd$" },
+        { "label": "③", "content": "$0$" },
+        { "label": "④", "content": "$\\dfrac{1}{2}mgd$" },
+        { "label": "⑤", "content": "$mgd$" }
+      ],
+      "questionImage": "/images/2011_R2_physics/q05.png",
+      "solution": {
+        "translation": "力学能 = 弹性势能 + 重力势能 + 动能。两状态都是静止，动能均为 0；分别比较弹簧形变和高度变化。",
+        "analysis": "图 2 平衡条件 $kd = mg$ 决定弹簧劲度 $k = mg/d$。物体下降 $d$，重力势能减 $mgd$；弹簧拉长 $d$，弹性势能增 $\\frac{1}{2}kd^2 = \\frac{1}{2}mgd$。",
+        "steps": [
+          {
+            "title": "(1) 图 2 平衡 → 求 k",
+            "content": "图 2 物体悬挂静止：弹簧拉力 = 重力\n\n$$kd = mg \\;\\Rightarrow\\; k = \\frac{mg}{d}$$"
+          },
+          {
+            "title": "(2) 弹性势能差",
+            "content": "图 1：弹簧自然长，$E_{\\text{弹},1} = 0$。\n\n图 2：弹簧拉长 $d$，$E_{\\text{弹},2} = \\dfrac{1}{2}kd^2 = \\dfrac{1}{2} \\cdot \\dfrac{mg}{d} \\cdot d^2 = \\dfrac{1}{2}mgd$。\n\n$\\Delta E_{\\text{弹}} = +\\dfrac{1}{2}mgd$（增加）。"
+          },
+          {
+            "title": "(3) 重力势能差",
+            "content": "图 2 时物体比图 1 低 $d$（弹簧伸长了 $d$，物体随之下降 $d$）：\n\n$\\Delta E_{\\text{重}} = -mgd$（减小）。"
+          },
+          {
+            "title": "(4) 合计",
+            "content": "$$U_2 - U_1 = \\Delta E_{\\text{弹}} + \\Delta E_{\\text{重}} = +\\frac{1}{2}mgd - mgd = -\\frac{1}{2}mgd$$",
+            "why": "为什么 $U_2 < U_1$？答：放板的过程「板」对物体做了负功（板向下移动，但板对物体的支持力向上），这部分能量被「带走」了，所以系统力学能减少。"
+          }
+        ],
+        "finalAnswer": "② $U_2 - U_1 = -\\dfrac{1}{2}mgd$",
+        "correctOption": "②"
+      }
+    },
+    {
+      "id": "2011-r2-phys-6",
+      "number": "I-F 问6",
+      "topic": "半圆轨道上 P 处的向心力",
+      "topicTag": "力学·圆周运动",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "如图为铅直方向切割光滑曲面所得断面图。曲面上点 A、B、C 在同一铅直面内，A 与 C 距 B 的高度都是 $h$，曲线 BC 是直径 $h$ 的半圆。质量 $m$ 的小物体从 A 以初速 $0$ 沿曲面运动。在曲线 BC 上、距 B 高度为 $\\dfrac{2}{3}h$ 的点 P 处，求小物体所受向心力的大小。",
+      "options": [
+        { "label": "①", "content": "$\\dfrac{2}{3}mg$" },
+        { "label": "②", "content": "$mg$" },
+        { "label": "③", "content": "$\\dfrac{1}{3}mg$" },
+        { "label": "④", "content": "$\\dfrac{5}{3}mg$" },
+        { "label": "⑤", "content": "$2mg$" },
+        { "label": "⑥", "content": "$4mg$" }
+      ],
+      "questionImage": "/images/2011_R2_physics/q06.png",
+      "solution": {
+        "translation": "用能量守恒求 P 处速度；用几何关系算出 P 点位置和重力在径向上的分量；列圆周运动方程求轨道对物体的法向力（即题目所谓「物体受到的向心力」）。",
+        "analysis": "半圆直径 $h$ → 半径 $r = h/2$。圆心在 B、C 中点（高度 $h/2$）。P 点高度 $2h/3$，位于圆心上方 $h/6$ 处。",
+        "steps": [
+          {
+            "title": "(1) 用能量守恒求 P 处速率",
+            "content": "从 A（高度 $h$，$v = 0$）到 P（高度 $2h/3$）：\n\n$$\\frac{1}{2}mv^2 = mg\\left(h - \\frac{2h}{3}\\right) = \\frac{1}{3}mgh$$\n\n$$v^2 = \\frac{2gh}{3}$$"
+          },
+          {
+            "title": "(2) P 点几何位置",
+            "content": "BC 直径 $h$，所以半径 $r = \\dfrac{h}{2}$，圆心 O' 在高度 $\\dfrac{h}{2}$。\n\nP 在高度 $\\dfrac{2h}{3}$，故 P 在 O' 上方距离\n\n$$\\Delta y = \\frac{2h}{3} - \\frac{h}{2} = \\frac{h}{6}$$\n\n从 O' 到 P 的方向与铅直方向的夹角 $\\theta$ 满足\n\n$$\\cos\\theta = \\frac{\\Delta y}{r} = \\frac{h/6}{h/2} = \\frac{1}{3}$$"
+          },
+          {
+            "title": "(3) 列向心方程，求法向力 N",
+            "content": "P 点的径向方向（指向圆心 O'）从 P 出发，与铅直向下夹角 $\\theta$（即重力方向与「指向圆心」方向的夹角）。\n\n重力沿径向（指向圆心）分量：$mg\\cos\\theta = \\dfrac{mg}{3}$。\n\n轨道对物体的法向力 $N$ 指向圆心（物体在半圆「内壁」上滑）。\n\n圆周运动方程（径向力 = 向心力）：\n\n$$N + mg\\cos\\theta = \\frac{mv^2}{r}$$\n\n$$N + \\frac{mg}{3} = \\frac{m \\cdot (2gh/3)}{h/2} = \\frac{4mg}{3}$$\n\n$$N = \\frac{4mg}{3} - \\frac{mg}{3} = mg$$",
+            "why": "为什么题目所问就是 $N$？答：在这类题中「物体所受向心力」常指由轨道（约束）提供的、指向圆心方向的接触力，即法向力 $N$。重力本身是外力，不算「物体由约束受到的向心力」。"
+          }
+        ],
+        "finalAnswer": "② $N = mg$",
+        "correctOption": "②"
+      }
+    },
+    {
+      "id": "2011-r2-phys-7",
+      "number": "I-G 问7",
+      "topic": "ISS 圆轨道上的向心加速度",
+      "topicTag": "力学·万有引力",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "国际宇宙站（ISS）受万有引力作用，在距地表高度 $h$ 的圆形轨道上以恒定速率运动。地球半径 $R$，地表处重力加速度 $g$。求 ISS 的向心加速度。",
+      "options": [
+        { "label": "①", "content": "$\\dfrac{R^2}{(R+h)^2}\\,g$" },
+        { "label": "②", "content": "$\\dfrac{R}{R+h}\\,g$" },
+        { "label": "③", "content": "$g$" },
+        { "label": "④", "content": "$\\dfrac{R+h}{R}\\,g$" },
+        { "label": "⑤", "content": "$\\dfrac{(R+h)^2}{R^2}\\,g$" }
+      ],
+      "solution": {
+        "translation": "万有引力提供向心力。地表 $g$ 与轨道高度处的引力加速度都来自同一个 $GM$，用平方反比律即可消去 $GM$。",
+        "analysis": "ISS 在距地心 $R+h$ 处。圆周运动 → 向心加速度 = 该高度的引力加速度。",
+        "steps": [
+          {
+            "title": "(1) 向心加速度 = 引力加速度",
+            "content": "ISS 在圆轨道上唯一受力为万有引力（指向地心），即向心方向。所以\n\n$$a_c = \\frac{GM}{(R+h)^2}$$"
+          },
+          {
+            "title": "(2) 用地表 g 消去 GM",
+            "content": "地表 $g$：\n\n$$g = \\frac{GM}{R^2} \\;\\Rightarrow\\; GM = gR^2$$\n\n代入：\n\n$$a_c = \\frac{gR^2}{(R+h)^2} = \\frac{R^2}{(R+h)^2}\\,g$$",
+            "why": "数值验证：ISS 高度 $h \\approx 400$ km，$R \\approx 6371$ km，代入得 $a_c \\approx 0.885\\,g \\approx 8.7\\,\\text{m/s}^2$，与实际值符合。"
+          }
+        ],
+        "finalAnswer": "① $a_c = \\dfrac{R^2}{(R+h)^2}\\,g$",
+        "correctOption": "①"
+      }
+    },
+    {
+      "id": "2011-r2-phys-8",
+      "number": "II-A 问1",
+      "topic": "加热 + 中途加水：再次到 100°C 的时间",
+      "topicTag": "热学·热平衡",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "带加热器的容器中装 $2.0\\,\\text{kg}$ 的 $20°\\text{C}$ 水。加热 $42$ 分钟后温度升到 $80°\\text{C}$。然后再加入 $1.0\\,\\text{kg}$ 的 $20°\\text{C}$ 水，继续用同一加热器加热。水的蒸发可忽略，加热器每单位时间提供的热量恒定，热量全部传给水（容器与外界无热交换）。水的比热为 $4.2\\,\\text{J/(g·K)}$。从加入 $1.0\\,\\text{kg}$ 水时算起，容器内水温达到 $100°\\text{C}$ 需要多少分钟？",
+      "options": [
+        { "label": "①", "content": "$10$" },
+        { "label": "②", "content": "$26$" },
+        { "label": "③", "content": "$33$" },
+        { "label": "④", "content": "$42$" },
+        { "label": "⑤", "content": "$56$" },
+        { "label": "⑥", "content": "$64$" }
+      ],
+      "solution": {
+        "translation": "先用第一阶段算出加热功率，再算从加水到 100°C 需要的总热量，除以功率得时间。",
+        "analysis": "比较前后两段加热各自吸收的热量。加水使总质量变大、温度也降低。",
+        "steps": [
+          {
+            "title": "(1) 求加热功率",
+            "content": "前 $42$ 分钟，$2.0\\,\\text{kg}$ 水从 $20$°C 升到 $80$°C：\n\n$$Q_1 = mc\\Delta T = 2000 \\times 4.2 \\times 60 = 504000\\,\\text{J}$$\n\n功率：\n\n$$P = \\frac{Q_1}{42\\,\\text{min}} = 12000\\,\\text{J/min}$$"
+          },
+          {
+            "title": "(2) 加水后到 100°C 需要的热量",
+            "content": "加入 $1.0\\,\\text{kg}$ 的 $20$°C 水到已有 $2.0\\,\\text{kg}$ 的 $80$°C 水中。\n\n直接对最终状态算总热量（以 $0$°C 为参考点）：\n\n初始系统总「热能」：$2.0 \\times 4200 \\times 80 + 1.0 \\times 4200 \\times 20 = 672000 + 84000 = 756000\\,\\text{J}$\n\n末态系统总「热能」（$3.0\\,\\text{kg}$ 水 $100$°C）：$3.0 \\times 4200 \\times 100 = 1260000\\,\\text{J}$\n\n需要补充的热量：\n\n$$Q_2 = 1260000 - 756000 = 504000\\,\\text{J}$$"
+          },
+          {
+            "title": "(3) 求时间",
+            "content": "$$t = \\frac{Q_2}{P} = \\frac{504000}{12000} = 42\\,\\text{min}$$",
+            "why": "为什么前后两段时间正好都是 $42$ 分钟？答：巧合的「质量·温升」乘积相同——前段 $2 \\times 60 = 120$ kg·K，后段「等效」也是 $120$（混合后 $3 \\times 40$）。两段需要的热量都是 $504\\,$kJ。"
+          }
+        ],
+        "finalAnswer": "④ $42$ 分钟",
+        "correctOption": "④"
+      }
+    },
+    {
+      "id": "2011-r2-phys-9",
+      "number": "II-B 问2",
+      "topic": "PV 三角形循环：气体对外净做功",
+      "topicTag": "热学·热力学循环",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "如图，定量理想气体按 $A \\to B \\to C \\to A$ 循环变化。\n\nA: $(V = 1\\,\\text{m}^3,\\;p = 400\\,\\text{N/m}^2)$\nB: $(V = 4\\,\\text{m}^3,\\;p = 100\\,\\text{N/m}^2)$\nC: $(V = 1\\,\\text{m}^3,\\;p = 100\\,\\text{N/m}^2)$\n\n$A \\to B$ 是直线（在 $p$-$V$ 图上）。求一次循环中气体对外做的净功。",
+      "options": [
+        { "label": "①", "content": "$300\\,\\text{J}$" },
+        { "label": "②", "content": "$450\\,\\text{J}$" },
+        { "label": "③", "content": "$750\\,\\text{J}$" },
+        { "label": "④", "content": "$900\\,\\text{J}$" }
+      ],
+      "questionImage": "/images/2011_R2_physics/q09.png",
+      "solution": {
+        "translation": "$p$-$V$ 图上循环包围的面积 = 气体净做功（顺时针为正、逆时针为负）。",
+        "analysis": "三角形顶点 A、B、C 已知，直接算三角形面积。",
+        "steps": [
+          {
+            "title": "(1) 分段计算",
+            "content": "$A \\to B$（直线，$V$ 从 $1$ 到 $4$）：$W_{AB}$ 为图下面积（梯形），底 $\\Delta V = 3$，高（平均压强）$= \\dfrac{400+100}{2} = 250$\n\n$$W_{AB} = 3 \\times 250 = 750\\,\\text{J}$$\n\n$B \\to C$（等压 $p=100$，$V$ 从 $4$ 减到 $1$）：\n\n$$W_{BC} = 100 \\times (-3) = -300\\,\\text{J}$$\n\n$C \\to A$（等容 $V=1$）：\n\n$$W_{CA} = 0$$"
+          },
+          {
+            "title": "(2) 净功",
+            "content": "$$W_{\\text{net}} = 750 + (-300) + 0 = 450\\,\\text{J}$$"
+          },
+          {
+            "title": "(3) 几何确认",
+            "content": "三角形顶点 $A(1, 400)$、$B(4, 100)$、$C(1, 100)$，三角形面积（底 $= 3$、高 $= 300$）：\n\n$$S = \\frac{1}{2} \\times 3 \\times 300 = 450\\,\\text{J}$$\n\n循环方向 $A \\to B \\to C \\to A$ 在 $p$-$V$ 图上是顺时针 → 净功为正。",
+            "why": "为什么顺时针 = 正功？答：气体做功 $W = \\oint p\\,dV$。顺时针方向时，气体膨胀阶段（$V$ 增大）发生在较高压强处，压缩阶段（$V$ 减小）发生在较低压强处，所以净积分为正。"
+          }
+        ],
+        "finalAnswer": "② $W_{\\text{net}} = 450\\,\\text{J}$",
+        "correctOption": "②"
+      }
+    },
+    {
+      "id": "2011-r2-phys-10",
+      "number": "II-C 问3",
+      "topic": "判断哪个是热机、哪个是冷藏库",
+      "topicTag": "热学·热力学第二定律",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "下图 (a) ~ (d) 是某装置「状态变化、最后回到初始状态」时的能量流方向候选。$Q_1$、$Q_2$ 表示热量，$W$ 表示功，上下箭头表示热的传递方向，左右箭头表示功的方向。其中哪一个对应热机、哪一个对应冷藏库？\n\n(a)：$Q_1$ 从高温热源流到装置 → $Q_2$ 从装置流到低温热源，装置对外做功 $W$\n(b)：$Q_1$ 从高温到装置 → $Q_2$ 从装置到低温，外部对装置做功 $W$\n(c)：$Q_1$ 从装置流回高温热源 → $Q_2$ 从低温热源到装置，装置对外做功 $W$\n(d)：$Q_1$ 从装置到高温热源 → $Q_2$ 从低温到装置，外部对装置做功 $W$",
+      "options": [
+        { "label": "①", "content": "热机 = (a)，冷藏库 = (c)" },
+        { "label": "②", "content": "热机 = (a)，冷藏库 = (d)" },
+        { "label": "③", "content": "热机 = (b)，冷藏库 = (c)" },
+        { "label": "④", "content": "热机 = (b)，冷藏库 = (d)" }
+      ],
+      "questionImage": "/images/2011_R2_physics/q10.png",
+      "solution": {
+        "translation": "热机：从高温吸热 → 对外做功 → 向低温排热。冷藏库（热泵的低温端）：外部输入功 → 从低温吸热 → 向高温排热。",
+        "analysis": "对照流向：(a) 符合热机；(d) 符合冷藏库。(b) 和 (c) 违反热力学第二定律。",
+        "steps": [
+          {
+            "title": "(1) 热机的特征",
+            "content": "热机：取自高温热源的热 $Q_1$ 一部分转化为功 $W$ 输出，剩余 $Q_2$ 排放到低温热源。\n\n方向：$Q_1$ 高温 → 装置（向下箭头），$Q_2$ 装置 → 低温（向下箭头），$W$ 装置 → 外部（向右箭头）。\n\n→ **图 (a)** ✓"
+          },
+          {
+            "title": "(2) 冷藏库的特征",
+            "content": "冷藏库（冰箱）：外部输入功 $W$，从低温热源（冷藏室内）抽出热 $Q_2$，连同 $W$ 一起作为 $Q_1$ 排到高温热源（外界）。\n\n方向：$Q_2$ 低温 → 装置（向上箭头），$Q_1$ 装置 → 高温（向上箭头），$W$ 外部 → 装置（向左箭头）。\n\n→ **图 (d)** ✓",
+            "why": "为什么 (b) 和 (c) 不行？答：(b) 热从高温→低温（自发方向），却还要求外部做功，多余且违反节能；(c) 热从低温→高温（不可能自发），却装置对外做功——违反热力学第二定律。"
+          }
+        ],
+        "finalAnswer": "② 热机 = (a)，冷藏库 = (d)",
+        "correctOption": "②"
+      }
+    },
+    {
+      "id": "2011-r2-phys-11",
+      "number": "III-A 问1",
+      "topic": "波在固定端/自由端的反射波形",
+      "topicTag": "波动·反射",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "如图，向右端传播的波（从左到右先有正峰、再有负谷的波形）在右端反射。当右端是固定端或自由端时，反射波分别是 (a) ~ (d) 中的哪个形状？",
+      "options": [
+        { "label": "①", "content": "固定端 = (a)，自由端 = (b)" },
+        { "label": "②", "content": "固定端 = (a)，自由端 = (c)" },
+        { "label": "③", "content": "固定端 = (b)，自由端 = (a)" },
+        { "label": "④", "content": "固定端 = (b)，自由端 = (d)" },
+        { "label": "⑤", "content": "固定端 = (c)，自由端 = (a)" },
+        { "label": "⑥", "content": "固定端 = (c)，自由端 = (d)" },
+        { "label": "⑦", "content": "固定端 = (d)，自由端 = (a)" },
+        { "label": "⑧", "content": "固定端 = (d)，自由端 = (b)" }
+      ],
+      "questionImage": "/images/2011_R2_physics/q11.png",
+      "solution": {
+        "translation": "反射的两个要点：(i) 反射波传播方向反转；(ii) 自由端不翻转上下，固定端上下翻转。",
+        "analysis": "入射波「左正峰 + 右负谷」从左到右传播——靠近壁的是负谷，所以负谷先碰壁、先反射。",
+        "steps": [
+          {
+            "title": "(1) 确认入射波的「前端」",
+            "content": "入射波从左向右行进。波形从左到右是：先正峰（远离壁），后负谷（靠近壁）。\n\n所以**负谷先碰壁**，正峰后碰壁。"
+          },
+          {
+            "title": "(2) 自由端反射",
+            "content": "自由端**不翻转**上下。\n\n反射波向左传播。先反射的部分跑得更远（左方），后反射的部分还在右方。\n\n- 负谷先反射，跑到左方 → 反射波左方是「谷」\n- 正峰后反射，仍在右方 → 反射波右方是「峰」\n\n所以反射波从左到右是「负谷、正峰」 → **(b)**。"
+          },
+          {
+            "title": "(3) 固定端反射",
+            "content": "固定端**上下翻转**（每一点位移取相反数）。\n\n把自由端的波形（左谷、右峰）翻转 → 「左峰、右谷」，即先有小峰、后有大谷。\n\n→ **(d)**。",
+            "why": "记忆法：自由端反射 = 「先到的先回」的镜像。固定端反射 = 自由端镜像再上下翻转一下（半波损失）。"
+          },
+          {
+            "title": "(4) 对照选项",
+            "content": "固定端 = (d)，自由端 = (b) → **选项 ⑧**。"
+          }
+        ],
+        "finalAnswer": "⑧ 固定端 = (d)，自由端 = (b)",
+        "correctOption": "⑧"
+      }
+    },
+    {
+      "id": "2011-r2-phys-12",
+      "number": "III-B 问2",
+      "topic": "同相同频率双声源连线上静音点的频率范围",
+      "topicTag": "波动·干涉",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "两个点 A、B 各放一个同相、同频率 $f$ 的声源。沿线段 AB 测量声音，发现**声音相消**（静音）的点共有 $20$ 个（不含 A、B）。AB 间距 $2.50\\,\\text{m}$，声速 $350\\,\\text{m/s}$。求 $f$ 的范围。",
+      "options": [
+        { "label": "①", "content": "$1330\\,\\text{Hz} < f \\leq 1470\\,\\text{Hz}$" },
+        { "label": "②", "content": "$1470\\,\\text{Hz} < f \\leq 1610\\,\\text{Hz}$" },
+        { "label": "③", "content": "$2660\\,\\text{Hz} < f \\leq 2940\\,\\text{Hz}$" },
+        { "label": "④", "content": "$2940\\,\\text{Hz} < f \\leq 3220\\,\\text{Hz}$" }
+      ],
+      "solution": {
+        "translation": "AB 间任一点到两源的程差 $= 2x - L$（$x$ 为该点距 A 的距离）。相消条件 $|2x-L| = (n+\\frac{1}{2})\\lambda$。数静音点个数。",
+        "analysis": "对每个 $n = 0, 1, 2, \\ldots$，方程 $|2x - L| = (n+\\frac{1}{2})\\lambda$ 在 $(0, L)$ 内对应 $2$ 个 $x$（一个 $> L/2$ 一个 $< L/2$），共 $2$ 个静音点。",
+        "steps": [
+          {
+            "title": "(1) 静音条件",
+            "content": "设点距 A 为 $x$，则距 B 为 $L - x$。两源同相 → 相消时\n\n$$|d_A - d_B| = (n + \\tfrac{1}{2})\\lambda \\quad (n = 0, 1, 2, \\ldots)$$\n\n$$|2x - L| = (n + \\tfrac{1}{2})\\lambda$$"
+          },
+          {
+            "title": "(2) 每个 n 贡献的静音点数",
+            "content": "对每个允许的 $n$：\n\n$$x = \\frac{L}{2} \\pm \\frac{(n+\\frac{1}{2})\\lambda}{2}$$\n\n两个解。要求 $0 < x < L$ → $(n+\\frac{1}{2})\\lambda < L$。\n\n所以每个 $n + \\frac{1}{2} < L/\\lambda$ 贡献 $2$ 个静音点。"
+          },
+          {
+            "title": "(3) 20 个静音点对应的 n 范围",
+            "content": "$20$ 个静音点 → 共 $10$ 个允许的 $n$（即 $n = 0, 1, \\ldots, 9$）。\n\n条件：\n- 最大允许 $n = 9$ 必须满足：$9.5 \\cdot \\lambda < L$ → $\\lambda < L/9.5$\n- 不允许 $n = 10$：$10.5 \\cdot \\lambda \\geq L$ → $\\lambda \\geq L/10.5$\n\n合并：$\\dfrac{L}{10.5} \\leq \\lambda < \\dfrac{L}{9.5}$。"
+          },
+          {
+            "title": "(4) 换为频率范围",
+            "content": "$\\lambda = v/f$，所以 $L/\\lambda = fL/v$。代入：\n\n$$9.5 < \\frac{fL}{v} \\leq 10.5$$\n\n$$\\frac{9.5\\,v}{L} < f \\leq \\frac{10.5\\,v}{L}$$\n\n代入 $v = 350$，$L = 2.50$：\n\n$$\\frac{9.5 \\times 350}{2.50} < f \\leq \\frac{10.5 \\times 350}{2.50}$$\n\n$$1330\\,\\text{Hz} < f \\leq 1470\\,\\text{Hz}$$"
+          }
+        ],
+        "finalAnswer": "① $1330\\,\\text{Hz} < f \\leq 1470\\,\\text{Hz}$",
+        "correctOption": "①"
+      }
+    },
+    {
+      "id": "2011-r2-phys-13",
+      "number": "III-C 问3",
+      "topic": "楔形空气间隙的薄膜干涉求波长",
+      "topicTag": "波动·薄膜干涉",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "两块平面玻璃板叠在一起，一端夹入薄纸，玻璃间形成楔形空气夹层（夹角 $\\theta$，$\\tan\\theta \\simeq \\theta$）。从上方垂直入射波长 $\\lambda$ 的单色光，俯视看到与玻璃接触线 O 平行的明暗条纹。设距 O 距离 $x_1$ 的点 P 与距 $x_2$ 的点 Q 之间观察到 $N$ 条明线（$N$ 足够大）。求 $\\lambda$。",
+      "options": [
+        { "label": "①", "content": "$\\dfrac{(x_2 - x_1)\\theta}{N}$" },
+        { "label": "②", "content": "$\\dfrac{2(x_2 - x_1)\\theta}{N}$" },
+        { "label": "③", "content": "$\\dfrac{x_2 - x_1}{N\\theta}$" },
+        { "label": "④", "content": "$\\dfrac{2(x_2 - x_1)}{N\\theta}$" }
+      ],
+      "questionImage": "/images/2011_R2_physics/q13.png",
+      "solution": {
+        "translation": "楔形干涉条纹间距 $\\Delta x = \\dfrac{\\lambda}{2\\theta}$。$N$ 条明线占长度 $x_2 - x_1$。",
+        "analysis": "上玻璃下表面反射（空气→玻璃→空气，从光疏到光密反射？不，光从玻璃出来时是反射，从玻璃→空气的反射半波；下玻璃上表面反射（空气→玻璃，有半波损失）。两次反射的相位差影响明纹位置但不影响条纹间距。",
+        "steps": [
+          {
+            "title": "(1) 楔形干涉条纹间距",
+            "content": "在距 O 为 $x$ 的位置，空气夹层厚度\n\n$$d(x) = x\\tan\\theta \\approx x\\theta$$\n\n光程差 $2d(x) = 2x\\theta$（再加上反射相位差的影响，但对**间距**无影响）。\n\n相邻明线满足 $\\Delta(2d) = \\lambda$ → $\\Delta x = \\dfrac{\\lambda}{2\\theta}$。"
+          },
+          {
+            "title": "(2) 由明线数求 λ",
+            "content": "$N$ 足够大时，$N$ 条明线均匀分布在长度 $(x_2 - x_1)$ 内：\n\n$$N \\cdot \\Delta x \\approx x_2 - x_1$$\n\n$$\\frac{N\\lambda}{2\\theta} = x_2 - x_1$$\n\n$$\\lambda = \\frac{2(x_2 - x_1)\\theta}{N}$$",
+            "why": "为什么 N 大时可以用 $N\\Delta x = x_2 - x_1$？答：$N$ 大时 $\\pm 1$ 条的差别相对小，近似 $\\dfrac{N}{N \\pm 1} \\to 1$。本题给的「$N$ 充分大」就是为了支持这个近似。"
+          }
+        ],
+        "finalAnswer": "② $\\lambda = \\dfrac{2(x_2 - x_1)\\theta}{N}$",
+        "correctOption": "②"
+      }
+    },
+    {
+      "id": "2011-r2-phys-14",
+      "number": "IV-A 问1",
+      "topic": "两个带电小球悬挂角度变化，求电荷比",
+      "topicTag": "电磁·静电",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "两根长度 $\\ell$ 的绝缘绳，各端系等质量小球，挂在同一点上。两球都带相同电量 $q_1\\,(>0)$ 时，在铅直面内悬挂静止，两绳夹角 $\\dfrac{\\pi}{3}$（图 1）。将电量都换成 $q_2\\,(>0)$ 后，两绳夹角变成 $\\dfrac{2\\pi}{3}$（图 2）。求 $\\dfrac{q_2}{q_1}$。",
+      "options": [
+        { "label": "①", "content": "$\\sqrt{2}$" },
+        { "label": "②", "content": "$\\sqrt{3}$" },
+        { "label": "③", "content": "$2$" },
+        { "label": "④", "content": "$3$" },
+        { "label": "⑤", "content": "$9$" }
+      ],
+      "questionImage": "/images/2011_R2_physics/q14.png",
+      "solution": {
+        "translation": "对单个球列力平衡：张力、重力、库仑力。求出 $\\tan\\alpha$ 与 $q^2$ 的关系，再比较两个状态。",
+        "analysis": "绳与铅直方向夹角 $\\alpha$，两球距离 $r = 2\\ell\\sin\\alpha$。库仑力 $F = \\dfrac{kq^2}{r^2}$。$\\tan\\alpha = F/(mg)$。整理得 $\\sin^3\\alpha/\\cos\\alpha = \\dfrac{kq^2}{4\\ell^2 mg}$。",
+        "steps": [
+          {
+            "title": "(1) 单球力平衡",
+            "content": "设绳与铅直方向夹角 $\\alpha$。\n\n竖直：$T\\cos\\alpha = mg$。\n水平：$T\\sin\\alpha = F = \\dfrac{kq^2}{r^2}$，$r = 2\\ell\\sin\\alpha$。\n\n两式相除：\n\n$$\\tan\\alpha = \\frac{kq^2}{4\\ell^2 \\sin^2\\alpha \\cdot mg}$$\n\n整理：\n\n$$\\frac{\\sin^3\\alpha}{\\cos\\alpha} = \\frac{kq^2}{4\\ell^2 mg}$$"
+          },
+          {
+            "title": "(2) 代入两组角度",
+            "content": "图 1：两绳夹角 $\\pi/3$，每绳与铅直成 $\\alpha_1 = \\pi/6 = 30°$。\n\n$\\sin^3 30° = \\dfrac{1}{8}$，$\\cos 30° = \\dfrac{\\sqrt{3}}{2}$。\n\n$$\\frac{\\sin^3 \\alpha_1}{\\cos\\alpha_1} = \\frac{1/8}{\\sqrt{3}/2} = \\frac{1}{4\\sqrt{3}}$$\n\n图 2：两绳夹角 $2\\pi/3$，每绳与铅直成 $\\alpha_2 = \\pi/3 = 60°$。\n\n$\\sin^3 60° = \\dfrac{3\\sqrt{3}}{8}$，$\\cos 60° = \\dfrac{1}{2}$。\n\n$$\\frac{\\sin^3 \\alpha_2}{\\cos\\alpha_2} = \\frac{3\\sqrt{3}/8}{1/2} = \\frac{3\\sqrt{3}}{4}$$"
+          },
+          {
+            "title": "(3) 比值",
+            "content": "$$\\frac{q_2^2}{q_1^2} = \\frac{\\sin^3\\alpha_2/\\cos\\alpha_2}{\\sin^3\\alpha_1/\\cos\\alpha_1} = \\frac{3\\sqrt{3}/4}{1/(4\\sqrt{3})} = \\frac{3\\sqrt{3} \\cdot 4\\sqrt{3}}{4} = \\frac{12 \\cdot 3}{4} = 9$$\n\n$$\\frac{q_2}{q_1} = 3$$",
+            "why": "为什么是 $3$ 倍而不是更大？答：角度从 $30°$ 变到 $60°$ 看似翻倍，但库仑力大小由 $\\sin^3/\\cos$ 决定，对角度变化不是线性。$30° \\to 60°$ 时 $\\sin^3/\\cos$ 增大 $36$ 倍，电荷只需 $\\sqrt{36}/$（含某些抵消项）= $3$ 倍。"
+          }
+        ],
+        "finalAnswer": "④ $q_2/q_1 = 3$",
+        "correctOption": "④"
+      }
+    },
+    {
+      "id": "2011-r2-phys-15",
+      "number": "IV-B 问2",
+      "topic": "楔形电容板间的电力线形状",
+      "topicTag": "电磁·电场",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "两块金属板按图示成一夹角配置（下板水平，上板倾斜），加电压后两板间产生电场。除去板的边缘部分外，求两板间电力线最恰当的形状。",
+      "options": [
+        { "label": "①", "content": "竖直平行直线（间距相等）" },
+        { "label": "②", "content": "竖直平行直线，但间距在窄端更密" },
+        { "label": "③", "content": "斜直线（垂直于上板），互相平行" },
+        { "label": "④", "content": "斜直线（垂直于下板，即竖直），但密度均匀" },
+        { "label": "⑤", "content": "斜直线，但与上板下板都不垂直" },
+        { "label": "⑥", "content": "弧线，从下板（垂直于下板出发）弯到上板（垂直于上板抵达）" }
+      ],
+      "questionImage": "/images/2011_R2_physics/q15.png",
+      "solution": {
+        "translation": "导体表面上电场必须垂直于导体表面。两板不平行 → 电力线在两端要分别垂直，中间过渡。",
+        "analysis": "两板间电场线在与导体相交处必须垂直于导体表面。两板互不平行 → 一端是水平板（线垂直即竖直），另一端是倾斜板（线垂直于该板，即斜方向）。所以电力线必然弯曲。",
+        "steps": [
+          {
+            "title": "(1) 导体表面边界条件",
+            "content": "理想导体表面：电场必须**完全垂直**于表面（沿表面方向的分量必为 $0$，否则电荷会沿表面运动直到达到平衡）。"
+          },
+          {
+            "title": "(2) 两板的法线方向不同",
+            "content": "下板水平 → 该处电场必须**竖直**。\n\n上板倾斜 → 该处电场必须**垂直于上板**（斜向）。\n\n两端方向不同，电力线必须**弯曲**衔接。"
+          },
+          {
+            "title": "(3) 排除其他选项",
+            "content": "①、② 都是竖直直线 → 不垂直上板，错。\n③ 全部斜直线 → 不垂直下板，错。\n④ 竖直平行 → 同 ①，不垂直上板，错。\n⑤ 不垂直任何板 → 不符合边界条件。\n\n→ 必然是 **⑥**：弧形线，两端各与对应板垂直。",
+            "why": "为什么不能用「均匀垂直直线」？答：电力线必须处处沿电场方向，电场必须满足导体边界条件（在板上 $E$ 与板垂直）。两板法向不同 → 电力线方向必须从一种法向连续过渡到另一种，结果是弯曲的弧线。"
+          }
+        ],
+        "finalAnswer": "⑥ 弧线，两端均垂直对应的板",
+        "correctOption": "⑥"
+      }
+    },
+    {
+      "id": "2011-r2-phys-16",
+      "number": "IV-C 问3",
+      "topic": "非线性灯泡的电路工作点",
+      "topicTag": "电磁·电路",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "灯泡 L 的 $I$-$V$ 关系如图 1 所示（非线性，凹形上升）。用 L、$30\\,\\Omega$ 电阻、$15\\,\\Omega$ 电阻和无内阻、电动势 $6.0\\,\\text{V}$ 的电池组成图 2 电路：L 与 $30\\,\\Omega$ 并联，并联段再串联 $15\\,\\Omega$。求流过 L 的电流。",
+      "options": [
+        { "label": "①", "content": "$0.13\\,\\text{A}$" },
+        { "label": "②", "content": "$0.20\\,\\text{A}$" },
+        { "label": "③", "content": "$0.26\\,\\text{A}$" },
+        { "label": "④", "content": "$0.30\\,\\text{A}$" }
+      ],
+      "questionImage": "/images/2011_R2_physics/q16.png",
+      "solution": {
+        "translation": "设 L 两端电压 $V_L$，则 L 电流 $I_L$ 由曲线给定；$30\\Omega$ 电流 = $V_L/30$；总电流流过 $15\\Omega$。列电路方程得一条直线 $I_L = $ 关于 $V_L$ 的函数，与曲线交点就是工作点。",
+        "analysis": "求 $I_L$ 时建立 $V_L$ 与 $I_L$ 的电路方程（线性），再与图 1 灯泡的 I-V 曲线（非线性）求交点。",
+        "steps": [
+          {
+            "title": "(1) 电路方程",
+            "content": "设 L 两端电压 $V_L$，电流 $I_L$。\n\n并联的 $30\\Omega$ 两端电压也是 $V_L$，电流 $I_{30} = V_L/30$。\n\n总电流 $I = I_L + I_{30}$，全部通过 $15\\Omega$。\n\n电源方程：\n\n$$6.0 = 15 \\cdot I + V_L = 15(I_L + V_L/30) + V_L = 15 I_L + V_L/2 + V_L$$\n\n$$6.0 = 15 I_L + 1.5 V_L$$\n\n化简：\n\n$$V_L = 4 - 10 I_L$$"
+          },
+          {
+            "title": "(2) 与灯泡曲线求交点",
+            "content": "试 $I_L = 0.20$ A：\n\n$$V_L = 4 - 10(0.20) = 2.0\\,\\text{V}$$\n\n查图 1：$V_L = 2.0$ V 时 $I_L \\approx 0.20$ A ✓（与曲线交点）。\n\n所以工作点为 $V_L = 2.0$ V，$I_L = 0.20$ A。"
+          },
+          {
+            "title": "(3) 验算",
+            "content": "$I_{30} = 2.0/30 \\approx 0.067$ A；$I_{\\text{总}} = 0.20 + 0.067 = 0.267$ A；$15\\Omega$ 电压降 = $15 \\cdot 0.267 = 4.0$ V；$4.0 + 2.0 = 6.0$ V ✓"
+          }
+        ],
+        "finalAnswer": "② $I_L = 0.20\\,\\text{A}$",
+        "correctOption": "②"
+      }
+    },
+    {
+      "id": "2011-r2-phys-17",
+      "number": "IV-D 问4",
+      "topic": "双平行直线电流：求 B 的电流方向与大小",
+      "topicTag": "电磁·磁场",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "如图，两根足够长的直线导线 A、B 平行放置，间距 $a$。在含 A、B 的平面内，距 A 为 $2a$、距 B 为 $3a$ 处有点 P。A 中流过向上、大小 $I$ 的电流。B 中不通电流时 P 处磁通密度为 $B_0$。若 B 中也通电流 $I_B$，P 处磁通密度大小变成 $\\dfrac{1}{4} B_0$，方向不变。求 B 中电流的方向（↑ 或 ↓）和大小 $I_B$。",
+      "options": [
+        { "label": "①", "content": "↑，$\\dfrac{9}{8}I$" },
+        { "label": "②", "content": "↓，$\\dfrac{9}{8}I$" },
+        { "label": "③", "content": "↑，$\\dfrac{15}{8}I$" },
+        { "label": "④", "content": "↓，$\\dfrac{15}{8}I$" },
+        { "label": "⑤", "content": "↑，$\\dfrac{27}{16}I$" },
+        { "label": "⑥", "content": "↓，$\\dfrac{27}{16}I$" },
+        { "label": "⑦", "content": "↑，$\\dfrac{45}{16}I$" },
+        { "label": "⑧", "content": "↓，$\\dfrac{45}{16}I$" }
+      ],
+      "questionImage": "/images/2011_R2_physics/q17.png",
+      "solution": {
+        "translation": "P 处场要变成 1/4 且方向不变 → B 产生的场必须与 A 的场反向、大小为 A 场的 $\\dfrac{3}{4}$。然后由直线电流公式 $B = \\dfrac{\\mu_0 I}{2\\pi r}$ 推 B 的电流大小与方向。",
+        "analysis": "P 在 A 的左侧、距 A 为 $2a$。A 电流向上 → 由右手定则知 P 处 A 场入纸（×）。要让总场仍入纸但只剩 $1/4$，B 必须产生出纸方向的场，大小 = $\\dfrac{3}{4}B_0$。",
+        "steps": [
+          {
+            "title": "(1) A 单独时 P 处磁场",
+            "content": "P 距 A 为 $2a$，A 电流向上。由右手定则（拇指沿电流方向，四指弯曲方向 = 磁场方向），P 处场指向纸内。\n\n$$B_A = \\frac{\\mu_0 I}{2\\pi \\cdot 2a} = \\frac{\\mu_0 I}{4\\pi a}$$"
+          },
+          {
+            "title": "(2) 总场条件",
+            "content": "题目说总场大小变成 $\\dfrac{1}{4}B_A$，方向不变（仍入纸）。\n\n→ B 的场必须**与 A 的场反向**（出纸），大小为 $B_A - \\dfrac{1}{4}B_A = \\dfrac{3}{4}B_A$。"
+          },
+          {
+            "title": "(3) B 电流方向（决定符号）",
+            "content": "P 在 B 的左侧（因为 P 距 A 为 $2a$，A 距 B 为 $a$，所以 P 距 B 为 $3a$，且 P 在 A 的更外侧，即都在 B 的左方）。\n\nB 的电流如果**向下**，由右手定则，P 处场指向**出纸**。\n\n所以 B 电流方向 = **↓**。"
+          },
+          {
+            "title": "(4) B 电流大小",
+            "content": "$$B_B = \\frac{\\mu_0 I_B}{2\\pi \\cdot 3a} = \\frac{\\mu_0 I_B}{6\\pi a} = \\frac{3}{4} B_A = \\frac{3}{4} \\cdot \\frac{\\mu_0 I}{4\\pi a} = \\frac{3\\mu_0 I}{16\\pi a}$$\n\n解出：\n\n$$\\frac{\\mu_0 I_B}{6\\pi a} = \\frac{3\\mu_0 I}{16\\pi a} \\;\\Rightarrow\\; I_B = \\frac{3 \\cdot 6}{16}I = \\frac{18}{16}I = \\frac{9}{8}I$$",
+            "why": "记忆：直线电流场 $B \\propto 1/r$。P 距 B 为 $3a$（A 距 P 为 $2a$）所以 B 的场密度系数小，需要更大电流来产生类似量级的场。"
+          }
+        ],
+        "finalAnswer": "② ↓，$\\dfrac{9}{8}I$",
+        "correctOption": "②"
+      }
+    },
+    {
+      "id": "2011-r2-phys-18",
+      "number": "IV-E 问5",
+      "topic": "U 形线圈在磁场中倾斜平衡，求电流",
+      "topicTag": "电磁·安培力",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "U 形导线 PABCDQ，其中 $AB = BC = CD = a$。PA、DQ 水平且固定。在 ABCD 段中通入电流 $I$（沿 $A \\to B \\to C \\to D$ 方向）。整个区域加一竖直向上的均匀磁场 $B$。ABCD 部分摆到图 2 那样旋转倾斜并平衡，AB、CD 与铅直方向夹角 $30°$。ABCD 部分质量 $m$，重力加速度 $g$。求 $I$。",
+      "options": [
+        { "label": "①", "content": "$\\dfrac{2\\sqrt{3}}{3} \\cdot \\dfrac{mg}{Ba}$" },
+        { "label": "②", "content": "$\\dfrac{mg}{Ba}$" },
+        { "label": "③", "content": "$\\dfrac{\\sqrt{3}}{3} \\cdot \\dfrac{mg}{Ba}$" },
+        { "label": "④", "content": "$\\dfrac{2\\sqrt{3}}{9} \\cdot \\dfrac{mg}{Ba}$" }
+      ],
+      "questionImage": "/images/2011_R2_physics/q18.png",
+      "solution": {
+        "translation": "ABCD 绕 AD 轴旋转。安培力只在水平 BC 段产生，提供「绕 AD 轴的力矩」；重力提供回正力矩。两个力矩平衡。",
+        "analysis": "把 ABCD 视为以 AD 为轴的刚体。倾斜角 $\\theta = 30°$ 时，重力力矩 $\\tau_g = \\dfrac{2}{3}mga\\sin\\theta$，安培力力矩 $\\tau_B = I a^2 B \\cos\\theta$。",
+        "steps": [
+          {
+            "title": "(1) 安培力分析",
+            "content": "竖直磁场 $B$ 作用在通电导线段 $\\vec{F} = I\\vec{L}\\times\\vec{B}$。\n\nAB 倾斜：$L_{AB}$ 沿斜方向，$L \\times B$ 在水平方向（垂直 AD 轴）。计算结果是沿 AD 方向，**对 AD 轴无力矩**。\n\nCD 同理，对 AD 轴无力矩。\n\n只有 **BC**（水平，长 $a$、垂直 AD）：$L_{BC} \\times B$ 沿水平、垂直 BC、即沿「远离 AD 轴」方向。\n\n力 $F_{BC} = IaB$，作用在 BC 处，**距 AD 轴的垂直距离** = $a\\cos\\theta$。\n\n安培力对 AD 轴的力矩：\n\n$$\\tau_B = F_{BC} \\cdot a\\cos\\theta = Ia^2 B\\cos\\theta$$"
+          },
+          {
+            "title": "(2) 重力力矩",
+            "content": "ABCD 是均匀导线，总长 $3a$，质量 $m$。\n\nAB、CD 各占 $1/3$ 质量，中点距 AD 轴的水平距离 = $\\dfrac{a}{2}\\sin\\theta$。\n\nBC 占 $1/3$ 质量，整段距 AD 轴的水平距离 = $a\\sin\\theta$。\n\n重心水平距 AD 轴：\n\n$$\\bar{x} = \\frac{1}{m}\\left[\\frac{m}{3}\\cdot \\frac{a\\sin\\theta}{2} + \\frac{m}{3}\\cdot a\\sin\\theta + \\frac{m}{3}\\cdot \\frac{a\\sin\\theta}{2}\\right] = \\frac{2a\\sin\\theta}{3}$$\n\n重力力矩：\n\n$$\\tau_g = mg \\cdot \\bar{x} = \\frac{2mga\\sin\\theta}{3}$$"
+          },
+          {
+            "title": "(3) 平衡条件",
+            "content": "$$\\tau_B = \\tau_g$$\n\n$$Ia^2 B\\cos\\theta = \\frac{2mga\\sin\\theta}{3}$$\n\n$$I = \\frac{2mg\\tan\\theta}{3aB}$$\n\n代入 $\\theta = 30°$，$\\tan 30° = \\dfrac{1}{\\sqrt{3}} = \\dfrac{\\sqrt{3}}{3}$：\n\n$$I = \\frac{2mg}{3aB} \\cdot \\frac{\\sqrt{3}}{3} = \\frac{2\\sqrt{3}}{9}\\cdot \\frac{mg}{aB}$$",
+            "why": "为什么只有 BC 段贡献力矩？答：AB、CD 受安培力沿 AD 方向，相当于「沿轴的力」，对该轴力矩为零。只有 BC 段的安培力是沿「垂直 AD 且水平」方向，才产生绕 AD 轴的力矩。"
+          }
+        ],
+        "finalAnswer": "④ $I = \\dfrac{2\\sqrt{3}}{9}\\cdot \\dfrac{mg}{aB}$",
+        "correctOption": "④"
+      }
+    },
+    {
+      "id": "2011-r2-phys-19",
+      "number": "IV-F 问6",
+      "topic": "三角波磁通的感应电动势波形",
+      "topicTag": "电磁·电磁感应",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "图 1 中 $1$ 匝线圈贯穿磁通 $\\Phi$。图 2 是 $\\Phi$ 随时间的变化图（三角波：每段直线斜率交替为 $+k$、$-k$，周期 $2\\,\\text{ms}$）。求该线圈中感应电动势 $\\varepsilon$ 随时间的变化图。线圈上箭头方向定为电动势正方向，与磁通的正方向对应。",
+      "options": [
+        { "label": "①", "content": "方波，先正后负，周期 $2$ ms" },
+        { "label": "②", "content": "方波，先负后正，周期 $2$ ms" },
+        { "label": "③", "content": "三角波（与磁通同形）" },
+        { "label": "④", "content": "倒三角波" },
+        { "label": "⑤", "content": "周期性脉冲（正向尖峰）" },
+        { "label": "⑥", "content": "周期性脉冲（负向尖峰）" }
+      ],
+      "questionImage": "/images/2011_R2_physics/q19.png",
+      "solution": {
+        "translation": "电动势 $\\varepsilon = -\\dfrac{d\\Phi}{dt}$。三角波的 $\\Phi$ 在每段直线上斜率为常数（$\\pm k$），所以 $\\dfrac{d\\Phi}{dt}$ 是方波，$\\varepsilon$ 也是方波（取负号）。",
+        "analysis": "三角波 $\\Phi$ 上升段斜率 $+k$，下降段斜率 $-k$，分别给出 $\\varepsilon = -k$ 和 $\\varepsilon = +k$，形成方波。",
+        "steps": [
+          {
+            "title": "(1) 法拉第电磁感应",
+            "content": "$$\\varepsilon = -\\frac{d\\Phi}{dt}$$\n\n负号表示电动势方向与磁通增加方向相反（楞次定律）。"
+          },
+          {
+            "title": "(2) 分段求 $d\\Phi/dt$",
+            "content": "三角波（设磁通从 $0$ 上升、回落、再上升...）：\n\n- 第一段（$0$ → $1$ ms）：$\\Phi$ 上升，$d\\Phi/dt = +k$ → $\\varepsilon = -k$（负值）。\n- 第二段（$1$ → $2$ ms）：$\\Phi$ 下降，$d\\Phi/dt = -k$ → $\\varepsilon = +k$（正值）。\n- 第三段（$2$ → $3$ ms）：$\\Phi$ 上升，$\\varepsilon = -k$。\n\n…\n\n所以 $\\varepsilon$ 是方波，**先负后正**，与 $\\Phi$ 周期相同（$2$ ms）。"
+          },
+          {
+            "title": "(3) 对照选项",
+            "content": "方波、先负后正 → **②**。",
+            "why": "为什么是方波不是三角波？答：电动势是磁通的**斜率**。三角波磁通的斜率在每段恒定（$\\pm k$），所以电动势在每段恒定，整体是方波。"
+          }
+        ],
+        "finalAnswer": "② 方波，先负后正",
+        "correctOption": "②"
+      }
+    }
+  ]
+}
