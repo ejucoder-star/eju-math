@@ -1,0 +1,800 @@
+{
+  "metadata": {
+    "course": "physics",
+    "year": "2024",
+    "session": "1",
+    "courseNameJa": "物理",
+    "courseNameEn": "Physics",
+    "description": "理科综合｜物理",
+    "color": "#16a34a",
+    "examTitle": "令和6年度（2024年度）第1回 物理",
+    "examDate": "2024年6月"
+  },
+  "questions": [
+    {
+      "id": "2024-r1-phys-1",
+      "number": "I-A 问1",
+      "topic": "3 根细绳挂物体的张力",
+      "topicTag": "力学·静力平衡",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "如图，用 3 根质量可忽略的细绳 a、b、c 把质量 $M$ 的小物体挂在天花板下保持静止。a 长 $3L$，b 长 $4L$，a 与 b 的夹角为 $90°$。a 的张力为 $T$。求 $\\dfrac{T}{Mg}$。",
+      "options": [
+        { "label": "①", "content": "$\\dfrac{3}{5}$" },
+        { "label": "②", "content": "$\\dfrac{5}{8}$" },
+        { "label": "③", "content": "$\\dfrac{4}{5}$" },
+        { "label": "④", "content": "$\\dfrac{5}{6}$" }
+      ],
+      "questionImage": "/images/2024_R1_physics/q01.png",
+      "solution": {
+        "translation": "细绳 c 竖直挂物体，张力 $T_c = Mg$。a、b 接到同一节点，且互相垂直。利用「3-4-5 直角三角形」的几何关系，把 c 的张力分解到 a、b 方向。",
+        "analysis": "a = 3L、b = 4L，垂直 → 与天花板上两固定点构成 3-4-5 直角三角形，斜边 $AB = 5L$。a 与铅直方向夹角 $\\alpha$ 满足 $\\sin\\alpha = 4/5$, $\\cos\\alpha = 3/5$（b 端到 a 上的投影）。",
+        "steps": [
+          {
+            "title": "(1) 节点几何",
+            "content": "设天花板上 a 的固定点 A，b 的固定点 B。结点 P 下方挂物体。\n\n△APB 中 $PA = 3L$，$PB = 4L$，$\\angle APB = 90°$ → $AB = \\sqrt{9 + 16}\\,L = 5L$。\n\n建坐标：A 在原点，B 在 $(5L, 0)$（天花板水平）。设 $P = (x, -y)$（$y > 0$）。\n\n由 $|PA|^2 = x^2 + y^2 = 9L^2$ 与 $|PB|^2 = (x-5L)^2 + y^2 = 16L^2$，相减得 $-10Lx + 25L^2 = 7L^2$，即 $x = 1.8L$，$y = 2.4L$。"
+          },
+          {
+            "title": "(2) 把张力方向化成单位矢量",
+            "content": "$\\vec{PA}$ 方向单位矢量：$\\dfrac{1}{3L}(-1.8L, 2.4L) = (-0.6, 0.8)$（指向天花板，含上分量 $0.8$）。\n\n$\\vec{PB}$ 方向单位矢量：$\\dfrac{1}{4L}(3.2L, 2.4L) = (0.8, 0.6)$。\n\n核对正交：$(-0.6)(0.8) + (0.8)(0.6) = 0$ ✓。"
+          },
+          {
+            "title": "(3) 在 P 点列力平衡",
+            "content": "P 受三个张力：沿 $\\vec{PA}$ 方向 $T$、沿 $\\vec{PB}$ 方向 $T_b$、下绳沿 $-\\hat{y}$ 方向 $Mg$（拉物体，对 P 的反作用力也为 $Mg$ 向下）。\n\n水平分量：$-0.6\\,T + 0.8\\,T_b = 0$ → $T_b = 0.75\\,T$。\n\n竖直分量：$0.8\\,T + 0.6\\,T_b = Mg$。\n\n代入：$0.8\\,T + 0.6 \\cdot 0.75\\,T = Mg$ → $0.8\\,T + 0.45\\,T = Mg$ → $1.25\\,T = Mg$。\n\n$$T = \\frac{Mg}{1.25} = \\frac{4Mg}{5}\\;\\Rightarrow\\; \\frac{T}{Mg} = \\frac{4}{5}$$",
+            "why": "为什么是 4/5 而不是 3/5？答：a 是较短绳（3L），它与 b 的「在铅直方向上的合力分担」按 4:3 的比，所以 a 分担更多——4/5 大于一半。短绳承重大。"
+          }
+        ],
+        "finalAnswer": "③ $\\dfrac{T}{Mg} = \\dfrac{4}{5}$",
+        "correctOption": "③"
+      }
+    },
+    {
+      "id": "2024-r1-phys-2",
+      "number": "I-B 问2",
+      "topic": "抛体运动 A、B、C 三点的力/加速度/速度",
+      "topicTag": "力学·运动学",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "从地表 O 点斜向上抛出小物体，沿图中虚线（抛物线）运动后落到地表 P 点。图中 A、B、C 为轨道上的点（A 在上升段，B 在最高点，C 在下降段且 C 比 A 低）。判断 (a)(b)(c) 三句话的对错：\n\n(a) A 处小物体所受力的大小，比 B 处小物体所受力的大小小。\n(b) B 处小物体的加速度大小，与 C 处小物体的加速度大小相等。\n(c) A 处小物体的速度大小，比 C 处小物体的速度大小小。",
+      "options": [
+        { "label": "①", "content": "(a) 正  (b) 正  (c) 正" },
+        { "label": "②", "content": "(a) 正  (b) 正  (c) 誤" },
+        { "label": "③", "content": "(a) 正  (b) 誤  (c) 正" },
+        { "label": "④", "content": "(a) 正  (b) 誤  (c) 誤" },
+        { "label": "⑤", "content": "(a) 誤  (b) 正  (c) 正" },
+        { "label": "⑥", "content": "(a) 誤  (b) 正  (c) 誤" },
+        { "label": "⑦", "content": "(a) 誤  (b) 誤  (c) 正" },
+        { "label": "⑧", "content": "(a) 誤  (b) 誤  (c) 誤" }
+      ],
+      "questionImage": "/images/2024_R1_physics/q02.png",
+      "solution": {
+        "translation": "无空气阻力时小物体只受重力。所受合力和加速度处处相同。速度大小由能量守恒（动能 + 重力势能 = 常数）决定，与高度对应。",
+        "analysis": "(a) 处处只有重力 $mg$，A、B 同样的力大小。 (b) 加速度恒为 $g$，B、C 相等。 (c) A 比 C 高 → A 速度小（能量守恒）。",
+        "steps": [
+          {
+            "title": "(a) 受力比较",
+            "content": "空气阻力可忽略，小物体只受重力 $mg$ 一个力。无论在 A、B、C 任何位置都是 $mg$，所以 A 与 B 处受力大小**相等**，不能说「A 小于 B」。\n\n**(a) 誤**。"
+          },
+          {
+            "title": "(b) 加速度比较",
+            "content": "由牛顿第二定律 $a = F/m = g$，加速度处处为 $g$（方向向下）。B、C 加速度大小都是 $g$，**相等**。\n\n**(b) 正**。"
+          },
+          {
+            "title": "(c) 速度比较",
+            "content": "由力学能守恒：$\\dfrac{1}{2}mv^2 + mgh = $ 常数。$h$ 越高速度越小。\n\n图中 A 在上升段，C 在下降段且 C 比 A 低。因此 $h_A > h_C$ → $v_A < v_C$。\n\n「A 的速度比 C 的速度小」正确。**(c) 正**。"
+          },
+          {
+            "title": "对照答案",
+            "content": "(a) 誤、(b) 正、(c) 正 → 选 **⑤**。",
+            "why": "为什么 A 比 C 高（注意 A 在上升段、C 在下降段，看似难比较）？答：图示明显 C 接近落点 P，远比 A 接近水平地面。重力势能小 → 动能大 → 速度大。"
+          }
+        ],
+        "finalAnswer": "⑤ (a) 誤  (b) 正  (c) 正",
+        "correctOption": "⑤"
+      }
+    },
+    {
+      "id": "2024-r1-phys-3",
+      "number": "I-C 问3",
+      "topic": "同一摩擦面上的两个加速度",
+      "topicTag": "力学·摩擦·牛顿第二定律",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "图 1：质量 $m$ 的小物体置于有摩擦的水平地面，加水平方向恒力 $T$，加速度为 $a$。\n\n图 2：在原来物体上**固定**再叠一个质量 $m$ 的小物体（两物一体），加水平方向恒力 $3T$，求加速度 $A$。\n\n地面同一处，动摩擦系数不变。",
+      "options": [
+        { "label": "①", "content": "$\\dfrac{a}{2}$" },
+        { "label": "②", "content": "$\\dfrac{3a}{2}$" },
+        { "label": "③", "content": "$a - \\dfrac{3T}{2m}$" },
+        { "label": "④", "content": "$a - \\dfrac{T}{2m}$" },
+        { "label": "⑤", "content": "$a + \\dfrac{T}{2m}$" },
+        { "label": "⑥", "content": "$a + \\dfrac{3T}{2m}$" }
+      ],
+      "questionImage": "/images/2024_R1_physics/q03.png",
+      "solution": {
+        "translation": "两个状态分别列牛顿第二定律，摩擦力随法向力变化。联立消去 $\\mu g$ 即可。",
+        "analysis": "图 1：$T - \\mu mg = ma$。图 2：$3T - \\mu(2m)g = (2m)A$。从图 1 得 $\\mu g = T/m - a$，代入图 2 即可。",
+        "steps": [
+          {
+            "title": "(1) 图 1 列方程",
+            "content": "法向力 $N_1 = mg$，摩擦力 $\\mu mg$，方向与 $T$ 相反。\n\n$$T - \\mu m g = m a \\;\\Rightarrow\\; \\mu g = \\frac{T}{m} - a \\quad \\cdots(i)$$"
+          },
+          {
+            "title": "(2) 图 2 列方程",
+            "content": "两物体一体，质量 $2m$，法向力 $N_2 = 2mg$，摩擦力 $\\mu(2m)g = 2\\mu mg$。\n\n$$3T - 2\\mu m g = 2m A \\quad \\cdots(ii)$$"
+          },
+          {
+            "title": "(3) 代入消去 μg",
+            "content": "由 (i)：$\\mu mg = T - ma$。代入 (ii)：\n\n$$3T - 2(T - ma) = 2m A$$\n$$3T - 2T + 2ma = 2m A$$\n$$T + 2ma = 2m A$$\n\n$$A = \\frac{T}{2m} + a = a + \\frac{T}{2m}$$",
+            "why": "为什么不是简单的 $3T/(2m)$？答：那是「无摩擦」的结果。有摩擦时，摩擦力随质量增大变成原来的 2 倍，所以净力不只是 3T，还要扣掉额外 1 倍的摩擦——结果就是 $a + T/(2m)$。"
+          }
+        ],
+        "finalAnswer": "⑤ $A = a + \\dfrac{T}{2m}$",
+        "correctOption": "⑤"
+      }
+    },
+    {
+      "id": "2024-r1-phys-4",
+      "number": "I-D 问4",
+      "topic": "弹簧振子最大速度 vs 自由下落",
+      "topicTag": "力学·能量·振动",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "质量 $m$ 的小物体用质量可忽略的弹簧竖直挂着。\n\n图 1：弹簧自然长伸长 $L$ 后小物体静止（平衡状态）。\n图 2：把物体托到弹簧为自然长的位置，静止释放，物体上下振动。最大速度 $v_1$。\n图 3：把物体从弹簧上摘下，初速 0 自由落下，下落距离 $L$ 时速度 $v_2$。\n\n求 $\\dfrac{v_2}{v_1}$。",
+      "options": [
+        { "label": "①", "content": "$\\dfrac{1}{2}$" },
+        { "label": "②", "content": "$\\dfrac{\\sqrt{2}}{2}$" },
+        { "label": "③", "content": "$1$" },
+        { "label": "④", "content": "$\\sqrt{2}$" },
+        { "label": "⑤", "content": "$2$" }
+      ],
+      "questionImage": "/images/2024_R1_physics/q04.png",
+      "solution": {
+        "translation": "图 2 是简谐振动：平衡位置在「自然长下方 $L$」处，振幅是 $L$（因为从自然长位置释放），最大速度 = $\\omega L$。图 3 是自由落体，$v^2 = 2gL$。两者相除。",
+        "analysis": "由图 1 平衡：$kL = mg$ → $k/m = g/L$ → $\\omega^2 = k/m = g/L$。",
+        "steps": [
+          {
+            "title": "(1) 弹簧劲度系数",
+            "content": "图 1 平衡：弹簧拉力 = 重力 → $kL = mg$ → $\\dfrac{k}{m} = \\dfrac{g}{L}$。\n\n角频率：$\\omega = \\sqrt{k/m} = \\sqrt{g/L}$。"
+          },
+          {
+            "title": "(2) 图 2：最大速度 v₁",
+            "content": "平衡位置在自然长下方 $L$ 处。从自然长位置（平衡位置上方 $L$）释放 → 振幅 $A = L$。\n\n最大速度在平衡位置：\n\n$$v_1 = \\omega A = \\sqrt{\\frac{g}{L}} \\cdot L = \\sqrt{gL}$$"
+          },
+          {
+            "title": "(3) 图 3：自由落体后速度 v₂",
+            "content": "自由落体下落 $L$：\n\n$$v_2^2 = 2gL \\;\\Rightarrow\\; v_2 = \\sqrt{2gL}$$"
+          },
+          {
+            "title": "(4) 比值",
+            "content": "$$\\frac{v_2}{v_1} = \\frac{\\sqrt{2gL}}{\\sqrt{gL}} = \\sqrt{2}$$",
+            "why": "为什么不是 1？答：图 2 中，弹簧帮忙——下落过程弹簧也在做正功（开始没拉力）但到平衡点时弹簧已经拉满相当于重力。能量分配让最大动能小于「单纯下落 $L$」的动能。所以 $v_1 < v_2$，比值 $\\sqrt{2}$。"
+          }
+        ],
+        "finalAnswer": "④ $\\dfrac{v_2}{v_1} = \\sqrt{2}$",
+        "correctOption": "④"
+      }
+    },
+    {
+      "id": "2024-r1-phys-5",
+      "number": "I-E 问5",
+      "topic": "完全非弹性碰撞 + 摩擦滑停",
+      "topicTag": "力学·动量+能量",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "如图，质量 $m$ 的小物体 A 以速度 $v_0$ 在有摩擦的水平面上向右运动，撞上静止的质量 $2m$ 的小物体 B。碰撞后 A 与 B 合为一体，沿水平面前进 $d$ 后停止。一体后物体与水平面之间动摩擦系数 $\\mu'$。求 $d$。",
+      "options": [
+        { "label": "①", "content": "$\\dfrac{v_0^2}{18\\mu' g}$" },
+        { "label": "②", "content": "$\\dfrac{\\mu' v_0^2}{18 g}$" },
+        { "label": "③", "content": "$\\dfrac{v_0^2}{9\\mu' g}$" },
+        { "label": "④", "content": "$\\dfrac{\\mu' v_0^2}{9g}$" },
+        { "label": "⑤", "content": "$\\dfrac{v_0^2}{8\\mu' g}$" },
+        { "label": "⑥", "content": "$\\dfrac{\\mu' v_0^2}{8g}$" }
+      ],
+      "questionImage": "/images/2024_R1_physics/q05.png",
+      "solution": {
+        "translation": "完全非弹性碰撞用动量守恒求碰后速度，然后用「动能 = 摩擦力做的功」求滑行距离。",
+        "analysis": "动量守恒：$m v_0 = 3m v'$，所以 $v' = v_0/3$。能量：$\\frac{1}{2}(3m)v'^2 = \\mu'(3m)g \\cdot d$。",
+        "steps": [
+          {
+            "title": "(1) 动量守恒求碰后速度",
+            "content": "碰撞瞬间冲量来自 A-B 内力（合外力主要是地面摩擦，但碰撞时间极短，摩擦冲量可忽略）。\n\n$$m v_0 + 2m \\cdot 0 = (m + 2m) v'$$\n\n$$v' = \\frac{v_0}{3}$$"
+          },
+          {
+            "title": "(2) 用能量定理求 d",
+            "content": "碰后一体质量 $3m$，速度 $v_0/3$，受摩擦力 $f = \\mu'(3m)g$。\n\n摩擦力做负功直到停止：\n\n$$\\frac{1}{2}(3m)\\left(\\frac{v_0}{3}\\right)^2 = \\mu'(3m)g \\cdot d$$\n\n左边 $= \\dfrac{3m v_0^2}{18} = \\dfrac{m v_0^2}{6}$。两边除以 $3m$：\n\n$$\\frac{v_0^2}{18} = \\mu' g \\cdot d \\;\\Rightarrow\\; d = \\frac{v_0^2}{18\\,\\mu' g}$$",
+            "why": "为什么动能不是 $\\frac{1}{2}m v_0^2$ 而少了很多？答：完全非弹性碰撞会损失能量。碰前动能 $\\frac{1}{2}m v_0^2$，碰后动能 $\\frac{1}{2}(3m)(v_0/3)^2 = \\frac{m v_0^2}{6}$，剩下 $1/3$。损失的 $2/3$ 变成内能（碰撞热）。"
+          }
+        ],
+        "finalAnswer": "① $d = \\dfrac{v_0^2}{18\\,\\mu' g}$",
+        "correctOption": "①"
+      }
+    },
+    {
+      "id": "2024-r1-phys-6",
+      "number": "I-F 问6",
+      "topic": "单摆最低点最大张力",
+      "topicTag": "力学·圆周运动",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "质量可忽略、不可伸缩、长 $L$ 的绳一端固定在天花板，另一端系质量 $m$ 的小球。把小球拉到绳与铅直线夹角 $\\theta_0$（$0 < \\theta_0 < \\pi/2$）处，绳保持张紧，静止释放。小球在铅直面内摆动。求摆动中绳张力的最大值 $F$。",
+      "options": [
+        { "label": "①", "content": "$mg$" },
+        { "label": "②", "content": "$2mg(1 - \\cos\\theta_0)$" },
+        { "label": "③", "content": "$mg(2 - \\cos\\theta_0)$" },
+        { "label": "④", "content": "$3mg(1 - \\cos\\theta_0)$" },
+        { "label": "⑤", "content": "$mg(3 - 2\\cos\\theta_0)$" },
+        { "label": "⑥", "content": "$mg(3 - \\cos\\theta_0)$" }
+      ],
+      "questionImage": "/images/2024_R1_physics/q06.png",
+      "solution": {
+        "translation": "最大张力发生在最低点（速度最大、向心加速度最大、重力沿绳）。用能量守恒求最低点速度，再列「T − mg = mv²/L」即可。",
+        "analysis": "释放点高度差：$L - L\\cos\\theta_0 = L(1 - \\cos\\theta_0)$。最低点 $v^2 = 2gL(1 - \\cos\\theta_0)$。",
+        "steps": [
+          {
+            "title": "(1) 用能量守恒求最低点速率",
+            "content": "释放点小球比最低点高 $L(1 - \\cos\\theta_0)$。释放点 $v = 0$。\n\n$$\\frac{1}{2}m v^2 = mg \\cdot L(1 - \\cos\\theta_0)$$\n\n$$v^2 = 2gL(1 - \\cos\\theta_0)$$"
+          },
+          {
+            "title": "(2) 最低点列圆周运动方程",
+            "content": "最低点：绳向上拉，重力向下。向心方向（向上指向支点）：\n\n$$T - mg = \\frac{m v^2}{L}$$\n\n代入：\n\n$$T = mg + \\frac{m \\cdot 2gL(1 - \\cos\\theta_0)}{L} = mg + 2mg(1 - \\cos\\theta_0)$$\n\n$$T = mg\\,[1 + 2(1 - \\cos\\theta_0)] = mg\\,(3 - 2\\cos\\theta_0)$$"
+          },
+          {
+            "title": "(3) 验证「最大」",
+            "content": "其它位置：绳张力 $T(\\theta) = mg\\cos\\theta + m v^2(\\theta)/L$。代入 $v^2(\\theta) = 2gL(\\cos\\theta - \\cos\\theta_0)$ 得 $T(\\theta) = mg(3\\cos\\theta - 2\\cos\\theta_0)$。\n\n$\\theta = 0$（最低点）时 $T(0) = mg(3 - 2\\cos\\theta_0)$ 最大。✓",
+            "why": "为什么不是 $mg$？答：$mg$ 是「静止悬挂」时的张力。摆动中最低点除了支持重力还要提供向心力，所以 $T > mg$。特例：$\\theta_0 = 0$（不动）时公式给 $T = mg$ ✓。"
+          }
+        ],
+        "finalAnswer": "⑤ $F = mg\\,(3 - 2\\cos\\theta_0)$",
+        "correctOption": "⑤"
+      }
+    },
+    {
+      "id": "2024-r1-phys-7",
+      "number": "II-A 问1",
+      "topic": "金属与水比热比",
+      "topicTag": "热学·热平衡",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "把质量 $100\\,\\text{g}$、温度 $95°\\text{C}$ 的金属球放入质量 $100\\,\\text{g}$、温度 $5°\\text{C}$ 的水中。经过足够长时间后，两者温度都成 $13°\\text{C}$。容器与外界无热交换。求金属比热为水比热的几倍。",
+      "options": [
+        { "label": "①", "content": "$0.1$" },
+        { "label": "②", "content": "$0.2$" },
+        { "label": "③", "content": "$0.3$" },
+        { "label": "④", "content": "$0.4$" },
+        { "label": "⑤", "content": "$0.5$" },
+        { "label": "⑥", "content": "$0.6$" }
+      ],
+      "solution": {
+        "translation": "金属放出的热 = 水吸收的热。质量相同消掉，剩下「金属比热·金属温降 = 水比热·水温升」。",
+        "analysis": "金属降温：$95 - 13 = 82°\\text{C}$。水升温：$13 - 5 = 8°\\text{C}$。",
+        "steps": [
+          {
+            "title": "(1) 列热平衡",
+            "content": "设金属比热 $c_m$，水比热 $c_w$。质量都是 $100\\,\\text{g}$。\n\n金属放热：$100 \\cdot c_m \\cdot 82$\n水吸热：$100 \\cdot c_w \\cdot 8$\n\n绝热条件下两者相等：\n\n$$100 \\cdot c_m \\cdot 82 = 100 \\cdot c_w \\cdot 8$$"
+          },
+          {
+            "title": "(2) 求比值",
+            "content": "$$\\frac{c_m}{c_w} = \\frac{8}{82} = \\frac{4}{41} \\approx 0.0976 \\approx 0.1$$\n\n最接近 $0.1$。",
+            "why": "结果合理吗？答：金属（如铜、铁）的比热远小于水。水的比热 $\\approx 4.2\\,\\text{J/(g·K)}$，铜约 $0.385$（约 $0.09$ 倍）、铁约 $0.45$（约 $0.11$ 倍）——题给结果 $0.1$ 倍正好落在常见金属范围。"
+          }
+        ],
+        "finalAnswer": "① $\\dfrac{c_m}{c_w} \\approx 0.1$",
+        "correctOption": "①"
+      }
+    },
+    {
+      "id": "2024-r1-phys-8",
+      "number": "II-B 问2",
+      "topic": "双室连通后活塞移动距离",
+      "topicTag": "热学·理想气体",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "可良好传热的圆筒形容器，内部由固定壁分成 A、B 两区域。B 有可自由滑动的活塞。A、B 由带阀门的细管连通。\n\n图 1（阀门关）：A 内气体压强 $\\dfrac{5}{3}p_0$、长度 $h_0$；B 内气体压强 $p_0$、长度 $h_1$。\n\n打开阀门后，B 的活塞缓慢移动，足够长时间后达到图 2 状态，B 的气体部分长度变成 $h_2$（$h_2 > h_1$）。大气压 $p_0$、外部气温 $T_0$ 恒定，气体温度始终为 $T_0$。细管和阀门体积可忽略。\n\n求 $\\dfrac{h_2 - h_1}{h_0}$。",
+      "options": [
+        { "label": "①", "content": "$\\dfrac{1}{5}$" },
+        { "label": "②", "content": "$\\dfrac{1}{3}$" },
+        { "label": "③", "content": "$\\dfrac{2}{5}$" },
+        { "label": "④", "content": "$\\dfrac{3}{5}$" },
+        { "label": "⑤", "content": "$\\dfrac{2}{3}$" },
+        { "label": "⑥", "content": "$1$" }
+      ],
+      "questionImage": "/images/2024_R1_physics/q08.png",
+      "solution": {
+        "translation": "气体物质量守恒（连通前后总 $n$ 不变）+ 终态压强 = $p_0$（活塞平衡）。等温条件下，整体的 $pV$ 守恒。",
+        "analysis": "初态 $pV$ 之和：$\\frac{5}{3}p_0 \\cdot Sh_0 + p_0 \\cdot Sh_1$。终态：$p_0 \\cdot S(h_0 + h_2)$（A 体积仍是 $Sh_0$）。等温 → $pV \\propto n$，两边相等。",
+        "steps": [
+          {
+            "title": "(1) 列等温总 pV 守恒",
+            "content": "温度恒为 $T_0$、气体量不变，所以总 $pV$ 守恒。\n\n初态总 $pV$：A 段 $\\frac{5}{3}p_0 \\cdot Sh_0$，B 段 $p_0 \\cdot Sh_1$，合计\n\n$$\\frac{5}{3}p_0 Sh_0 + p_0 Sh_1$$\n\n终态：阀门开，气体统一压强（活塞平衡 → $p_0$）。总体积 $S(h_0 + h_2)$（A 固定 $h_0$，B 变成 $h_2$）。总 $pV$：\n\n$$p_0 \\cdot S(h_0 + h_2)$$"
+          },
+          {
+            "title": "(2) 解 h₂",
+            "content": "$$\\frac{5}{3}p_0 Sh_0 + p_0 Sh_1 = p_0 S(h_0 + h_2)$$\n\n消去 $p_0 S$：\n\n$$\\frac{5}{3}h_0 + h_1 = h_0 + h_2$$\n\n$$h_2 - h_1 = \\frac{5}{3}h_0 - h_0 = \\frac{2}{3}h_0$$\n\n$$\\frac{h_2 - h_1}{h_0} = \\frac{2}{3}$$",
+            "why": "为什么终态压强一定是 $p_0$？答：B 的活塞可自由滑动（无摩擦、无质量），活塞两面压强必须相等才能平衡。外侧是大气压 $p_0$，所以内侧气体也是 $p_0$。"
+          }
+        ],
+        "finalAnswer": "⑤ $\\dfrac{h_2 - h_1}{h_0} = \\dfrac{2}{3}$",
+        "correctOption": "⑤"
+      }
+    },
+    {
+      "id": "2024-r1-phys-9",
+      "number": "II-C 问3",
+      "topic": "矩形 PV 循环热机效率",
+      "topicTag": "热学·热机",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "$n$ mol 理想气体在带活塞的气缸内做 $A \\to B \\to C \\to D \\to A$ 循环（$p$-$V$ 矩形）。\n\nA: $(V_0, p_0)$、绝对温度 $T_0$\nB: $(V_0, 2p_0)$\nC: $(2V_0, 2p_0)$\nD: $(2V_0, p_0)$\n\nA→B 与 C→D 为等容、B→C 与 D→A 为等压。理想气体定容摩尔比热 $C_V$，气体常数 $R$。求热机效率。",
+      "options": [
+        { "label": "①", "content": "$\\dfrac{R}{3(C_V + R)}$" },
+        { "label": "②", "content": "$\\dfrac{R}{3 C_V + 2R}$" },
+        { "label": "③", "content": "$\\dfrac{R}{3 C_V + R}$" },
+        { "label": "④", "content": "$\\dfrac{R}{2(C_V + R)}$" },
+        { "label": "⑤", "content": "$\\dfrac{R}{2 C_V + R}$" },
+        { "label": "⑥", "content": "$\\dfrac{R}{C_V + 2R}$" },
+        { "label": "⑦", "content": "$\\dfrac{R}{C_V + R}$" }
+      ],
+      "questionImage": "/images/2024_R1_physics/q09.png",
+      "solution": {
+        "translation": "效率 = 净功 / 吸热量。净功 = 矩形面积 $p_0 V_0$。吸热量 = A→B（等容升温）与 B→C（等压膨胀）的热量之和。",
+        "analysis": "用 $pV = nRT$ 算各点温度：$T_A = T_0$，$T_B = 2T_0$，$T_C = 4T_0$，$T_D = 2T_0$。各段：等容 $Q = nC_V \\Delta T$，等压 $Q = nC_p \\Delta T$（$C_p = C_V + R$）。",
+        "steps": [
+          {
+            "title": "(1) 各段温度",
+            "content": "$T_A = T_0$（$p_0 V_0 = nRT_0$ → $T_0 = p_0 V_0 / nR$）\n$T_B = 2T_0$（$V$ 不变 $p$ 翻倍）\n$T_C = 4T_0$（$p$ 不变 $V$ 翻倍 → $T$ 也翻倍）\n$T_D = 2T_0$"
+          },
+          {
+            "title": "(2) 各段吸放热（正吸负放）",
+            "content": "A→B（等容、升温）：$Q_{AB} = n C_V (T_B - T_A) = n C_V T_0$。$Q > 0$ → **吸热**。\n\nB→C（等压、升温）：$Q_{BC} = n C_p (T_C - T_B) = n(C_V + R)(2T_0)$。$Q > 0$ → **吸热**。\n\nC→D（等容、降温）：$Q_{CD} = n C_V (T_D - T_C) = -2 n C_V T_0$。$Q < 0$ → 放热。\n\nD→A（等压、降温）：$Q_{DA} = n C_p (T_A - T_D) = -n(C_V + R) T_0$。$Q < 0$ → 放热。"
+          },
+          {
+            "title": "(3) 净功与吸热",
+            "content": "净功 = 矩形面积 = $\\Delta p \\cdot \\Delta V = p_0 \\cdot V_0$\n\n或由能量守恒：$W_{\\text{net}} = \\sum Q = nT_0[C_V + 2(C_V + R) - 2C_V - (C_V + R)] = nT_0 \\cdot R = nRT_0 = p_0 V_0$ ✓\n\n**吸热量**（只算 $Q > 0$ 的过程）：\n\n$$Q_{\\text{in}} = Q_{AB} + Q_{BC} = nC_V T_0 + 2n(C_V + R)T_0 = nT_0(3C_V + 2R)$$"
+          },
+          {
+            "title": "(4) 效率",
+            "content": "$$\\eta = \\frac{W_{\\text{net}}}{Q_{\\text{in}}} = \\frac{nRT_0}{nT_0(3C_V + 2R)} = \\frac{R}{3C_V + 2R}$$",
+            "why": "为什么 $C \\to D$、$D \\to A$ 都不算吸热？答：这两段温度下降，气体放热而不是吸热。热机效率定义中分母只统计「从高温热源吸收的热量」，即所有 $Q > 0$ 的过程。"
+          }
+        ],
+        "finalAnswer": "② $\\eta = \\dfrac{R}{3C_V + 2R}$",
+        "correctOption": "②"
+      }
+    },
+    {
+      "id": "2024-r1-phys-10",
+      "number": "III-A 问1",
+      "topic": "正弦波 t=3 s 时的波形",
+      "topicTag": "波动·行波",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "$x$ 轴上以速度 $5.0\\,\\text{m/s}$ 沿 $+x$ 方向传播的正弦波。$x = 0$ 处的位移 $y$ 与时间 $t$ 的关系如图（周期 $T = 4\\,\\text{s}$，$y(0,0)=0$ 上升、$y(0,1)=1$ 峰、$y(0,3)=-1$ 谷）。求 $t = 3.0\\,\\text{s}$ 时位移 $y$ 与位置 $x$ 的关系图。",
+      "options": [
+        { "label": "①", "content": "波长 20 m，从原点出发 $y=0$ 上升到峰" },
+        { "label": "②", "content": "波长 20 m，从原点 $y=+1$ 出发（峰）" },
+        { "label": "③", "content": "波长 20 m，从原点 $y=0$ 上升（与 ① 相位差不同）" },
+        { "label": "④", "content": "波长 20 m，从原点 $y=-1$ 出发（谷），峰在 $x=10$" },
+        { "label": "⑤", "content": "波长 40 m，从原点 $y=0$ 上升、峰在 $x=10$" },
+        { "label": "⑥", "content": "波长 40 m，从原点 $y=+1$ 出发" },
+        { "label": "⑦", "content": "波长 40 m，从原点 $y=0$ 下降、谷在 $x=10$" },
+        { "label": "⑧", "content": "波长 40 m，从原点 $y=0$ 出发，峰在 $x=20$" }
+      ],
+      "questionImage": "/images/2024_R1_physics/q10.png",
+      "solution": {
+        "translation": "由 $y(0,t) = \\sin(\\pi t/2)$、$+x$ 方向行波公式 $y(x,t) = y(0, t - x/v)$，代入 $t=3$ 即得。",
+        "analysis": "波长 $\\lambda = vT = 5 \\times 4 = 20$ m。$y(x, 3) = \\sin(\\pi(3 - x/5)/2) = \\sin(3\\pi/2 - \\pi x/10) = -\\cos(\\pi x/10)$。",
+        "steps": [
+          {
+            "title": "(1) 写出 y(x, t) 公式",
+            "content": "由图，$y(0, t) = \\sin\\!\\left(\\dfrac{\\pi t}{2}\\right)$（周期 4，振幅 1）。\n\n$+x$ 方向行波：$y(x, t) = y(0, t - x/v) = \\sin\\!\\left(\\dfrac{\\pi (t - x/5)}{2}\\right)$。"
+          },
+          {
+            "title": "(2) 代入 t = 3",
+            "content": "$$y(x, 3) = \\sin\\!\\left(\\frac{3\\pi}{2} - \\frac{\\pi x}{10}\\right) = -\\cos\\!\\left(\\frac{\\pi x}{10}\\right)$$\n\n这是一个「以谷起点、波长 20 m」的余弦反相波。"
+          },
+          {
+            "title": "(3) 关键点核对",
+            "content": "$x=0$：$y = -\\cos 0 = -1$（**谷**）\n$x=5$：$y = -\\cos(\\pi/2) = 0$（上升）\n$x=10$：$y = -\\cos\\pi = +1$（**峰**）\n$x=15$：$y = 0$（下降）\n$x=20$：$y = -\\cos(2\\pi) = -1$（**谷**）\n$x=30$：$y = +1$（**峰**）\n$x=40$：$y = -1$（**谷**）\n\n→ 波长 20 m、起点是谷、峰在 $x=10$。对应选项 **④**。",
+            "why": "怎么直接判断波长？答：$\\lambda = vT$，$v=5\\,\\text{m/s}$、$T=4\\,\\text{s}$ → $\\lambda=20\\,\\text{m}$。可立即排除波长 40 m 的选项 ⑤⑥⑦⑧。"
+          }
+        ],
+        "finalAnswer": "④ 波长 20 m、$y(0)=-1$（谷）、峰在 $x=10$",
+        "correctOption": "④"
+      }
+    },
+    {
+      "id": "2024-r1-phys-11",
+      "number": "III-B 问2",
+      "topic": "反射板做多普勒拍频",
+      "topicTag": "波动·多普勒",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "如图，观测者、音源、反射板在一直线上。观测者与音源静止，反射板在直线上以 $1\\,\\text{m/s}$ 的速度从音源远离。观测者每秒听到 $n$ 次拍。音源频率 $682\\,\\text{Hz}$、声速 $340\\,\\text{m/s}$。求 $n$。",
+      "options": [
+        { "label": "①", "content": "$1$" },
+        { "label": "②", "content": "$2$" },
+        { "label": "③", "content": "$3$" },
+        { "label": "④", "content": "$4$" },
+        { "label": "⑤", "content": "$5$" },
+        { "label": "⑥", "content": "$6$" }
+      ],
+      "questionImage": "/images/2024_R1_physics/q11.png",
+      "solution": {
+        "translation": "直达声频率 = $682\\,\\text{Hz}$（音源、观测者都静止）。反射声经历两次多普勒：源→板（板远离源接收）、板→观测者（板作为「会动的源」远离观测者）。",
+        "analysis": "反射板远离源 → 接收频率 $f' = f(v - 1)/v$。然后反射板作为「会动的源」远离观测者 → 观测者接收 $f'' = f' \\cdot v/(v + 1)$。",
+        "steps": [
+          {
+            "title": "(1) 反射板接收的频率",
+            "content": "反射板（接收者）远离静止源（远离方向速度 $1\\,\\text{m/s}$）：\n\n$$f' = f \\cdot \\frac{v - 1}{v} = 682 \\cdot \\frac{339}{340}$$"
+          },
+          {
+            "title": "(2) 观测者听到的反射声频率",
+            "content": "反射板把接收到的声波再发出，所以反射板成为「会动的源」，它**远离观测者**（速度 $1\\,\\text{m/s}$）。\n\n观测者（静止）接收：\n\n$$f'' = f' \\cdot \\frac{v}{v + 1} = 682 \\cdot \\frac{339}{340} \\cdot \\frac{340}{341} = 682 \\cdot \\frac{339}{341}$$"
+          },
+          {
+            "title": "(3) 拍频",
+            "content": "拍频 = 两个频率之差：\n\n$$n = |f - f''| = 682 - 682 \\cdot \\frac{339}{341} = 682 \\cdot \\left(1 - \\frac{339}{341}\\right) = 682 \\cdot \\frac{2}{341}$$\n\n$$= \\frac{1364}{341} = 4\\,\\text{Hz}$$",
+            "why": "为什么是 $682 \\cdot 2/341 = 4$？答：$341 \\times 4 = 1364 = 682 \\times 2$ ✓。\n\n经验公式：当反射板速度 $u \\ll v$ 时，拍频 $\\approx 2uf/v = 2 \\cdot 1 \\cdot 682 / 340 = 4.01$ Hz，与严格计算 4 Hz 一致。"
+          }
+        ],
+        "finalAnswer": "④ $n = 4$ Hz",
+        "correctOption": "④"
+      }
+    },
+    {
+      "id": "2024-r1-phys-12",
+      "number": "III-C 问3",
+      "topic": "凸透镜焦距一半处的物体成像",
+      "topicTag": "波动·几何光学",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "凸透镜光轴上有焦点 F、F'。物体置于透镜中心 O 与 F 的中点 A 处。从 B 侧（与 F' 同侧）观察物体的像。求像的种类（实像／虚像）、方向（正立／倒立）、倍率。",
+      "options": [
+        { "label": "①", "content": "实像、正立、0.25" },
+        { "label": "②", "content": "实像、正立、0.5" },
+        { "label": "③", "content": "实像、倒立、0.25" },
+        { "label": "④", "content": "实像、倒立、0.5" },
+        { "label": "⑤", "content": "虚像、正立、2" },
+        { "label": "⑥", "content": "虚像、正立、4" },
+        { "label": "⑦", "content": "虚像、倒立、2" },
+        { "label": "⑧", "content": "虚像、倒立、4" }
+      ],
+      "questionImage": "/images/2024_R1_physics/q12.png",
+      "solution": {
+        "translation": "物体在焦距内（物距 $u < f$）→ 凸透镜成放大正立虚像。用透镜成像公式 $1/u + 1/v = 1/f$ 算像距，再算倍率。",
+        "analysis": "$u = f/2$。代入公式 → $v = -f$（负号 = 虚像，与物体同侧）。倍率 $m = |v|/u = 2$。",
+        "steps": [
+          {
+            "title": "(1) 透镜成像公式",
+            "content": "$$\\frac{1}{u} + \\frac{1}{v} = \\frac{1}{f}$$\n\n物体在 A：物距 $u = OA = f/2$。\n\n$$\\frac{2}{f} + \\frac{1}{v} = \\frac{1}{f}$$\n\n$$\\frac{1}{v} = \\frac{1}{f} - \\frac{2}{f} = -\\frac{1}{f}$$\n\n$$v = -f$$"
+          },
+          {
+            "title": "(2) 解读 v 的符号",
+            "content": "$v < 0$ 意味着像在物体同侧（透镜左侧），不能在屏上成像 → **虚像**。\n\n虚像通常正立。"
+          },
+          {
+            "title": "(3) 倍率",
+            "content": "$$m = \\left|\\frac{v}{u}\\right| = \\frac{f}{f/2} = 2$$\n\n倍率 $2$ 倍（放大）。"
+          },
+          {
+            "title": "(4) 验证：哪一侧看到像",
+            "content": "B 在 F' 一侧（与物体异侧）。光从物体经透镜进入 B 侧。在 B 侧，眼睛逆着光线看，看到的虚像在物体一侧（透镜左侧），像位置 $|v| = f$。\n\n所以从 B 侧看，看到虚像、正立、$2$ 倍 → **⑤**。",
+            "why": "实物在焦点内的应用？答：放大镜。$u < f$ 时凸透镜的功能就是放大镜，给出正立放大的虚像。物体越接近焦点（$u \\to f$），倍率越大。"
+          }
+        ],
+        "finalAnswer": "⑤ 虚像、正立、$2$ 倍",
+        "correctOption": "⑤"
+      }
+    },
+    {
+      "id": "2024-r1-phys-13",
+      "number": "IV-A 问1",
+      "topic": "把电荷从 r 移到 R 外力做功",
+      "topicTag": "电磁·静电势能",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "如图，$x$ 轴原点 O 固定电量 $Q$ 的点电荷。给电量 $q$ 的点电荷施加抵消静电力的外力，从 $x = r$（$r > 0$）位置缓慢地沿 $x$ 轴移到 $x = R$（$R > r$）位置。此过程外力做功 $W$。库仑常数 $k_0$。求 $W$。",
+      "options": [
+        { "label": "①", "content": "$\\dfrac{k_0 Q q}{r} + \\dfrac{k_0 Q q}{R}$" },
+        { "label": "②", "content": "$\\dfrac{k_0 Q q}{r} - \\dfrac{k_0 Q q}{R}$" },
+        { "label": "③", "content": "$\\dfrac{k_0 Q q}{R} - \\dfrac{k_0 Q q}{r}$" },
+        { "label": "④", "content": "$\\dfrac{k_0 Q q}{r^2} + \\dfrac{k_0 Q q}{R^2}$" },
+        { "label": "⑤", "content": "$\\dfrac{k_0 Q q}{r^2} - \\dfrac{k_0 Q q}{R^2}$" },
+        { "label": "⑥", "content": "$\\dfrac{k_0 Q q}{R^2} - \\dfrac{k_0 Q q}{r^2}$" }
+      ],
+      "questionImage": "/images/2024_R1_physics/q13.png",
+      "solution": {
+        "translation": "外力做功 = 系统电势能变化 $\\Delta U = U(R) - U(r)$。两点电荷势能 $U(d) = k_0 Q q / d$。",
+        "analysis": "缓慢移动 → 动能变化为 $0$ → 外力做的功完全转化为势能变化。$\\Delta U = k_0 Q q / R - k_0 Q q / r$。",
+        "steps": [
+          {
+            "title": "(1) 用势能变化公式",
+            "content": "缓慢移动（准静态、$\\Delta E_k = 0$）意味着外力 $\\vec{F}_{ext} = -\\vec{F}_{电}$。\n\n外力做功 = 克服电场力做的功 = 电势能增量。\n\n两点电荷电势能：$U(d) = \\dfrac{k_0 Q q}{d}$（取无穷远为 0）。"
+          },
+          {
+            "title": "(2) 计算 ΔU",
+            "content": "$$W = U(R) - U(r) = \\frac{k_0 Q q}{R} - \\frac{k_0 Q q}{r}$$",
+            "why": "符号判断：若 $Q$、$q$ 同号（互斥），$R > r$ 意味着从近移到远——电场推它出去，外力是阻力做负功。代入公式：$\\frac{1}{R} - \\frac{1}{r} < 0$（因 $R > r$）→ $W < 0$ ✓。\n\n若同号异号则符号相反，但公式形式不变。"
+          }
+        ],
+        "finalAnswer": "③ $W = \\dfrac{k_0 Q q}{R} - \\dfrac{k_0 Q q}{r}$",
+        "correctOption": "③"
+      }
+    },
+    {
+      "id": "2024-r1-phys-14",
+      "number": "IV-B 问2",
+      "topic": "三电容两开关时序操作后 C₂ 电荷",
+      "topicTag": "电磁·电容电路",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "如图，电动势 $6.0\\,\\text{V}$ 电池、电容 $2.0\\,\\mu\\text{F}$ 的 $C_1$、$4.0\\,\\mu\\text{F}$ 的 $C_2$、$6.0\\,\\mu\\text{F}$ 的 $C_3$、电阻、两开关 $S_1$、$S_2$ 接成图示电路。\n\n最初 $S_1$、$S_2$ 均开，三电容均无电荷。先闭 $S_1$ 待稳定后开 $S_1$；再闭 $S_2$ 待稳定后开 $S_2$。求此时 $C_2$ 上的电荷 $Q_2$。",
+      "options": [
+        { "label": "①", "content": "$1.6$" },
+        { "label": "②", "content": "$3.2$" },
+        { "label": "③", "content": "$4.8$" },
+        { "label": "④", "content": "$6.4$" },
+        { "label": "⑤", "content": "$8.0$" },
+        { "label": "⑥", "content": "$9.6$" }
+      ],
+      "questionImage": "/images/2024_R1_physics/q14.png",
+      "solution": {
+        "translation": "闭 $S_1$ 时电池经 $C_1$ + $C_2$（串联）充电；开 $S_1$ 后 $C_2$ 保持电荷；再闭 $S_2$ 时 $C_2$ 与 $C_3$ 并联共享电荷；电阻仅起暂态作用，稳态后无影响。",
+        "analysis": "Step A：$C_1$ 与 $C_2$ 串联充到 $6$ V。等效电容 $\\frac{2 \\cdot 4}{2+4} = 4/3$ μF。电荷 $Q = 4/3 \\cdot 6 = 8$ μC，$C_2$ 上 $8$ μC。Step B：开 $S_1$ → 闭 $S_2$，$C_2$ 与 $C_3$ 在一个闭合回路里（无电池），按电荷守恒、电压相等重新分配。",
+        "steps": [
+          {
+            "title": "(1) Step A：闭 S₁ 时充电",
+            "content": "$S_2$ 开 → $C_3$ 完全孤立、无电荷。$S_1$ 闭 → 电池经 $C_1$ + $C_2$ 串联充电。\n\n串联等效电容：\n\n$$C_{eq} = \\frac{C_1 C_2}{C_1 + C_2} = \\frac{2 \\cdot 4}{6} = \\frac{4}{3}\\,\\mu\\text{F}$$\n\n稳态电压都加到电池上 ($V = 6$ V)：\n\n$$Q_0 = C_{eq} \\cdot V = \\frac{4}{3} \\cdot 6 = 8\\,\\mu\\text{C}$$\n\n串联两电容上的电荷相同：$Q_{C_1} = Q_{C_2} = 8\\,\\mu\\text{C}$。\n$V_{C_2} = Q/C_2 = 8/4 = 2$ V，$V_{C_1} = 8/2 = 4$ V，合 $6$ V ✓。"
+          },
+          {
+            "title": "(2) 开 S₁ → C₂ 保电荷",
+            "content": "$S_1$ 开后 $C_1$、$C_2$ 与电池断开。$C_2$ 仍保 $8\\,\\mu\\text{C}$。"
+          },
+          {
+            "title": "(3) Step B：闭 S₂ → C₂ 与 C₃ 共享",
+            "content": "闭 $S_2$ 后，$C_2$ 与 $C_3$ 处于一个闭合回路（$S_1$ 开，电池脱离这个回路）。电阻只影响暂态，稳态无电流 → $V_{C_2} = V_{C_3}$。\n\n**电荷守恒**（$C_2$ 上极板和 $C_3$ 上极板组成的孤立导体）：$Q_2 + Q_3 = 8\\,\\mu\\text{C}$\n\n**等压**：$Q_2 / C_2 = Q_3 / C_3$ → $Q_2/4 = Q_3/6$ → $Q_3 = 1.5\\,Q_2$"
+          },
+          {
+            "title": "(4) 解 Q₂",
+            "content": "$$Q_2 + 1.5 Q_2 = 8 \\;\\Rightarrow\\; 2.5\\,Q_2 = 8 \\;\\Rightarrow\\; Q_2 = 3.2\\,\\mu\\text{C}$$\n\n之后开 $S_2$，$C_2$ 仍保此电荷 $3.2\\,\\mu\\text{C}$。",
+            "why": "为什么 $C_2$ 上电荷反而减少了（$8 \\to 3.2$）？答：和 $C_3$ 共享了电荷。$C_3 = 6$ μF 比 $C_2$ 大，按比例分配电荷时占大头（$Q_3 = 4.8$ μC，$Q_2 = 3.2$ μC）。"
+          }
+        ],
+        "finalAnswer": "② $Q_2 = 3.2\\,\\mu\\text{C}$",
+        "correctOption": "②"
+      }
+    },
+    {
+      "id": "2024-r1-phys-15",
+      "number": "IV-C 问3",
+      "topic": "双电池电桥找平衡 R",
+      "topicTag": "电磁·电路",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "如图，电动势 $4.0\\,\\text{V}$ 电池、电动势 $6.0\\,\\text{V}$ 电池、$20\\,\\Omega$ 电阻、$30\\,\\Omega$ 电阻、可变电阻 $R$、检流计接成电路。变 $R$ 使检流计中无电流。两电池内阻可忽略。求 $R$（Ω）。",
+      "options": [
+        { "label": "①", "content": "$10$" },
+        { "label": "②", "content": "$15$" },
+        { "label": "③", "content": "$20$" },
+        { "label": "④", "content": "$25$" },
+        { "label": "⑤", "content": "$30$" },
+        { "label": "⑥", "content": "$35$" },
+        { "label": "⑦", "content": "$40$" },
+        { "label": "⑧", "content": "$45$" }
+      ],
+      "questionImage": "/images/2024_R1_physics/q15.png",
+      "solution": {
+        "translation": "检流计无电流 → 经过它的支路（$4$ V 电池 + 检流计 + $20\\,\\Omega$）无电流。这意味着 $4$ V 电池支路两端节点的电位差刚好 = $4$ V。另一回路（$6$ V 电池经 $R$、$30\\,\\Omega$）有电流 $I$，且 $30\\,\\Omega$ 上的压降 = $4$ V。",
+        "analysis": "$30\\,\\Omega$ 上分压 $4$ V → 电流 $I = 4/30 = 2/15$ A。回路 KVL：$6 = I \\cdot (R + 30)$ → $R + 30 = 6 \\cdot 15/2 = 45$ → $R = 15$。",
+        "steps": [
+          {
+            "title": "(1) 检流计无电流的含义",
+            "content": "检流计支路（包含 $4$ V 电池 + 检流计 + $20\\,\\Omega$）电流为 $0$ → 该支路上无电压降；$20\\,\\Omega$ 上无压降。\n\n所以检流计两端节点电位差 = $4$ V 电池电动势 = $4$ V。"
+          },
+          {
+            "title": "(2) 主回路分析",
+            "content": "另一回路：$6$ V 电池 → $R$ → $30\\,\\Omega$ → 回到电池。无 $4$ V 支路电流分流（因为检流计支路断电）。\n\n这个回路中 $R$ 和 $30\\,\\Omega$ 串联，电流 $I$。\n\n$30\\,\\Omega$ 横跨两个「电桥节点」之间，即两节点电位差 = $30 I$。这两个节点正是检流计两端的节点，所以：\n\n$$30 I = 4 \\;\\Rightarrow\\; I = \\frac{4}{30} = \\frac{2}{15}\\,\\text{A}$$"
+          },
+          {
+            "title": "(3) 求 R",
+            "content": "对 $6$ V 回路列 KVL：\n\n$$6 = I \\cdot (R + 30) = \\frac{2}{15} \\cdot (R + 30)$$\n\n$$R + 30 = 45 \\;\\Rightarrow\\; R = 15\\,\\Omega$$",
+            "why": "为什么 $20\\,\\Omega$ 不用考虑？答：检流计无电流意味着 $4$ V 支路（包括 $20\\,\\Omega$）整体无电流，所以这个 $20\\,\\Omega$ 在「平衡」状态下不起作用。"
+          }
+        ],
+        "finalAnswer": "② $R = 15\\,\\Omega$",
+        "correctOption": "②"
+      }
+    },
+    {
+      "id": "2024-r1-phys-16",
+      "number": "IV-D 问4",
+      "topic": "两长直电流外加方形线圈受力",
+      "topicTag": "电磁·磁场·安培力",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "如图，两根足够长的直线导线 $XX'$、$YY'$ 在平面上以 $3a$ 间距平行放置。同平面上、边长为 $a$ 的正方形线圈 ABCD，AD 与 BC 平行于 $XX'$、$YY'$。AD 距 $XX'$ 为 $a$，BC 距 $YY'$ 为 $a$。\n\n$XX'$ 中通入 $X' \\to X$ 方向、大小 $I$ 的电流。$YY'$ 中通入 $Y' \\to Y$ 方向、大小 $I'$ 的电流。调 $I'$ 使 AD 处磁场为 $0$。\n\n然后线圈 ABCD 中通入 $A \\to D \\to C \\to B \\to A$ 方向、大小 $i$ 的电流。线圈受到向右的力 $F$。空气磁导率 $\\mu$。求 $F$。",
+      "options": [
+        { "label": "①", "content": "$\\dfrac{\\mu I i}{4\\pi}$" },
+        { "label": "②", "content": "$\\dfrac{\\mu I i}{2\\pi}$" },
+        { "label": "③", "content": "$\\dfrac{3\\mu I i}{4\\pi}$" },
+        { "label": "④", "content": "$\\dfrac{\\mu I i}{\\pi}$" },
+        { "label": "⑤", "content": "$\\dfrac{\\mu I i}{4}$" },
+        { "label": "⑥", "content": "$\\dfrac{\\mu I i}{2}$" },
+        { "label": "⑦", "content": "$\\dfrac{3\\mu I i}{4}$" },
+        { "label": "⑧", "content": "$\\mu I i$" }
+      ],
+      "questionImage": "/images/2024_R1_physics/q16.png",
+      "solution": {
+        "translation": "(i) 由 AD 处合场 = 0 定 $I'$；(ii) 算 BC 处合场；(iii) 线圈 AD 段无受力（场为 0），BC 段受向右安培力；DC、AB 段水平受力相互抵消（沿铅直方向），不贡献横向力。",
+        "analysis": "AD 距 $XX'$ 为 $a$（场 $\\frac{\\mu I}{2\\pi a}$ 入纸），距 $YY'$ 为 $2a$（场 $\\frac{\\mu I'}{4\\pi a}$ 出纸）→ 二者抵消 → $I' = 2I$。BC 距 $YY'$ 为 $a$（场 $\\frac{\\mu \\cdot 2I}{2\\pi a} = \\frac{\\mu I}{\\pi a}$ 出纸），距 $XX'$ 为 $2a$（场 $\\frac{\\mu I}{4\\pi a}$ 入纸）→ BC 处合场 $\\frac{3\\mu I}{4\\pi a}$ 出纸。",
+        "steps": [
+          {
+            "title": "(1) 由 AD 处场 = 0 定 I'",
+            "content": "设 $XX'$、$YY'$ 在 $x$ 轴位置 $0$、$3a$。AD 在 $x = a$，BC 在 $x = 2a$。\n\n$XX'$ 电流方向 $X' \\to X$（设为「向上」），由右手定则，AD 处（$XX'$ 右侧距 $a$）场为「入纸」。\n\n$YY'$ 电流方向 $Y' \\to Y$（同样向上），AD 处（$YY'$ 左侧距 $2a$）场为「出纸」。\n\n大小：\n\n$$B_{XX'@AD} = \\frac{\\mu I}{2\\pi a},\\;\\;B_{YY'@AD} = \\frac{\\mu I'}{2\\pi \\cdot 2a} = \\frac{\\mu I'}{4\\pi a}$$\n\n抵消（方向相反、大小相等）：\n\n$$\\frac{\\mu I}{2\\pi a} = \\frac{\\mu I'}{4\\pi a} \\;\\Rightarrow\\; I' = 2I$$"
+          },
+          {
+            "title": "(2) BC 处的合场",
+            "content": "BC 在 $x = 2a$，距 $XX'$ 为 $2a$（右侧），距 $YY'$ 为 $a$（左侧）。\n\n$XX'$ 贡献：入纸，$B_1 = \\dfrac{\\mu I}{2\\pi \\cdot 2a} = \\dfrac{\\mu I}{4\\pi a}$。\n\n$YY'$ 贡献：出纸，$B_2 = \\dfrac{\\mu \\cdot 2I}{2\\pi \\cdot a} = \\dfrac{\\mu I}{\\pi a}$。\n\n合场（出纸为正）：\n\n$$B_{BC} = \\frac{\\mu I}{\\pi a} - \\frac{\\mu I}{4\\pi a} = \\frac{4 - 1}{4\\pi a}\\,\\mu I = \\frac{3\\mu I}{4\\pi a}\\,(\\text{出纸})$$"
+          },
+          {
+            "title": "(3) 算 BC 受力",
+            "content": "BC 段中电流方向 $C \\to B$（根据 $A \\to D \\to C \\to B \\to A$ 路径，CB 段是从 C 到 B，垂直方向上方向取决于配置）。\n\n由 $\\vec{F} = i\\vec{L} \\times \\vec{B}$：$L$ 沿铅直方向（设向上），$B$ 出纸 → $\\vec{L} \\times \\vec{B}$ 沿 $+x$ → 力**指向右**（即指向 $YY'$ 方向）。\n\n大小：\n\n$$F_{BC} = i \\cdot a \\cdot B_{BC} = i \\cdot a \\cdot \\frac{3\\mu I}{4\\pi a} = \\frac{3\\mu I i}{4\\pi}$$\n\nAD 段：$B = 0$ → 无力。DC、AB 段：水平电流横切磁场，受力沿竖直方向（不贡献向右合力）。\n\n所以总「向右力」= $F_{BC}$。",
+            "why": "为什么 DC、AB 段对横向合力无贡献？答：它们水平、电流方向也水平，安培力方向垂直于电流和磁场（铅直方向），因此 DC、AB 段的力是垂直方向的，且两者方向相反，互相抵消，不影响题目所问的横向力。"
+          }
+        ],
+        "finalAnswer": "③ $F = \\dfrac{3\\mu I i}{4\\pi}$",
+        "correctOption": "③"
+      }
+    },
+    {
+      "id": "2024-r1-phys-17",
+      "number": "IV-E 问5",
+      "topic": "半圆轨道带电粒子求磁场方向与 q/m",
+      "topicTag": "电磁·洛伦兹力",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "如图，$xy$ 平面 $y > 0$ 的区域有垂直于纸面、磁通密度 $B$ 的均匀磁场。质量 $m$、电量 $q$（$> 0$）的荷电粒子在某时刻从 $(-r, 0)$（$r > 0$）以速度 $v$ 沿 $+y$ 方向进入区域。经过时间 $t$ 后从 $(r, 0)$ 以速度 $v$ 沿 $-y$ 方向离开区域。\n\n求磁场方向（裏 → 表 或 表 → 裏）以及 $\\dfrac{q}{m}$。",
+      "options": [
+        { "label": "①", "content": "裏 → 表，$\\dfrac{\\pi}{2Bt}$" },
+        { "label": "②", "content": "裏 → 表，$\\dfrac{\\pi}{Bt}$" },
+        { "label": "③", "content": "裏 → 表，$\\dfrac{2\\pi}{Bt}$" },
+        { "label": "④", "content": "表 → 裏，$\\dfrac{\\pi}{2Bt}$" },
+        { "label": "⑤", "content": "表 → 裏，$\\dfrac{\\pi}{Bt}$" },
+        { "label": "⑥", "content": "表 → 裏,$\\dfrac{2\\pi}{Bt}$" }
+      ],
+      "questionImage": "/images/2024_R1_physics/q17.png",
+      "solution": {
+        "translation": "粒子在 $y > 0$ 区域走半圆（从 $(-r, 0)$ 到 $(r, 0)$，直径 $2r$）。从入射方向（$+y$）+ 弯曲后出射方向（$-y$）判断洛伦兹力方向，由 $\\vec{F} = q\\vec{v}\\times\\vec{B}$ 推 $B$ 方向。半圆时间 $t = \\pi m/(qB)$ → $q/m = \\pi/(Bt)$。",
+        "analysis": "正电荷在 $(-r, 0)$ 以 $+y$ 入射，要弯到 $(r, 0)$（圆心 = 原点）→ 初始受力沿 $+x$ → $\\vec{F} = q\\vec{v}\\times\\vec{B}$ → $\\vec{v} \\times \\vec{B}$ 在 $+x$ → $\\vec{B}$ 在 $+z$（出纸面，即「裏 → 表」）。",
+        "steps": [
+          {
+            "title": "(1) 圆运动几何",
+            "content": "进入点 $(-r, 0)$、出去点 $(r, 0)$，二者距离 $2r$，是圆的直径 → 半径 $r$。\n\n圆周运动半径与磁场关系：\n\n$$r = \\frac{m v}{q B} \\;\\Rightarrow\\; q/m = \\frac{v}{rB}$$\n\n但还需用「时间 $t$」消去 $v$、$r$："
+          },
+          {
+            "title": "(2) 用时间 t 求 q/m",
+            "content": "圆周运动周期：$T = \\dfrac{2\\pi m}{qB}$。\n\n半圆所用时间 = $T/2 = \\dfrac{\\pi m}{q B}$。\n\n由 $t = \\pi m / (qB)$：\n\n$$\\frac{q}{m} = \\frac{\\pi}{Bt}$$"
+          },
+          {
+            "title": "(3) 磁场方向",
+            "content": "粒子在 $(-r, 0)$ 时 $\\vec{v} = v\\hat{y}$。要让粒子沿圆心在原点的圆运动（向 $+x$ 弯曲），洛伦兹力须指向圆心（即 $+x$ 方向）。\n\n$\\vec{F} = q\\vec{v}\\times\\vec{B}$，$q > 0$ → $\\vec{v}\\times\\vec{B}$ 须指向 $+x$。\n\n$\\vec{v} \\times \\vec{B} = \\hat{y} \\times \\vec{B}$。要等于 $\\hat{x}$，需 $\\vec{B} = \\hat{z}$（验证：$\\hat{y}\\times\\hat{z} = \\hat{x}$ ✓）。\n\n$+\\hat{z}$ 方向 = **出纸面** = **裏 → 表**。",
+            "why": "为什么是「裏→表」？答：将纸面前面定义为「表」、后面为「裏」。从纸面后方指向前方即出纸（+z）。我们要求 $B$ 在 $+z$，所以方向是从裏到表。"
+          }
+        ],
+        "finalAnswer": "② 裏 → 表，$\\dfrac{q}{m} = \\dfrac{\\pi}{Bt}$",
+        "correctOption": "②"
+      }
+    },
+    {
+      "id": "2024-r1-phys-18",
+      "number": "IV-F 问6",
+      "topic": "矩形线圈穿过磁场区域时的 I-t 图",
+      "topicTag": "电磁·电磁感应",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "如图，$xy$ 平面 $0 < x < d$ 的区域有垂直纸面、由背向前（裏 → 表）的均匀磁场。矩形线圈、$x$ 轴方向以恒速 $v$ 沿 $+x$ 横穿磁场区域。线圈两边平行 $x$ 轴、长度 $L$（$L > d$）。时刻 $t$ 时线圈中电流为 $I$，取图中线圈上箭头方向（反时针）为正。线圈感应电流自身产生的磁场忽略。求 $I$ 随 $t$ 的变化图。",
+      "options": [
+        { "label": "①", "content": "单段正向方波" },
+        { "label": "②", "content": "单段负向方波" },
+        { "label": "③", "content": "两段正向方波之间有间隙" },
+        { "label": "④", "content": "两段负向方波之间有间隙" },
+        { "label": "⑤", "content": "先正后负，紧挨" },
+        { "label": "⑥", "content": "先负方波 → 零 → 正方波（中间有间隙）" }
+      ],
+      "questionImage": "/images/2024_R1_physics/q18.png",
+      "solution": {
+        "translation": "$L > d$ → 线圈比磁场区域更宽，存在「右边出磁场、左边还没进」的中段，期间磁通不变，感应电流为 0。\n\n阶段：右边入区（磁通增加，$I < 0$）→ 右边出右边、左边还在外（磁通恒、$I = 0$）→ 左边入区（磁通减少，$I > 0$）→ 离场（$I = 0$）。",
+        "analysis": "感应电动势 $\\varepsilon = -d\\Phi/dt$。磁通增加期 $\\varepsilon < 0$ 即 $I < 0$（线圈反时针为正）。磁通减少期 $\\varepsilon > 0$ 即 $I > 0$。",
+        "steps": [
+          {
+            "title": "(1) 阶段划分（$x_R$ 为线圈右边横坐标）",
+            "content": "**阶段 A**（$x_R < 0$）：线圈完全在场区外左侧 → $\\Phi = 0$，$I = 0$。\n\n**阶段 B**（$0 < x_R < d$，左边仍在场外）：右边已进入场区，磁通线性增加 $\\Phi = B \\cdot h \\cdot x_R$（$h$ 为线圈宽）→ $\\dfrac{d\\Phi}{dt} = Bhv > 0$ → $\\varepsilon = -Bhv < 0$ → $I < 0$。\n\n**阶段 C**（$x_R > d$ 但 $x_L < 0$）：右边已出场区，左边还没进 → 整个磁场区都在线圈内 → $\\Phi = B \\cdot h \\cdot d$（常数）→ $I = 0$。\n\n（注：$L > d$ 才有此阶段。$x_L = x_R - L$，$x_R = d$ 时 $x_L = d - L < 0$ ✓）\n\n**阶段 D**（$x_L > 0$ 且 $x_R > d$）：左边进入场区，右边已出 → $\\Phi = B h (d - x_L)$ 减少 → $\\dfrac{d\\Phi}{dt} = -Bhv < 0$ → $\\varepsilon > 0$ → $I > 0$。\n\n**阶段 E**（$x_L > d$）：左边也出场区 → $\\Phi = 0$，$I = 0$。"
+          },
+          {
+            "title": "(2) 总图形",
+            "content": "$I$ 随时间：0 → **负方波**（持续时长 $d/v$） → **0**（持续时长 $(L-d)/v$） → **正方波**（持续时长 $d/v$） → 0。\n\n即：**先负方波，中间一段零，再正方波**。对应选项 **⑥**。",
+            "why": "为什么会有中间「零」段？答：$L > d$（线圈比场区宽）→ 当线圈刚好把整个磁场区包在内部时，磁通已经满了、不再变，所以没有感应电流。\n\n如果 $L < d$ 或 $L = d$，没有这一段。如果 $L = d$，负方波和正方波直接相接（对应 ⑤）。"
+          }
+        ],
+        "finalAnswer": "⑥ 先负方波 → 0 → 正方波",
+        "correctOption": "⑥"
+      }
+    },
+    {
+      "id": "2024-r1-phys-19",
+      "number": "V-A 问1",
+      "topic": "X 射线管最短波长",
+      "topicTag": "近代物理·X 射线",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "加速电压为 $V$ 的 X 射线管，放出的 X 射线最短波长为 $\\lambda_0$。电子电荷大小 $e$、普朗克常数 $h$、真空光速 $c$。求 $\\lambda_0$。",
+      "options": [
+        { "label": "①", "content": "$\\dfrac{eV}{h}$" },
+        { "label": "②", "content": "$\\dfrac{h}{eV}$" },
+        { "label": "③", "content": "$\\dfrac{ec}{hV}$" },
+        { "label": "④", "content": "$\\dfrac{hV}{ec}$" },
+        { "label": "⑤", "content": "$\\dfrac{eV}{hc}$" },
+        { "label": "⑥", "content": "$\\dfrac{hc}{eV}$" }
+      ],
+      "solution": {
+        "translation": "电子被加速电压 $V$ 加速后得到动能 $eV$。最短波长对应「电子的全部动能转换为一个 X 射线光子」。光子能量 $hc/\\lambda$。",
+        "analysis": "能量守恒：$eV = hc/\\lambda_0$ → $\\lambda_0 = hc/(eV)$。",
+        "steps": [
+          {
+            "title": "(1) 电子动能",
+            "content": "电子被加速电压 $V$ 加速：$E_k = eV$。"
+          },
+          {
+            "title": "(2) 最短波长的物理条件",
+            "content": "X 射线光子能量上限 = 电子动能（极端情形，全部动能转化为一个光子）：\n\n$$\\frac{hc}{\\lambda_0} = eV$$"
+          },
+          {
+            "title": "(3) 解",
+            "content": "$$\\lambda_0 = \\frac{hc}{eV}$$",
+            "why": "为什么是最短波长（不是最长）？答：单光子能量最高 → $hc/\\lambda$ 最大 → $\\lambda$ 最小。电子能量分配给多个光子时各光子能量小、波长大。所以一次性把全部动能给一个光子时波长最短。\n\n这就是著名的「德布罗意截止波长」公式。"
+          }
+        ],
+        "finalAnswer": "⑥ $\\lambda_0 = \\dfrac{hc}{eV}$",
+        "correctOption": "⑥"
+      }
+    }
+  ]
+}
