@@ -1,0 +1,135 @@
+{
+  "metadata": {
+    "course": "course2",
+    "year": "2024",
+    "session": "1",
+    "courseNameJa": "数学2",
+    "courseNameEn": "Course 2 (Advanced)",
+    "description": "上级课程｜理科方向",
+    "color": "#9333ea",
+    "examTitle": "2024年度（令和6年）第1回",
+    "examDate": "2024年6月"
+  },
+  "questions": [
+    {
+      "id": "c2-I-1",
+      "number": "I-1",
+      "topic": "二次函数区间最值与对称移动",
+      "topicTag": "二次函数",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "$y = ax^2 - 6ax + 2b$ 在 $1 \\le x \\le 4$ 上最大值 $6$、最小值 $-2$。\n\n(1) 顶点 $(\\fbox{A}, -\\fbox{B}\\,a + \\fbox{C}\\,b)$。\n\n(2) $a > 0$：$x = \\fbox{D}$ 时最大，$x = \\fbox{E}$ 时最小，$a = \\fbox{F}, b = \\fbox{G}$。\n\n(3) $a < 0$：$x = \\fbox{H}$ 时最大，$x = \\fbox{I}$ 时最小，$a = \\fbox{JK}, b = \\fbox{LM}$。\n\n(4) (2) 的 $f(x)$ 与 (3) 的 $g(x)$：$g$ 是 $f$ 关于 $x$ 轴对称后再沿 $y$ 方向平移 $\\fbox{N}$ 得到。",
+      "solution": {
+        "translation": "二次函数配方求顶点；按开口方向确定最大、最小位置。",
+        "analysis": "提取公因子 $a$：$y = a(x^2 - 6x) + 2b$。配方 $x^2 - 6x = (x-3)^2 - 9$。",
+        "steps": [
+          {"title": "(1) 求顶点坐标", "content": "对 $y = ax^2 - 6ax + 2b$ 先把 $x$ 的项提 $a$：\n$y = a(x^2 - 6x) + 2b$。\n\n配方 $x^2 - 6x = (x - 3)^2 - 9$，所以：\n$y = a[(x - 3)^2 - 9] + 2b = a(x - 3)^2 - 9a + 2b$。\n\n顶点 $x$ 坐标 $3$，$y$ 坐标 $-9a + 2b$。$\\fbox{A}=3, \\fbox{B}=9, \\fbox{C}=2$。"},
+          {"title": "(2) $a > 0$ 时", "content": "$a > 0$ 开口向上。顶点 $x=3 \\in [1,4]$ 是最小点。最大值在距轴最远的端点：$|1-3|=2 > |4-3|=1$，故 $x=1$ 处最大。$\\fbox{D}=3, \\fbox{E}=1$。\n\n最小 $-9a + 2b = -2$（*）；最大 $f(1) = -5a + 2b = 6$（**）。\n\n(**)-(*)：$4a = 8 \\Rightarrow a = 2$，代入得 $b = 8$。$\\fbox{F}=2, \\fbox{G}=8$。"},
+          {"title": "(3) $a < 0$ 时", "content": "开口向下，顶点最大、端点 $x=1$ 最小。$\\fbox{H}=3, \\fbox{I}=1$。\n\n$-9a + 2b = 6$，$-5a + 2b = -2$。相减 $-4a = 8 \\Rightarrow a = -2$，$b = -6$。$\\fbox{JK}=-2, \\fbox{LM}=-6$。"},
+          {"title": "(4) 对称与平移", "content": "$f = 2x^2 - 12x + 16$，$g = -2x^2 + 12x - 12$。\n\n关于 $x$ 轴对称 $f$：$-f = -2x^2 + 12x - 16$。再沿 $y$ 移 $N$：$-2x^2 + 12x - 16 + N = g$，故 $N = 4$。$\\fbox{N}=4$。"}
+        ],
+        "finalAnswer": "A=3, BC=92, D=1, E=3, F=2, G=8, H=3, I=1, JK=-2, LM=-6, N=4"
+      }
+    },
+    {
+      "id": "c2-I-2",
+      "number": "I-2",
+      "topic": "九张卡片同时抽三张的概率",
+      "topicTag": "概率",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "袋中 $9$ 张：白 $2$（$1,2$）、红 $3$（$3,4,5$）、蓝 $4$（$6,7,8,9$）。同时抽 $3$ 张。\n\n(1) 同色 $\\fbox{O}/\\fbox{PQ}$；异色 $\\fbox{R}/\\fbox{S}$。\n(2) 数字和 $=10$：$\\fbox{T}/\\fbox{UV}$。\n(3) 含至少 $2$ 色且至少 $1$ 偶：$\\fbox{WX}/\\fbox{YZ}$。",
+      "solution": {
+        "translation": "总数 $\\binom{9}{3}=84$；(3) 用补集法。",
+        "analysis": "互补：'非至少2色'='全同色'，'非至少1偶'='全奇'。",
+        "steps": [
+          {"title": "(1)", "content": "总数 $\\binom{9}{3} = 84$。\n\n同色：白凑不齐 $3$；红 $\\binom{3}{3}=1$；蓝 $\\binom{4}{3}=4$。共 $5$。概率 $5/84$（$\\fbox{OPQ}=584$）。\n\n异色（白红蓝各1）：$2\\cdot 3\\cdot 4 = 24$。概率 $24/84 = 2/7$（$\\fbox{RS}=27$）。"},
+          {"title": "(2)", "content": "枚举 $a<b<c, a+b+c=10$ 的组：$(1,2,7),(1,3,6),(1,4,5),(2,3,5)$，共 $4$ 组。概率 $4/84 = 1/21$。$\\fbox{TUV}=121$。"},
+          {"title": "(3)", "content": "$X=$同色($5$)，$Y=$全奇（奇数 $1,3,5,7,9$ 共 $5$）：$\\binom{5}{3}=10$。\n\n$X\\cap Y=$同色且全奇：白奇 $\\{1\\}$、红奇 $\\{3,5\\}$、蓝奇 $\\{7,9\\}$ 都不够 $3$ 张。$|X\\cap Y|=0$。\n\n$|X\\cup Y|=5+10=15$。所求 $=84-15=69$。概率 $=69/84 = 23/28$。$\\fbox{WXYZ}=2328$。"}
+        ],
+        "finalAnswer": "OPQ=584, RS=27, TUV=121, WXYZ=2328"
+      }
+    },
+    {
+      "id": "c2-II-1",
+      "number": "II-1",
+      "topic": "四面体上垂直条件的空间向量",
+      "topicTag": "空间向量",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "四面体 $OABC$，$OA=3, OB=OC=2$，$\\angle AOB = \\angle AOC = \\pi/2$，$\\angle BOC = \\pi/3$。$D\\in AB$，$AD:DB=s:(1-s)$；$E\\in OC$，$OE:EC=t:(1-t)$。条件 $DE\\perp AB, DE\\perp OC$。\n\n(1) $\\vec{DE} = \\fbox{A}$。$\\fbox{B} = 0$，$s = \\fbox{C}t$，$s = \\fbox{D}/\\fbox{E}, t = \\fbox{F}/\\fbox{G}$。\n(2) $DE = \\fbox{H}/\\fbox{I}$，$OD = (\\fbox{J}/\\fbox{K})\\sqrt{\\fbox{L}}$，$\\cos\\angle DOE = \\sqrt{\\fbox{M}}/\\fbox{M}$。\n\n选项 A, B：⓪ $s\\vec a+(1-s)\\vec b-t\\vec c$ ① $-s\\vec a-(1-s)\\vec b+t\\vec c$ ② $(s-1)\\vec a+s\\vec b-t\\vec c$ ③ $(s-1)\\vec a-s\\vec b+t\\vec c$ ④ $(1-s)\\vec a+s\\vec b-t\\vec c$ ⑤ $5s-2t-9$ ⑥ $5s+2t-9$ ⑦ $13s+2t-9$ ⑧ $13s-2t-9$ ⑨ $13s-2t+9$",
+      "solution": {
+        "translation": "由角度求内积；用 $DE\\cdot AB=0, DE\\cdot OC=0$。",
+        "analysis": "$\\vec a\\cdot\\vec b = \\vec a\\cdot\\vec c = 0$，$\\vec b\\cdot\\vec c = 2$。",
+        "steps": [
+          {"title": "$\\vec{DE}$", "content": "$\\vec{OD} = (1-s)\\vec a + s\\vec b$，$\\vec{OE} = t\\vec c$。\n$\\vec{DE} = (s-1)\\vec a - s\\vec b + t\\vec c$，选项 ③。$\\fbox{A}=3$。"},
+          {"title": "垂直条件", "content": "$\\vec{DE}\\cdot\\vec{AB} = -9(s-1) - 4s + 2t = -13s + 2t + 9 = 0$，即 $13s - 2t - 9 = 0$。$\\fbox{B}=⑧=8$。\n\n$\\vec{DE}\\cdot\\vec{OC} = -2s + 4t = 0 \\Rightarrow s = 2t$。$\\fbox{C}=2$。\n\n联立：$13(2t) - 2t = 9 \\Rightarrow 24t = 9 \\Rightarrow t = 3/8, s = 3/4$。$\\fbox{DE}=34, \\fbox{FG}=38$。"},
+          {"title": "(2)", "content": "$\\vec{DE} = -\\vec a/4 - 3\\vec b/4 + 3\\vec c/8$。$|\\vec{DE}|^2 = 9/16 + 36/16 + 36/64 - 18/16 \\cdot 1 = 36/16 = 9/4$，$|\\vec{DE}| = 3/2$。$\\fbox{HI}=32$。\n\n$\\vec{OD} = \\vec a/4 + 3\\vec b/4$，$|\\vec{OD}|^2 = 9/16 + 36/16 = 45/16$，$|\\vec{OD}| = 3\\sqrt 5/4$。$\\fbox{JKL}=345$。\n\n$\\vec{OD}\\cdot\\vec{OE} = (9/32)(\\vec b\\cdot\\vec c) = 9/16$。$|\\vec{OE}| = 3/4$。\n\n$\\cos\\angle DOE = (9/16)/[(3\\sqrt 5/4)(3/4)] = 1/\\sqrt 5 = \\sqrt 5/5$。$\\fbox{M}=5$。"}
+        ],
+        "finalAnswer": "A=3, B=8, C=2, DE=34, FG=38, HI=32, JKL=345, M=5"
+      }
+    },
+    {
+      "id": "c2-II-2",
+      "number": "II-2",
+      "topic": "复数平面旋转与垂直直线",
+      "topicTag": "复数",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "$A(ai), B((a+2)i)$，$C$ = $B$ 绕 $A$ 转 $-\\pi/3$，$D$ = $A$ 绕 $C$ 转 $\\pi/2$。\n\n(1) $\\gamma = \\sqrt{\\fbox{N}}+(a+\\fbox{O})i$，$\\delta = 1+\\sqrt{\\fbox{P}}+(a+\\fbox{Q}-\\sqrt{\\fbox{R}})i$。$|\\gamma-\\delta|=\\fbox{S}$，$\\arg = \\fbox{T}\\pi/\\fbox{U}$。\n(2) $AD\\perp OC$：$w+\\bar w = \\fbox{V}$，$a = \\fbox{W}+\\fbox{X}\\sqrt{\\fbox{Y}}$。",
+      "solution": {
+        "translation": "旋转 $z$ 绕 $z_0$ 角 $\\theta$ 得 $z_0+(z-z_0)e^{i\\theta}$。",
+        "analysis": "$AD\\perp OC \\Leftrightarrow w=(D-A)/(C-O)$ 纯虚。",
+        "steps": [
+          {"title": "(1)", "content": "$B-A=2i$，$e^{-i\\pi/3}=1/2-\\sqrt 3 i/2$。$(B-A)e^{-i\\pi/3} = 2i(1/2-\\sqrt 3 i/2) = i+\\sqrt 3$。\n$\\gamma = ai + \\sqrt 3+i = \\sqrt 3+(a+1)i$。$\\fbox{NO}=31$。\n\n$A-C = -(\\sqrt 3+i)$，乘 $e^{i\\pi/2}=i$：$-(\\sqrt 3+i)i = 1-\\sqrt 3 i$。\n$\\delta = \\sqrt 3+(a+1)i+1-\\sqrt 3 i = (1+\\sqrt 3)+(a+1-\\sqrt 3)i$。$\\fbox{PQR}=313$。\n\n$\\gamma-\\delta = -1+\\sqrt 3 i$。$|\\cdot|=2$（$\\fbox{S}=2$），$\\arg=2\\pi/3$（$\\fbox{TU}=23$）。"},
+          {"title": "(2)", "content": "$w=(\\delta-ai)/\\gamma$ 纯虚 $\\Leftrightarrow w+\\bar w=0$（$\\fbox{V}=0$）。\n\n$\\delta-ai = (1+\\sqrt 3)+(1-\\sqrt 3)i$。\n\n分子 $\\cdot\\bar\\gamma$ 的实部 $= \\sqrt 3+3+(a+1)(1-\\sqrt 3)=0$\n$\\Rightarrow a+1 = (\\sqrt 3+3)/(\\sqrt 3-1) = (3+\\sqrt 3)(\\sqrt 3+1)/2 = (6+4\\sqrt 3)/2 = 3+2\\sqrt 3$。\n\n$a = 2+2\\sqrt 3$。$\\fbox{WXY}=223$。"}
+        ],
+        "finalAnswer": "NO=31, PQR=313, S=2, TU=23, V=0, WXY=223"
+      }
+    },
+    {
+      "id": "c2-III-1",
+      "number": "III",
+      "topic": "对数函数的极值方程",
+      "topicTag": "对数·微分",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "$f(x) = 2(\\log_3 3x)^3 + a(\\log_3 9x)^2 + b\\log_{1/3} x + \\log_{1/3} 27$。$x=1/9$ 极大，$x=k$ 极小 $-20$。\n\n$t=\\log_3 x$：$f=\\fbox{A}t^3+(a+\\fbox{B})t^2+(\\fbox{C}a-b+\\fbox{D})t+\\fbox{E}a-\\fbox{F}$。$g'(t)=\\fbox{G}t^2+\\fbox{H}(a+\\fbox{B})t+\\fbox{C}a-b+\\fbox{D}$。\n\n极大 $t=\\fbox{IJ}$，$b=\\fbox{K}$。$g'(t)=\\fbox{L}(\\fbox{M}t+a)(t+\\fbox{N})$。\n\n$p=\\log_3 k$，$a=-\\fbox{M}p$，代 $g(p)=-20$：$p^3+\\fbox{O}p^2+\\fbox{PQ}p-\\fbox{RS}=(p-\\fbox{T})(p^2+\\fbox{U}p+\\fbox{VW})=0$。$p=\\fbox{T}$，$a=-\\fbox{X}, k=\\fbox{Y}$。",
+      "solution": {
+        "translation": "$\\log_{1/3}=-\\log_3$；$\\log_3 3x=1+t$，$\\log_3 9x=2+t$。",
+        "analysis": "用 $b$ 由极大消去；$g'$ 因式分解。",
+        "steps": [
+          {"title": "化简", "content": "$f = 2(1+t)^3+a(2+t)^2-bt-3 = 2t^3+(a+6)t^2+(4a-b+6)t+(4a-1)$。$\\fbox{ABCDEF}=264641$。"},
+          {"title": "$g'$ 与 $b$", "content": "$g'(t) = 6t^2 + 2(a+6)t + (4a-b+6)$，$\\fbox{GH}=62$。$t=-2$：$24-4(a+6)+4a-b+6=6-b=0 \\Rightarrow b=6$。$\\fbox{IJ}=-2, \\fbox{K}=6$。\n\n$g'(t)=2(3t+a)(t+2)$。$\\fbox{LMN}=232$。"},
+          {"title": "$a, k$", "content": "$p=-a/3 \\Rightarrow a=-3p$。$g(p) = -p^3-6p^2-12p-1 = -20 \\Rightarrow p^3+6p^2+12p-19=0$。$\\fbox{OPQRS}=61219$。\n\n试 $p=1$ 是根。除得 $(p-1)(p^2+7p+19)$。$\\fbox{TUVW}=1719$。\n\n$p^2+7p+19$ 判别式 $<0$ 恒正；$p=1$。$a=-3$（$\\fbox{X}=3$），$k=3$（$\\fbox{Y}=3$）。"}
+        ],
+        "finalAnswer": "ABCDEF=264641, GH=62, IJ=-2, K=6, LMN=232, OPQRS=61219, TUVW=1719, X=3, Y=3"
+      }
+    },
+    {
+      "id": "c2-IV-1",
+      "number": "IV",
+      "topic": "正弦与正切曲线公共点与面积",
+      "topicTag": "三角·积分",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "$a>0$，$f(x)=\\sin 2x$，$g(x)=a\\tan x$，$0\\le x<\\pi/2$。\n\n(1) 原点外公共点：$\\cos x=\\sqrt{\\fbox{A}a}/\\fbox{B}$，存在范围 $\\fbox{C}<a<\\fbox{D}$。\n(2) 此 $a$ 下公共点 $t$；$P$ 处切线直交：$f'(t)g'(t)=\\fbox{EF}$，$a=\\fbox{G}/\\fbox{H}$，$f'(t)=\\fbox{IJ}/\\fbox{K}$，$g'(t)=\\fbox{L}$。\n(3) 此 $a$ 下围成面积 $S=(\\fbox{M}/\\fbox{N})(\\fbox{O}+\\fbox{P}\\log(\\fbox{Q}/\\fbox{R}))$。",
+      "solution": {
+        "translation": "公共点用 $f=g$ 化简；直交斜率乘 $=-1$。",
+        "analysis": "$\\cos^2 t = a/2$ 是关键。",
+        "steps": [
+          {"title": "(1)", "content": "$2\\sin x\\cos x = a\\sin x/\\cos x$。除 $\\sin x$ 并乘 $\\cos x$：$2\\cos^2 x = a$。$\\cos x = \\sqrt{2a}/2$。$\\fbox{AB}=22$。\n\n$0<\\cos x<1$ 给 $0<a<2$。$\\fbox{CD}=02$。"},
+          {"title": "(2)", "content": "$f'(x)=2\\cos 2x, g'(x)=a/\\cos^2 x$。$\\cos 2t = a-1$。\n\n$f'g' = 2(a-1)\\cdot a/(a/2) = 4(a-1) = -1 \\Rightarrow a = 3/4$。$\\fbox{EF}=-1, \\fbox{GH}=34$。\n\n$f'(t) = -1/2$（$\\fbox{IJK}=-12$），$g'(t) = (3/4)/(3/8) = 2$（$\\fbox{L}=2$）。"},
+          {"title": "(3) 面积", "content": "$\\cos 2t = -1/4, \\cos t = \\sqrt{3/8}$。\n\n$S = \\int_0^t(\\sin 2x - (3/4)\\tan x)dx = [-\\cos 2x/2 + (3/4)\\ln\\cos x]_0^t$\n$= 1/8 + (3/8)\\ln(3/8) + 1/2 = (1/8)(5 + 3\\ln(3/8))$。\n\n$\\fbox{MNOPQR}=185338$。"}
+        ],
+        "finalAnswer": "AB=22, CD=02, EF=-1, GH=34, IJK=-12, L=2, MNOPQR=185338"
+      }
+    }
+  ]
+}
