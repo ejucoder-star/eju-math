@@ -33,6 +33,7 @@ const getArg = (flag, def) => {
 const DATA_DIR = path.resolve(getArg("--data", "./data"));
 const OUT_FILE = path.resolve(getArg("--out", "./dist/eju-math.jsx"));
 const TEMPLATE_FILE = path.resolve(getArg("--template", "./template/app-template.jsx"));
+const TOPIC_GROUPS_FILE = path.resolve(getArg("--topic-groups", "./template/topicGroups.js"));
 
 console.log(`📂 数据目录: ${DATA_DIR}`);
 console.log(`📄 模板文件: ${TEMPLATE_FILE}`);
@@ -47,9 +48,15 @@ if (!fs.existsSync(DATA_DIR)) {
   process.exit(1);
 }
 
-const jsonFiles = fs.readdirSync(DATA_DIR).filter(f => f.endsWith(".json")).sort();
+const allFiles = fs.readdirSync(DATA_DIR);
+const jsonFiles = allFiles.filter(f => f.endsWith(".json")).sort();
+const skippedFiles = allFiles.filter(f => !f.endsWith(".json") && !f.startsWith("."));
 console.log(`📑 发现 ${jsonFiles.length} 个 JSON 文件:`);
 jsonFiles.forEach(f => console.log(`   - ${f}`));
+if (skippedFiles.length > 0) {
+  console.log(`\n⚠️  跳过了 ${skippedFiles.length} 个非 JSON 文件（检查命名是否有错）:`);
+  skippedFiles.forEach(f => console.log(`   - ${f}`));
+}
 console.log("");
 
 // ============================================================
@@ -199,6 +206,15 @@ const outDir = path.dirname(OUT_FILE);
 if (!fs.existsSync(outDir)) fs.mkdirSync(outDir, { recursive: true });
 
 fs.writeFileSync(OUT_FILE, output, "utf8");
+
+// 同时把 topicGroups.js 拷贝到 dist/，让 eju-math.jsx 里的 import "./topicGroups.js" 能解析
+if (fs.existsSync(TOPIC_GROUPS_FILE)) {
+  const topicGroupsOut = path.join(outDir, "topicGroups.js");
+  fs.copyFileSync(TOPIC_GROUPS_FILE, topicGroupsOut);
+  console.log(`📋 复制 topicGroups.js → ${topicGroupsOut}`);
+} else {
+  console.warn(`⚠️  未找到 topicGroups.js: ${TOPIC_GROUPS_FILE}`);
+}
 
 const sizeKB = (Buffer.byteLength(output, "utf8") / 1024).toFixed(1);
 console.log(`\n✨ 构建完成: ${OUT_FILE} (${sizeKB} KB)`);
