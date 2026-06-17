@@ -196,12 +196,14 @@ const GlobalCSS = () => (
     .katex { font-size: 1.05em !important; }
     button { font-family: inherit; }
     a { text-decoration: none; color: inherit; }
-    .sidebar-link { display: flex; align-items: center; gap: 10px; padding: 9px 14px; border-radius: 8px; font-size: 13.5px; color: #57534e; cursor: pointer; }
+    .sidebar-link { display: flex; align-items: center; gap: 10px; padding: 9px 14px; border-radius: 8px; font-size: 13.5px; color: #57534e; cursor: pointer; min-width: 0; }
     .sidebar-link:hover { background: #f5f5f4; color: #1c1917; }
     .sidebar-link.active { background: #1c1917; color: #fff; font-weight: 600; }
-    .sidebar-sub { display: flex; align-items: center; gap: 8px; padding: 6px 14px 6px 36px; border-radius: 6px; font-size: 12.5px; color: #78716c; cursor: pointer; }
+    .sidebar-link > span:first-of-type { flex: 1; min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .sidebar-sub { display: flex; align-items: center; gap: 8px; padding: 6px 14px 6px 36px; border-radius: 6px; font-size: 12.5px; color: #78716c; cursor: pointer; min-width: 0; }
     .sidebar-sub:hover { background: #f5f5f4; color: #1c1917; }
     .sidebar-sub.active { background: #f5f5f4; color: #1c1917; font-weight: 600; }
+    .sidebar-sub > span:first-of-type { flex: 1; min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
     .topic-chip { display: inline-flex; align-items: center; gap: 6px; padding: 4px 10px; border-radius: 99px; background: #f5f5f4; color: #57534e; font-size: 11.5px; font-weight: 600; border: 1px solid #e7e5e4; cursor: pointer; }
     .topic-chip:hover { background: #1c1917; color: #fff; }
     @media (max-width: 768px) {
@@ -376,14 +378,11 @@ const QuestionCard = ({ question, courseId, examId, qIdx, autoOpen = false, show
         </Link>
       </div>
       <div style={{ padding: "18px 20px" }}>
-        {question.questionImage ? (
+        <MathText style={{ fontSize: "14.5px", lineHeight: "2", color: "#1c1917" }}>{question.question}</MathText>
+        {question.questionDiagramSvg && <SvgDiagram svg={question.questionDiagramSvg} />}
+        {question.questionImage && (
           <img src={question.questionImage} alt={question.topic}
-            style={{ width: "100%", height: "auto", display: "block", borderRadius: "6px", border: "1px solid #e7e5e4" }} />
-        ) : (
-          <>
-            <MathText style={{ fontSize: "14.5px", lineHeight: "2", color: "#1c1917" }}>{question.question}</MathText>
-            {question.questionDiagramSvg && <SvgDiagram svg={question.questionDiagramSvg} />}
-          </>
+            style={{ width: "100%", height: "auto", display: "block", borderRadius: "6px", border: "1px solid #e7e5e4", marginTop: "14px" }} />
         )}
         {isChoice && (
           <OptionsList
@@ -474,16 +473,16 @@ const Sidebar = ({ open, onClose }) => {
         </div>
         {courses.map(c => (
           <div key={c.id}>
-            <div onClick={() => toggleYear(c.id)} className="sidebar-link">
+            <div onClick={() => toggleYear(c.id)} className="sidebar-link" title={c.name}>
               <IconCal />
-              <span style={{ flex: 1 }}>{c.name}</span>
-              <span style={{ fontSize: "11px", color: "#a8a29e" }}>{Object.keys(c.exams).length}</span>
+              <span>{c.name}</span>
+              <span style={{ fontSize: "11px", color: "#a8a29e", flexShrink: 0 }}>{Object.keys(c.exams).length}</span>
             </div>
             {yearOpen[c.id] && Object.values(c.exams).map(exam => (
-              <NavLink key={exam.id} to={`/exam/${c.id}/${exam.id}`} onClick={onClose}
+              <NavLink key={exam.id} to={`/exam/${c.id}/${exam.id}`} onClick={onClose} title={exam.title}
                 className={({ isActive }) => "sidebar-sub" + (isActive ? " active" : "")}>
-                <span style={{ flex: 1 }}>{exam.title}</span>
-                <span style={{ fontSize: "10.5px", color: "#a8a29e" }}>{exam.questions.length} 题</span>
+                <span>{exam.title}</span>
+                <span style={{ fontSize: "10.5px", color: "#a8a29e", flexShrink: 0 }}>{exam.questions.length} 题</span>
               </NavLink>
             ))}
           </div>
@@ -500,16 +499,16 @@ const Sidebar = ({ open, onClose }) => {
           if (groupArr.length === 0) return null;
           return (
             <div key={subj}>
-              <div onClick={() => toggleTopicSubj(subj)} className="sidebar-link">
+              <div onClick={() => toggleTopicSubj(subj)} className="sidebar-link" title={subjLabel}>
                 <IconTarget />
-                <span style={{ flex: 1 }}>{subjLabel}</span>
-                <span style={{ fontSize: "11px", color: "#a8a29e" }}>{groupArr.length}</span>
+                <span>{subjLabel}</span>
+                <span style={{ fontSize: "11px", color: "#a8a29e", flexShrink: 0 }}>{groupArr.length}</span>
               </div>
               {topicOpen[subj] && groupArr.map(g => (
-                <NavLink key={g.key} to={`/topic/${subj}/${g.key}`} onClick={onClose}
+                <NavLink key={g.key} to={`/topic/${subj}/${g.key}`} onClick={onClose} title={g.label}
                   className={({ isActive }) => "sidebar-sub" + (isActive ? " active" : "")}>
-                  <span style={{ flex: 1 }}>{g.label}</span>
-                  <span style={{ fontSize: "10.5px", color: "#a8a29e" }}>{g.questions.length}</span>
+                  <span>{g.label}</span>
+                  <span style={{ fontSize: "10.5px", color: "#a8a29e", flexShrink: 0 }}>{g.questions.length}</span>
                 </NavLink>
               ))}
             </div>
