@@ -1,0 +1,794 @@
+{
+  "metadata": {
+    "course": "physics",
+    "year": "2023",
+    "session": "1",
+    "courseNameJa": "物理",
+    "courseNameEn": "Physics",
+    "description": "理科综合｜物理",
+    "color": "#16a34a",
+    "examTitle": "令和5年度（2023年度）第1回 物理",
+    "examDate": "2023年6月"
+  },
+  "questions": [
+    {
+      "id": "2023-r1-phys-1",
+      "number": "I-A 问1",
+      "topic": "三根绳吊起的圆盘",
+      "topicTag": "力学·静力平衡",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "质量 $m$ 的均匀薄圆盘的圆周上等间隔有 $3$ 点 A、B、C。如图，把 A、B、C 各系一根不伸不缩的轻绳，从天花板的同一点吊起，圆盘水平静止。圆盘半径 $\\ell$、3 根绳长均为 $2\\ell$，此时每根绳与铅直方向夹角 $30°$。三根绳张力大小相等、设为 $T$。求 $T$。",
+      "options": [
+        { "label": "①", "content": "$\\dfrac{1}{3}mg$" },
+        { "label": "②", "content": "$\\dfrac{2\\sqrt{3}}{9}mg$" },
+        { "label": "③", "content": "$\\dfrac{2}{3}mg$" },
+        { "label": "④", "content": "$\\dfrac{2\\sqrt{3}}{3}mg$" },
+        { "label": "⑤", "content": "$2mg$" }
+      ],
+      "questionImage": "/images/2023_R1_physics/q01.png",
+      "solution": {
+        "translation": "圆盘静止 → 受力平衡。竖直方向上：3 根绳张力的竖直分量之和 = 重力。",
+        "analysis": "$3T\\cos30° = mg$ → $T = \\dfrac{mg}{3\\cos30°} = \\dfrac{2mg}{3\\sqrt{3}} = \\dfrac{2\\sqrt{3}}{9}mg$。",
+        "steps": [
+          {
+            "title": "(1) 竖直方向平衡",
+            "content": "3 根绳张力相等都为 $T$，与铅直方向夹角都为 $30°$，每根绳张力的竖直分量为 $T\\cos30° = \\dfrac{\\sqrt{3}}{2}T$。\n\n竖直方向力平衡：\n\n$$3T\\cos30° = mg$$\n\n$$3T\\cdot\\frac{\\sqrt{3}}{2} = mg$$\n\n$$T = \\frac{2mg}{3\\sqrt{3}} = \\frac{2\\sqrt{3}}{9}mg$$"
+          },
+          {
+            "title": "(2) 水平方向自动平衡",
+            "content": "三根绳的水平分量都为 $T\\sin30° = T/2$，分别指向圆盘中心三个等分方向（互成 $120°$）。这三个向量之和为 $0$，水平方向自动平衡，无需额外条件。",
+            "why": "为什么不用算水平方向？答：三个对称分布的等大水平分量必然合成为零，所以只需用竖直方向方程就能解出 $T$。"
+          }
+        ],
+        "finalAnswer": "② $T = \\dfrac{2\\sqrt{3}}{9}mg$",
+        "correctOption": "②"
+      }
+    },
+    {
+      "id": "2023-r1-phys-2",
+      "number": "I-B 问2",
+      "topic": "桌上物 + 滑轮挂物的张力比",
+      "topicTag": "力学·牛顿运动定律",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "如图，质量 $m$ 的物体水平放在光滑桌面上、用手固定。物体接一根不伸不缩的轻绳，绳经桌缘光滑滑轮、另一端挂质量 $M$ 的重物。物体到滑轮的绳水平。此时绳张力 $T_0$。然后静静地放开物体，物体在桌面向右运动、重物向下运动；运动期间绳张力 $T_1$。桌固定不动。求 $\\dfrac{T_1}{T_0}$。",
+      "options": [
+        { "label": "①", "content": "$\\dfrac{m}{M}$" },
+        { "label": "②", "content": "$\\dfrac{M}{m}$" },
+        { "label": "③", "content": "$1+\\dfrac{m}{M}$" },
+        { "label": "④", "content": "$1+\\dfrac{M}{m}$" },
+        { "label": "⑤", "content": "$\\dfrac{m}{m+M}$" },
+        { "label": "⑥", "content": "$\\dfrac{M}{m+M}$" }
+      ],
+      "questionImage": "/images/2023_R1_physics/q02.png",
+      "solution": {
+        "translation": "静止时 $T_0 = Mg$（仅支撑重物）。运动时用牛顿第二定律对两物体写方程，解出 $T_1$ 和加速度。",
+        "analysis": "$T_0 = Mg$。运动时：$Mg - T_1 = Ma$，$T_1 = ma$ → $a = \\dfrac{Mg}{m+M}$，$T_1 = \\dfrac{mMg}{m+M}$。",
+        "steps": [
+          {
+            "title": "(1) 静止时（物体被手固定）",
+            "content": "重物 $M$ 静止 → 绳张力 = 重物重力：\n\n$$T_0 = Mg$$"
+          },
+          {
+            "title": "(2) 放开后（系统运动）",
+            "content": "设加速度为 $a$（物体向右、重物向下）。\n\n对重物 $M$（竖直）：$Mg - T_1 = Ma$\n对物体 $m$（水平）：$T_1 = ma$\n\n两式联立得：\n\n$$a = \\frac{M}{m+M}g,\\quad T_1 = ma = \\frac{mM}{m+M}g$$"
+          },
+          {
+            "title": "(3) 比值",
+            "content": "$$\\frac{T_1}{T_0} = \\frac{mMg/(m+M)}{Mg} = \\frac{m}{m+M}$$",
+            "why": "为什么张力变小？答：放开瞬间重物开始下落、不再完全由绳支撑，所以绳所受拉力小于 $Mg$。$T_1 < T_0$ 的物理意义就是「重物有一部分重力变成了加速度」。"
+          }
+        ],
+        "finalAnswer": "⑤ $T_1/T_0 = m/(m+M)$",
+        "correctOption": "⑤"
+      }
+    },
+    {
+      "id": "2023-r1-phys-3",
+      "number": "I-C 问3",
+      "topic": "斜上方拉力下动摩擦力做的功",
+      "topicTag": "力学·摩擦·功",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "如图，质量 $m$ 的小物体系一根不伸不缩的轻绳，放在粗糙水平地面上。绳与水平面保持 $30°$，用外力 $F$ 拉绳，小物体不离开地面、移动距离 $\\ell$。此时动摩擦力对小物体做的功为 $W$。小物体与地面间动摩擦因数为 $\\mu'$。求 $W$。",
+      "options": [
+        { "label": "①", "content": "$\\mu'\\ell\\left(mg-\\dfrac{1}{2}F\\right)$" },
+        { "label": "②", "content": "$\\mu'\\ell\\left(mg-\\dfrac{\\sqrt{3}}{2}F\\right)$" },
+        { "label": "③", "content": "$-\\mu'\\ell\\left(mg-\\dfrac{1}{2}F\\right)$" },
+        { "label": "④", "content": "$-\\mu'\\ell\\left(mg-\\dfrac{\\sqrt{3}}{2}F\\right)$" }
+      ],
+      "questionImage": "/images/2023_R1_physics/q03.png",
+      "solution": {
+        "translation": "动摩擦力 = $\\mu' N$，与运动方向相反。$N$ 由竖直方向力平衡求出：$F$ 的竖直分量 $F\\sin30°$ 向上抵消部分重力。功为负（与位移反向）。",
+        "analysis": "$N = mg - F\\sin30° = mg - F/2$。摩擦 $f = \\mu'(mg - F/2)$，反向。$W = -f\\ell = -\\mu'\\ell(mg - F/2)$。",
+        "steps": [
+          {
+            "title": "(1) 求正向支持力 N",
+            "content": "$F$ 与水平面成 $30°$，所以竖直分量 $F\\sin30° = F/2$ 向上、水平分量 $F\\cos30° = \\sqrt{3}F/2$ 向前。\n\n竖直方向：$N + F\\sin30° = mg$（重力向下、支持力 + $F$ 竖直分量向上）\n\n$$N = mg - \\frac{F}{2}$$"
+          },
+          {
+            "title": "(2) 摩擦力大小与方向",
+            "content": "动摩擦力大小：$f = \\mu' N = \\mu'\\left(mg - \\dfrac{F}{2}\\right)$。\n\n方向与运动方向相反（动摩擦力总是反向）。"
+          },
+          {
+            "title": "(3) 摩擦力做的功",
+            "content": "功 = 力 $\\cdot$ 位移 $\\cdot \\cos\\theta$，其中 $\\theta = 180°$（反向），所以 $\\cos\\theta = -1$：\n\n$$W = -f\\cdot\\ell = -\\mu'\\ell\\left(mg - \\frac{F}{2}\\right)$$",
+            "why": "为什么用 $\\sin30°$ 而不是 $\\cos30°$？答：$F$ 与「水平面」成 $30°$ 角，所以竖直分量是 $F\\sin30°$，水平分量是 $F\\cos30°$。要算支持力 $N$ 用竖直方向平衡，所以用 $\\sin30°$。"
+          }
+        ],
+        "finalAnswer": "③ $W = -\\mu'\\ell(mg - F/2)$",
+        "correctOption": "③"
+      }
+    },
+    {
+      "id": "2023-r1-phys-4",
+      "number": "I-D 问4",
+      "topic": "弹性碰撞 + 平抛落地速度",
+      "topicTag": "力学·动量·平抛",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "如图，水平地面上固定一光滑桌面、台与天花板距离 $\\ell$、台面距地面高 $3\\ell/2$。光滑台面上放质量 $m$ 的小物体 A。长 $\\ell$ 的不伸不缩轻绳一端系质量 $m$ 的小物体 B、另一端固定在 A 正上方的天花板。把 B 提到「绳与铅直方向夹角 $60°$」位置（绳不松弛）后静静放开，B 摆下与 A 发生**弹性碰撞**，A 直行从台面飞出。求 A 落地前瞬间的速度 $v$。",
+      "options": [
+        { "label": "①", "content": "$\\sqrt{g\\ell}$" },
+        { "label": "②", "content": "$\\sqrt{2g\\ell}$" },
+        { "label": "③", "content": "$\\sqrt{3g\\ell}$" },
+        { "label": "④", "content": "$2\\sqrt{g\\ell}$" },
+        { "label": "⑤", "content": "$\\sqrt{5g\\ell}$" }
+      ],
+      "questionImage": "/images/2023_R1_physics/q04.png",
+      "solution": {
+        "translation": "B 摆到最低点的速度 → 弹性碰撞（等质量交换速度）→ A 获得水平速度 → 平抛运动落地。",
+        "analysis": "B 下降高度 $h = \\ell(1-\\cos60°) = \\ell/2$，速度 $v_B = \\sqrt{g\\ell}$。等质量弹性碰撞 → A 速度 = $\\sqrt{g\\ell}$，B 停。A 平抛 $3\\ell/2$，落地速度合成。",
+        "steps": [
+          {
+            "title": "(1) B 摆到最低点的速度",
+            "content": "B 从 $60°$ 角位置释放，下降高度 $h = \\ell - \\ell\\cos60° = \\ell - \\ell/2 = \\ell/2$。\n\n机械能守恒：$\\frac{1}{2}mv_B^2 = mg\\cdot\\frac{\\ell}{2}$\n\n$$v_B = \\sqrt{g\\ell}$$"
+          },
+          {
+            "title": "(2) 弹性碰撞（等质量）",
+            "content": "A 静止，B 以 $v_B$ 碰 A。等质量弹性碰撞：**速度互换**。\n\nA 碰后速度 $= v_B = \\sqrt{g\\ell}$（水平方向）\nB 碰后停止。"
+          },
+          {
+            "title": "(3) A 的平抛运动",
+            "content": "A 从台面（距地 $3\\ell/2$）以 $\\sqrt{g\\ell}$ 水平飞出。\n\n下落时间：$\\dfrac{3\\ell}{2} = \\dfrac{1}{2}gt^2$ → $t = \\sqrt{3\\ell/g}$\n\n落地时竖直分速度：$v_y = gt = \\sqrt{3g\\ell}$\n\n落地时水平分速度：$v_x = \\sqrt{g\\ell}$\n\n合成：\n\n$$v = \\sqrt{v_x^2 + v_y^2} = \\sqrt{g\\ell + 3g\\ell} = \\sqrt{4g\\ell} = 2\\sqrt{g\\ell}$$",
+            "why": "为什么等质量弹性碰撞速度互换？答：动量守恒 $mv_B = mv_A'+mv_B'$ 与动能守恒 $\\frac{1}{2}mv_B^2 = \\frac{1}{2}mv_A'^2 + \\frac{1}{2}mv_B'^2$ 联立，唯一解（除平凡解）是 $v_A' = v_B,v_B' = 0$。"
+          }
+        ],
+        "finalAnswer": "④ $v = 2\\sqrt{g\\ell}$",
+        "correctOption": "④"
+      }
+    },
+    {
+      "id": "2023-r1-phys-5",
+      "number": "I-E 问5",
+      "topic": "圆锥摆的周期",
+      "topicTag": "力学·圆周运动",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "如图，长 $5L$ 的不伸不缩轻绳一端系重物、另一端固定在天花板上点 C。在水平面内，使重物做半径 $3L$ 的等速圆周运动。圆运动中心 O 在 C 的正下方。该等速圆周运动的周期为 $T$。求 $T$。",
+      "options": [
+        { "label": "①", "content": "$2\\pi\\sqrt{L/g}$" },
+        { "label": "②", "content": "$2\\pi\\sqrt{2L/g}$" },
+        { "label": "③", "content": "$2\\pi\\sqrt{3L/g}$" },
+        { "label": "④", "content": "$4\\pi\\sqrt{L/g}$" },
+        { "label": "⑤", "content": "$2\\pi\\sqrt{5L/g}$" }
+      ],
+      "questionImage": "/images/2023_R1_physics/q05.png",
+      "solution": {
+        "translation": "圆锥摆周期 $T = 2\\pi\\sqrt{h/g}$，其中 $h$ 是支点到水平圆面的竖直距离。",
+        "analysis": "$h = \\sqrt{(5L)^2 - (3L)^2} = 4L$。$T = 2\\pi\\sqrt{4L/g} = 4\\pi\\sqrt{L/g}$。",
+        "steps": [
+          {
+            "title": "(1) 求竖直高度 h",
+            "content": "C 在天花板，O 在 C 的正下方。绳长 $5L$（斜边），圆半径 $3L$（水平直角边），所以竖直直角边：\n\n$$h = \\sqrt{(5L)^2 - (3L)^2} = \\sqrt{25L^2 - 9L^2} = \\sqrt{16L^2} = 4L$$"
+          },
+          {
+            "title": "(2) 圆锥摆周期公式",
+            "content": "设绳张力 $T_s$、与铅直夹角 $\\theta$。\n竖直方向：$T_s\\cos\\theta = mg$\n水平方向（向心）：$T_s\\sin\\theta = m\\omega^2 r$\n\n两式相除：$\\tan\\theta = \\dfrac{\\omega^2 r}{g}$，但 $\\tan\\theta = r/h$，故：\n\n$$\\frac{r}{h} = \\frac{\\omega^2 r}{g} \\Rightarrow \\omega^2 = \\frac{g}{h}$$\n\n$$T = \\frac{2\\pi}{\\omega} = 2\\pi\\sqrt{\\frac{h}{g}}$$"
+          },
+          {
+            "title": "(3) 代入 h = 4L",
+            "content": "$$T = 2\\pi\\sqrt{\\frac{4L}{g}} = 4\\pi\\sqrt{\\frac{L}{g}}$$",
+            "why": "为什么圆锥摆的周期只与 $h$ 有关，不显含 $r$？答：因为 $\\tan\\theta = r/h$ 与「向心方程含 $r$」中 $r$ 同时出现，相除时 $r$ 抵消了。物理上，重力的回复作用只跟「下垂高度」有关。"
+          }
+        ],
+        "finalAnswer": "④ $T = 4\\pi\\sqrt{L/g}$",
+        "correctOption": "④"
+      }
+    },
+    {
+      "id": "2023-r1-phys-6",
+      "number": "I-F 问6",
+      "topic": "板上做铅直 SHM 物体的法向力",
+      "topicTag": "力学·简谐振动",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "如图 1，水平板上放小物体，板做铅直方向简谐振动以带动小物体沿铅直线 SHM。以振动中心为高度基准点，小物体高度 $h$ 在最大值 $h_0$（$h_0>0$）和最小值 $-h_0$ 之间不离板振动。图 2 是 $h$ 与时刻 $t$ 的图（周期 $1.2$ s，起点 $0$，先上升）。时刻 $t$ 在 $0.1$ s 到 $1.1$ s 之间，小物体受板的垂直抗力 $N$ 取最小值的时刻为 $t_1$；$N$ 等于小物体重力的时刻为 $t_2$。求 $t_1$、$t_2$。",
+      "options": [
+        { "label": "①", "content": "$t_1=0.3,\\;t_2=0.6$" },
+        { "label": "②", "content": "$t_1=0.3,\\;t_2=0.9$" },
+        { "label": "③", "content": "$t_1=0.6,\\;t_2=0.3$" },
+        { "label": "④", "content": "$t_1=0.6,\\;t_2=0.9$" },
+        { "label": "⑤", "content": "$t_1=0.9,\\;t_2=0.3$" },
+        { "label": "⑥", "content": "$t_1=0.9,\\;t_2=0.6$" }
+      ],
+      "questionImage": "/images/2023_R1_physics/q06.png",
+      "solution": {
+        "translation": "对小物体牛二：$N - mg = ma$，其中 $a = -\\omega^2 h$。所以 $N = m(g - \\omega^2 h)$。$N$ 最小 ↔ $h$ 最大（峰值 $h_0$）；$N = mg$ ↔ $a = 0$ ↔ $h = 0$。",
+        "analysis": "图中 $h$ 峰值在 $t=0.3$ s（$t_1$），$h=0$ 在 $t=0$、$0.6$、$1.2$ s。在 $[0.1, 1.1]$ 范围内 $h=0$ 出现在 $0.6$ s（$t_2$）。",
+        "steps": [
+          {
+            "title": "(1) 法向力公式",
+            "content": "小物体在板上做 SHM，加速度 $a = -\\omega^2 h$（恢复力方向，板向上是 $+$）。\n\n牛顿第二定律（竖直方向，向上 +）：\n\n$$N - mg = ma = -m\\omega^2 h$$\n\n$$N = m(g - \\omega^2 h)$$"
+          },
+          {
+            "title": "(2) N 最小 → h 最大",
+            "content": "$N = m(g - \\omega^2 h)$ 在 $h$ 取最大值 $h_0$ 时最小。\n\n由图 2，$h$ 在 $t = 0.3$ s 取最大值 $h_0$（峰）。\n\n$$t_1 = 0.3\\,\\text{s}$$"
+          },
+          {
+            "title": "(3) N = mg → h = 0",
+            "content": "$N = mg$ 时 $-\\omega^2 h = 0$，所以 $h = 0$。\n\n由图 2，$h = 0$ 时刻为 $t = 0, 0.6, 1.2, \\ldots$\n\n在指定区间 $0.1 \\le t \\le 1.1$ 中，$h = 0$ 对应 $t = 0.6$ s。\n\n$$t_2 = 0.6\\,\\text{s}$$",
+            "why": "为什么 $N$ 最小不在小物体最低点？答：因为 $a$ 总指向中心（$h=0$ 处）。在最高点（$h = +h_0$）时加速度向下（往中心去），物体减速向上 → 这时板给的支持力最小。在最低点（$h = -h_0$）加速度向上 → $N$ 最大。"
+          }
+        ],
+        "finalAnswer": "① $t_1 = 0.3$ s, $t_2 = 0.6$ s",
+        "correctOption": "①"
+      }
+    },
+    {
+      "id": "2023-r1-phys-7",
+      "number": "II-A 问1",
+      "topic": "水 + 冰 + 容器热平衡终温",
+      "topicTag": "热学·比热·潜热",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "热容量 $160$ J/K 的容器中装 $200$ g 水。过足够长时间后，容器与水温度变为 $80°$C。然后向容器中的水中投入 $0°$C 冰 $100$ g。冰的融解热为 $330$ J/g，水的比热 $4.2$ J/(g·K)，与外界无热交换。求最终温度（°C）。",
+      "options": [
+        { "label": "①", "content": "$15$" },
+        { "label": "②", "content": "$19$" },
+        { "label": "③", "content": "$24$" },
+        { "label": "④", "content": "$33$" },
+        { "label": "⑤", "content": "$42$" },
+        { "label": "⑥", "content": "$51$" }
+      ],
+      "solution": {
+        "translation": "水 + 容器放热 = 冰融化 + 融化水升温吸热。设终温 $T$（°C），列热平衡方程。",
+        "analysis": "(200·4.2 + 160)·(80-T) = 100·330 + 100·4.2·T → 1000·(80-T) = 33000 + 420T → T ≈ 33°C。",
+        "steps": [
+          {
+            "title": "(1) 假设冰能全融化（终温 > 0°C）",
+            "content": "先假设最终全部是液态水（即冰能完全融化）。设终温 $T$（°C）。"
+          },
+          {
+            "title": "(2) 水 + 容器放热",
+            "content": "从 $80°$C 降到 $T$：\n\n$Q_\\text{放} = (m_w c_w + C_\\text{容}) \\cdot (80 - T)$\n$= (200 \\times 4.2 + 160)(80 - T)$\n$= (840 + 160)(80 - T) = 1000(80 - T)$ J"
+          },
+          {
+            "title": "(3) 冰吸热（融化 + 升温）",
+            "content": "冰先在 $0°$C 融化、再从 $0$ 升到 $T$：\n\n$Q_\\text{吸} = m_i L + m_i c_w T = 100 \\times 330 + 100 \\times 4.2 \\times T$\n$= 33000 + 420T$ J"
+          },
+          {
+            "title": "(4) 热平衡解 T",
+            "content": "$$1000(80 - T) = 33000 + 420T$$\n$$80000 - 1000T = 33000 + 420T$$\n$$47000 = 1420T$$\n$$T = \\frac{47000}{1420} \\approx 33.1°\\text{C}$$",
+            "why": "为什么要算容器的热容？答：容器从 80°C 降到 33°C 也放出 160 × 47 ≈ 7520 J，这是总放热的 16%。忽略它会导致终温偏低很多。"
+          }
+        ],
+        "finalAnswer": "④ 约 $33°$C",
+        "correctOption": "④"
+      }
+    },
+    {
+      "id": "2023-r1-phys-8",
+      "number": "II-B 问2",
+      "topic": "气缸朝向变化时气柱长（活塞重量考虑）",
+      "topicTag": "热学·理想气体",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "一端封闭的均匀截面圆筒，活塞可光滑移动，封一定量空气。圆筒与活塞均良好传热。改变圆筒方向、过足够长时间后，封闭气柱长 $L$。图 1 水平放置 $L = 15$ cm；图 2 闭端朝下竖直 $L = 10$ cm（活塞重压使气柱缩短）。气体温度不随方向变化、视为理想气体。求图 3（闭端朝上竖直）的 $L$。",
+      "options": [
+        { "label": "①", "content": "$20$" },
+        { "label": "②", "content": "$25$" },
+        { "label": "③", "content": "$30$" },
+        { "label": "④", "content": "$35$" },
+        { "label": "⑤", "content": "$40$" }
+      ],
+      "questionImage": "/images/2023_R1_physics/q08.png",
+      "solution": {
+        "translation": "温度恒定 → $PL = $ 常量（Boyle 定律，恒截面）。图 1 气压 = 大气压 $P_0$，图 2 气压 = $P_0 + p_p$（活塞重压），图 3 气压 = $P_0 - p_p$（活塞悬挂）。",
+        "analysis": "$P_0 \\cdot 15 = (P_0+p_p)\\cdot 10$ → $p_p = P_0/2$。图 3：$P_0 \\cdot 15 = (P_0/2)\\cdot L_3$ → $L_3 = 30$ cm。",
+        "steps": [
+          {
+            "title": "(1) 列三种朝向的气压关系",
+            "content": "设大气压 $P_0$，活塞对气体的「重量贡献压强」$p_p$（重量 / 截面积）。\n\n**图 1（水平）**：气压 $P_1 = P_0$（重力与气柱方向垂直）。$L_1 = 15$ cm。\n**图 2（闭端朝下，活塞在上压气体）**：气压 $P_2 = P_0 + p_p$。$L_2 = 10$ cm。\n**图 3（闭端朝上，活塞在下、气体在上）**：气压 $P_3 = P_0 - p_p$。$L_3 = ?$"
+          },
+          {
+            "title": "(2) 由图 1、图 2 求 p_p",
+            "content": "等温过程 Boyle 定律 $PV = $ 常量，等截面则 $P L = $ 常量：\n\n$$P_1 L_1 = P_2 L_2 \\Rightarrow P_0 \\times 15 = (P_0+p_p)\\times 10$$\n\n$$15 P_0 = 10 P_0 + 10 p_p \\Rightarrow p_p = \\frac{P_0}{2}$$"
+          },
+          {
+            "title": "(3) 由图 1、图 3 求 L₃",
+            "content": "$$P_1 L_1 = P_3 L_3$$\n\n$$P_0 \\times 15 = \\left(P_0 - \\frac{P_0}{2}\\right) L_3 = \\frac{P_0}{2} L_3$$\n\n$$L_3 = 30\\,\\text{cm}$$",
+            "why": "为什么图 3 气压 = $P_0 - p_p$？答：图 3 中气体在上、活塞在下。活塞向下被自身重力拉，气体压力托着活塞、与大气一同支撑它。活塞平衡：$P_3 A + W_p = P_0 A$ → $P_3 = P_0 - W_p/A = P_0 - p_p$。"
+          }
+        ],
+        "finalAnswer": "③ $L_3 = 30$ cm",
+        "correctOption": "③"
+      }
+    },
+    {
+      "id": "2023-r1-phys-9",
+      "number": "II-C 问3",
+      "topic": "三种压缩过程外功比较",
+      "topicTag": "热学·热力学",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "一定量理想气体用可光滑移动的活塞封在圆筒内。最初压力 $p_0$、体积 $V_0$。从此状态开始，对气体进行以下 $3$ 种状态变化：\n\n(a) 绝热压缩到体积 $V_0/2$。\n(b) 等温压缩到体积 $V_0/2$。\n(c) 等压压缩到体积 $V_0/2$。\n\n这 $3$ 种状态变化中，外界对气体做的功为 $W$。求 $W$ 最大、最小分别是哪个。",
+      "options": [
+        { "label": "①", "content": "Wmax=(a), Wmin=(b)" },
+        { "label": "②", "content": "Wmax=(a), Wmin=(c)" },
+        { "label": "③", "content": "Wmax=(b), Wmin=(a)" },
+        { "label": "④", "content": "Wmax=(b), Wmin=(c)" },
+        { "label": "⑤", "content": "Wmax=(c), Wmin=(a)" },
+        { "label": "⑥", "content": "Wmax=(c), Wmin=(b)" }
+      ],
+      "solution": {
+        "translation": "在 PV 图上对比三条曲线从 $V_0$ 到 $V_0/2$ 之间「曲线下面积」。绝热线最陡（pV^γ），等温次之（pV），等压最缓。",
+        "analysis": "(c) 等压：$W_c = p_0 \\cdot V_0/2 = 0.5 p_0 V_0$。\n(b) 等温：$W_b = p_0 V_0 \\ln 2 \\approx 0.69 p_0 V_0$。\n(a) 绝热：$W_a = (p_0V_0/(\\gamma-1))(2^{\\gamma-1}-1) \\approx 0.88 p_0 V_0$（γ=5/3）。\n\n所以 $W$ 最大 = (a)，最小 = (c)。",
+        "steps": [
+          {
+            "title": "(1) 外功 = PV 图曲线下面积（取绝对值）",
+            "content": "压缩时外界对气体做正功。在 PV 图上，外功 = 体积 $V_0$ 到 $V_0/2$ 之间「曲线下面积」的绝对值。\n\n关键：从 $(V_0, p_0)$ 出发，朝 $V_0/2$ 走，**斜率（绝对值）越陡的曲线在小 $V$ 端压力越高，曲线下面积越大**。\n\n- 绝热线 $pV^\\gamma = $ const（$\\gamma > 1$）→ 斜率绝对值最大\n- 等温线 $pV = $ const → 斜率次之\n- 等压线 $p = $ const → 斜率为零（最缓）"
+          },
+          {
+            "title": "(2) 定量验证",
+            "content": "**等压 (c)**：$W_c = p_0(V_0 - V_0/2) = \\dfrac{1}{2}p_0V_0 = 0.5\\,p_0V_0$\n\n**等温 (b)**：$W_b = \\int_{V_0/2}^{V_0} \\dfrac{p_0V_0}{V}\\,dV = p_0V_0 \\ln 2 \\approx 0.69\\,p_0V_0$\n\n**绝热 (a)**（单原子 $\\gamma = 5/3$）：$W_a = \\dfrac{p_0V_0}{\\gamma-1}(2^{\\gamma-1}-1) = \\dfrac{3}{2}p_0V_0(2^{2/3}-1) \\approx 0.88\\,p_0V_0$"
+          },
+          {
+            "title": "(3) 比较",
+            "content": "$W_a > W_b > W_c$\n\n所以 **$W$ 最大 = (a)，$W$ 最小 = (c)**。",
+            "why": "为什么绝热压缩做功最大？答：绝热时没有热量散失，外功全部变成气体内能、温度升高，所以压力升得快（同体积压力高于等温），需要克服的压力大、做的功也多。等压时压力一直最小，做功最少。"
+          }
+        ],
+        "finalAnswer": "② $W$ max = (a), $W$ min = (c)",
+        "correctOption": "②"
+      }
+    },
+    {
+      "id": "2023-r1-phys-10",
+      "number": "III-A 问1",
+      "topic": "纵波密度最高点 / 最低点",
+      "topicTag": "波动·纵波",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "图为沿 $x$ 轴正方向传播的纵波在某时刻媒质位移 $y$（$x$ 轴正向位移为正）与位置 $x$ 的关系图。求图中点 A~G 中媒质密度最高的点和最低的点。",
+      "options": [
+        { "label": "①", "content": "最高 A, C, E, G；最低 B, D, F" },
+        { "label": "②", "content": "最高 B, D, F；最低 A, C, E, G" },
+        { "label": "③", "content": "最高 A, E；最低 C, G" },
+        { "label": "④", "content": "最高 C, G；最低 A, E" },
+        { "label": "⑤", "content": "最高 B, F；最低 D" },
+        { "label": "⑥", "content": "最高 D；最低 B, F" }
+      ],
+      "questionImage": "/images/2023_R1_physics/q10.png",
+      "solution": {
+        "translation": "纵波中，密度变化 $\\propto -dy/dx$。$dy/dx$ 最负处（曲线斜率最负）是「压缩」→ 密度最高；最正处是「稀疏」→ 密度最低。",
+        "analysis": "原位 $x$ 的粒子位移到 $x + y(x)$，相邻粒子新间距 $dx + (dy/dx)\\,dx = dx(1 + dy/dx)$。密度 $\\rho = \\rho_0/(1 + dy/dx)$。所以 $dy/dx$ 越负、密度越高。",
+        "steps": [
+          {
+            "title": "(1) 推导密度公式",
+            "content": "粒子原在位置 $x$，位移后到 $x + y(x)$。相邻两粒子原在 $x$ 与 $x+dx$，位移后到 $x + y(x)$ 与 $x + dx + y(x+dx)$。\n\n新间距 $= dx + y(x+dx) - y(x) \\approx dx(1 + dy/dx)$。\n\n质量守恒：$\\rho_0\\,dx = \\rho\\,dx(1 + dy/dx)$\n\n$$\\rho = \\frac{\\rho_0}{1 + dy/dx}$$\n\n所以 $dy/dx < 0$（最负）→ 密度最高；$dy/dx > 0$（最正）→ 密度最低。"
+          },
+          {
+            "title": "(2) 读图判断各点斜率",
+            "content": "图中曲线（正弦波）从 A 开始向右经过 1.5 个波长：\n\n- **A**：$y=0$ 上升（斜率最正）→ 密度最低\n- **B**：峰（斜率 = 0）\n- **C**：$y=0$ 下降（斜率最负）→ 密度最高\n- **D**：谷（斜率 = 0）\n- **E**：$y=0$ 上升（斜率最正）→ 密度最低\n- **F**：峰（斜率 = 0）\n- **G**：$y=0$ 下降（斜率最负）→ 密度最高"
+          },
+          {
+            "title": "(3) 结论",
+            "content": "密度最高：**C 和 G**\n密度最低：**A 和 E**",
+            "why": "为什么「斜率最负」=「压缩」？答：在斜率最负的零点，左边粒子位移为 +（向右移）、右边粒子位移为 -（向左移），两侧粒子都「挤向中央」→ 压缩、密度高。反之，斜率最正的零点两侧粒子都向外散开→ 稀疏。"
+          }
+        ],
+        "finalAnswer": "④ 最高 C, G；最低 A, E",
+        "correctOption": "④"
+      }
+    },
+    {
+      "id": "2023-r1-phys-11",
+      "number": "III-B 问2",
+      "topic": "由开管共鸣求声速差",
+      "topicTag": "波动·声波·驻波",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "空气中声速随温度升高而变大。如图，把扬声器放在长 $34$ cm 开管管口附近发声。气温 $t_0$ 时，从 $0$ Hz 逐渐升高扬声器频率，$500$ Hz 时首次共鸣。气温 $t_1$（$> t_0$）时同样实验，$520$ Hz 时首次共鸣。气温 $t_0$ 声速 $V_0$，气温 $t_1$ 声速 $V_1$。开口端校正忽略。求 $V_1 - V_0$（m/s）。",
+      "options": [
+        { "label": "①", "content": "$6.8$" },
+        { "label": "②", "content": "$14$" },
+        { "label": "③", "content": "$20$" },
+        { "label": "④", "content": "$27$" }
+      ],
+      "questionImage": "/images/2023_R1_physics/q11.png",
+      "solution": {
+        "translation": "开管两端均为开口端，基频时管长 = 半波长 → $\\lambda = 2L = 0.68$ m。$V = f\\lambda$。",
+        "analysis": "$V_0 = 500 \\times 0.68 = 340$ m/s，$V_1 = 520 \\times 0.68 = 353.6$ m/s。$V_1 - V_0 = 13.6 \\approx 14$ m/s。",
+        "steps": [
+          {
+            "title": "(1) 开管基频波长",
+            "content": "两端开口的开管：两端都是波腹。基频时，管内驻波最简模式 = 1 个反节点-节点-反节点（即 $L = \\lambda/2$）。\n\n$$\\lambda = 2L = 2 \\times 0.34 = 0.68\\,\\text{m}$$"
+          },
+          {
+            "title": "(2) 由 V = fλ 计算两速度",
+            "content": "$$V_0 = f_0 \\lambda = 500 \\times 0.68 = 340\\,\\text{m/s}$$\n\n$$V_1 = f_1 \\lambda = 520 \\times 0.68 = 353.6\\,\\text{m/s}$$"
+          },
+          {
+            "title": "(3) 求差",
+            "content": "$$V_1 - V_0 = 353.6 - 340 = 13.6 \\approx 14\\,\\text{m/s}$$",
+            "why": "为什么用基频（首次共鸣）？答：从 $0$ Hz 升高频率，首次出现共鸣的就是基频（频率最低、波长最大）。后续会有 $f_2 = 2f_1$（一倍音）、$f_3 = 3f_1$ 等更高共鸣。"
+          }
+        ],
+        "finalAnswer": "② 约 $14$ m/s",
+        "correctOption": "②"
+      }
+    },
+    {
+      "id": "2023-r1-phys-12",
+      "number": "III-C 问3",
+      "topic": "旋转镜法测光速",
+      "topicTag": "波动·光速",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "用光源 L、可旋转的镜 R、固定的镜 M 测定光速 $c$。如图 1，R 固定某角度，L 出来的光走 L→R→M→R→L 一个往返。RM 间距 $D$。如图 2，R 以角速度 $\\omega$ 旋转后，反射光偏离 L 方向 $\\theta$ 转到 L′ 方向（路径 L→R→M→R→L′）。这是因为光在 RM 间往返时间 $\\dfrac{2D}{c}$ 内 R 转动 $\\dfrac{\\theta}{2}$。求 $c$。",
+      "options": [
+        { "label": "①", "content": "$D\\omega/(4\\theta)$" },
+        { "label": "②", "content": "$D\\omega/(2\\theta)$" },
+        { "label": "③", "content": "$D\\omega/\\theta$" },
+        { "label": "④", "content": "$2D\\omega/\\theta$" },
+        { "label": "⑤", "content": "$4D\\omega/\\theta$" }
+      ],
+      "questionImage": "/images/2023_R1_physics/q12.png",
+      "solution": {
+        "translation": "$\\omega \\cdot t = \\theta/2$，其中 $t = 2D/c$。解出 $c$。",
+        "analysis": "$\\omega \\cdot (2D/c) = \\theta/2$ → $c = 4D\\omega/\\theta$。",
+        "steps": [
+          {
+            "title": "(1) 时间方程",
+            "content": "光从 R 出发到 M 再返回 R，总路程 $2D$，时间：\n\n$$t = \\frac{2D}{c}$$"
+          },
+          {
+            "title": "(2) 旋转角度方程",
+            "content": "R 以角速度 $\\omega$ 旋转，时间 $t$ 内转动角度为 $\\omega t$。题目说这等于 $\\theta/2$（镜转 $\\alpha$ 角，反射光偏 $2\\alpha$，所以反射光偏 $\\theta$ 对应镜转 $\\theta/2$）。\n\n$$\\omega t = \\frac{\\theta}{2}$$"
+          },
+          {
+            "title": "(3) 联立求 c",
+            "content": "$$\\omega \\cdot \\frac{2D}{c} = \\frac{\\theta}{2}$$\n\n$$c = \\frac{4D\\omega}{\\theta}$$",
+            "why": "为什么镜转 $\\alpha$ 反射光偏 $2\\alpha$？答：入射角与反射角相对法线对称。法线随镜转 $\\alpha$ 也转 $\\alpha$，所以反射光相对原来方向偏转 $2\\alpha$。这是「镜面旋转的二倍角效应」。"
+          }
+        ],
+        "finalAnswer": "⑤ $c = 4D\\omega/\\theta$",
+        "correctOption": "⑤"
+      }
+    },
+    {
+      "id": "2023-r1-phys-13",
+      "number": "IV-A 问1",
+      "topic": "两点电荷对原点电荷合力的角度",
+      "topicTag": "电磁·静电",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "如图，$xy$ 平面上 $(a,0)$（$a>0$）固定电量 $-3q$（$q>0$）的点电荷 A；$(0,-2a)$ 固定电量 $q$ 的点电荷 B。原点 O 放置电量 $q$ 的点电荷 C，C 受到 A、B 的静电力。设合力方向与 $x$ 轴正向夹角为 $\\theta$。求 $|\\tan\\theta|$。",
+      "options": [
+        { "label": "①", "content": "$1/12$" },
+        { "label": "②", "content": "$1/6$" },
+        { "label": "③", "content": "$2/3$" },
+        { "label": "④", "content": "$3/4$" },
+        { "label": "⑤", "content": "$4/3$" },
+        { "label": "⑥", "content": "$3/2$" },
+        { "label": "⑦", "content": "$6$" },
+        { "label": "⑧", "content": "$12$" }
+      ],
+      "questionImage": "/images/2023_R1_physics/q13.png",
+      "solution": {
+        "translation": "C 受 A 的吸引力（$+x$ 方向）和 B 的排斥力（$+y$ 方向，因 B 在 C 的下方）。$\\tan\\theta = F_y/F_x$。",
+        "analysis": "$F_x = k\\cdot 3q\\cdot q/a^2 = 3kq^2/a^2$。$F_y = k\\cdot q\\cdot q/(2a)^2 = kq^2/(4a^2)$。$\\tan\\theta = (1/4)/3 = 1/12$。",
+        "steps": [
+          {
+            "title": "(1) A 对 C 的力",
+            "content": "A 在 $(a, 0)$ 处带电量 $-3q$，C 在原点带电量 $+q$。异号相吸 → C 受力指向 A，即 $+x$ 方向。\n\n大小：$F_A = \\dfrac{k\\cdot |3q|\\cdot q}{a^2} = \\dfrac{3kq^2}{a^2}$（方向 $+x$）"
+          },
+          {
+            "title": "(2) B 对 C 的力",
+            "content": "B 在 $(0, -2a)$ 带电量 $+q$，C 在原点 $+q$。同号相斥 → C 受力指离 B 方向，B 在 $-y$ 方向上，故 C 受力为 $+y$ 方向。\n\n大小：$F_B = \\dfrac{k\\cdot q\\cdot q}{(2a)^2} = \\dfrac{kq^2}{4a^2}$（方向 $+y$）"
+          },
+          {
+            "title": "(3) 合力的角度",
+            "content": "$F_x = 3kq^2/a^2$，$F_y = kq^2/(4a^2)$。\n\n$$\\tan\\theta = \\frac{F_y}{F_x} = \\frac{kq^2/(4a^2)}{3kq^2/a^2} = \\frac{1}{12}$$\n\n$$|\\tan\\theta| = \\frac{1}{12}$$",
+            "why": "为什么不需要关心 $k$ 和 $q$？答：两个分力都正比于 $kq^2/a^2$，相除时全部消掉。最终角度只与几何（电荷位置、电量比）有关。"
+          }
+        ],
+        "finalAnswer": "① $|\\tan\\theta| = 1/12$",
+        "correctOption": "①"
+      }
+    },
+    {
+      "id": "2023-r1-phys-14",
+      "number": "IV-B 问2",
+      "topic": "三电容串联接地分压",
+      "topicTag": "电磁·电容",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "如图，电动势 $V$ 电池、电阻、电容 $C$、电容 $C/2$、电容 $C/3$、开关 S 接成电路。点 P 接地。最初 S 开，三电容均无电荷。闭 S 充分长时间后，点 A 的电位为 $V_A$。求 $V_A/V$。",
+      "options": [
+        { "label": "①", "content": "$1/6$" },
+        { "label": "②", "content": "$1/4$" },
+        { "label": "③", "content": "$1/3$" },
+        { "label": "④", "content": "$2/3$" },
+        { "label": "⑤", "content": "$3/4$" },
+        { "label": "⑥", "content": "$5/6$" }
+      ],
+      "questionImage": "/images/2023_R1_physics/q14.png",
+      "solution": {
+        "translation": "稳态时无电流、电阻无压降。三电容串联同电荷 $Q$。电压反比于电容大小。",
+        "analysis": "$1/C_\\text{eq} = 1/C + 2/C + 3/C = 6/C$ → $C_\\text{eq} = C/6$，$Q = CV/6$。各电容上电压：$V/6, V/3, V/2$。A 在 C 和 C/2 之间，从地（P）往上经 $C/3$（升 $V/2$）和 $C/2$（升 $V/3$）→ $V_A = V/2 + V/3 = 5V/6$。",
+        "steps": [
+          {
+            "title": "(1) 串联等效电容",
+            "content": "三电容串联：\n\n$$\\frac{1}{C_\\text{eq}} = \\frac{1}{C} + \\frac{1}{C/2} + \\frac{1}{C/3} = \\frac{1}{C} + \\frac{2}{C} + \\frac{3}{C} = \\frac{6}{C}$$\n\n$$C_\\text{eq} = \\frac{C}{6}$$"
+          },
+          {
+            "title": "(2) 共同电荷与分压",
+            "content": "稳态：电阻无电流、无压降。三电容总电压 = $V$，串联同电荷：\n\n$$Q = C_\\text{eq}\\cdot V = \\frac{CV}{6}$$\n\n各电容上电压：\n- $V_C = Q/C = V/6$\n- $V_{C/2} = Q/(C/2) = V/3$\n- $V_{C/3} = Q/(C/3) = V/2$\n\n验证：$V/6 + V/3 + V/2 = V$ ✓"
+          },
+          {
+            "title": "(3) 由 P 接地求 V_A",
+            "content": "P 在 $C/3$ 下端，$V_P = 0$。\n\n沿 P → A 路径累计电位差：\n- 跨 $C/3$（下端到上端）：升 $V/2$ → 到达 $C/2$ 下端，电位 $V/2$\n- 跨 $C/2$（下端到上端）：升 $V/3$ → 到达 A（$C/2$ 上端 = $C$ 下端），电位 $V/2 + V/3 = 5V/6$\n\n$$V_A = \\frac{5V}{6}\\quad\\Rightarrow\\quad \\frac{V_A}{V} = \\frac{5}{6}$$",
+            "why": "为什么电压「反比于电容」？答：串联同电荷 $Q$，$V = Q/C$。电容越小，$Q$ 同样情况下电压越大。最小的 $C/3$ 拥有最大压降 $V/2$。"
+          }
+        ],
+        "finalAnswer": "⑥ $V_A/V = 5/6$",
+        "correctOption": "⑥"
+      }
+    },
+    {
+      "id": "2023-r1-phys-15",
+      "number": "IV-C 问3",
+      "topic": "电阻电路接地点的电位",
+      "topicTag": "电磁·电路·欧姆定律",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "如图，$1$ kΩ 电阻、$2$ kΩ 电阻、两个 $4$ kΩ 电阻、$10$ V 电池接成电路。点 P 接地。电池内阻忽略。求图中点 A 的电位（V）。",
+      "options": [
+        { "label": "①", "content": "$-8$" },
+        { "label": "②", "content": "$-6$" },
+        { "label": "③", "content": "$-4$" },
+        { "label": "④", "content": "$-2$" },
+        { "label": "⑤", "content": "$2$" },
+        { "label": "⑥", "content": "$4$" },
+        { "label": "⑦", "content": "$6$" },
+        { "label": "⑧", "content": "$8$" }
+      ],
+      "questionImage": "/images/2023_R1_physics/q15.png",
+      "solution": {
+        "translation": "两个 $4$ kΩ 并联 = $2$ kΩ。总阻 = $1+2+2 = 5$ kΩ。$I = 2$ mA。从 P（接地）反向沿电路推算 A 的电位。",
+        "analysis": "电流 $I = 10/5 = 2$ mA。从 P=0 反向（即逆电流方向）走 $2$ kΩ 升 $4$ V → 经并联块 $2$ kΩ 再升 $4$ V，到达 A → $V_A = 4$ V。",
+        "steps": [
+          {
+            "title": "(1) 等效电路与电流",
+            "content": "两个 $4$ kΩ 并联：$R_\\text{并} = \\dfrac{4\\times 4}{4+4} = 2$ kΩ。\n\n回路总电阻：$R_\\text{总} = 1 + 2 + 2 = 5$ kΩ。\n\n电流：$I = \\dfrac{V}{R_\\text{总}} = \\dfrac{10}{5} = 2$ mA。"
+          },
+          {
+            "title": "(2) 沿回路推算电位（设电池 + 在左）",
+            "content": "电流方向：从电池 $+$（左）→ 上 $1$ kΩ → A → 并联 $2$ kΩ → 右下 → $2$ kΩ → P → 回电池 $-$。\n\n以 P 接地为 $V = 0$ 起算，逆电流方向回推电位：\n- 由 P 上行（无电阻）到右上角：$V = 0$\n- 经并联 $2$ kΩ 逆电流方向（电位升 $4$ V）到 A：$V_A = 4$ V\n\n$$V_A = 4\\,\\text{V}$$"
+          },
+          {
+            "title": "(3) 验证",
+            "content": "继续沿 1 kΩ 逆电流升 $2$ V → 电池 $+$ 端 $V = 6$ V。\n沿 P → $2$ kΩ 在电流方向（电位降 $4$ V）→ 电池 $-$ 端 $V = -4$ V。\n电池 EMF $= 6 - (-4) = 10$ V ✓",
+            "why": "为什么接地点不一定是电池负极？答：「接地」只是把某节点定为 $V = 0$ 的参考。物理上电势是相对量，可以选任何节点为零。本题选 P 接地后，电池正负极的电位都被「平移」到一组特定值。"
+          }
+        ],
+        "finalAnswer": "⑥ $V_A = 4$ V",
+        "correctOption": "⑥"
+      }
+    },
+    {
+      "id": "2023-r1-phys-16",
+      "number": "IV-D 问4",
+      "topic": "两平行导线磁场为零位置",
+      "topicTag": "电磁·磁场",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "如图 1，$xy$ 平面（纸面）上的点 A$(0,0)$、点 B$(d,0)$ 处有两根足够长的直线导线，垂直纸面。A 处导线通过电流 $I_A$，B 处导线通过电流 $I_B$。在连接 AB 的 $x$ 轴上 $0.1d \\le x \\le 0.9d$ 范围内测量磁场方向与大小，磁场平行 $y$ 轴、只有 $y$ 成分 $H_y$。图 2 是 $H_y$ 与 $x$ 关系图（$H_y$ 在 $x = d/4$ 处过零）。求 B 处电流方向（裏から表 / 表から裏）以及 $I_B/I_A$。",
+      "options": [
+        { "label": "①", "content": "裏から表，$I_B/I_A = 2$" },
+        { "label": "②", "content": "裏から表，$I_B/I_A = 3$" },
+        { "label": "③", "content": "裏から表，$I_B/I_A = 4$" },
+        { "label": "④", "content": "表から裏，$I_B/I_A = 2$" },
+        { "label": "⑤", "content": "表から裏，$I_B/I_A = 3$" },
+        { "label": "⑥", "content": "表から裏，$I_B/I_A = 4$" }
+      ],
+      "questionImage": "/images/2023_R1_physics/q16.png",
+      "solution": {
+        "translation": "为了在两导线之间出现「场为零」点，两电流必须**同向**（场互相抵消）。设两电流都「裏から表」（出纸面），由零位置反推电流比。",
+        "analysis": "$I_A/x = I_B/(d-x)$ 在 $x = d/4$ 满足 → $I_B/I_A = (d - d/4)/(d/4) = 3$。",
+        "steps": [
+          {
+            "title": "(1) 方向：必须同向才能抵消",
+            "content": "两根平行导线之间一点的磁场：\n\n- 若两电流**同向**（都出纸面或都入纸面）：在 A、B 之间一点，A 的场与 B 的场方向**相反**（两者由右手定则分别指 $+y$ 与 $-y$），可以互相抵消 → 存在零点。\n- 若两电流**反向**：A、B 在中间点产生的场**同向相加**，永不为零。\n\n图中 $H_y$ 有零点 → 两电流同向。\n\n$I_A$ 已知「裏から表」（出纸面），所以 $I_B$ 也是**「裏から表」（出纸面）**。"
+          },
+          {
+            "title": "(2) 写出 H_y(x) 表达式（两电流均出纸面）",
+            "content": "A 在原点电流出纸面，在 $x > 0$ 处产生 $+y$ 方向磁场，大小 $\\dfrac{I_A}{2\\pi x}$。\n\nB 在 $(d, 0)$ 电流出纸面，在 $0 < x < d$ 处产生 $-y$ 方向磁场，大小 $\\dfrac{I_B}{2\\pi(d-x)}$。\n\n$$H_y(x) = \\frac{I_A}{2\\pi x} - \\frac{I_B}{2\\pi(d-x)}$$"
+          },
+          {
+            "title": "(3) 零点位置代入",
+            "content": "$H_y(x) = 0$ 给出：\n\n$$\\frac{I_A}{x} = \\frac{I_B}{d - x}$$\n\n图中零点在 $x = d/4$，代入：\n\n$$\\frac{I_A}{d/4} = \\frac{I_B}{3d/4} \\Rightarrow I_B = 3 I_A$$\n\n$$\\frac{I_B}{I_A} = 3$$",
+            "why": "为什么零点在「电流小」一侧？答：电流越大、产生的磁场越强、覆盖范围更大。零点必然偏向「电流小」（即 A）一侧，因为只有更靠近 A 才能让 $I_A$ 的场（按 $1/x$ 衰减）追上更远的 $I_B$ 场。本题 $I_B$ 大、零点偏向 A（$x < d/2$）。"
+          }
+        ],
+        "finalAnswer": "② 裏から表，$I_B/I_A = 3$",
+        "correctOption": "②"
+      }
+    },
+    {
+      "id": "2023-r1-phys-17",
+      "number": "IV-E 问5",
+      "topic": "三平行导线 B 处磁场和受力方向",
+      "topicTag": "电磁·磁场·安培力",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "如图，3 根足够长的平行直线导线 A、B、C 垂直纸面、平面内 $1$ m 间隔排成一线（A 左、B 中、C 右）。A 通电「裏から表」$2.0$ A、B 通电「裏から表」$3.0$ A、C 通电「表から裏」$4.0$ A。A 和 C 流过的电流在 B 位置纸面内产生磁场 $\\vec{H}$。B 流过的电流受 $\\vec{H}$ 力 $\\vec{F}$。求 $\\vec{H}$ 方向（(a)~(d)）和 $\\vec{F}$ 方向（(a)~(d)）。",
+      "options": [
+        { "label": "①", "content": "$\\vec{H}$=(a), $\\vec{F}$=(b)" },
+        { "label": "②", "content": "$\\vec{H}$=(a), $\\vec{F}$=(d)" },
+        { "label": "③", "content": "$\\vec{H}$=(b), $\\vec{F}$=(a)" },
+        { "label": "④", "content": "$\\vec{H}$=(b), $\\vec{F}$=(c)" },
+        { "label": "⑤", "content": "$\\vec{H}$=(c), $\\vec{F}$=(b)" },
+        { "label": "⑥", "content": "$\\vec{H}$=(c), $\\vec{F}$=(d)" },
+        { "label": "⑦", "content": "$\\vec{H}$=(d), $\\vec{F}$=(a)" },
+        { "label": "⑧", "content": "$\\vec{H}$=(d), $\\vec{F}$=(c)" }
+      ],
+      "questionImage": "/images/2023_R1_physics/q17.png",
+      "solution": {
+        "translation": "用右手定则分别求 A、C 在 B 位置的磁场方向、合成。然后用 $\\vec{F} = I\\vec{L}\\times\\vec{B}$ 求力。",
+        "analysis": "A 出纸面，在 B 处磁场指 (a) 上方向，大小 $2/(2\\pi)$。C 入纸面，在 B 处磁场指 (a) 上方向，大小 $4/(2\\pi)$。合成 $\\vec{H}$ 方向 (a)。B 电流出纸面，受力 $\\vec{F} = I\\hat{z}\\times \\vec{B}\\hat{y}$ 方向 (b)。",
+        "steps": [
+          {
+            "title": "(1) A 在 B 处的磁场",
+            "content": "A 在 B 的左侧 $1$ m 处，电流出纸面（+z）。\n\n由右手定则：电流出纸面时，在右侧产生 $+y$（向上）方向磁场。\n\n大小：$H_A = \\dfrac{I_A}{2\\pi r} = \\dfrac{2}{2\\pi}$（出纸面，方向(a)上）"
+          },
+          {
+            "title": "(2) C 在 B 处的磁场",
+            "content": "C 在 B 的右侧 $1$ m 处，电流入纸面（-z）。\n\n由右手定则：电流入纸面时，在左侧产生 $+y$（向上）方向磁场。\n\n大小：$H_C = \\dfrac{I_C}{2\\pi r} = \\dfrac{4}{2\\pi}$（方向 (a) 上）"
+          },
+          {
+            "title": "(3) 合成磁场 H 方向 (a)",
+            "content": "$\\vec{H}_A$ 与 $\\vec{H}_C$ 都指 (a)：\n\n$$|\\vec H| = \\frac{2 + 4}{2\\pi} = \\frac{3}{\\pi}\\,\\text{A/m}$$\n\n方向 **(a)** 向上。"
+          },
+          {
+            "title": "(4) B 上电流受力方向",
+            "content": "B 电流出纸面（+z），磁场指 $+y$（向上）。安培力公式：\n\n$$\\vec{F}\\propto \\hat{I}\\times \\hat{B} = \\hat{z}\\times \\hat{y} = -\\hat{x}$$\n\n$-\\hat{x}$ 即向左方向 = **(b)**。",
+            "why": "为什么 A 与 C 在 B 处的场都向上？答：A 电流出纸面、在右侧（B 处）由右手定则指 +y。C 电流入纸面、在左侧（B 处）由右手定则也指 +y（入纸面的逆时针环绕，左侧向上）。两者方向一致、叠加增强。"
+          }
+        ],
+        "finalAnswer": "① $\\vec H$=(a) 向上, $\\vec F$=(b) 向左",
+        "correctOption": "①"
+      }
+    },
+    {
+      "id": "2023-r1-phys-18",
+      "number": "IV-F 问6",
+      "topic": "旋转线圈定磁场方向",
+      "topicTag": "电磁·电磁感应",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "如图 1，恒定角速度旋转的长方形线圈 ABCD。线圈旋转轴的箭头方向表示「右螺钉旋转线圈方向时右螺钉前进方向」。一均匀磁场 $\\vec{H}$ 中改变线圈朝向调查诱导起电力：\n\n(1) 图 2，旋转轴沿 $y$ 轴正向时，未产生诱导起电力。\n(2) 图 3，旋转轴沿 $z$ 轴正向、线圈面在 $xz$ 平面且 AB 在手前（$x$ 大）侧出发，线圈面转向 $yz$ 平面时，诱导起电力方向是 A→B→C→D。\n\n求 $\\vec H$ 方向。",
+      "options": [
+        { "label": "①", "content": "$x$ 轴正向" },
+        { "label": "②", "content": "$x$ 轴负向" },
+        { "label": "③", "content": "$y$ 轴正向" },
+        { "label": "④", "content": "$y$ 轴负向" },
+        { "label": "⑤", "content": "$z$ 轴正向" },
+        { "label": "⑥", "content": "$z$ 轴负向" }
+      ],
+      "questionImage": "/images/2023_R1_physics/q18.png",
+      "solution": {
+        "translation": "由条件 (1)：旋转轴 $+y$ 无 EMF → $\\vec H$ 沿 $\\pm y$。由条件 (2)：算出初始法线方向、写出 $\\Phi(t)$、由 EMF 方向定 $B_y$ 符号。",
+        "analysis": "初始 A→B→C→D 法线 $\\hat{n}(0) = -\\hat{y}$（由 $\\vec{AB}\\times\\vec{BC} = \\hat z\\times(-\\hat x) = -\\hat y$ 得）。绕 $+z$ 转 $\\theta$ 后 $\\hat{n}(\\theta) = \\sin\\theta\\,\\hat{x} - \\cos\\theta\\,\\hat{y}$。$\\Phi = -A B_y\\cos(\\omega t)$，$\\varepsilon = -d\\Phi/dt = -AB_y\\omega\\sin(\\omega t)$。要求 $\\varepsilon > 0$ → $B_y < 0$ → $\\vec H$ 沿 $y$ 轴**负向**。",
+        "steps": [
+          {
+            "title": "(1) 由条件 (1) 限定 H 方向",
+            "content": "绕 $+y$ 轴旋转时，线圈法线在 $xz$ 平面内旋转。\n\n$\\Phi(t) = \\vec H\\cdot\\hat n(t)\\cdot A$ 含 $\\hat n$ 的 $x$ 与 $z$ 分量。要求所有时刻 $\\Phi$ 恒定 → $H_x = H_z = 0$。\n\n所以 $\\vec H$ 只有 $y$ 分量。"
+          },
+          {
+            "title": "(2) 算初始法线（关键！）",
+            "content": "图 3 初始：线圈面在 $xz$ 平面，AB 在 $+x$ 侧。设 A、B、C、D 坐标：\n- A$(+a, 0, -h)$（前下）\n- B$(+a, 0, +h)$（前上）\n- C$(-a, 0, +h)$（后上）\n- D$(-a, 0, -h)$（后下）\n\n按 A→B→C→D 方向，法线方向由相邻边向量叉积：\n\n$\\vec{AB} = +\\hat z$\n$\\vec{BC} = -\\hat x$\n\n$$\\hat n(0)\\propto \\vec{AB}\\times \\vec{BC} = \\hat z\\times(-\\hat x) = -\\hat y$$"
+          },
+          {
+            "title": "(3) 旋转后法线与磁通",
+            "content": "绕 $+z$ 转 $\\theta = \\omega t$（从 $+z$ 看逆时针），原 $-\\hat y$ 映为：\n\n$$\\hat n(\\theta) = \\sin\\theta\\,\\hat x - \\cos\\theta\\,\\hat y$$\n\n（验证 $\\theta = \\pi/2$ 时 $\\hat n = +\\hat x$，即线圈面变为 $yz$ 平面 ✓）\n\n$\\Phi(t) = A(B_x\\sin\\omega t - B_y\\cos\\omega t)$。由条件 (1)，$B_x = 0$，故：\n\n$$\\Phi(t) = -AB_y\\cos\\omega t$$"
+          },
+          {
+            "title": "(4) 用 EMF 方向定 B_y 符号",
+            "content": "$$\\varepsilon = -\\frac{d\\Phi}{dt} = -AB_y\\omega\\sin\\omega t$$\n\n题目说在 $0 < t < \\pi/(2\\omega)$ 期间 EMF 在 A→B→C→D 方向，即 $\\varepsilon > 0$。$\\sin\\omega t > 0$，所以需 $-B_y > 0$，即 **$B_y < 0$**。\n\n$\\vec H$ 沿 **$y$ 轴负向**。",
+            "why": "为什么初始法线是 $-\\hat y$ 而不是 $+\\hat y$？答：用右手定则、四指按 A→B→C→D 弯曲，拇指即法线。从 $+y$ 方向看 A→B→C→D 走「下→上→左→下→右」是顺时针 → 法线指 $-y$（远离观察者）。"
+          }
+        ],
+        "finalAnswer": "④ $y$ 轴的负向",
+        "correctOption": "④"
+      }
+    },
+    {
+      "id": "2023-r1-phys-19",
+      "number": "V-A 问1",
+      "topic": "Th-232 → Rn-220 衰变次数",
+      "topicTag": "近代物理·原子核",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "质量数 $A$、原子序数 $Z$ 的原子核 X 表示为 $^A_Z X$。钍核 $^{232}_{90}$Th 经过 $a$ 次 $\\alpha$ 衰变、$b$ 次 $\\beta$ 衰变变为氡核 $^{220}_{86}$Rn。求 $a$、$b$。",
+      "options": [
+        { "label": "①", "content": "$a=3,\\;b=2$" },
+        { "label": "②", "content": "$a=3,\\;b=3$" },
+        { "label": "③", "content": "$a=4,\\;b=2$" },
+        { "label": "④", "content": "$a=4,\\;b=3$" }
+      ],
+      "solution": {
+        "translation": "$\\alpha$ 衰变：$A$ 减 $4$、$Z$ 减 $2$。$\\beta^-$ 衰变：$A$ 不变、$Z$ 加 $1$。由 $A$ 变化求 $a$，由 $Z$ 变化求 $b$。",
+        "analysis": "$\\Delta A = -4a = 220 - 232 = -12$ → $a = 3$。$\\Delta Z = -2a + b = 86 - 90 = -4$ → $-6 + b = -4$ → $b = 2$。",
+        "steps": [
+          {
+            "title": "(1) 由质量数 A 求 a",
+            "content": "$\\alpha$ 衰变每次质量数减 $4$，$\\beta$ 衰变质量数不变。\n\n$$232 - 4a = 220 \\Rightarrow a = \\frac{232 - 220}{4} = 3$$"
+          },
+          {
+            "title": "(2) 由原子序数 Z 求 b",
+            "content": "$\\alpha$ 衰变每次 $Z$ 减 $2$，$\\beta^-$ 衰变每次 $Z$ 加 $1$。\n\n$$90 - 2a + b = 86$$\n\n代入 $a = 3$：$90 - 6 + b = 86$ → $b = 2$。"
+          },
+          {
+            "title": "(3) 验证",
+            "content": "$^{232}_{90}\\text{Th} \\xrightarrow{3\\alpha + 2\\beta^-}{}^{220}_{86}\\text{Rn}$\n\n$A$：$232 - 12 = 220$ ✓\n$Z$：$90 - 6 + 2 = 86$ ✓",
+            "why": "为什么 β⁻ 衰变让 Z 加 1？答：β⁻ 衰变是核内中子转化为质子（加电子和反中微子）。质子数（$Z$）加 1、中子数减 1、核子总数（$A$）不变。"
+          }
+        ],
+        "finalAnswer": "① $a=3,\\;b=2$",
+        "correctOption": "①"
+      }
+    }
+  ]
+}
