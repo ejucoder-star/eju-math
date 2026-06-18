@@ -196,14 +196,14 @@ const GlobalCSS = () => (
     .katex { font-size: 1.05em !important; }
     button { font-family: inherit; }
     a { text-decoration: none; color: inherit; }
-    .sidebar-link { display: flex; align-items: center; gap: 10px; padding: 9px 14px; border-radius: 8px; font-size: 13.5px; color: #57534e; cursor: pointer; min-width: 0; }
+    .sidebar-link { display: flex; align-items: center; gap: 10px; padding: 9px 14px; border-radius: 8px; font-size: 13.5px; color: #57534e; cursor: pointer; white-space: nowrap; }
     .sidebar-link:hover { background: #f5f5f4; color: #1c1917; }
     .sidebar-link.active { background: #1c1917; color: #fff; font-weight: 600; }
-    .sidebar-link > span:first-of-type { flex: 1; min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-    .sidebar-sub { display: flex; align-items: center; gap: 8px; padding: 6px 14px 6px 36px; border-radius: 6px; font-size: 12.5px; color: #78716c; cursor: pointer; min-width: 0; }
+    .sidebar-link > span:first-of-type { flex: 1; white-space: nowrap; }
+    .sidebar-sub { display: flex; align-items: center; gap: 8px; padding: 6px 14px 6px 36px; border-radius: 6px; font-size: 12.5px; color: #78716c; cursor: pointer; white-space: nowrap; }
     .sidebar-sub:hover { background: #f5f5f4; color: #1c1917; }
     .sidebar-sub.active { background: #f5f5f4; color: #1c1917; font-weight: 600; }
-    .sidebar-sub > span:first-of-type { flex: 1; min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .sidebar-sub > span:first-of-type { flex: 1; white-space: nowrap; }
     .topic-chip { display: inline-flex; align-items: center; gap: 6px; padding: 4px 10px; border-radius: 99px; background: #f5f5f4; color: #57534e; font-size: 11.5px; font-weight: 600; border: 1px solid #e7e5e4; cursor: pointer; }
     .topic-chip:hover { background: #1c1917; color: #fff; }
     @media (max-width: 768px) {
@@ -450,9 +450,9 @@ const Sidebar = ({ open, onClose }) => {
       <aside className={open ? "" : "sidebar-desktop"} style={{
         position: open ? "fixed" : "sticky",
         top: 0, left: 0,
-        width: "260px", height: "100vh",
+        width: "300px", height: "100vh",
         background: "#fff", borderRight: "1px solid #e7e5e4",
-        padding: "16px 12px", overflow: "auto",
+        padding: "16px 12px", overflowY: "auto", overflowX: "auto",
         zIndex: 50, flexShrink: 0,
         transform: open ? "translateX(0)" : undefined,
       }}>
