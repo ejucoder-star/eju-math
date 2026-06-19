@@ -381,8 +381,12 @@ const QuestionCard = ({ question, courseId, examId, qIdx, autoOpen = false, show
         <MathText style={{ fontSize: "14.5px", lineHeight: "2", color: "#1c1917" }}>{question.question}</MathText>
         {question.questionDiagramSvg && <SvgDiagram svg={question.questionDiagramSvg} />}
         {question.questionImage && (
-          <img src={question.questionImage} alt={question.topic}
-            style={{ width: "100%", height: "auto", display: "block", borderRadius: "6px", border: "1px solid #e7e5e4", marginTop: "14px" }} />
+          <div style={{ marginTop: "14px", display: "flex", justifyContent: "center" }}>
+            <img src={question.questionImage} alt={question.topic}
+              title="点击在新标签页查看大图"
+              onClick={(e) => window.open(e.currentTarget.src, "_blank")}
+              style={{ maxWidth: "100%", maxHeight: "480px", height: "auto", display: "block", borderRadius: "6px", border: "1px solid #e7e5e4", cursor: "zoom-in" }} />
+          </div>
         )}
         {isChoice && (
           <OptionsList
