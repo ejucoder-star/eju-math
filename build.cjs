@@ -141,15 +141,25 @@ for (const file of jsonFiles) {
     return converted;
   });
 
-  // 写入 exam
+  // 写入 exam — 标题统一规范化为「YYYY年度（令和/平成 X年）第Z回」
   examDatabase[courseKey].exams[examKey] = {
     id: examKey,
-    title: meta.examTitle,
+    title: normalizeExamTitle(meta.year, meta.session),
     date: meta.examDate,
     questions
   };
 
   console.log(`✅ ${file} → ${courseKey} / ${examKey} (${questions.length} 题)`);
+}
+
+// 把 (年份, 回数) 规范化成数学一致的「2024年度（令和6年）第1回」格式
+function normalizeExamTitle(year, session) {
+  const y = parseInt(year, 10);
+  let era = "";
+  if (y >= 2019) era = `令和${y - 2018}年`;
+  else if (y >= 1989) era = `平成${y - 1988}年`;
+  else if (y >= 1926) era = `昭和${y - 1925}年`;
+  return era ? `${year}年度（${era}）第${session}回` : `${year}年度 第${session}回`;
 }
 
 // ============================================================
