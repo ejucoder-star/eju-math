@@ -1,0 +1,769 @@
+{
+  "metadata": {
+    "course": "physics",
+    "year": "2022",
+    "session": "2",
+    "courseNameJa": "物理",
+    "courseNameEn": "Physics",
+    "description": "理科综合｜物理",
+    "color": "#16a34a",
+    "examTitle": "令和4年度（2022年度）第2回 物理",
+    "examDate": "2022年11月"
+  },
+  "questions": [
+    {
+      "id": "2022-r2-phys-1",
+      "number": "I-A 问1",
+      "topic": "水平杆的三力平衡",
+      "topicTag": "力学·静力平衡",
+      "questionType": "choice",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "如图，质量可忽略的细杆一端 A 系轻绳 1，另一端 B 系轻绳 2，悬挂在天花板下。杆的偏离中心处再挂质量 $m$ 的物体，杆保持水平静止。绳 1 与水平方向成 $60°$，绳 2 与水平方向成 $30°$。设绳 1 的张力为 $T_1$，绳 2 的张力为 $T_2$。求 $T_2$。",
+      "options": [
+        { "label": "①", "content": "$\\dfrac{1}{4}mg$" },
+        { "label": "②", "content": "$\\dfrac{\\sqrt{3}}{4}mg$" },
+        { "label": "③", "content": "$\\dfrac{1}{2}mg$" },
+        { "label": "④", "content": "$\\dfrac{\\sqrt{3}}{2}mg$" }
+      ],
+      "questionImage": "/images/2022_R2_physics/q01.png",
+      "solution": {
+        "translation": "杆静止，所以水平方向、竖直方向的合力都为 0。由两个张力的水平分量相互抵消，再代入竖直方向平衡求 $T_2$。",
+        "analysis": "水平分量：$T_1\\cos60°=T_2\\cos30°$，所以 $T_1=\\sqrt3T_2$。竖直分量：$T_1\\sin60°+T_2\\sin30°=mg$。",
+        "steps": [
+          {
+            "title": "(1) 水平方向平衡",
+            "content": "杆静止，左右方向合力为 0：\n\n$$T_1\\cos60°=T_2\\cos30°$$\n\n$$T_1\\cdot \\frac12=T_2\\cdot\\frac{\\sqrt3}{2}$$\n\n所以\n\n$$T_1=\\sqrt3T_2$$"
+          },
+          {
+            "title": "(2) 竖直方向平衡",
+            "content": "向上的分力之和等于物体重力：\n\n$$T_1\\sin60°+T_2\\sin30°=mg$$\n\n代入 $T_1=\\sqrt3T_2$：\n\n$$\\sqrt3T_2\\cdot\\frac{\\sqrt3}{2}+T_2\\cdot\\frac12=mg$$\n\n$$\\frac32T_2+\\frac12T_2=mg$$\n\n$$2T_2=mg$$"
+          },
+          {
+            "title": "(3) 得到答案",
+            "content": "$$T_2=\\dfrac12mg$$\n\n对应选项 ③。"
+          }
+        ],
+        "finalAnswer": "③ $T_2=\\dfrac{1}{2}mg$",
+        "correctOption": "③"
+      }
+    },
+    {
+      "id": "2022-r2-phys-2",
+      "number": "I-B 问2",
+      "topic": "斜面上的追及运动",
+      "topicTag": "力学·运动学",
+      "questionType": "choice",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "如图，有一个与水平面成 $30°$ 的光滑斜面。在斜面上的点 O，给小物体 A 沿斜面向上的初速度 $v_0$，同时在 O 上方高度为 $h$ 的斜面点 P 处静止放置小物体 B。为了使 A 在上升过程中与 B 碰撞，$v_0$ 必须大于某一速度 $v_1$。求 $v_1$。",
+      "options": [
+        { "label": "①", "content": "$\\dfrac{\\sqrt{gh}}{2}$" },
+        { "label": "②", "content": "$\\dfrac{\\sqrt{2gh}}{2}$" },
+        { "label": "③", "content": "$\\sqrt{gh}$" },
+        { "label": "④", "content": "$\\sqrt{2gh}$" }
+      ],
+      "questionImage": "/images/2022_R2_physics/q02.png",
+      "solution": {
+        "translation": "A 从 O 沿斜面向上运动，B 从斜面上高度为 $h$ 的 P 点同时由静止释放。两物体都沿斜面受到相同的加速度 $g\\sin30°$，所以相对加速度为 0。",
+        "analysis": "OP 的斜面距离为 $s=h/\\sin30°=2h$。相对运动中，A 以相对速度 $v_0$ 追上 B，碰撞时间 $t=2h/v_0$。为了在 A 上升中碰撞，需 $v_0-g\\sin30°\\,t>0$，得 $v_0^2>gh$。",
+        "steps": [
+          {
+            "title": "(1) 求 OP 的斜面距离",
+            "content": "P 点相对 O 的高度为 $h$，斜面与水平面夹角为 $30°$。\n\n设沿斜面的距离为 $s$，则\n\n$$s\\sin30°=h$$\n\n$$s=\\frac{h}{1/2}=2h$$"
+          },
+          {
+            "title": "(2) 用相对运动求碰撞时间",
+            "content": "A、B 都在光滑斜面上运动，沿斜面加速度都为\n\n$$a=-g\\sin30°=-\\frac{g}{2}$$\n\n因此两者相对加速度为 0。\n\n初始时 A、B 相距 $2h$，A 相对 B 的速度为 $v_0$，所以碰撞时间\n\n$$t=\\frac{2h}{v_0}$$",
+            "why": "这里不能把 B 当作静止在 P 点。题目说 B 也在同一时刻“静静释放”，所以 B 会沿斜面向下加速；但因为 A、B 的加速度相同，相对运动反而变简单。"
+          },
+          {
+            "title": "(3) 要求 A 在上升中碰撞",
+            "content": "碰撞时 A 的速度必须仍沿斜面向上：\n\n$$v_A=v_0-\\frac{g}{2}t>0$$\n\n代入 $t=\\dfrac{2h}{v_0}$：\n\n$$v_0-\\frac{g}{2}\\cdot\\frac{2h}{v_0}>0$$\n\n$$v_0-\\frac{gh}{v_0}>0$$\n\n$$v_0^2>gh$$\n\n所以临界速度\n\n$$v_1=\\sqrt{gh}$$"
+          },
+          {
+            "title": "(4) 对照选项",
+            "content": "$$v_1=\\sqrt{gh}$$\n\n对应选项 ③。"
+          }
+        ],
+        "finalAnswer": "③ $v_1=\\sqrt{gh}$",
+        "correctOption": "③"
+      }
+    },
+    {
+      "id": "2022-r2-phys-3",
+      "number": "I-C 问3",
+      "topic": "浮力与台秤读数变化",
+      "topicTag": "力学·浮力",
+      "questionType": "choice",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "如图，将圆柱形均匀物体 A 浮在放在台秤上的容器水中，A 的上表面保持水平。A 露出水面的体积为总体积的 $20.0\\%$，此时台秤读数为 $5.00\\times10^{-1}\\,\\mathrm{kg}$。之后用细棒从 A 上方中心竖直向下推，使 A 上表面仍保持水平，并让 A 完全浸没在水中，且 A 不接触容器，此时台秤读数为 $5.50\\times10^{-1}\\,\\mathrm{kg}$。求 A 的质量最接近多少 kg。",
+      "options": [
+        { "label": "①", "content": "$4.0\\times10^{-2}$" },
+        { "label": "②", "content": "$6.3\\times10^{-2}$" },
+        { "label": "③", "content": "$1.0\\times10^{-1}$" },
+        { "label": "④", "content": "$2.0\\times10^{-1}$" },
+        { "label": "⑤", "content": "$2.5\\times10^{-1}$" },
+        { "label": "⑥", "content": "$4.0\\times10^{-1}$" }
+      ],
+      "questionImage": "/images/2022_R2_physics/q03.png",
+      "solution": {
+        "translation": "浮起时，物体质量等于排开水质量。完全压入水中时，多出来的台秤读数对应额外排开的水量。",
+        "analysis": "浮起时浸没体积为 $80\\%$，所以 $M=0.8\\rho V$。完全浸没后水受到的向下作用为 $\\rho Vg$，读数比浮起时多 $(\\rho V-M)$ 的质量当量。",
+        "steps": [
+          {
+            "title": "(1) 浮起时的质量关系",
+            "content": "露出水面 $20.0\\%$，浸没体积为 $80.0\\%$。\n\n物体浮起：\n\n$$Mg=\\rho g(0.8V)$$\n\n所以\n\n$$M=0.8\\rho V$$"
+          },
+          {
+            "title": "(2) 台秤读数增加量",
+            "content": "完全浸没时，水对物体的浮力为 $\\rho Vg$，物体对水的反作用也为 $\\rho Vg$。\n\n浮起时物体对台秤贡献为自身重量 $Mg$。所以读数增加的质量当量为\n\n$$\\rho V-M$$\n\n题中读数增加：\n\n$$5.50\\times10^{-1}-5.00\\times10^{-1}=5.0\\times10^{-2}\\,\\mathrm{kg}$$\n\n即\n\n$$\\rho V-M=0.050$$"
+          },
+          {
+            "title": "(3) 联立求质量",
+            "content": "由 $M=0.8\\rho V$，得\n\n$$\\rho V-M=0.2\\rho V=0.050$$\n\n$$\\rho V=0.25\\,\\mathrm{kg}$$\n\n$$M=0.8\\times0.25=0.20\\,\\mathrm{kg}$$"
+          }
+        ],
+        "finalAnswer": "④ $2.0\\times10^{-1}\\,\\mathrm{kg}$",
+        "correctOption": "④"
+      }
+    },
+    {
+      "id": "2022-r2-phys-4",
+      "number": "I-D 问4",
+      "topic": "弹簧、弹性碰撞与平抛",
+      "topicTag": "力学·动量·平抛",
+      "questionType": "choice",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "如图，在高度为 $h$ 的光滑水平台面上，一端固定在墙上的劲度系数为 $k$ 的弹簧连接质量为 $m$ 的小物体 P。将 P 从弹簧自然长位置 O 压缩距离 $d$ 后静止释放，P 在台面上运动，并在台面端与静止的质量为 $2m$ 的小物体 Q 发生弹性碰撞。碰撞后 Q 飞出台面，并在距台面端水平距离为 $x$ 的位置落地。求 $x$。",
+      "options": [
+        { "label": "①", "content": "$\\dfrac{2d}{3}\\sqrt{\\dfrac{hk}{mg}}$" },
+        { "label": "②", "content": "$\\dfrac{2d}{3}\\sqrt{\\dfrac{2hk}{mg}}$" },
+        { "label": "③", "content": "$\\dfrac{3d}{4}\\sqrt{\\dfrac{hk}{mg}}$" },
+        { "label": "④", "content": "$\\dfrac{3d}{4}\\sqrt{\\dfrac{2hk}{mg}}$" },
+        { "label": "⑤", "content": "$\\dfrac{2d}{3}\\sqrt{\\dfrac{mg}{hk}}$" },
+        { "label": "⑥", "content": "$\\dfrac{2d}{3}\\sqrt{\\dfrac{mg}{2hk}}$" },
+        { "label": "⑦", "content": "$\\dfrac{3d}{4}\\sqrt{\\dfrac{mg}{hk}}$" },
+        { "label": "⑧", "content": "$\\dfrac{3d}{4}\\sqrt{\\dfrac{mg}{2hk}}$" }
+      ],
+      "questionImage": "/images/2022_R2_physics/q04.png",
+      "solution": {
+        "translation": "弹簧的弹性势能先转化为 P 的动能；P 与 Q 发生一维弹性碰撞；之后 Q 做平抛运动。",
+        "analysis": "释放后 P 的速度 $u=d\\sqrt{k/m}$。质量 $m$ 的 P 弹性碰撞静止的 $2m$，Q 获得速度 $v_Q=\\frac{2}{3}u$。平抛时间为 $\\sqrt{2h/g}$。",
+        "steps": [
+          {
+            "title": "(1) 弹簧给 P 的速度",
+            "content": "弹簧恢复到自然长时：\n\n$$\\frac12kd^2=\\frac12mu^2$$\n\n所以\n\n$$u=d\\sqrt{\\frac{k}{m}}$$"
+          },
+          {
+            "title": "(2) 弹性碰撞后 Q 的速度",
+            "content": "质量 $m$ 的物体以速度 $u$ 碰撞静止的质量 $2m$ 物体，弹性碰撞后后者速度为\n\n$$v_Q=\\frac{2m}{m+2m}u=\\frac23u$$\n\n即\n\n$$v_Q=\\frac{2d}{3}\\sqrt{\\frac{k}{m}}$$"
+          },
+          {
+            "title": "(3) 平抛距离",
+            "content": "从高 $h$ 处水平飞出，落地时间\n\n$$t=\\sqrt{\\frac{2h}{g}}$$\n\n所以\n\n$$x=v_Qt=\\frac{2d}{3}\\sqrt{\\frac{k}{m}}\\sqrt{\\frac{2h}{g}}=\\frac{2d}{3}\\sqrt{\\frac{2hk}{mg}}$$"
+          }
+        ],
+        "finalAnswer": "② $\\dfrac{2d}{3}\\sqrt{\\dfrac{2hk}{mg}}$",
+        "correctOption": "②"
+      }
+    },
+    {
+      "id": "2022-r2-phys-5",
+      "number": "I-E 问5",
+      "topic": "弹簧能量与动摩擦做功",
+      "topicTag": "力学·摩擦·功",
+      "questionType": "choice",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "图 1 中，光滑水平面上，一端固定的轻弹簧连接质量 $m$ 的小物体 A。将 A 从弹簧自然长位置压缩距离 $d$ 后静止释放，A 在弹簧恢复自然长后离开弹簧，并在摩擦水平面上前进距离 $L_0$ 后停止。图 2 中，将质量 $3m$ 的小物体 B 接在同一弹簧上，从自然长位置压缩距离 $2d$ 后静止释放，B 最后在摩擦水平面上前进距离 $L_1$ 后停止。两物体与摩擦面间的动摩擦系数相同。求 $L_1/L_0$。",
+      "options": [
+        { "label": "①", "content": "$\\dfrac{1}{6}$" },
+        { "label": "②", "content": "$\\dfrac{2}{3}$" },
+        { "label": "③", "content": "$\\dfrac{3}{4}$" },
+        { "label": "④", "content": "$\\dfrac{4}{3}$" },
+        { "label": "⑤", "content": "$\\dfrac{3}{2}$" },
+        { "label": "⑥", "content": "$6$" }
+      ],
+      "questionImage": "/images/2022_R2_physics/q05.png",
+      "solution": {
+        "translation": "弹簧储存的能量最后全部由摩擦做功消耗。比较两种情况的弹性势能和摩擦力即可。",
+        "analysis": "A：$\\frac12kd^2=\\mu mgL_0$。B：$\\frac12k(2d)^2=\\mu(3m)gL_1$。两式相除。",
+        "steps": [
+          {
+            "title": "(1) A 的能量方程",
+            "content": "A 从压缩 $d$ 释放：\n\n$$\\frac12kd^2=\\mu mgL_0$$\n\n所以\n\n$$L_0=\\frac{kd^2}{2\\mu mg}$$"
+          },
+          {
+            "title": "(2) B 的能量方程",
+            "content": "B 从压缩 $2d$ 释放，质量为 $3m$：\n\n$$\\frac12k(2d)^2=\\mu(3m)gL_1$$\n\n$$2kd^2=3\\mu mgL_1$$\n\n所以\n\n$$L_1=\\frac{2kd^2}{3\\mu mg}$$"
+          },
+          {
+            "title": "(3) 求比值",
+            "content": "$$\\frac{L_1}{L_0}=\\frac{\\frac{2kd^2}{3\\mu mg}}{\\frac{kd^2}{2\\mu mg}}=\\frac{4}{3}$$"
+          }
+        ],
+        "finalAnswer": "④ $\\dfrac{L_1}{L_0}=\\dfrac{4}{3}$",
+        "correctOption": "④"
+      }
+    },
+    {
+      "id": "2022-r2-phys-6",
+      "number": "I-F 问6",
+      "topic": "圆弧轨道最低点的支持力",
+      "topicTag": "力学·圆周运动",
+      "questionType": "choice",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "如图，AB 为直线，BCD 为半径 $r$ 的圆弧，且轨道光滑连接。小物体从最低点 C 高度为 $r$ 的点 A 静止释放并沿轨道滑下。求小物体在 C 点受到的垂直抗力大小 $N$。",
+      "options": [
+        { "label": "①", "content": "$mg$" },
+        { "label": "②", "content": "$\\dfrac{3}{2}mg$" },
+        { "label": "③", "content": "$2mg$" },
+        { "label": "④", "content": "$\\dfrac{5}{2}mg$" },
+        { "label": "⑤", "content": "$3mg$" }
+      ],
+      "questionImage": "/images/2022_R2_physics/q06.png",
+      "solution": {
+        "translation": "从 A 到 C 下降高度为 $r$，重力势能转为动能；在圆弧最低点，向心力由 $N-mg$ 提供。",
+        "analysis": "能量守恒得 $v^2=2gr$。在 C 点：$N-mg=m\\frac{v^2}{r}=2mg$，所以 $N=3mg$。",
+        "steps": [
+          {
+            "title": "(1) 用机械能守恒求 C 点速度",
+            "content": "A 比 C 高 $r$，由静止滑下：\n\n$$mgr=\\frac12mv^2$$\n\n所以\n\n$$v^2=2gr$$"
+          },
+          {
+            "title": "(2) C 点的向心力",
+            "content": "在最低点，圆心方向向上：\n\n$$N-mg=m\\frac{v^2}{r}$$\n\n代入 $v^2=2gr$：\n\n$$N-mg=2mg$$\n\n$$N=3mg$$"
+          }
+        ],
+        "finalAnswer": "⑤ $N=3mg$",
+        "correctOption": "⑤"
+      }
+    },
+    {
+      "id": "2022-r2-phys-7",
+      "number": "II-A 问1",
+      "topic": "混合量热求金属比热",
+      "topicTag": "热学·比热",
+      "questionType": "choice",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "铜制容器中放入质量 $200\\,\\mathrm{g}$ 的水，整体放入断热容器。充分等待后，铜容器和水温均为 $10°\\mathrm{C}$。接着将质量 $100\\,\\mathrm{g}$、温度 $65°\\mathrm{C}$ 的金属 A 放入水中。充分等待后，铜容器、水、金属 A 的温度均为 $15°\\mathrm{C}$。铜容器热容量为 $60\\,\\mathrm{J/K}$，水的比热为 $4.2\\,\\mathrm{J/(g\\cdot K)}$。求金属 A 的比热。",
+      "options": [
+        { "label": "①", "content": "$0.7$" },
+        { "label": "②", "content": "$0.8$" },
+        { "label": "③", "content": "$0.9$" },
+        { "label": "④", "content": "$7$" },
+        { "label": "⑤", "content": "$8$" },
+        { "label": "⑥", "content": "$9$" }
+      ],
+      "solution": {
+        "translation": "金属 A 放出的热量等于水和铜容器吸收的热量。",
+        "analysis": "水和铜容器升温 $5\\,\\mathrm{K}$，吸热为 $(200\\times4.2+60)\\times5=4500\\,\\mathrm{J}$。金属降温 $50\\,\\mathrm{K}$，放热为 $100c\\times50$。",
+        "steps": [
+          {
+            "title": "(1) 水和铜容器吸热",
+            "content": "水的热容量：\n\n$$200\\times4.2=840\\,\\mathrm{J/K}$$\n\n加上铜容器：\n\n$$840+60=900\\,\\mathrm{J/K}$$\n\n升温 $15-10=5\\,\\mathrm{K}$，吸热\n\n$$Q=900\\times5=4500\\,\\mathrm{J}$$"
+          },
+          {
+            "title": "(2) 金属 A 放热",
+            "content": "设金属 A 的比热为 $c$。\n\n金属质量 $100\\,\\mathrm{g}$，降温 $65-15=50\\,\\mathrm{K}$：\n\n$$Q_A=100c\\times50=5000c$$"
+          },
+          {
+            "title": "(3) 热量守恒",
+            "content": "$$5000c=4500$$\n\n$$c=0.9\\,\\mathrm{J/(g\\cdot K)}$$"
+          }
+        ],
+        "finalAnswer": "③ $0.9\\,\\mathrm{J/(g\\cdot K)}$",
+        "correctOption": "③"
+      }
+    },
+    {
+      "id": "2022-r2-phys-8",
+      "number": "II-B 问2",
+      "topic": "理想气体自由膨胀后的压强",
+      "topicTag": "热学·理想气体",
+      "questionType": "choice",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "如图，体积为 $V_A$ 的断热容器 A 与体积为 $V_B$ 的断热容器 B 由体积可忽略的细管相连，细管中有断热阀门。最初阀门关闭，A 中有理想气体，压强为 $p_0$，绝对温度为 $T_0$；B 中为真空。打开阀门并充分等待后，A 中气体压强为 $p_1$。容器、细管和阀门的热容量忽略。求 $p_1$。",
+      "options": [
+        { "label": "①", "content": "$\\dfrac{V_A}{V_A+V_B}p_0$" },
+        { "label": "②", "content": "$\\dfrac{V_B}{V_A+V_B}p_0$" },
+        { "label": "③", "content": "$\\dfrac{V_A}{V_B}p_0$" },
+        { "label": "④", "content": "$p_0$" },
+        { "label": "⑤", "content": "$\\dfrac{V_A+V_B}{V_A}p_0$" },
+        { "label": "⑥", "content": "$\\dfrac{V_A+V_B}{V_B}p_0$" },
+        { "label": "⑦", "content": "$\\dfrac{V_B}{V_A}p_0$" }
+      ],
+      "questionImage": "/images/2022_R2_physics/q08.png",
+      "solution": {
+        "translation": "理想气体向真空自由膨胀，断热且不对外做功，所以温度不变。气体物质的量不变，只是体积从 $V_A$ 变为 $V_A+V_B$。",
+        "analysis": "由理想气体状态方程，初态 $p_0V_A=nRT_0$，末态 $p_1(V_A+V_B)=nRT_0$。",
+        "steps": [
+          {
+            "title": "(1) 判断温度变化",
+            "content": "打开阀门后气体向真空自由膨胀。容器断热，且没有推动外界边界做功，因此理想气体内能不变。\n\n理想气体内能只由温度决定，所以末态温度仍为 $T_0$。"
+          },
+          {
+            "title": "(2) 写状态方程",
+            "content": "初态：\n\n$$p_0V_A=nRT_0$$\n\n末态：\n\n$$p_1(V_A+V_B)=nRT_0$$"
+          },
+          {
+            "title": "(3) 求压强",
+            "content": "两式右边相等：\n\n$$p_1(V_A+V_B)=p_0V_A$$\n\n$$p_1=\\frac{V_A}{V_A+V_B}p_0$$"
+          }
+        ],
+        "finalAnswer": "① $p_1=\\dfrac{V_A}{V_A+V_B}p_0$",
+        "correctOption": "①"
+      }
+    },
+    {
+      "id": "2022-r2-phys-9",
+      "number": "II-C 问3",
+      "topic": "p-V 图与热力学第一定律",
+      "topicTag": "热学·热力学第一定律",
+      "questionType": "choice",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "一定量理想气体装在汽缸中。如 $p$-$V$ 图所示，沿路径 1 从状态 A 到状态 B 时，理想气体吸收 $60\\,\\mathrm{J}$ 的热量，并对外做功 $30\\,\\mathrm{J}$。接着沿路径 2 从状态 B 回到状态 A 时，理想气体受到外界做功 $20\\,\\mathrm{J}$。求路径 2 中热量 $Q$ 的大小，并判断气体吸热还是放热。",
+      "options": [
+        { "label": "①", "content": "$70\\,\\mathrm{J}$，吸收" },
+        { "label": "②", "content": "$70\\,\\mathrm{J}$，放出" },
+        { "label": "③", "content": "$50\\,\\mathrm{J}$，吸收" },
+        { "label": "④", "content": "$50\\,\\mathrm{J}$，放出" },
+        { "label": "⑤", "content": "$10\\,\\mathrm{J}$，吸收" },
+        { "label": "⑥", "content": "$10\\,\\mathrm{J}$，放出" }
+      ],
+      "questionImage": "/images/2022_R2_physics/q09.png",
+      "solution": {
+        "translation": "先由 A 到 B 的过程求内能变化；再用 B 到 A 的内能变化相反来求热量。",
+        "analysis": "取气体对外做功为 $W$，第一定律 $\\Delta U=Q-W$。A 到 B：$\\Delta U=60-30=30\\,\\mathrm{J}$。B 到 A：$\\Delta U=-30\\,\\mathrm{J}$，且气体受到外界做功 $20\\,\\mathrm{J}$，即气体对外做功 $W=-20\\,\\mathrm{J}$。",
+        "steps": [
+          {
+            "title": "(1) A 到 B 的内能变化",
+            "content": "$$\\Delta U_{AB}=Q-W=60-30=30\\,\\mathrm{J}$$"
+          },
+          {
+            "title": "(2) B 到 A 的内能变化",
+            "content": "内能是状态量，回到 A 时变化相反：\n\n$$\\Delta U_{BA}=-30\\,\\mathrm{J}$$\n\n外界对气体做功 $20\\,\\mathrm{J}$，所以气体对外做功\n\n$$W_{BA}=-20\\,\\mathrm{J}$$"
+          },
+          {
+            "title": "(3) 求热量",
+            "content": "$$\\Delta U=Q-W$$\n\n$$-30=Q-(-20)=Q+20$$\n\n$$Q=-50\\,\\mathrm{J}$$\n\n负号表示气体放出热量，大小为 $50\\,\\mathrm{J}$。"
+          }
+        ],
+        "finalAnswer": "④ $50\\,\\mathrm{J}$，放出",
+        "correctOption": "④"
+      }
+    },
+    {
+      "id": "2022-r2-phys-10",
+      "number": "III-A 问1",
+      "topic": "正弦行波的周期、波长与传播方向",
+      "topicTag": "波动·正弦波",
+      "questionType": "choice",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "考虑沿 $x$ 轴正方向传播的正弦波。图 1 表示位置 $x=0\\,\\mathrm{m}$ 处位移 $y$ 与时刻 $t$ 的关系，图 2 表示时刻 $t=0\\,\\mathrm{s}$ 时位移 $y$ 与位置 $x$ 的关系。设 $y=A\\sin 2\\pi(at+bx)$。求 $a$ 和 $b$ 的组合。",
+      "options": [
+        { "label": "①", "content": "$a=2.5\\,\\mathrm{s^{-1}},\\ b=-4.0\\,\\mathrm{m^{-1}}$" },
+        { "label": "②", "content": "$a=2.5\\,\\mathrm{s^{-1}},\\ b=-2.0\\,\\mathrm{m^{-1}}$" },
+        { "label": "③", "content": "$a=2.5\\,\\mathrm{s^{-1}},\\ b=2.0\\,\\mathrm{m^{-1}}$" },
+        { "label": "④", "content": "$a=2.5\\,\\mathrm{s^{-1}},\\ b=4.0\\,\\mathrm{m^{-1}}$" },
+        { "label": "⑤", "content": "$a=5.0\\,\\mathrm{s^{-1}},\\ b=-4.0\\,\\mathrm{m^{-1}}$" },
+        { "label": "⑥", "content": "$a=5.0\\,\\mathrm{s^{-1}},\\ b=-2.0\\,\\mathrm{m^{-1}}$" },
+        { "label": "⑦", "content": "$a=5.0\\,\\mathrm{s^{-1}},\\ b=2.0\\,\\mathrm{m^{-1}}$" },
+        { "label": "⑧", "content": "$a=5.0\\,\\mathrm{s^{-1}},\\ b=4.0\\,\\mathrm{m^{-1}}$" }
+      ],
+      "questionImage": "/images/2022_R2_physics/q10.png",
+      "solution": {
+        "translation": "由时间图读周期，由空间图读波长；因为波沿 $+x$ 方向传播，$y=A\\sin2\\pi(at+bx)$ 中 $b$ 应为负。",
+        "analysis": "图 1 周期 $T=0.40\\,\\mathrm{s}$，所以 $a=1/T=2.5\\,\\mathrm{s^{-1}}$。图 2 波长 $\\lambda=0.50\\,\\mathrm{m}$，所以 $|b|=1/\\lambda=2.0\\,\\mathrm{m^{-1}}$。传播方向为 $+x$，相位 $at+bx$ 恒定时 $dx/dt=-a/b>0$，故 $b<0$。",
+        "steps": [
+          {
+            "title": "(1) 从图 1 读周期",
+            "content": "相邻同相位点间隔为\n\n$$T=0.40\\,\\mathrm{s}$$\n\n因为表达式中时间项为 $2\\pi at$，所以\n\n$$a=\\frac1T=2.5\\,\\mathrm{s^{-1}}$$"
+          },
+          {
+            "title": "(2) 从图 2 读波长",
+            "content": "图 2 中相邻同相位点间距为\n\n$$\\lambda=0.50\\,\\mathrm{m}$$\n\n所以\n\n$$|b|=\\frac1\\lambda=2.0\\,\\mathrm{m^{-1}}$$"
+          },
+          {
+            "title": "(3) 判断 $b$ 的符号",
+            "content": "相位 $at+bx=\\text{常数}$，因此\n\n$$\\frac{dx}{dt}=-\\frac{a}{b}$$\n\n波沿 $+x$ 方向传播，所以 $dx/dt>0$，又 $a>0$，故 $b<0$。\n\n于是 $b=-2.0\\,\\mathrm{m^{-1}}$。"
+          }
+        ],
+        "finalAnswer": "② $a=2.5\\,\\mathrm{s^{-1}},\\ b=-2.0\\,\\mathrm{m^{-1}}$",
+        "correctOption": "②"
+      }
+    },
+    {
+      "id": "2022-r2-phys-11",
+      "number": "III-B 问2",
+      "topic": "闭管共鸣频率差",
+      "topicTag": "波动·气柱共鸣",
+      "questionType": "choice",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "如图，在装有活塞、长度为 $L$ 的玻璃管开口端附近放置声源。开口端到活塞位置的距离为 $d$。声源发出频率 $f_1$ 的声音并缓慢移动活塞，使 $d$ 从 0 逐渐增大时，在 $d=0.20L$ 首次共鸣，在 $d=0.60L$ 再次共鸣。再把声源频率改为 $f_2$ 做同样实验，在 $d=0.25L$ 首次共鸣，在 $d=0.75L$ 再次共鸣。声速为 $V$，忽略开口端修正。求 $f_1-f_2$。",
+      "options": [
+        { "label": "①", "content": "$0.25\\times\\dfrac{V}{L}$" },
+        { "label": "②", "content": "$0.50\\times\\dfrac{V}{L}$" },
+        { "label": "③", "content": "$1.0\\times\\dfrac{V}{L}$" },
+        { "label": "④", "content": "$-0.25\\times\\dfrac{V}{L}$" },
+        { "label": "⑤", "content": "$-0.50\\times\\dfrac{V}{L}$" },
+        { "label": "⑥", "content": "$-1.0\\times\\dfrac{V}{L}$" }
+      ],
+      "questionImage": "/images/2022_R2_physics/q11.png",
+      "solution": {
+        "translation": "这是开口端到活塞的闭管共鸣。相邻共鸣长度差为半个波长。",
+        "analysis": "对 $f_1$，相邻共鸣差 $0.60L-0.20L=0.40L=\\lambda_1/2$，所以 $\\lambda_1=0.80L$。对 $f_2$，相邻差 $0.50L=\\lambda_2/2$，所以 $\\lambda_2=L$。",
+        "steps": [
+          {
+            "title": "(1) 求 $f_1$",
+            "content": "相邻共鸣长度差为\n\n$$0.60L-0.20L=0.40L$$\n\n闭管相邻共鸣差为 $\\lambda/2$，所以\n\n$$\\lambda_1=0.80L$$\n\n$$f_1=\\frac{V}{\\lambda_1}=\\frac{V}{0.80L}=1.25\\frac{V}{L}$$"
+          },
+          {
+            "title": "(2) 求 $f_2$",
+            "content": "$$0.75L-0.25L=0.50L=\\frac{\\lambda_2}{2}$$\n\n$$\\lambda_2=L$$\n\n$$f_2=\\frac{V}{L}$$"
+          },
+          {
+            "title": "(3) 求频率差",
+            "content": "$$f_1-f_2=1.25\\frac{V}{L}-1.00\\frac{V}{L}=0.25\\frac{V}{L}$$"
+          }
+        ],
+        "finalAnswer": "① $0.25\\times\\dfrac{V}{L}$",
+        "correctOption": "①"
+      }
+    },
+    {
+      "id": "2022-r2-phys-12",
+      "number": "III-C 问3",
+      "topic": "衍射光栅与折射率",
+      "topicTag": "波动·光的干涉与折射",
+      "questionType": "choice",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "图 1 中，将空气中波长为 $\\lambda$ 的光垂直照射到格子常数为 $d$ 的衍射光栅上，在远处屏幕上观察到一级衍射光形成的明线，该衍射光与入射光夹角为 $\\theta_1$。图 2 中，同一波长的光从空气以入射角 $30°$ 入射到折射率为 $n$ 的物体表面，折射角为 $\\theta_2$。已知 $\\theta_1=\\theta_2$，空气折射率取 1。求 $n$。",
+      "options": [
+        { "label": "①", "content": "$\\dfrac{2\\lambda}{d}$" },
+        { "label": "②", "content": "$\\dfrac{\\lambda}{2d}$" },
+        { "label": "③", "content": "$\\dfrac{2d}{\\lambda}$" },
+        { "label": "④", "content": "$\\dfrac{d}{2\\lambda}$" }
+      ],
+      "questionImage": "/images/2022_R2_physics/q12.png",
+      "solution": {
+        "translation": "衍射光栅一级明纹满足 $d\\sin\\theta_1=\\lambda$。折射满足斯涅尔定律 $\\sin30°=n\\sin\\theta_2$。",
+        "analysis": "由光栅得 $\\sin\\theta_1=\\lambda/d$。又 $\\theta_1=\\theta_2$，所以 $\\sin\\theta_2=\\lambda/d$。代入 $1\\cdot\\sin30°=n\\sin\\theta_2$。",
+        "steps": [
+          {
+            "title": "(1) 光栅方程",
+            "content": "一级衍射明纹：\n\n$$d\\sin\\theta_1=\\lambda$$\n\n所以\n\n$$\\sin\\theta_1=\\frac{\\lambda}{d}$$"
+          },
+          {
+            "title": "(2) 折射定律",
+            "content": "空气到折射率为 $n$ 的物体：\n\n$$\\sin30°=n\\sin\\theta_2$$\n\n又 $\\theta_1=\\theta_2$，所以\n\n$$\\frac12=n\\cdot\\frac{\\lambda}{d}$$"
+          },
+          {
+            "title": "(3) 求折射率",
+            "content": "$$n=\\frac{d}{2\\lambda}$$"
+          }
+        ],
+        "finalAnswer": "④ $n=\\dfrac{d}{2\\lambda}$",
+        "correctOption": "④"
+      }
+    },
+    {
+      "id": "2022-r2-phys-13",
+      "number": "IV-A 问1",
+      "topic": "点电荷对负电荷的合力方向",
+      "topicTag": "电磁·静电场",
+      "questionType": "choice",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "如图，在 $xy$ 平面上，点 $(-\\ell,0)$ 处固定电荷量 $Q(>0)$ 的点电荷 A，点 $(\\ell,0)$ 处固定电荷量 $2Q$ 的点电荷 B，点 $(0,\\ell)$ 处固定电荷量 $-Q$ 的点电荷 C。设 C 受到 A、B 的静电力的 $x$ 分量为 $F_x$，$y$ 分量为 $F_y$。求 $F_y/F_x$。",
+      "options": [
+        { "label": "①", "content": "$\\dfrac{1}{3}$" },
+        { "label": "②", "content": "$\\dfrac{1}{2}$" },
+        { "label": "③", "content": "$2$" },
+        { "label": "④", "content": "$3$" },
+        { "label": "⑤", "content": "$-\\dfrac{1}{3}$" },
+        { "label": "⑥", "content": "$-\\dfrac{1}{2}$" },
+        { "label": "⑦", "content": "$-2$" },
+        { "label": "⑧", "content": "$-3$" }
+      ],
+      "questionImage": "/images/2022_R2_physics/q13.png",
+      "solution": {
+        "translation": "C 为负电荷，所以受到 A、B 两个正电荷的吸引。A、B 到 C 距离相同，但 B 的电荷量为 A 的 2 倍。",
+        "analysis": "A 对 C 的力方向为左下，B 对 C 的力方向为右下。两条连线均与坐标轴成 $45°$，且 B 的力大小是 A 的 2 倍。",
+        "steps": [
+          {
+            "title": "(1) 设 A 对 C 的力大小",
+            "content": "A、B 到 C 的距离均为 $\\sqrt2\\ell$。\n\n设 A 对 C 的力大小为 $F$，则 B 对 C 的力大小为 $2F$。"
+          },
+          {
+            "title": "(2) 分解分量",
+            "content": "A 对 C：方向左下，分量\n\n$$\\left(-\\frac{F}{\\sqrt2},-\\frac{F}{\\sqrt2}\\right)$$\n\nB 对 C：方向右下，分量\n\n$$\\left(\\frac{2F}{\\sqrt2},-\\frac{2F}{\\sqrt2}\\right)$$"
+          },
+          {
+            "title": "(3) 合力比值",
+            "content": "$$F_x=\\frac{F}{\\sqrt2}$$\n\n$$F_y=-\\frac{3F}{\\sqrt2}$$\n\n所以\n\n$$\\frac{F_y}{F_x}=-3$$"
+          }
+        ],
+        "finalAnswer": "⑧ $\\dfrac{F_y}{F_x}=-3$",
+        "correctOption": "⑧"
+      }
+    },
+    {
+      "id": "2022-r2-phys-14",
+      "number": "IV-B 问2",
+      "topic": "环形电容网络的等效电容",
+      "topicTag": "电磁·电容器",
+      "questionType": "choice",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "如图，将电容为 $3.0\\,\\mu\\mathrm{F}$ 的电容器 10 个连接成环。最初所有电容器都不带电，然后在端子 A、B 间加上 $10\\,\\mathrm{V}$ 的电势差。求 10 个电容器中储存的静电能总和。",
+      "options": [
+        { "label": "①", "content": "$15\\,\\mu\\mathrm{J}$" },
+        { "label": "②", "content": "$21\\,\\mu\\mathrm{J}$" },
+        { "label": "③", "content": "$30\\,\\mu\\mathrm{J}$" },
+        { "label": "④", "content": "$42\\,\\mu\\mathrm{J}$" },
+        { "label": "⑤", "content": "$60\\,\\mu\\mathrm{J}$" },
+        { "label": "⑥", "content": "$75\\,\\mu\\mathrm{J}$" }
+      ],
+      "questionImage": "/images/2022_R2_physics/q14.png",
+      "solution": {
+        "translation": "A、B 位于环的相对位置，因此从 A 到 B 有两条相同支路；每条支路含 5 个相同电容串联，两条支路并联。",
+        "analysis": "每条支路等效电容 $C/5=3.0/5=0.60\\,\\mu\\mathrm{F}$。两支路并联得 $C_{eq}=1.20\\,\\mu\\mathrm{F}$。能量 $U=\\frac12C_{eq}V^2$。",
+        "steps": [
+          {
+            "title": "(1) 每条支路的等效电容",
+            "content": "5 个相同电容 $C=3.0\\,\\mu\\mathrm{F}$ 串联：\n\n$$C_s=\\frac{C}{5}=0.60\\,\\mu\\mathrm{F}$$"
+          },
+          {
+            "title": "(2) 两条支路并联",
+            "content": "上下两支路相同并联：\n\n$$C_{eq}=2C_s=1.20\\,\\mu\\mathrm{F}$$"
+          },
+          {
+            "title": "(3) 求储能",
+            "content": "$$U=\\frac12C_{eq}V^2$$\n\n$$U=\\frac12\\times1.20\\times10^{-6}\\times10^2=60\\times10^{-6}\\,\\mathrm{J}$$\n\n即 $60\\,\\mu\\mathrm{J}$。"
+          }
+        ],
+        "finalAnswer": "⑤ $60\\,\\mu\\mathrm{J}$",
+        "correctOption": "⑤"
+      }
+    },
+    {
+      "id": "2022-r2-phys-15",
+      "number": "IV-C 问3",
+      "topic": "含电源与三电阻的直流电路",
+      "topicTag": "电磁·直流电路",
+      "questionType": "choice",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "图 1 中，连接电阻值均为 $R$ 的电阻 A、B、C 和两个电动势均为 $E$ 的电池，此时流过 C 的电流大小为 $I_1$。接着如图 2，将图 1 回路中右侧电池的方向反过来，此时流过 C 的电流大小为 $I_2$。忽略电池内阻。求 $I_1$、$I_2$ 的组合。",
+      "options": [
+        { "label": "①", "content": "$I_1=0,\\ I_2=\\dfrac{E}{3R}$" },
+        { "label": "②", "content": "$I_1=0,\\ I_2=\\dfrac{2E}{3R}$" },
+        { "label": "③", "content": "$I_1=\\dfrac{E}{3R},\\ I_2=\\dfrac{E}{3R}$" },
+        { "label": "④", "content": "$I_1=\\dfrac{E}{3R},\\ I_2=\\dfrac{2E}{3R}$" },
+        { "label": "⑤", "content": "$I_1=\\dfrac{2E}{3R},\\ I_2=\\dfrac{E}{3R}$" },
+        { "label": "⑥", "content": "$I_1=\\dfrac{2E}{3R},\\ I_2=\\dfrac{2E}{3R}$" }
+      ],
+      "questionImage": "/images/2022_R2_physics/q15.png",
+      "solution": {
+        "translation": "把下方导线电势取为 0，设 C 上端节点电势为 $V$。对该节点列电流方程。",
+        "analysis": "图 1 左、右两侧上端电势分别为 $+E$ 与 $-E$，故中心节点电势为 0，$I_1=0$。图 2 左、右两侧上端电势均为 $+E$，列式得 $V=2E/3$，所以 $I_2=2E/(3R)$。",
+        "steps": [
+          {
+            "title": "(1) 图 1",
+            "content": "取下端导线为 0 电势，C 上端节点为 $V$。\n\n图 1 左侧上端为 $+E$，右侧上端为 $-E$。节点电流方程：\n\n$$\\frac{V-E}{R}+\\frac{V+E}{R}+\\frac{V}{R}=0$$\n\n$$3V=0$$\n\n所以 $V=0$，流过 C 的电流\n\n$$I_1=\\frac{|V|}{R}=0$$"
+          },
+          {
+            "title": "(2) 图 2",
+            "content": "右侧电池反向后，左右两侧上端均为 $+E$。\n\n节点电流方程：\n\n$$\\frac{V-E}{R}+\\frac{V-E}{R}+\\frac{V}{R}=0$$\n\n$$3V-2E=0$$\n\n$$V=\\frac{2E}{3}$$"
+          },
+          {
+            "title": "(3) 求 $I_2$",
+            "content": "$$I_2=\\frac{V}{R}=\\frac{2E}{3R}$$"
+          }
+        ],
+        "finalAnswer": "② $I_1=0,\\ I_2=\\dfrac{2E}{3R}$",
+        "correctOption": "②"
+      }
+    },
+    {
+      "id": "2022-r2-phys-16",
+      "number": "IV-D 问4",
+      "topic": "两平行长直导线的磁场抵消点",
+      "topicTag": "电磁·电流与磁场",
+      "questionType": "choice",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "如图，纸面内有相距 $d$ 的两根平行长直导线。左侧导线向上通有电流 $I_1$，右侧导线向上通有电流 $I_2$。取纸面内垂直导线方向为 $x$ 轴，右向为 $x$ 正方向，左侧导线与 $x$ 轴交点为原点 O。在 $x$ 轴上，当坐标为 $x_0$ 时，两个电流产生的磁场大小之和为 0。求 $x_0$。",
+      "options": [
+        { "label": "①", "content": "$\\dfrac{I_1}{I_1+I_2}d$" },
+        { "label": "②", "content": "$\\dfrac{I_1}{I_1-I_2}d$" },
+        { "label": "③", "content": "$\\dfrac{I_1}{I_2-I_1}d$" },
+        { "label": "④", "content": "$\\dfrac{I_2}{I_1+I_2}d$" },
+        { "label": "⑤", "content": "$\\dfrac{I_2}{I_1-I_2}d$" },
+        { "label": "⑥", "content": "$\\dfrac{I_2}{I_2-I_1}d$" }
+      ],
+      "questionImage": "/images/2022_R2_physics/q16.png",
+      "solution": {
+        "translation": "两电流方向相同，磁场在两导线之间方向相反，因此抵消点位于 $0<x<d$。磁场大小与 $I/r$ 成正比。",
+        "analysis": "左导线到点的距离为 $x_0$，右导线到点的距离为 $d-x_0$。抵消条件为 $I_1/x_0=I_2/(d-x_0)$。",
+        "steps": [
+          {
+            "title": "(1) 写出磁场大小关系",
+            "content": "长直导线磁场大小\n\n$$B=\\frac{\\mu_0 I}{2\\pi r}$$\n\n抵消时两磁场大小相等：\n\n$$\\frac{I_1}{x_0}=\\frac{I_2}{d-x_0}$$"
+          },
+          {
+            "title": "(2) 解方程",
+            "content": "$$I_1(d-x_0)=I_2x_0$$\n\n$$I_1d=(I_1+I_2)x_0$$\n\n$$x_0=\\frac{I_1}{I_1+I_2}d$$"
+          }
+        ],
+        "finalAnswer": "① $x_0=\\dfrac{I_1}{I_1+I_2}d$",
+        "correctOption": "①"
+      }
+    },
+    {
+      "id": "2022-r2-phys-17",
+      "number": "IV-E 问5",
+      "topic": "带电粒子在匀强磁场中的圆周运动",
+      "topicTag": "电磁·洛伦兹力",
+      "questionType": "choice",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "纸面垂直方向有匀强磁场。在该磁场中，质量 $m$、正电荷量 $q$ 的带电粒子 A 以速率 $v$ 做半径 $r$ 的匀速圆周运动。相同磁场中，质量 $M$、正电荷量 $Q$ 的带电粒子 B 也以速率 $v$ 做半径 $2r$ 的匀速圆周运动。求磁场方向，以及 B 的比电荷 $Q/M$ 与 A 的比电荷 $q/m$ 之比 $\\dfrac{Qm}{Mq}$。",
+      "options": [
+        { "label": "①", "content": "纸面里侧到表侧，$\\dfrac{1}{2}$" },
+        { "label": "②", "content": "纸面里侧到表侧，$2$" },
+        { "label": "③", "content": "纸面表侧到里侧，$\\dfrac{1}{2}$" },
+        { "label": "④", "content": "纸面表侧到里侧，$2$" }
+      ],
+      "questionImage": "/images/2022_R2_physics/q17.png",
+      "solution": {
+        "translation": "对正电荷，洛伦兹力方向由右手定则决定。图中速度方向和圆心方向要求磁场从纸面里侧指向表侧。半径公式为 $r=mv/(qB)$。",
+        "analysis": "A 的半径 $r=mv/(qB)$，B 的半径 $2r=Mv/(QB)$。两式相比可得 $Qm/(Mq)=1/2$。",
+        "steps": [
+          {
+            "title": "(1) 判断磁场方向",
+            "content": "A 为正电荷，受到的洛伦兹力必须指向圆心。按图中速度方向使用右手定则，只有磁场从纸面里侧指向表侧时，$q\\vec v\\times\\vec B$ 指向圆心。"
+          },
+          {
+            "title": "(2) 使用半径公式",
+            "content": "带电粒子在匀强磁场中：\n\n$$r=\\frac{mv}{qB}$$\n\n对 B：\n\n$$2r=\\frac{Mv}{QB}$$"
+          },
+          {
+            "title": "(3) 求比电荷比",
+            "content": "两式相比：\n\n$$2=\\frac{Mv/(QB)}{mv/(qB)}=\\frac{Mq}{Qm}$$\n\n所以\n\n$$\\frac{Qm}{Mq}=\\frac12$$"
+          }
+        ],
+        "finalAnswer": "① 纸面里侧到表侧，$\\dfrac{Qm}{Mq}=\\dfrac{1}{2}$",
+        "correctOption": "①"
+      }
+    },
+    {
+      "id": "2022-r2-phys-18",
+      "number": "IV-F 问6",
+      "topic": "电容器与线圈的暂态电流",
+      "topicTag": "电磁·过渡现象",
+      "questionType": "choice",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "如图，连接两个电阻 $r$、$R$，电池 $E$ 和开关 S。X 为线圈或电容器，初始时电容器不带电，开关最初断开。X 为电容器时称为回路 (a)，X 为线圈时称为回路 (b)。分别在 S 刚闭合后流过 R 的电流大小为 $I_0$，充分时间后流过 R 的电流大小为 $I_1$。求回路 (a)、(b) 中 $I_0$ 与 $I_1$ 的大小关系。",
+      "options": [
+        { "label": "①", "content": "回路 (a)：$I_0<I_1$，回路 (b)：$I_0>I_1$" },
+        { "label": "②", "content": "回路 (a)：$I_0<I_1$，回路 (b)：$I_0=I_1$" },
+        { "label": "③", "content": "回路 (a)：$I_0=I_1$，回路 (b)：$I_0>I_1$" },
+        { "label": "④", "content": "回路 (a)：$I_0=I_1$，回路 (b)：$I_0<I_1$" },
+        { "label": "⑤", "content": "回路 (a)：$I_0>I_1$，回路 (b)：$I_0=I_1$" },
+        { "label": "⑥", "content": "回路 (a)：$I_0>I_1$，回路 (b)：$I_0<I_1$" }
+      ],
+      "questionImage": "/images/2022_R2_physics/q18.png",
+      "solution": {
+        "translation": "刚闭合瞬间，未充电电容器等效为短路，线圈等效为断路；充分时间后，电容器等效为断路，线圈等效为短路。",
+        "analysis": "回路 (a) 电容器：刚闭合时旁路 $r$，总电阻较小；充分后 $r$ 参与串联，总电阻变大，所以 $I_0>I_1$。回路 (b) 线圈：刚闭合时 $r$ 参与串联；充分后线圈旁路 $r$，总电阻变小，所以 $I_0<I_1$。",
+        "steps": [
+          {
+            "title": "(1) 回路 (a)：X 为电容器",
+            "content": "刚闭合时，电容器未带电，电压不能突变，等效近似短路，于是 $r$ 被旁路，总电阻约为 $R$。\n\n充分时间后，电容器充满，支路断开，电流经过 $r$ 与 $R$，总电阻为 $r+R$。\n\n所以\n\n$$I_0>I_1$$"
+          },
+          {
+            "title": "(2) 回路 (b)：X 为线圈",
+            "content": "刚闭合时，线圈电流不能突变，等效近似断路，电流经过 $r$ 与 $R$，总电阻为 $r+R$。\n\n充分时间后，理想线圈等效短路，旁路 $r$，总电阻约为 $R$。\n\n所以\n\n$$I_0<I_1$$"
+          },
+          {
+            "title": "(3) 对照选项",
+            "content": "回路 (a)：$I_0>I_1$；回路 (b)：$I_0<I_1$。对应选项 ⑥。"
+          }
+        ],
+        "finalAnswer": "⑥ 回路 (a)：$I_0>I_1$，回路 (b)：$I_0<I_1$",
+        "correctOption": "⑥"
+      }
+    },
+    {
+      "id": "2022-r2-phys-19",
+      "number": "V-A 问1",
+      "topic": "α 粒子轰击铍的核反应",
+      "topicTag": "原子·核反应",
+      "questionType": "choice",
+      "humanVerified": false,
+      "answer_match": true,
+      "needs_review": true,
+      "japanese": "$\\alpha$ 粒子轰击铍原子核 $^{9}_{4}\\mathrm{Be}$ 后，放出 1 个中子，并得到 1 个原子核。求得到的原子核。",
+      "options": [
+        { "label": "①", "content": "$^{1}_{1}\\mathrm{H}$" },
+        { "label": "②", "content": "$^{4}_{2}\\mathrm{He}$" },
+        { "label": "③", "content": "$^{7}_{3}\\mathrm{Li}$" },
+        { "label": "④", "content": "$^{11}_{5}\\mathrm{B}$" },
+        { "label": "⑤", "content": "$^{12}_{6}\\mathrm{C}$" },
+        { "label": "⑥", "content": "$^{14}_{7}\\mathrm{N}$" },
+        { "label": "⑦", "content": "$^{16}_{8}\\mathrm{O}$" }
+      ],
+      "solution": {
+        "translation": "核反应中质量数和原子序数分别守恒。",
+        "analysis": "$\\alpha$ 粒子为 $^{4}_{2}\\mathrm{He}$，中子为 $^{1}_{0}\\mathrm{n}$。设生成核为 $^{A}_{Z}X$，由守恒求 $A$ 和 $Z$。",
+        "steps": [
+          {
+            "title": "(1) 写出核反应式",
+            "content": "$$^{4}_{2}\\mathrm{He}+^{9}_{4}\\mathrm{Be}\\rightarrow ^{1}_{0}\\mathrm{n}+^{A}_{Z}X$$"
+          },
+          {
+            "title": "(2) 质量数守恒",
+            "content": "$$4+9=1+A$$\n\n$$A=12$$"
+          },
+          {
+            "title": "(3) 原子序数守恒",
+            "content": "$$2+4=0+Z$$\n\n$$Z=6$$\n\n原子序数 6 是碳 C，所以生成核为 $^{12}_{6}\\mathrm{C}$。"
+          }
+        ],
+        "finalAnswer": "⑤ $^{12}_{6}\\mathrm{C}$",
+        "correctOption": "⑤"
+      }
+    }
+  ]
+}
