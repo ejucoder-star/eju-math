@@ -1,0 +1,1152 @@
+{
+  "metadata": {
+    "course": "physics",
+    "year": "2022",
+    "session": "1",
+    "courseNameJa": "物理",
+    "courseNameEn": "Physics",
+    "description": "理科综合｜物理",
+    "color": "#16a34a",
+    "examTitle": "令和4年度（2022年度）第1回 物理",
+    "examDate": "2022年6月"
+  },
+  "questions": [
+    {
+      "id": "2022-r1-phys-1",
+      "number": "I-A 问1",
+      "topic": "两根绳的静力平衡",
+      "topicTag": "力学·静力平衡",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "如图，用两根轻绳 A、B 从天花板悬挂小物体。绳 A 与水平方向成 $60°$，绳 B 与水平方向成 $45°$。设绳 A、B 的张力分别为 $T_A$、$T_B$，求 $T_A/T_B$。",
+      "options": [
+        {
+          "label": "①",
+          "content": "$\\dfrac{\\sqrt2}{2}$"
+        },
+        {
+          "label": "②",
+          "content": "$\\sqrt2$"
+        },
+        {
+          "label": "③",
+          "content": "$1$"
+        },
+        {
+          "label": "④",
+          "content": "$\\dfrac{\\sqrt6}{3}$"
+        },
+        {
+          "label": "⑤",
+          "content": "$\\dfrac{\\sqrt6}{2}$"
+        }
+      ],
+      "questionImage": "/images/2022_R1_physics/q01.png",
+      "solution": {
+        "translation": "小物体静止，水平方向合力为 0。比较两根绳张力的水平分量即可求出比值。",
+        "analysis": "水平方向上，绳 A 的水平分量大小为 $T_A\\cos60°$，绳 B 的水平分量大小为 $T_B\\cos45°$。二者相等。",
+        "steps": [
+          {
+            "title": "(1) 写出水平方向平衡",
+            "content": "$$T_A\\cos60°=T_B\\cos45°$$\n\n代入\n\n$$\\cos60°=\\frac12,\\quad \\cos45°=\\frac{\\sqrt2}{2}$$"
+          },
+          {
+            "title": "(2) 求张力比",
+            "content": "$$T_A\\cdot\\frac12=T_B\\cdot\\frac{\\sqrt2}{2}$$\n\n所以\n\n$$\\frac{T_A}{T_B}=\\sqrt2$$"
+          }
+        ],
+        "finalAnswer": "② $\\dfrac{T_A}{T_B}=\\sqrt2$",
+        "correctOption": "②"
+      }
+    },
+    {
+      "id": "2022-r1-phys-2",
+      "number": "I-B 问2",
+      "topic": "斜面连接体的加速度",
+      "topicTag": "力学·牛顿运动定律",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "如图，直角三角形台的三边长为 $3L,4L,5L$，质量均为 $m$ 的小物体 A、B 分别放在两侧光滑斜面上，并用跨过轻滑轮的轻绳连接。释放后 A、B 做等加速度运动，求加速度大小 $a$。",
+      "options": [
+        {
+          "label": "①",
+          "content": "$\\dfrac{g}{2}$"
+        },
+        {
+          "label": "②",
+          "content": "$\\dfrac{g}{3}$"
+        },
+        {
+          "label": "③",
+          "content": "$\\dfrac{g}{4}$"
+        },
+        {
+          "label": "④",
+          "content": "$\\dfrac{g}{5}$"
+        },
+        {
+          "label": "⑤",
+          "content": "$\\dfrac{g}{6}$"
+        },
+        {
+          "label": "⑥",
+          "content": "$\\dfrac{g}{8}$"
+        },
+        {
+          "label": "⑦",
+          "content": "$\\dfrac{g}{10}$"
+        },
+        {
+          "label": "⑧",
+          "content": "$\\dfrac{g}{12}$"
+        }
+      ],
+      "questionImage": "/images/2022_R1_physics/q02.png",
+      "solution": {
+        "translation": "两侧斜面的倾角由 $3:4:5$ 三角形决定。沿斜面的重力分量不同，其差提供两个物体整体的加速度。",
+        "analysis": "左侧 $4L$ 斜面的竖直升高为 $3L$，所以 $\\sin\\alpha=3/5$；右侧 $3L$ 斜面的竖直升高为 $4L$，所以 $\\sin\\beta=4/5$。",
+        "steps": [
+          {
+            "title": "(1) 求两侧重力沿斜面分量",
+            "content": "A 所在斜面：\n\n$$mg\\sin\\alpha=mg\\cdot\\frac35$$\n\nB 所在斜面：\n\n$$mg\\sin\\beta=mg\\cdot\\frac45$$"
+          },
+          {
+            "title": "(2) 对整体列运动方程",
+            "content": "B 一侧的分力较大，因此 B 下滑、A 上滑。对 A、B 整体：\n\n$$mg\\frac45-mg\\frac35=2ma$$\n\n$$\\frac15mg=2ma$$"
+          },
+          {
+            "title": "(3) 求加速度",
+            "content": "$$a=\\frac{g}{10}$$"
+          }
+        ],
+        "finalAnswer": "⑦ $a=\\dfrac{g}{10}$",
+        "correctOption": "⑦"
+      }
+    },
+    {
+      "id": "2022-r1-phys-3",
+      "number": "I-C 问3",
+      "topic": "粗糙斜面上的动摩擦力",
+      "topicTag": "力学·摩擦·运动图像",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "质量 $2.0\\,\\mathrm{kg}$ 的小物体沿与水平面成 $30°$ 的粗糙斜面下滑。图像给出了沿斜面向下为正的速度 $v$ 与时间 $t$ 的关系。取 $g=9.8\\,\\mathrm{m/s^2}$，求动摩擦力大小。",
+      "options": [
+        {
+          "label": "①",
+          "content": "$1.9\\,\\mathrm{N}$"
+        },
+        {
+          "label": "②",
+          "content": "$3.8\\,\\mathrm{N}$"
+        },
+        {
+          "label": "③",
+          "content": "$5.5\\,\\mathrm{N}$"
+        },
+        {
+          "label": "④",
+          "content": "$7.0\\,\\mathrm{N}$"
+        },
+        {
+          "label": "⑤",
+          "content": "$11\\,\\mathrm{N}$"
+        },
+        {
+          "label": "⑥",
+          "content": "$14\\,\\mathrm{N}$"
+        }
+      ],
+      "questionImage": "/images/2022_R1_physics/q03.png",
+      "solution": {
+        "translation": "速度-时间图像的斜率就是加速度。沿斜面方向，重力分力向下，动摩擦力向上。",
+        "analysis": "图像斜率约为 $3.0\\,\\mathrm{m/s^2}$。沿斜面方向列式 $mg\\sin30°-f=ma$。",
+        "steps": [
+          {
+            "title": "(1) 由图像求加速度",
+            "content": "$$a=\\frac{\\Delta v}{\\Delta t}=\\frac{9.0}{3.0}=3.0\\,\\mathrm{m/s^2}$$"
+          },
+          {
+            "title": "(2) 沿斜面列方程",
+            "content": "$$mg\\sin30°-f=ma$$\n\n$$2.0\\times9.8\\times\\frac12-f=2.0\\times3.0$$"
+          },
+          {
+            "title": "(3) 求摩擦力",
+            "content": "$$9.8-f=6.0$$\n\n$$f=3.8\\,\\mathrm{N}$$"
+          }
+        ],
+        "finalAnswer": "② $3.8\\,\\mathrm{N}$",
+        "correctOption": "②"
+      }
+    },
+    {
+      "id": "2022-r1-phys-4",
+      "number": "I-D 问4",
+      "topic": "一维碰撞的反发系数",
+      "topicTag": "力学·动量·碰撞",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "质量 $m$ 的小物体 A 以速度 $v$ 向右运动，质量 $\\dfrac{3m}{2}$ 的小物体 B 以速度 $\\dfrac{v}{3}$ 向左运动。碰撞后 A 静止。求碰撞的反发系数 $e$。",
+      "options": [
+        {
+          "label": "①",
+          "content": "$0$"
+        },
+        {
+          "label": "②",
+          "content": "$\\dfrac16$"
+        },
+        {
+          "label": "③",
+          "content": "$\\dfrac15$"
+        },
+        {
+          "label": "④",
+          "content": "$\\dfrac14$"
+        },
+        {
+          "label": "⑤",
+          "content": "$\\dfrac13$"
+        },
+        {
+          "label": "⑥",
+          "content": "$\\dfrac25$"
+        },
+        {
+          "label": "⑦",
+          "content": "$\\dfrac12$"
+        },
+        {
+          "label": "⑧",
+          "content": "$1$"
+        }
+      ],
+      "questionImage": "/images/2022_R1_physics/q04.png",
+      "solution": {
+        "translation": "先用动量守恒求碰撞后 B 的速度，再用分离速度与接近速度之比求反发系数。",
+        "analysis": "取向右为正。碰撞前总动量为 $mv-\\frac{3m}{2}\\cdot\\frac{v}{3}=\\frac12mv$。碰撞后 A 静止，所以 B 向右速度为 $v/3$。",
+        "steps": [
+          {
+            "title": "(1) 用动量守恒求 B 的末速度",
+            "content": "设碰撞后 B 的速度为 $u$：\n\n$$mv-\\frac{3m}{2}\\cdot\\frac{v}{3}=\\frac{3m}{2}u$$\n\n$$\\frac12mv=\\frac{3m}{2}u$$\n\n$$u=\\frac{v}{3}$$"
+          },
+          {
+            "title": "(2) 求反发系数",
+            "content": "碰撞前接近速度为\n\n$$v-\\left(-\\frac{v}{3}\\right)=\\frac{4v}{3}$$\n\n碰撞后分离速度为\n\n$$\\frac{v}{3}-0=\\frac{v}{3}$$\n\n所以\n\n$$e=\\frac{v/3}{4v/3}=\\frac14$$"
+          }
+        ],
+        "finalAnswer": "④ $e=\\dfrac14$",
+        "correctOption": "④"
+      }
+    },
+    {
+      "id": "2022-r1-phys-5",
+      "number": "I-E 问5",
+      "topic": "圆锥面内的等速圆周运动",
+      "topicTag": "力学·圆周运动",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "小物体在固定的光滑圆锥面内侧做水平面内半径为 $r$、速率为 $v$ 的等速圆周运动。小物体与顶点连线和中心轴的夹角为 $\\theta$。求 $r,v,\\theta$ 的关系。",
+      "options": [
+        {
+          "label": "①",
+          "content": "$\\sin\\theta=\\dfrac{gr}{v^2}$"
+        },
+        {
+          "label": "②",
+          "content": "$\\cos\\theta=\\dfrac{gr}{v^2}$"
+        },
+        {
+          "label": "③",
+          "content": "$\\tan\\theta=\\dfrac{gr}{v^2}$"
+        },
+        {
+          "label": "④",
+          "content": "$\\sin\\theta=\\dfrac{v^2}{gr}$"
+        },
+        {
+          "label": "⑤",
+          "content": "$\\cos\\theta=\\dfrac{v^2}{gr}$"
+        },
+        {
+          "label": "⑥",
+          "content": "$\\tan\\theta=\\dfrac{v^2}{gr}$"
+        }
+      ],
+      "questionImage": "/images/2022_R1_physics/q05.png",
+      "solution": {
+        "translation": "圆锥面对物体的支持力可以分解为竖直分量和水平分量。竖直分量平衡重力，水平分量提供向心力。",
+        "analysis": "支持力 $N$ 的竖直分量为 $N\\sin\\theta$，水平分量为 $N\\cos\\theta$，于是 $N\\sin\\theta=mg$，$N\\cos\\theta=mv^2/r$。",
+        "steps": [
+          {
+            "title": "(1) 竖直方向平衡",
+            "content": "$$N\\sin\\theta=mg$$"
+          },
+          {
+            "title": "(2) 水平方向提供向心力",
+            "content": "$$N\\cos\\theta=\\frac{mv^2}{r}$$"
+          },
+          {
+            "title": "(3) 两式相除",
+            "content": "$$\\frac{N\\sin\\theta}{N\\cos\\theta}=\\frac{mg}{mv^2/r}$$\n\n$$\\tan\\theta=\\frac{gr}{v^2}$$"
+          }
+        ],
+        "finalAnswer": "③ $\\tan\\theta=\\dfrac{gr}{v^2}$",
+        "correctOption": "③"
+      }
+    },
+    {
+      "id": "2022-r1-phys-6",
+      "number": "I-F 问6",
+      "topic": "人造卫星的圆周运动",
+      "topicTag": "力学·万有引力",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "把地球看成半径为 $R$ 的球，地表重力加速度为 $g$。人造卫星绕地球中心做半径 $3R$、速率 $v$ 的等速圆周运动。求 $v$。",
+      "options": [
+        {
+          "label": "①",
+          "content": "$\\sqrt{\\dfrac{gR}{2}}$"
+        },
+        {
+          "label": "②",
+          "content": "$\\sqrt{\\dfrac{gR}{3}}$"
+        },
+        {
+          "label": "③",
+          "content": "$\\sqrt{\\dfrac{gR}{4}}$"
+        },
+        {
+          "label": "④",
+          "content": "$\\sqrt{gR}$"
+        },
+        {
+          "label": "⑤",
+          "content": "$\\sqrt{2gR}$"
+        },
+        {
+          "label": "⑥",
+          "content": "$\\sqrt{3gR}$"
+        },
+        {
+          "label": "⑦",
+          "content": "$\\sqrt{4gR}$"
+        }
+      ],
+      "questionImage": "/images/2022_R1_physics/q06.png",
+      "solution": {
+        "translation": "距地心 $3R$ 处的重力加速度是地表的 $1/9$。该引力加速度提供向心加速度。",
+        "analysis": "在轨道半径 $3R$ 处，$g'=g/9$。圆周运动满足 $v^2/(3R)=g/9$。",
+        "steps": [
+          {
+            "title": "(1) 求轨道处引力加速度",
+            "content": "$$g'=g\\left(\\frac{R}{3R}\\right)^2=\\frac{g}{9}$$"
+          },
+          {
+            "title": "(2) 列向心加速度关系",
+            "content": "$$\\frac{v^2}{3R}=\\frac{g}{9}$$"
+          },
+          {
+            "title": "(3) 求速率",
+            "content": "$$v^2=\\frac{gR}{3}$$\n\n$$v=\\sqrt{\\frac{gR}{3}}$$"
+          }
+        ],
+        "finalAnswer": "② $v=\\sqrt{\\dfrac{gR}{3}}$",
+        "correctOption": "②"
+      }
+    },
+    {
+      "id": "2022-r1-phys-7",
+      "number": "II-A 问1",
+      "topic": "冰、水、水蒸气的热量计算",
+      "topicTag": "热学·热量与状态变化",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "$0°C$ 的冰 $10\\,\\mathrm{g}$ 每秒吸收 $300\\,\\mathrm{J}$ 的热量，先全部变成 $0°C$ 的水，再继续吸热全部变成 $100°C$ 的水蒸气。冰的熔解热为 $3.4\\times10^2\\,\\mathrm{J/g}$，水的比热为 $4.2\\,\\mathrm{J/(g\\cdot K)}$，水的蒸发热为 $2.3\\times10^3\\,\\mathrm{J/g}$。求总时间。",
+      "options": [
+        {
+          "label": "①",
+          "content": "$2.0\\times10^1\\,\\mathrm{s}$"
+        },
+        {
+          "label": "②",
+          "content": "$4.0\\times10^1\\,\\mathrm{s}$"
+        },
+        {
+          "label": "③",
+          "content": "$6.0\\times10^1\\,\\mathrm{s}$"
+        },
+        {
+          "label": "④",
+          "content": "$8.0\\times10^1\\,\\mathrm{s}$"
+        },
+        {
+          "label": "⑤",
+          "content": "$1.0\\times10^2\\,\\mathrm{s}$"
+        },
+        {
+          "label": "⑥",
+          "content": "$1.2\\times10^2\\,\\mathrm{s}$"
+        }
+      ],
+      "solution": {
+        "translation": "总热量包含熔化、从 $0°C$ 加热到 $100°C$、汽化三部分。再除以每秒供热量。",
+        "analysis": "熔化需 $3400\\,\\mathrm{J}$，升温需 $4200\\,\\mathrm{J}$，汽化需 $23000\\,\\mathrm{J}$，合计 $30600\\,\\mathrm{J}$。",
+        "steps": [
+          {
+            "title": "(1) 熔化所需热量",
+            "content": "$$Q_1=10\\times3.4\\times10^2=3.4\\times10^3\\,\\mathrm{J}$$"
+          },
+          {
+            "title": "(2) 水升温所需热量",
+            "content": "$$Q_2=10\\times4.2\\times100=4.2\\times10^3\\,\\mathrm{J}$$"
+          },
+          {
+            "title": "(3) 汽化所需热量",
+            "content": "$$Q_3=10\\times2.3\\times10^3=2.3\\times10^4\\,\\mathrm{J}$$"
+          },
+          {
+            "title": "(4) 求时间",
+            "content": "$$Q=3.4\\times10^3+4.2\\times10^3+2.3\\times10^4=3.06\\times10^4\\,\\mathrm{J}$$\n\n$$t=\\frac{3.06\\times10^4}{300}=102\\,\\mathrm{s}\\approx1.0\\times10^2\\,\\mathrm{s}$$"
+          }
+        ],
+        "finalAnswer": "⑤ $1.0\\times10^2\\,\\mathrm{s}$",
+        "correctOption": "⑤"
+      }
+    },
+    {
+      "id": "2022-r1-phys-8",
+      "number": "II-B 问2",
+      "topic": "定压加热与定容加热",
+      "topicTag": "热学·理想气体",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "绝热气缸中封入单原子分子理想气体，用气缸内加热器从 $t=0$ 开始以恒定功率加热。气体缓慢膨胀，活塞在 $t=t_A$ 到达挡块 A，之后活塞静止。问气体温度 $T$ 与时间 $t$ 的图像。",
+      "options": [
+        {
+          "label": "①",
+          "content": "$t_A$ 前温度一定，$t_A$ 后线性上升"
+        },
+        {
+          "label": "②",
+          "content": "$t_A$ 前线性上升，$t_A$ 后温度一定"
+        },
+        {
+          "label": "③",
+          "content": "$t_A$ 前线性上升，$t_A$ 后斜率变大"
+        },
+        {
+          "label": "④",
+          "content": "$t_A$ 前线性上升，$t_A$ 后斜率变小"
+        }
+      ],
+      "questionImage": "/images/2022_R1_physics/q08.png",
+      "solution": {
+        "translation": "活塞碰到挡块前，气体近似定压膨胀；碰到挡块后体积固定，变成定容加热。",
+        "analysis": "恒定功率下，$\\Delta T=Q/(nC)$。定压时使用 $C_p$，定容时使用 $C_v$。单原子理想气体 $C_p>C_v$，所以定容阶段温度上升更快。",
+        "steps": [
+          {
+            "title": "(1) $t_A$ 前是定压过程",
+            "content": "活塞缓慢移动，外界大气压一定，所以气体定压膨胀。恒定功率加热时\n\n$$Q=nC_p\\Delta T$$\n\n因此 $T$ 随 $t$ 线性增加。"
+          },
+          {
+            "title": "(2) $t_A$ 后是定容过程",
+            "content": "活塞被挡块固定，体积不再变化：\n\n$$Q=nC_v\\Delta T$$\n\n因为 $C_v<C_p$，同样热量造成的温度升高更大。"
+          },
+          {
+            "title": "(3) 判断图像",
+            "content": "所以 $t_A$ 前后都是直线，但 $t_A$ 后斜率变大。对应选项 ③。"
+          }
+        ],
+        "finalAnswer": "③ $t_A$ 后斜率变大",
+        "correctOption": "③"
+      }
+    },
+    {
+      "id": "2022-r1-phys-9",
+      "number": "II-C 问3",
+      "topic": "绝热压缩与等温压缩",
+      "topicTag": "热学·热力学第一定律",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "两个相同气缸 A、B 中有同量理想气体，初态均为 $(V_1,p_1)$。把气体压缩到 $V_2(<V_1)$，A 为绝热压缩，B 为等温压缩。表中 $W$ 是外界对气体做的功，$Q$ 是气体从外界吸收的热量。判断 $a,b,c,d$。",
+      "options": [
+        {
+          "label": "①",
+          "content": "$a$ 正，$b$ 正，$c$ 正，$d=A$"
+        },
+        {
+          "label": "②",
+          "content": "$a$ 正，$b$ 正，$c$ 正，$d=B$"
+        },
+        {
+          "label": "③",
+          "content": "$a$ 正，$b$ 负，$c$ 负，$d=A$"
+        },
+        {
+          "label": "④",
+          "content": "$a$ 正，$b$ 负，$c$ 负，$d=B$"
+        },
+        {
+          "label": "⑤",
+          "content": "$a$ 负，$b$ 正，$c$ 正，$d=A$"
+        },
+        {
+          "label": "⑥",
+          "content": "$a$ 负，$b$ 正，$c$ 正，$d=B$"
+        },
+        {
+          "label": "⑦",
+          "content": "$a$ 负，$b$ 负，$c$ 负，$d=A$"
+        },
+        {
+          "label": "⑧",
+          "content": "$a$ 负，$b$ 负，$c$ 负，$d=B$"
+        }
+      ],
+      "questionImage": "/images/2022_R1_physics/q09.png",
+      "solution": {
+        "translation": "绝热压缩中 $Q=0$，外界做正功，内能和温度增加。等温压缩中温度和内能不变，因此气体必须向外放热。",
+        "analysis": "题目把外界对气体做功 $W$ 取正，热力学第一定律写成 $\\Delta U=Q+W$。等温压缩 $\\Delta U=0$ 且 $W>0$，所以 $Q<0$。",
+        "steps": [
+          {
+            "title": "(1) 判断 B 的 $a$",
+            "content": "B 是等温压缩，$\\Delta U=0$。又因为外界对气体做正功 $W>0$，所以\n\n$$0=Q+W$$\n\n$$Q=-W<0$$\n\n因此 $a$ 为负。"
+          },
+          {
+            "title": "(2) 判断 A 的 $b,c$",
+            "content": "A 是绝热压缩，$Q=0$，外界对气体做正功，所以\n\n$$\\Delta U=W>0$$\n\n理想气体内能只由温度决定，因此温度变化 $\\Delta T>0$。所以 $b$ 正，$c$ 正。"
+          },
+          {
+            "title": "(3) 判断曲线 $C_2$",
+            "content": "同样压缩到 $V_2$ 时，绝热压缩温度升高，压强高于等温压缩。因此上方曲线 $C_1$ 是 A，下方曲线 $C_2$ 是 B。故 $d=B$。"
+          }
+        ],
+        "finalAnswer": "⑥ $a$ 负，$b$ 正，$c$ 正，$d=B$",
+        "correctOption": "⑥"
+      }
+    },
+    {
+      "id": "2022-r1-phys-10",
+      "number": "III-A 问1",
+      "topic": "行波的时间表达式",
+      "topicTag": "波动·正弦波",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "振幅为 $A$ 的正弦波沿 $x$ 轴正方向以 $8\\,\\mathrm{m/s}$ 传播。图为 $t=0$ 时位移 $y$ 与位置 $x$ 的关系。求 $x=2\\,\\mathrm{m}$ 处位移 $y$ 随时间 $t$ 的表达式。",
+      "options": [
+        {
+          "label": "①",
+          "content": "$y=A\\sin2\\pi t$"
+        },
+        {
+          "label": "②",
+          "content": "$y=A\\sin4\\pi t$"
+        },
+        {
+          "label": "③",
+          "content": "$y=A\\sin8\\pi t$"
+        },
+        {
+          "label": "④",
+          "content": "$y=-A\\sin2\\pi t$"
+        },
+        {
+          "label": "⑤",
+          "content": "$y=-A\\sin4\\pi t$"
+        },
+        {
+          "label": "⑥",
+          "content": "$y=-A\\sin8\\pi t$"
+        }
+      ],
+      "questionImage": "/images/2022_R1_physics/q10.png",
+      "solution": {
+        "translation": "由图读出波长，再由波速求频率。最后用波向右传播判断 $x=2\\,\\mathrm{m}$ 处刚开始的位移变化方向。",
+        "analysis": "图中波长为 $2\\,\\mathrm{m}$，所以 $f=8/2=4\\,\\mathrm{Hz}$，角频率 $\\omega=8\\pi$。在 $x=2$ 处 $t=0$ 位移为 0，且随时间先变为负。",
+        "steps": [
+          {
+            "title": "(1) 求角频率",
+            "content": "$$\\lambda=2\\,\\mathrm{m}$$\n\n$$f=\\frac{v}{\\lambda}=\\frac{8}{2}=4\\,\\mathrm{Hz}$$\n\n$$\\omega=2\\pi f=8\\pi$$"
+          },
+          {
+            "title": "(2) 判断符号",
+            "content": "在 $x=2\\,\\mathrm{m}$ 处，$t=0$ 时 $y=0$。波向右传播，固定点会看到左侧的波形传来；$x=2$ 左侧附近位移为负，所以刚开始 $y$ 变为负。"
+          },
+          {
+            "title": "(3) 写出表达式",
+            "content": "$$y=-A\\sin8\\pi t$$"
+          }
+        ],
+        "finalAnswer": "⑥ $y=-A\\sin8\\pi t$",
+        "correctOption": "⑥"
+      }
+    },
+    {
+      "id": "2022-r1-phys-11",
+      "number": "III-B 问2",
+      "topic": "弦上的驻波",
+      "topicTag": "波动·驻波",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "弦的一端接在频率 $600\\,\\mathrm{Hz}$ 的音叉上，另一端挂重物并跨过滑轮。音叉与滑轮间弦长为 $0.90\\,\\mathrm{m}$。此时弦上形成 3 个腹的驻波。若只改变音叉频率，使弦上形成 2 个腹，求频率。",
+      "options": [
+        {
+          "label": "①",
+          "content": "$300\\,\\mathrm{Hz}$"
+        },
+        {
+          "label": "②",
+          "content": "$360\\,\\mathrm{Hz}$"
+        },
+        {
+          "label": "③",
+          "content": "$400\\,\\mathrm{Hz}$"
+        },
+        {
+          "label": "④",
+          "content": "$720\\,\\mathrm{Hz}$"
+        },
+        {
+          "label": "⑤",
+          "content": "$800\\,\\mathrm{Hz}$"
+        },
+        {
+          "label": "⑥",
+          "content": "$900\\,\\mathrm{Hz}$"
+        }
+      ],
+      "questionImage": "/images/2022_R1_physics/q11.png",
+      "solution": {
+        "translation": "张力不变，所以波速不变。弦长固定，两端为节点时，腹的个数 $n$ 满足 $L=n\\lambda/2$。",
+        "analysis": "3 个腹时 $\\lambda=2L/3=0.60\\,\\mathrm{m}$，由 $600\\,\\mathrm{Hz}$ 求波速。2 个腹时 $\\lambda'=L=0.90\\,\\mathrm{m}$。",
+        "steps": [
+          {
+            "title": "(1) 3 个腹时求波速",
+            "content": "$$L=\\frac{3\\lambda}{2}$$\n\n$$\\lambda=\\frac{2L}{3}=\\frac{2\\times0.90}{3}=0.60\\,\\mathrm{m}$$\n\n$$v=f\\lambda=600\\times0.60=360\\,\\mathrm{m/s}$$"
+          },
+          {
+            "title": "(2) 2 个腹时求频率",
+            "content": "$$L=\\frac{2\\lambda'}{2}=\\lambda'=0.90\\,\\mathrm{m}$$\n\n$$f'=\\frac{v}{\\lambda'}=\\frac{360}{0.90}=400\\,\\mathrm{Hz}$$"
+          }
+        ],
+        "finalAnswer": "③ $400\\,\\mathrm{Hz}$",
+        "correctOption": "③"
+      }
+    },
+    {
+      "id": "2022-r1-phys-12",
+      "number": "III-C 问3",
+      "topic": "全反射与折射率",
+      "topicTag": "波动·光学",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "玻璃 1 与玻璃 2 在真空中接触。光从玻璃 2 射入玻璃 1，再到达玻璃 1 与真空的边界。当入射角满足 $\\sin\\theta>0.67$ 时，光在玻璃 1 与真空边界发生全反射。求玻璃 2 的折射率。",
+      "options": [
+        {
+          "label": "①",
+          "content": "$1.1$"
+        },
+        {
+          "label": "②",
+          "content": "$1.2$"
+        },
+        {
+          "label": "③",
+          "content": "$1.3$"
+        },
+        {
+          "label": "④",
+          "content": "$1.4$"
+        },
+        {
+          "label": "⑤",
+          "content": "$1.5$"
+        },
+        {
+          "label": "⑥",
+          "content": "$1.6$"
+        },
+        {
+          "label": "⑦",
+          "content": "$1.7$"
+        },
+        {
+          "label": "⑧",
+          "content": "$1.8$"
+        }
+      ],
+      "questionImage": "/images/2022_R1_physics/q12.png",
+      "solution": {
+        "translation": "临界时，玻璃 1 与真空边界的折射角为 $90°$。把两次折射连起来，可以直接得到玻璃 2 的折射率与临界入射角的关系。",
+        "analysis": "设玻璃 1 中到达上边界时的入射角为 $\\phi$。临界条件 $n_1\\sin\\phi=1$。玻璃 2 到玻璃 1 的折射满足 $n_2\\sin\\theta=n_1\\sin\\phi$，因此临界时 $n_2\\sin\\theta=1$。",
+        "steps": [
+          {
+            "title": "(1) 写出上边界临界条件",
+            "content": "$$n_1\\sin\\phi=1$$"
+          },
+          {
+            "title": "(2) 写出玻璃 2 到玻璃 1 的折射关系",
+            "content": "$$n_2\\sin\\theta=n_1\\sin\\phi$$"
+          },
+          {
+            "title": "(3) 代入临界值",
+            "content": "临界时 $\\sin\\theta=0.67$，所以\n\n$$n_2\\times0.67=1$$\n\n$$n_2\\approx1.49\\approx1.5$$"
+          }
+        ],
+        "finalAnswer": "⑤ $1.5$",
+        "correctOption": "⑤"
+      }
+    },
+    {
+      "id": "2022-r1-phys-13",
+      "number": "IV-A 问1",
+      "topic": "三点电荷的合力",
+      "topicTag": "电磁·库仑力",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "三个同号且等量的点电荷 A、B、C 固定在直角三角形的三个顶点。$\\angle A=60°$，$\\angle B=30°$，$\\angle C=90°$。设 B 受 A 的静电力大小为 $F_0$，C 受 A、B 的静电力合力大小为 $F_1$，求 $F_1/F_0$。",
+      "options": [
+        {
+          "label": "①",
+          "content": "$\\dfrac13$"
+        },
+        {
+          "label": "②",
+          "content": "$\\dfrac{\\sqrt3}{3}$"
+        },
+        {
+          "label": "③",
+          "content": "$\\dfrac23$"
+        },
+        {
+          "label": "④",
+          "content": "$\\dfrac{\\sqrt{10}}{3}$"
+        },
+        {
+          "label": "⑤",
+          "content": "$\\dfrac43$"
+        },
+        {
+          "label": "⑥",
+          "content": "$\\dfrac{4\\sqrt3}{3}$"
+        },
+        {
+          "label": "⑦",
+          "content": "$\\dfrac83$"
+        },
+        {
+          "label": "⑧",
+          "content": "$\\dfrac{4\\sqrt{10}}{3}$"
+        }
+      ],
+      "questionImage": "/images/2022_R1_physics/q13.png",
+      "solution": {
+        "translation": "库仑力大小与距离平方成反比。以 $AB$ 为斜边，直角三角形的边长比可确定 $AC$、$BC$ 与 $AB$ 的关系。",
+        "analysis": "若 $AB=l$，则 $AC=l/2$，$BC=\\sqrt3l/2$。于是 C 受 A 的力为 $4F_0$，C 受 B 的力为 $4F_0/3$，两力互相垂直。",
+        "steps": [
+          {
+            "title": "(1) 写出边长关系",
+            "content": "$$AC=\\frac{AB}{2},\\quad BC=\\frac{\\sqrt3}{2}AB$$"
+          },
+          {
+            "title": "(2) 比较两个库仑力",
+            "content": "B 受 A 的力\n\n$$F_0=k\\frac{q^2}{AB^2}$$\n\nC 受 A 的力\n\n$$F_{CA}=k\\frac{q^2}{AC^2}=4F_0$$\n\nC 受 B 的力\n\n$$F_{CB}=k\\frac{q^2}{BC^2}=\\frac43F_0$$"
+          },
+          {
+            "title": "(3) 求垂直合力",
+            "content": "$$F_1=\\sqrt{(4F_0)^2+\\left(\\frac43F_0\\right)^2}=\\frac{4\\sqrt{10}}{3}F_0$$"
+          }
+        ],
+        "finalAnswer": "⑧ $\\dfrac{F_1}{F_0}=\\dfrac{4\\sqrt{10}}{3}$",
+        "correctOption": "⑧"
+      }
+    },
+    {
+      "id": "2022-r1-phys-14",
+      "number": "IV-B 问2",
+      "topic": "电容器的充电与电荷再分配",
+      "topicTag": "电磁·电容器",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "电容为 $C$ 的电容器 1、电容为 $5C/8$ 的电容器 2、电动势 $V$ 的电池、两个电阻以及开关 $S_1,S_2$ 如图连接。先闭合 $S_1$ 充分充电，再断开 $S_1$ 并闭合 $S_2$。充分时间后，电容器 2 两极板间电势差为 $V'$。求 $V'/V$。",
+      "options": [
+        {
+          "label": "①",
+          "content": "$\\dfrac{5}{13}$"
+        },
+        {
+          "label": "②",
+          "content": "$\\dfrac{8}{13}$"
+        },
+        {
+          "label": "③",
+          "content": "$\\dfrac{10}{13}$"
+        },
+        {
+          "label": "④",
+          "content": "$\\dfrac{13}{10}$"
+        },
+        {
+          "label": "⑤",
+          "content": "$\\dfrac{13}{8}$"
+        },
+        {
+          "label": "⑥",
+          "content": "$\\dfrac{13}{5}$"
+        }
+      ],
+      "questionImage": "/images/2022_R1_physics/q14.png",
+      "solution": {
+        "translation": "第一次闭合 $S_1$ 后，电容器 1 被充到电压 $V$。之后电池断开，闭合 $S_2$ 后两个电容器并联并重新分配电荷。",
+        "analysis": "初始总电荷为 $Q=CV$。最终两个电容器电压相同为 $V'$，等效电容为 $C+5C/8=13C/8$。",
+        "steps": [
+          {
+            "title": "(1) 第一次充电后的电荷",
+            "content": "$$Q=CV$$"
+          },
+          {
+            "title": "(2) 第二次连接后的等效电容",
+            "content": "$$C_{\\mathrm{eq}}=C+\\frac{5C}{8}=\\frac{13C}{8}$$"
+          },
+          {
+            "title": "(3) 电荷守恒求最终电压",
+            "content": "$$CV=\\frac{13C}{8}V'$$\n\n$$\\frac{V'}{V}=\\frac{8}{13}$$"
+          }
+        ],
+        "finalAnswer": "② $\\dfrac{V'}{V}=\\dfrac{8}{13}$",
+        "correctOption": "②"
+      }
+    },
+    {
+      "id": "2022-r1-phys-15",
+      "number": "IV-C 问3",
+      "topic": "电阻网络的电势分配",
+      "topicTag": "电磁·直流电路",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "电动势为 $V$ 的电池与 4 个阻值均为 $R$ 的电阻如图连接。点 O 作为电位基准，点 P 的电位为 $V'$。求 $V'/V$。",
+      "options": [
+        {
+          "label": "①",
+          "content": "$\\dfrac15$"
+        },
+        {
+          "label": "②",
+          "content": "$\\dfrac13$"
+        },
+        {
+          "label": "③",
+          "content": "$\\dfrac25$"
+        },
+        {
+          "label": "④",
+          "content": "$\\dfrac12$"
+        },
+        {
+          "label": "⑤",
+          "content": "$\\dfrac35$"
+        },
+        {
+          "label": "⑥",
+          "content": "$\\dfrac23$"
+        },
+        {
+          "label": "⑦",
+          "content": "$\\dfrac45$"
+        }
+      ],
+      "questionImage": "/images/2022_R1_physics/q15.png",
+      "solution": {
+        "translation": "从 P 到 O 有两条支路：中间一个电阻 $R$，右侧两个电阻串联为 $2R$。它们并联后再与左上方电阻 $R$ 串联，形成分压。",
+        "analysis": "P 到地的等效电阻为 $R\\parallel2R=2R/3$。P 的电位就是该并联部分上的电压。",
+        "steps": [
+          {
+            "title": "(1) 求 P 到 O 的等效电阻",
+            "content": "$$R_P=R\\parallel2R=\\frac{R\\cdot2R}{R+2R}=\\frac{2R}{3}$$"
+          },
+          {
+            "title": "(2) 用分压公式",
+            "content": "$$V'=V\\frac{R_P}{R+R_P}=V\\frac{2R/3}{R+2R/3}$$"
+          },
+          {
+            "title": "(3) 化简",
+            "content": "$$\\frac{V'}{V}=\\frac{2/3}{5/3}=\\frac25$$"
+          }
+        ],
+        "finalAnswer": "③ $\\dfrac{V'}{V}=\\dfrac25$",
+        "correctOption": "③"
+      }
+    },
+    {
+      "id": "2022-r1-phys-16",
+      "number": "IV-D 问4",
+      "topic": "平行电流之间的作用力",
+      "topicTag": "电磁·电流与磁场",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "三根足够长的直导线分别垂直纸面穿过直角等腰三角形的顶点 O、P、Q。O 中电流为 $I$ 且从纸面里向外，P 中电流为 $I$ 且从纸面外向里，Q 中电流为 $2I$ 且从纸面外向里。求 Q 中导线受另外两根导线作用力的合力方向。",
+      "options": [
+        {
+          "label": "①",
+          "content": "$(a)$"
+        },
+        {
+          "label": "②",
+          "content": "$(b)$"
+        },
+        {
+          "label": "③",
+          "content": "$(c)$"
+        },
+        {
+          "label": "④",
+          "content": "$(d)$"
+        },
+        {
+          "label": "⑤",
+          "content": "$(e)$"
+        },
+        {
+          "label": "⑥",
+          "content": "$(f)$"
+        },
+        {
+          "label": "⑦",
+          "content": "$(g)$"
+        },
+        {
+          "label": "⑧",
+          "content": "$(h)$"
+        }
+      ],
+      "questionImage": "/images/2022_R1_physics/q16.png",
+      "solution": {
+        "translation": "同向电流相吸，反向电流相斥。再比较 Q 受 O、P 两根导线作用力的大小和方向。",
+        "analysis": "Q 与 O 距离为 $L$，电流反向，Q 受到向上的斥力，大小正比于 $2I^2/L$。Q 与 P 距离为 $\\sqrt2L$，电流同向，Q 受到指向 P 的吸力，大小正比于 $2I^2/(\\sqrt2L)$。",
+        "steps": [
+          {
+            "title": "(1) Q 受 O 的力",
+            "content": "O 与 Q 电流反向，所以相斥。Q 在 O 上方，因此力向上，大小比例为\n\n$$\\frac{(2I)I}{L}=\\frac{2I^2}{L}$$"
+          },
+          {
+            "title": "(2) Q 受 P 的力",
+            "content": "P 与 Q 电流同向，所以相吸，方向从 Q 指向 P，即右下方。大小比例为\n\n$$\\frac{(2I)I}{\\sqrt2L}=\\frac{\\sqrt2I^2}{L}$$\n\n其水平、竖直分量分别为向右 $I^2/L$、向下 $I^2/L$。"
+          },
+          {
+            "title": "(3) 合成方向",
+            "content": "合力分量为向右 $I^2/L$、向上 $2I^2/L-I^2/L=I^2/L$，所以方向为右上方，即 $(h)$。"
+          }
+        ],
+        "finalAnswer": "⑧ $(h)$",
+        "correctOption": "⑧"
+      }
+    },
+    {
+      "id": "2022-r1-phys-17",
+      "number": "IV-E 问5",
+      "topic": "运动导体棒的感应电流与安培力",
+      "topicTag": "电磁·电磁感应",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "两根平行金属导轨间距为 $L$，两根导体棒垂直跨在导轨上。导体棒在导轨间部分的电阻均为 $R$，导轨电阻可忽略。匀强磁场大小为 $B$，方向垂直纸面向里。左棒固定，右棒以速度 $v$ 向右运动。求左导体棒受磁场的力的大小和方向。",
+      "options": [
+        {
+          "label": "①",
+          "content": "$\\dfrac{vB^2L^2}{2R}$，右向き"
+        },
+        {
+          "label": "②",
+          "content": "$\\dfrac{vB^2L^2}{R}$，右向き"
+        },
+        {
+          "label": "③",
+          "content": "$\\dfrac{2vB^2L^2}{R}$，右向き"
+        },
+        {
+          "label": "④",
+          "content": "$\\dfrac{vB^2L^2}{2R}$，左向き"
+        },
+        {
+          "label": "⑤",
+          "content": "$\\dfrac{vB^2L^2}{R}$，左向き"
+        },
+        {
+          "label": "⑥",
+          "content": "$\\dfrac{2vB^2L^2}{R}$，左向き"
+        }
+      ],
+      "questionImage": "/images/2022_R1_physics/q17.png",
+      "solution": {
+        "translation": "右棒运动产生动生电动势 $BLv$。回路中两根导体棒电阻串联，总电阻为 $2R$，由此求电流，再求左棒的安培力。",
+        "analysis": "右棒中正电荷受 $\\vec v\\times\\vec B$ 作用向上，所以回路电流在右棒向上，在左棒向下。左棒中向下电流在向里磁场中受力向右。",
+        "steps": [
+          {
+            "title": "(1) 求感应电流",
+            "content": "$$\\mathcal{E}=BLv$$\n\n总电阻为\n\n$$R_{\\mathrm{tot}}=2R$$\n\n所以\n\n$$I=\\frac{BLv}{2R}$$"
+          },
+          {
+            "title": "(2) 求左棒受力大小",
+            "content": "$$F=ILB=\\frac{BLv}{2R}\\cdot L\\cdot B=\\frac{vB^2L^2}{2R}$$"
+          },
+          {
+            "title": "(3) 判断方向",
+            "content": "左棒中电流向下，磁场垂直纸面向里，由左手定则可知安培力向右。"
+          }
+        ],
+        "finalAnswer": "① $\\dfrac{vB^2L^2}{2R}$，右向き",
+        "correctOption": "①"
+      }
+    },
+    {
+      "id": "2022-r1-phys-18",
+      "number": "IV-F 问6",
+      "topic": "交流电路中的电阻、电容与线圈",
+      "topicTag": "电磁·交流电路",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "交流电源的最大电压 $V_0$ 不变，角频率 $\\omega$ 从 0 开始逐渐增大。回路 1 为电阻与电灯，回路 2 为电容器与电灯，回路 3 为线圈与电灯。电灯电阻不变。问三个回路中电灯亮度如何变化。",
+      "options": [
+        {
+          "label": "①",
+          "content": "回路 1 明るくなる，回路 2 暗くなる，回路 3 変わらない"
+        },
+        {
+          "label": "②",
+          "content": "回路 1 明るくなる，回路 2 変わらない，回路 3 暗くなる"
+        },
+        {
+          "label": "③",
+          "content": "回路 1 暗くなる，回路 2 明るくなる，回路 3 変わらない"
+        },
+        {
+          "label": "④",
+          "content": "回路 1 暗くなる，回路 2 変わらない，回路 3 明るくなる"
+        },
+        {
+          "label": "⑤",
+          "content": "回路 1 変わらない，回路 2 明るくなる，回路 3 暗くなる"
+        },
+        {
+          "label": "⑥",
+          "content": "回路 1 変わらない，回路 2 暗くなる，回路 3 明るくなる"
+        }
+      ],
+      "questionImage": "/images/2022_R1_physics/q18.png",
+      "solution": {
+        "translation": "电灯亮度取决于电流大小。纯电阻电路不受频率影响；电容电抗随频率增大而减小；线圈电抗随频率增大而增大。",
+        "analysis": "回路 1 电流不变。回路 2 中 $X_C=1/(\\omega C)$，频率增大时电流增大，灯变亮。回路 3 中 $X_L=\\omega L$，频率增大时电流减小，灯变暗。",
+        "steps": [
+          {
+            "title": "(1) 回路 1",
+            "content": "只有电阻和电灯，电路总阻抗与 $\\omega$ 无关，所以亮度不变。"
+          },
+          {
+            "title": "(2) 回路 2",
+            "content": "电容电抗\n\n$$X_C=\\frac{1}{\\omega C}$$\n\n$\\omega$ 增大时 $X_C$ 变小，电流增大，电灯变亮。"
+          },
+          {
+            "title": "(3) 回路 3",
+            "content": "线圈电抗\n\n$$X_L=\\omega L$$\n\n$\\omega$ 增大时 $X_L$ 变大，电流减小，电灯变暗。"
+          }
+        ],
+        "finalAnswer": "⑤ 回路 1 変わらない，回路 2 明るくなる，回路 3 暗くなる",
+        "correctOption": "⑤"
+      }
+    },
+    {
+      "id": "2022-r1-phys-19",
+      "number": "V-A 问1",
+      "topic": "X 射线的布拉格反射",
+      "topicTag": "原子·X射线衍射",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "波长 $1.5\\times10^{-10}\\,\\mathrm{m}$ 的 X 射线照射到单晶试料表面，反射 X 射线强度在 $\\sin\\theta=0.25$ 时第一次变大，在 $\\sin\\theta=0.50$ 时下一次变大。相邻晶格面间隔为 $d$，求 $d$。",
+      "options": [
+        {
+          "label": "①",
+          "content": "$1.0\\times10^{-10}\\,\\mathrm{m}$"
+        },
+        {
+          "label": "②",
+          "content": "$1.5\\times10^{-10}\\,\\mathrm{m}$"
+        },
+        {
+          "label": "③",
+          "content": "$2.0\\times10^{-10}\\,\\mathrm{m}$"
+        },
+        {
+          "label": "④",
+          "content": "$2.5\\times10^{-10}\\,\\mathrm{m}$"
+        },
+        {
+          "label": "⑤",
+          "content": "$3.0\\times10^{-10}\\,\\mathrm{m}$"
+        },
+        {
+          "label": "⑥",
+          "content": "$3.5\\times10^{-10}\\,\\mathrm{m}$"
+        }
+      ],
+      "questionImage": "/images/2022_R1_physics/q19.png",
+      "solution": {
+        "translation": "相邻极大对应布拉格条件 $2d\\sin\\theta=n\\lambda$ 的相邻整数级。第一次极大取 $n=1$。",
+        "analysis": "$\\sin\\theta=0.25$ 和 $0.50$ 恰好成 1:2，对应一级和二级极大。用一级极大代入即可。",
+        "steps": [
+          {
+            "title": "(1) 写出布拉格条件",
+            "content": "$$2d\\sin\\theta=n\\lambda$$"
+          },
+          {
+            "title": "(2) 用第一次极大",
+            "content": "第一次极大对应 $n=1$，$\\sin\\theta=0.25$：\n\n$$2d\\times0.25=1.5\\times10^{-10}$$"
+          },
+          {
+            "title": "(3) 求晶面间距",
+            "content": "$$0.5d=1.5\\times10^{-10}$$\n\n$$d=3.0\\times10^{-10}\\,\\mathrm{m}$$"
+          }
+        ],
+        "finalAnswer": "⑤ $3.0\\times10^{-10}\\,\\mathrm{m}$",
+        "correctOption": "⑤"
+      }
+    }
+  ]
+}
