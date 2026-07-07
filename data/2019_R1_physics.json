@@ -1,0 +1,1010 @@
+{
+  "metadata": {
+    "course": "physics",
+    "year": "2019",
+    "session": "1",
+    "courseNameJa": "物理",
+    "courseNameEn": "Physics",
+    "description": "理科综合｜物理",
+    "color": "#16a34a",
+    "examTitle": "平成31年度（2019年度）第1回 物理",
+    "examDate": "2019年6月"
+  },
+  "questions": [
+    {
+      "id": "2019-r1-phys-1",
+      "number": "I-A 问1",
+      "topic": "两根直角轻杆的静力平衡",
+      "topicTag": "力学·重心与力矩平衡",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "质量可忽略的两根均匀细杆以直角连接，长度分别为 $\\ell_1,\\ell_2$。两杆端点分别连接质量 $m_1,m_2$ 的小球，在连接点用线悬挂后静止。长度 $\\ell_1$ 的杆与竖直下方成角 $\\theta$，求 $\\tan\\theta$。",
+      "options": [
+        {
+          "label": "①",
+          "content": "$\\dfrac{m_1\\ell_1}{m_2\\ell_2}$"
+        },
+        {
+          "label": "②",
+          "content": "$\\dfrac{m_2\\ell_2}{m_1\\ell_1}$"
+        },
+        {
+          "label": "③",
+          "content": "$\\dfrac{m_2\\ell_1}{m_1\\ell_2}$"
+        },
+        {
+          "label": "④",
+          "content": "$\\dfrac{m_1\\ell_2}{m_2\\ell_1}$"
+        }
+      ],
+      "questionImage": "/images/2019_R1_physics/q01.png",
+      "solution": {
+        "translation": "悬挂静止时，悬点下方必须通过整个系统的重心。也可以说，以悬点为转轴，两个小球重力的力矩平衡。",
+        "analysis": "设 $\\ell_1$ 杆与竖直夹角为 $\\theta$，另一根杆与竖直方向的水平投影关系由直角决定。两球到悬点的水平距离分别为 $\\ell_1\\sin\\theta$ 和 $\\ell_2\\cos\\theta$。",
+        "steps": [
+          {
+            "title": "(1) 力矩平衡",
+            "content": "$$m_1g\\ell_1\\sin\\theta=m_2g\\ell_2\\cos\\theta$$"
+          },
+          {
+            "title": "(2) 求比值",
+            "content": "$$\\tan\\theta=\\frac{m_2\\ell_2}{m_1\\ell_1}$$"
+          }
+        ],
+        "finalAnswer": "② $\\dfrac{m_2\\ell_2}{m_1\\ell_1}$",
+        "correctOption": "②"
+      }
+    },
+    {
+      "id": "2019-r1-phys-2",
+      "number": "I-B 问2",
+      "topic": "斜向下抛体运动",
+      "topicTag": "力学·抛体运动",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "从距水平地面高 $h$ 的位置，以与水平方向向下成 $45°$ 的方向、初速 $v_0$ 投出小球。小球落地点与投出点的水平距离为 $h/2$，求 $v_0$。",
+      "options": [
+        {
+          "label": "①",
+          "content": "$\\dfrac{\\sqrt{gh}}{2}$"
+        },
+        {
+          "label": "②",
+          "content": "$\\dfrac{\\sqrt{2gh}}{2}$"
+        },
+        {
+          "label": "③",
+          "content": "$\\sqrt{gh}$"
+        },
+        {
+          "label": "④",
+          "content": "$\\sqrt{2gh}$"
+        },
+        {
+          "label": "⑤",
+          "content": "$2\\sqrt{gh}$"
+        }
+      ],
+      "questionImage": "/images/2019_R1_physics/q02.png",
+      "solution": {
+        "translation": "把运动分解为水平方向的匀速运动和竖直方向的匀加速运动。",
+        "analysis": "水平方向位移为 $h/2$，竖直方向下降 $h$。初速度的水平、竖直向下分量都为 $v_0/\\sqrt2$。",
+        "steps": [
+          {
+            "title": "(1) 水平方向",
+            "content": "$$\\frac{v_0}{\\sqrt2}t=\\frac{h}{2}$$\n\n$$t=\\frac{h}{\\sqrt2 v_0}$$"
+          },
+          {
+            "title": "(2) 竖直方向",
+            "content": "$$h=\\frac{v_0}{\\sqrt2}t+\\frac12gt^2$$"
+          },
+          {
+            "title": "(3) 代入求解",
+            "content": "$$h=\\frac{h}{2}+\\frac12g\\frac{h^2}{2v_0^2}$$\n\n$$v_0=\\frac{\\sqrt{2gh}}{2}$$"
+          }
+        ],
+        "finalAnswer": "② $\\dfrac{\\sqrt{2gh}}{2}$",
+        "correctOption": "②"
+      }
+    },
+    {
+      "id": "2019-r1-phys-3",
+      "number": "I-C 问3",
+      "topic": "粗糙斜面上下滑的加速度",
+      "topicTag": "力学·摩擦力",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "倾角为 $\\theta$ 的粗糙斜面上，小物体由静止开始下滑时加速度大小为 $a$。同一斜面上给小物体沿斜面向上的初速时，小物体向上滑动时的加速度大小为 $a'$，求 $a'$。",
+      "options": [
+        {
+          "label": "①",
+          "content": "$2g\\sin\\theta+a$"
+        },
+        {
+          "label": "②",
+          "content": "$2g\\cos\\theta+a$"
+        },
+        {
+          "label": "③",
+          "content": "$2g\\tan\\theta+a$"
+        },
+        {
+          "label": "④",
+          "content": "$2g\\sin\\theta-a$"
+        },
+        {
+          "label": "⑤",
+          "content": "$2g\\cos\\theta-a$"
+        },
+        {
+          "label": "⑥",
+          "content": "$2g\\tan\\theta-a$"
+        }
+      ],
+      "questionImage": "/images/2019_R1_physics/q03.png",
+      "solution": {
+        "translation": "下滑和上滑时，重力沿斜面分力方向相同，但摩擦力方向相反。",
+        "analysis": "下滑时 $a=g\\sin\\theta-\\mu g\\cos\\theta$；上滑时速度向上，重力分力和摩擦力都沿斜面向下，所以 $a'=g\\sin\\theta+\\mu g\\cos\\theta$。",
+        "steps": [
+          {
+            "title": "(1) 下滑加速度",
+            "content": "$$a=g\\sin\\theta-\\mu g\\cos\\theta$$"
+          },
+          {
+            "title": "(2) 上滑减速度",
+            "content": "$$a'=g\\sin\\theta+\\mu g\\cos\\theta$$"
+          },
+          {
+            "title": "(3) 消去摩擦项",
+            "content": "$$a'=2g\\sin\\theta-a$$"
+          }
+        ],
+        "finalAnswer": "④ $2g\\sin\\theta-a$",
+        "correctOption": "④"
+      }
+    },
+    {
+      "id": "2019-r1-phys-4",
+      "number": "I-D 问4",
+      "topic": "摆球碰撞后的摩擦停止距离",
+      "topicTag": "力学·碰撞与能量",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "长为 $\\ell$ 的轻绳一端固定在 O，另一端连接质量 $M$ 的小物体 P。P 从与 O 同高的 A 点静止释放，在最低点 B 与静止的质量 $m$ 的物体 Q 非弹性碰撞。碰后 P 上升到离地高度 $\\ell/4$ 的 C 点，Q 在粗糙水平面滑行距离 $d$ 后停止，动摩擦系数为 $\\mu'$，求 $d$。",
+      "options": [
+        {
+          "label": "①",
+          "content": "$\\dfrac{M^2\\ell}{4\\mu'm^2}$"
+        },
+        {
+          "label": "②",
+          "content": "$\\dfrac{M^2\\ell}{2\\mu'm^2}$"
+        },
+        {
+          "label": "③",
+          "content": "$\\dfrac{3M^2\\ell}{2\\mu'm^2}$"
+        },
+        {
+          "label": "④",
+          "content": "$\\dfrac{9M^2\\ell}{4\\mu'm^2}$"
+        }
+      ],
+      "questionImage": "/images/2019_R1_physics/q04.png",
+      "solution": {
+        "translation": "用能量守恒求碰撞前后 P 的速度，再用碰撞瞬间水平方向动量守恒求 Q 的速度。最后用摩擦做功求停止距离。",
+        "analysis": "P 从 A 到 B 下降高度 $\\ell$，碰前速度平方为 $2g\\ell$。碰后 P 只能上升到 $\\ell/4$，所以碰后速度平方为 $g\\ell/2$。",
+        "steps": [
+          {
+            "title": "(1) P 碰前速度",
+            "content": "$$\\frac12Mv^2=Mg\\ell$$\n\n$$v=\\sqrt{2g\\ell}$$"
+          },
+          {
+            "title": "(2) P 碰后速度",
+            "content": "$$\\frac12Mv_P^2=Mg\\frac{\\ell}{4}$$\n\n$$v_P=\\sqrt{\\frac{g\\ell}{2}}=\\frac{v}{2}$$"
+          },
+          {
+            "title": "(3) 动量守恒",
+            "content": "$$Mv=Mv_P+mu$$\n\n$$u=\\frac{M}{m}\\frac{v}{2}$$"
+          },
+          {
+            "title": "(4) 摩擦做功",
+            "content": "$$\\mu'mgd=\\frac12mu^2$$\n\n$$d=\\frac{M^2\\ell}{4\\mu'm^2}$$"
+          }
+        ],
+        "finalAnswer": "① $\\dfrac{M^2\\ell}{4\\mu'm^2}$",
+        "correctOption": "①"
+      }
+    },
+    {
+      "id": "2019-r1-phys-5",
+      "number": "I-E 问5",
+      "topic": "弹簧振子与单摆周期比较",
+      "topicTag": "力学·简谐运动",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "竖直弹簧振子中，小球在平衡位置时弹簧从自然长伸长 $d$，周期为 $T$。同一小球接在长为 $\\ell$ 的轻绳上作小振幅单摆，周期也为 $T$。求 $\\ell/d$。",
+      "options": [
+        {
+          "label": "①",
+          "content": "$\\dfrac14$"
+        },
+        {
+          "label": "②",
+          "content": "$\\dfrac12$"
+        },
+        {
+          "label": "③",
+          "content": "$\\dfrac{\\sqrt2}{2}$"
+        },
+        {
+          "label": "④",
+          "content": "1"
+        },
+        {
+          "label": "⑤",
+          "content": "$\\sqrt2$"
+        },
+        {
+          "label": "⑥",
+          "content": "2"
+        },
+        {
+          "label": "⑦",
+          "content": "4"
+        }
+      ],
+      "solution": {
+        "translation": "弹簧平衡伸长给出 $k$ 与 $d$ 的关系，再比较弹簧振子和单摆的周期公式。",
+        "analysis": "弹簧平衡时 $mg=kd$，所以弹簧振子周期 $2\\pi\\sqrt{m/k}=2\\pi\\sqrt{d/g}$。单摆周期为 $2\\pi\\sqrt{\\ell/g}$。",
+        "steps": [
+          {
+            "title": "比较周期",
+            "content": "$$2\\pi\\sqrt{\\frac{d}{g}}=2\\pi\\sqrt{\\frac{\\ell}{g}}$$\n\n$$\\ell=d$$"
+          }
+        ],
+        "finalAnswer": "④ $\\dfrac{\\ell}{d}=1$",
+        "correctOption": "④"
+      }
+    },
+    {
+      "id": "2019-r1-phys-6",
+      "number": "I-F 问6",
+      "topic": "半径 2R 圆轨道卫星周期",
+      "topicTag": "力学·万有引力",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "地球半径为 $R$，地表重力加速度大小为 $g$。人工卫星绕地心作半径 $2R$ 的等速圆周运动，求周期。",
+      "options": [
+        {
+          "label": "①",
+          "content": "$\\pi\\sqrt{\\dfrac{R}{g}}$"
+        },
+        {
+          "label": "②",
+          "content": "$\\pi\\sqrt{\\dfrac{2R}{g}}$"
+        },
+        {
+          "label": "③",
+          "content": "$2\\pi\\sqrt{\\dfrac{R}{g}}$"
+        },
+        {
+          "label": "④",
+          "content": "$2\\pi\\sqrt{\\dfrac{2R}{g}}$"
+        },
+        {
+          "label": "⑤",
+          "content": "$4\\pi\\sqrt{\\dfrac{R}{g}}$"
+        },
+        {
+          "label": "⑥",
+          "content": "$4\\pi\\sqrt{\\dfrac{2R}{g}}$"
+        }
+      ],
+      "questionImage": "/images/2019_R1_physics/q06.png",
+      "solution": {
+        "translation": "半径为 $2R$ 处的重力加速度是地表的 $1/4$，它提供向心加速度。",
+        "analysis": "令角速度为 $\\omega$，有 $2R\\omega^2=g/4$。",
+        "steps": [
+          {
+            "title": "求角速度与周期",
+            "content": "$$2R\\omega^2=\\frac{g}{4}$$\n\n$$\\omega=\\sqrt{\\frac{g}{8R}}$$\n\n$$T=\\frac{2\\pi}{\\omega}=4\\pi\\sqrt{\\frac{2R}{g}}$$"
+          }
+        ],
+        "finalAnswer": "⑥ $4\\pi\\sqrt{\\dfrac{2R}{g}}$",
+        "correctOption": "⑥"
+      }
+    },
+    {
+      "id": "2019-r1-phys-7",
+      "number": "II-A 问1",
+      "topic": "液体与金属球的热平衡",
+      "topicTag": "热力学·热量守恒",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "断热容器中有温度 $t_1$ 的液体，放入温度 $t_2(<t_1)$ 的金属球，最终两者温度相同。液体热容量为 $C_1$，金属球热容量为 $C_2$。求从液体移动到金属球的热量。",
+      "options": [
+        {
+          "label": "①",
+          "content": "$(C_1+C_2)(t_1-t_2)$"
+        },
+        {
+          "label": "②",
+          "content": "$\\dfrac{(C_1^2+C_2^2)(t_1-t_2)}{C_1+C_2}$"
+        },
+        {
+          "label": "③",
+          "content": "$\\dfrac{C_1C_2(t_1-t_2)}{C_1+C_2}$"
+        },
+        {
+          "label": "④",
+          "content": "$(C_1-C_2)(t_1-t_2)$"
+        },
+        {
+          "label": "⑤",
+          "content": "$\\dfrac{(C_1^2+C_2^2)(t_1-t_2)}{C_1-C_2}$"
+        },
+        {
+          "label": "⑥",
+          "content": "$\\dfrac{C_1C_2(t_1-t_2)}{C_1-C_2}$"
+        }
+      ],
+      "solution": {
+        "translation": "先求共同平衡温度，再求金属球吸收的热量。",
+        "analysis": "热量只在液体和金属球之间移动，因此液体放热等于金属球吸热。",
+        "steps": [
+          {
+            "title": "(1) 求平衡温度",
+            "content": "$$C_1(t_1-T)=C_2(T-t_2)$$\n\n$$T=\\frac{C_1t_1+C_2t_2}{C_1+C_2}$$"
+          },
+          {
+            "title": "(2) 求移动热量",
+            "content": "$$Q=C_2(T-t_2)=\\frac{C_1C_2(t_1-t_2)}{C_1+C_2}$$"
+          }
+        ],
+        "finalAnswer": "③ $\\dfrac{C_1C_2(t_1-t_2)}{C_1+C_2}$",
+        "correctOption": "③"
+      }
+    },
+    {
+      "id": "2019-r1-phys-8",
+      "number": "II-B 问2",
+      "topic": "连接活塞中的理想气体温度比",
+      "topicTag": "热力学·理想气体",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "截面积分别为 $S_A,S_B$ 的两个圆筒中各封入等物质的量理想气体。两活塞用棒连接并静止，A 中活塞离底面 $L_A$，B 中活塞离底面 $L_B$，气体状态为 $(T_A,p_A)$ 与 $(T_B,p_B)$。求 $T_B/T_A$。",
+      "options": [
+        {
+          "label": "①",
+          "content": "$\\dfrac{L_B}{L_A}$"
+        },
+        {
+          "label": "②",
+          "content": "$\\dfrac{S_BL_B}{S_AL_A}$"
+        },
+        {
+          "label": "③",
+          "content": "$\\dfrac{p_BL_B}{p_AL_A}$"
+        },
+        {
+          "label": "④",
+          "content": "$\\dfrac{L_A}{L_B}$"
+        },
+        {
+          "label": "⑤",
+          "content": "$\\dfrac{S_AL_A}{S_BL_B}$"
+        },
+        {
+          "label": "⑥",
+          "content": "$\\dfrac{p_AL_A}{p_BL_B}$"
+        }
+      ],
+      "questionImage": "/images/2019_R1_physics/q08.png",
+      "solution": {
+        "translation": "理想气体的物质的量相同，所以 $T$ 与 $pV$ 成正比。连接棒静止时，两活塞受气体压力相等。",
+        "analysis": "活塞平衡给出 $p_AS_A=p_BS_B$，体积分别为 $S_AL_A$ 和 $S_BL_B$。",
+        "steps": [
+          {
+            "title": "计算温度比",
+            "content": "$$\\frac{T_B}{T_A}=\\frac{p_BS_BL_B}{p_AS_AL_A}=\\frac{L_B}{L_A}$$"
+          }
+        ],
+        "finalAnswer": "① $\\dfrac{L_B}{L_A}$",
+        "correctOption": "①"
+      }
+    },
+    {
+      "id": "2019-r1-phys-9",
+      "number": "II-C 问3",
+      "topic": "p-V 图像中的吸热量",
+      "topicTag": "热力学·热力学第一定律",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "一定量单原子理想气体在 $p-V$ 图中由状态 A 到状态 B。A 为 $(3V_0,p_0)$，B 为 $(V_0,3p_0)$，路径为直线。求整个过程中气体吸收的净热量。",
+      "options": [
+        {
+          "label": "①",
+          "content": "$2p_0V_0$"
+        },
+        {
+          "label": "②",
+          "content": "$4p_0V_0$"
+        },
+        {
+          "label": "③",
+          "content": "$6p_0V_0$"
+        },
+        {
+          "label": "④",
+          "content": "$-2p_0V_0$"
+        },
+        {
+          "label": "⑤",
+          "content": "$-4p_0V_0$"
+        },
+        {
+          "label": "⑥",
+          "content": "$-6p_0V_0$"
+        }
+      ],
+      "questionImage": "/images/2019_R1_physics/q09.png",
+      "solution": {
+        "translation": "理想气体内能只由温度决定，而 $T\\propto pV$。A、B 两点的 $pV$ 相同。",
+        "analysis": "内能变化为 0。气体做功等于 $p-V$ 图像下面积带符号；体积从 $3V_0$ 减小到 $V_0$，所以做功为负。",
+        "steps": [
+          {
+            "title": "(1) 内能变化",
+            "content": "$$p_AV_A=p_0\\cdot3V_0=3p_0V_0$$\n\n$$p_BV_B=3p_0\\cdot V_0=3p_0V_0$$\n\n$$\\Delta U=0$$"
+          },
+          {
+            "title": "(2) 求做功",
+            "content": "$$W=\\frac{p_A+p_B}{2}(V_B-V_A)=\\frac{p_0+3p_0}{2}(V_0-3V_0)=-4p_0V_0$$"
+          },
+          {
+            "title": "(3) 热力学第一定律",
+            "content": "$$Q=\\Delta U+W=-4p_0V_0$$"
+          }
+        ],
+        "finalAnswer": "⑤ $-4p_0V_0$",
+        "correctOption": "⑤"
+      }
+    },
+    {
+      "id": "2019-r1-phys-10",
+      "number": "III-A 问1",
+      "topic": "向负 x 方向传播的波形变化",
+      "topicTag": "波动·行波图像",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "$x$ 轴负方向传播、振动数 $0.50\\,\\mathrm{Hz}$ 的正弦波。图给出 $t=0$ 时的 $y-x$ 图像，判断 $t=3.5\\,\\mathrm{s}$ 时的波形。",
+      "options": [
+        {
+          "label": "①",
+          "content": "图①"
+        },
+        {
+          "label": "②",
+          "content": "图②"
+        },
+        {
+          "label": "③",
+          "content": "图③"
+        },
+        {
+          "label": "④",
+          "content": "图④"
+        }
+      ],
+      "questionImage": "/images/2019_R1_physics/q10.png",
+      "solution": {
+        "translation": "频率为 $0.50\\,\\mathrm{Hz}$，周期为 $2.0\\,\\mathrm{s}$。$3.5\\,\\mathrm{s}$ 相当于 $1.75$ 个周期。",
+        "analysis": "波向负 $x$ 方向传播，经过 $3.5\\,\\mathrm{s}$ 后图像向左移动 $3/4$ 个波长。此时原点处成为波谷，对应图①。",
+        "steps": [
+          {
+            "title": "判断平移量",
+            "content": "$$T=\\frac1f=2.0\\,\\mathrm{s}$$\n\n$$3.5\\,\\mathrm{s}=1.75T$$"
+          },
+          {
+            "title": "选择图像",
+            "content": "去掉整数周期后，剩下 $0.75T$，波形向负 $x$ 方向平移 $3\\lambda/4$，对应图①。"
+          }
+        ],
+        "finalAnswer": "① 图①",
+        "correctOption": "①"
+      }
+    },
+    {
+      "id": "2019-r1-phys-11",
+      "number": "III-B 问2",
+      "topic": "开管共鸣频率",
+      "topicTag": "波动·驻波",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "长度 $\\ell$ 的开管开口附近放置扬声器，产生共鸣。开口端修正忽略，管内包含两个开口端在内的腹的个数为 $n$，声速为 $V$，求频率 $f$。",
+      "options": [
+        {
+          "label": "①",
+          "content": "$\\dfrac{(n-1)V}{4\\ell}$"
+        },
+        {
+          "label": "②",
+          "content": "$\\dfrac{nV}{4\\ell}$"
+        },
+        {
+          "label": "③",
+          "content": "$\\dfrac{(n+1)V}{4\\ell}$"
+        },
+        {
+          "label": "④",
+          "content": "$\\dfrac{(n-1)V}{2\\ell}$"
+        },
+        {
+          "label": "⑤",
+          "content": "$\\dfrac{nV}{2\\ell}$"
+        },
+        {
+          "label": "⑥",
+          "content": "$\\dfrac{(n+1)V}{2\\ell}$"
+        }
+      ],
+      "questionImage": "/images/2019_R1_physics/q11.png",
+      "solution": {
+        "translation": "开管两端都是位移腹。相邻两个腹之间距离为半个波长。",
+        "analysis": "若包含两端在内共有 $n$ 个腹，则管长中包含 $n-1$ 个半波长。",
+        "steps": [
+          {
+            "title": "求波长和频率",
+            "content": "$$\\ell=(n-1)\\frac{\\lambda}{2}$$\n\n$$\\lambda=\\frac{2\\ell}{n-1}$$\n\n$$f=\\frac{V}{\\lambda}=\\frac{(n-1)V}{2\\ell}$$"
+          }
+        ],
+        "finalAnswer": "④ $\\dfrac{(n-1)V}{2\\ell}$",
+        "correctOption": "④"
+      }
+    },
+    {
+      "id": "2019-r1-phys-12",
+      "number": "III-C 问3",
+      "topic": "组合平面玻璃中的折射与全反射",
+      "topicTag": "波动·光的折射",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "平面玻璃 1 上密接折射率不同的平面玻璃 2。从玻璃 1 左侧点 A 入射光线，当空气中入射角 $\\theta=30°$ 时，玻璃 1 中的光在上方边界点 B 临界入射。已知 $OA=5.0\\,\\mathrm{cm}$、$OB=12\\,\\mathrm{cm}$、$AB=13\\,\\mathrm{cm}$，空气折射率为 1.0，求玻璃 2 的折射率。",
+      "options": [
+        {
+          "label": "①",
+          "content": "1.1"
+        },
+        {
+          "label": "②",
+          "content": "1.2"
+        },
+        {
+          "label": "③",
+          "content": "1.3"
+        },
+        {
+          "label": "④",
+          "content": "1.4"
+        },
+        {
+          "label": "⑤",
+          "content": "1.5"
+        },
+        {
+          "label": "⑥",
+          "content": "1.6"
+        }
+      ],
+      "questionImage": "/images/2019_R1_physics/q12.png",
+      "solution": {
+        "translation": "先由左侧空气到玻璃 1 的折射求玻璃 1 的折射率，再由玻璃 1 到玻璃 2 的临界条件求玻璃 2 的折射率。",
+        "analysis": "三角形 $5-12-13$ 给出光在玻璃 1 中相对水平的角，其正弦为 $5/13$，相对上表面法线的入射角正弦为 $12/13$。",
+        "steps": [
+          {
+            "title": "(1) 求玻璃 1 折射率",
+            "content": "$$1\\cdot\\sin30°=n_1\\frac{5}{13}$$\n\n$$n_1=1.3$$"
+          },
+          {
+            "title": "(2) 临界条件",
+            "content": "$$n_1\\sin i_c=n_2$$\n\n$$n_2=1.3\\cdot\\frac{12}{13}=1.2$$"
+          }
+        ],
+        "finalAnswer": "② 1.2",
+        "correctOption": "②"
+      }
+    },
+    {
+      "id": "2019-r1-phys-13",
+      "number": "IV-A 问1",
+      "topic": "两异号点电荷电场为零的位置",
+      "topicTag": "电磁气·电场",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "$x$ 轴原点固定点电荷 $q(q>0)$，$x=a(a>0)$ 处固定点电荷 $-4q$。除无穷远外，判断 $x$ 轴上电场大小为 0 的点所在范围和个数。",
+      "options": [
+        {
+          "label": "①",
+          "content": "$x<0$、$0<x<a$、$a<x$ 各 1 个"
+        },
+        {
+          "label": "②",
+          "content": "$0<x<a$ 和 $a<x$ 各 1 个"
+        },
+        {
+          "label": "③",
+          "content": "$x<0$ 和 $0<x<a$ 各 1 个"
+        },
+        {
+          "label": "④",
+          "content": "$x<0$ 和 $a<x$ 各 1 个"
+        },
+        {
+          "label": "⑤",
+          "content": "$a<x$ に 1 个"
+        },
+        {
+          "label": "⑥",
+          "content": "$0<x<a$ に 1 个"
+        },
+        {
+          "label": "⑦",
+          "content": "$x<0$ に 1 个"
+        },
+        {
+          "label": "⑧",
+          "content": "ない"
+        }
+      ],
+      "questionImage": "/images/2019_R1_physics/q13.png",
+      "solution": {
+        "translation": "异号电荷之间的区域电场方向相同，不可能抵消。只需检查两侧区域。",
+        "analysis": "右侧区域方程给出的解不在右侧；左侧区域可得 $x=-a$，因此只有 $x<0$ 有一个点。",
+        "steps": [
+          {
+            "title": "判断区域",
+            "content": "$0<x<a$ 时，正电荷电场向右，负电荷电场也向右，不能为 0。"
+          },
+          {
+            "title": "左侧求解",
+            "content": "设 $x<0$，距离分别为 $|x|$ 和 $a-x$：\n\n$$\\frac{kq}{x^2}=\\frac{4kq}{(a-x)^2}$$\n\n$$a-x=2(-x)$$\n\n$$x=-a$$"
+          }
+        ],
+        "finalAnswer": "⑦ $x<0$ に 1 个",
+        "correctOption": "⑦"
+      }
+    },
+    {
+      "id": "2019-r1-phys-14",
+      "number": "IV-B 问2",
+      "topic": "带电导体球壳的电场线",
+      "topicTag": "电磁气·静电诱导",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "不带电的中空导体球壳中心放置带正电 $q$ 的导体球。静电诱导后，球壳内表面出现 $-q$，外表面出现 $q$，判断包含中心的截面内电场线图。",
+      "options": [
+        {
+          "label": "①",
+          "content": "图①"
+        },
+        {
+          "label": "②",
+          "content": "图②"
+        },
+        {
+          "label": "③",
+          "content": "图③"
+        },
+        {
+          "label": "④",
+          "content": "图④"
+        },
+        {
+          "label": "⑤",
+          "content": "图⑤"
+        },
+        {
+          "label": "⑥",
+          "content": "图⑥"
+        }
+      ],
+      "questionImage": "/images/2019_R1_physics/q14.png",
+      "solution": {
+        "translation": "电场线从正电荷出发，到负电荷终止；导体内部电场为 0。",
+        "analysis": "空腔中电场线从中心正电荷指向内表面的负电荷；球壳外表面带正电，所以外部电场线从外表面向外发出。",
+        "steps": [
+          {
+            "title": "选择图像",
+            "content": "内侧箭头从中心球指向内壁，外侧箭头向外，且导体内部无电场线，对应图②。"
+          }
+        ],
+        "finalAnswer": "② 图②",
+        "correctOption": "②"
+      }
+    },
+    {
+      "id": "2019-r1-phys-15",
+      "number": "IV-C 问3",
+      "topic": "含并联电阻的直流电路功率",
+      "topicTag": "电磁气·直流电路",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "9.0 V 电池、0.50 kΩ 电阻、3.0 kΩ 电阻和未知电阻 $R$ 连接。通过点 P 的电流为 6.0 mA，求 $R$ 消耗的电功率。",
+      "options": [
+        {
+          "label": "①",
+          "content": "6.0"
+        },
+        {
+          "label": "②",
+          "content": "12"
+        },
+        {
+          "label": "③",
+          "content": "18"
+        },
+        {
+          "label": "④",
+          "content": "24"
+        },
+        {
+          "label": "⑤",
+          "content": "30"
+        },
+        {
+          "label": "⑥",
+          "content": "36"
+        }
+      ],
+      "questionImage": "/images/2019_R1_physics/q15.png",
+      "solution": {
+        "translation": "总电流先通过 $0.50\\,\\mathrm{k\\Omega}$，再分到 $R$ 和 $3.0\\,\\mathrm{k\\Omega}$ 并联支路。",
+        "analysis": "0.50 kΩ 上电压降为 $6.0\\,\\mathrm{mA}\\times0.50\\,\\mathrm{k\\Omega}=3.0\\,\\mathrm{V}$，并联部分电压为 6.0 V。",
+        "steps": [
+          {
+            "title": "(1) 并联部分电压",
+            "content": "$$V_{parallel}=9.0-6.0\\times0.50=6.0\\,\\mathrm{V}$$"
+          },
+          {
+            "title": "(2) 3.0 kΩ 支路电流",
+            "content": "$$I_{3k}=\\frac{6.0\\,\\mathrm{V}}{3.0\\,\\mathrm{k\\Omega}}=2.0\\,\\mathrm{mA}$$"
+          },
+          {
+            "title": "(3) R 支路功率",
+            "content": "$$I_R=6.0-2.0=4.0\\,\\mathrm{mA}$$\n\n$$P_R=VI_R=6.0\\times4.0=24\\,\\mathrm{mW}$$"
+          }
+        ],
+        "finalAnswer": "④ 24 mW",
+        "correctOption": "④"
+      }
+    },
+    {
+      "id": "2019-r1-phys-16",
+      "number": "IV-D 问4",
+      "topic": "串联电容器充电时的焦耳热",
+      "topicTag": "电磁气·电容器",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "1.0 V 电池、1.0 kΩ 电阻和两个 $1.0\\,\\mu\\mathrm{F}$ 电容器串联连接。电容器初始不带电，闭合开关后直到充电结束，求电阻中产生的焦耳热。",
+      "options": [
+        {
+          "label": "①",
+          "content": "0.25"
+        },
+        {
+          "label": "②",
+          "content": "0.50"
+        },
+        {
+          "label": "③",
+          "content": "1.0"
+        },
+        {
+          "label": "④",
+          "content": "2.0"
+        }
+      ],
+      "questionImage": "/images/2019_R1_physics/q16.png",
+      "solution": {
+        "translation": "两个相同电容串联的等效电容为 $C/2$。电池给初始未充电电容充电时，电阻发热为 $\\frac12C_{eq}V^2$。",
+        "analysis": "这里 $C_{eq}=0.50\\,\\mu\\mathrm{F}$，$V=1.0\\,\\mathrm{V}$。",
+        "steps": [
+          {
+            "title": "计算焦耳热",
+            "content": "$$Q_J=\\frac12C_{eq}V^2=\\frac12\\times0.50\\,\\mu\\mathrm{F}\\times(1.0)^2=0.25\\,\\mu\\mathrm{J}$$"
+          }
+        ],
+        "finalAnswer": "① 0.25 μJ",
+        "correctOption": "①"
+      }
+    },
+    {
+      "id": "2019-r1-phys-17",
+      "number": "IV-E 问5",
+      "topic": "三根垂直纸面的电流在一点的合磁场",
+      "topicTag": "电磁气·电流的磁场",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "三根很长的平行直导线垂直纸面，通过正方形 ABCD 的顶点 A、B、D。A 中电流入纸面，B、D 中电流出纸面，大小都为 $I$。求三根导线在 C 点产生的磁场强度大小和方向。",
+      "options": [
+        {
+          "label": "①",
+          "content": "$\\dfrac{3\\sqrt2I}{4\\pi a}$，方向 (a)"
+        },
+        {
+          "label": "②",
+          "content": "$\\dfrac{3\\sqrt2I}{4\\pi a}$，方向 (b)"
+        },
+        {
+          "label": "③",
+          "content": "$\\dfrac{3\\sqrt2I}{4\\pi a}$，方向 (c)"
+        },
+        {
+          "label": "④",
+          "content": "$\\dfrac{3\\sqrt2I}{4\\pi a}$，方向 (d)"
+        },
+        {
+          "label": "⑤",
+          "content": "$\\dfrac{\\sqrt2I}{4\\pi a}$，方向 (a)"
+        },
+        {
+          "label": "⑥",
+          "content": "$\\dfrac{\\sqrt2I}{4\\pi a}$，方向 (b)"
+        },
+        {
+          "label": "⑦",
+          "content": "$\\dfrac{\\sqrt2I}{4\\pi a}$，方向 (c)"
+        },
+        {
+          "label": "⑧",
+          "content": "$\\dfrac{\\sqrt2I}{4\\pi a}$，方向 (d)"
+        }
+      ],
+      "questionImage": "/images/2019_R1_physics/q17.png",
+      "solution": {
+        "translation": "用右手定则分别判断三根导线在 C 点的磁场方向，并按矢量相加。",
+        "analysis": "B 处出纸面电流在 C 点产生向上的磁场，D 处出纸面电流在 C 点产生向右的磁场。A 处入纸面电流距离为 $\\sqrt2a$，方向向左下。",
+        "steps": [
+          {
+            "title": "矢量相加",
+            "content": "B、D 两根各给出大小 $I/(2\\pi a)$ 的向上、向右磁场；A 给出大小 $I/(2\\pi\\sqrt2a)$ 的向左下磁场。合成后大小为 $\\sqrt2I/(4\\pi a)$，方向为右上 (d)。"
+          }
+        ],
+        "finalAnswer": "⑧ $\\dfrac{\\sqrt2I}{4\\pi a}$，方向 (d)",
+        "correctOption": "⑧"
+      }
+    },
+    {
+      "id": "2019-r1-phys-18",
+      "number": "IV-F 问6",
+      "topic": "带电粒子圆轨道半径与磁场关系",
+      "topicTag": "电磁气·洛伦兹力",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "在磁通密度大小为 $B$ 的匀强磁场中，电荷量 $q$、质量 $m$ 的粒子以垂直磁场的速度 $v$ 入射，作半径 $r$ 的等速圆周运动。保持 $q,m,v$ 不变，改变 $B$，判断 $r$ 与 $B$ 的关系图。",
+      "options": [
+        {
+          "label": "①",
+          "content": "图①"
+        },
+        {
+          "label": "②",
+          "content": "图②"
+        },
+        {
+          "label": "③",
+          "content": "图③"
+        },
+        {
+          "label": "④",
+          "content": "图④"
+        },
+        {
+          "label": "⑤",
+          "content": "图⑤"
+        },
+        {
+          "label": "⑥",
+          "content": "图⑥"
+        }
+      ],
+      "questionImage": "/images/2019_R1_physics/q18.png",
+      "solution": {
+        "translation": "洛伦兹力提供向心力。",
+        "analysis": "由 $qvB=mv^2/r$ 得 $r=mv/(qB)$，所以半径与磁场大小成反比。",
+        "steps": [
+          {
+            "title": "关系式",
+            "content": "$$qvB=\\frac{mv^2}{r}$$\n\n$$r=\\frac{mv}{qB}$$"
+          }
+        ],
+        "finalAnswer": "⑥ 反比例图像",
+        "correctOption": "⑥"
+      }
+    },
+    {
+      "id": "2019-r1-phys-19",
+      "number": "V-A 问1",
+      "topic": "夸克电荷",
+      "topicTag": "现代物理·粒子物理",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "夸克模型中，质子由两个上夸克 u 和一个下夸克 d 构成，中子由一个 u 和两个 d 构成。质子电荷为 $+e$，中子电荷为 0。求 d 的电荷。",
+      "options": [
+        {
+          "label": "①",
+          "content": "$-e$"
+        },
+        {
+          "label": "②",
+          "content": "$-\\dfrac23e$"
+        },
+        {
+          "label": "③",
+          "content": "$-\\dfrac13e$"
+        },
+        {
+          "label": "④",
+          "content": "$\\dfrac13e$"
+        },
+        {
+          "label": "⑤",
+          "content": "$\\dfrac23e$"
+        },
+        {
+          "label": "⑥",
+          "content": "$e$"
+        }
+      ],
+      "solution": {
+        "translation": "设 u、d 的电荷分别为 $u,d$，用质子和中子的总电荷列方程。",
+        "analysis": "质子 $uud$：$2u+d=e$；中子 $udd$：$u+2d=0$。",
+        "steps": [
+          {
+            "title": "解方程",
+            "content": "由 $u+2d=0$ 得 $u=-2d$。代入 $2u+d=e$：\n\n$$2(-2d)+d=e$$\n\n$$-3d=e$$\n\n$$d=-\\frac13e$$"
+          }
+        ],
+        "finalAnswer": "③ $-\\dfrac13e$",
+        "correctOption": "③"
+      }
+    }
+  ]
+}
