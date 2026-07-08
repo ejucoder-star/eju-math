@@ -1,0 +1,998 @@
+{
+  "metadata": {
+    "course": "physics",
+    "year": "2018",
+    "session": "2",
+    "courseNameJa": "物理",
+    "courseNameEn": "Physics",
+    "description": "理科综合｜物理",
+    "color": "#16a34a",
+    "examTitle": "平成30年度（2018年度）第2回 物理",
+    "examDate": "2018年11月"
+  },
+  "questions": [
+    {
+      "id": "2018-r2-phys-1",
+      "number": "I-A 问1",
+      "topic": "受绳约束的水平杆静力平衡",
+      "topicTag": "力学·力矩平衡",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "长为 $4\\ell$ 的均匀细棒 AB，一端 A 接长 $3\\ell$ 的竖直绳 a，另一端 B 接长 $5\\ell$ 的绳 b，悬挂于相距 $8\\ell$ 的天花板两点。A 还被水平绳 c 向左拉，棒水平静止。设绳 c 拉力为 $F$，棒重为 $W$，求 $F$。",
+      "options": [
+        {
+          "label": "①",
+          "content": "$\\dfrac{3}{10}W$"
+        },
+        {
+          "label": "②",
+          "content": "$\\dfrac{3}{8}W$"
+        },
+        {
+          "label": "③",
+          "content": "$\\dfrac{2}{5}W$"
+        },
+        {
+          "label": "④",
+          "content": "$\\dfrac{5}{8}W$"
+        },
+        {
+          "label": "⑤",
+          "content": "$\\dfrac{2}{3}W$"
+        },
+        {
+          "label": "⑥",
+          "content": "$\\dfrac{5}{6}W$"
+        }
+      ],
+      "questionImage": "/images/2018_R2_physics/q01.png",
+      "solution": {
+        "translation": "先由几何确定 B 端绳 b 的方向，再对 A 点取力矩求绳 b 张力，最后用水平方向平衡求 $F$。",
+        "analysis": "B 端到悬点的水平、竖直距离构成 $4\\ell-3\\ell-5\\ell$ 三角形，因此绳 b 的水平分量为 $4T/5$，竖直分量为 $3T/5$。",
+        "steps": [
+          {
+            "title": "(1) 对 A 点取力矩",
+            "content": "$$\\frac{3}{5}T\\cdot4\\ell=W\\cdot2\\ell$$\n\n$$T=\\frac{5}{6}W$$"
+          },
+          {
+            "title": "(2) 水平方向平衡",
+            "content": "$$F=\\frac{4}{5}T=\\frac{4}{5}\\cdot\\frac{5}{6}W=\\frac{2}{3}W$$"
+          }
+        ],
+        "finalAnswer": "⑤ $\\dfrac{2}{3}W$",
+        "correctOption": "⑤"
+      }
+    },
+    {
+      "id": "2018-r2-phys-2",
+      "number": "I-B 问2",
+      "topic": "速度-时间图像求位移",
+      "topicTag": "力学·运动图像",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "电车从静止开始在直线轨道上运动。给出 $v-t$ 图像，求 $t=0$ 到 $t=6\\,\\mathrm{s}$ 间的位移。",
+      "options": [
+        {
+          "label": "①",
+          "content": "20"
+        },
+        {
+          "label": "②",
+          "content": "22"
+        },
+        {
+          "label": "③",
+          "content": "24"
+        },
+        {
+          "label": "④",
+          "content": "26"
+        },
+        {
+          "label": "⑤",
+          "content": "28"
+        },
+        {
+          "label": "⑥",
+          "content": "30"
+        }
+      ],
+      "questionImage": "/images/2018_R2_physics/q02.png",
+      "solution": {
+        "translation": "位移等于速度-时间图像下的面积。",
+        "analysis": "图像由三部分组成：0 到 3 s 的三角形、3 到 5 s 的矩形、5 到 6 s 的梯形。",
+        "steps": [
+          {
+            "title": "求面积",
+            "content": "$$s=\\frac12\\cdot3\\cdot6+2\\cdot6+\\frac{6+4}{2}\\cdot1=9+12+5=26\\,\\mathrm{m}$$"
+          }
+        ],
+        "finalAnswer": "④ $26\\,\\mathrm{m}$",
+        "correctOption": "④"
+      }
+    },
+    {
+      "id": "2018-r2-phys-3",
+      "number": "I-C 问3",
+      "topic": "光滑曲面后的水平抛出",
+      "topicTag": "力学·能量与抛体运动",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "光滑曲面 AB 的上端 A 离地高度为 $H$，下端 B 离地高度为 $h$。小物体从 A 静止释放，从 B 水平飞出后落到地面 C，且 B 到 C 的水平距离为 $2h$。求 $H/h$。",
+      "options": [
+        {
+          "label": "①",
+          "content": "$\\dfrac54$"
+        },
+        {
+          "label": "②",
+          "content": "$\\dfrac32$"
+        },
+        {
+          "label": "③",
+          "content": "$\\dfrac74$"
+        },
+        {
+          "label": "④",
+          "content": "2"
+        },
+        {
+          "label": "⑤",
+          "content": "$\\dfrac94$"
+        },
+        {
+          "label": "⑥",
+          "content": "$\\dfrac52$"
+        }
+      ],
+      "questionImage": "/images/2018_R2_physics/q03.png",
+      "solution": {
+        "translation": "由水平抛出运动求 B 点速度，再用机械能守恒连接 A、B 的高度差。",
+        "analysis": "从 B 到地面下落高度为 $h$，水平位移为 $2h$。",
+        "steps": [
+          {
+            "title": "(1) 抛体运动求速度",
+            "content": "$$h=\\frac12gt^2,\\qquad 2h=v_Bt$$\n\n$$v_B^2=2gh$$"
+          },
+          {
+            "title": "(2) 能量守恒",
+            "content": "$$mg(H-h)=\\frac12mv_B^2=mgh$$\n\n$$H=2h$$"
+          }
+        ],
+        "finalAnswer": "④ $\\dfrac{H}{h}=2$",
+        "correctOption": "④"
+      }
+    },
+    {
+      "id": "2018-r2-phys-4",
+      "number": "I-D 问4",
+      "topic": "碰撞中的力积矢量关系",
+      "topicTag": "力学·冲量动量",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "质量 $m$ 的小物体 A 以速度 $\\vec v_1$ 撞击物体 B，碰后 A 的速度变为 $\\vec v_2$。碰撞中 B 受到的力积为 $\\vec F\\Delta t$。判断 $m\\vec v_1$、$m\\vec v_2$ 与 $\\vec F\\Delta t$ 的关系图。",
+      "options": [
+        {
+          "label": "①",
+          "content": "图①"
+        },
+        {
+          "label": "②",
+          "content": "图②"
+        },
+        {
+          "label": "③",
+          "content": "图③"
+        },
+        {
+          "label": "④",
+          "content": "图④"
+        }
+      ],
+      "questionImage": "/images/2018_R2_physics/q04.png",
+      "solution": {
+        "translation": "A 的动量变化等于 A 受到的力积；B 受到的力积与 A 受到的力积大小相等、方向相反。",
+        "analysis": "A 的动量变化为 $m\\vec v_2-m\\vec v_1$，所以 B 得到的力积为 $m\\vec v_1-m\\vec v_2$。",
+        "steps": [
+          {
+            "title": "写出矢量式",
+            "content": "$$\\vec F\\Delta t=m\\vec v_1-m\\vec v_2$$\n\n即：$$m\\vec v_2+\\vec F\\Delta t=m\\vec v_1$$"
+          }
+        ],
+        "finalAnswer": "② 图②",
+        "correctOption": "②"
+      }
+    },
+    {
+      "id": "2018-r2-phys-5",
+      "number": "I-E 问5",
+      "topic": "圆锥摆角速度",
+      "topicTag": "力学·圆周运动",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "长为 $\\ell$ 的轻绳一端固定，另一端接质量 $m$ 的小球。小球在水平面内作等速圆周运动，绳的张力为 $2mg$。求圆运动角速度 $\\omega$。",
+      "options": [
+        {
+          "label": "①",
+          "content": "$\\sqrt{\\dfrac{g}{\\ell}}$"
+        },
+        {
+          "label": "②",
+          "content": "$\\sqrt{\\dfrac{2g}{\\ell}}$"
+        },
+        {
+          "label": "③",
+          "content": "$\\sqrt{\\dfrac{3g}{\\ell}}$"
+        },
+        {
+          "label": "④",
+          "content": "$2\\sqrt{\\dfrac{g}{\\ell}}$"
+        },
+        {
+          "label": "⑤",
+          "content": "$\\sqrt{\\dfrac{5g}{\\ell}}$"
+        },
+        {
+          "label": "⑥",
+          "content": "$\\sqrt{\\dfrac{6g}{\\ell}}$"
+        }
+      ],
+      "questionImage": "/images/2018_R2_physics/q05.png",
+      "solution": {
+        "translation": "竖直方向张力分量平衡重力，水平方向张力分量提供向心力。",
+        "analysis": "设绳与竖直方向夹角为 $\\theta$。由 $T=2mg$ 和 $T\\cos\\theta=mg$ 得 $\\cos\\theta=1/2$。",
+        "steps": [
+          {
+            "title": "列向心条件",
+            "content": "$$T\\sin\\theta=m(\\ell\\sin\\theta)\\omega^2$$\n\n$$T=m\\ell\\omega^2$$"
+          },
+          {
+            "title": "代入张力",
+            "content": "$$2mg=m\\ell\\omega^2$$\n\n$$\\omega=\\sqrt{\\frac{2g}{\\ell}}$$"
+          }
+        ],
+        "finalAnswer": "② $\\sqrt{\\dfrac{2g}{\\ell}}$",
+        "correctOption": "②"
+      }
+    },
+    {
+      "id": "2018-r2-phys-6",
+      "number": "I-F 问6",
+      "topic": "简谐运动加速度",
+      "topicTag": "力学·简谐运动",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "$x$ 轴上小物体以原点为振动中心作简谐运动，振幅 $0.50\\,\\mathrm{m}$，角振动数 $1.0\\,\\mathrm{rad/s}$。求通过 $x=0.10\\,\\mathrm{m}$ 处瞬间的加速度，取 $x$ 正方向为加速度正方向。",
+      "options": [
+        {
+          "label": "①",
+          "content": "$-0.50$"
+        },
+        {
+          "label": "②",
+          "content": "$-0.25$"
+        },
+        {
+          "label": "③",
+          "content": "$-0.10$"
+        },
+        {
+          "label": "④",
+          "content": "0.10"
+        },
+        {
+          "label": "⑤",
+          "content": "0.25"
+        },
+        {
+          "label": "⑥",
+          "content": "0.50"
+        }
+      ],
+      "solution": {
+        "translation": "简谐运动加速度与位移方向相反，满足 $a=-\\omega^2x$。",
+        "analysis": "这里 $\\omega=1.0\\,\\mathrm{rad/s}$，$x=0.10\\,\\mathrm{m}$。",
+        "steps": [
+          {
+            "title": "代入公式",
+            "content": "$$a=-(1.0)^2\\times0.10=-0.10\\,\\mathrm{m/s^2}$$"
+          }
+        ],
+        "finalAnswer": "③ $-0.10\\,\\mathrm{m/s^2}$",
+        "correctOption": "③"
+      }
+    },
+    {
+      "id": "2018-r2-phys-7",
+      "number": "II-A 问1",
+      "topic": "水与金属容器的热平衡",
+      "topicTag": "热力学·热量守恒",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "$20°C$ 的金属容器中放入 $60°C$ 的水 $5.0\\times10^2\\,\\mathrm{g}$，平衡后容器和水均为 $50°C$。若把水量改为 $1.0\\times10^2\\,\\mathrm{g}$，仍放入 $20°C$ 的同一金属容器，平衡后温度为 $t$，求 $t$。",
+      "options": [
+        {
+          "label": "①",
+          "content": "25"
+        },
+        {
+          "label": "②",
+          "content": "30"
+        },
+        {
+          "label": "③",
+          "content": "35"
+        },
+        {
+          "label": "④",
+          "content": "40"
+        },
+        {
+          "label": "⑤",
+          "content": "45"
+        }
+      ],
+      "solution": {
+        "translation": "先由第一次热平衡求金属容器的热容量，再用于第二次实验。",
+        "analysis": "设水的比热为 $c$，容器热容量为 $C$。第一次实验中水降温 $10°C$，容器升温 $30°C$。",
+        "steps": [
+          {
+            "title": "(1) 求容器热容量",
+            "content": "$$500c(60-50)=C(50-20)$$\n\n$$C=\\frac{500c}{3}$$"
+          },
+          {
+            "title": "(2) 第二次热平衡",
+            "content": "$$100c(60-t)=C(t-20)=\\frac{500c}{3}(t-20)$$"
+          },
+          {
+            "title": "(3) 解出温度",
+            "content": "$$300(60-t)=500(t-20)$$\n\n$$t=35°C$$"
+          }
+        ],
+        "finalAnswer": "③ $35°C$",
+        "correctOption": "③"
+      }
+    },
+    {
+      "id": "2018-r2-phys-8",
+      "number": "II-B 问2",
+      "topic": "含可动绝热活塞的理想气体温度比",
+      "topicTag": "热力学·理想气体",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "绝热容器内由无摩擦绝热活塞分成 A、B 两区域，两边封入等量理想气体，初始温度、压强、体积都相等。A 中气体被缓慢加热后活塞静止，A 的体积变为原来的 $6/5$。求 $T_A/T_B$。",
+      "options": [
+        {
+          "label": "①",
+          "content": "$\\dfrac23$"
+        },
+        {
+          "label": "②",
+          "content": "$\\dfrac45$"
+        },
+        {
+          "label": "③",
+          "content": "$\\dfrac56$"
+        },
+        {
+          "label": "④",
+          "content": "$\\dfrac65$"
+        },
+        {
+          "label": "⑤",
+          "content": "$\\dfrac54$"
+        },
+        {
+          "label": "⑥",
+          "content": "$\\dfrac32$"
+        }
+      ],
+      "questionImage": "/images/2018_R2_physics/q08.png",
+      "solution": {
+        "translation": "最终活塞静止且无摩擦，所以两侧压强相等。两侧气体物质的量相等，因此同压下温度与体积成正比。",
+        "analysis": "总容积不变。若初始每侧体积为 $V_0$，最终 $V_A=6V_0/5$，则 $V_B=2V_0-6V_0/5=4V_0/5$。",
+        "steps": [
+          {
+            "title": "求温度比",
+            "content": "$$\\frac{T_A}{T_B}=\\frac{V_A}{V_B}=\\frac{6V_0/5}{4V_0/5}=\\frac32$$"
+          }
+        ],
+        "finalAnswer": "⑥ $\\dfrac32$",
+        "correctOption": "⑥"
+      }
+    },
+    {
+      "id": "2018-r2-phys-9",
+      "number": "II-C 问3",
+      "topic": "p-V 图像中的吸热量",
+      "topicTag": "热力学·热力学第一定律",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "一定量单原子理想气体按 $p-V$ 图从状态 A 经 B 到 C。A 为 $(V_0,p_0)$，B 为 $(2V_0,p_0)$，C 为 $(3V_0,p_0/2)$。求全过程气体吸收的热量。",
+      "options": [
+        {
+          "label": "①",
+          "content": "$\\dfrac12p_0V_0$"
+        },
+        {
+          "label": "②",
+          "content": "$p_0V_0$"
+        },
+        {
+          "label": "③",
+          "content": "$\\dfrac32p_0V_0$"
+        },
+        {
+          "label": "④",
+          "content": "$2p_0V_0$"
+        },
+        {
+          "label": "⑤",
+          "content": "$\\dfrac52p_0V_0$"
+        }
+      ],
+      "questionImage": "/images/2018_R2_physics/q09.png",
+      "solution": {
+        "translation": "用热力学第一定律 $Q=\\Delta U+W$。单原子理想气体内能 $U=\\frac32pV$。",
+        "analysis": "A 到 C 的 $pV$ 从 $p_0V_0$ 变为 $\\frac12p_0\\cdot3V_0=\\frac32p_0V_0$。",
+        "steps": [
+          {
+            "title": "(1) 内能变化",
+            "content": "$$\\Delta U=\\frac32\\left(\\frac32p_0V_0-p_0V_0\\right)=\\frac34p_0V_0$$"
+          },
+          {
+            "title": "(2) 气体做功",
+            "content": "A 到 B：$$W_{AB}=p_0V_0$$\n\nB 到 C 为梯形面积：$$W_{BC}=\\frac{p_0+p_0/2}{2}V_0=\\frac34p_0V_0$$\n\n$$W=\\frac74p_0V_0$$"
+          },
+          {
+            "title": "(3) 求吸热量",
+            "content": "$$Q=\\Delta U+W=\\frac34p_0V_0+\\frac74p_0V_0=\\frac52p_0V_0$$"
+          }
+        ],
+        "finalAnswer": "⑤ $\\dfrac52p_0V_0$",
+        "correctOption": "⑤"
+      }
+    },
+    {
+      "id": "2018-r2-phys-10",
+      "number": "III-A 问1",
+      "topic": "横波中介质速度方向和大小",
+      "topicTag": "波动·行波",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "图示为沿 $x$ 轴正方向传播的横波在某时刻的 $y-x$ 图像。问介质速度方向为 $x$ 轴正方向，且大小最大的点是哪两个。",
+      "options": [
+        {
+          "label": "①",
+          "content": "a と e"
+        },
+        {
+          "label": "②",
+          "content": "b と f"
+        },
+        {
+          "label": "③",
+          "content": "c と g"
+        },
+        {
+          "label": "④",
+          "content": "d と h"
+        }
+      ],
+      "questionImage": "/images/2018_R2_physics/q10.png",
+      "solution": {
+        "translation": "对沿 $+x$ 方向传播的波，介质速度满足 $\\partial y/\\partial t=-v\\,\\partial y/\\partial x$。",
+        "analysis": "介质速度沿 $+y$ 方向且最大的位置，是波形斜率为最负且绝对值最大的位置，即向下过平衡位置的点。",
+        "steps": [
+          {
+            "title": "判断点",
+            "content": "图中 b、f 两点是向下穿过平衡位置的位置，斜率最负，因此介质速度为正方向且最大。"
+          }
+        ],
+        "finalAnswer": "② b と f",
+        "correctOption": "②"
+      }
+    },
+    {
+      "id": "2018-r2-phys-11",
+      "number": "III-B 问2",
+      "topic": "运动声源和运动观察者的多普勒效应",
+      "topicTag": "波动·多普勒效应",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "声源以速度 $v_S$ 向前运动并发出振动数 $f_0$ 的声音，观察者以速度 $v_O$ 同向运动。观察者在声源前方时观测频率为 $f_1$，在声源后方时观测频率为 $f_2$。声速为 $V$，求 $f_2/f_1$。",
+      "options": [
+        {
+          "label": "①",
+          "content": "$\\dfrac{(V-v_S)(V+v_O)}{(V+v_S)(V-v_O)}$"
+        },
+        {
+          "label": "②",
+          "content": "$\\dfrac{(V+v_S)(V-v_O)}{(V-v_S)(V+v_O)}$"
+        },
+        {
+          "label": "③",
+          "content": "$\\dfrac{(V-v_S)(V-v_O)}{(V+v_S)(V+v_O)}$"
+        },
+        {
+          "label": "④",
+          "content": "$\\dfrac{(V+v_S)(V+v_O)}{(V-v_S)(V-v_O)}$"
+        }
+      ],
+      "questionImage": "/images/2018_R2_physics/q11.png",
+      "solution": {
+        "translation": "分别写出观察者在声源前方和后方时的多普勒频率。",
+        "analysis": "前方时声源向观察者接近，而观察者远离声源；后方时声源远离观察者，而观察者向波源方向接近后方传播的波。",
+        "steps": [
+          {
+            "title": "写出频率",
+            "content": "$$f_1=f_0\\frac{V-v_O}{V-v_S}$$\n\n$$f_2=f_0\\frac{V+v_O}{V+v_S}$$"
+          },
+          {
+            "title": "求比值",
+            "content": "$$\\frac{f_2}{f_1}=\\frac{(V-v_S)(V+v_O)}{(V+v_S)(V-v_O)}$$"
+          }
+        ],
+        "finalAnswer": "① $\\dfrac{(V-v_S)(V+v_O)}{(V+v_S)(V-v_O)}$",
+        "correctOption": "①"
+      }
+    },
+    {
+      "id": "2018-r2-phys-12",
+      "number": "III-C 问3",
+      "topic": "镜面反射形成的双缝干涉",
+      "topicTag": "波动·光的干涉",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "水平平面镜两端分别立有带狭缝 S 的板和屏幕，AB 间距为 $\\ell$，SA 间距为 $d$。来自 S 的光直接到屏幕 X，与经平面镜反射后到 X 的光干涉。反射带来相位反转。求屏上最靠近 B 的明线与 B 的距离 $x$。已知 $d,x\\ll\\ell$。",
+      "options": [
+        {
+          "label": "①",
+          "content": "$\\dfrac{\\lambda\\ell}{4d}$"
+        },
+        {
+          "label": "②",
+          "content": "$\\dfrac{\\lambda\\ell}{2d}$"
+        },
+        {
+          "label": "③",
+          "content": "$\\dfrac{\\lambda\\ell}{d}$"
+        },
+        {
+          "label": "④",
+          "content": "$\\dfrac{2\\lambda\\ell}{d}$"
+        },
+        {
+          "label": "⑤",
+          "content": "$\\dfrac{4\\lambda\\ell}{d}$"
+        }
+      ],
+      "questionImage": "/images/2018_R2_physics/q12.png",
+      "solution": {
+        "translation": "反射光可视为来自虚缝 $S'$，与真实缝 S 形成双缝干涉。两缝间距为 $2d$。",
+        "analysis": "反射带来额外相位差 $\\pi$，所以亮纹条件相当于几何光程差为半波长的奇数倍。最近的亮纹取 $\\lambda/2$。",
+        "steps": [
+          {
+            "title": "近似光程差",
+            "content": "$$\\Delta \\simeq \\frac{2d\\,x}{\\ell}$$"
+          },
+          {
+            "title": "最近亮纹条件",
+            "content": "$$\\frac{2dx}{\\ell}=\\frac{\\lambda}{2}$$\n\n$$x=\\frac{\\lambda\\ell}{4d}$$"
+          }
+        ],
+        "finalAnswer": "① $\\dfrac{\\lambda\\ell}{4d}$",
+        "correctOption": "①"
+      }
+    },
+    {
+      "id": "2018-r2-phys-13",
+      "number": "IV-A 问1",
+      "topic": "两点电荷的电场与电位判断",
+      "topicTag": "电磁气·电场与电位",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "$x$ 轴原点固定电荷 $Q_1$，$x=2d$ 固定电荷 $Q_2$。点 A 为 $x=d$，在 A 处电场方向为 $+x$，且电位为 0。求点 B($x=3d$) 处电场方向和电位正负。",
+      "options": [
+        {
+          "label": "①",
+          "content": "电场为 $+x$，电位正"
+        },
+        {
+          "label": "②",
+          "content": "电场为 $+x$，电位负"
+        },
+        {
+          "label": "③",
+          "content": "电场为 $-x$，电位正"
+        },
+        {
+          "label": "④",
+          "content": "电场为 $-x$，电位负"
+        }
+      ],
+      "questionImage": "/images/2018_R2_physics/q13.png",
+      "solution": {
+        "translation": "A 点到两个电荷距离相等，且电位为 0，所以两个电荷代数和为 0。再由 A 点电场方向确定符号。",
+        "analysis": "若 $Q_1+Q_2=0$，且 A 点电场向 $+x$，则 $Q_1>0$、$Q_2<0$。在 B 点，离负电荷 $Q_2$ 更近，电场指向负电荷，即 $-x$ 方向；电位也由较近的负电荷主导，为负。",
+        "steps": [
+          {
+            "title": "符号判断",
+            "content": "$$V_A=k\\frac{Q_1}{d}+k\\frac{Q_2}{d}=0\\Rightarrow Q_1+Q_2=0$$\n\nA 点电场向 $+x$，所以 $Q_1>0, Q_2<0$。"
+          },
+          {
+            "title": "B 点判断",
+            "content": "B 到 $Q_2$ 距离为 $d$，到 $Q_1$ 距离为 $3d$，负电荷影响更强，电场向 $-x$，电位为负。"
+          }
+        ],
+        "finalAnswer": "④ 电场为 $x$ 轴负方向，电位为负",
+        "correctOption": "④"
+      }
+    },
+    {
+      "id": "2018-r2-phys-14",
+      "number": "IV-B 问2",
+      "topic": "电容器充电后再并联的电荷分配",
+      "topicTag": "电磁气·电容器",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "电容 $C_1=2.0\\,\\mu\\mathrm{F}$、$C_2=3.0\\,\\mu\\mathrm{F}$，两电池均为 $5.0\\,\\mathrm{V}$。先在 $S_3$ 断开、$S_1,S_2$ 闭合时分别给 $C_1,C_2$ 充电；再断开 $S_1,S_2$，闭合 $S_3$。充分时间后，求 $C_1$ 与 $S_3$ 相连的上侧极板电荷 $Q$。",
+      "options": [
+        {
+          "label": "①",
+          "content": "$-5.0$"
+        },
+        {
+          "label": "②",
+          "content": "$-2.0$"
+        },
+        {
+          "label": "③",
+          "content": "$-1.0$"
+        },
+        {
+          "label": "④",
+          "content": "1.0"
+        },
+        {
+          "label": "⑤",
+          "content": "2.0"
+        },
+        {
+          "label": "⑥",
+          "content": "5.0"
+        }
+      ],
+      "questionImage": "/images/2018_R2_physics/q14.png",
+      "solution": {
+        "translation": "先判断两电容初始上极板的电荷，再在闭合 $S_3$ 后对相连的上极板节点用电荷守恒。",
+        "analysis": "初始时 $C_1$ 上极板为 $-10\\,\\mu\\mathrm{C}$，$C_2$ 上极板为 $+15\\,\\mu\\mathrm{C}$。闭合 $S_3$ 后，这两个上极板连成孤立节点，总电荷为 $+5\\,\\mu\\mathrm{C}$。",
+        "steps": [
+          {
+            "title": "(1) 节点总电荷守恒",
+            "content": "$$Q_{top,total}=-10+15=+5\\,\\mu\\mathrm{C}$$"
+          },
+          {
+            "title": "(2) 并联后的共同电压",
+            "content": "$$V=\\frac{5\\,\\mu\\mathrm{C}}{(2.0+3.0)\\,\\mu\\mathrm{F}}=1.0\\,\\mathrm{V}$$"
+          },
+          {
+            "title": "(3) 求 C1 上极板电荷",
+            "content": "$$Q=C_1V=2.0\\,\\mu\\mathrm{F}\\times1.0\\,\\mathrm{V}=2.0\\,\\mu\\mathrm{C}$$"
+          }
+        ],
+        "finalAnswer": "⑤ $2.0\\,\\mu\\mathrm{C}$",
+        "correctOption": "⑤"
+      }
+    },
+    {
+      "id": "2018-r2-phys-15",
+      "number": "IV-C 问3",
+      "topic": "多电源并联支路电流",
+      "topicTag": "电磁气·直流电路",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "电路中 $R_1=3.0\\,\\mathrm{k\\Omega}$、$R_2=3.0\\,\\mathrm{k\\Omega}$、$R_3=6.0\\,\\mathrm{k\\Omega}$，电池 $E_1=6.0\\,\\mathrm{V}$、$E_2=3.0\\,\\mathrm{V}$。求流过 $R_2$ 的电流大小和方向。",
+      "options": [
+        {
+          "label": "①",
+          "content": "0.20 mA，A から B"
+        },
+        {
+          "label": "②",
+          "content": "0.20 mA，B から A"
+        },
+        {
+          "label": "③",
+          "content": "0.40 mA，A から B"
+        },
+        {
+          "label": "④",
+          "content": "0.40 mA，B から A"
+        },
+        {
+          "label": "⑤",
+          "content": "0.60 mA，A から B"
+        },
+        {
+          "label": "⑥",
+          "content": "0.60 mA，B から A"
+        }
+      ],
+      "questionImage": "/images/2018_R2_physics/q15.png",
+      "solution": {
+        "translation": "把 A、B 看成两个节点，设从 A 到 B 的电位差为 $V=V_A-V_B$，并规定从 A 到 B 的电流为正。",
+        "analysis": "两节电池正极在右侧，因此上、中两支路从 A 到 B 的电流分别为 $(V+6)/3.0\\mathrm{k\\Omega}$、$(V+3)/3.0\\mathrm{k\\Omega}$，下支路为 $V/6.0\\mathrm{k\\Omega}$。",
+        "steps": [
+          {
+            "title": "节点电流守恒",
+            "content": "$$\\frac{V+6}{3.0}+\\frac{V+3}{3.0}+\\frac{V}{6.0}=0$$\n\n$$V=-3.6\\,\\mathrm{V}$$"
+          },
+          {
+            "title": "求 R2 电流",
+            "content": "$$I_2=\\frac{V+3}{3.0\\,\\mathrm{k\\Omega}}=\\frac{-0.6}{3.0\\,\\mathrm{k\\Omega}}=-0.20\\,\\mathrm{mA}$$\n\n负号表示方向为 B 到 A。"
+          }
+        ],
+        "finalAnswer": "② 0.20 mA，B から A",
+        "correctOption": "②"
+      }
+    },
+    {
+      "id": "2018-r2-phys-16",
+      "number": "IV-D 问4",
+      "topic": "三根同向平行电流间的作用力",
+      "topicTag": "电磁气·电流间作用力",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "三根足够长的平行直导线垂直纸面，分别穿过正三角形 ABC 的三个顶点，三根导线中电流均从纸面背面流向表面，大小相等为 $I$。A 导线长 $\\ell$ 的部分受到 B 导线的力为 $\\vec F_B$，受到 C 导线的力为 $\\vec F_C$，合力为 $\\vec F$。求合力方向和 $F/F_B$。",
+      "options": [
+        {
+          "label": "①",
+          "content": "方向 (a)，$F/F_B=1$"
+        },
+        {
+          "label": "②",
+          "content": "方向 (a)，$F/F_B=\\sqrt3$"
+        },
+        {
+          "label": "③",
+          "content": "方向 (b)，$F/F_B=1$"
+        },
+        {
+          "label": "④",
+          "content": "方向 (b)，$F/F_B=\\sqrt3$"
+        },
+        {
+          "label": "⑤",
+          "content": "方向 (c)，$F/F_B=1$"
+        },
+        {
+          "label": "⑥",
+          "content": "方向 (c)，$F/F_B=\\sqrt3$"
+        },
+        {
+          "label": "⑦",
+          "content": "方向 (d)，$F/F_B=1$"
+        },
+        {
+          "label": "⑧",
+          "content": "方向 (d)，$F/F_B=\\sqrt3$"
+        }
+      ],
+      "questionImage": "/images/2018_R2_physics/q16.png",
+      "solution": {
+        "translation": "同向平行电流相互吸引。A 受 B、C 的力大小相等，方向分别沿 AB、AC 指向 B、C。",
+        "analysis": "两个等大力夹角为 $60°$，水平分量抵消，竖直分量相加，方向向下。",
+        "steps": [
+          {
+            "title": "合成力",
+            "content": "$$F=2F_B\\cos30°=\\sqrt3F_B$$\n\n方向为图中的 (c)。"
+          }
+        ],
+        "finalAnswer": "⑥ 方向 (c)，$F/F_B=\\sqrt3$",
+        "correctOption": "⑥"
+      }
+    },
+    {
+      "id": "2018-r2-phys-17",
+      "number": "IV-E 问5",
+      "topic": "负电荷在匀强磁场中的半圆运动",
+      "topicTag": "电磁气·洛伦兹力",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "$xy$ 平面内有垂直纸面向外、磁束密度 $B$ 的匀强磁场。质量 $m$、电荷 $-q(q>0)$ 的粒子 A 从原点 O 沿 $+y$ 方向以速度 $v_0$ 射出。下一次到达 $x$ 轴的位置为 $x_1$，时刻为 $t_1$，求二者。",
+      "options": [
+        {
+          "label": "①",
+          "content": "$x_1=-\\dfrac{2v_0m}{qB}$，$t_1=\\dfrac{\\pi m}{qB}$"
+        },
+        {
+          "label": "②",
+          "content": "$x_1=-\\dfrac{2v_0m}{qB}$，$t_1=\\dfrac{2\\pi m}{qB}$"
+        },
+        {
+          "label": "③",
+          "content": "$x_1=-\\dfrac{v_0m}{qB}$，$t_1=\\dfrac{\\pi m}{qB}$"
+        },
+        {
+          "label": "④",
+          "content": "$x_1=-\\dfrac{v_0m}{qB}$，$t_1=\\dfrac{2\\pi m}{qB}$"
+        },
+        {
+          "label": "⑤",
+          "content": "$x_1=\\dfrac{v_0m}{qB}$，$t_1=\\dfrac{\\pi m}{qB}$"
+        },
+        {
+          "label": "⑥",
+          "content": "$x_1=\\dfrac{v_0m}{qB}$，$t_1=\\dfrac{2\\pi m}{qB}$"
+        },
+        {
+          "label": "⑦",
+          "content": "$x_1=\\dfrac{2v_0m}{qB}$，$t_1=\\dfrac{\\pi m}{qB}$"
+        },
+        {
+          "label": "⑧",
+          "content": "$x_1=\\dfrac{2v_0m}{qB}$，$t_1=\\dfrac{2\\pi m}{qB}$"
+        }
+      ],
+      "questionImage": "/images/2018_R2_physics/q17.png",
+      "solution": {
+        "translation": "负电荷在出纸面磁场中受力方向与正电荷相反。初速沿 $+y$，因此初始洛伦兹力指向 $-x$。",
+        "analysis": "圆心在 $(-r,0)$，半径 $r=mv_0/(qB)$。下一次回到 $x$ 轴是半周后，位置在 $x=-2r$。",
+        "steps": [
+          {
+            "title": "半径和周期",
+            "content": "$$r=\\frac{mv_0}{qB},\\qquad T=\\frac{2\\pi m}{qB}$$"
+          },
+          {
+            "title": "求下一次到达 x 轴",
+            "content": "$$x_1=-2r=-\\frac{2mv_0}{qB}$$\n\n$$t_1=\\frac{T}{2}=\\frac{\\pi m}{qB}$$"
+          }
+        ],
+        "finalAnswer": "① $x_1=-\\dfrac{2v_0m}{qB}$，$t_1=\\dfrac{\\pi m}{qB}$",
+        "correctOption": "①"
+      }
+    },
+    {
+      "id": "2018-r2-phys-18",
+      "number": "IV-F 问6",
+      "topic": "磁场中通电金属棒的运动",
+      "topicTag": "电磁气·电磁感应",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "水平面内两条平行金属导轨上有与导轨垂直的金属棒 R，可无摩擦滑动且始终垂直导轨。导轨区域有竖直向上的匀强磁场，导轨一端接电池和开关。闭合开关后金属棒开始运动，之后速度增大。判断金属棒运动方向和加速度大小变化。",
+      "options": [
+        {
+          "label": "①",
+          "content": "电池に近づく，減少した"
+        },
+        {
+          "label": "②",
+          "content": "电池に近づく，変化しなかった"
+        },
+        {
+          "label": "③",
+          "content": "电池に近づく，増加した"
+        },
+        {
+          "label": "④",
+          "content": "电池から遠ざかる，減少した"
+        },
+        {
+          "label": "⑤",
+          "content": "电池から遠ざかる，変化しなかった"
+        },
+        {
+          "label": "⑥",
+          "content": "电池から遠ざかる，増加した"
+        }
+      ],
+      "questionImage": "/images/2018_R2_physics/q18.png",
+      "solution": {
+        "translation": "电池上端为正极，闭合开关后电流从上导轨进入金属棒，再流向下导轨。由安培力方向判断金属棒远离电池。",
+        "analysis": "金属棒速度增大时产生动生电动势，方向按楞次定律反抗原电池电流，因此回路电流减小，磁力和加速度也减小。",
+        "steps": [
+          {
+            "title": "判断运动与加速度",
+            "content": "初始安培力使金属棒向远离电池方向运动；随速度增大，反电动势增大，电流减小，所以加速度减小。"
+          }
+        ],
+        "finalAnswer": "④ 电池から遠ざかる，減少した",
+        "correctOption": "④"
+      }
+    },
+    {
+      "id": "2018-r2-phys-19",
+      "number": "V-A 问1",
+      "topic": "光子能量与电子物质波动能",
+      "topicTag": "现代物理·波粒二象性",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "光和电子都具有粒子性与波动性。光的波长为 $\\lambda$ 时，光子能量与什么成比例；电子波波长为 $\\lambda$ 时，电子动能与什么成比例。",
+      "options": [
+        {
+          "label": "①",
+          "content": "$\\lambda^2$，$\\lambda^2$"
+        },
+        {
+          "label": "②",
+          "content": "$\\lambda^2$，$\\lambda$"
+        },
+        {
+          "label": "③",
+          "content": "$\\lambda$，$\\lambda^2$"
+        },
+        {
+          "label": "④",
+          "content": "$\\lambda$，$\\lambda$"
+        },
+        {
+          "label": "⑤",
+          "content": "$\\dfrac1\\lambda$，$\\dfrac1\\lambda$"
+        },
+        {
+          "label": "⑥",
+          "content": "$\\dfrac1\\lambda$，$\\dfrac1{\\lambda^2}$"
+        },
+        {
+          "label": "⑦",
+          "content": "$\\dfrac1{\\lambda^2}$，$\\dfrac1\\lambda$"
+        },
+        {
+          "label": "⑧",
+          "content": "$\\dfrac1{\\lambda^2}$，$\\dfrac1{\\lambda^2}$"
+        }
+      ],
+      "solution": {
+        "translation": "光子能量由 $E=h\\nu=hc/\\lambda$ 给出。电子物质波满足 $p=h/\\lambda$，动能 $K=p^2/(2m)$。",
+        "analysis": "因此光子能量与 $1/\\lambda$ 成正比，电子动能与 $1/\\lambda^2$ 成正比。",
+        "steps": [
+          {
+            "title": "比例关系",
+            "content": "$$E_{photon}=\\frac{hc}{\\lambda}\\propto\\frac1\\lambda$$\n\n$$K_e=\\frac{p^2}{2m}=\\frac{h^2}{2m\\lambda^2}\\propto\\frac1{\\lambda^2}$$"
+          }
+        ],
+        "finalAnswer": "⑥ I: $\\dfrac1\\lambda$，II: $\\dfrac1{\\lambda^2}$",
+        "correctOption": "⑥"
+      }
+    }
+  ]
+}
