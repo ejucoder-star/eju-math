@@ -1,0 +1,684 @@
+{
+  "metadata": {
+    "course": "physics",
+    "year": "2017",
+    "session": "2",
+    "courseNameJa": "物理",
+    "courseNameEn": "Physics",
+    "description": "理科｜物理",
+    "color": "#0ea5e9",
+    "examTitle": "2017年度（平成29年）第2回",
+    "examDate": "2017年11月"
+  },
+  "questions": [
+    {
+      "id": "physics-2017-r2-01",
+      "number": "I-1",
+      "topic": "三力のつり合い",
+      "topicTag": "力のつり合い",
+      "questionType": "single_choice",
+      "questionImage": "/images/2017_R2_physics/q01.png",
+      "japanese": "3本の軽い糸a,b,cで質量mの小球をつるす。糸aは鉛直方向となす角60°, 糸bは30°。aの張力Taを求める。",
+      "options": [
+        "① 1/2 mg",
+        "② √3/3 mg",
+        "③ √3/2 mg",
+        "④ mg",
+        "⑤ √3mg"
+      ],
+      "solution": {
+        "translation": "三根轻绳悬挂小球，求左侧绳a的张力。",
+        "analysis": "小球静止，水平方向和竖直方向的合力都为0。",
+        "steps": [
+          {
+            "title": "水平方向",
+            "content": "水平方向平衡：Ta sin60° = Tb sin30°，所以 Tb = √3 Ta。"
+          },
+          {
+            "title": "竖直方向",
+            "content": "竖直方向平衡：Ta cos60° + Tb cos30° = mg。代入 Tb = √3 Ta，得 (1/2)Ta + (3/2)Ta = mg，所以 Ta = mg/2。"
+          }
+        ],
+        "finalAnswer": "①",
+        "correctOption": "①"
+      },
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false
+    },
+    {
+      "id": "physics-2017-r2-02",
+      "number": "I-2",
+      "topic": "斜面上の静止摩擦",
+      "topicTag": "摩擦力",
+      "questionType": "single_choice",
+      "questionImage": "/images/2017_R2_physics/q02.png",
+      "japanese": "粗い斜面上の物体に斜面上向きの力Fを加える。Fを小さくし，F0より小さくなると物体が滑り始めた。F0を求める。",
+      "options": [
+        "① mg(cosθ - μsinθ)",
+        "② mg(sinθ - μcosθ)",
+        "③ mg(1/μ cosθ - sinθ)",
+        "④ mg(1/μ sinθ - cosθ)"
+      ],
+      "solution": {
+        "translation": "减小沿斜面向上的外力，刚要向下滑动时求临界力。",
+        "analysis": "临界下滑时静摩擦力达到最大值，并沿斜面向上。",
+        "steps": [
+          {
+            "title": "沿斜面平衡",
+            "content": "刚要下滑时，沿斜面向下为 mg sinθ，向上为 F0 + μmg cosθ。平衡条件 mg sinθ = F0 + μmg cosθ。"
+          },
+          {
+            "title": "求F0",
+            "content": "F0 = mg(sinθ - μcosθ)。"
+          }
+        ],
+        "finalAnswer": "②",
+        "correctOption": "②"
+      },
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false
+    },
+    {
+      "id": "physics-2017-r2-03",
+      "number": "I-3",
+      "topic": "アトウッドの装置",
+      "topicTag": "運動方程式",
+      "questionType": "single_choice",
+      "questionImage": "/images/2017_R2_physics/q03.png",
+      "japanese": "質量mのAと質量2mのBを軽い糸でつなぎ定滑車にかける。Bを床から高さhで放すと床直前の速さがv。hを求める。",
+      "options": [
+        "① v^2/(3g)",
+        "② v^2/(2g)",
+        "③ 2v^2/(3g)",
+        "④ v^2/g",
+        "⑤ 3v^2/(2g)",
+        "⑥ 2v^2/g",
+        "⑦ 3v^2/g"
+      ],
+      "solution": {
+        "translation": "阿特伍德装置中，重物B下落h后速度为v，求h。",
+        "analysis": "两物体共同加速度为 (2m-m)/(3m)g = g/3。",
+        "steps": [
+          {
+            "title": "加速度",
+            "content": "对整体，外力差为 mg，总质量为3m，所以 a = g/3。"
+          },
+          {
+            "title": "运动学",
+            "content": "从静止下落 h，有 v^2 = 2ah = 2(g/3)h，故 h = 3v^2/(2g)。"
+          }
+        ],
+        "finalAnswer": "⑤",
+        "correctOption": "⑤"
+      },
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false
+    },
+    {
+      "id": "physics-2017-r2-04",
+      "number": "I-4",
+      "topic": "爆発と運動量保存",
+      "topicTag": "運動量",
+      "questionType": "single_choice",
+      "questionImage": "/images/2017_R2_physics/q04.png",
+      "japanese": "静止物体が反対方向に運動する2物体A,Bに分裂した。vA/vB と KA/KB の組合せを求める。",
+      "options": [
+        "① vA/vB=mA/mB, KA/KB=mA/mB",
+        "② vA/vB=mA/mB, KA/KB=mB/mA",
+        "③ vA/vB=mB/mA, KA/KB=mA/mB",
+        "④ vA/vB=mB/mA, KA/KB=mB/mA"
+      ],
+      "solution": {
+        "translation": "静止物体爆炸成反向运动两部分，求速度比和动能比。",
+        "analysis": "总动量为0，因此两部分动量大小相等。",
+        "steps": [
+          {
+            "title": "速度比",
+            "content": "mA vA = mB vB，所以 vA/vB = mB/mA。"
+          },
+          {
+            "title": "动能比",
+            "content": "KA/KB = (mA vA^2)/(mB vB^2) = (mA/mB)(mB/mA)^2 = mB/mA。"
+          }
+        ],
+        "finalAnswer": "④",
+        "correctOption": "④"
+      },
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false
+    },
+    {
+      "id": "physics-2017-r2-05",
+      "number": "I-5",
+      "topic": "ばねの単振動",
+      "topicTag": "単振動",
+      "questionType": "single_choice",
+      "questionImage": "/images/2017_R2_physics/q05.png",
+      "japanese": "ばねを自然長からdだけ引いて放す。自然長位置通過時の速さがv0。速さがv0/2の位置xを求める。",
+      "options": [
+        "① d/4",
+        "② d/2",
+        "③ √6 d/4",
+        "④ √2 d/2",
+        "⑤ 3d/4",
+        "⑥ √3 d/2"
+      ],
+      "solution": {
+        "translation": "弹簧振子的振幅为d，最大速度为v0，求速度为v0/2时离平衡位置的距离。",
+        "analysis": "单振动中 v^2 = ω^2(A^2 - x^2)，最大速度 v0 = ωA。",
+        "steps": [
+          {
+            "title": "代入振幅",
+            "content": "A=d，且 v/v0=1/2，所以 1/4 = 1 - x^2/d^2。"
+          },
+          {
+            "title": "求x",
+            "content": "x^2/d^2 = 3/4，因此 x = (√3/2)d。"
+          }
+        ],
+        "finalAnswer": "⑥",
+        "correctOption": "⑥"
+      },
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false
+    },
+    {
+      "id": "physics-2017-r2-06",
+      "number": "I-6",
+      "topic": "楕円軌道と角運動量保存",
+      "topicTag": "万有引力",
+      "questionType": "single_choice",
+      "questionImage": "/images/2017_R2_physics/q06.png",
+      "japanese": "地球を焦点とする楕円軌道。近地点距離r，長軸10r，短軸6r。短軸上での速さv1と近地点速さv0の比を求める。",
+      "options": [
+        "① 1",
+        "② 1/2",
+        "③ 1/3",
+        "④ 1/4",
+        "⑤ 1/5",
+        "⑥ 1/6"
+      ],
+      "solution": {
+        "translation": "卫星绕焦点地球作椭圆运动，求短轴端速度与近地点速度之比。",
+        "analysis": "万有引力为中心力，对地球焦点的角动量守恒。",
+        "steps": [
+          {
+            "title": "几何关系",
+            "content": "半长轴 a=5r，半短轴 b=3r，焦距 c=√(a^2-b^2)=4r。短轴端到焦点的矢量竖直分量为3r。"
+          },
+          {
+            "title": "角动量守恒",
+            "content": "近地点处角动量为 mrv0；短轴端速度水平，力臂为3r，所以 mrv0 = m(3r)v1，得 v1/v0 = 1/3。"
+          }
+        ],
+        "finalAnswer": "③",
+        "correctOption": "③"
+      },
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false
+    },
+    {
+      "id": "physics-2017-r2-07",
+      "number": "II-1",
+      "topic": "熱量保存と融解熱",
+      "topicTag": "熱量",
+      "questionType": "single_choice",
+      "questionImage": "/images/2017_R2_physics/q07.png",
+      "japanese": "30℃の水1000gに0℃の氷200gを入れる。十分時間後の温度を求める。融解熱330J/g，比熱4.2J/(g K)。",
+      "options": [
+        "① 10℃",
+        "② 12℃",
+        "③ 14℃",
+        "④ 16℃",
+        "⑤ 18℃",
+        "⑥ 20℃"
+      ],
+      "solution": {
+        "translation": "30摄氏度水与0摄氏度冰混合，求最终温度。",
+        "analysis": "热容器忽略，水放热等于冰熔化和熔化后的水升温吸热。",
+        "steps": [
+          {
+            "title": "热量方程",
+            "content": "1000·4.2(30-T)=200·330+200·4.2T。"
+          },
+          {
+            "title": "计算",
+            "content": "126000-4200T=66000+840T，T≈11.9℃，最接近12℃。"
+          }
+        ],
+        "finalAnswer": "②",
+        "correctOption": "②"
+      },
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false
+    },
+    {
+      "id": "physics-2017-r2-08",
+      "number": "II-2",
+      "topic": "連結ピストンと理想気体",
+      "topicTag": "理想気体",
+      "questionType": "single_choice",
+      "questionImage": "/images/2017_R2_physics/q08.png",
+      "japanese": "同じシリンダーA,Bのピストンを共通軸でつなぐ。Aに0.20mol，Bに0.60mol。Aを加熱し体積が初めの1.5倍になったときTA/TBを求める。",
+      "options": [
+        "① 0.50",
+        "② 0.80",
+        "③ 1.0",
+        "④ 1.3",
+        "⑤ 1.8",
+        "⑥ 2.0"
+      ],
+      "solution": {
+        "translation": "两个活塞同轴连接，A中气体被加热，求两边最终温度比。",
+        "analysis": "活塞面积相等且共轴，最终两边压强相等；初态同温同压，所以初始体积比等于物质的量比。",
+        "steps": [
+          {
+            "title": "体积关系",
+            "content": "VA0:VB0=0.20:0.60=1:3。A体积变为1.5VA0，活塞移动使B减少0.5VA0，所以 VB=2.5VA0。"
+          },
+          {
+            "title": "理想气体状态方程",
+            "content": "压强相同，TA/TB=(VA/nA)/(VB/nB)=(1.5/0.20)/(2.5/0.60)=1.8。"
+          }
+        ],
+        "finalAnswer": "⑤",
+        "correctOption": "⑤"
+      },
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false
+    },
+    {
+      "id": "physics-2017-r2-09",
+      "number": "II-3",
+      "topic": "V-T図とp-V図",
+      "topicTag": "気体の状態変化",
+      "questionType": "single_choice",
+      "questionImage": "/images/2017_R2_physics/q09.png",
+      "japanese": "一定量の理想気体をV-T図のA→B→C→D→Aで変化させた。対応するp-V図の経路を選ぶ。",
+      "options": [
+        "① a→b→c→d→a",
+        "② a→d→c→b→a",
+        "③ b→c→d→a→b",
+        "④ b→a→d→c→b",
+        "⑤ c→d→a→b→c",
+        "⑥ c→b→a→d→c",
+        "⑦ d→a→b→c→d",
+        "⑧ d→c→b→a→d"
+      ],
+      "solution": {
+        "translation": "把V-T图中的循环过程对应到p-V图。",
+        "analysis": "V-T图中过原点的直线表示等压，竖线表示等温；p-V图中水平线表示等压，双曲线表示等温。",
+        "steps": [
+          {
+            "title": "过程对应",
+            "content": "A→B为较高等压，对应d→c；B→C为较高温等温，对应c→b；C→D为较低等压，对应b→a；D→A为较低温等温，对应a→d。"
+          }
+        ],
+        "finalAnswer": "⑧",
+        "correctOption": "⑧"
+      },
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false
+    },
+    {
+      "id": "physics-2017-r2-10",
+      "number": "III-1",
+      "topic": "進行波と媒質速度",
+      "topicTag": "波動",
+      "questionType": "single_choice",
+      "questionImage": "/images/2017_R2_physics/q10.png",
+      "japanese": "x軸正方向に伝わる横波のy-xグラフ。媒質の速度がy軸負方向に最大となる位置を選ぶ。",
+      "options": [
+        "① A",
+        "② B",
+        "③ C",
+        "④ A,C",
+        "⑤ O,D"
+      ],
+      "solution": {
+        "translation": "给出向+x传播的横波形状，求介质向-y速度最大的点。",
+        "analysis": "对向+x传播的波 y=f(x-vt)，有 ∂y/∂t=-v∂y/∂x。",
+        "steps": [
+          {
+            "title": "斜率判断",
+            "content": "介质速度向负y最大，需要空间斜率 ∂y/∂x 为正且最大。图中正斜率最大在过平衡位置的B点。"
+          }
+        ],
+        "finalAnswer": "②",
+        "correctOption": "②"
+      },
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false
+    },
+    {
+      "id": "physics-2017-r2-11",
+      "number": "III-2",
+      "topic": "反射波のドップラー効果",
+      "topicTag": "ドップラー効果",
+      "questionType": "single_choice",
+      "questionImage": "/images/2017_R2_physics/q11.png",
+      "japanese": "静止装置が接近物体に周波数f0の超音波を出し，反射波の周波数fを測る。物体の速さvを求める。音速をVとする。",
+      "options": [
+        "① (f-f0)/f · V",
+        "② (f0-f)/f · V",
+        "③ (f-f0)/f0 · V",
+        "④ (f0-f)/f0 · V",
+        "⑤ (f-f0)/(f+f0) · V",
+        "⑥ (f0-f)/(f+f0) · V"
+      ],
+      "solution": {
+        "translation": "超声波测距测速装置，发射频率f0，接近物体反射后测得频率f，求物体速度。",
+        "analysis": "反射可看作两次多普勒效应：运动物体先作为观察者，再作为运动声源。",
+        "steps": [
+          {
+            "title": "频率关系",
+            "content": "接近时反射回来的频率满足 f = f0 (V+v)/(V-v)。"
+          },
+          {
+            "title": "解v",
+            "content": "f(V-v)=f0(V+v)，所以 v = (f-f0)/(f+f0) V。"
+          }
+        ],
+        "finalAnswer": "⑤",
+        "correctOption": "⑤"
+      },
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false
+    },
+    {
+      "id": "physics-2017-r2-12",
+      "number": "III-3",
+      "topic": "空気くさびの干渉",
+      "topicTag": "光の干渉",
+      "questionType": "single_choice",
+      "questionImage": "/images/2017_R2_physics/q12.png",
+      "japanese": "長さ300mmの空気くさびで，端のすきま0.030mm，波長600nmの単色光を真上から当てる。暗線間隔を求める。",
+      "options": [
+        "① 1.0mm",
+        "② 2.0mm",
+        "③ 3.0mm",
+        "④ 4.0mm",
+        "⑤ 5.0mm",
+        "⑥ 6.0mm"
+      ],
+      "solution": {
+        "translation": "空气劈尖干涉，求反射暗纹间隔。",
+        "analysis": "反射光中相邻暗纹对应空气膜厚差 λ/2。厚度随位置线性变化。",
+        "steps": [
+          {
+            "title": "厚度梯度",
+            "content": "厚度从0到0.030mm，对应长度300mm，梯度为 0.030/300=1.0×10^-4。"
+          },
+          {
+            "title": "间距",
+            "content": "相邻暗纹厚度差 λ/2 = 600nm/2 = 0.0003mm。位置间距 Δx=0.0003/(1.0×10^-4)=3.0mm。"
+          }
+        ],
+        "finalAnswer": "③",
+        "correctOption": "③"
+      },
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false
+    },
+    {
+      "id": "physics-2017-r2-13",
+      "number": "IV-1",
+      "topic": "電荷を帯びた振り子",
+      "topicTag": "静電気",
+      "questionType": "single_choice",
+      "questionImage": "/images/2017_R2_physics/q13.png",
+      "japanese": "同じ長さの絶縁糸で同質量の小球A,Bをつるす。図1で+q,-qのとき距離a，図2で+Q,+Qのとき距離5a。Q/qを求める。",
+      "options": [
+        "① √3",
+        "② √5",
+        "③ 3",
+        "④ 5",
+        "⑤ 9",
+        "⑥ 25"
+      ],
+      "solution": {
+        "translation": "两个等长摆球带电后静止，比较两种情况下的电荷量。",
+        "analysis": "两图中每根线的水平偏移都为a，故张力与重力的几何关系相同，需要的水平库仑力大小相同。",
+        "steps": [
+          {
+            "title": "库仑力相等",
+            "content": "图1中两球距离为a，F1=kq^2/a^2。图2中两球距离为5a，F2=kQ^2/(5a)^2。"
+          },
+          {
+            "title": "求比值",
+            "content": "F1=F2，所以 kq^2/a^2=kQ^2/(25a^2)，得 Q/q=5。"
+          }
+        ],
+        "finalAnswer": "④",
+        "correctOption": "④"
+      },
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false
+    },
+    {
+      "id": "physics-2017-r2-14",
+      "number": "IV-2",
+      "topic": "静電力の仕事と電位",
+      "topicTag": "電位",
+      "questionType": "single_choice",
+      "questionImage": "/images/2017_R2_physics/q14.png",
+      "japanese": "点電荷Q,Qが(-d,0),(d,0)にある。点電荷Pを経路(a),(b),(c)に沿って移動させる。静電気力の仕事が0となる経路を選ぶ。",
+      "options": [
+        "① (a)",
+        "② (b)",
+        "③ (c)",
+        "④ (a),(b)",
+        "⑤ (a),(c)",
+        "⑥ (b),(c)",
+        "⑦ (a),(b),(c)"
+      ],
+      "solution": {
+        "translation": "两个等量正电荷形成电场，判断沿哪些路径移动时静电力做功为0。",
+        "analysis": "静电力是保守力，做功只由始末电势差决定；始末点等电势时做功为0。",
+        "steps": [
+          {
+            "title": "看端点电势",
+            "content": "电势 V=kQ/r1+kQ/r2。路径(b),(c)的始点和终点到两个固定电荷的距离组合相同或互换，因此电势相等；路径(a)端点电势不同。"
+          }
+        ],
+        "finalAnswer": "⑥",
+        "correctOption": "⑥"
+      },
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false
+    },
+    {
+      "id": "physics-2017-r2-15",
+      "number": "IV-3",
+      "topic": "コンデンサーのエネルギー",
+      "topicTag": "コンデンサー",
+      "questionType": "single_choice",
+      "questionImage": "/images/2017_R2_physics/q15.png",
+      "japanese": "コンデンサーを電池で充電後，Sを開いて極板間隔を2倍にしたときのエネルギーをU1。その後Sを閉じ充電したときのエネルギーをU2。U2/U1を求める。",
+      "options": [
+        "① 1/4",
+        "② 1/2",
+        "③ 1",
+        "④ 2",
+        "⑤ 4"
+      ],
+      "solution": {
+        "translation": "电容器先断开电池再把板间距加倍，然后重新接电池，比较能量。",
+        "analysis": "板距加倍时电容变为C/2；断开时电荷守恒，接通时电压等于电池电动势。",
+        "steps": [
+          {
+            "title": "断开后加倍间距",
+            "content": "初始 Q=CV。板距加倍后 C1=C/2，U1=Q^2/(2C1)=Q^2/C=CV^2。"
+          },
+          {
+            "title": "重新接电池",
+            "content": "接电池后电压为V，电容仍为C/2，所以 U2=(1/2)(C/2)V^2=CV^2/4。故 U2/U1=1/4。"
+          }
+        ],
+        "finalAnswer": "①",
+        "correctOption": "①"
+      },
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false
+    },
+    {
+      "id": "physics-2017-r2-16",
+      "number": "IV-4",
+      "topic": "ブリッジ回路の電位差",
+      "topicTag": "直流回路",
+      "questionType": "single_choice",
+      "questionImage": "/images/2017_R2_physics/q16.png",
+      "japanese": "4抵抗R1,R2,R3,R4と起電力Eの電池を接続。端子Bを基準にした端子Aの電位VについてV/Eを求める。",
+      "options": [
+        "① (R1R3-R2R4)/((R1+R2)(R3+R4))",
+        "② (R2R4-R1R3)/((R1+R2)(R3+R4))",
+        "③ (R1R4-R2R3)/((R1+R3)(R2+R4))",
+        "④ (R2R3-R1R4)/((R1+R3)(R2+R4))"
+      ],
+      "solution": {
+        "translation": "桥式电路中求A点相对B点电势差与电源电动势之比。",
+        "analysis": "A、B分别是上下两个串联支路中的分压点。",
+        "steps": [
+          {
+            "title": "分压",
+            "content": "设左端电势为E，右端为0。A点在R1,R3之间，VA=E·R3/(R1+R3)；B点在R2,R4之间，VB=E·R4/(R2+R4)。"
+          },
+          {
+            "title": "相减",
+            "content": "V/E=VA/E-VB/E=R3/(R1+R3)-R4/(R2+R4)=(R2R3-R1R4)/((R1+R3)(R2+R4))。"
+          }
+        ],
+        "finalAnswer": "④",
+        "correctOption": "④"
+      },
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false
+    },
+    {
+      "id": "physics-2017-r2-17",
+      "number": "IV-5",
+      "topic": "直線電流の磁場の合成",
+      "topicTag": "磁場",
+      "questionType": "single_choice",
+      "questionImage": "/images/2017_R2_physics/q17.png",
+      "japanese": "A(a,0),B(0,a),C(-2a,0)を通る長い直線導線が紙面に垂直。AのみのときOの磁場がH0。3本すべて同じ向きに電流を流したときH1/H0を求める。",
+      "options": [
+        "① 1/2",
+        "② √3/2",
+        "③ 1",
+        "④ √5/2",
+        "⑤ √6/2",
+        "⑥ 2"
+      ],
+      "solution": {
+        "translation": "三根垂直纸面的长直导线在原点产生磁场，求合磁场大小。",
+        "analysis": "长直导线磁场大小与距离成反比，方向由右手定则决定。",
+        "steps": [
+          {
+            "title": "各导线贡献",
+            "content": "A距O为a，贡献大小H0，方向向下；B距O为a，贡献大小H0，方向向右；C距O为2a，贡献大小H0/2，方向向上。"
+          },
+          {
+            "title": "矢量合成",
+            "content": "合磁场分量为 (H0, -H0+H0/2)=(H0,-H0/2)。大小 H1=H0√(1+1/4)=√5 H0/2。"
+          }
+        ],
+        "finalAnswer": "④",
+        "correctOption": "④"
+      },
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false
+    },
+    {
+      "id": "physics-2017-r2-18",
+      "number": "IV-6",
+      "topic": "平行電流間の力",
+      "topicTag": "電流が磁場から受ける力",
+      "questionType": "single_choice",
+      "questionImage": "/images/2017_R2_physics/q18.png",
+      "japanese": "等間隔aの3本の長い平行導線。L1,L2は上向き同電流。L1には右向きF，L2には左向き2F。L3の電流方向と力を求める。",
+      "options": [
+        "① 上向き,右向き,F",
+        "② 上向き,右向き,3F",
+        "③ 上向き,左向き,F",
+        "④ 上向き,左向き,3F",
+        "⑤ 下向き,右向き,F",
+        "⑥ 下向き,右向き,3F",
+        "⑦ 下向き,左向き,F",
+        "⑧ 下向き,左向き,3F"
+      ],
+      "solution": {
+        "translation": "三根平行导线间相互作用，已知L1和L2受力，求L3电流方向和受力。",
+        "analysis": "同向电流相吸，反向电流相斥；单位长度力与电流乘积成正比、与距离成反比。",
+        "steps": [
+          {
+            "title": "设相互作用强度",
+            "content": "L1与L2同向相吸，L1受向右力。若L3也向上，则L2受L3吸引向右，无法得到总向左2F；因此L3电流向下。"
+          },
+          {
+            "title": "求L3受力",
+            "content": "设L1-L2间作用为F0，L2-L3间作用为x。对L1：F0 - x/2 = F；对L2：-F0 - x = -2F。解得 F0=4F/3，x=2F/3。L3受L2排斥向右x，受L1排斥向右x/2，合力为3x/2=F，方向向右。"
+          }
+        ],
+        "finalAnswer": "⑤",
+        "correctOption": "⑤"
+      },
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false
+    },
+    {
+      "id": "physics-2017-r2-19",
+      "number": "V-1",
+      "topic": "α崩壊とβ崩壊",
+      "topicTag": "原子核",
+      "questionType": "single_choice",
+      "questionImage": "/images/2017_R2_physics/q19.png",
+      "japanese": "不安定な原子核 230Th がα崩壊をa回，β崩壊をb回起こして安定な 206Pb になった。(a,b)を求める。",
+      "options": [
+        "① (5,3)",
+        "② (5,4)",
+        "③ (5,5)",
+        "④ (6,3)",
+        "⑤ (6,4)",
+        "⑥ (6,5)"
+      ],
+      "solution": {
+        "translation": "钍230经过若干次α衰变和β衰变变成铅206，求次数。",
+        "analysis": "α衰变使质量数减4、原子序数减2；β衰变质量数不变、原子序数加1。",
+        "steps": [
+          {
+            "title": "质量数",
+            "content": "230 - 4a = 206，所以 a=6。"
+          },
+          {
+            "title": "原子序数",
+            "content": "90 - 2a + b = 82。代入 a=6，得 90-12+b=82，所以 b=4。"
+          }
+        ],
+        "finalAnswer": "⑤",
+        "correctOption": "⑤"
+      },
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false
+    }
+  ]
+}
