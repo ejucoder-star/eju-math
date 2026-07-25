@@ -1,0 +1,973 @@
+{
+  "metadata": {
+    "course": "physics",
+    "year": "2012",
+    "session": "1",
+    "courseNameJa": "物理",
+    "courseNameEn": "Physics",
+    "description": "理科综合｜物理",
+    "color": "#16a34a",
+    "examTitle": "平成24年度（2012年度）第1回 物理",
+    "examDate": "2012年6月"
+  },
+  "questions": [
+    {
+      "id": "2012-r1-phys-1",
+      "number": "I-A 问1",
+      "topic": "三物体接触运动中的作用力",
+      "topicTag": "力学·牛顿运动定律",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "光滑水平面上有质量相等的 A、B、C 三个物体。用大小为 $F$ 的水平力推 A，三者保持接触一起运动。求 C 对 B 的水平作用力大小。",
+      "options": [
+        {
+          "label": "①",
+          "content": "$\\dfrac13F$"
+        },
+        {
+          "label": "②",
+          "content": "$\\dfrac12F$"
+        },
+        {
+          "label": "③",
+          "content": "$\\dfrac23F$"
+        },
+        {
+          "label": "④",
+          "content": "$F$"
+        }
+      ],
+      "questionImage": "/images/2012_R1_physics/q01.png",
+      "solution": {
+        "translation": "先求三物体共同加速度，再单独看 C 的受力。",
+        "analysis": "设每个物体质量为 $m$，整体质量为 $3m$。C 的加速度与整体相同，C 水平方向只靠 B 的推力加速。",
+        "steps": [
+          {
+            "title": "(1) 求共同加速度",
+            "content": "$$a=\\frac{F}{3m}$$"
+          },
+          {
+            "title": "(2) 对 C 用牛顿第二定律",
+            "content": "B 对 C 的力为\n\n$$F_{B\\to C}=ma=\\frac13F$$\n\n由作用力与反作用力，C 对 B 的力大小也为 $\\frac13F$。"
+          }
+        ],
+        "finalAnswer": "① $\\dfrac13F$",
+        "correctOption": "①"
+      }
+    },
+    {
+      "id": "2012-r1-phys-2",
+      "number": "I-B 问2",
+      "topic": "重力加速度改变时的抛体射程",
+      "topicTag": "力学·抛体运动",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "某星球表面的重力加速度为地球的一半。用与地球上相同的初速度和抛射角斜向上抛出物体，比较从抛出点到落地点的水平距离。",
+      "options": [
+        {
+          "label": "①",
+          "content": "$\\dfrac14$"
+        },
+        {
+          "label": "②",
+          "content": "$\\dfrac12$"
+        },
+        {
+          "label": "③",
+          "content": "1"
+        },
+        {
+          "label": "④",
+          "content": "2"
+        },
+        {
+          "label": "⑤",
+          "content": "4"
+        }
+      ],
+      "questionImage": "",
+      "solution": {
+        "translation": "射程公式中，初速度和角度相同，射程与重力加速度成反比。",
+        "analysis": "斜抛运动在同一高度落回时，水平射程为 $R=v_0^2\\sin2\\theta/g$。星球上 $g^\\prime=g/2$。",
+        "steps": [
+          {
+            "title": "比较射程",
+            "content": "$$R^\\prime=\\frac{v_0^2\\sin2\\theta}{g/2}=2R$$"
+          }
+        ],
+        "finalAnswer": "④ $2$",
+        "correctOption": "④"
+      }
+    },
+    {
+      "id": "2012-r1-phys-3",
+      "number": "I-C 问3",
+      "topic": "滑轮连接物体的静摩擦力比较",
+      "topicTag": "力学·受力平衡",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "质量为 $m$ 的 A 与质量为 $\\frac52m$ 的 B 由轻绳绕过光滑滑轮相连。A 所在面无摩擦，B 所在面有摩擦。图 1、图 2、图 3 三种静止情形中，B 受到的摩擦力大小分别为 $F_1,F_2,F_3$，比较大小。",
+      "options": [
+        {
+          "label": "①",
+          "content": "$F_1<F_2<F_3$"
+        },
+        {
+          "label": "②",
+          "content": "$F_1<F_3<F_2$"
+        },
+        {
+          "label": "③",
+          "content": "$F_2<F_1<F_3$"
+        },
+        {
+          "label": "④",
+          "content": "$F_2<F_3<F_1$"
+        },
+        {
+          "label": "⑤",
+          "content": "$F_3<F_1<F_2$"
+        },
+        {
+          "label": "⑥",
+          "content": "$F_3<F_2<F_1$"
+        }
+      ],
+      "questionImage": "/images/2012_R1_physics/q03.png",
+      "solution": {
+        "translation": "先由 A 的平衡求绳张力，再分别对 B 沿接触面方向列平衡。",
+        "analysis": "A 没有摩擦，所以绳张力由 A 沿面方向的重力分量决定：$T=mg\\sin\\theta$。B 的摩擦力负责补足 B 沿面方向受力的不平衡。",
+        "steps": [
+          {
+            "title": "图 1",
+            "content": "B 在水平面上，摩擦力平衡绳张力：\n\n$$F_1=T=mg\\sin\\theta$$"
+          },
+          {
+            "title": "图 2",
+            "content": "B 在另一斜面上，重力沿斜面向下，绳张力向上，且 B 较重：\n\n$$F_2=\\frac52mg\\sin\\theta-T=\\frac32mg\\sin\\theta$$"
+          },
+          {
+            "title": "图 3",
+            "content": "B 与绳张力、重力沿斜面的方向都使它趋向下滑，摩擦力需同时平衡二者：\n\n$$F_3=\\frac52mg\\sin\\theta+T=\\frac72mg\\sin\\theta$$"
+          }
+        ],
+        "finalAnswer": "① $F_1<F_2<F_3$",
+        "correctOption": "①"
+      }
+    },
+    {
+      "id": "2012-r1-phys-4",
+      "number": "I-D 问4",
+      "topic": "内部弹性碰撞导致容器间歇运动",
+      "topicTag": "力学·动量守恒",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "质量 $M$ 的物体 A 放在光滑水平面上，质量 $m$ 的小物体 B 在 A 上方光滑面内运动并与 A 两端墙壁反复弹性碰撞。B 相对 A 的速度大小恒为 $v$，A 每隔 $T/2$ 交替静止和移动距离 $L$。求 $v$。",
+      "options": [
+        {
+          "label": "①",
+          "content": "$\\dfrac{2L}{T}$"
+        },
+        {
+          "label": "②",
+          "content": "$\\dfrac{4M}{M+m}\\cdot\\dfrac{L}{T}$"
+        },
+        {
+          "label": "③",
+          "content": "$\\dfrac{4m}{M+m}\\cdot\\dfrac{L}{T}$"
+        },
+        {
+          "label": "④",
+          "content": "$\\dfrac{M+m}{M}\\cdot\\dfrac{L}{T}$"
+        },
+        {
+          "label": "⑤",
+          "content": "$\\dfrac{M+m}{m}\\cdot\\dfrac{L}{T}$"
+        }
+      ],
+      "questionImage": "/images/2012_R1_physics/q04.png",
+      "solution": {
+        "translation": "A 移动时图像斜率给出 A 的速度；碰撞瞬间用动量守恒连接这个速度和相对速度。",
+        "analysis": "A 在移动的半个周期内走过 $L$，所以移动速度为 $U=2L/T$。某次碰撞前 A 静止、B 以速度 $v$ 运动；碰后 A 以 $U$ 运动，而 B 相对 A 反向，实验室速度为 $U-v$。",
+        "steps": [
+          {
+            "title": "碰撞前后动量守恒",
+            "content": "$$mv=MU+m(U-v)$$\n\n$$2mv=(M+m)U$$"
+          },
+          {
+            "title": "代入 A 的速度",
+            "content": "$$U=\\frac{2L}{T}$$\n\n$$v=\\frac{M+m}{2m}U=\\frac{M+m}{m}\\frac{L}{T}$$"
+          }
+        ],
+        "finalAnswer": "⑤ $\\dfrac{M+m}{m}\\cdot\\dfrac{L}{T}$",
+        "correctOption": "⑤"
+      }
+    },
+    {
+      "id": "2012-r1-phys-5",
+      "number": "I-E 问5",
+      "topic": "弹簧振子图像中的速度与弹簧作用力方向",
+      "topicTag": "力学·简谐运动",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "一端固定在墙上的弹簧连接小球，在光滑水平面上做简谐运动。图像给出位移 $x$ 随时间 $t$ 的变化。判断时刻 $t_A$ 小球速度方向以及弹簧对墙的作用力方向。",
+      "options": [
+        {
+          "label": "①",
+          "content": "速度沿 $x$ 正方向，弹簧对墙的力沿 $x$ 正方向"
+        },
+        {
+          "label": "②",
+          "content": "速度沿 $x$ 正方向，弹簧对墙的力沿 $x$ 负方向"
+        },
+        {
+          "label": "③",
+          "content": "速度沿 $x$ 负方向，弹簧对墙的力沿 $x$ 正方向"
+        },
+        {
+          "label": "④",
+          "content": "速度沿 $x$ 负方向，弹簧对墙的力沿 $x$ 负方向"
+        }
+      ],
+      "questionImage": "/images/2012_R1_physics/q05.png",
+      "solution": {
+        "translation": "速度方向看 $x-t$ 图像斜率；弹簧对墙的作用力方向看弹簧是伸长还是压缩。",
+        "analysis": "图中 $t_A$ 处曲线向下，说明速度为负方向；此时位移仍为正，弹簧被拉长，弹簧拉墙的方向为 $x$ 正方向。",
+        "steps": [
+          {
+            "title": "判断速度",
+            "content": "$x-t$ 图像斜率 $dx/dt$ 为负，所以小球速度沿 $x$ 负方向。"
+          },
+          {
+            "title": "判断弹簧对墙的力",
+            "content": "$x>0$ 表示弹簧被向右拉长。被拉长的弹簧会把左端墙向右拉，因此弹簧对墙的力沿 $x$ 正方向。"
+          }
+        ],
+        "finalAnswer": "③ 速度沿 $x$ 负方向，弹簧对墙的力沿 $x$ 正方向",
+        "correctOption": "③"
+      }
+    },
+    {
+      "id": "2012-r1-phys-6",
+      "number": "I-F 问6",
+      "topic": "完全非弹性碰撞后的摆升高度",
+      "topicTag": "力学·动量与能量",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "质量 $M$ 的物体 A 用两根等长细绳悬挂静止。质量 $m$ 的黏土小球 B 以水平速度 $v$ 飞来并瞬间粘在 A 上。之后 A、B 一体运动，最高点比初始位置升高 $h$，求 $h$。",
+      "options": [
+        {
+          "label": "①",
+          "content": "$\\dfrac{m}{2(M+m)g}v^2$"
+        },
+        {
+          "label": "②",
+          "content": "$\\dfrac{m^2}{2(M+m)^2g}v^2$"
+        },
+        {
+          "label": "③",
+          "content": "$\\dfrac{v^2}{2g}$"
+        },
+        {
+          "label": "④",
+          "content": "$\\dfrac{M}{2(M+m)g}v^2$"
+        },
+        {
+          "label": "⑤",
+          "content": "$\\dfrac{M^2}{2(M+m)^2g}v^2$"
+        }
+      ],
+      "questionImage": "/images/2012_R1_physics/q06.png",
+      "solution": {
+        "translation": "碰撞瞬间只用水平方向动量守恒；碰后上升过程用机械能守恒。",
+        "analysis": "小球粘住 A 是完全非弹性碰撞，碰撞中机械能不守恒。碰撞后的一体速度再全部转化为重力势能。",
+        "steps": [
+          {
+            "title": "(1) 碰后速度",
+            "content": "$$mv=(M+m)u$$\n\n$$u=\\frac{m}{M+m}v$$"
+          },
+          {
+            "title": "(2) 上升到最高点",
+            "content": "$$\\frac12(M+m)u^2=(M+m)gh$$\n\n$$h=\\frac{u^2}{2g}=\\frac{m^2}{2(M+m)^2g}v^2$$"
+          }
+        ],
+        "finalAnswer": "② $\\dfrac{m^2}{2(M+m)^2g}v^2$",
+        "correctOption": "②"
+      }
+    },
+    {
+      "id": "2012-r1-phys-7",
+      "number": "I-G 问7",
+      "topic": "考虑重力随高度变化的竖直上抛",
+      "topicTag": "力学·万有引力与能量",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "从地表以速度 $v_0$ 竖直向上抛出物体，最高到达离地表高度 $h$。地球半径为 $R$，地表重力加速度为 $g$，忽略自转影响，求 $h$。",
+      "options": [
+        {
+          "label": "①",
+          "content": "$\\dfrac{v_0^2R}{gR+v_0^2}$"
+        },
+        {
+          "label": "②",
+          "content": "$\\dfrac{v_0^2R}{gR-v_0^2}$"
+        },
+        {
+          "label": "③",
+          "content": "$\\dfrac{v_0^2R}{2gR+v_0^2}$"
+        },
+        {
+          "label": "④",
+          "content": "$\\dfrac{v_0^2R}{2gR-v_0^2}$"
+        },
+        {
+          "label": "⑤",
+          "content": "$\\dfrac{2v_0^2R}{2gR+v_0^2}$"
+        },
+        {
+          "label": "⑥",
+          "content": "$\\dfrac{2v_0^2R}{2gR-v_0^2}$"
+        }
+      ],
+      "questionImage": "/images/2012_R1_physics/q07.png",
+      "solution": {
+        "translation": "高度不一定很小时，应使用万有引力势能差，而不是直接用 $mgh$。",
+        "analysis": "地表 $g=GM/R^2$，从 $R$ 到 $R+h$ 的势能增加为 $GMm(1/R-1/(R+h))$。",
+        "steps": [
+          {
+            "title": "列能量守恒",
+            "content": "$$\\frac12mv_0^2=GMm\\left(\\frac1R-\\frac1{R+h}\\right)$$\n\n用 $GM=gR^2$：\n\n$$\\frac12v_0^2=\\frac{gRh}{R+h}$$"
+          },
+          {
+            "title": "解出 $h$",
+            "content": "$$v_0^2(R+h)=2gRh$$\n\n$$h=\\frac{v_0^2R}{2gR-v_0^2}$$"
+          }
+        ],
+        "finalAnswer": "④ $\\dfrac{v_0^2R}{2gR-v_0^2}$",
+        "correctOption": "④"
+      }
+    },
+    {
+      "id": "2012-r1-phys-8",
+      "number": "II-A 问1",
+      "topic": "容器材料的比热判断",
+      "topicTag": "热学·热量守恒",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "质量 $150\\,\\mathrm{g}$ 的容器初温 $10^\\circ\\mathrm{C}$。向其中倒入 $100\\,\\mathrm{g}$、$75^\\circ\\mathrm{C}$ 的水，足够长时间后水和容器都为 $60^\\circ\\mathrm{C}$。水的比热为 $4.2\\,\\mathrm{J/(g\\cdot K)}$。根据给定材料比热表判断容器材料。",
+      "options": [
+        {
+          "label": "①",
+          "content": "银"
+        },
+        {
+          "label": "②",
+          "content": "铜"
+        },
+        {
+          "label": "③",
+          "content": "铁"
+        },
+        {
+          "label": "④",
+          "content": "玻璃"
+        },
+        {
+          "label": "⑤",
+          "content": "铝"
+        }
+      ],
+      "questionImage": "",
+      "solution": {
+        "translation": "水放出的热量等于容器吸收的热量。",
+        "analysis": "设容器比热为 $c$。水降温 $15\\,\\mathrm{K}$，容器升温 $50\\,\\mathrm{K}$。",
+        "steps": [
+          {
+            "title": "列热量守恒",
+            "content": "$$100\\times4.2\\times(75-60)=150\\times c\\times(60-10)$$\n\n$$6300=7500c$$\n\n$$c=0.84\\,\\mathrm{J/(g\\cdot K)}$$"
+          }
+        ],
+        "finalAnswer": "④ 玻璃",
+        "correctOption": "④"
+      }
+    },
+    {
+      "id": "2012-r1-phys-9",
+      "number": "II-B 问2",
+      "topic": "理想气体状态方程求气体质量",
+      "topicTag": "热学·理想气体",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "氧气在体积 $400\\,\\mathrm{L}$、压强 $7.0\\times10^5\\,\\mathrm{Pa}$、温度 $27^\\circ\\mathrm{C}$ 的状态下装在容器中。已知 $1.0\\,\\mathrm{mol}$ 氧气在 $0^\\circ\\mathrm{C}$、$1.0\\times10^5\\,\\mathrm{Pa}$ 时体积为 $22.4\\,\\mathrm{L}$，摩尔质量为 $32\\,\\mathrm{g}$，求总质量。",
+      "options": [
+        {
+          "label": "①",
+          "content": "0.11"
+        },
+        {
+          "label": "②",
+          "content": "0.36"
+        },
+        {
+          "label": "③",
+          "content": "1.1"
+        },
+        {
+          "label": "④",
+          "content": "3.6"
+        },
+        {
+          "label": "⑤",
+          "content": "11"
+        },
+        {
+          "label": "⑥",
+          "content": "36"
+        }
+      ],
+      "questionImage": "",
+      "solution": {
+        "translation": "用 $n\\propto pV/T$ 与标准状态比较，得到物质的量后乘以摩尔质量。",
+        "analysis": "温度 $27^\\circ\\mathrm{C}=300\\,\\mathrm{K}$，标准温度为 $273\\,\\mathrm{K}$。",
+        "steps": [
+          {
+            "title": "求物质的量",
+            "content": "$$n=\\frac{7.0\\times10^5}{1.0\\times10^5}\\cdot\\frac{400}{22.4}\\cdot\\frac{273}{300}\\approx114\\,\\mathrm{mol}$$"
+          },
+          {
+            "title": "求质量",
+            "content": "$$m=114\\times32\\,\\mathrm{g}\\approx3.6\\,\\mathrm{kg}$$"
+          }
+        ],
+        "finalAnswer": "④ $3.6\\,\\mathrm{kg}$",
+        "correctOption": "④"
+      }
+    },
+    {
+      "id": "2012-r1-phys-10",
+      "number": "II-C 问3",
+      "topic": "绝热容器中定容与定压气体的热平衡",
+      "topicTag": "热学·热力学第一定律",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "绝热容器内有单原子理想气体，被固定隔板分成定容空间 A 和带活塞的定压空间 B。B 中物质的量是 A 的 3 倍，初始温度分别为 $2T_0$ 与 $T_0$。足够长时间后两边温度都为 $T_1$，求 $T_1$。",
+      "options": [
+        {
+          "label": "①",
+          "content": "$\\dfrac54T_0$"
+        },
+        {
+          "label": "②",
+          "content": "$\\dfrac76T_0$"
+        },
+        {
+          "label": "③",
+          "content": "$\\dfrac{11}{8}T_0$"
+        },
+        {
+          "label": "④",
+          "content": "$\\dfrac72T_0$"
+        }
+      ],
+      "questionImage": "/images/2012_R1_physics/q10.png",
+      "solution": {
+        "translation": "B 的活塞保持压强不变，因此 B 在温度变化时会对外做功；这一步不能忽略。",
+        "analysis": "设 A 中物质的量为 $n$，则 B 为 $3n$。单原子理想气体内能 $U=\\frac32nRT$。总气体没有吸收外界热量，但 B 对外做功 $W=3nR(T_1-T_0)$。",
+        "steps": [
+          {
+            "title": "写总能量关系",
+            "content": "$$\\Delta U_A+\\Delta U_B=-W$$"
+          },
+          {
+            "title": "代入各项",
+            "content": "$$\\frac32nR(T_1-2T_0)+\\frac32(3n)R(T_1-T_0)=-3nR(T_1-T_0)$$"
+          },
+          {
+            "title": "解出温度",
+            "content": "$$3(T_1-2T_0)+9(T_1-T_0)=-6(T_1-T_0)$$\n\n$$18T_1=21T_0$$\n\n$$T_1=\\frac76T_0$$"
+          }
+        ],
+        "finalAnswer": "② $\\dfrac76T_0$",
+        "correctOption": "②"
+      }
+    },
+    {
+      "id": "2012-r1-phys-11",
+      "number": "III-A 问1",
+      "topic": "固定端反射后的波形",
+      "topicTag": "波动·波的反射",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "一列脉冲波沿 $x$ 轴正方向以 $10\\,\\mathrm{cm/s}$ 传播，$x=10\\,\\mathrm{cm}$ 处为固定端。给出 $t=0$ 波形，判断 $t=0.70\\,\\mathrm{s}$ 时波形。",
+      "options": [
+        {
+          "label": "①",
+          "content": "图①"
+        },
+        {
+          "label": "②",
+          "content": "图②"
+        },
+        {
+          "label": "③",
+          "content": "图③"
+        },
+        {
+          "label": "④",
+          "content": "图④"
+        }
+      ],
+      "questionImage": "/images/2012_R1_physics/q11.png",
+      "solution": {
+        "translation": "先把入射波向右平移 $7\\,\\mathrm{cm}$，再把超过固定端的部分反射并上下反相。",
+        "analysis": "$0.70\\,\\mathrm{s}$ 内波前进 $10\\times0.70=7\\,\\mathrm{cm}$。若没有墙，原来 $0$ 到 $5\\,\\mathrm{cm}$ 的脉冲会到 $7$ 到 $12\\,\\mathrm{cm}$；超过 $10\\,\\mathrm{cm}$ 的部分在固定端反射并反相，叠到 $8$ 到 $10\\,\\mathrm{cm}$。",
+        "steps": [
+          {
+            "title": "固定端反射规律",
+            "content": "固定端处位移始终为 0，反射波相位反转，也就是正脉冲反射后变为负脉冲。"
+          },
+          {
+            "title": "判断图形",
+            "content": "入射部分在 $7$ 到 $10\\,\\mathrm{cm}$ 附近，反射部分在靠近固定端处反相叠加，符合图④。"
+          }
+        ],
+        "finalAnswer": "④ 图④",
+        "correctOption": "④"
+      }
+    },
+    {
+      "id": "2012-r1-phys-12",
+      "number": "III-B 问2",
+      "topic": "多普勒效应中由观测周期求声源频率",
+      "topicTag": "波动·多普勒效应",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "声源沿 $x$ 轴从负方向向正方向匀速运动，在原点测得靠近时和远离时的声压变化图像。根据两个观测周期求声源振动数。",
+      "options": [
+        {
+          "label": "①",
+          "content": "290"
+        },
+        {
+          "label": "②",
+          "content": "590"
+        },
+        {
+          "label": "③",
+          "content": "620"
+        },
+        {
+          "label": "④",
+          "content": "1200"
+        }
+      ],
+      "questionImage": "/images/2012_R1_physics/q12.png",
+      "solution": {
+        "translation": "声源靠近时观测周期较短，远离时观测周期较长。对运动声源，真实周期等于两个观测周期的平均值。",
+        "analysis": "由图读出靠近时周期约为 $1.1\\,\\mathrm{ms}$，远离时周期约为 $2.3\\,\\mathrm{ms}$，所以声源本身周期约为 $1.7\\,\\mathrm{ms}$。",
+        "steps": [
+          {
+            "title": "求声源周期",
+            "content": "$$T=\\frac{T_{\\rm near}+T_{\\rm far}}2\\approx\\frac{1.1+2.3}{2}\\,\\mathrm{ms}=1.7\\times10^{-3}\\,\\mathrm{s}$$"
+          },
+          {
+            "title": "求频率",
+            "content": "$$f=\\frac1T\\approx\\frac1{1.7\\times10^{-3}}\\approx5.9\\times10^2\\,\\mathrm{Hz}$$"
+          }
+        ],
+        "finalAnswer": "② $590\\,\\mathrm{Hz}$",
+        "correctOption": "②"
+      }
+    },
+    {
+      "id": "2012-r1-phys-13",
+      "number": "III-C 问3",
+      "topic": "双缝干涉中插入薄板后的暗纹移动",
+      "topicTag": "波动·光的干涉",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "双缝干涉装置中，$S_2$ 前放有折射率可变的薄透明板。逐渐增大薄板折射率时，判断屏幕中心附近暗纹移动方向以及相邻暗纹间距变化。",
+      "options": [
+        {
+          "label": "①",
+          "content": "向 a 方向移动，间隔变宽"
+        },
+        {
+          "label": "②",
+          "content": "向 a 方向移动，间隔不变"
+        },
+        {
+          "label": "③",
+          "content": "向 a 方向移动，间隔变窄"
+        },
+        {
+          "label": "④",
+          "content": "向 b 方向移动，间隔变宽"
+        },
+        {
+          "label": "⑤",
+          "content": "向 b 方向移动，间隔不变"
+        },
+        {
+          "label": "⑥",
+          "content": "向 b 方向移动，间隔变窄"
+        }
+      ],
+      "questionImage": "/images/2012_R1_physics/q13.png",
+      "solution": {
+        "translation": "薄板只增加通过 $S_2$ 的光程，使整套条纹平移；缝距和屏距没有改变，所以条纹间隔不变。",
+        "analysis": "折射率变大时，$S_2$ 光路相位滞后增加。要保持同一暗纹条件，屏上位置需向 $S_2$ 一侧补偿，因此中心附近暗纹向 b 方向移动。",
+        "steps": [
+          {
+            "title": "判断移动方向",
+            "content": "$S_2$ 光程变长，原来的干涉条件被整体平移补偿，条纹向图中的 b 方向移动。"
+          },
+          {
+            "title": "判断间距",
+            "content": "条纹间隔 $\\Delta y=\\lambda L/d$，薄板只改变附加光程，不改变 $L$ 和 $d$，所以间隔不变。"
+          }
+        ],
+        "finalAnswer": "⑤ 向 b 方向移动，间隔不变",
+        "correctOption": "⑤"
+      }
+    },
+    {
+      "id": "2012-r1-phys-14",
+      "number": "IV-A 问1",
+      "topic": "电势能变化与外力做功",
+      "topicTag": "电磁学·电势能",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "在 $xy$ 平面的 $(3a,0)$ 与 $(-3a,0)$ 固定两个电荷量为 $Q$ 的正电荷。把另一个电荷量为 $Q$ 的小球从 $(0,4a)$ 缓慢移到原点，求外力做功。",
+      "options": [
+        {
+          "label": "①",
+          "content": "$\\dfrac{kQ^2}{12a}$"
+        },
+        {
+          "label": "②",
+          "content": "$\\dfrac{2kQ^2}{15a}$"
+        },
+        {
+          "label": "③",
+          "content": "$\\dfrac{kQ^2}{6a}$"
+        },
+        {
+          "label": "④",
+          "content": "$\\dfrac{kQ^2}{4a}$"
+        },
+        {
+          "label": "⑤",
+          "content": "$\\dfrac{4kQ^2}{15a}$"
+        },
+        {
+          "label": "⑥",
+          "content": "$\\dfrac{kQ^2}{2a}$"
+        }
+      ],
+      "questionImage": "/images/2012_R1_physics/q14.png",
+      "solution": {
+        "translation": "缓慢移动时动能不变，外力做功等于电势能增加量。",
+        "analysis": "初始点到两个固定电荷距离都是 $5a$，原点到两个固定电荷距离都是 $3a$。",
+        "steps": [
+          {
+            "title": "计算初末电势",
+            "content": "$$V_i=2\\frac{kQ}{5a},\\qquad V_f=2\\frac{kQ}{3a}$$"
+          },
+          {
+            "title": "外力做功",
+            "content": "$$W_{\\rm ext}=Q(V_f-V_i)=Q\\left(\\frac{2kQ}{3a}-\\frac{2kQ}{5a}\\right)=\\frac{4kQ^2}{15a}$$"
+          }
+        ],
+        "finalAnswer": "⑤ $\\dfrac{4kQ^2}{15a}$",
+        "correctOption": "⑤"
+      }
+    },
+    {
+      "id": "2012-r1-phys-15",
+      "number": "IV-B 问2",
+      "topic": "电池断开后改变电容器结构的能量变化",
+      "topicTag": "电磁学·电容器",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "平行板电容器极板间距为 $d$，接电压 $V$ 充电。断开电池后，将极板间距增至 $2d$，并在极板间全部插入相对介电常数 $\\varepsilon_r$、厚度 $2d$ 的电介质。求改变后静电能是原来的几倍。",
+      "options": [
+        {
+          "label": "①",
+          "content": "$\\dfrac{\\varepsilon_r}{2}$"
+        },
+        {
+          "label": "②",
+          "content": "$\\varepsilon_r$"
+        },
+        {
+          "label": "③",
+          "content": "$2\\varepsilon_r$"
+        },
+        {
+          "label": "④",
+          "content": "$\\dfrac1{2\\varepsilon_r}$"
+        },
+        {
+          "label": "⑤",
+          "content": "$\\dfrac1{\\varepsilon_r}$"
+        },
+        {
+          "label": "⑥",
+          "content": "$\\dfrac2{\\varepsilon_r}$"
+        }
+      ],
+      "questionImage": "/images/2012_R1_physics/q15.png",
+      "solution": {
+        "translation": "电池已断开，所以电容器电荷量保持不变；固定电荷时静电能与电容成反比。",
+        "analysis": "初始电容 $C_1=\\varepsilon_0A/d$。改变后 $C_2=\\varepsilon_r\\varepsilon_0A/(2d)=\\frac{\\varepsilon_r}{2}C_1$。",
+        "steps": [
+          {
+            "title": "用固定电荷能量公式",
+            "content": "$$U=\\frac{Q^2}{2C}$$"
+          },
+          {
+            "title": "求能量比",
+            "content": "$$\\frac{U_2}{U_1}=\\frac{C_1}{C_2}=\\frac{2}{\\varepsilon_r}$$"
+          }
+        ],
+        "finalAnswer": "⑥ $\\dfrac2{\\varepsilon_r}$",
+        "correctOption": "⑥"
+      }
+    },
+    {
+      "id": "2012-r1-phys-16",
+      "number": "IV-C 问3",
+      "topic": "梯形电阻网络中的分流",
+      "topicTag": "电磁学·直流电路",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "电路由两个阻值 $R$ 的电阻和四个阻值 $2R$ 的竖直支路组成。设电池总电流为 $I$，A、B、C 三个 $2R$ 支路电流分别为 $I_1,I_2,I_3$，求三者与 $I$ 的关系。",
+      "options": [
+        {
+          "label": "①",
+          "content": "$I_1=\\dfrac12I,\\ I_2=\\dfrac14I,\\ I_3=\\dfrac18I$"
+        },
+        {
+          "label": "②",
+          "content": "$I_1=\\dfrac12I,\\ I_2=\\dfrac14I,\\ I_3=\\dfrac16I$"
+        },
+        {
+          "label": "③",
+          "content": "$I_1=\\dfrac12I,\\ I_2=\\dfrac14I,\\ I_3=\\dfrac1{16}I$"
+        },
+        {
+          "label": "④",
+          "content": "$I_1=\\dfrac12I,\\ I_2=\\dfrac13I,\\ I_3=\\dfrac14I$"
+        },
+        {
+          "label": "⑤",
+          "content": "$I_1=\\dfrac12I,\\ I_2=\\dfrac19I,\\ I_3=\\dfrac1{16}I$"
+        }
+      ],
+      "questionImage": "/images/2012_R1_physics/q16.png",
+      "solution": {
+        "translation": "从右端开始逐级等效，每一级都会把流到该节点的电流等分。",
+        "analysis": "最右侧 C、D 两个 $2R$ 并联等效为 $R$；加上前面的横向 $R$ 后，与 B 支路 $2R$ 并联，右侧等效也为 $R$。同理从 A 点看右侧等效为 $2R$，与 A 支路 $2R$ 并联。",
+        "steps": [
+          {
+            "title": "A 点分流",
+            "content": "A 支路 $2R$ 与右侧等效 $2R$ 并联，所以\n\n$$I_1=\\frac12I$$"
+          },
+          {
+            "title": "B 点分流",
+            "content": "流向右侧的另一半电流在 B 支路和更右侧等效支路间再次等分：\n\n$$I_2=\\frac12\\cdot\\frac12I=\\frac14I$$"
+          },
+          {
+            "title": "C 点分流",
+            "content": "剩余电流再由 C、D 两个相同支路等分：\n\n$$I_3=\\frac12\\cdot\\frac14I=\\frac18I$$"
+          }
+        ],
+        "finalAnswer": "① $I_1=\\dfrac12I,\\ I_2=\\dfrac14I,\\ I_3=\\dfrac18I$",
+        "correctOption": "①"
+      }
+    },
+    {
+      "id": "2012-r1-phys-17",
+      "number": "IV-D 问4",
+      "topic": "含电阻稳态和浮置节点的电容网络",
+      "topicTag": "电磁学·电容器电路",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "含 $4.0\\,\\mathrm{k\\Omega}$、$1.0\\,\\mathrm{k\\Omega}$ 电阻和三个电容的电路接上 $20\\,\\mathrm{V}$ 电池。开关闭合很久后，求图中 A、B 间电压大小。",
+      "options": [
+        {
+          "label": "①",
+          "content": "4.0"
+        },
+        {
+          "label": "②",
+          "content": "5.0"
+        },
+        {
+          "label": "③",
+          "content": "6.0"
+        },
+        {
+          "label": "④",
+          "content": "8.0"
+        },
+        {
+          "label": "⑤",
+          "content": "9.0"
+        }
+      ],
+      "questionImage": "/images/2012_R1_physics/q17.png",
+      "solution": {
+        "translation": "稳态时电容支路无直流电流，A 点由电阻分压决定；B 是电容连接的浮置节点，总电荷守恒。",
+        "analysis": "取右侧导线电势为 0，左侧为 $20\\,\\mathrm{V}$。电阻分压使 A 点为 $4\\,\\mathrm{V}$。B 点初始不带净电荷，所以与 B 相连的三个电容极板电荷代数和为 0。",
+        "steps": [
+          {
+            "title": "(1) A 点电势",
+            "content": "电阻串联总阻值 $5.0\\,\\mathrm{k\\Omega}$，A 到右端经过 $1.0\\,\\mathrm{k\\Omega}$，所以\n\n$$V_A=20\\times\\frac{1}{5}=4\\,\\mathrm{V}$$"
+          },
+          {
+            "title": "(2) B 点电势",
+            "content": "B 与左端、右端、A 分别通过 $3.0,2.0,3.0\\,\\mu\\mathrm{F}$ 相连：\n\n$$3(V_B-20)+2(V_B-0)+3(V_B-4)=0$$\n\n$$8V_B=72,\\quad V_B=9\\,\\mathrm{V}$$"
+          },
+          {
+            "title": "(3) 求 AB 电压",
+            "content": "$$|V_A-V_B|=|4-9|=5\\,\\mathrm{V}$$"
+          }
+        ],
+        "finalAnswer": "② $5.0\\,\\mathrm{V}$",
+        "correctOption": "②"
+      }
+    },
+    {
+      "id": "2012-r1-phys-18",
+      "number": "IV-E 问5",
+      "topic": "三根长直导线在三角形重心处的磁场",
+      "topicTag": "电磁学·磁场叠加",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "边长 $0.10\\,\\mathrm{m}$ 的正三角形顶点 A、B、C 各有一根垂直纸面的长直导线，电流均为 $10\\,\\mathrm{A}$。A 的电流出纸面，B、C 的电流入纸面。求重心处磁场强度大小。",
+      "options": [
+        {
+          "label": "①",
+          "content": "0"
+        },
+        {
+          "label": "②",
+          "content": "37"
+        },
+        {
+          "label": "③",
+          "content": "55"
+        },
+        {
+          "label": "④",
+          "content": "75"
+        },
+        {
+          "label": "⑤",
+          "content": "83"
+        }
+      ],
+      "questionImage": "/images/2012_R1_physics/q18.png",
+      "solution": {
+        "translation": "每根导线到重心距离相同，先求单根导线在重心处的磁场强度，再做矢量合成。",
+        "analysis": "重心到顶点距离为 $r=a/\\sqrt3=0.10/1.7\\,\\mathrm{m}$。单根长直导线产生 $H=I/(2\\pi r)$，三根的方向按右手定则合成，结果为两个单根大小。",
+        "steps": [
+          {
+            "title": "单根导线的磁场强度",
+            "content": "$$H_0=\\frac{I}{2\\pi r}=\\frac{10}{2\\times3.1\\times(0.10/1.7)}\\approx27\\,\\mathrm{A/m}$$"
+          },
+          {
+            "title": "矢量合成",
+            "content": "三根导线方向组合后，在重心处合场大小为\n\n$$H=2H_0\\approx54\\,\\mathrm{A/m}$$\n\n最接近 $55\\,\\mathrm{A/m}$。"
+          }
+        ],
+        "finalAnswer": "③ $55\\,\\mathrm{A/m}$",
+        "correctOption": "③"
+      }
+    },
+    {
+      "id": "2012-r1-phys-19",
+      "number": "IV-F 问6",
+      "topic": "载流圆环与条形磁铁的相互作用",
+      "topicTag": "电磁学·磁场与力",
+      "questionType": "choice",
+      "humanVerified": true,
+      "answer_match": true,
+      "needs_review": false,
+      "japanese": "在 $xy$ 平面内的圆形导线通有电流，从 $z$ 轴正方向看电流为顺时针。沿 $z$ 轴放置条形磁铁，N 极朝 $z$ 轴正方向。判断磁铁受圆环磁场的力方向，以及圆环受磁铁磁场的力方向。",
+      "options": [
+        {
+          "label": "①",
+          "content": "磁铁受力沿 $z$ 正方向，圆环受力沿 $z$ 正方向"
+        },
+        {
+          "label": "②",
+          "content": "磁铁受力沿 $z$ 正方向，圆环受力沿 $z$ 负方向"
+        },
+        {
+          "label": "③",
+          "content": "磁铁受力沿 $z$ 负方向，圆环受力沿 $z$ 正方向"
+        },
+        {
+          "label": "④",
+          "content": "磁铁受力沿 $z$ 负方向，圆环受力沿 $z$ 负方向"
+        }
+      ],
+      "questionImage": "/images/2012_R1_physics/q19.png",
+      "solution": {
+        "translation": "顺时针电流从 $+z$ 方向看，对应圆环磁矩沿 $-z$，圆环上表面相当于 S 极、下表面相当于 N 极。",
+        "analysis": "条形磁铁下端为 S 极，靠近圆环上表面的 S 极，同名磁极相斥，所以磁铁被向上推；圆环受到大小相等、方向相反的力。",
+        "steps": [
+          {
+            "title": "判断圆环等效磁极",
+            "content": "从 $+z$ 看电流顺时针，右手定则给出圆环磁矩沿 $-z$，因此圆环靠近磁铁的一侧为 S 极。"
+          },
+          {
+            "title": "判断相互作用方向",
+            "content": "磁铁下端也是 S 极，同名相斥，磁铁受力沿 $+z$；由作用力与反作用力，圆环受力沿 $-z$。"
+          }
+        ],
+        "finalAnswer": "② 磁铁受力沿 $z$ 正方向，圆环受力沿 $z$ 负方向",
+        "correctOption": "②"
+      }
+    }
+  ]
+}
